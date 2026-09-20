@@ -1,8 +1,9 @@
 # 0xinsider picks: the commitment ledger
 
 0xinsider publishes one Pick of the Day and a public record of how those picks
-did. This repository is the part that makes the record checkable by someone who
-assumes we are lying.
+did. This repository is that record at its source: every pick is sealed here as
+a hash before its game starts and opened after it settles, so anyone can check
+the record for themselves rather than take our word for it.
 
 Every pick is committed to before its game as
 `sha256(canonical_json(payload) || nonce)` and appended here while the game is

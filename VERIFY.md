@@ -1,10 +1,10 @@
 # How to verify the Pick of the Day record
 
 0xinsider publishes one pick a day and a running record of how those picks did.
-The record is served from our database, so a stranger has no reason to believe
-it. This repository is the fix: every pick is committed to before its game and
-opened after it settles, in a public file whose history is timestamped by
-someone other than us.
+The record is served from our database, and this repository is what makes it
+checkable from outside: every pick is committed to before its game and opened
+after it settles, in a public file whose history is timestamped by someone
+other than us.
 
 This document specifies the scheme precisely enough to reimplement, and states
 what it does not prove. Read the last section. A verification document that only
