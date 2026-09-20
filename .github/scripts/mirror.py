@@ -758,9 +758,21 @@ def main() -> int:
             return 0
         return 0 if commit_and_push("chore", changes or ["regenerate"]) else 1
 
-    token = os.environ.get("OXINSIDER_API_KEY", "")
+    # No credential is the one condition that is not an error. Until the ledger
+    # endpoint ships and its read-only key is stored as a repository secret,
+    # every scheduled run would fail on a state nobody has got to yet, several
+    # dozen times a day. A wall of red teaches everyone to ignore red, and red
+    # here is supposed to mean a broken proof. Scoped to exactly this: once the
+    # secret exists, a bad key, a 500, a shape change or a leaked nonce all fail
+    # the run.
+    token = os.environ.get("OXINSIDER_API_KEY", "").strip()
     if not token:
-        raise MirrorError("OXINSIDER_API_KEY is not set")
+        log(
+            "OXINSIDER_API_KEY is not configured. Nothing was fetched and nothing "
+            "was written. Set the repository secret once the ledger endpoint is "
+            "live (0xinsider/0xinsider#15704)."
+        )
+        return 0
     entries = fetch_entries(args.url, token)
 
     # Cursor-free, so a losing race costs one refetch of the local tree and a

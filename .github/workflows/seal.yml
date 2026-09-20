@@ -25,6 +25,12 @@ name: Seal
 #
 # NO CURSOR. The repository is the cursor. A missed run self-heals on the next
 # one, and running this twice in a row writes nothing the second time.
+#
+# BEFORE THE SECRET EXISTS this run is a no-op that passes, and says so in its
+# log. Everything after the credential check fails the run: a bad key, an error
+# response, an unexpected shape, or a sealed pick carrying a nonce. See the
+# comment at the credential check in mirror.py for why that one case is not an
+# error.
 
 on:
   schedule:
