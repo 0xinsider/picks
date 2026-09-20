@@ -22,16 +22,27 @@ of CSPRNG output, so the low-entropy payload behind it cannot be recovered by
 brute force. After the game settles, the payload and the nonce are appended, and
 the hash can be reopened by anyone.
 
-  1. HASH      recompute sha256(canonical_json(payload)||nonce) == committed hash
-  2. PRE-GAME  the commit that FIRST introduced that hash predates the kickoff
-               recorded in the payload
-  3. IMMUTABLE the payload never changed across the file's history
-  4. GAPS      no sealed pick stays unopened long past its kickoff
-  5. RECORD    wins, losses, hit rate and $100/pick P&L recomputed from raw data
+  1. HASH        recompute sha256(canonical_json(payload)||nonce) == committed hash
+  2. PRE-GAME    the commit that FIRST introduced that hash predates the kickoff
+                 recorded in the payload
+  3. IMMUTABLE   the payload never changed across the file's history
+  4. GAPS        no sealed pick stays unopened long past its kickoff
+  5. RECORD      wins, losses, hit rate and $100/pick P&L recomputed from raw data
+  6. CORRECTIONS every outcome this pick has held across the file's history
+                 appears in its `revisions`, in the same order; `revisions` only
+                 ever grew; `commitment_hash` is the same at every point
 
 Check 2 is the one that matters, and the only one that catches a backdated
 record. A repository of settled picks with no pre-game commitment would pass 1,
 3 and 5 while proving nothing at all.
+
+Check 6 is the one that catches an outcome edited in place. Nothing else here
+looks at `outcome` at all: the commitment is taken over the pick and never over
+the result, so changing a settled `"loss"` to `"win"` leaves checks 1, 2 and 3
+green. An outcome CAN legitimately change, because the backend reconciles
+settlements in both directions and a corrected market re-maps an already-settled
+pick. What is not legitimate is changing it silently, so check 6 does not ask
+whether the outcome moved. It asks whether the move was disclosed.
 
 What this does NOT prove
 ------------------------
@@ -196,12 +207,18 @@ def first_commit_introducing(path: Path, needle: str) -> tuple[str, datetime]:
     raise Failure(f"{needle[:16]}... never appears in the history of {path}")
 
 
-def payload_versions(path: Path, rank: int) -> list[str]:
-    """Every distinct canonical payload this pick has ever had in this file."""
-    seen: list[str] = []
-    for line in git("log", "--reverse", "--format=%H", "--", str(path)).split():
+def pick_history(path: Path, rank: int) -> list[dict]:
+    """Every committed version of one pick in this file, oldest first.
+
+    One `git show` per commit that touched the file. Checks 3 and 6 both read
+    this, so the history is walked once per pick rather than once per check.
+    A commit whose version of the file does not parse, or does not contain this
+    rank, contributes nothing and is skipped rather than guessed at.
+    """
+    versions: list[dict] = []
+    for sha in git("log", "--reverse", "--format=%H", "--", str(path)).split():
         blob = subprocess.run(
-            ["git", "show", f"{line}:{path}"],
+            ["git", "show", f"{sha}:{path}"],
             capture_output=True,
             text=True,
             check=False,
@@ -213,15 +230,103 @@ def payload_versions(path: Path, rank: int) -> list[str]:
         except json.JSONDecodeError:
             continue
         for pick in day.get("picks", []):
-            if pick.get("pick_rank") != rank or "payload" not in pick:
-                continue
-            try:
-                form = canonical_json(pick["payload"])
-            except Failure:
-                form = json.dumps(pick["payload"], sort_keys=True)
-            if form not in seen:
-                seen.append(form)
+            if pick.get("pick_rank") == rank:
+                versions.append({"commit": sha, "pick": pick})
+                break
+    return versions
+
+
+def payload_versions(history: list[dict]) -> list[str]:
+    """Every distinct canonical payload this pick has ever had in this file."""
+    seen: list[str] = []
+    for version in history:
+        pick = version["pick"]
+        if "payload" not in pick:
+            continue
+        try:
+            form = canonical_json(pick["payload"])
+        except Failure:
+            form = json.dumps(pick["payload"], sort_keys=True)
+        if form not in seen:
+            seen.append(form)
     return seen
+
+
+def collapse(values: list) -> list:
+    """Drop consecutive repeats. [a, a, b, a] -> [a, b, a].
+
+    A commit that rewrites a day file for one rank leaves every other rank
+    byte-identical, so the same outcome appears again and again without anything
+    having changed. Only a value DIFFERENT from the one before it is a change.
+    """
+    out: list = []
+    for value in values:
+        if not out or out[-1] != value:
+            out.append(value)
+    return out
+
+
+def correction_failures(who: str, history: list[dict], current: dict) -> list[str]:
+    """Check 6. An outcome that moved must say so in `revisions`.
+
+    Three assertions, and the first is the one with teeth:
+
+    1. The sequence of outcomes this pick has held, with consecutive repeats
+       collapsed, must match the outcomes its final `revisions` array records.
+       An outcome edited from `loss` to `win` with no revision appended leaves a
+       two-step history against a one-entry array, and fails here.
+    2. `revisions` only ever grew: each committed version of the array must be a
+       prefix of the next. A shortened or rewritten array fails, which is the
+       same edit made one level up.
+    3. `commitment_hash` is identical at every point. A correction that moves
+       the hash is not a correction, because the commitment is over the pick and
+       the pick did not change.
+
+    Note that a legitimate correction PASSES all three. This check does not
+    object to an outcome changing. It objects to an outcome changing quietly.
+    """
+    failures: list[str] = []
+
+    observed = collapse([v["pick"]["outcome"] for v in history if v["pick"].get("outcome")])
+    recorded = collapse(
+        [entry.get("outcome") for entry in current.get("revisions") or [] if isinstance(entry, dict)]
+    )
+    if observed and recorded != observed:
+        arrow = " -> ".join(observed)
+        if len(recorded) < len(observed):
+            failures.append(
+                f"CORRECTIONS {who}: outcome went {arrow} across history but revisions "
+                f"records only {len(recorded)} entry"
+                f"{'' if len(recorded) == 1 else ' entries'}"
+            )
+        else:
+            failures.append(
+                f"CORRECTIONS {who}: outcome went {arrow} across history but revisions "
+                f"records {' -> '.join(str(value) for value in recorded)}"
+            )
+
+    previous: list | None = None
+    for version in history:
+        revisions = version["pick"].get("revisions")
+        if revisions is None:
+            continue
+        if previous is not None and revisions[: len(previous)] != previous:
+            failures.append(
+                f"CORRECTIONS {who}: revisions was rewritten in {version['commit'][:10]}. "
+                f"It held {len(previous)} entry/entries and must only ever be appended to."
+            )
+            break
+        previous = revisions
+
+    hashes = collapse([v["pick"].get("commitment_hash") for v in history])
+    hashes = [value for value in hashes if value]
+    if len(set(hashes)) > 1:
+        failures.append(
+            f"CORRECTIONS {who}: commitment_hash changed across history "
+            f"({' -> '.join(value[:16] + '...' for value in hashes)}). "
+            f"The commitment is over the pick, never over the outcome."
+        )
+    return failures
 
 
 def return_per_100(outcome: str, price: Decimal) -> Decimal | None:
@@ -257,7 +362,7 @@ def main() -> int:
     parser.add_argument(
         "--skip-git",
         action="store_true",
-        help="skip the history checks (2 and 3). They need a full clone, not a shallow one.",
+        help="skip the history checks (2, 3 and 6). They need a full clone, not a shallow one.",
     )
     args = parser.parse_args()
 
@@ -313,6 +418,17 @@ def main() -> int:
             else:
                 failures.append(f"STATE    {who}: unknown outcome {outcome!r}")
 
+            # Walked once here and read by checks 3 and 6. Check 6 covers EVERY
+            # opened pick, `pre_commitment` ones included: those carry no hash
+            # to verify, but their outcome can be edited in place exactly like
+            # any other, and that edit is what check 6 is for.
+            history: list[dict] | None = None
+            if not args.skip_git:
+                try:
+                    history = pick_history(path, rank)
+                except Failure as exc:
+                    skips.append(f"HISTORY  {who}: {exc}")
+
             if pick.get("pre_commitment"):
                 pre_commitment += 1
             else:
@@ -346,16 +462,17 @@ def main() -> int:
                     failures.append(f"HASH     {who}: {exc}")
 
                 # 3. IMMUTABLE
-                if not args.skip_git:
-                    try:
-                        versions = payload_versions(path, rank)
-                        if len(versions) > 1:
-                            failures.append(
-                                f"IMMUTABLE {who}: payload changed {len(versions)} times "
-                                f"in this file's history. It must be written once."
-                            )
-                    except Failure as exc:
-                        skips.append(f"IMMUTABLE {who}: {exc}")
+                if history is not None:
+                    versions = payload_versions(history)
+                    if len(versions) > 1:
+                        failures.append(
+                            f"IMMUTABLE {who}: payload changed {len(versions)} times "
+                            f"in this file's history. It must be written once."
+                        )
+
+            # 6. CORRECTIONS
+            if history is not None:
+                failures.extend(correction_failures(who, history, pick))
 
             # 5. RECORD
             try:
@@ -398,7 +515,10 @@ def main() -> int:
     proven = opened - pre_commitment
     print(f"PASSED  {proven} pick(s) proven sealed before their game.")
     if args.skip_git:
-        print("        History checks were skipped, so nothing here rules out backdating.")
+        print(
+            "        History checks were skipped, so nothing here rules out a\n"
+            "        backdated seal or an outcome edited in place."
+        )
     return 0
 
 

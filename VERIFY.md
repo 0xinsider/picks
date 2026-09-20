@@ -241,6 +241,27 @@ which side, at what price -- and never over the outcome. A corrected outcome
 against an unchanged commitment is exactly the case this design is built to
 survive.
 
+**This is enforced, not merely requested.** `verify.py` check 6 reads every
+version of a pick in the file's git history, collapses the sequence of outcomes
+it has held, and requires `revisions` to record that same sequence in the same
+order. It also requires each committed `revisions` array to be a prefix of the
+next, and `commitment_hash` to be identical at every point.
+
+The check exists because nothing else here looks at `outcome` at all. The
+commitment is taken over the pick, so editing a settled `"loss"` to `"win"` in
+place leaves checks 1, 2 and 3 green -- the payload is untouched and the hash
+still reopens. That edit is the specific dishonesty this repository exists to
+rule out, and check 6 is the only thing that catches it. It does not object to
+an outcome changing. It objects to an outcome changing quietly:
+
+```
+CORRECTIONS 2026-09-17 rank 2: outcome went loss -> win across history but
+revisions records only 1 entry
+```
+
+Check 6 reads git history, so `--depth 1` and `--skip-git` both disable it, and
+the script says so when they do.
+
 A revision cannot name the commit that carries it, because that hash does not
 exist until after the write. `parent_commit` is the head it was written on top
 of, and `run` is the GitHub Actions run that made it, which is GitHub's record
@@ -338,11 +359,13 @@ was late and a seal that was backdated look identical. That is why the failure i
 treated as a real one and never explained away, and why `seal.yml` runs every ten
 minutes against a one-hour window rather than just often enough.
 
-**Everything `verify.py` does not check.** It does not walk `revisions` to
-confirm they only ever grew, and it does not scan for a day file that was
-deleted outright. Both are visible in git history, and the two commands under
-"Finding the commit that sealed a pick" are how you look. The checks it does run
-are listed at the top of the script, in the order it runs them.
+**Everything `verify.py` does not check.** It does not scan for a day file that
+was deleted outright, or for a pick removed from a file that stayed. Check 6
+covers every pick still present, so removing one outright is the way to drop it
+without tripping the check. Deletions are visible in git history, and
+`git log --diff-filter=D -- ledger/` under "Finding the commit that sealed a
+pick" is how you look. The checks `verify.py` does run are listed at the top of
+the script, in the order it runs them.
 
 ## Reporting a problem
 
