@@ -758,21 +758,39 @@ def main() -> int:
             return 0
         return 0 if commit_and_push("chore", changes or ["regenerate"]) else 1
 
-    # No credential is the one condition that is not an error. Until the ledger
-    # endpoint ships and its read-only key is stored as a repository secret,
-    # every scheduled run would fail on a state nobody has got to yet, several
-    # dozen times a day. A wall of red teaches everyone to ignore red, and red
-    # here is supposed to mean a broken proof. Scoped to exactly this: once the
-    # secret exists, a bad key, a 500, a shape change or a leaked nonce all fail
-    # the run.
+    # A missing credential means one of two opposite things, and which one it is
+    # depends on whether this mirror has ever worked. DO NOT SIMPLIFY THIS BACK
+    # TO AN UNCONDITIONAL PASS.
+    #
+    # Empty ledger: the endpoint has not shipped and the read-only key has not
+    # been stored yet. Failing several dozen times a day over a state nobody has
+    # reached would teach everyone to ignore a red run, and red here is supposed
+    # to mean a broken proof. So it passes, and says so.
+    #
+    # Non-empty ledger: the mirror demonstrably worked, and the key has since
+    # been removed, rotated or expired. Passing green there would let
+    # commitments stop being recorded with nothing anywhere saying so, which is
+    # a far worse failure than the noise the empty case avoids -- a pick sealed
+    # while the key is dead never reaches this repository before its kickoff,
+    # and no later run can repair that. So it fails.
     token = os.environ.get("OXINSIDER_API_KEY", "").strip()
     if not token:
-        log(
-            "OXINSIDER_API_KEY is not configured. Nothing was fetched and nothing "
-            "was written. Set the repository secret once the ledger endpoint is "
-            "live (0xinsider/0xinsider#15704)."
+        committed = sum(len(day.get("picks", [])) for _, day in read_all_days())
+        if committed == 0:
+            log(
+                "OXINSIDER_API_KEY is not configured and the ledger is empty. "
+                "Nothing was fetched and nothing was written. Set the repository "
+                "secret once the ledger endpoint is live "
+                "(0xinsider/0xinsider#15704)."
+            )
+            return 0
+        raise MirrorError(
+            f"OXINSIDER_API_KEY is not configured, but this ledger already holds "
+            f"{committed} entry/entries. The mirror worked before and has stopped, "
+            f"so commitments are going unrecorded right now. Restore the repository "
+            f"secret. A pick sealed while the key is missing cannot be mirrored "
+            f"before its kickoff by any later run."
         )
-        return 0
     entries = fetch_entries(args.url, token)
 
     # Cursor-free, so a losing race costs one refetch of the local tree and a
