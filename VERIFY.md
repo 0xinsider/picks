@@ -282,13 +282,18 @@ reports as sealed, and fails the run if it sees one. The endpoint is supposed to
 make that impossible by serving two different response shapes. This is a second
 lock on the same door.
 
-Branch protection on `main` is what keeps history from being rewritten. Check it
-yourself rather than taking the claim:
+Branch protection on `main` is what keeps history from being rewritten. Force
+pushes and branch deletion are blocked, for repository administrators too. From
+outside you can read the flag:
 
 ```sh
-gh api repos/0xinsider/picks/branches/main/protection \
-  --jq '{force_push: .allow_force_pushes.enabled, delete: .allow_deletions.enabled}'
+gh api repos/0xinsider/picks/branches/main --jq '.protected'
 ```
+
+Be clear about what that buys you. The settings behind the flag are readable
+only by an administrator of this repository, so `true` is as far as an outsider
+gets, and the rest is us telling you again. The check that does not route
+through us is your own clone. See the last section.
 
 ## What this does NOT prove
 
