@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Scratch files from a hand verification, per VERIFY.md.
+canonical.json
+nonce.bin

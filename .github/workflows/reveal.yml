@@ -1,0 +1,62 @@
+name: Reveal
+
+# Open the commitments of picks that have settled, and keep the published
+# record in step with the data under it.
+#
+# THIS WORKFLOW COMPUTES NO HASH either. It copies the nonce and payload the
+# backend publishes once a pick's outcome leaves `pending`, and never touches
+# `commitment_hash`. The commitment is over the pick, not over the outcome.
+#
+# CORRECTIONS APPEND. The backend reconciles settlements in both directions: a
+# corrected market re-maps an already-settled pick, so an outcome can legitimately
+# change after it is published here. Rewriting the file in place would be
+# indistinguishable from editing a loss into a win, which is the thing this
+# repository exists to rule out. Instead the change is appended to `revisions`
+# with its own timestamp and run link, and the diff shows both values.
+#
+# HOURLY, at :17. The backfill pass that settles outcomes runs on a 30-minute
+# cadence, so nothing here needs to be faster than an hour, and there is no
+# deadline the way there is for sealing -- a late reveal delays a disclosure, it
+# does not weaken a proof. The offset is deliberate: GitHub queues scheduled
+# workflows and the top of the hour is the busiest slot.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Apply to the working tree and show the diff without committing"
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:
+  group: ledger-write
+  cancel-in-progress: false
+
+jobs:
+  reveal:
+    if: github.repository == '0xinsider/picks'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the ledger
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Open settled commitments and regenerate the record
+        env:
+          OXINSIDER_API_KEY: ${{ secrets.OXINSIDER_API_KEY }}
+        run: |
+          python3 .github/scripts/mirror.py --mode reveal \
+            ${{ inputs.dry_run && '--no-push' || '' }}
+
+      - name: Show the uncommitted diff
+        if: ${{ inputs.dry_run }}
+        run: git --no-pager diff

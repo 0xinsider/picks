@@ -1,0 +1,71 @@
+name: Seal
+
+# Append every new pre-game commitment to the ledger.
+#
+# THIS WORKFLOW COMPUTES NO HASH. It fetches the ledger endpoint, diffs the
+# result against what is committed here, and appends the difference. Every hash
+# is produced by the backend at seal time and copied byte for byte. A mirror
+# that derived its own hash would prove only that it can run sha256, and the
+# first disagreement between two serializations would read to a stranger as a
+# falsified record rather than as the formatting bug it is. The check that is
+# supposed to be independent is `verify.py`, which anyone can run.
+#
+# TIMING IS THE WHOLE POINT. A pick publishes one hour before kickoff and is
+# sealed in the same pass, so the hash is available to this workflow for about
+# 60 minutes before the game starts. The commit that lands it here is the
+# public, timestamped evidence that the pick existed unchanged before kickoff --
+# `verify.py` check 2 reads exactly that commit date. A run that lands after
+# kickoff does not weaken the proof quietly; it fails verification, loudly and
+# permanently, for that pick. Hence the 10-minute cadence: GitHub does not
+# promise punctual cron, and a schedule that only just fits would not fit.
+#
+# WINDOW. Picks drop between 11:00 and 23:00 UTC (OP_WINDOW_START_UTC /
+# OP_WINDOW_END_UTC in the backend). Hours 11-23 cover every drop, and the last
+# run at 23:50 UTC covers a 23:00 drop whose kickoff is 00:00 UTC or later.
+#
+# NO CURSOR. The repository is the cursor. A missed run self-heals on the next
+# one, and running this twice in a row writes nothing the second time.
+
+on:
+  schedule:
+    - cron: "*/10 11-23 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Apply to the working tree and show the diff without committing"
+        type: boolean
+        default: false
+
+permissions: {}
+
+concurrency:
+  # Shared with reveal.yml: both write the same files, so they take turns. A
+  # queued run that gets dropped for a newer one costs nothing, because neither
+  # keeps a cursor.
+  group: ledger-write
+  cancel-in-progress: false
+
+jobs:
+  seal:
+    if: github.repository == '0xinsider/picks'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the ledger
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Append new commitments
+        env:
+          OXINSIDER_API_KEY: ${{ secrets.OXINSIDER_API_KEY }}
+        run: |
+          python3 .github/scripts/mirror.py --mode seal \
+            ${{ inputs.dry_run && '--no-push' || '' }}
+
+      - name: Show the uncommitted diff
+        if: ${{ inputs.dry_run }}
+        run: git --no-pager diff

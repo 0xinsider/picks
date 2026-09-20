@@ -1,0 +1,5 @@
+The ledger lives here, one file per product day at <YYYY>/<MM>/<YYYY-MM-DD>.json.
+
+This placeholder keeps the directory in git before the first pick is sealed.
+verify.py exits 1 if ledger/ is missing and exits 0 with "nothing is claimed" if
+it is present and empty, which is the correct answer for an empty ledger.

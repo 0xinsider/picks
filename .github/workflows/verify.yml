@@ -1,0 +1,59 @@
+name: Verify
+
+# Re-verify the ENTIRE history, on every push, on every pull request, and once
+# a day whether or not anything changed.
+#
+# This workflow is allowed to fail the repository, and that is its job. A red
+# run means one of: a hash that does not reopen, a commitment whose first commit
+# here is at or after its kickoff, a payload that changed between seal and
+# reveal, or a sealed pick that never opened. None of those has a benign
+# explanation that should be applied automatically.
+#
+# FULL DEPTH IS LOAD-BEARING. `verify.py` checks 2 and 3 walk git history: the
+# commit that FIRST introduced each hash must predate that pick's kickoff, and
+# the payload must never have changed. A shallow clone has neither, and the
+# script would skip the only checks that can catch a backdated record while
+# still printing a pass. `fetch-depth: 0` is the reason this workflow proves
+# anything.
+#
+# WHY IT ALSO RUNS DAILY. A push made with GITHUB_TOKEN does not trigger other
+# workflows, by GitHub's own design, so the commits from seal.yml and reveal.yml
+# do NOT set this off. The schedule is what covers them. It also re-checks the
+# gap rule, which turns red with the passage of time rather than with a commit:
+# a sealed pick that has not opened 72 hours after kickoff is reported whether
+# or not anyone pushed.
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "41 6 * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  verify:
+    if: github.repository == '0xinsider/picks'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the full history
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Verify every commitment
+        run: python3 verify.py
+
+      - name: Confirm the published record matches the ledger
+        # README.md and index.json are generated from ledger/ and nothing else.
+        # Regenerating them must be a no-op. A diff here means the record on
+        # display disagrees with the data under it, which is a smaller lie than
+        # a broken hash and exactly as disqualifying.
+        run: |
+          python3 .github/scripts/mirror.py --mode regenerate --no-push
+          git --no-pager diff --exit-code
