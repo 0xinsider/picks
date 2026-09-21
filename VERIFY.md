@@ -304,7 +304,10 @@ Three workflows, all readable in this repository, all guarded so a fork cannot
 run them, all with `permissions` denied at the workflow level and granted per
 job.
 
-- `seal.yml`, every 10 minutes from 11:00 to 23:59 UTC, appends new commitments.
+- `seal.yml` appends new commitments. The 0xinsider backend dispatches it the
+  moment a pick is sealed, and it also runs every 10 minutes from 11:07 to
+  23:57 UTC as a fallback. Dispatch runs show as `workflow_dispatch` in the
+  Actions tab. They run the same workflow source as every other run.
 - `reveal.yml`, hourly at :17, opens settled commitments and regenerates the
   record.
 - `verify.yml`, on every push and pull request and daily, runs `verify.py` over
