@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-27",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-27T17:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x22a21921a9dad2575c6e27979f44decb5acdc270027113da17f74a49d9a6c87e",
+        "kickoff": "2026-08-27T17:05:00Z",
+        "pick_date": "2026-08-27",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Washington Nationals",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Colorado Rockies vs. Washington Nationals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-27/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-27T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x907a67c23330682543e80bead0162e6945300a3dba5566cdd099e4fa7287f687",
+        "kickoff": "2026-08-27T19:00:00Z",
+        "pick_date": "2026-08-27",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Barcelona vs. Athletic Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-27/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-27T18:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x928402491a25ce768ca7505cc9078b60697c77f34b7e0bf031d66ea66e2cf831",
+        "kickoff": "2026-08-27T18:30:00Z",
+        "pick_date": "2026-08-27",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "RC Celta de Vigo vs. CA Osasuna",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-27/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-27T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.925000",
+        "condition_id": "0xc25ccc6cebb25cbcdb54404ac735b23ed9753a64b3489cbdb00c71dacb37d30d",
+        "kickoff": "2026-08-27T19:00:00Z",
+        "pick_date": "2026-08-27",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Barcelona vs. Athletic Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-27/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-27T17:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.885000",
+        "condition_id": "0x6cfe2f3e1398b3f36fcfee2a39f295dcab03835fcec5d38f3f8711ad4c7ac54d",
+        "kickoff": "2026-08-27T17:10:00Z",
+        "pick_date": "2026-08-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Team Falcons",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Team Falcons vs Lynn Vision (BO3) - BLAST Open Porto Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-27/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

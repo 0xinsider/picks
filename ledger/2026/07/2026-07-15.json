@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-15",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-15T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.538750",
+        "condition_id": "0x776956c5185fb6e9115e4a52fb0a8386172cae91d6812b447795fb171f478a69",
+        "kickoff": "2026-07-15T19:00:00Z",
+        "pick_date": "2026-07-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "England to advance",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "England vs. Argentina: Team to Advance",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-15/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "pick_date": "2026-08-17",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-17T22:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xf35b472bf13b41d0d3e179bab9e9256ee645b94bac6ac768fa073532a6a4186e",
+        "kickoff": "2026-08-17T22:20:00Z",
+        "pick_date": "2026-08-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lloyd Harris",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cancun: Lloyd Harris vs Abdullah Shelbayh",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-17/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-17T23:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x1af38f6df567bdbb6e47c65da982f3d08320f38a4ea880236d432d17cb170b69",
+        "kickoff": "2026-08-17T23:05:00Z",
+        "pick_date": "2026-08-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Detroit Tigers",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Detroit Tigers vs. Pittsburgh Pirates",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-17/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-17T23:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0x7b3673079634ea183c92fb21a90cc76707004b3b7fa882b37154d58c6a03a96f",
+        "kickoff": "2026-08-17T23:00:00Z",
+        "pick_date": "2026-08-17",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Will SC Internacional win on 2026-08-17?",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-17/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

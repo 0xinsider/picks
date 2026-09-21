@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-10",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-10T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.746250",
+        "condition_id": "0x7e6a99d23ee6beff337091fc92ecac6f2d8810aa899eb70b7488b72d5abbb052",
+        "kickoff": "2026-07-10T19:00:00Z",
+        "pick_date": "2026-07-10",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Spain",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Spain vs. Belgium",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-10/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

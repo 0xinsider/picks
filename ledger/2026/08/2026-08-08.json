@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-08",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-08T22:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x819eb908ae2ed544e9ad5b344f5a858789e23c2609417e81e187b6709e9a79fe",
+        "kickoff": "2026-08-08T22:45:00Z",
+        "pick_date": "2026-08-08",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Cincinnati Reds",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Reds vs. Washington Nationals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-08/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

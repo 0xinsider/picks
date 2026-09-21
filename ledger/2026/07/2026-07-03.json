@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-03",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-04T01:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0xc4a26ee77fc5777d5036854f3835bf7ce44b42a61e3c6325c22b444627757eca",
+        "kickoff": "2026-07-04T01:30:00Z",
+        "pick_date": "2026-07-03",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Colombia",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Colombia vs. Ghana",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-03/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

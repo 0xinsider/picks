@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-06-24",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-06-25T01:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x1f5cd4d1a23c11229b2781303dd39fb60ec6ee369dd173cedef8a7f7a1a27298",
+        "kickoff": "2026-06-25T01:00:00Z",
+        "pick_date": "2026-06-24",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Mexico",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Czechia vs. Mexico",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-06-24/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

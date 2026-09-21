@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-03",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-03T17:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x7cc8729c2bea651d00f502c2f9707f44991b1605afbe9cf793fcc77393c547b7",
+        "kickoff": "2026-08-03T17:40:00Z",
+        "pick_date": "2026-08-03",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Taylor Fritz",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Mubadala Citi DC Open: Taylor Fritz vs Rafael Jodar",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-03/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

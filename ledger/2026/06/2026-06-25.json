@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-06-25",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-06-25T23:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.895000",
+        "condition_id": "0xa3150402afe114c762bcd2e5581dc4d0fe93560718640d8d490e0497350de5ad",
+        "kickoff": "2026-06-25T23:00:00Z",
+        "pick_date": "2026-06-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Netherlands",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Tunisia vs. Netherlands",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-06-25/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

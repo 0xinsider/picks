@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-26",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-26T16:15:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x6d4885d1cd0e2deaf7c77746806ffe22b49731efebe6cee621f7615ba73da0d6",
+        "kickoff": "2026-07-26T16:15:00Z",
+        "pick_date": "2026-07-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Tampa Bay Rays",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cleveland Guardians vs. Tampa Bay Rays",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-26/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-03",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T12:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x06137b9d5db1e0021a9be247a5dea93de058a9449cf70f40c6c845e097e38717",
+        "kickoff": "2026-09-03T12:00:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "MIBR",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: MIBR vs EYEBALLERS (BO3) - IEM Beijing: Global Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x03484f7df61fa5ead05405254048fb22c863a0a7d82fe3106a6797c0d40667ab",
+        "kickoff": "2026-09-03T19:00:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Real Sociedad de Fútbol vs. RC Celta de Vigo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T18:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xda29e1df4df84670ff4d6ebd73a5206bdca26db42196ec7dea309fa2c1dd64eb",
+        "kickoff": "2026-09-03T18:45:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Toulouse FC vs. Lille OSC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T15:55:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xef4494de18f838f23edb1dba96a133834100cc8c9f2454e08c3cfa669ced32b4",
+        "kickoff": "2026-09-03T15:55:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Al Fayha Saudi Club vs. Al Kholood Saudi Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T15:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x5bc586bccd860a2bbf3bd4c7414bb04105e08491c93e850a834751ca9e5f4cdc",
+        "kickoff": "2026-09-03T15:00:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Nuclear TigeRES",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Nuclear TigeRES vs Eternal Fire (BO3) - IEM Beijing: Global Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-03T16:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x9b665faf3a027d18c8c984eac7c876fa4e86f94e902698d32e031ef3ab6a70ef",
+        "kickoff": "2026-09-03T16:30:00Z",
+        "pick_date": "2026-09-03",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "NEOM SC vs. Al Khaleej Saudi Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-03/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

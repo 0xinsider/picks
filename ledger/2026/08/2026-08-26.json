@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-26",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-26T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.815000",
+        "condition_id": "0x244594c21b55f9f07af5a288ff9f41ff77324aa24b6fcc6f8341337c23c62806",
+        "kickoff": "2026-08-26T19:00:00Z",
+        "pick_date": "2026-08-26",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Real Madrid CF vs. Real Sociedad de Fútbol",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-26/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-26T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x3600d617c3da496b603c4c9291d41be43f69e578d227a56020d0f9e5617e72b4",
+        "kickoff": "2026-08-26T19:00:00Z",
+        "pick_date": "2026-08-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Olympique Lyonnais vs. Fenerbahçe SK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-26/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-26T17:55:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0x29019df1f940644d9134d2c7b6cbfe0c3f86d45b50080987265de3ce5c14610b",
+        "kickoff": "2026-08-26T17:55:00Z",
+        "pick_date": "2026-08-26",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: FURIA vs paiN (BO3) - BLAST Open Porto Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-26/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-26T19:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xdb5c49406d63804d59e7c7c6f9cd314a2b60602d10d22d8b04ecb2a4aaeeded5",
+        "kickoff": "2026-08-26T19:40:00Z",
+        "pick_date": "2026-08-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Arizona Diamondbacks",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Chicago Cubs vs. Arizona Diamondbacks",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-26/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-26T18:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0xb552687ec56c49a10cb87fd92ea3b2540c11473658750b4ab0f1c6edc7d2a392",
+        "kickoff": "2026-08-26T18:10:00Z",
+        "pick_date": "2026-08-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Luciano Darderi",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Winston-Salem Open: Botic van de Zandschulp vs Luciano Darderi",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-26/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

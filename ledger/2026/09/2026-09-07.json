@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-09-07",
+  "picks": [
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-07T16:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x0ac93cdee7b33dd8d200806556c85abc91191a0c2c8f868eb133ce9184a16141",
+        "kickoff": "2026-09-07T16:30:00Z",
+        "pick_date": "2026-09-07",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Cagliari Calcio vs. US Lecce",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-07/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-07T19:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xddc30002f7e9a9d52f81bf546d45e908b8e1f56eb2e06384a0814ac55c8a32d7",
+        "kickoff": "2026-09-07T19:10:00Z",
+        "pick_date": "2026-09-07",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Detroit Tigers",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Minnesota Twins vs. Detroit Tigers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-07/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-07T16:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x1e79a9b99b36b9bedb260ed49eb32b143ce1ce5ed0db5b5e328b7512f0841b7d",
+        "kickoff": "2026-09-07T16:30:00Z",
+        "pick_date": "2026-09-07",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Cagliari Calcio vs. US Lecce",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-07/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-07T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x51c7f31525b293b12a1e751c0cbbc722516147228563305f8878cea890b81ff4",
+        "kickoff": "2026-09-07T19:30:00Z",
+        "pick_date": "2026-09-07",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Elche CF vs. Real Sociedad de Fútbol",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-07/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-07T17:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555",
+        "condition_id": "0x3f3236a2c93b325b205bb40dc7ce5f456545e2e0bff1c25eca28d2eb96ba3e0d",
+        "kickoff": "2026-09-07T17:10:00Z",
+        "pick_date": "2026-09-07",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Miami Marlins",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "New York Mets vs. Miami Marlins",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-07/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

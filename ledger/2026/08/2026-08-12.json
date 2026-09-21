@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-12",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-12T14:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x41904c1ddf43fd90b92e247e6b150a796eb23389eace700980c77e280960be1e",
+        "kickoff": "2026-08-12T14:45:00Z",
+        "pick_date": "2026-08-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: PARIVISION vs B8 (BO1) - Esports World Cup Group C",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-12/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

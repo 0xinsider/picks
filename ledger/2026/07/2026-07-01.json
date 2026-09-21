@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-01",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-02T00:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.925000",
+        "condition_id": "0xec8526d190e001f9a7f94c310bcf56ae924c51179f2683373f5006033946e718",
+        "kickoff": "2026-07-02T00:00:00Z",
+        "pick_date": "2026-07-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "United States 3 - 1 Bosnia and Herzegovina (No)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "United States vs. Bosnia and Herzegovina - Exact Score",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-01/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

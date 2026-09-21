@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-21",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-22T23:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x53454b0a76a8d21f8e3fa31285b2d685f5a36f34c708a0c0038c329d803af4e1",
+        "kickoff": "2026-07-22T23:05:00Z",
+        "pick_date": "2026-07-21",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 9.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Pittsburgh Pirates vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-21/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

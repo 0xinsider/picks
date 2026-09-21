@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-09",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-09T20:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.960500",
+        "condition_id": "0x129268babbd819607d8cd34847a9d1d4cf37a9be58d9bdef30e0e1abf62ddf57",
+        "kickoff": "2026-07-09T20:00:00Z",
+        "pick_date": "2026-07-09",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "France 1 - 2 Morocco (No)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "France vs. Morocco - Exact Score",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-09/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

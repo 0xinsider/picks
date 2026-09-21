@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-29",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-29T16:35:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xa2e0029e9d3924c2c7afa2e4649cba2967dab0d31a2eeb75b24a8591ed0f5a9d",
+        "kickoff": "2026-07-29T16:35:00Z",
+        "pick_date": "2026-07-29",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Arizona Diamondbacks",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Arizona Diamondbacks vs. Pittsburgh Pirates",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-29/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-13",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-13T21:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xbadd20c2ed6022a87d13b8a82eac7f03ffee1f11a65d3665bf0556edded244fa",
+        "kickoff": "2026-07-13T21:00:00Z",
+        "pick_date": "2026-07-13",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Andres Martin",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Granby: Nicolas Arseneault vs Andres Martin",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-13/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-24",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-24T15:50:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.885000",
+        "condition_id": "0x2f5bb28b0601965befb1a8ff21b1c1504666f8004516e8d913ded94e17524cf7",
+        "kickoff": "2026-07-24T15:50:00Z",
+        "pick_date": "2026-07-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Vitality",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Liquid vs Vitality (BO3) - BLAST Bounty Qualifier",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-24/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

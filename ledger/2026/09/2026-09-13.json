@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-13",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T15:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x414544e7b36df8a3ff71c764dc29d6f651679fa422c11fdcc2b6388be2a524c7",
+        "kickoff": "2026-09-13T15:30:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "SV 07 Elversberg vs. FC Bayern München",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T13:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0xb489e7cd2744f33970e30019ce269af5e91101d93137e613ad3e6a2092e5e2d1",
+        "kickoff": "2026-09-13T13:00:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Coventry City FC vs. Brighton & Hove Albion FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T16:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xe40dfd23918fc5cb73328bd4523288d9465d59883feec2745865e76561c7772e",
+        "kickoff": "2026-09-13T16:00:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "SSC Napoli vs. Bologna FC 1909",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T20:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x4c426e182c540ac3f843867db8e1a2121263e932f7fe117015b1132ad2909e90",
+        "kickoff": "2026-09-13T20:00:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FlyQuest",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: Sentinels vs FlyQuest (BO5) - LCS Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0x593b6b78d055c1760362e3231769860deb55b868f397b9dd02eeb10f8192ec16",
+        "kickoff": "2026-09-13T18:45:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Stade Brestois 29 vs. Paris Saint-Germain FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-13T18:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x8d1a65496df00efc1a50e8f5d7bf93a74f40238f5c7a77b18bc558d40a742854",
+        "kickoff": "2026-09-13T18:20:00Z",
+        "pick_date": "2026-09-13",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Pittsburgh Pirates",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Pittsburgh Pirates vs. Chicago Cubs",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-13/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

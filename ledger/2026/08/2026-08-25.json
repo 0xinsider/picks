@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-25",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T19:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.865000",
+        "condition_id": "0xab741c530b7c57d6bd6907c7ffb15910f7f8b4596e4ba014b496cf1bd4753b61",
+        "kickoff": "2026-08-25T19:05:00Z",
+        "pick_date": "2026-08-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hugo Gaston",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open, Qualification ATP: Hugo Gaston vs Guido Justo",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-25/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T17:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.895000",
+        "condition_id": "0x21c5b6f8fd3852b06cd1c1b089bde058cbf582a7c31b612350f6695e183c0595",
+        "kickoff": "2026-08-25T17:10:00Z",
+        "pick_date": "2026-08-25",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Grigor Dimitrov",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open, Qualification ATP: Lorenzo Giustino vs Grigor Dimitrov",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-25/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T22:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0xe3a5c6a4d8057b7d8a14d3091183aab4ee27b232f21c603a9574b81898b46094",
+        "kickoff": "2026-08-25T22:00:00Z",
+        "pick_date": "2026-08-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yunchaokete Bu",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open, Qualification ATP: Yunchaokete Bu vs Rio Noguchi",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-25/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xa691d8c050daa4cec6e7abd73fdcf0881ae6433ec1f93dd0fd080bffc2aadabf",
+        "kickoff": "2026-08-25T19:00:00Z",
+        "pick_date": "2026-08-25",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Valencia CF vs. Real Betis Balompié",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-25/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T17:50:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.905000",
+        "condition_id": "0x6bb314296e94e453eccdfb8d7b19c1bbff949c9afc8bed8567241115d2a1eb43",
+        "kickoff": "2026-08-25T17:50:00Z",
+        "pick_date": "2026-08-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Clement Chidekh",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open, Qualification ATP: Clement Chidekh vs Federico Coria",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-25/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

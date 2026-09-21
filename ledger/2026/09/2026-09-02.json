@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-02",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T16:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x52815904c92def3e2ce1e8f45fb6fbe87f44c53c42f6f5556b371e84079c27ad",
+        "kickoff": "2026-09-02T16:40:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Zachary Svajda",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Zachary Svajda vs Daniel Altmaier",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T15:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0xf2879c8ebb8875ce8a39bccd9e3640915f40a7c01ec91bf457d120d3ee93468c",
+        "kickoff": "2026-09-02T15:10:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Andrey Rublev",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Daniel Merida Aguilar vs Andrey Rublev",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T15:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.925000",
+        "condition_id": "0xf4cecb041bd0a86914db30d2fba1365fbd394d6415ff77e578f94164cc681c95",
+        "kickoff": "2026-09-02T15:40:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Jessica Pegula",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open WTA: Jessica Pegula vs Sofia Kenin",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T17:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x5f93716879d451c8c0d77548da55944eaaa143c051707cc7aa6fdcdaf109fb4b",
+        "kickoff": "2026-09-02T17:05:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Braves",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Braves vs. Washington Nationals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T22:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0xb8f583c9961a2e5dd3e21f01606492870b3acf4a853be33b5ff649540c586829",
+        "kickoff": "2026-09-02T22:45:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Matteo Berrettini",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Matteo Berrettini vs Mariano Navone",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T22:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.961500",
+        "condition_id": "0x6c8a38bd5326e1b70643f5f2dd026de7ca6ca26a6d3f04088852950da8f620c3",
+        "kickoff": "2026-09-02T22:20:00Z",
+        "pick_date": "2026-09-02",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Zizou Bergs",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Zizou Bergs vs Carlos Taberner",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-02/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-28",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-28T18:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0xe7fb9d07e3f3de40be7102dfe8e806e5a41fae2f49c8b91260c56a371f002962",
+        "kickoff": "2026-08-28T18:30:00Z",
+        "pick_date": "2026-08-28",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Bayern München vs. VfB Stuttgart",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-28/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-28T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.865000",
+        "condition_id": "0x6d12278abed2520cf5297e761d247bd4b07f8a9442f1ffd1bc6bc7190b5ae2ba",
+        "kickoff": "2026-08-28T18:45:00Z",
+        "pick_date": "2026-08-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "AC Milan vs. Venezia FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-28/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-28T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0xdb6834c952cb97dfccf48e719f11c914632b9762b2eae199788b53e69af62ff2",
+        "kickoff": "2026-08-28T19:00:00Z",
+        "pick_date": "2026-08-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Crystal Palace FC vs. Manchester City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-28/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-28T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x76ebde6aec40ed8ed99eba11f1efc87c36dce726632f0c0b3d0f09ba9486e54c",
+        "kickoff": "2026-08-28T19:00:00Z",
+        "pick_date": "2026-08-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Crystal Palace FC vs. Manchester City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-28/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-28T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xfc30f73cea5310882aa0de2de64570530204b3ccb8a4734b7d671f6fb465c564",
+        "kickoff": "2026-08-28T19:30:00Z",
+        "pick_date": "2026-08-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Deportivo Alavés vs. Villarreal CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-28/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

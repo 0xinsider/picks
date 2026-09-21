@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-19",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T14:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x10b61b201302ab4b39d1945f3abbbec39a20d9bb40d9ad62aeb4d0c08d594d1c",
+        "kickoff": "2026-08-19T14:20:00Z",
+        "pick_date": "2026-08-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FUT Esports",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: FUT Esports vs magic (BO3) - Esports World Cup Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-19/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T14:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0x8354996f412fb98c6338f20efcc29c469a08dca04e4aad345da1160bf8e516c9",
+        "kickoff": "2026-08-19T14:10:00Z",
+        "pick_date": "2026-08-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "G2",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: G2 vs Astralis (BO3) - Esports World Cup Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-19/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T16:35:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x492266a37fa8676292ecf7bb932ae99e36877b7e40e376e5cd574d3185ca09fd",
+        "kickoff": "2026-08-19T16:35:00Z",
+        "pick_date": "2026-08-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Detroit Tigers",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Detroit Tigers vs. Pittsburgh Pirates",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-19/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T23:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x6dc6c61ba62639ae85b8893301b545731f75b8368821b5b38a465d330ba6e1c5",
+        "kickoff": "2026-08-19T23:40:00Z",
+        "pick_date": "2026-08-19",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kansas City Royals",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Athletics vs. Kansas City Royals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-19/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T23:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.875000",
+        "condition_id": "0x7af1b8e5c4954a89b103957c4eec81041d7634bb2a51b97f6c9ae44cec543e1c",
+        "kickoff": "2026-08-19T23:30:00Z",
+        "pick_date": "2026-08-19",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Washington Mystics",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Toronto Tempo vs. Washington Mystics",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-19/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

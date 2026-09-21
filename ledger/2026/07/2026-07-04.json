@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-04",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-04T17:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x962c33d297cb9720835b5e5579a3d9f8bb0e0c97429d59ee01c70bc073c18d7f",
+        "kickoff": "2026-07-04T17:00:00Z",
+        "pick_date": "2026-07-04",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No draw",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Canada vs. Morocco",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-04/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

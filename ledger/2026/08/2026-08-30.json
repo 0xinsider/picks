@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-08-30",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T19:50:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x8375934e304a22f4409c4d541daf5c2bac39b86b98630c2ece95425a039fd9fa",
+        "kickoff": "2026-08-30T19:50:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Miomir Kecmanovic",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Miomir Kecmanovic vs Denis Shapovalov",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T13:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xd4a48ceae4177101de71b085edd588ee6b8038af9644d134b079eca66c5406fb",
+        "kickoff": "2026-08-30T13:00:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Chelsea FC vs. Brighton & Hove Albion FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T13:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xb0721d36564bb80173bc9399acf89fd43ee6f0b4417c1ce38686c55670d3e1b0",
+        "kickoff": "2026-08-30T13:00:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Sunderland AFC vs. Fulham FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x733dceec2fbda9b183b988b123116bb7bd36312679c001daea5586d5cb55e337",
+        "kickoff": "2026-08-30T18:45:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "SS Lazio vs. Genoa CFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T15:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x358df22acd9d848c82b52b50b15495c873bb6280bbac860657828b616b7eab49",
+        "kickoff": "2026-08-30T15:05:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yibing Wu",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Yibing Wu vs Adam Walton",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-30T19:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xa4cb604b3eae7b0c68ffb16e30c3b8dd4cf6a0a3d7d0140b9ee5fb003ad8e27a",
+        "kickoff": "2026-08-30T19:05:00Z",
+        "pick_date": "2026-08-30",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Karolina Pliskova",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open WTA: Hanne Vandewinkel vs Karolina Pliskova",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-30/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

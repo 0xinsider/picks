@@ -1,0 +1,32 @@
+{
+  "pick_date": "2026-06-23",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.855",
+        "condition_id": "0x7fb8010a0cdc4ac4f7e93fb7a532731fbb81f951dd451f2402648eaa3cf285e1",
+        "kickoff": null,
+        "pick_date": "2026-06-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Portugal",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Portugal vs. Uzbekistan",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-06-23/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

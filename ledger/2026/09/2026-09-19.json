@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-19",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0xd53b005c28f0858e21023196f9319a0d38cf7e334299cda165b481a7683dd1c4",
+        "kickoff": "2026-09-19T21:00:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Joshua Van",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 331: Alexandre Pantoja vs. Joshua Van (Flyweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xeb22cb2a364429048f7bfbe0c5b3332c830ac7c749c7cc22433bc35bd7138690",
+        "kickoff": "2026-09-19T18:45:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Toulouse FC vs. Le Havre AC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xa13a98a052d900310d229591c593a8b2314c2834b5416ff0a8f9e2e7e55864d0",
+        "kickoff": "2026-09-19T14:00:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Brighton & Hove Albion FC vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0x3be6a50ef2fae0f4e3b8f69e3f45666d8932779a1ba754ba74e1ff4bcddcb359",
+        "kickoff": "2026-09-19T19:00:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Sevilla FC vs. FC Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x424dcc6d5bd2c6717a417b568f2d15cbc7e497da82bb7501176d458e7a678a58",
+        "kickoff": "2026-09-19T21:00:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Arman Tsarukyan",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 331: Arman Tsarukyan vs. Mauricio Ruffy (Lightweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-19T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0x45e64f0f34ce2e16489734ea3c7bc2a5b9bf40fc9796aae1be37e024df7680f8",
+        "kickoff": "2026-09-19T21:00:00Z",
+        "pick_date": "2026-09-19",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Robelis Despaigne",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 331: Tai Tuivasa vs. Robelis Despaigne (Heavyweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-19/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

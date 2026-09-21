@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-14",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-14T20:50:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x7983ea1751d12f8f3db41bc217f7126cc9a9c708b6b60ab79cb8598effa307bb",
+        "kickoff": "2026-08-14T20:50:00Z",
+        "pick_date": "2026-08-14",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hamad Medjedovic",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Open: Hamad Medjedovic vs Marco Trungelliti",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-14/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

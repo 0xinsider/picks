@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-04",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-04T22:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x90dab0680f465b0e4f505295d1b138b2982a86a2eafa92b6530c5035efa7a716",
+        "kickoff": "2026-08-04T22:40:00Z",
+        "pick_date": "2026-08-04",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Philadelphia Phillies",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Washington Nationals vs. Philadelphia Phillies",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-04/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

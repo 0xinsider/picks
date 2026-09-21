@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-08",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-09T02:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.709500",
+        "condition_id": "0xd4c76ff896b64bd2f958133bdbfd0b83b2ef82661b5eced1686f8df617fe19fd",
+        "kickoff": "2026-07-09T02:00:00Z",
+        "pick_date": "2026-07-08",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Indiana Fever",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Indiana Fever vs. Los Angeles Sparks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-08/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

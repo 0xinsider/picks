@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-24",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-24T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xe4e772127cc217f1f9ab8efabfd1cc99ecbed62795fafd3a0d11e025209e703d",
+        "kickoff": "2026-08-24T19:30:00Z",
+        "pick_date": "2026-08-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Málaga CF vs. RC Deportivo A Coruña",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-24/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-24T22:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x7e30518fe626e4cef2e0555fa78bdce118cbbb06a6573176d008fbefa60d78e6",
+        "kickoff": "2026-08-24T22:40:00Z",
+        "pick_date": "2026-08-24",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Boston Red Sox",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Boston Red Sox vs. Miami Marlins",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-24/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-24T22:40:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x5dd3107b56add2c1fba38749425ee6813404d688d91793f03f2dde5311c06fbf",
+        "kickoff": "2026-08-24T22:40:00Z",
+        "pick_date": "2026-08-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Petra Marcinko",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Monterrey Open: Alycia Parks vs Petra Marcinko",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-24/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T02:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.835000",
+        "condition_id": "0x552c6d19a96ad370e8fc09c14c3108c2c866822295b70c6deb751a0eee65241f",
+        "kickoff": "2026-08-25T02:00:00Z",
+        "pick_date": "2026-08-24",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Dream",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Dream vs. Los Angeles Sparks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-24/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-25T00:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0x2ea48057ba7d1d7aa31811e8dd33456010bc70e605b2a69cc9e053cc662168aa",
+        "kickoff": "2026-08-25T00:00:00Z",
+        "pick_date": "2026-08-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Minnesota Lynx",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Golden State Valkyries vs. Minnesota Lynx",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-24/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

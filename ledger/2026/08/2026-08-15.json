@@ -1,0 +1,117 @@
+{
+  "pick_date": "2026-08-15",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-15T14:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x1acd92f5aec41db1661c63b2d5dde097066629fb790e783b6085eb198a160441",
+        "kickoff": "2026-08-15T14:20:00Z",
+        "pick_date": "2026-08-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: FURIA vs 9z (BO3) - Esports World Cup Group D",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-15/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-15T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xd03e553f3155d33f7a69c17d3cb5da7118e64728cd85168adc092da8af96c29a",
+        "kickoff": "2026-08-15T21:00:00Z",
+        "pick_date": "2026-08-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Jalin Turner",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 330: Jalin Turner vs. Kauê Fernandes (Lightweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-15/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-15T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x2d8925e0ce6331a55a8f983473007663ebbad0e97bd68d205d66a60b76cfedbd",
+        "kickoff": "2026-08-15T21:00:00Z",
+        "pick_date": "2026-08-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Mackenzie Dern",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 330: Mackenzie Dern vs. Gillian Robertson (Women's Strawweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-15/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-15T15:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x5e50c2d534082718721937f2b26046a530fca2f449a6a044aa05992ae0255899",
+        "kickoff": "2026-08-15T15:00:00Z",
+        "pick_date": "2026-08-15",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Fnatic",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: SK Gaming vs Fnatic (BO3) - LEC Regular Season",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-15/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

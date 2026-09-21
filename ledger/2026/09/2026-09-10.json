@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-10",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T16:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x71ef4b07995749db0b495651842932f124e1b3a4a76e0fd1a7253fbf56ce0f82",
+        "kickoff": "2026-09-10T16:45:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "PSV vs. FK Shakhtar Donetsk",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xbc2411ad32549a7d62055cc59ecef3ce98e8c827451addc324321fffe5c29b86",
+        "kickoff": "2026-09-10T19:00:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Como 1907 vs. RB Leipzig",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.915000",
+        "condition_id": "0xaed88e69aa25b45dc1a0d57e364b218433b0caebb84b07a2de08c67003f501c8",
+        "kickoff": "2026-09-10T19:00:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Bayern München vs. FK Bodø/Glimt",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T23:40:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xb7dbd21e41e7ee8de5f3b8790fb368d557e9eb99b4c2f6d158c61a692bd75952",
+        "kickoff": "2026-09-10T23:40:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Pittsburgh Pirates vs. Chicago White Sox",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T20:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x85b7eb83d58ead0dd40178d172da5f2cbe109182f7d0f7f270331921cc4424aa",
+        "kickoff": "2026-09-10T20:10:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Texas Rangers vs. Seattle Mariners",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-10T23:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x1c66ff15c93e9dba79cd95cbb9a11027beb9d4ddffe3c8476f027fbfb8c03f5c",
+        "kickoff": "2026-09-10T23:30:00Z",
+        "pick_date": "2026-09-10",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Imperial",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: paiN vs Imperial (BO3) - PGL Masters Bucharest: South American Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-10/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

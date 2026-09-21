@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-11",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-11T21:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x5a6619f625da519b9d26f64f6da00c564465e27b6c31f39c83e311e2a4ca0325",
+        "kickoff": "2026-07-11T21:00:00Z",
+        "pick_date": "2026-07-11",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Benoît Saint Denis",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC 329: Paddy Pimblett vs. Benoît Saint Denis (Lightweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-11/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

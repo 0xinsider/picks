@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-01",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-01T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x4392452acafb206803b6059774c0b3af214a3933488e9eaa25d388db7d4e8b90",
+        "kickoff": "2026-09-01T18:45:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "West Ham United FC vs. Wolverhampton Wanderers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-01T15:05:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x2ee43c144834af44ab0e677d89807de5608bce1b473d77f7d77cdfe51e4ef9b6",
+        "kickoff": "2026-09-01T15:05:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Corentin Moutet",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Dane Sweeny vs Corentin Moutet",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-01T18:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x4afe69cf470775f8d8c13789d063bf7fd9b27d6d2a5fdbae5f724a7b8131ba07",
+        "kickoff": "2026-09-01T18:45:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Portsmouth FC vs. Derby County FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-02T21:20:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xabdcddc1985b18fe7fe24307f69c51bd35dd529bdb197bbb1ec04313f86dd20d",
+        "kickoff": "2026-09-02T21:20:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Francesco Passaro",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Jesper de Jong vs Francesco Passaro",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-01T15:05:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0xa8f6a97d5f8b82d8538d42bbd52abc56b03bdcc3cb55b9e129cd2c404f75e0e6",
+        "kickoff": "2026-09-01T15:05:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Robin Montgomery",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open WTA: Maria Sakkari vs Robin Montgomery",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-01T15:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.945000",
+        "condition_id": "0xd7c868bc2277862455abd630be8b4b245d3d7e9ecec63025e4993e4a7315f2f9",
+        "kickoff": "2026-09-01T15:05:00Z",
+        "pick_date": "2026-09-01",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Elena Rybakina",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open WTA: Thea Frodin vs Elena Rybakina",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-01/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

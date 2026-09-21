@@ -1,0 +1,89 @@
+{
+  "pick_date": "2026-09-08",
+  "picks": [
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-08T23:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x2b3db8eabcb66fa820a4f487f2c5ad7af2447bd36f89471f9f8b1a1383e1808d",
+        "kickoff": "2026-09-08T23:40:00Z",
+        "pick_date": "2026-09-08",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Chicago Cubs vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-08/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-08T16:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x39280ab9591ddebda5a2564c9702c56f0793983c597b868502548cfb7c908045",
+        "kickoff": "2026-09-08T16:45:00Z",
+        "pick_date": "2026-09-08",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Club Brugge KV vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-08/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-08T13:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x726e25c3283dff77dfe54ed33ec67c8b2444cab5fccd7d245b5eb77aeeddda86",
+        "kickoff": "2026-09-08T13:45:00Z",
+        "pick_date": "2026-09-08",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "G2",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: G2 vs Astralis (BO3) - FISSURE PLAYGROUND Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-08/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

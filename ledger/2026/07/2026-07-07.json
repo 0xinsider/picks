@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-07",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-07T20:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0xd894e6a98b1d031f77aa51cfb9a6abaff2bb8dbc82c5f66e4f2cd31aaa8f097a",
+        "kickoff": "2026-07-07T20:00:00Z",
+        "pick_date": "2026-07-07",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 2.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Switzerland vs. Colombia",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-07/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

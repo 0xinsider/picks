@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-16",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T17:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.915000",
+        "condition_id": "0xbd5bf339f84b82d25330cc1104a69a223267f0c2e71baad01d0a5608ed4d9565",
+        "kickoff": "2026-09-16T17:00:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Club Atlético de Madrid vs. CA Osasuna",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T23:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xeb93a532e0ed0b1366722e18927cc107ff95a35f3e7bba0881f5265b8c8b5aae",
+        "kickoff": "2026-09-16T23:10:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New York Mets",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Baltimore Orioles vs. New York Mets",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x58625c0213561a33235ec0eeb716a8b7b82c9fa906f58b2d3a3d0de532083921",
+        "kickoff": "2026-09-16T19:00:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "AC Milan vs. Sport Lisboa e Benfica",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.915000",
+        "condition_id": "0xc31f58938890ea7754114905a40b6ba65a837371d435709d4a253147732bcb7a",
+        "kickoff": "2026-09-16T19:30:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Barcelona vs. Real Racing Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T22:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x6fe65ea3a60632c75216bd3739a73cb5e8725fef9847e5a1e2f5302584a7fe7a",
+        "kickoff": "2026-09-16T22:40:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Milwaukee Brewers vs. Pittsburgh Pirates",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-16T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.785000",
+        "condition_id": "0x7d0aec7b921746c794aadf1a82025fe28a4ccf36584124874ac32df2e16343c2",
+        "kickoff": "2026-09-16T21:00:00Z",
+        "pick_date": "2026-09-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Iva Jovic",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Guadalajara Open Akron: Zeynep Sonmez vs Iva Jovic",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-16/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

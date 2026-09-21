@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-21",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-21T17:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xdee37cc787bfe76e743a3f9f8d44e2b6d43a814fbdbac1adf397dd7742f5c70e",
+        "kickoff": "2026-08-21T17:00:00Z",
+        "pick_date": "2026-08-21",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Madison Keys",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Open: Sara Bejlek vs Madison Keys",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-21/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-21T23:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x81fe4afa22abd82c7a245ef80316e6757bcd1823fd03fbfd3a87546165101e28",
+        "kickoff": "2026-08-21T23:05:00Z",
+        "pick_date": "2026-08-21",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New York Yankees",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Toronto Blue Jays vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-21/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-21T20:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x8147c63c6c838f7f4f41353fb0078ac08dae99b90685f895c88db6214b197854",
+        "kickoff": "2026-08-21T20:10:00Z",
+        "pick_date": "2026-08-21",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Braves vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-21/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-21T21:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.755000",
+        "condition_id": "0xeedbf469ed55b13bed17738956d9608b7a2a4b46130e6834e61c05e7b6a8e716",
+        "kickoff": "2026-08-21T21:00:00Z",
+        "pick_date": "2026-08-21",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "MIBR",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: MIBR vs Team Envy (BO3) - VCT Americas Stage 2 Play-In",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-21/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-22T00:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xdc9c6b85fa70d1797d4572d2dc62466b3f12da7c1a807d1061bdb3338bd445d6",
+        "kickoff": "2026-08-22T00:00:00Z",
+        "pick_date": "2026-08-21",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Vit Kopriva",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Cancun: Vit Kopriva vs Lloyd Harris",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-21/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

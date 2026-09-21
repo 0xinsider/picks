@@ -1,0 +1,177 @@
+{
+  "pick_date": "2026-09-20",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T13:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.905000",
+        "condition_id": "0xae3cdea724ee0390f3fcd8fc2a04061d18a4d9b29a62bd3ffd7960dfa9466ef0",
+        "kickoff": "2026-09-20T13:00:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Manchester City FC vs. Sunderland AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T17:00:00Z",
+      "resolved_at": "2026-09-20T20:55:53.725562Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xe300ef3e8db2845bf70756f9346ba69db2ecfa25919057ff5b71ff771cf0afc1",
+        "kickoff": "2026-09-20T17:00:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Texans",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Bengals vs. Texans",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-20T20:55:53.725562Z",
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T17:00:00Z",
+      "resolved_at": "2026-09-20T20:29:10.945542Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x4ff3c7e21aba2179c8ab4bad68fd928f99eebbffe083cd132ee7e0db234787cd",
+        "kickoff": "2026-09-20T17:00:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Eagles",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Eagles vs. Titans",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-20T20:29:10.945542Z",
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T20:25:00Z",
+      "resolved_at": "2026-09-21T02:04:37.996079Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xe8c438da07835b401331142e8db93e4f12b4a96c33bf53f1dda269e2b2a324e5",
+        "kickoff": "2026-09-20T20:25:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Commanders vs. Cowboys",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-21T02:04:37.996079Z",
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T20:05:00Z",
+      "resolved_at": "2026-09-20T23:34:51.925183Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x2ebc4a6c10a45f67d0d8060a55af42141cf7d3ccc64a6324dbf56f4613d7893e",
+        "kickoff": "2026-09-20T20:05:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chargers",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Raiders vs. Chargers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-20T23:34:51.925183Z",
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-20T15:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x8ae77a846b4303f9cbe52f6c7ce00df07cc121113b68d41ccecdfa9e8b14a099",
+        "kickoff": "2026-09-20T15:30:00Z",
+        "pick_date": "2026-09-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Schalke 04 vs. SV 07 Elversberg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-20/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

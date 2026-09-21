@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-10",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-10T14:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xe230f8809264c1db9b527d8b85f51ca4db699a950a85c2a01818eeb7fef77f6d",
+        "kickoff": "2026-08-10T14:00:00Z",
+        "pick_date": "2026-08-10",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Trent Rockets",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "The Hundred, Women: Trent Rockets vs Southern Brave",
+      "category": "Cricket",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-10/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

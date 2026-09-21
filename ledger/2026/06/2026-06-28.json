@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-06-28",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-06-28T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0xba66cc3b0bcb50844c89c8efdc828818cf49c44de3d85df393a904135cfbc77c",
+        "kickoff": "2026-06-28T19:00:00Z",
+        "pick_date": "2026-06-28",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "O/U 2.5 (Over)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "South Africa vs. Canada",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-06-28/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

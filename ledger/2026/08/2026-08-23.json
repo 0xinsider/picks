@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-23",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-23T15:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x6ae54b57f576915b00f24e95c48c5f49fa7a40247caed58746654e7bfce4613a",
+        "kickoff": "2026-08-23T15:30:00Z",
+        "pick_date": "2026-08-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Newcastle United FC vs. Liverpool FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-23/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-23T13:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xb65d98226a81dc3bf6492058bed4c1cae550c3896cd02e4b8b27d9ba0fa8fbd4",
+        "kickoff": "2026-08-23T13:00:00Z",
+        "pick_date": "2026-08-23",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Brighton & Hove Albion FC vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-23/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-23T12:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0xae19646ab0707d899fc91294975ebd4c393cc831d2c02fb643c210184d9a8852",
+        "kickoff": "2026-08-23T12:20:00Z",
+        "pick_date": "2026-08-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Bilibili Gaming",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: Bilibili Gaming vs Anyone's Legend (BO3) - LPL Group Ascend",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-23/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-23T18:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x2e80b5c7214dac276ca963eb3eee511a6e8d97192eb6f1f5f994eb3aa44d9514",
+        "kickoff": "2026-08-23T18:10:00Z",
+        "pick_date": "2026-08-23",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Houston Astros",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Athletics vs. Houston Astros",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-23/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-23T17:35:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x5f92abba1a5a07dc3622397f3c7deb7704859ce68bbf7f23a511d6ea36191cd9",
+        "kickoff": "2026-08-23T17:35:00Z",
+        "pick_date": "2026-08-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "St. Louis Cardinals vs. Philadelphia Phillies",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-23/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

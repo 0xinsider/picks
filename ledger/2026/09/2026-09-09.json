@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-09",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T20:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xfddff88a8bf31587369b5c7e41df944385c23405f38d40efaf43c8c77995d0c5",
+        "kickoff": "2026-09-09T20:10:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Seattle Mariners",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Texas Rangers vs. Seattle Mariners",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T19:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x2157d1d3ef29ee4430dcddc09cada541b3d0e26c401ecbba37395e679c8a4d90",
+        "kickoff": "2026-09-09T19:45:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "St. Louis Cardinals",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "St. Louis Cardinals vs. San Francisco Giants",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T23:15:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x86527d6e4c9629d1ac042c9a7223ac20f31ba076f588be15858ca9442594aa65",
+        "kickoff": "2026-09-09T23:15:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Tampa Bay Rays vs. Atlanta Braves",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.945000",
+        "condition_id": "0x678c72a70172ed914081147f996de4f38c62957a9da34c13f353675e47e665d8",
+        "kickoff": "2026-09-09T19:00:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Paris Saint-Germain FC vs. ŠK Slovan Bratislava",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.845000",
+        "condition_id": "0x1f650b7cc1994d859a86db35811ddcad79fa34c63b9c15c59fbcfe1a9d7ccf9b",
+        "kickoff": "2026-09-09T19:00:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "SSC Napoli vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-09T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.755000",
+        "condition_id": "0xb8f81d94ce4986829b74edf344088a18d72ff2dbabafbdf075b494fd7c63bc25",
+        "kickoff": "2026-09-09T19:00:00Z",
+        "pick_date": "2026-09-09",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Sporting CP vs. Galatasaray SK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-09/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

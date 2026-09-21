@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-31",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-31T18:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xd9ffd56a2b37a016a19c5810bfadb78b498073596d0e0dc7b82367cdc6067d4a",
+        "kickoff": "2026-07-31T18:20:00Z",
+        "pick_date": "2026-07-31",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 10.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "New York Yankees vs. Chicago Cubs",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-31/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

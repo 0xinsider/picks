@@ -26,8 +26,21 @@ Clone the full history. `--depth 1` disables the checks that matter.
 ## The record
 
 <!-- RECORD:BEGIN -->
-Nothing is mirrored yet. This table fills in with the first sealed pick.
+Record through 2026-09-20.
 
+| | |
+| --- | --- |
+| Decided picks | 250 |
+| Record | 169W 81L 0V |
+| Hit rate | 67.6% |
+| $100 per pick | +1747.13 USD on 25000 staked |
+| ROI | +7.0% |
+| Sealed, not yet settled | 0 |
+| Proven sealed before kickoff | 0 |
+| No pre-game proof (pre-commitment) | 250 |
+
+Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
+`python3 verify.py` prints the same numbers from the same data.
 <!-- RECORD:END -->
 
 ## Read next

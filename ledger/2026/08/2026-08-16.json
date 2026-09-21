@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-16",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-16T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xbfbf42bef7dc25cd95c59937a4216db962670d78f766e7730befa4cdad9bad31",
+        "kickoff": "2026-08-16T14:00:00Z",
+        "pick_date": "2026-08-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Arsenal FC vs. Manchester City",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-16/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-16T15:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.945000",
+        "condition_id": "0xb1965d23b99c7fdce5c12e2d73d4cd479820c7df06543915b1ff19bad395c318",
+        "kickoff": "2026-08-16T15:00:00Z",
+        "pick_date": "2026-08-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Real Racing Club vs. Villarreal CF - Exact Score",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-16/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-16T20:05:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x6fddce34d8fdcf556df5877e7c3f735c50a89ab8a77a289c7148b0bbdb2e8d82",
+        "kickoff": "2026-08-16T20:05:00Z",
+        "pick_date": "2026-08-16",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Texas Rangers vs. Athletics",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-16/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-16T20:07:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xc24bcc1a5bbd1ce42a18a5068c7083f0a8086acf50fcd8f9f71a0009a64d7ca6",
+        "kickoff": "2026-08-16T20:07:00Z",
+        "pick_date": "2026-08-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Kansas City Royals vs. Los Angeles Angels",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-16/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-16T20:07:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x9019df917a2138b6c262b8328bb287198155d75692c95b01c386c7a0a95837b5",
+        "kickoff": "2026-08-16T20:07:00Z",
+        "pick_date": "2026-08-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Kansas City Royals vs. Los Angeles Angels",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-16/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-08-31",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xd4cea7608974a3f2df2c6cd4aac691f17d251b874ee4e8eea39af6949c4ad995",
+        "kickoff": "2026-08-31T19:00:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Aston Villa FC vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T18:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.865000",
+        "condition_id": "0x0ad46aaba4c52ab9362db7583ab24adcc61fee016caa6a3cbbc656fd7948c47c",
+        "kickoff": "2026-08-31T18:00:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Alex Michelsen",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Alex Michelsen vs Federico Cina",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.895000",
+        "condition_id": "0x7ba4b8ed93b6d9f45b9408ec8d88b1f8db6dc31169cb289b82280df74d4f62a8",
+        "kickoff": "2026-08-31T19:30:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Barcelona vs. Rayo Vallecano de Madrid",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T15:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.825000",
+        "condition_id": "0xe543cec96cf0cc7a178a5170967a7dcb5c41f83156281c95db4aba4fd031bbe1",
+        "kickoff": "2026-08-31T15:10:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Andrey Rublev",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Otto Virtanen vs Andrey Rublev",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T17:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.805000",
+        "condition_id": "0x297fe2f6faf226fd6c14723f2ea87277e100169bb16ae13bae2f607528a2065f",
+        "kickoff": "2026-08-31T17:30:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Carlos Alcaraz",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Roman Safiullin vs Carlos Alcaraz",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-31T17:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.775000",
+        "condition_id": "0xa61bd6c54485d8f285695ad48b5f9c399792d13efcef1dcb832ede85ec4f7f87",
+        "kickoff": "2026-08-31T17:30:00Z",
+        "pick_date": "2026-08-31",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "CA Osasuna vs. Getafe CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-31/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

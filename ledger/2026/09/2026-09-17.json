@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-17",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T17:15:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x8423d656824034ef0c7d27ee32fabd21263461cae31cf516a7a5ece6679dac1e",
+        "kickoff": "2026-09-17T17:15:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: FURIA vs MIBR (BO3) - StarLadder StarSeries Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x33c98ecf11ccb6be728ded92bf63288824e1f5e5fc0edfa64339d7898526ea17",
+        "kickoff": "2026-09-17T14:00:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Luminosity",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Luminosity vs B8 (BO1) - Logitech G Play Connect Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T19:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x8f68d5432811c920ca592162c60ce225d95888ca1a412a075a79114b52ef3031",
+        "kickoff": "2026-09-17T19:10:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "San Diego Padres vs. Colorado Rockies",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T18:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.865000",
+        "condition_id": "0xa9e2303ea4190c96c06513cf1c3554777828f3845d27af44f1f166eae6d3a6b5",
+        "kickoff": "2026-09-17T18:30:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Manchester City FC vs. Norwich City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x386a631f08cd363f4d3f14ca082d066424bb805dbdf31122f75d0ecaa8a09ac8",
+        "kickoff": "2026-09-17T19:00:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Beşiktaş JK vs. Olympique de Marseille",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-17T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.835000",
+        "condition_id": "0xbb5df221a8f1475d306a5992e35689ae6b6603df17102cb5da8d7161aa336a5b",
+        "kickoff": "2026-09-17T19:00:00Z",
+        "pick_date": "2026-09-17",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Juventus FC vs. NEC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-17/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

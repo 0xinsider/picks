@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-06-30",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-06-30T17:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x7f631610811039f03e85106365e1ef4a34dc6bf8329acb700734a7d859dcc5a2",
+        "kickoff": "2026-06-30T17:00:00Z",
+        "pick_date": "2026-06-30",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "O/U 2.5 (Over)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Côte d'Ivoire vs. Norway",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-06-30/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

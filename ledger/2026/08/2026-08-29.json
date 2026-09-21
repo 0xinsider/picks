@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-08-29",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T18:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.245000",
+        "condition_id": "0x220a396cb0518cffc9fcc78263bd89f295c1a52f365a789d74ab5f5ae7b58f6f",
+        "kickoff": "2026-08-29T18:30:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Galatasaray SK vs. Göztepe SK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T16:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x9023707a37d834eac5b71c585abe3ae428f1baa67eb2569b13d134d4bdeb994c",
+        "kickoff": "2026-08-29T16:30:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Tottenham Hotspur FC vs. Newcastle United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.775000",
+        "condition_id": "0x1d002c0c5b00a7d31008acfde8b4bb84b683a09b59f7eec2168662b64f5d9420",
+        "kickoff": "2026-08-29T19:30:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Sevilla FC vs. Club Atlético de Madrid",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T13:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0xcc14b915a78cec9356036c07ea43b1a18ed156d95446ed700b7b531129fb4a8a",
+        "kickoff": "2026-08-29T13:30:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "RB Leipzig vs. Borussia Mönchengladbach",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T14:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x1acd5a75f344dae60c2de50562ef74ce292972fc8106b9520b727c87c04886cf",
+        "kickoff": "2026-08-29T14:00:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "AFC Bournemouth vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-29T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.805000",
+        "condition_id": "0x8dea4a249f83165acc3ee49351a7aaca74d7a7a320d1ebdf046393ba464850b9",
+        "kickoff": "2026-08-29T14:00:00Z",
+        "pick_date": "2026-08-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Coventry City FC vs. Hull City AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-29/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

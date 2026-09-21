@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-12",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T20:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x358fac828edf5c64c2c274b859f45f9c7637e7932e601fed7067860db90d5ab5",
+        "kickoff": "2026-09-12T20:10:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Aryna Sabalenka",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open WTA: Aryna Sabalenka vs Elena Rybakina",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T13:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x6352595bf01bca2d21b3f48c9a12f4f5a52cc6116ff57bdc3b215e70a1c74414",
+        "kickoff": "2026-09-12T13:30:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "1. FSV Mainz 05 vs. Eintracht Frankfurt",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T13:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0x80097de7cbab373b5e790ee6c4c644c86550b460ce3fcd52d231b31d51025180",
+        "kickoff": "2026-09-12T13:30:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. SC Paderborn 07",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xe85e0544e5c95c05ab0fddf3b924882a4458698b63efecf982169a6966c0aed6",
+        "kickoff": "2026-09-12T19:00:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Real Madrid CF vs. Rayo Vallecano de Madrid",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xfca8efe0762f25602fcaae551f6fbc6416f7061db1ddd87ac3b3f29bf6edcd78",
+        "kickoff": "2026-09-12T19:00:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Sunderland AFC vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-12T20:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x0d02e8bd57537e606167b6f7e9ef37dd7e1a5ee1476c239de652404abcac0094",
+        "kickoff": "2026-09-12T20:05:00Z",
+        "pick_date": "2026-09-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "San Diego Padres",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "San Diego Padres vs. San Francisco Giants",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-12/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "pick_date": "2026-08-22",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-22T16:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x9359698aab64d2cf210dbee9926d01188cb5277a3442dcf0552855842c44dce0",
+        "kickoff": "2026-08-22T16:30:00Z",
+        "pick_date": "2026-08-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Brentford FC vs. Tottenham Hotspur FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-22/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-22T16:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.825000",
+        "condition_id": "0x8a24f97a20f511de4e6d13d8317e78d95ec7753e3f359434e4ac6e3f7bb13a9b",
+        "kickoff": "2026-08-22T16:30:00Z",
+        "pick_date": "2026-08-22",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "FC Internazionale Milano vs. AC Monza",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-22/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-22T17:35:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xd918ffb1aa137a718494ee2537e0bd7bc83c723c45023ba9beeb8e167e791b47",
+        "kickoff": "2026-08-22T17:35:00Z",
+        "pick_date": "2026-08-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New York Yankees",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Toronto Blue Jays vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-22/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-22T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xed31efc5fbf2602d82b3f7fed2aef82fc31bc7ec3dd117c6ee23ab48a3976ca2",
+        "kickoff": "2026-08-22T18:45:00Z",
+        "pick_date": "2026-08-22",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Genoa CFC vs. SSC Napoli",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-22/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

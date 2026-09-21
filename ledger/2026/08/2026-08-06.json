@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-06",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-06T20:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xb84d748259c817c0203121ab58eb6a420cb11bb01286483361ecaefe8dcddf23",
+        "kickoff": "2026-08-06T20:10:00Z",
+        "pick_date": "2026-08-06",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 7.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Detroit Tigers vs. Seattle Mariners",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-06/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

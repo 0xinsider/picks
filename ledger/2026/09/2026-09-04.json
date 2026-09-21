@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-04",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T18:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xc4ee385ce2c676398c5fc34eae726956ca59aac463c392826a3fd4882622da48",
+        "kickoff": "2026-09-04T18:30:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "VfB Stuttgart vs. 1. FC Köln",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T16:50:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xbf1350ee0c80864f0885e41dfa870ddd937e3e3a9d2ad68a150f355038d198fc",
+        "kickoff": "2026-09-04T16:50:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Vitality",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: FURIA vs Vitality (BO3) - BLAST Open Porto Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T17:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xf45ae9c1ca7e96e7d8f35e65fc60a0adf1518ddf0a8762deda434408dfef2128",
+        "kickoff": "2026-09-04T17:00:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "NRG",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: NRG vs 100 Thieves (BO3) - VCT Americas Stage 2 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T19:05:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xfbacad163f295dc0f48a3142ccf567d4212cfd3fef066a118383f18d259f0a60",
+        "kickoff": "2026-09-04T19:05:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Paris Saint-Germain FC vs. AS Monaco FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T18:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xf8db2d50c0c59310cb57c10df0316049ba9b05600f0de1d7af21bbc71b9f3499",
+        "kickoff": "2026-09-04T18:30:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "VfB Stuttgart vs. 1. FC Köln",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-04T18:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xb4528250bfbecacd1da31cd9dac28d32077c66cc921a8598da6b8e4265144507",
+        "kickoff": "2026-09-04T18:10:00Z",
+        "pick_date": "2026-09-04",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Detroit Tigers",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Detroit Tigers vs. Cleveland Guardians",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-04/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

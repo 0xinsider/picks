@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-16",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-16T15:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.955000",
+        "condition_id": "0x6b448da9512376360a6b93662e31412fd9559979b5d76d2a3e1cb01c949e2b8f",
+        "kickoff": "2026-07-16T15:00:00Z",
+        "pick_date": "2026-07-16",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "UCAM Esports Club",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: FALKE Esports vs UCAM Esports Club (BO3) - LES Regular Season",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-16/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-18",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xe6f8d2ea7b2c305b5a6a62d5d3fd1016be1b0fee9f566486c5da6809be7a89fd",
+        "kickoff": "2026-09-18T18:45:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "AC Monza vs. US Sassuolo Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0xbdd54adcdfc01d5e5c748aa0f65a1736c0f2b9491197f221d2f1ece291612e23",
+        "kickoff": "2026-09-18T19:00:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Brentford FC vs. Chelsea FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T23:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0xee9a9e0bf7bb416d5202ef42d3fc5233d3382b3f282a880d8536715607a46095",
+        "kickoff": "2026-09-18T23:10:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Cleveland Guardians",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Athletics vs. Cleveland Guardians",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T18:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xa3a3db2b020de051c38a41c95a4a3928e3e9a2aea6e3e568140bd198e0b7a09e",
+        "kickoff": "2026-09-18T18:05:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Anna Blinkova",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Sao Paulo Open: Anna Blinkova vs Alina Charaeva",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x4f279ecef58db6d500c5a0035aa1f4cb84ee9202a47f358ef045dce01ef5b726",
+        "kickoff": "2026-09-18T19:00:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "RCD Espanyol de Barcelona vs. Elche CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-18T23:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0xaffb4da3bda1fb6b9ce8439a77a594b755ad74b5a5759297d2e00ca947651d8b",
+        "kickoff": "2026-09-18T23:05:00Z",
+        "pick_date": "2026-09-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Milwaukee Brewers vs. Baltimore Orioles",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-18/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

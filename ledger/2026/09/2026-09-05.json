@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-09-05",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-05T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x602157314e94159cece4a691f3522a2aa996eb398bd61c976949964a5a5bdf07",
+        "kickoff": "2026-09-05T14:00:00Z",
+        "pick_date": "2026-09-05",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Brentford FC vs. Sunderland AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-05/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-05T14:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xd373f6ee043862d6bb957f5e88960f85e651769b7b4d321d240282c9511a0459",
+        "kickoff": "2026-09-05T14:00:00Z",
+        "pick_date": "2026-09-05",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Nottingham Forest FC vs. Tottenham Hotspur FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-05/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-05T14:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.855000",
+        "condition_id": "0x01f5f783dcd2ddbd09c95c3db36c4a34d2c4772f15767eeb5a94bb8ff79cd2d9",
+        "kickoff": "2026-09-05T14:00:00Z",
+        "pick_date": "2026-09-05",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Manchester City FC vs. Coventry City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-05/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-05T16:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.925000",
+        "condition_id": "0x3b3d6ae6b3611b8cae912d876bc2b4f640d944e0710cf082180ef4de838703ad",
+        "kickoff": "2026-09-05T16:00:00Z",
+        "pick_date": "2026-09-05",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "West Virginia",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Coastal Carolina vs. West Virginia",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-05/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-05T18:30:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xcb316ba3df8b00a180006d2c74f91e4dd013b28fee827e83c65c7b9f2ce97334",
+        "kickoff": "2026-09-05T18:30:00Z",
+        "pick_date": "2026-09-05",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "NRG",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: NRG vs LOUD (BO5) - VCT Americas Stage 2 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-05/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

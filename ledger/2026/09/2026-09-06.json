@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-06",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T14:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xe90998971549abaaf98d3f33afb1288f8a4bbb27f9498b7da8d5be79b0cc28f7",
+        "kickoff": "2026-09-06T14:00:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Spirit",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Spirit vs MOUZ (BO5) - BLAST Open Porto Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T15:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x4e012ba21e4b4046d9ba75766e42398ae7d52cdae6f35ecf2bfcb742589a4634",
+        "kickoff": "2026-09-06T15:00:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Karmine Corp",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: G2 Esports vs Karmine Corp (BO5) - LEC Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T13:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x28d4916df120dddf191d862733dc80360dab539024cba75b87cf588438cb4c00",
+        "kickoff": "2026-09-06T13:00:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Everton FC vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T15:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.815000",
+        "condition_id": "0x48dac8dba111282af0f4ad7a489b6e480d9c51e83e2911fc3dc012deb5ce5352",
+        "kickoff": "2026-09-06T15:30:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Arsenal FC vs. Chelsea FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T13:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.755000",
+        "condition_id": "0x6a368c7b3755a6f5f38f04576cc1ef10c920de3a0171682b7fede7d92d4646d8",
+        "kickoff": "2026-09-06T13:00:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Everton FC vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-06T13:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x0e275412d1a0e93ea25563435606244f852c7f14948ed06d54f39576a29d03f1",
+        "kickoff": "2026-09-06T13:00:00Z",
+        "pick_date": "2026-09-06",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Frosinone Calcio vs. Venezia FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-06/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

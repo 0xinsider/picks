@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-05",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-05T18:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xc816e5752d43d1436cd982d4634898feed183808a83f3f5cae30d1bd99150fef",
+        "kickoff": "2026-08-05T18:10:00Z",
+        "pick_date": "2026-08-05",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Toronto Blue Jays",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Toronto Blue Jays vs. Houston Astros",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-05/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

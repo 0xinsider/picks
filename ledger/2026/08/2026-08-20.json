@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-20",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-20T18:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xbabc896225844371b57a54468c5e2638a47fc64039765fb61c68d10f23885331",
+        "kickoff": "2026-08-20T18:10:00Z",
+        "pick_date": "2026-08-20",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Braves",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Braves vs. Chicago White Sox",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-20/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-20T18:10:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xfd2052594f25def40a18550640ee55714e2b45e1302e1ed59a8b96427742992d",
+        "kickoff": "2026-08-20T18:10:00Z",
+        "pick_date": "2026-08-20",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Braves vs. Chicago White Sox",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-20/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-20T13:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.815000",
+        "condition_id": "0x9158bb965a8a5a9bac0b29bc4774567771c780255ecda1ebd0b291bebe4c5e90",
+        "kickoff": "2026-08-20T13:30:00Z",
+        "pick_date": "2026-08-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Spirit",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: B8 vs Spirit (BO3) - Esports World Cup Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-20/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-20T23:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x3bae865f39fd0cc48f2fe2e751567bff85a09a195ff6661a92b376daee3d9351",
+        "kickoff": "2026-08-20T23:05:00Z",
+        "pick_date": "2026-08-20",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Iga Swiatek",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Open: Iga Swiatek vs Elena Rybakina",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-20/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-20T18:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x59475f0686d11a070aebe1cb957f8b721c762db6a734a0540a918fe06cbe07d3",
+        "kickoff": "2026-08-20T18:10:00Z",
+        "pick_date": "2026-08-20",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Seattle Mariners vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-20/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

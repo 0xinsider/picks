@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-12",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-12T15:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.825000",
+        "condition_id": "0xb96585ac41b808bac0bcfa00f39a92990c64dc413804368c7191ad4e1cd299a5",
+        "kickoff": "2026-07-12T15:00:00Z",
+        "pick_date": "2026-07-12",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Jannik Sinner",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Jannik Sinner vs Alexander Zverev",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-12/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

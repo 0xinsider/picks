@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-18",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-18T18:20:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xd24021ba63231469b94b0af527ae8583502f4f37c25f12c2be7cd56d2e69065a",
+        "kickoff": "2026-07-18T18:20:00Z",
+        "pick_date": "2026-07-18",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 9.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Minnesota Twins vs. Chicago Cubs",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-18/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

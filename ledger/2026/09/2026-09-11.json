@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-11",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T23:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x3e7b0b572b56b0b4d607fed4289f89e4c6fe99b5cb9affe978de57dae1091474",
+        "kickoff": "2026-09-11T23:40:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Ben Shelton",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Frances Tiafoe vs Ben Shelton",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T18:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x0e73596c8b479a1438b955ef883c6ca3bb5cfee51b4c8a243309295c03ff0fd2",
+        "kickoff": "2026-09-11T18:45:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Venezia FC vs. ACF Fiorentina",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T17:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0xcc4b73bcc7f1e4ee3a49099394b98b878326ab6e33a6fdffccf15d90619317e0",
+        "kickoff": "2026-09-11T17:00:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Beşiktaş JK vs. Erzurumspor FK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T14:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x13a61b3fc03a969b0aae2bef21288950e6ae876bdfa5bbdc9234d6d929d08557",
+        "kickoff": "2026-09-11T14:10:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "100 Thieves",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: 3DMAX vs 100 Thieves (BO3) - Thunderpick World Championship Closed Qualifier Group C",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T19:05:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.805000",
+        "condition_id": "0x9de7b05be5b5ee9ac186a60f558de8d3bcabe74a383c01dd0dd3a426e64240d7",
+        "kickoff": "2026-09-11T19:05:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Alexander Zverev",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "US Open ATP: Alexander Zverev vs Karen Khachanov",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-11T19:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x8a045ab5bd960b812f7a8efc15ae54d37502ceefe577cdc4b3f72687c839b82e",
+        "kickoff": "2026-09-11T19:00:00Z",
+        "pick_date": "2026-09-11",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Sevilla FC vs. Valencia CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-11/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

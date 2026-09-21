@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-19",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-19T16:15:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xe1537d96b7be2d51520f443434415af5780acf69eed0e76a05b4019047205d01",
+        "kickoff": "2026-07-19T16:15:00Z",
+        "pick_date": "2026-07-19",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Chicago White Sox",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Chicago White Sox vs. Toronto Blue Jays",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-19/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

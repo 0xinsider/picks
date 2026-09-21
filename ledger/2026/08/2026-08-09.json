@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-08-09",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-09T16:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x5031723d3264a1d135ee3bfdc28c6bf9543d1a9e89b7d73e94379302299a677f",
+        "kickoff": "2026-08-09T16:30:00Z",
+        "pick_date": "2026-08-09",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "New York Liberty",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Las Vegas Aces vs. New York Liberty",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-09/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

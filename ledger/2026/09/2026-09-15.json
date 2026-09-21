@@ -1,0 +1,173 @@
+{
+  "pick_date": "2026-09-15",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T18:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xd68cc9305b0009d837543f3b73c2e0daee968120f1fbb5ba9052fdb91e52632b",
+        "kickoff": "2026-09-15T18:45:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Bristol City FC vs. Lincoln City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T17:00:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x7a617f98cec4d17c7b9d575a73ad7d2f25ccc9124043882ddc362e08b565a74b",
+        "kickoff": "2026-09-15T17:00:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Rayo Vallecano de Madrid vs. RCD Espanyol de Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T19:00:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x85fd06229c4280d09bdf8e7efa324cb7afd6d1ed8f096abab1b990cad50e66ba",
+        "kickoff": "2026-09-15T19:00:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Liverpool FC vs. Tottenham Hotspur FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T19:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.905000",
+        "condition_id": "0x9c6b67ae9ce1786067d48974f7d24461c20ecb88993e6ca6e25a57203c1ae04a",
+        "kickoff": "2026-09-15T19:30:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Elche CF vs. Real Madrid CF - Exact Score",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T23:45:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xcc9f5dbbeba4eee9aaecfe6b567e3095971015f89a375342adffe53889a4c582",
+        "kickoff": "2026-09-15T23:45:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "St. Louis Cardinals",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "San Francisco Giants vs. St. Louis Cardinals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 6,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-09-15T22:45:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x8d22d516068aeb47c5661814c6bb37d40dcee24693a426ac3b43881277527d07",
+        "kickoff": "2026-09-15T22:45:00Z",
+        "pick_date": "2026-09-15",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Philadelphia Phillies vs. Washington Nationals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-15/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

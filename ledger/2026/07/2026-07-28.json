@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-28",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-28T17:40:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xbcb4afb2535f14a91ea3fdeaa430f30fa427d8884d2032d6cdd95ef3f561431d",
+        "kickoff": "2026-07-28T17:40:00Z",
+        "pick_date": "2026-07-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "O/U 8.5 (Under)",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cleveland Guardians vs. Cincinnati Reds",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-28/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

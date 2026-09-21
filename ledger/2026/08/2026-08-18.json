@@ -1,0 +1,145 @@
+{
+  "pick_date": "2026-08-18",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-18T18:50:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x2182f29dc74fa806d339b812e387147dc49422fee17cd67252de6c193f86db18",
+        "kickoff": "2026-08-18T18:50:00Z",
+        "pick_date": "2026-08-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Brandon Nakashima",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Open: Brandon Nakashima vs Daniil Medvedev",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-18/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 2,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-18T23:40:00Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0x74a8c4daafb40392c2eae20e2fa42a2c0b58e43b3ac475d69011b57db78a37ad",
+        "kickoff": "2026-08-18T23:40:00Z",
+        "pick_date": "2026-08-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Seattle Mariners",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Seattle Mariners vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-18/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 3,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-18T23:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.905000",
+        "condition_id": "0xd95b83e4544998f324a078d4f2a30a72374ebcf86d6c3a7534833717887dab03",
+        "kickoff": "2026-08-18T23:10:00Z",
+        "pick_date": "2026-08-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Aryna Sabalenka",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Open: Aryna Sabalenka vs Xinyu Wang",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-18/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 4,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-18T22:40:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xad64a42584abc3ad0a7958e553b9a82e68a96b72daf0d0290ecac118263a3b0e",
+        "kickoff": "2026-08-18T22:40:00Z",
+        "pick_date": "2026-08-18",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Cleveland Guardians",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "San Francisco Giants vs. Cleveland Guardians",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-18/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    },
+    {
+      "pick_rank": 5,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-08-19T00:10:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0xb02fe0513e9d9cc7f8e790b030f700521e72ff45a37251350d0570585fcb6f57",
+        "kickoff": "2026-08-19T00:10:00Z",
+        "pick_date": "2026-08-18",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Los Angeles Angels",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Los Angeles Angels vs. Houston Astros",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-08-18/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}

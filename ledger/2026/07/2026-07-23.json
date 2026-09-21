@@ -1,0 +1,33 @@
+{
+  "pick_date": "2026-07-23",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "state": "opened",
+      "pre_commitment": true,
+      "kickoff": "2026-07-23T17:30:00Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x6c5896252964bbc669677eae6becc35d2afd469801237cb77e4b9357f28e71ad",
+        "kickoff": "2026-07-23T17:30:00Z",
+        "pick_date": "2026-07-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Gentle Mates",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: Gentle Mates vs Natus Vincere (BO3) - VCT EMEA Group Alpha",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-07-23/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        }
+      ]
+    }
+  ]
+}
