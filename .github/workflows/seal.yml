@@ -16,12 +16,19 @@ name: Seal
 # public, timestamped evidence that the pick existed unchanged before kickoff --
 # `verify.py` check 2 reads exactly that commit date. A run that lands after
 # kickoff does not weaken the proof quietly; it fails verification, loudly and
-# permanently, for that pick. Hence the 10-minute cadence: GitHub does not
-# promise punctual cron, and a schedule that only just fits would not fit.
+# permanently, for that pick.
+#
+# THE BACKEND DISPATCHES THIS WORKFLOW the moment it seals a pick
+# (0xinsider/0xinsider#15900), so the hash normally lands within a minute or two.
+# The dispatch only says "now": this workflow still fetches, diffs and commits,
+# and the backend never writes here. The schedule below is the fallback, and it
+# is not enough on its own. On 2026-09-20 GitHub delivered 2 of about 31
+# scheduled runs between 18:52Z and 23:59Z. The minutes are offset from :00,
+# where GitHub sheds the most scheduled runs.
 #
 # WINDOW. Picks drop between 11:00 and 23:00 UTC (OP_WINDOW_START_UTC /
 # OP_WINDOW_END_UTC in the backend). Hours 11-23 cover every drop, and the last
-# run at 23:50 UTC covers a 23:00 drop whose kickoff is 00:00 UTC or later.
+# run at 23:57 UTC covers a 23:00 drop whose kickoff is 00:00 UTC or later.
 #
 # NO CURSOR. The repository is the cursor. A missed run self-heals on the next
 # one, and running this twice in a row writes nothing the second time.
@@ -37,7 +44,7 @@ name: Seal
 
 on:
   schedule:
-    - cron: "*/10 11-23 * * *"
+    - cron: "7-59/10 11-23 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
