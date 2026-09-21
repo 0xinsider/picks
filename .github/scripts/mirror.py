@@ -33,6 +33,22 @@ later outcome change appends to `revisions` and updates `outcome` in place so th
 current truth is readable at the top; the previous value stays in `revisions`, so
 the change is visible in the file as well as in the diff.
 
+PICKS WITH NO PRE-GAME PROOF
+----------------------------
+The endpoint serves a pick that was never sealed as `uncommitted`: every pick
+published before sealing existed, and any pick that reached kickoff unsealed.
+Once it settles, `reveal` records it as an opened entry marked
+`"pre_commitment": true`, with the market, side and price under `payload` and
+no hash, because none was ever taken. A still-pending one is skipped until it
+settles.
+
+A pick the backend DID seal, but whose game started before this repository
+recorded its first sealed commitment, is recorded the same way. Its hash never
+reached a public ledger before its game, so publishing it now would be exactly
+the after-the-fact proof this repository refuses to present as one. Once the
+first seal has landed here, that exception closes: a hash that reaches this
+repository after its kickoff is written as it is, and `verify.py` fails it.
+
 MODES
 -----
   seal        fetch, append commitments not yet committed
@@ -50,7 +66,7 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 from decimal import Decimal
 from pathlib import Path
 
@@ -76,6 +92,7 @@ HEX64_RE = re.compile(r"^[0-9a-f]{64}$")
 TS_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
 
 OUTCOMES = ("win", "loss", "void")
+STATES = ("sealed", "opened", "uncommitted")
 
 # Fields that disclose the backed side. None of them may appear on an entry the
 # endpoint reports as sealed, and the run fails if one does. The value is never
@@ -160,8 +177,17 @@ def fetch_entries(url: str, token: str) -> list[dict]:
     except json.JSONDecodeError as exc:
         raise MirrorError(f"GET {url} did not return JSON: {exc}") from None
 
-    # The endpoint contract (0xinsider/0xinsider#15704) fixes the entry shape but
-    # not the container. Accept a bare array or a single list-valued member, and
+    # The v1 envelope: {"object": "pick_of_the_day_ledger", "data": {"entries":
+    # [...], "entry_count": ...}, "meta": {...}}. Unwrapped first, and the object
+    # name checked, so a different endpoint behind a misconfigured URL fails
+    # here instead of being read as a ledger.
+    if isinstance(parsed, dict) and isinstance(parsed.get("data"), dict):
+        name = parsed.get("object")
+        if name is not None and name != "pick_of_the_day_ledger":
+            raise MirrorError(f"GET {url} returned object {name!r}, not pick_of_the_day_ledger")
+        parsed = parsed["data"]
+
+    # Past the envelope, accept a bare array or a single list-valued member, and
     # fail loudly on anything else rather than silently mirroring nothing.
     if isinstance(parsed, list):
         entries = parsed
@@ -206,14 +232,19 @@ def check_canonical_timestamp(entry: dict, field: str, who: str) -> None:
     )
 
 
-def check_timestamp(entry: dict, field: str, who: str) -> None:
-    """For `sealed_at` and `resolved_at`, which are not hashed.
+def check_timestamp(entry: dict, field: str, who: str, nullable: bool = False) -> None:
+    """For `sealed_at`, `resolved_at` and an unhashed kickoff.
 
     Stored verbatim and checked only for being a real instant. Their precision
     is the endpoint's business: refusing a microsecond here would stop the mirror
-    over a field that no proof depends on.
+    over a field that no proof depends on. `nullable` is for the fields the
+    endpoint documents as `null` when unknown: `resolved_at` on a pick settled
+    before the backend stamped it, and the kickoff of a pick published before
+    kickoffs were frozen.
     """
     value = entry.get(field)
+    if value is None and nullable:
+        return
     require(isinstance(value, str), f"{who}: {field} is missing")
     try:
         datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -235,7 +266,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
     )
     who = f"{pick_date} rank {rank}"
     state = entry.get("state")
-    require(state in ("sealed", "opened"), f"{who}: unknown state {state!r}")
+    require(state in STATES, f"{who}: unknown state {state!r}")
 
     unknown = sorted(set(entry) - KNOWN_FIELDS)
     if unknown:
@@ -269,26 +300,16 @@ def validate(entry: dict) -> tuple[str, int, str]:
         check_canonical_timestamp(entry, "kickoff", who)
         return pick_date, rank, state
 
+    if state == "uncommitted":
+        validate_uncommitted(entry, pick_date, rank, who)
+        return pick_date, rank, state
+
     require(entry.get("outcome") in OUTCOMES, f"{who}: unknown outcome {entry.get('outcome')!r}")
-    check_timestamp(entry, "resolved_at", who)
+    check_timestamp(entry, "resolved_at", who, nullable=True)
 
     payload = entry.get("payload")
     require(isinstance(payload, dict), f"{who}: opened entry has no payload object")
-    missing = verify.PAYLOAD_KEYS - payload.keys()
-    extra = payload.keys() - verify.PAYLOAD_KEYS
-    require(
-        not missing and not extra,
-        f"{who}: payload key mismatch (missing={sorted(missing)}, unexpected={sorted(extra)})",
-    )
-    require(
-        isinstance(payload["backed_price"], str),
-        f"{who}: backed_price must be a JSON string at full stored precision, "
-        f"got {type(payload['backed_price']).__name__}",
-    )
-    require(
-        payload["pick_date"] == pick_date and payload["pick_rank"] == rank,
-        f"{who}: payload identifies {payload['pick_date']} rank {payload['pick_rank']}",
-    )
+    check_payload(payload, pick_date, rank, who)
     check_canonical_timestamp(payload, "kickoff", f"{who} payload")
     if entry.get("kickoff") is not None:
         require(
@@ -323,6 +344,58 @@ def validate(entry: dict) -> tuple[str, int, str]:
     return pick_date, rank, state
 
 
+def check_payload(payload: dict, pick_date: str, rank: int, who: str) -> None:
+    """The eight payload fields, hashed or not. Kickoff form is the caller's."""
+    missing = verify.PAYLOAD_KEYS - payload.keys()
+    extra = payload.keys() - verify.PAYLOAD_KEYS
+    require(
+        not missing and not extra,
+        f"{who}: payload key mismatch (missing={sorted(missing)}, unexpected={sorted(extra)})",
+    )
+    require(
+        isinstance(payload["backed_price"], str),
+        f"{who}: backed_price must be a JSON string at full stored precision, "
+        f"got {type(payload['backed_price']).__name__}",
+    )
+    require(
+        payload["pick_date"] == pick_date and payload["pick_rank"] == rank,
+        f"{who}: payload identifies {payload['pick_date']} rank {payload['pick_rank']}",
+    )
+
+
+def validate_uncommitted(entry: dict, pick_date: str, rank: int, who: str) -> None:
+    """A pick with no commitment: nothing to open, and nothing to leak while live.
+
+    While it is pending it must carry no side and no price, exactly like a
+    sealed entry, and the run fails without writing if it does. Once settled
+    it may carry `payload`, the pick's market, side and price, which nothing
+    was hashed over.
+    """
+    require(entry.get("pre_commitment") is True, f"{who}: uncommitted entry is not marked pre_commitment")
+    carried = [f for f in ("commitment_hash", "commitment_nonce") if entry.get(f) is not None]
+    require(not carried, f"{who}: uncommitted entry carries {carried}")
+    outcome = entry.get("outcome")
+    require(outcome in OUTCOMES + ("pending",), f"{who}: unknown outcome {outcome!r}")
+
+    if outcome == "pending":
+        leaked = [f for f in SEALED_FORBIDDEN if f != "outcome" and entry.get(f) is not None]
+        if leaked:
+            raise MirrorError(
+                f"{who}: the endpoint served {leaked} on a PENDING uncommitted pick. "
+                f"That is the backed side of a live pick. Nothing was written. Fix "
+                f"the endpoint (0xinsider/0xinsider#15892) before running this again."
+            )
+        return
+
+    check_timestamp(entry, "resolved_at", who, nullable=True)
+    payload = entry.get("payload")
+    if payload is None:
+        return
+    require(isinstance(payload, dict), f"{who}: payload is not an object")
+    check_payload(payload, pick_date, rank, who)
+    check_timestamp(payload, "kickoff", f"{who} payload", nullable=True)
+
+
 def is_pre_commitment(entry: dict) -> bool:
     """A settled pick with no commitment predates the scheme.
 
@@ -333,9 +406,55 @@ def is_pre_commitment(entry: dict) -> bool:
     separately. Quietly mixing them into the proven set is the failure this flag
     exists to prevent.
     """
-    if entry.get("pre_commitment") is True:
+    if entry.get("pre_commitment") is True or entry.get("state") == "uncommitted":
         return True
     return entry.get("state") == "opened" and not entry.get("commitment_hash")
+
+
+def first_mirrored_seal() -> datetime | None:
+    """When this repository first recorded a sealed commitment, or `None`.
+
+    The date of the oldest commit that introduced a `"state": "sealed"` entry
+    under ledger/: the moment a public pre-game proof first became possible
+    here. It is the same commit-date evidence `verify.py` check 2 reads, not the
+    backend's `sealed_at`, which can be hours earlier than any mirror run.
+
+    Needs full history, which both writing workflows fetch. A shallow clone
+    would return its one commit and silently move the cutoff later, widening
+    the exemption `predates_mirror` grants, so it is refused instead.
+    """
+    shallow = git("rev-parse", "--is-shallow-repository").stdout.strip()
+    require(
+        shallow == "false",
+        "this clone is shallow, so the first sealed commit cannot be found. "
+        "Check out with fetch-depth: 0.",
+    )
+    dates = git(
+        "log", "--reverse", "--format=%aI", "-S", '"state": "sealed"', "--", "ledger"
+    ).stdout.split()
+    if not dates:
+        return None
+    return datetime.fromisoformat(dates[0].replace("Z", "+00:00"))
+
+
+def predates_mirror(entry: dict, cutoff: datetime | None) -> bool:
+    """A hashed pick whose game started before this repository sealed anything.
+
+    Its hash never reached a public ledger before kickoff, so there is no
+    pre-game proof to present. It is recorded as `pre_commitment`, which is the
+    truth, rather than as a PRE-GAME failure, which would describe a mirror that
+    was late when in fact it did not exist yet. After the first seal lands here
+    this returns False for every later game, so a genuinely late mirror still
+    fails `verify.py`, loudly.
+    """
+    if not entry.get("commitment_hash"):
+        return False
+    kickoff = (entry.get("payload") or {}).get("kickoff") or entry.get("kickoff")
+    if not isinstance(kickoff, str):
+        return False
+    if cutoff is None:
+        return True
+    return datetime.fromisoformat(kickoff.replace("Z", "+00:00")) < cutoff
 
 
 # --------------------------------------------------------------------------
@@ -392,10 +511,18 @@ def apply_seal(entries: list[dict]) -> list[str]:
     """
     changes: list[str] = []
     by_date: dict[str, list[dict]] = {}
+    now = datetime.now(timezone.utc)
     for entry in entries:
-        pick_date, _, state = validate(entry)
-        if state == "sealed":
-            by_date.setdefault(pick_date, []).append(entry)
+        pick_date, rank, state = validate(entry)
+        if state != "sealed":
+            continue
+        # A hash committed after kickoff can never be a pre-game proof. Writing
+        # it here as `sealed` would only guarantee a PRE-GAME failure later, so
+        # it is left to `reveal`, which records it with everything it knows.
+        if datetime.fromisoformat(entry["kickoff"].replace("Z", "+00:00")) <= now:
+            log(f"NOTICE {pick_date} rank {rank}: kickoff has passed; not sealing it late")
+            continue
+        by_date.setdefault(pick_date, []).append(entry)
 
     for pick_date in sorted(by_date):
         day = load_day(pick_date)
@@ -430,7 +557,7 @@ def revision(entry: dict, context: dict) -> dict:
     """
     return {
         "outcome": entry["outcome"],
-        "resolved_at": entry["resolved_at"],
+        "resolved_at": entry.get("resolved_at"),
         "parent_commit": context["parent_commit"],
         "run": context["run"],
     }
@@ -439,10 +566,30 @@ def revision(entry: dict, context: dict) -> dict:
 def apply_reveal(entries: list[dict], context: dict) -> list[str]:
     changes: list[str] = []
     by_date: dict[str, list[dict]] = {}
+    still_pending = 0
     for entry in entries:
         pick_date, _, state = validate(entry)
         if state == "opened":
             by_date.setdefault(pick_date, []).append(entry)
+        elif state == "uncommitted":
+            if entry["outcome"] == "pending":
+                still_pending += 1
+                continue
+            # An endpoint older than 0xinsider/0xinsider#15892 omits `payload`
+            # entirely; a current one always sends it, `null` included. Writing
+            # a settled pick without its side would be permanent, because this
+            # ledger only appends, so the run stops instead.
+            require(
+                "payload" in entry,
+                f"{pick_date} rank {entry['pick_rank']}: the endpoint serves settled "
+                f"uncommitted picks without a payload field. It predates "
+                f"0xinsider/0xinsider#15892; nothing was written.",
+            )
+            by_date.setdefault(pick_date, []).append(entry)
+    if still_pending:
+        log(f"NOTICE {still_pending} uncommitted pick(s) still pending; recorded once they settle")
+
+    cutoff = first_mirrored_seal()
 
     for pick_date in sorted(by_date):
         day = load_day(pick_date)
@@ -459,7 +606,15 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 # attempt to make it look otherwise: if it carries a hash, that
                 # hash reaches this repository after kickoff and verify.py
                 # reports it as PRE-GAME. A gap in the mirror is not a proof.
-                record = build_opened(entry, context, prior_revisions=[])
+                # The one exception is a game that started before this
+                # repository sealed anything (`predates_mirror`): there was no
+                # mirror to be late, and it is recorded as pre_commitment.
+                record = build_opened(
+                    entry,
+                    context,
+                    prior_revisions=[],
+                    pre_commitment=predates_mirror(entry, cutoff),
+                )
                 day["picks"].append(record)
                 existing[rank] = record
                 touched.append(
@@ -470,13 +625,17 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 continue
 
             if prior.get("state") == "sealed":
+                # A pick sealed here opens with that same hash or not at all.
+                # Recording it as pre_commitment instead would drop a committed
+                # pick out of the proven set with nothing failing, which is the
+                # quiet version of suppressing a loss.
                 require(
-                    is_pre_commitment(entry)
-                    or prior["commitment_hash"] == entry["commitment_hash"],
-                    f"{who}: the endpoint serves commitment_hash "
-                    f"{entry.get('commitment_hash')} but this repository sealed "
-                    f"{prior['commitment_hash']}. A commitment is never rewritten. "
-                    f"Nothing was written.",
+                    not is_pre_commitment(entry)
+                    and prior["commitment_hash"] == entry.get("commitment_hash"),
+                    f"{who}: this repository sealed {prior['commitment_hash']} but the "
+                    f"endpoint now serves it as {entry.get('state')} with commitment_hash "
+                    f"{entry.get('commitment_hash')}. A commitment is never rewritten or "
+                    f"withdrawn. Nothing was written.",
                 )
                 require(
                     prior.get("kickoff") == entry["payload"]["kickoff"],
@@ -491,18 +650,35 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 continue
 
             # Already opened. The only thing that may move is the outcome, and
-            # it moves by appending.
-            require(
-                prior.get("commitment_hash") == entry.get("commitment_hash"),
-                f"{who}: commitment_hash changed after the pick was opened. "
-                f"The commitment is over the pick, never over the outcome. "
-                f"Nothing was written.",
-            )
-            if prior.get("outcome") == entry["outcome"] and prior.get("resolved_at") == entry["resolved_at"]:
+            # it moves by appending. A pre_commitment record carries no hash to
+            # compare, including one recorded without the hash the endpoint
+            # serves because its game predates the mirror.
+            if not prior.get("pre_commitment"):
+                require(
+                    prior.get("commitment_hash") == entry.get("commitment_hash"),
+                    f"{who}: commitment_hash changed after the pick was opened. "
+                    f"The commitment is over the pick, never over the outcome. "
+                    f"Nothing was written.",
+                )
+            # The endpoint serves `payload: null` for a settled uncommitted pick
+            # whose row lacks a column. Once it serves the payload, the record
+            # gains it: a field that was absent is added, never rewritten, and
+            # a pre_commitment record has no hash for it to disagree with.
+            if (
+                prior.get("pre_commitment")
+                and "payload" not in prior
+                and isinstance(entry.get("payload"), dict)
+            ):
+                prior["payload"] = entry["payload"]
+                touched.append(f"rank {rank} gained its payload")
+            if prior.get("outcome") == entry["outcome"] and prior.get("resolved_at") == entry.get("resolved_at"):
                 continue
             prior.setdefault("revisions", []).append(revision(entry, context))
             prior["outcome"] = entry["outcome"]
-            prior["resolved_at"] = entry["resolved_at"]
+            if entry.get("resolved_at") is None:
+                prior.pop("resolved_at", None)
+            else:
+                prior["resolved_at"] = entry["resolved_at"]
             touched.append(f"rank {rank} corrected to {entry['outcome']}")
 
         if touched:
@@ -523,9 +699,18 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
     return changes
 
 
-def build_opened(entry: dict, context: dict, prior_revisions: list, sealed: dict | None = None) -> dict:
+def build_opened(
+    entry: dict,
+    context: dict,
+    prior_revisions: list,
+    sealed: dict | None = None,
+    pre_commitment: bool = False,
+) -> dict:
     record = ordered(entry, OPENED_FIELDS)
-    if is_pre_commitment(entry):
+    # Every settled pick is an opened entry here, whatever the endpoint called
+    # it. `pre_commitment` is what says whether it carries a proof.
+    record["state"] = "opened"
+    if pre_commitment or is_pre_commitment(entry):
         record["pre_commitment"] = True
         for field in ("commitment_hash", "commitment_nonce", "commitment_algo", "sealed_at"):
             record.pop(field, None)
@@ -535,7 +720,9 @@ def build_opened(entry: dict, context: dict, prior_revisions: list, sealed: dict
         for field in ("commitment_hash", "commitment_algo", "sealed_at", "kickoff", "permalink"):
             if field in sealed:
                 record[field] = sealed[field]
-    record.setdefault("kickoff", entry["payload"]["kickoff"])
+    payload_kickoff = (entry.get("payload") or {}).get("kickoff")
+    if payload_kickoff is not None:
+        record.setdefault("kickoff", payload_kickoff)
     record.setdefault(
         "permalink", f"{PERMALINK_BASE}/{entry['pick_date']}/{entry['pick_rank']}"
     )
@@ -780,8 +967,7 @@ def main() -> int:
             log(
                 "OXINSIDER_API_KEY is not configured and the ledger is empty. "
                 "Nothing was fetched and nothing was written. Set the repository "
-                "secret once the ledger endpoint is live "
-                "(0xinsider/0xinsider#15704)."
+                "secret to a 0xinsider Pro API key (0xinsider/0xinsider#15805)."
             )
             return 0
         raise MirrorError(
