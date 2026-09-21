@@ -26,9 +26,13 @@ name: Seal
 # scheduled runs between 18:52Z and 23:59Z. The minutes are offset from :00,
 # where GitHub sheds the most scheduled runs.
 #
-# WINDOW. Picks drop between 11:00 and 23:00 UTC (OP_WINDOW_START_UTC /
-# OP_WINDOW_END_UTC in the backend). Hours 11-23 cover every drop, and the last
-# run at 23:57 UTC covers a 23:00 drop whose kickoff is 00:00 UTC or later.
+# WINDOW. Picks drop between 11:00 UTC and 23:00 US Eastern, one hour before
+# the latest kickoff that still counts as the product day (OP_WINDOW_START_UTC
+# and operating_window_end_for in the backend, 0xinsider/0xinsider#16207).
+# 23:00 ET is 03:00 UTC in summer and 04:00 UTC in winter, so the window
+# crosses UTC midnight: hours 11-23 cover the daytime drops and hours 0-4 cover
+# the late slate, Monday Night Football and the West Coast games. The 04:57 run
+# covers a 04:00 drop whose kickoff is 05:00 UTC.
 #
 # NO CURSOR. The repository is the cursor. A missed run self-heals on the next
 # one, and running this twice in a row writes nothing the second time.
@@ -44,7 +48,7 @@ name: Seal
 
 on:
   schedule:
-    - cron: "7-59/10 11-23 * * *"
+    - cron: "7-59/10 0-4,11-23 * * *"
   workflow_dispatch:
     inputs:
       dry_run:

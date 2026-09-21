@@ -50,10 +50,11 @@ jobs:
         run: python3 verify.py
 
       - name: Confirm the published record matches the ledger
-        # README.md and index.json are generated from ledger/ and nothing else.
-        # Regenerating them must be a no-op. A diff here means the record on
-        # display disagrees with the data under it, which is a smaller lie than
-        # a broken hash and exactly as disqualifying.
+        # README.md, index.json and record.svg are generated from ledger/ and
+        # nothing else. Regenerating them must be a no-op. A diff here means the
+        # record on display, the chart included, disagrees with the data under
+        # it, which is a smaller lie than a broken hash and exactly as
+        # disqualifying.
         run: |
           python3 .github/scripts/mirror.py --mode regenerate --no-push
           git --no-pager diff --exit-code
