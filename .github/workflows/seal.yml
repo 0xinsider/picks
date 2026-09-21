@@ -66,6 +66,9 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
+          # Full history: mirror.py dates the first sealed commitment from it,
+          # and refuses a shallow clone rather than guess.
+          fetch-depth: 0
           persist-credentials: true
 
       - name: Append new commitments

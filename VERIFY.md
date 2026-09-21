@@ -279,6 +279,25 @@ count in the record and `verify.py` reports them as a separate number, never
 folded into the proven set. Saying so in the data is the honest move; mixing
 them in quietly is not.
 
+Each one still carries `payload`: the market (`condition_id`), the side
+(`pick_outcome_index`, `pick_outcome_label`), the price and the kickoff, in the
+same eight fields a sealed pick opens with. Nothing was hashed over them, so
+they prove nothing about when the pick was made. They do let you check the
+outcome against the market's own resolution on Polymarket, and they are what
+the $100-per-pick figures are computed from. `payload.kickoff` is `null` for a
+pick published before kickoffs were recorded.
+
+The same marking covers a pick the backend did seal but whose game started
+before this repository recorded its first sealed commitment. Its hash never
+reached a public ledger before its game, so it has no pre-game proof either,
+and presenting a hash published afterwards as one would be the backdated proof
+this repository exists to rule out. That exception closes the moment the first
+seal lands here: from then on, a hash that arrives after its kickoff is recorded
+as it is and fails PRE-GAME.
+
+A pick that reaches kickoff unsealed after that point is marked the same way.
+It is counted, and it is not proven.
+
 ## What the workflows do, and do not do
 
 Three workflows, all readable in this repository, all guarded so a fork cannot
