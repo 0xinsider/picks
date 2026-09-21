@@ -51,9 +51,10 @@ repository after its kickoff is written as it is, and `verify.py` fails it.
 
 MODES
 -----
-  seal        fetch, append commitments not yet committed
+  seal        fetch, append commitments not yet committed, regenerate
   reveal      fetch, open settled commitments, append revisions, regenerate
-  regenerate  no network: rebuild index.json and the README record from ledger/
+  regenerate  no network: rebuild index.json, record.svg and the README record
+              from ledger/
 """
 
 from __future__ import annotations
@@ -66,7 +67,7 @@ import subprocess
 import sys
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from decimal import Decimal
 from pathlib import Path
 
@@ -74,6 +75,7 @@ REPO_ROOT = Path(__file__).resolve().parents[2]
 LEDGER_DIR = REPO_ROOT / "ledger"
 INDEX_PATH = REPO_ROOT / "index.json"
 README_PATH = REPO_ROOT / "README.md"
+CHART_PATH = REPO_ROOT / "record.svg"
 
 # The money arithmetic lives in verify.py and is imported rather than copied.
 # Two implementations of the same sum is how a README quietly stops matching the
@@ -86,6 +88,8 @@ PERMALINK_BASE = "https://0xinsider.com/pick-of-the-day"
 
 RECORD_BEGIN = "<!-- RECORD:BEGIN -->"
 RECORD_END = "<!-- RECORD:END -->"
+CHART_BEGIN = "<!-- CHART:BEGIN -->"
+CHART_END = "<!-- CHART:END -->"
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 HEX64_RE = re.compile(r"^[0-9a-f]{64}$")
@@ -810,18 +814,25 @@ def regenerate() -> list[str]:
         INDEX_PATH.write_text(rendered)
         changes.append("index.json")
 
+    chart = render_chart(stats, picks)
+    if not CHART_PATH.exists() or CHART_PATH.read_text() != chart:
+        CHART_PATH.write_text(chart)
+        changes.append("record.svg")
+
     readme = README_PATH.read_text()
-    start = readme.find(RECORD_BEGIN)
-    end = readme.find(RECORD_END)
-    require(
-        start != -1 and end > start,
-        f"README.md is missing the {RECORD_BEGIN} / {RECORD_END} fences",
-    )
-    body = readme[: start + len(RECORD_BEGIN)] + render_record(stats) + readme[end:]
+    body = replace_span(readme, RECORD_BEGIN, RECORD_END, render_record(stats))
+    body = replace_span(body, CHART_BEGIN, CHART_END, render_chart_embed(stats))
     if body != readme:
         README_PATH.write_text(body)
         changes.append("README.md")
     return changes
+
+
+def replace_span(text: str, begin: str, end: str, body: str) -> str:
+    start = text.find(begin)
+    stop = text.find(end)
+    require(start != -1 and stop > start, f"README.md is missing the {begin} / {end} fences")
+    return text[: start + len(begin)] + body + text[stop:]
 
 
 def render_record(stats: dict) -> str:
@@ -856,6 +867,257 @@ def render_record(stats: dict) -> str:
 
 
 # --------------------------------------------------------------------------
+# chart
+# --------------------------------------------------------------------------
+#
+# record.svg is the first thing README.md shows: the cumulative return of $100
+# on every decided pick, in the order the picks were made. It is generated from
+# ledger/ by the same regenerate pass that writes index.json and the README
+# table, so verify.yml's drift check covers it too: a chart that disagrees with
+# the ledger fails the repository the same way a wrong hit rate would.
+#
+# Deterministic on purpose. No timestamp, no random id, fixed-precision
+# coordinates. Same ledger, same bytes.
+#
+# Palette is the site's (DESIGN.md in 0xinsider/0xinsider): near-black surface,
+# profit green and loss red for the line, white and #8f8f8f ink for text. The
+# brand neon never encodes P&L, so it is not on this chart.
+
+CHART_W = 1200
+CHART_H = 480
+CHART_PAD_L = 92
+CHART_PAD_R = 220
+CHART_PAD_T = 112
+CHART_PAD_B = 60
+CHART_FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+SURFACE = "#0b0b0b"
+INK = "#ffffff"
+INK_MUTED = "#8f8f8f"
+PROFIT = "#42d68c"
+LOSS = "#ff6467"
+HAIRLINE = "0.06"
+ZERO_LINE = "0.22"
+MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def esc(text: str) -> str:
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def long_date(iso: str) -> str:
+    year, month, day = (int(part) for part in iso.split("-"))
+    return f"{MONTHS[month - 1]} {day}, {year}"
+
+
+def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
+    """One point per decided pick with a usable price: (x, running profit, proven).
+
+    x is the pick's date as an ordinal day plus the pick's share of that day,
+    so a day with six picks reads as six steps across the day rather than a
+    vertical spike. The money arithmetic is verify.return_per_100, the same
+    function the record table and the RECORD check use.
+    """
+    decided = []
+    for pick in sorted(picks, key=lambda item: (item["pick_date"], item["pick_rank"])):
+        if pick.get("state") != "opened" or pick.get("outcome") not in ("win", "loss"):
+            continue
+        price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
+        value = verify.return_per_100(pick["outcome"], price) if price > 0 else None
+        if value is None:
+            continue
+        decided.append((pick["pick_date"], value - Decimal(100), not pick.get("pre_commitment")))
+
+    per_day: dict[str, int] = {}
+    for pick_date, _, _ in decided:
+        per_day[pick_date] = per_day.get(pick_date, 0) + 1
+
+    points = []
+    running = Decimal(0)
+    seen: dict[str, int] = {}
+    for pick_date, delta, proven in decided:
+        running += delta
+        index = seen.get(pick_date, 0)
+        seen[pick_date] = index + 1
+        ordinal = datetime.strptime(pick_date, "%Y-%m-%d").toordinal()
+        points.append((ordinal + (index + 0.5) / per_day[pick_date], running, proven))
+    return points
+
+
+def nice_step(span: float, target_ticks: int = 5) -> int:
+    raw = span / target_ticks
+    for step in (50, 100, 200, 250, 500, 1000, 2000, 2500, 5000, 10000, 20000, 25000, 50000):
+        if step >= raw:
+            return step
+    return 100000
+
+
+def month_starts(first_ordinal: int, last_ordinal: int) -> list[tuple[int, str]]:
+    ticks = []
+    cursor = datetime.fromordinal(first_ordinal).date().replace(day=1)
+    while cursor.toordinal() <= last_ordinal:
+        if cursor.toordinal() >= first_ordinal:
+            ticks.append((cursor.toordinal(), MONTHS[cursor.month - 1]))
+        cursor = (cursor.replace(day=28) + timedelta(days=4)).replace(day=1)
+    return ticks
+
+
+def render_chart(stats: dict, picks: list[dict]) -> str:
+    """The cumulative-return line, as a self-contained SVG."""
+    head = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {CHART_W} {CHART_H}" '
+        f'width="{CHART_W}" height="{CHART_H}" role="img" aria-labelledby="title desc" '
+        f'font-family="{CHART_FONT}">\n'
+    )
+    out = [head]
+    points = cumulative_series(picks)
+    title = "$100 on every pick, cumulative"
+    if not points:
+        out.append(f"<title id=\"title\">{esc(title)}</title>\n")
+        out.append('<desc id="desc">No settled pick with a price yet.</desc>\n')
+        out.append(f'<rect width="{CHART_W}" height="{CHART_H}" rx="6" fill="{SURFACE}"/>\n')
+        out.append(
+            f'<text x="32" y="64" fill="{INK}" font-size="28" font-weight="600">{esc(title)}</text>\n'
+        )
+        out.append(
+            f'<text x="32" y="100" fill="{INK_MUTED}" font-size="18">No settled pick yet. '
+            f"This chart draws itself from ledger/ when the first one opens.</text>\n"
+        )
+        out.append("</svg>\n")
+        return "".join(out)
+
+    first_date = min(pick["pick_date"] for pick in picks if pick.get("state") == "opened")
+    subtitle = (
+        f"{stats['decided']} decided picks since {long_date(first_date)}. "
+        f"{stats['wins']}W {stats['losses']}L, {stats['hit_rate']}% hit rate, "
+        f"{Decimal(stats['roi']):+.1f}% ROI on {stats['staked']} USD staked."
+    )
+    final = points[-1][1]
+    desc = (
+        f"Cumulative return at 100 USD per pick from {long_date(first_date)} to "
+        f"{long_date(stats['through'])}: {final:+,.2f} USD. {subtitle}"
+    )
+    out.append(f'<title id="title">{esc(title)}</title>\n')
+    out.append(f'<desc id="desc">{esc(desc)}</desc>\n')
+    out.append(f'<rect width="{CHART_W}" height="{CHART_H}" rx="6" fill="{SURFACE}"/>\n')
+    out.append(f'<text x="32" y="52" fill="{INK}" font-size="28" font-weight="600">{esc(title)}</text>\n')
+    out.append(f'<text x="32" y="84" fill="{INK_MUTED}" font-size="17">{esc(subtitle)}</text>\n')
+
+    # Scales. y always includes zero, because the sign is the story.
+    x0 = CHART_PAD_L
+    x1 = CHART_W - CHART_PAD_R
+    y0 = CHART_PAD_T
+    y1 = CHART_H - CHART_PAD_B
+    first_x = int(points[0][0])
+    last_x = int(points[-1][0]) + 1
+    lo = min(Decimal(0), min(value for _, value, _ in points))
+    hi = max(Decimal(0), max(value for _, value, _ in points))
+    step = nice_step(float(hi - lo) or 100)
+    y_min = (int(lo) // step) * step if lo < 0 else 0
+    y_max = ((int(hi) // step) + 1) * step if hi > 0 else 0
+    if y_max == y_min:
+        y_max = y_min + step
+
+    def sx(x: float) -> float:
+        return x0 + (x - first_x) / (last_x - first_x) * (x1 - x0)
+
+    def sy(value: float) -> float:
+        return y1 - (value - y_min) / (y_max - y_min) * (y1 - y0)
+
+    # Gridlines and y ticks. Hairlines, recessive, one per nice step.
+    tick = y_min
+    while tick <= y_max:
+        y = sy(tick)
+        opacity = ZERO_LINE if tick == 0 else HAIRLINE
+        out.append(
+            f'<line x1="{x0}" y1="{y:.1f}" x2="{x1}" y2="{y:.1f}" stroke="{INK}" '
+            f'stroke-opacity="{opacity}" stroke-width="1"/>\n'
+        )
+        out.append(
+            f'<text x="{x0 - 12}" y="{y + 5:.1f}" fill="{INK_MUTED}" font-size="15" '
+            f'text-anchor="end">{tick:,}</text>\n'
+        )
+        tick += step
+
+    # x ticks at month starts.
+    for ordinal, label in month_starts(first_x, last_x):
+        x = sx(ordinal)
+        out.append(
+            f'<line x1="{x:.1f}" y1="{y1}" x2="{x:.1f}" y2="{y1 + 6}" stroke="{INK}" '
+            f'stroke-opacity="{ZERO_LINE}" stroke-width="1"/>\n'
+        )
+        out.append(
+            f'<text x="{x:.1f}" y="{y1 + 26}" fill="{INK_MUTED}" font-size="15" text-anchor="middle">{label}</text>\n'
+        )
+
+    # The line, drawn twice under two clips so the part above zero is profit
+    # green and the part below is loss red. The wash under it is the same hue
+    # at 10%.
+    coords = [(sx(x), sy(float(value))) for x, value, _ in points]
+    start = (sx(first_x), sy(0.0))
+    path = " ".join(f"{x:.1f},{y:.1f}" for x, y in [start, *coords])
+    zero_y = sy(0.0)
+    area = f"M{start[0]:.1f},{zero_y:.1f} L" + " L".join(f"{x:.1f},{y:.1f}" for x, y in coords) + f" L{coords[-1][0]:.1f},{zero_y:.1f} Z"
+    out.append("<defs>\n")
+    out.append(f'<clipPath id="above"><rect x="0" y="0" width="{CHART_W}" height="{zero_y:.1f}"/></clipPath>\n')
+    out.append(f'<clipPath id="below"><rect x="0" y="{zero_y:.1f}" width="{CHART_W}" height="{CHART_H - zero_y:.1f}"/></clipPath>\n')
+    out.append("</defs>\n")
+    for clip, color in (("above", PROFIT), ("below", LOSS)):
+        out.append(f'<path d="{area}" fill="{color}" fill-opacity="0.1" clip-path="url(#{clip})"/>\n')
+        out.append(
+            f'<polyline points="{path}" fill="none" stroke="{color}" stroke-width="2" '
+            f'stroke-linejoin="round" stroke-linecap="round" clip-path="url(#{clip})"/>\n'
+        )
+
+    # Where sealing begins: the first pick whose hash was on a public ledger
+    # before its game. Drawn only once such a pick has settled.
+    proven = [x for x, _, is_proven in points if is_proven]
+    if proven:
+        x = sx(proven[0])
+        out.append(
+            f'<line x1="{x:.1f}" y1="{y0}" x2="{x:.1f}" y2="{y1}" stroke="{INK}" '
+            f'stroke-opacity="{ZERO_LINE}" stroke-width="1" stroke-dasharray="2 4"/>\n'
+        )
+        out.append(
+            f'<text x="{x - 8:.1f}" y="{y0 + 16}" fill="{INK_MUTED}" font-size="14" text-anchor="end">'
+            f"sealed before kickoff from here</text>\n"
+        )
+
+    # End marker: >= 8px dot with a 2px surface ring, and the one number the
+    # chart is read for beside it, in ink rather than in the series color.
+    end_x, end_y = coords[-1]
+    color = PROFIT if final >= 0 else LOSS
+    out.append(f'<circle cx="{end_x:.1f}" cy="{end_y:.1f}" r="6" fill="{color}" stroke="{SURFACE}" stroke-width="2"/>\n')
+    out.append(
+        f'<text x="{end_x + 14:.1f}" y="{end_y + 7:.1f}" fill="{INK}" font-size="20" font-weight="600">'
+        f"{final:+,.2f} USD</text>\n"
+    )
+    out.append(
+        f'<text x="{CHART_W - 32}" y="{CHART_H - 20}" fill="{INK_MUTED}" font-size="14" text-anchor="end">'
+        f"0xinsider.com/pick-of-the-day</text>\n"
+    )
+    out.append("</svg>\n")
+    return "".join(out)
+
+
+def render_chart_embed(stats: dict) -> str:
+    """The README's first element: the chart, linked to the record, with the
+    numbers in its alt text so a screen reader gets the same figures."""
+    if stats["opened"] == 0:
+        alt = "Cumulative return chart. No settled pick yet."
+    else:
+        alt = (
+            f"Cumulative return at 100 USD per pick through {long_date(stats['through'])}: "
+            f"{Decimal(stats['profit_per_100']):+,.2f} USD on {stats['staked']} USD staked across "
+            f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
+            f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
+        )
+    return (
+        '\n<a href="https://0xinsider.com/pick-of-the-day">'
+        f'<img src="record.svg" alt="{esc(alt)}" width="100%"></a>\n'
+    )
+
+
+# --------------------------------------------------------------------------
 # git
 # --------------------------------------------------------------------------
 
@@ -883,7 +1145,7 @@ def run_url() -> str:
 
 
 def commit_and_push(mode: str, changes: list[str]) -> bool:
-    git("add", "-A", "ledger", "index.json", "README.md")
+    git("add", "-A", "ledger", "index.json", "README.md", "record.svg")
     if not git("diff", "--cached", "--quiet", check=False).returncode:
         log("nothing to commit")
         return True
@@ -920,8 +1182,13 @@ def commit_and_push(mode: str, changes: list[str]) -> bool:
 def run_once(mode: str, entries: list[dict]) -> list[str]:
     context = {"parent_commit": head(), "run": run_url()}
     if mode == "seal":
-        return apply_seal(entries)
-    changes = apply_reveal(entries, context)
+        changes = apply_seal(entries)
+    else:
+        changes = apply_reveal(entries, context)
+    # Both modes regenerate, so the record on display never lags the ledger by
+    # more than one run: a seal changes the "sealed, not yet settled" count, and
+    # a push that lands between a seal and the next reveal would otherwise fail
+    # verify.yml's drift check on a README that nobody edited.
     return changes + regenerate()
 
 

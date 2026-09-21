@@ -1,10 +1,10 @@
 # How to verify the Pick of the Day record
 
-0xinsider publishes one pick a day and a running record of how those picks did.
-The record is served from our database, and this repository is what makes it
-checkable from outside: every pick is committed to before its game and opened
-after it settles, in a public file whose history is timestamped by someone
-other than us.
+0xinsider publishes up to 6 picks a day, each 1 hour before its own kickoff, and
+a running record of how those picks did. The record is served from our
+database, and this repository is what makes it checkable from outside: every
+pick is committed to before its game and opened after it settles, in a public
+file whose history is timestamped by someone other than us.
 
 This document specifies the scheme precisely enough to reimplement, and states
 what it does not prove. Read the last section. A verification document that only
@@ -28,9 +28,10 @@ purpose, and says so in its output.
 
 Each pick has three moments.
 
-**Publish, kickoff minus one hour.** The pick goes live on the site. The Pro
-side of it -- which market, which outcome, at what price -- is behind the
-paywall. In the same pass the backend computes
+**Publish, kickoff minus one hour.** The pick goes live on the site. The backed
+side of it -- which market, which outcome, at what price -- is behind sign-in
+for rank 1 and behind Pro for ranks 2 to 6. In the same pass the backend
+computes
 
 ```
 commitment_hash = sha256(canonical_json(payload) || nonce)
@@ -204,8 +205,10 @@ and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
 keep the values they were sealed with.
 
 `index.json` is every entry in one flat array with the recomputed record, for
-anything that would rather not walk the tree. It is generated from `ledger/` and
-proves nothing on its own.
+anything that would rather not walk the tree. `record.svg` is the chart at the
+top of the README, the cumulative return of $100 on every decided pick. Both
+are generated from `ledger/` and prove nothing on their own; `verify.yml`
+regenerates them and fails on any diff, so neither can drift from the data.
 
 ### Corrections append
 
@@ -305,11 +308,14 @@ run them, all with `permissions` denied at the workflow level and granted per
 job.
 
 - `seal.yml` appends new commitments. The 0xinsider backend dispatches it the
-  moment a pick is sealed, and it also runs every 10 minutes from 11:07 to
-  23:57 UTC as a fallback. Dispatch runs show as `workflow_dispatch` in the
-  Actions tab. They run the same workflow source as every other run.
-- `reveal.yml`, hourly at :17, opens settled commitments and regenerates the
-  record.
+  moment a pick is sealed, and it also runs every 10 minutes from 11:07 UTC
+  through 04:57 UTC the next morning as a fallback, which is the drop window
+  (11:00 UTC to 23:00 US Eastern) plus the hour after its last drop. Dispatch
+  runs show as `workflow_dispatch` in the Actions tab. They run the same
+  workflow source as every other run.
+- `reveal.yml`, hourly at :17, opens settled commitments. Both it and
+  `seal.yml` regenerate the record, `index.json` and `record.svg` from
+  `ledger/` after they write.
 - `verify.yml`, on every push and pull request and daily, runs `verify.py` over
   the full history and fails the repository if anything is wrong.
 
