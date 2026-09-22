@@ -767,10 +767,10 @@ def tally() -> dict:
             elif outcome == "void":
                 voids += 1
             price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
-            value = verify.return_per_100(outcome, price) if price > 0 else None
+            value = verify.stake_return(outcome, price) if price > 0 else None
             if value is not None and outcome in ("win", "loss"):
-                profit += value - Decimal(100)
-                staked += Decimal(100)
+                profit += value - verify.STAKE_USD
+                staked += verify.STAKE_USD
 
     decided = wins + losses
     return {
@@ -783,7 +783,11 @@ def tally() -> dict:
         "voids": voids,
         "decided": decided,
         "hit_rate": f"{wins / decided * 100:.1f}" if decided else None,
-        "profit_per_100": f"{profit:.2f}" if staked else None,
+        # The stake every money figure below is computed at. Stated in the
+        # record so a reader of index.json alone can tell which basis it is on:
+        # $100 until 2026-09-22, $1,000 since (0xinsider/0xinsider#16389).
+        "stake_usd": f"{verify.STAKE_USD:.0f}",
+        "profit_usd": f"{profit:.2f}" if staked else None,
         "staked": f"{staked:.0f}" if staked else None,
         "roi": f"{profit / staked * 100:.1f}" if staked else None,
         "through": last_date,
@@ -844,10 +848,10 @@ def render_record(stats: dict) -> str:
         ("Record", f"{stats['wins']}W {stats['losses']}L {stats['voids']}V"),
         ("Hit rate", f"{stats['hit_rate']}%" if stats["hit_rate"] else "not yet"),
         (
-            "$100 per pick",
+            f"${verify.STAKE_USD:,.0f} per pick",
             # Signed on purpose. An unsigned P&L reads as a gain by default.
-            f"{Decimal(stats['profit_per_100']):+.2f} USD on {stats['staked']} staked"
-            if stats["profit_per_100"] is not None
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} staked"
+            if stats["profit_usd"] is not None
             else "not yet",
         ),
         ("ROI", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
@@ -870,11 +874,12 @@ def render_record(stats: dict) -> str:
 # chart
 # --------------------------------------------------------------------------
 #
-# record.svg is the first thing README.md shows: the cumulative return of $100
-# on every decided pick, in the order the picks were made. It is generated from
-# ledger/ by the same regenerate pass that writes index.json and the README
-# table, so verify.yml's drift check covers it too: a chart that disagrees with
-# the ledger fails the repository the same way a wrong hit rate would.
+# record.svg is the first thing README.md shows: the cumulative return of the
+# flat stake (verify.STAKE_USD) on every decided pick, in the order the picks
+# were made. It is generated from ledger/ by the same regenerate pass that
+# writes index.json and the README table, so verify.yml's drift check covers
+# it too: a chart that disagrees with the ledger fails the repository the same
+# way a wrong hit rate would.
 #
 # Deterministic on purpose. No timestamp, no random id, fixed-precision
 # coordinates. Same ledger, same bytes.
@@ -914,18 +919,19 @@ def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
 
     x is the pick's date as an ordinal day plus the pick's share of that day,
     so a day with six picks reads as six steps across the day rather than a
-    vertical spike. The money arithmetic is verify.return_per_100, the same
-    function the record table and the RECORD check use.
+    vertical spike. The money arithmetic is verify.stake_return at
+    verify.STAKE_USD, the same function the record table and the RECORD check
+    use.
     """
     decided = []
     for pick in sorted(picks, key=lambda item: (item["pick_date"], item["pick_rank"])):
         if pick.get("state") != "opened" or pick.get("outcome") not in ("win", "loss"):
             continue
         price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
-        value = verify.return_per_100(pick["outcome"], price) if price > 0 else None
+        value = verify.stake_return(pick["outcome"], price) if price > 0 else None
         if value is None:
             continue
-        decided.append((pick["pick_date"], value - Decimal(100), not pick.get("pre_commitment")))
+        decided.append((pick["pick_date"], value - verify.STAKE_USD, not pick.get("pre_commitment")))
 
     per_day: dict[str, int] = {}
     for pick_date, _, _ in decided:
@@ -970,7 +976,7 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     )
     out = [head]
     points = cumulative_series(picks)
-    title = "$100 on every pick, cumulative"
+    title = f"${verify.STAKE_USD:,.0f} on every pick, cumulative"
     if not points:
         out.append(f"<title id=\"title\">{esc(title)}</title>\n")
         out.append('<desc id="desc">No settled pick with a price yet.</desc>\n')
@@ -989,11 +995,11 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     subtitle = (
         f"{stats['decided']} decided picks since {long_date(first_date)}. "
         f"{stats['wins']}W {stats['losses']}L, {stats['hit_rate']}% hit rate, "
-        f"{Decimal(stats['roi']):+.1f}% ROI on {stats['staked']} USD staked."
+        f"{Decimal(stats['roi']):+.1f}% ROI on {Decimal(stats['staked']):,.0f} USD staked."
     )
     final = points[-1][1]
     desc = (
-        f"Cumulative return at 100 USD per pick from {long_date(first_date)} to "
+        f"Cumulative return at {verify.STAKE_USD:,.0f} USD per pick from {long_date(first_date)} to "
         f"{long_date(stats['through'])}: {final:+,.2f} USD. {subtitle}"
     )
     out.append(f'<title id="title">{esc(title)}</title>\n')
@@ -1011,7 +1017,9 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     last_x = int(points[-1][0]) + 1
     lo = min(Decimal(0), min(value for _, value, _ in points))
     hi = max(Decimal(0), max(value for _, value, _ in points))
-    step = nice_step(float(hi - lo) or 100)
+    # A span of zero (every decided pick returned exactly its stake) falls back
+    # to one stake's worth of axis so the chart still has a scale.
+    step = nice_step(float(hi - lo) or float(verify.STAKE_USD))
     y_min = (int(lo) // step) * step if lo < 0 else 0
     y_max = ((int(hi) // step) + 1) * step if hi > 0 else 0
     if y_max == y_min:
@@ -1106,8 +1114,8 @@ def render_chart_embed(stats: dict) -> str:
         alt = "Cumulative return chart. No settled pick yet."
     else:
         alt = (
-            f"Cumulative return at 100 USD per pick through {long_date(stats['through'])}: "
-            f"{Decimal(stats['profit_per_100']):+,.2f} USD on {stats['staked']} USD staked across "
+            f"Cumulative return at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked across "
             f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
             f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
         )

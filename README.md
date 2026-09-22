@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 100 USD per pick through Sep 21, 2026: +1,873.66 USD on 25200 USD staked across 252 decided picks, 171W 81L, 67.9% hit rate, +7.4% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 21, 2026: +18,736.60 USD on 252,000 USD staked across 252 decided picks, 171W 81L, 67.9% hit rate, +7.4% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -38,7 +38,7 @@ Record through 2026-09-21.
 | Decided picks | 252 |
 | Record | 171W 81L 0V |
 | Hit rate | 67.9% |
-| $100 per pick | +1873.66 USD on 25200 staked |
+| $1,000 per pick | +18,736.60 USD on 252,000 staked |
 | ROI | +7.4% |
 | Sealed, not yet settled | 0 |
 | Proven sealed before kickoff | 2 |
@@ -49,8 +49,12 @@ Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
 <!-- RECORD:END -->
 
 Rank 1 each day is free to any signed-in account. Ranks 2 to 6 are Pro. The
-record counts all of them the same way: $100 on every pick, a win returns
-100 divided by the backed price, a loss forfeits the stake, a void refunds it.
+record counts all of them the same way: $1,000 on every pick, a win returns
+1,000 divided by the backed price, a loss forfeits the stake, a void refunds
+it. The stake was $100 until September 22, 2026 (0xinsider/0xinsider#16389);
+the figures above and in `index.json` are recomputed at $1,000 for every pick,
+including the ones published before that date, and the units, ROI and hit
+rate are the same under either stake.
 
 Sealing started on September 21, 2026. Every pick before that is in the record
 with no pre-game proof and is marked `"pre_commitment": true`. The table reports

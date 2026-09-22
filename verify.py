@@ -27,7 +27,7 @@ the hash can be reopened by anyone.
                  recorded in the payload
   3. IMMUTABLE   the payload never changed across the file's history
   4. GAPS        no sealed pick stays unopened long past its kickoff
-  5. RECORD      wins, losses, hit rate and $100/pick P&L recomputed from raw data
+  5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
   6. CORRECTIONS every outcome this pick has held across the file's history
                  appears in its `revisions`, in the same order; `revisions` only
                  ever grew; `commitment_hash` is the same at every point
@@ -119,6 +119,14 @@ VECTOR_HASH = "44d18fa5e2aa3a2bf3c971dcc9317c8ccbdfd5480a4773b6d8ffd5fbeeea84dc"
 # Generous on purpose: a market can settle slowly, and this check exists to
 # catch picks that quietly never resolve, not to flag slow ones.
 SETTLEMENT_GRACE = timedelta(hours=72)
+
+# The flat stake the site's record puts on every pick: $100 until 2026-09-22 and
+# $1,000 since (0xinsider/0xinsider#16389). The ledger stores only the backed
+# price and the outcome, so every money figure is recomputed at this stake, the
+# picks before that date included. The site's own arithmetic uses the same
+# number (`oxinsider_core::constants::PICK_STAKE_USD`); units, ROI and hit rate
+# are the same under either stake.
+STAKE_USD = Decimal(1000)
 
 
 class Failure(Exception):
@@ -329,19 +337,19 @@ def correction_failures(who: str, history: list[dict], current: dict) -> list[st
     return failures
 
 
-def return_per_100(outcome: str, price: Decimal) -> Decimal | None:
-    """What a $100 stake returned. Mirrors the site's own arithmetic.
+def stake_return(outcome: str, price: Decimal) -> Decimal | None:
+    """What a flat STAKE_USD stake returned. Mirrors the site's own arithmetic.
 
-    A win pays 100/price, a loss forfeits the stake, a void refunds it. A
-    decided pick with no usable price is excluded from money totals rather
+    A win pays STAKE_USD/price, a loss forfeits the stake, a void refunds it.
+    A decided pick with no usable price is excluded from money totals rather
     than guessed at, and is still counted in the hit rate.
     """
     if outcome == "win":
-        return None if price <= 0 else Decimal(100) / price
+        return None if price <= 0 else STAKE_USD / price
     if outcome == "loss":
         return Decimal(0)
     if outcome == "void":
-        return Decimal(100)
+        return STAKE_USD
     return None
 
 
@@ -479,10 +487,10 @@ def main() -> int:
                 price = Decimal(str(pick.get("payload", {}).get("backed_price", "")))
             except (InvalidOperation, ValueError):
                 price = Decimal(-1)
-            value = return_per_100(outcome, price) if price > 0 else None
+            value = stake_return(outcome, price) if price > 0 else None
             if value is not None and outcome in ("win", "loss"):
-                profit += value - Decimal(100)
-                staked += Decimal(100)
+                profit += value - STAKE_USD
+                staked += STAKE_USD
 
     decided = wins + losses
     print(f"picks       {opened} opened, {sealed} sealed and pending")
@@ -495,8 +503,9 @@ def main() -> int:
     if decided:
         print(f"hit rate    {wins / decided * 100:.1f}%  over {decided} decided")
     if staked > 0:
+        label = f"${STAKE_USD:,.0f}/pick"
         print(
-            f"$100/pick   {profit:+.2f} USD on {staked:.0f} staked "
+            f"{label:<12}{profit:+,.2f} USD on {staked:,.0f} staked "
             f"({profit / staked * 100:+.1f}% ROI)"
         )
     print("            compare these against https://0xinsider.com/pick-of-the-day\n")

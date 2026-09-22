@@ -11,8 +11,9 @@
     "voids": 0,
     "decided": 252,
     "hit_rate": "67.9",
-    "profit_per_100": "1873.66",
-    "staked": "25200",
+    "stake_usd": "1000",
+    "profit_usd": "18736.60",
+    "staked": "252000",
     "roi": "7.4",
     "through": "2026-09-21"
   },
