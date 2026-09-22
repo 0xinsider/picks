@@ -1,0 +1,10 @@
+{
+  "id": "2026-09-22-mirror-401",
+  "start": "2026-09-22T14:51:23Z",
+  "end": "2026-09-22T18:39:07Z",
+  "cause": "Every Seal and Reveal run answered 401 from the ledger endpoint. The API key held in the repository secret OXINSIDER_API_KEY was revoked by a routine key rotation on the account that owned it -- one active key per user -- so the mirror could not read a ledger that the backend was serving normally the whole time. Fixed by making the read keyless: the endpoint is public and the workflows send no credential.",
+  "reference": "https://github.com/0xinsider/0xinsider/issues/16459",
+  "first_failure": "https://github.com/0xinsider/picks/actions/runs/35743229025",
+  "first_recovery": "https://github.com/0xinsider/picks/actions/runs/35768564494",
+  "notes": "start is the first run that failed, Reveal at 2026-09-22T14:51:23Z. end is the first successful ledger fetch after it, logged at 2026-09-22T18:39:07Z by Seal run 35768564494. Runs between those two instants could not copy a hash into this repository. A pick whose kickoff falls inside this window and whose hash therefore reached this repository late is recorded with \"outage\": \"2026-09-22-mirror-401\" and stays unproven: the window explains the gap, it does not close it."
+}
