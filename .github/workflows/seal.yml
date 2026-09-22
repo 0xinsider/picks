@@ -37,14 +37,14 @@ name: Seal
 # NO CURSOR. The repository is the cursor. A missed run self-heals on the next
 # one, and running this twice in a row writes nothing the second time.
 #
-# BEFORE THE SECRET EXISTS, and only while the ledger is still empty, this run
-# is a no-op that passes and says so in its log. The moment the ledger holds a
-# single entry, a missing credential is a failure instead: the mirror worked and
-# has stopped, and a pick sealed while the key is dead can never be mirrored
-# before its kickoff by any later run. The guard disarms itself with no manual
-# flip to remember; mirror.py's credential check carries the full reasoning.
-# Everything past that check fails the run regardless: a bad key, an error
-# response, an unexpected shape, or a sealed pick carrying a nonce.
+# NO CREDENTIAL. The ledger endpoint is public (0xinsider/0xinsider#16459), so
+# this workflow holds no secret and nothing it reads can be revoked. It sent
+# OXINSIDER_API_KEY until 2026-09-22, when a routine key rotation on the account
+# that owned that key revoked it -- one active key per user -- and every Seal and
+# Reveal run failed 401 from 14:51Z while picks were reaching kickoff unsealed,
+# which is permanent for those picks. Do not add a key back here. What can still
+# fail the run, and should: an error response, an unexpected shape, or a sealed
+# pick carrying a nonce.
 
 on:
   schedule:
@@ -83,8 +83,6 @@ jobs:
           persist-credentials: true
 
       - name: Append new commitments
-        env:
-          OXINSIDER_API_KEY: ${{ secrets.OXINSIDER_API_KEY }}
         run: |
           python3 .github/scripts/mirror.py --mode seal \
             ${{ inputs.dry_run && '--no-push' || '' }}

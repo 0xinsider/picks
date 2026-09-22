@@ -14,6 +14,9 @@ name: Reveal
 # repository exists to rule out. Instead the change is appended to `revisions`
 # with its own timestamp and run link, and the diff shows both values.
 #
+# NO CREDENTIAL, same as seal.yml: the ledger endpoint is public
+# (0xinsider/0xinsider#16459). Do not add a key back here.
+#
 # HOURLY, at :17. The backfill pass that settles outcomes runs on a 30-minute
 # cadence, so nothing here needs to be faster than an hour, and there is no
 # deadline the way there is for sealing -- a late reveal delays a disclosure, it
@@ -54,8 +57,6 @@ jobs:
           persist-credentials: true
 
       - name: Open settled commitments and regenerate the record
-        env:
-          OXINSIDER_API_KEY: ${{ secrets.OXINSIDER_API_KEY }}
         run: |
           python3 .github/scripts/mirror.py --mode reveal \
             ${{ inputs.dry_run && '--no-push' || '' }}
