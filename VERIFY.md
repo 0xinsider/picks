@@ -205,10 +205,19 @@ and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
 keep the values they were sealed with.
 
 `index.json` is every entry in one flat array with the recomputed record, for
-anything that would rather not walk the tree. `record.svg` is the chart at the
-top of the README, the cumulative return of $100 on every decided pick. Both
-are generated from `ledger/` and prove nothing on their own; `verify.yml`
-regenerates them and fails on any diff, so neither can drift from the data.
+anything that would rather not walk the tree. Its `record` object carries the
+counts (`opened`, `sealed`, `pre_commitment`, `proven`, `wins`, `losses`,
+`voids`, `decided`), `hit_rate` and `roi` as percentage strings, and the money
+figures: `stake_usd`, the flat stake every decided pick is counted at
+(`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
+total put down. `profit_usd` was named `profit_per_100` until September 22,
+2026, when the stake moved from $100 to $1,000
+(0xinsider/0xinsider#16389); every pick, including those published before
+that date, is recomputed at the current stake, and `stake_usd` says which one.
+`record.svg` is the chart at the top of the README, the cumulative return of
+$1,000 on every decided pick. Both are generated from `ledger/` and prove
+nothing on their own; `verify.yml` regenerates them and fails on any diff, so
+neither can drift from the data.
 
 ### Corrections append
 
@@ -287,8 +296,8 @@ Each one still carries `payload`: the market (`condition_id`), the side
 same eight fields a sealed pick opens with. Nothing was hashed over them, so
 they prove nothing about when the pick was made. They do let you check the
 outcome against the market's own resolution on Polymarket, and they are what
-the $100-per-pick figures are computed from. `payload.kickoff` is `null` for a
-pick published before kickoffs were recorded.
+the $1,000-per-pick figures are computed from. `payload.kickoff` is `null` for
+a pick published before kickoffs were recorded.
 
 The same marking covers a pick the backend did seal but whose game started
 before this repository recorded its first sealed commitment. Its hash never

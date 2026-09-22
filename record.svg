@@ -1,19 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-<title id="title">$100 on every pick, cumulative</title>
-<desc id="desc">Cumulative return at 100 USD per pick from Jun 23, 2026 to Sep 21, 2026: +1,873.66 USD. 252 decided picks since Jun 23, 2026. 171W 81L, 67.9% hit rate, +7.4% ROI on 25200 USD staked.</desc>
+<title id="title">$1,000 on every pick, cumulative</title>
+<desc id="desc">Cumulative return at 1,000 USD per pick from Jun 23, 2026 to Sep 21, 2026: +18,736.60 USD. 252 decided picks since Jun 23, 2026. 171W 81L, 67.9% hit rate, +7.4% ROI on 252,000 USD staked.</desc>
 <rect width="1200" height="480" rx="6" fill="#0b0b0b"/>
-<text x="32" y="52" fill="#ffffff" font-size="28" font-weight="600">$100 on every pick, cumulative</text>
-<text x="32" y="84" fill="#8f8f8f" font-size="17">252 decided picks since Jun 23, 2026. 171W 81L, 67.9% hit rate, +7.4% ROI on 25200 USD staked.</text>
+<text x="32" y="52" fill="#ffffff" font-size="28" font-weight="600">$1,000 on every pick, cumulative</text>
+<text x="32" y="84" fill="#8f8f8f" font-size="17">252 decided picks since Jun 23, 2026. 171W 81L, 67.9% hit rate, +7.4% ROI on 252,000 USD staked.</text>
 <line x1="92" y1="420.0" x2="980" y2="420.0" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
 <text x="80" y="425.0" fill="#8f8f8f" font-size="15" text-anchor="end">0</text>
 <line x1="92" y1="343.0" x2="980" y2="343.0" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-<text x="80" y="348.0" fill="#8f8f8f" font-size="15" text-anchor="end">500</text>
+<text x="80" y="348.0" fill="#8f8f8f" font-size="15" text-anchor="end">5,000</text>
 <line x1="92" y1="266.0" x2="980" y2="266.0" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-<text x="80" y="271.0" fill="#8f8f8f" font-size="15" text-anchor="end">1,000</text>
+<text x="80" y="271.0" fill="#8f8f8f" font-size="15" text-anchor="end">10,000</text>
 <line x1="92" y1="189.0" x2="980" y2="189.0" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-<text x="80" y="194.0" fill="#8f8f8f" font-size="15" text-anchor="end">1,500</text>
+<text x="80" y="194.0" fill="#8f8f8f" font-size="15" text-anchor="end">15,000</text>
 <line x1="92" y1="112.0" x2="980" y2="112.0" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
-<text x="80" y="117.0" fill="#8f8f8f" font-size="15" text-anchor="end">2,000</text>
+<text x="80" y="117.0" fill="#8f8f8f" font-size="15" text-anchor="end">20,000</text>
 <line x1="170.1" y1="420" x2="170.1" y2="426" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
 <text x="170.1" y="446" fill="#8f8f8f" font-size="15" text-anchor="middle">Jul</text>
 <line x1="472.6" y1="420" x2="472.6" y2="426" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
@@ -31,6 +31,6 @@
 <line x1="972.7" y1="112" x2="972.7" y2="420" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="2 4"/>
 <text x="964.7" y="128" fill="#8f8f8f" font-size="14" text-anchor="end">sealed before kickoff from here</text>
 <circle cx="977.6" cy="131.5" r="6" fill="#42d68c" stroke="#0b0b0b" stroke-width="2"/>
-<text x="991.6" y="138.5" fill="#ffffff" font-size="20" font-weight="600">+1,873.66 USD</text>
+<text x="991.6" y="138.5" fill="#ffffff" font-size="20" font-weight="600">+18,736.60 USD</text>
 <text x="1168" y="460" fill="#8f8f8f" font-size="14" text-anchor="end">0xinsider.com/pick-of-the-day</text>
 </svg>
