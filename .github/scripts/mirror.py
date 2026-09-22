@@ -49,6 +49,19 @@ the after-the-fact proof this repository refuses to present as one. Once the
 first seal has landed here, that exception closes: a hash that reaches this
 repository after its kickoff is written as it is, and `verify.py` fails it.
 
+There is a third case, and it is the one this script had no vocabulary for
+until 0xinsider/0xinsider#16526: the mirror existed and was DOWN. On 2026-09-22
+the ledger endpoint answered 401 to every run for nearly four hours, and two
+picks reached kickoff with no hash mirrored here. Those picks are not
+`pre_commitment` -- they were sealed, on time, by a backend that was working --
+and they are not proven either, because nothing public carried the hash before
+the game. They are recorded with an `outage` marker naming a window committed
+under `outages/`, and `verify.py` reports them as OUTAGE: counted, printed,
+subtracted from the proven set, and not a failure. The marker upgrades nothing.
+It is honoured only when the window's own commit PREDATES the commit that
+introduces the hash, which git can check and nobody can fake, so an outage can
+never be written to excuse a hash that has already landed late.
+
 MODES
 -----
   seal        fetch, append commitments not yet committed, regenerate
@@ -142,6 +155,30 @@ OPENED_FIELDS = (
     "revisions",
 )
 KNOWN_FIELDS = frozenset(SEALED_FIELDS) | frozenset(OPENED_FIELDS) | {"pick_date"}
+
+# The order an opened record is written in. `outage` is computed HERE, from the
+# windows committed under outages/, and is deliberately absent from
+# OPENED_FIELDS and KNOWN_FIELDS: the endpoint does not send it, and an endpoint
+# that starts sending a field by that name is reported and dropped like any
+# other unannounced field rather than being copied onto a proof surface.
+RECORD_FIELDS = (
+    "pick_rank",
+    "state",
+    "pre_commitment",
+    "outage",
+    "commitment_hash",
+    "commitment_nonce",
+    "commitment_algo",
+    "sealed_at",
+    "kickoff",
+    "resolved_at",
+    "outcome",
+    "payload",
+    "matchup",
+    "category",
+    "permalink",
+    "revisions",
+)
 
 
 class MirrorError(Exception):
@@ -470,6 +507,35 @@ def predates_mirror(entry: dict, cutoff: datetime | None) -> bool:
     return datetime.fromisoformat(kickoff.replace("Z", "+00:00")) < cutoff
 
 
+def outage_window(entry: dict, windows: list[dict]) -> str | None:
+    """The committed outage window this pick's kickoff fell inside, or None.
+
+    Stamped on a pick whose hash this repository is recording for the first time
+    AFTER its game because the mirror could not read the ledger while the pick
+    was live. It changes nothing about the pick's proof: the hash still arrives
+    late, `verify.py` still refuses to count it among the proven, and the marker
+    only says which committed gap it belongs to.
+
+    Stamping one can never launder a late hash. `verify.py` honours a window
+    only if the window's own commit predates the commit introducing the hash,
+    so a window that does not already exist when this runs is worth nothing,
+    however this script labels the pick.
+
+    The windows are loaded by `verify.load_outages`, which validates them, and
+    read here rather than reimplemented for the same reason the money
+    arithmetic is: two readers of one format drift apart quietly.
+    """
+    if not entry.get("commitment_hash"):
+        return None
+    kickoff = (entry.get("payload") or {}).get("kickoff") or entry.get("kickoff")
+    if not isinstance(kickoff, str):
+        return None
+    window = verify.window_covering(
+        datetime.fromisoformat(kickoff.replace("Z", "+00:00")), windows
+    )
+    return window["id"] if window else None
+
+
 # --------------------------------------------------------------------------
 # Day files
 # --------------------------------------------------------------------------
@@ -603,6 +669,7 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
         log(f"NOTICE {still_pending} uncommitted pick(s) still pending; recorded once they settle")
 
     cutoff = first_mirrored_seal()
+    windows = verify.load_outages()
 
     for pick_date in sorted(by_date):
         day = load_day(pick_date)
@@ -622,19 +689,30 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 # The one exception is a game that started before this
                 # repository sealed anything (`predates_mirror`): there was no
                 # mirror to be late, and it is recorded as pre_commitment.
+                #
+                # A game that started inside a committed outage window is
+                # marked, not excused: the hash is written exactly as it is, the
+                # pick stays out of the proven set, and `outage` names the gap
+                # so a reader can tell a mirror that was down from a proof that
+                # is broken. pre_commitment wins if both somehow apply, because
+                # "there was no mirror" is the stronger statement of the two.
+                pre = predates_mirror(entry, cutoff)
+                window = None if pre else outage_window(entry, windows)
                 record = build_opened(
                     entry,
                     context,
                     prior_revisions=[],
-                    pre_commitment=predates_mirror(entry, cutoff),
+                    pre_commitment=pre,
+                    outage=window,
                 )
                 day["picks"].append(record)
                 existing[rank] = record
-                touched.append(
-                    f"rank {rank} opened (pre-commitment)"
-                    if record.get("pre_commitment")
-                    else f"rank {rank} opened, never sealed here"
-                )
+                if record.get("pre_commitment"):
+                    touched.append(f"rank {rank} opened (pre-commitment)")
+                elif window:
+                    touched.append(f"rank {rank} opened, mirror was down ({window})")
+                else:
+                    touched.append(f"rank {rank} opened, never sealed here")
                 continue
 
             if prior.get("state") == "sealed":
@@ -718,6 +796,7 @@ def build_opened(
     prior_revisions: list,
     sealed: dict | None = None,
     pre_commitment: bool = False,
+    outage: str | None = None,
 ) -> dict:
     record = ordered(entry, OPENED_FIELDS)
     # Every settled pick is an opened entry here, whatever the endpoint called
@@ -727,6 +806,12 @@ def build_opened(
         record["pre_commitment"] = True
         for field in ("commitment_hash", "commitment_nonce", "commitment_algo", "sealed_at"):
             record.pop(field, None)
+    elif outage:
+        # A pick with a hash, written late because the mirror could not reach
+        # the ledger before its game. The hash stays, exactly as the backend
+        # produced it. The marker says which committed outage that gap is, and
+        # it is set only from `outages/`, never from anything the endpoint sent.
+        record["outage"] = outage
     if sealed is not None:
         # The sealed entry's own values win for anything written before the
         # game. They are what this repository committed to.
@@ -740,7 +825,7 @@ def build_opened(
         "permalink", f"{PERMALINK_BASE}/{entry['pick_date']}/{entry['pick_rank']}"
     )
     record["revisions"] = list(prior_revisions) + [revision(entry, context)]
-    return {field: record[field] for field in OPENED_FIELDS if field in record}
+    return {field: record[field] for field in RECORD_FIELDS if field in record}
 
 
 # --------------------------------------------------------------------------
@@ -750,7 +835,7 @@ def build_opened(
 
 def tally() -> dict:
     """Recompute the record from ledger/, using verify.py's arithmetic."""
-    opened = sealed = pre_commitment = 0
+    opened = sealed = pre_commitment = outage = 0
     wins = losses = voids = 0
     profit = Decimal(0)
     staked = Decimal(0)
@@ -768,6 +853,8 @@ def tally() -> dict:
             last_date = pick_date if last_date is None else max(last_date, pick_date)
             if pick.get("pre_commitment"):
                 pre_commitment += 1
+            elif pick.get("outage"):
+                outage += 1
             outcome = pick.get("outcome")
             if outcome == "win":
                 wins += 1
@@ -786,7 +873,11 @@ def tally() -> dict:
         "opened": opened,
         "sealed": sealed,
         "pre_commitment": pre_commitment,
-        "proven": opened - pre_commitment,
+        # Picks whose game started inside a committed mirror outage. They carry
+        # a hash and are NOT pre_commitment, and they are not proven either, so
+        # they come out of `proven` the same way. `verify.py` prints each one.
+        "outage": outage,
+        "proven": opened - pre_commitment - outage,
         "wins": wins,
         "losses": losses,
         "voids": voids,
@@ -868,6 +959,10 @@ def render_record(stats: dict) -> str:
         ("Proven sealed before kickoff", str(stats["proven"])),
         ("No pre-game proof (pre-commitment)", str(stats["pre_commitment"])),
     ]
+    # Only once it has happened. A row that reads 0 forever teaches a reader to
+    # skip it, which is the opposite of what it is for.
+    if stats["outage"]:
+        rows.append(("No pre-game proof (mirror outage)", str(stats["outage"])))
     lines = ["", f"Record through {stats['through'] or 'no settled pick yet'}.", "", "| | |", "| --- | --- |"]
     lines += [f"| {label} | {value} |" for label, value in rows]
     lines += [
