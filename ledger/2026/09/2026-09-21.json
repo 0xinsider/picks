@@ -3,21 +3,67 @@
   "picks": [
     {
       "pick_rank": 1,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "49a10206a6719b3ae1d1016ca928d134262cdfd84a050718377eef72eb7c31ce",
+      "commitment_nonce": "ee552ddb04eb47dcbdbaae4e3845599ce5ea2170b3ffc218be1061f0c9ff5b34",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-21T20:20:20.526744Z",
       "kickoff": "2026-09-22T00:15:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-21/1"
+      "resolved_at": "2026-09-22T03:46:16.372882Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x38657f1f6a893ee3702217d1af586e8651ee736d613f54180a6d82f81c586f87",
+        "kickoff": "2026-09-22T00:15:00Z",
+        "pick_date": "2026-09-21",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Rams",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Giants vs. Rams",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-21/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-22T03:46:16.372882Z",
+          "parent_commit": "0fb7475f461b9953a0b3c0f348b636160b402b64",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35688526854"
+        }
+      ]
     },
     {
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "620c2ffef83283ba998a10ac42480f466dd79f8b3763b316bd93333289bac5a5",
+      "commitment_nonce": "c14dced0f8ae147ece1fe841b1875f5171988c6de134162101860649988d5460",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-21T22:01:18.647545Z",
       "kickoff": "2026-09-22T00:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-21/2"
+      "resolved_at": "2026-09-22T02:52:27.902687Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x05877726250f4903cbe937cd159419b2be8a9a604f36ae38c062b10b090d4f68",
+        "kickoff": "2026-09-22T00:00:00Z",
+        "pick_date": "2026-09-21",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Dream",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Atlanta Dream vs. New York Liberty",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-21/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-22T02:52:27.902687Z",
+          "parent_commit": "0fb7475f461b9953a0b3c0f348b636160b402b64",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35688526854"
+        }
+      ]
     }
   ]
 }
