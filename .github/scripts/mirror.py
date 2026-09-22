@@ -157,11 +157,20 @@ def log(message: str) -> None:
 # --------------------------------------------------------------------------
 
 
-def fetch_entries(url: str, token: str) -> list[dict]:
+def fetch_entries(url: str) -> list[dict]:
+    # NO CREDENTIAL. The ledger endpoint is public (0xinsider/0xinsider#16459).
+    # It was API-key gated until 2026-09-22, when the key held in the repository
+    # secret OXINSIDER_API_KEY was revoked by a routine key rotation on the
+    # account that owned it -- one active key per user -- and every Seal and
+    # Reveal run failed 401 from 14:51Z. A pick that reaches kickoff without a
+    # mirrored hash can never be proven by any later run, so a public record
+    # cannot depend on one person's key surviving a rotation. Sending a key here
+    # again would reintroduce exactly that failure, and the endpoint gains
+    # nothing from it: what withholds a live pick's nonce and side is the
+    # backend's own state machine, never the caller's credential.
     request = urllib.request.Request(
         url,
         headers={
-            "Authorization": f"Bearer {token}",
             "Accept": "application/json",
             "User-Agent": "0xinsider-picks-mirror (+https://github.com/0xinsider/picks)",
         },
@@ -1220,39 +1229,16 @@ def main() -> int:
             return 0
         return 0 if commit_and_push("chore", changes or ["regenerate"]) else 1
 
-    # A missing credential means one of two opposite things, and which one it is
-    # depends on whether this mirror has ever worked. DO NOT SIMPLIFY THIS BACK
-    # TO AN UNCONDITIONAL PASS.
-    #
-    # Empty ledger: the endpoint has not shipped and the read-only key has not
-    # been stored yet. Failing several dozen times a day over a state nobody has
-    # reached would teach everyone to ignore a red run, and red here is supposed
-    # to mean a broken proof. So it passes, and says so.
-    #
-    # Non-empty ledger: the mirror demonstrably worked, and the key has since
-    # been removed, rotated or expired. Passing green there would let
-    # commitments stop being recorded with nothing anywhere saying so, which is
-    # a far worse failure than the noise the empty case avoids -- a pick sealed
-    # while the key is dead never reaches this repository before its kickoff,
-    # and no later run can repair that. So it fails.
-    token = os.environ.get("OXINSIDER_API_KEY", "").strip()
-    if not token:
-        committed = sum(len(day.get("picks", [])) for _, day in read_all_days())
-        if committed == 0:
-            log(
-                "OXINSIDER_API_KEY is not configured and the ledger is empty. "
-                "Nothing was fetched and nothing was written. Set the repository "
-                "secret to a 0xinsider Pro API key (0xinsider/0xinsider#15805)."
-            )
-            return 0
-        raise MirrorError(
-            f"OXINSIDER_API_KEY is not configured, but this ledger already holds "
-            f"{committed} entry/entries. The mirror worked before and has stopped, "
-            f"so commitments are going unrecorded right now. Restore the repository "
-            f"secret. A pick sealed while the key is missing cannot be mirrored "
-            f"before its kickoff by any later run."
-        )
-    entries = fetch_entries(args.url, token)
+    # No credential guard, and nothing to restore if one goes missing: the
+    # endpoint is public (0xinsider/0xinsider#16459), so this run depends on
+    # nothing that a key rotation elsewhere can revoke. The guard this replaces
+    # existed to tell "the key was never stored" apart from "the key stopped
+    # working", and on 2026-09-22 it did its job -- it failed every run, loudly,
+    # for three hours -- while picks reached kickoff unmirrored anyway, because
+    # no amount of loudness recovers a proof that missed its game. The failure
+    # modes that remain all fail the run below: an error response, an unexpected
+    # shape, or a sealed pick carrying a nonce.
+    entries = fetch_entries(args.url)
 
     # Cursor-free, so a losing race costs one refetch of the local tree and a
     # replay, never a reconciliation. The endpoint is read once.
