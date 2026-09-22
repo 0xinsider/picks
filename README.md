@@ -22,8 +22,9 @@ git clone https://github.com/0xinsider/picks && cd picks && python3 verify.py
 ```
 
 Standard library only. No network, no credentials, no dependencies. Exit 0 means
-every hash reopened, every sealing commit predates its kickoff, and the record
-below matches the raw data. Exit 1 names the pick that failed and why.
+every hash reopened, every sealing commit predates its kickoff or is accounted
+for by a committed outage window, and the record below matches the raw data.
+Exit 1 names the pick that failed and why.
 
 Clone the full history. `--depth 1` disables the two checks that read git
 history, and those are the ones that catch a backdated record.
@@ -60,6 +61,43 @@ Sealing started on September 21, 2026. Every pick before that is in the record
 with no pre-game proof and is marked `"pre_commitment": true`. The table reports
 those separately from the proven set and never folds them together.
 
+## The three ways a pick can end up without a proof
+
+A pick either has a public pre-game commitment in this repository or it does
+not. When it does not, the data says which of three things happened:
+
+- **`"pre_commitment": true`, there was no proof to make.** The pick predates
+  sealing, or it reached kickoff unsealed, or its game started before this
+  repository recorded its first sealed commitment. It carries no hash, because
+  none ever existed in public before the game.
+- **`"outage": "<window>"`, the mirror existed and was down.** The backend
+  sealed the pick on time, this repository could not read the ledger before
+  kickoff, and the hash landed after the game. The pick keeps its hash and
+  names the window under `outages/` that was open when its game started.
+- **Neither.** The pick is proven, or it is a failure. A hash whose first commit
+  is at or after its kickoff, with no window accounting for it, is a `PRE-GAME`
+  failure and turns this repository red.
+
+An outage window is a checked-in record of when the mirror was down, why, and
+where the incident is written up. It upgrades nothing. A pick covered by one is
+still not proven here, is still subtracted from the proven count, and
+`verify.py` prints it as `OUTAGE` on every run, counted separately from both a
+pass and a failure.
+
+What keeps that from being an excuse is ordering, and git checks it without
+taking anyone's word: the window's own commit must predate the commit that
+first introduced the hash it covers. A window written after the hash landed is
+ignored, and the pick goes back to being a `PRE-GAME` failure that says so.
+Widening a window later fails the same way, because the new bound has its own
+first commit and it is the later of the two that counts.
+
+The first one is `outages/2026-09-22-mirror-401.json`: on September 22, 2026 a
+routine key rotation revoked the API key this repository read the ledger with,
+and every run answered 401 for nearly four hours. Two picks reached kickoff in
+that window. The fix was to stop sending a credential at all, because the
+endpoint is public and a public record should not depend on one key surviving a
+rotation.
+
 ## How a pick gets here
 
 1. **Publish, kickoff minus 1 hour.** The pick goes live on the site and the
@@ -90,6 +128,7 @@ pinned test vector, and the checks in the order they run.
 ```
 record.svg                             the chart above, generated from ledger/
 ledger/<YYYY>/<MM>/<YYYY-MM-DD>.json   one file per product day
+outages/<YYYY-MM-DD>-<slug>.json       one file per mirror outage window
 index.json                             every entry, flat, plus the record
 verify.py                              the verifier
 VERIFY.md                              the protocol

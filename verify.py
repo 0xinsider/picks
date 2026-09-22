@@ -24,7 +24,8 @@ the hash can be reopened by anyone.
 
   1. HASH        recompute sha256(canonical_json(payload)||nonce) == committed hash
   2. PRE-GAME    the commit that FIRST introduced that hash predates the kickoff
-                 recorded in the payload
+                 recorded in the payload, or the pick names a committed outage
+                 window that was open at kickoff and was itself committed first
   3. IMMUTABLE   the payload never changed across the file's history
   4. GAPS        no sealed pick stays unopened long past its kickoff
   5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
@@ -53,6 +54,16 @@ Those carry `"pre_commitment": true` and are excluded from checks 1 and 2 by
 construction -- they are counted in the record and reported separately, never
 mixed into the proven set.
 
+That a pick whose game started while this mirror was down was sealed on time.
+A pick can be in one of three states with respect to proof, and the data says
+which: `pre_commitment`, there was no mirror to be late (or the pick was never
+sealed at all); `outage`, the mirror existed and could not read the ledger, in
+a window committed to this repository BEFORE the hash landed; and neither, in
+which case a hash that arrives after kickoff is a PRE-GAME failure. An `outage`
+pick is reported as OUTAGE, counted, and subtracted from the proven set. The
+window explains the gap. It does not close it, and it is believed only because
+git can show it was written before the thing it explains.
+
 That history was never rewritten. Check 2 reads git history, so a force-push
 that replaced the seal commits would defeat it. `main` is branch-protected
 against force-push and every commit here is authored by a workflow whose source
@@ -73,6 +84,9 @@ from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
 LEDGER_DIR = Path("ledger")
+
+# Committed mirror-outage windows, one file per outage. See `load_outages`.
+OUTAGE_DIR = Path("outages")
 
 # The eight fields the commitment is taken over, and nothing else. An extra or
 # missing key is a failure, not something to tolerate: the hash is only
@@ -183,6 +197,17 @@ def git(*args: str) -> str:
     return result.stdout
 
 
+def utc(moment: datetime) -> str:
+    """One instant, in one form, so two of them can be compared by eye.
+
+    A commit date carries the committer's own offset, and every timestamp in
+    the ledger is written as UTC with a literal Z. A message that prints a
+    `+03:00` commit date beside a `Z` kickoff invites a reader to conclude the
+    opposite of what it says, so everything printed here is moved to UTC first.
+    """
+    return moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
 def parse_ts(value: str, what: str) -> datetime:
     try:
         parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
@@ -213,6 +238,182 @@ def first_commit_introducing(path: Path, needle: str) -> tuple[str, datetime]:
         if blob.returncode == 0 and needle in blob.stdout:
             return sha, parse_ts(iso, "commit date")
     raise Failure(f"{needle[:16]}... never appears in the history of {path}")
+
+
+def load_outages() -> list[dict]:
+    """Every committed mirror-outage window, one JSON file each under outages/.
+
+    A window records a period in which this repository could not copy a hash out
+    of the ledger endpoint: the mirror existed and was down. It carries an `id`
+    matching its filename, a `start` and `end` in the same RFC 3339 whole-second
+    form as a kickoff, a `cause`, and a `reference` to where the incident is
+    written up.
+
+    A window is not a proof and it upgrades nothing. A pick whose kickoff falls
+    inside one still has no pre-game commitment in this repository; it is
+    reported as OUTAGE and subtracted from the proven set, exactly as
+    `pre_commitment` is. All the window does is name which gap a late hash
+    belongs to, so a reader can tell a broken proof from a broken mirror.
+
+    What makes it believable is ordering, which git checks without trusting
+    anyone: the window's own commit must predate the commit that first
+    introduced the hash it covers (`window_commit`). A window written afterwards
+    is an excuse composed once the problem was known, which is the backdated
+    record this whole repository exists to rule out.
+
+    A malformed file stops the run. A window is a claim about history, and one
+    nobody can parse is not a claim worth reading past.
+    """
+    windows: list[dict] = []
+    if not OUTAGE_DIR.is_dir():
+        return windows
+    for path in sorted(OUTAGE_DIR.glob("*.json")):
+        text = path.read_text()
+        try:
+            window = json.loads(text)
+        except json.JSONDecodeError as exc:
+            raise SystemExit(f"{path}: not valid JSON: {exc}")
+        if not isinstance(window, dict):
+            raise SystemExit(f"{path}: an outage window must be a JSON object")
+        missing = sorted({"id", "start", "end", "cause", "reference"} - window.keys())
+        if missing:
+            raise SystemExit(f"{path}: outage window is missing {missing}")
+        if window["id"] != path.stem:
+            raise SystemExit(
+                f"{path}: id is {window['id']!r} but the file is named {path.stem!r}. "
+                f"A pick names a window by id, so the two must be the same string."
+            )
+        for field in ("start", "end"):
+            value = window[field]
+            if not (isinstance(value, str) and len(value) == 20 and value.endswith("Z")):
+                raise SystemExit(
+                    f"{path}: {field} must be RFC 3339 whole seconds with a literal Z, "
+                    f"got {value!r}"
+                )
+            # `window_commit` dates this window by searching the file's history
+            # for this exact quoted value. A value that also appears elsewhere
+            # in the file could match a line nobody meant to pin, and the window
+            # would be dated by that line instead of by its own bound.
+            occurrences = text.count(f'"{value}"')
+            if occurrences != 1:
+                raise SystemExit(
+                    f"{path}: {value} appears {occurrences} times in quotes in this file. "
+                    f"A window's start and end must each appear exactly once, so the "
+                    f"commit that set them can be found. Reword the other mention."
+                )
+        try:
+            window["start_at"] = parse_ts(window["start"], f"{path} start")
+            window["end_at"] = parse_ts(window["end"], f"{path} end")
+        except Failure as exc:
+            raise SystemExit(f"{path}: {exc}")
+        if window["start_at"] >= window["end_at"]:
+            raise SystemExit(
+                f"{path}: start {window['start']} is not before end {window['end']}"
+            )
+        window["path"] = path
+        windows.append(window)
+    return windows
+
+
+def window_covering(kickoff: datetime, windows: list[dict]) -> dict | None:
+    """The committed outage window a kickoff falls inside, if any."""
+    for window in windows:
+        if window["start_at"] <= kickoff <= window["end_at"]:
+            return window
+    return None
+
+
+def window_commit(window: dict) -> tuple[str, datetime]:
+    """When this window's CURRENT bounds were committed, and in which commit.
+
+    The LATER of the two commits that first introduced `start` and `end`, which
+    is what stops a window from being widened after the fact. An `end` pushed
+    out to cover a hash that has already landed is a new value with a new and
+    later first commit, so it fails the ordering check exactly as a window
+    written late in one piece would.
+    """
+    first_start = first_commit_introducing(window["path"], f'"{window["start"]}"')
+    first_end = first_commit_introducing(window["path"], f'"{window["end"]}"')
+    return max(first_start, first_end, key=lambda found: found[1])
+
+
+def pre_game_check(
+    who: str, path: Path, pick: dict, payload: dict, windows: dict[str, dict]
+) -> tuple[list[str], str | None]:
+    """Check 2 for one pick. Returns (failures, outage notice).
+
+    The commit that FIRST introduced this pick's hash must predate its kickoff.
+    When it does not, there is exactly one thing that turns the failure into a
+    reported gap instead, and every part of it is checked here:
+
+      * the pick names an `outage` window that is committed under outages/;
+      * this pick's kickoff falls inside that window;
+      * the window's own commit predates the commit that introduced the hash.
+
+    The last one is the one with teeth. It is why a window cannot be written to
+    excuse a hash that has already landed, and when it fails the pick stays a
+    PRE-GAME failure and the output says why the window did not apply.
+
+    A notice is never a pass. The caller counts it and takes the pick OUT of the
+    proven set; it means "this pick has no pre-game proof here, and this is the
+    committed outage that is why".
+    """
+    failures: list[str] = []
+    kickoff = parse_ts(payload["kickoff"], "kickoff")
+    sha, when = first_commit_introducing(path, pick["commitment_hash"])
+    marker = pick.get("outage")
+
+    if when < kickoff:
+        if marker is not None:
+            failures.append(
+                f"OUTAGE   {who}: carries an outage marker ({marker}) but its hash was "
+                f"first committed {utc(when)}, BEFORE kickoff {utc(kickoff)}. "
+                f"This pick is proven; the marker claims a gap that did not happen to it."
+            )
+        return failures, None
+
+    late = (
+        f"PRE-GAME {who}: hash first committed {utc(when)} in {sha[:10]}, "
+        f"at or AFTER kickoff {utc(kickoff)}. "
+        f"This pick is not proven to predate its game."
+    )
+    if marker is None:
+        return [late], None
+
+    window = windows.get(marker)
+    if window is None:
+        return [
+            late,
+            f"OUTAGE   {who}: names outage window {marker!r}, which is not committed "
+            f"under {OUTAGE_DIR}/. A window that is not in this repository explains "
+            f"nothing and was ignored.",
+        ], None
+
+    if not (window["start_at"] <= kickoff <= window["end_at"]):
+        return [
+            late,
+            f"OUTAGE   {who}: kickoff {utc(kickoff)} is outside window {marker} "
+            f"({window['start']} to {window['end']}). A window covers the games that "
+            f"started while the mirror was down, and no others. Ignored.",
+        ], None
+
+    window_sha, window_when = window_commit(window)
+    if window_when >= when:
+        return [
+            late,
+            f"OUTAGE   {who}: window {marker} was itself committed {utc(window_when)} "
+            f"in {window_sha[:10]}, at or AFTER the hash it covers ({utc(when)} in "
+            f"{sha[:10]}). A window written once the hash had landed is an excuse, not a "
+            f"record, and was ignored.",
+        ], None
+
+    return failures, (
+        f"OUTAGE   {who}: kickoff {utc(kickoff)} fell inside {marker} "
+        f"({window['start']} to {window['end']}, committed {utc(window_when)} in "
+        f"{window_sha[:10]}). The hash first reached this repository {utc(when)}, "
+        f"after the game, because the mirror could not read the ledger before it. "
+        f"NOT proven, and not counted as proven. See {window['path']}."
+    )
 
 
 def pick_history(path: Path, rank: int) -> list[dict]:
@@ -382,9 +583,12 @@ def main() -> int:
         print("ledger is empty: nothing to verify, and nothing is claimed.")
         return 0
 
+    windows = {window["id"]: window for window in load_outages()}
+
     failures: list[str] = []
     skips: list[str] = []
-    opened = sealed = pre_commitment = 0
+    outage_notes: list[str] = []
+    opened = sealed = pre_commitment = outage = 0
     wins = losses = voids = 0
     profit = Decimal(0)
     staked = Decimal(0)
@@ -452,18 +656,22 @@ def main() -> int:
                     elif not args.skip_git:
                         # 2. PRE-GAME
                         try:
-                            sha, when = first_commit_introducing(
-                                path, pick["commitment_hash"]
+                            problems, notice = pre_game_check(
+                                who, path, pick, payload, windows
                             )
-                            kickoff = parse_ts(payload["kickoff"], "kickoff")
-                            if when >= kickoff:
-                                failures.append(
-                                    f"PRE-GAME {who}: hash first committed {when.isoformat()} "
-                                    f"in {sha[:10]}, at or AFTER kickoff {kickoff.isoformat()}. "
-                                    f"This pick is not proven to predate its game."
-                                )
+                            failures.extend(problems)
+                            if notice is not None:
+                                outage_notes.append(notice)
+                                outage += 1
                         except Failure as exc:
                             failures.append(f"PRE-GAME {who}: {exc}")
+                    elif pick.get("outage"):
+                        # History was not walked, so the ordering that is the
+                        # only reason to believe a window cannot be checked. The
+                        # marker is counted so the totals have the same shape
+                        # either way, and the skip notice at the end says what
+                        # that count is worth here.
+                        outage += 1
                 except KeyError as exc:
                     failures.append(f"HASH     {who}: opened pick missing {exc}")
                 except Failure as exc:
@@ -499,6 +707,11 @@ def main() -> int:
             f"            {pre_commitment} of the opened picks predate this ledger "
             f"and carry NO pre-game proof"
         )
+    if outage:
+        print(
+            f"            {outage} kicked off during a committed mirror outage and "
+            f"carry NO pre-game proof either"
+        )
     print(f"record      {wins}W {losses}L {voids}V")
     if decided:
         print(f"hit rate    {wins / decided * 100:.1f}%  over {decided} decided")
@@ -509,6 +722,11 @@ def main() -> int:
             f"({profit / staked * 100:+.1f}% ROI)"
         )
     print("            compare these against https://0xinsider.com/pick-of-the-day\n")
+
+    for note in outage_notes:
+        print(f"  {note}")
+    if outage_notes:
+        print()
 
     for note in skips:
         print(f"SKIP {note}")
@@ -521,12 +739,18 @@ def main() -> int:
             print(f"  {line}")
         return 1
 
-    proven = opened - pre_commitment
+    proven = opened - pre_commitment - outage
     print(f"PASSED  {proven} pick(s) proven sealed before their game.")
+    if outage:
+        print(
+            f"        {outage} more reached kickoff during a committed mirror outage\n"
+            f"        and are reported above. They are NOT proven by this repository."
+        )
     if args.skip_git:
         print(
             "        History checks were skipped, so nothing here rules out a\n"
-            "        backdated seal or an outcome edited in place."
+            "        backdated seal, an outcome edited in place, or an outage\n"
+            "        window written after the hash it claims to explain."
         )
     return 0
 

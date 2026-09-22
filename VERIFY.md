@@ -204,10 +204,15 @@ When the pick settles, `state` becomes `"opened"` and the entry gains
 and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
 keep the values they were sealed with.
 
+Two optional fields say a pick has no pre-game proof, and which kind of gap it
+is: `"pre_commitment": true` and `"outage": "<window id>"`. Both are described
+below, and both take the pick out of the proven count.
+
 `index.json` is every entry in one flat array with the recomputed record, for
 anything that would rather not walk the tree. Its `record` object carries the
-counts (`opened`, `sealed`, `pre_commitment`, `proven`, `wins`, `losses`,
-`voids`, `decided`), `hit_rate` and `roi` as percentage strings, and the money
+counts (`opened`, `sealed`, `pre_commitment`, `outage`, `proven`, `wins`,
+`losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
+the money
 figures: `stake_usd`, the flat stake every decided pick is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
 total put down. `profit_usd` was named `profit_per_100` until September 22,
@@ -310,6 +315,58 @@ as it is and fails PRE-GAME.
 A pick that reaches kickoff unsealed after that point is marked the same way.
 It is counted, and it is not proven.
 
+### Picks whose game started while the mirror was down
+
+There is a third case, and it is neither of the two above: the backend sealed
+the pick on time, and this repository could not read the ledger before the game.
+The pick was proven to exist by a working backend and by nothing public, which
+is not a proof.
+
+Those picks carry their hash, are NOT marked `pre_commitment`, and carry
+`"outage": "<window id>"` naming a file under `outages/`:
+
+```json
+{
+  "id": "2026-09-22-mirror-401",
+  "start": "2026-09-22T14:51:23Z",
+  "end": "2026-09-22T18:39:07Z",
+  "cause": "Every Seal and Reveal run answered 401 ...",
+  "reference": "https://github.com/0xinsider/0xinsider/issues/16459"
+}
+```
+
+`start` and `end` are in the same RFC 3339 whole-second form as a kickoff. The
+`id` matches the filename. `cause` and `reference` say what happened and where
+it is written up. Extra fields are allowed and ignored.
+
+`verify.py` reports such a pick as `OUTAGE`: printed in full on every run,
+counted, and SUBTRACTED from the proven set, exactly as `pre_commitment` is. It
+is not a pass and it is not a failure. The window explains the gap; it does not
+close it.
+
+A window is believed for one reason, and it is not that we wrote it. Check 2
+requires the window's own commit to PREDATE the commit that first introduced
+the hash it covers:
+
+```sh
+# When this window's bounds were committed.
+git log --reverse --format='%H %aI' -S '"2026-09-22T18:39:07Z"' -- outages/2026-09-22-mirror-401.json
+
+# When the hash it covers first appeared.
+git log --reverse --format='%H %aI' -S '<the hash>' -- ledger/2026/09/2026-09-22.json
+```
+
+The first must come first. A window committed after the hash it names is an
+excuse composed once the problem was known, and `verify.py` ignores it and
+fails the pick `PRE-GAME` with both commits printed. Widening a window later
+fails identically: the check takes the LATER of the commits that introduced
+`start` and `end`, so a bound moved after the fact carries its own late date.
+
+This is the same reasoning as `pre_commitment` for a pick that predates the
+mirror, applied to a case the scheme had no word for. Neither one claims a
+proof. Both say, in the data, exactly which kind of gap this is, so that a red
+run keeps meaning a broken proof rather than a broken mirror.
+
 ## What the workflows do, and do not do
 
 Three workflows, all readable in this repository, all guarded so a fork cannot
@@ -364,6 +421,12 @@ have no hash, no nonce and no pre-game evidence of any kind. Their presence in
 the record rests entirely on trusting us, which is the thing the rest of this
 document is trying to avoid. Read the two numbers separately.
 
+**That a pick marked `outage` was sealed before its game.** It says so, and the
+backend's own timestamps say so, and neither is a public pre-game commitment.
+What the window proves is narrower and still worth having: the gap was recorded
+here before the hash it covers landed, so it is not an explanation invented
+afterwards. The pick stays out of the proven count.
+
 **That every pick we made is in here.** The scheme proves that the picks in the
 ledger were sealed before their games. It does not prove the ledger is complete.
 Nothing in a commit-and-reveal scheme can prove that, because a pick that is
@@ -395,6 +458,13 @@ pick as PRE-GAME failed -- correctly. From this repository alone, a mirror that
 was late and a seal that was backdated look identical. That is why the failure is
 treated as a real one and never explained away, and why `seal.yml` runs every ten
 minutes against a one-hour window rather than just often enough.
+
+A committed outage window changes what a run PRINTS and never what it counts.
+The pick moves from PRE-GAME to OUTAGE, it stays out of the proven set, and the
+window is honoured only because git shows it was committed before the hash. It
+still cannot tell you the pick was sealed on time. It tells you the gap was on
+the record before the thing it explains arrived, which is the most a repository
+can say about its own downtime.
 
 **Everything `verify.py` does not check.** It does not scan for a day file that
 was deleted outright, or for a pick removed from a file that stayed. Check 6
