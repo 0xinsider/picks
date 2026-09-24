@@ -410,6 +410,8 @@ commit SHA plus a newline to `pick-seal-commit.txt` in the runner, then has
 uses the Sigstore Public Good instance and its independently witnessed,
 immutable transparency log. The receipt is stored in GitHub's attestations API;
 it is not a new field in the ledger and does not change a pick.
+The manual `attest_current` option can recover a missing receipt for the current
+head, but its new witness time cannot prove any earlier kickoff.
 
 First find the commit that introduced a particular pick's hash using the
 command above. Then reconstruct the receipt file and ask the GitHub CLI to

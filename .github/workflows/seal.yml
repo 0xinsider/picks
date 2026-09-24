@@ -54,6 +54,10 @@ on:
         description: "Apply to the working tree and show the diff without committing"
         type: boolean
         default: false
+      attest_current:
+        description: "Also sign the current main head if no commit changed; late receipts do not prove pregame timing"
+        type: boolean
+        default: false
 
 permissions: {}
 
@@ -100,7 +104,7 @@ jobs:
           BEFORE: ${{ steps.before.outputs.sha }}
         run: |
           after=$(git rev-parse HEAD)
-          if [ "$after" = "$BEFORE" ]; then
+          if [ "$after" = "$BEFORE" ] && [ "${{ inputs.attest_current }}" != "true" ]; then
             echo "created=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
