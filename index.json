@@ -3,7 +3,7 @@
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
     "opened": 264,
-    "sealed": 3,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
@@ -7784,6 +7784,16 @@
       "sealed_at": "2026-09-24T17:45:13.661358Z",
       "kickoff": "2026-09-24T18:45:00Z",
       "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/4"
+    },
+    {
+      "pick_date": "2026-09-24",
+      "pick_rank": 6,
+      "state": "sealed",
+      "commitment_hash": "ed0f57c4c40c8b28713d5689e3a7ec506f082946eef2f594e42217fcdd4aadcb",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-24T21:05:04.706183Z",
+      "kickoff": "2026-09-24T22:05:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/6"
     }
   ]
 }
