@@ -2,21 +2,21 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 252,
+    "opened": 262,
     "sealed": 0,
     "pre_commitment": 250,
-    "outage": 0,
-    "proven": 2,
-    "wins": 171,
-    "losses": 81,
+    "outage": 2,
+    "proven": 10,
+    "wins": 178,
+    "losses": 84,
     "voids": 0,
-    "decided": 252,
+    "decided": 262,
     "hit_rate": "67.9",
     "stake_usd": "1000",
-    "profit_usd": "18736.60",
-    "staked": "252000",
-    "roi": "7.4",
-    "through": "2026-09-21"
+    "profit_usd": "20251.07",
+    "staked": "262000",
+    "roi": "7.7",
+    "through": "2026-09-23"
   },
   "picks": [
     {
@@ -7335,6 +7335,338 @@
           "resolved_at": "2026-09-22T02:52:27.902687Z",
           "parent_commit": "0fb7475f461b9953a0b3c0f348b636160b402b64",
           "run": "https://github.com/0xinsider/picks/actions/runs/35688526854"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 1,
+      "state": "opened",
+      "commitment_hash": "c3a40b2f279a8a244f9777cb9ba2012bf6a7a733afb58251c258955ef4e55133",
+      "commitment_nonce": "a7c11b4eb40d30de59072ddaeb2ec371b5a6d86387cdbcf4f2384e1b3d288d4c",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-22T22:40:19.874400Z",
+      "kickoff": "2026-09-22T23:40:00Z",
+      "resolved_at": "2026-09-23T02:47:33.379661Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xecbe3da37e5c1360391e132a69f3ed349f7de21895336c9dfd15fce3d62fab6d",
+        "kickoff": "2026-09-22T23:40:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Chicago White Sox",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Chicago White Sox vs. Kansas City Royals",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-23T02:47:33.379661Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 2,
+      "state": "opened",
+      "outage": "2026-09-22-mirror-401",
+      "commitment_hash": "ad74095f3a0186b6a1d2f67e80d7d1e6d85a866eb807e5a12f307ad1c55a8d6c",
+      "commitment_nonce": "bee9d5408a9c119d1d97f1650b9e2504c4233d92c931b06af1e68e99923b4463",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-22T16:05:09.096380Z",
+      "kickoff": "2026-09-22T17:05:00Z",
+      "resolved_at": "2026-09-22T20:44:30.747860Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x0da3005f7d57b33cac257bcd4633611dd601709d2fa8bcb55749a98a3114d99f",
+        "kickoff": "2026-09-22T17:05:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New York Yankees",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Tampa Bay Rays vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-22T20:44:30.747860Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 3,
+      "state": "opened",
+      "outage": "2026-09-22-mirror-401",
+      "commitment_hash": "f5d2e011e5ef4610908420d7707fed14dca8738bde4ec4dc916b4d2defbae06d",
+      "commitment_nonce": "fa99f03f32a2483d5267d92b06a7829776603df89deb8f666d8687cb177bc1ae",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-22T15:00:08.511210Z",
+      "kickoff": "2026-09-22T16:00:00Z",
+      "resolved_at": "2026-09-22T20:14:30.667876Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x2f700a80c9b27658e5c052f2972d23da63997f94ce32d7939817a829be5112f6",
+        "kickoff": "2026-09-22T16:00:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "3DMAX",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: Inner Circle Esports vs 3DMAX (BO3) - Logitech G Play Connect Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-22T20:14:30.667876Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 4,
+      "state": "opened",
+      "commitment_hash": "3beebf467367296cca574cc2896d972c6b20ce99a61eeb43f3f5870605ed4556",
+      "commitment_nonce": "f37e2c700774b87a74b28ec7ae0818e13a051a9a678465447f3a547b84f50bf5",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T00:40:05.700942Z",
+      "kickoff": "2026-09-23T01:40:00Z",
+      "resolved_at": "2026-09-23T05:24:19.882070Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xf02acfb85bae359a48fb3a438a328e2bd57765df0891eab75761afd229bcc129",
+        "kickoff": "2026-09-23T01:40:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Seattle Mariners",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Houston Astros vs. Seattle Mariners",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-23T05:24:19.882070Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 5,
+      "state": "opened",
+      "commitment_hash": "a647dcc8d3fe9b94c55c4d4a6dca2ff58e9b3439da91c49ba234fee20ae78600",
+      "commitment_nonce": "be8f6a5963d0011c255ef76de4ce8e51eab042c232679d5f7f5cbfd2b6cccfc8",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-22T21:40:04.652765Z",
+      "kickoff": "2026-09-22T22:40:00Z",
+      "resolved_at": "2026-09-23T01:54:09.050760Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x72a6d0723ece5e4e856311ae9289151b0f34be080568f113778aa10d93b53e6a",
+        "kickoff": "2026-09-22T22:40:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Milwaukee Brewers vs. Philadelphia Phillies",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-23T01:54:09.050760Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-22",
+      "pick_rank": 6,
+      "state": "opened",
+      "commitment_hash": "b8fa67e378d5c21f2adc9ca1bf1220d4c27552a2d23dbfa46897c403eb431521",
+      "commitment_nonce": "1b87890f71de253a5cc83904ae9d250579e6558ef7451a7ae838a0990d528979",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-22T22:30:05.547729Z",
+      "kickoff": "2026-09-22T23:30:00Z",
+      "resolved_at": "2026-09-23T02:05:28.523836Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.925000",
+        "condition_id": "0xc297975ac60414d91ef53ae9df9b67a34fc8b89c3aa472bd58895bd9adbf889b",
+        "kickoff": "2026-09-22T23:30:00Z",
+        "pick_date": "2026-09-22",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Washington Mystics",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Connecticut Sun vs. Washington Mystics",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-22/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-23T02:05:28.523836Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-23",
+      "pick_rank": 1,
+      "state": "opened",
+      "commitment_hash": "c7248cac0956d263164102efffd1411182952e5f06a06bff449b159b7db077bb",
+      "commitment_nonce": "ef8a377e837011254cdba50095b9aecf24a42c4d6af8072295893aa0d426ef08",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T16:10:27.209096Z",
+      "kickoff": "2026-09-23T17:10:00Z",
+      "resolved_at": "2026-09-23T20:21:06.309011Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x17d3c2e9d95ea2c7f1b768f187aa1634f084596564e91b8ae3aeb9894eec5917",
+        "kickoff": "2026-09-23T17:10:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Washington Nationals vs. Detroit Tigers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-23T20:21:06.309011Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-23",
+      "pick_rank": 2,
+      "state": "opened",
+      "commitment_hash": "2cc3603d03dcc09ff3a912629c75a9456ac893679fd104dacc033d16699e4a7e",
+      "commitment_nonce": "3d469bebe46142594915cbb0a71e8830ceb9e964637623304259c1cb1ccd79b8",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T16:35:06.013056Z",
+      "kickoff": "2026-09-23T17:35:00Z",
+      "resolved_at": "2026-09-23T22:12:12.807274Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x7e8de41579c8ba1a368456f70b9402c9be4ec5bf3238c8393f6d18277d610963",
+        "kickoff": "2026-09-23T17:35:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Toronto Blue Jays vs. Baltimore Orioles",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-23T22:12:12.807274Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-23",
+      "pick_rank": 3,
+      "state": "opened",
+      "commitment_hash": "de99f7db6578fa9bd9f65b17c8e2ade2b7916cf0e880363744d689f4712456e5",
+      "commitment_nonce": "a19a3fd4c3007c419eafd9fea19e8ac6fa5f54341d4d7174864769d12df166aa",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T16:00:08.837334Z",
+      "kickoff": "2026-09-23T17:00:00Z",
+      "resolved_at": "2026-09-23T19:21:44.994681Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.895000",
+        "condition_id": "0xcca0b7a4f1c36bfcd0f632db96cdc37a6dc6e415e333a27f73e97840847a66c4",
+        "kickoff": "2026-09-23T17:00:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Skillcamp Esport",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: Skillcamp Esport vs Pyramid IV Esports (BO3) - EMEA Masters Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-23T19:21:44.994681Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
+        }
+      ]
+    },
+    {
+      "pick_date": "2026-09-23",
+      "pick_rank": 5,
+      "state": "opened",
+      "commitment_hash": "9f405dff975caa75d04d2956716b51c0d3bd2740a14c95aef592cc6d70ea944f",
+      "commitment_nonce": "739ec8b8c63227d5c1dc10911b1906cc729aaa1df6feba3fd4241d9cf5839cc3",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T16:00:08.879450Z",
+      "kickoff": "2026-09-23T17:00:00Z",
+      "resolved_at": "2026-09-23T20:21:06.262483Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.650000",
+        "condition_id": "0xb66fc766d31496cd062b4185b29081a7958456569cf20d05120af0df1a1e36c1",
+        "kickoff": "2026-09-23T17:00:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "The Otter Side",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: CITA Kaizen vs The Otter Side (BO3) - EMEA Masters Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-23T20:21:06.262483Z",
+          "parent_commit": "c3f951600bc2401d49fb58a0a43b5d1ca728fa31",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
         }
       ]
     }

@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 21, 2026: +18,736.60 USD on 252,000 USD staked across 252 decided picks, 171W 81L, 67.9% hit rate, +7.4% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 23, 2026: +20,251.07 USD on 262,000 USD staked across 262 decided picks, 178W 84L, 67.9% hit rate, +7.7% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -32,18 +32,19 @@ history, and those are the ones that catch a backdated record.
 ## The record
 
 <!-- RECORD:BEGIN -->
-Record through 2026-09-21.
+Record through 2026-09-23.
 
 | | |
 | --- | --- |
-| Decided picks | 252 |
-| Record | 171W 81L 0V |
+| Decided picks | 262 |
+| Record | 178W 84L 0V |
 | Hit rate | 67.9% |
-| $1,000 per pick | +18,736.60 USD on 252,000 staked |
-| ROI | +7.4% |
+| $1,000 per pick | +20,251.07 USD on 262,000 staked |
+| ROI | +7.7% |
 | Sealed, not yet settled | 0 |
-| Proven sealed before kickoff | 2 |
+| Proven sealed before kickoff | 10 |
 | No pre-game proof (pre-commitment) | 250 |
+| No pre-game proof (mirror outage) | 2 |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
 `python3 verify.py` prints the same numbers from the same data.
