@@ -1,17 +1,20 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 23, 2026: +20,085.93 USD on 264,000 USD staked across 264 decided picks, 179W 85L, 67.8% hit rate, +7.6% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative hypothetical return before fees at 1,000 USD per pick through Sep 23, 2026: +20,085.93 USD on 264,000 USD hypothetical stakes across 264 decided picks, 179W 85L, 67.8% hit rate, +7.6% modeled ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-6 a day, sealed in this repository as a sha256 hash before its game starts and
-opened after the market settles. The chart and the table below are recomputed
+6 a day, appears in this public ledger once the source publishes it. Some have
+a hash in this repository from before kickoff; older and late entries do not.
+The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
 
 A pick is one Polymarket market, one side, and the price we backed it at. The
 backend hashes those fields with a 32-byte nonce, 1 hour before kickoff, and the
-hash lands here in a commit that GitHub timestamps, not us. After the market
+hash lands here in a git commit. Its author date is controlled by the writer;
+a workflow run's start time alone does not timestamp the hash. An independently
+retained, pregame copy supplies stronger timing evidence. After the market
 settles the nonce and the fields are appended, and the hash reopens for anyone
 with `sha256sum`.
 
@@ -22,8 +25,9 @@ git clone https://github.com/0xinsider/picks && cd picks && python3 verify.py
 ```
 
 Standard library only. No network, no credentials, no dependencies. Exit 0 means
-every hash reopened, every sealing commit predates its kickoff or is accounted
-for by a committed outage window, and the record below matches the raw data.
+every hash reopened, each late hash is disclosed and reviewed or covered by a
+prior outage record, and the record below matches the raw data. The script's
+timing comparison uses git author dates, which alone are not independent proof.
 Exit 1 names the pick that failed and why.
 
 Clone the full history. `--depth 1` disables the two checks that read git
@@ -39,19 +43,24 @@ Record through 2026-09-23.
 | Decided picks | 264 |
 | Record | 179W 85L 0V |
 | Hit rate | 67.8% |
-| $1,000 per pick | +20,085.93 USD on 264,000 staked |
-| ROI | +7.6% |
+| Modeled $1,000 per pick, before fees | +20,085.93 USD on 264,000 staked |
+| Modeled ROI before fees | +7.6% |
 | Sealed, not yet settled | 0 |
-| Proven sealed before kickoff | 12 |
+| Git-dated before kickoff | 3 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 2 |
+| No pre-game proof (late public hash) | 9 |
+| Git-dated cohort record | 3W 0L |
+| Git-dated cohort modeled ROI before fees | +70.0% |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
-`python3 verify.py` prints the same numbers from the same data.
+Returns model a flat $1,000 stake at the frozen price on each decided pick, before fees.
+They do not establish fills, actual wagers, or subscriber profit.
+`python3 verify.py` checks the same data and public git history.
 <!-- RECORD:END -->
 
 Rank 1 each day is free to any signed-in account. Ranks 2 to 6 are Pro. The
-record counts all of them the same way: $1,000 on every pick, a win returns
+modeled record counts all of them the same way: $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, a void refunds
 it. The stake was $100 until September 22, 2026 (0xinsider/0xinsider#16389);
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
@@ -62,10 +71,10 @@ Sealing started on September 21, 2026. Every pick before that is in the record
 with no pre-game proof and is marked `"pre_commitment": true`. The table reports
 those separately from the proven set and never folds them together.
 
-## The three ways a pick can end up without a proof
+## Why a pick can lack pre-game evidence
 
 A pick either has a public pre-game commitment in this repository or it does
-not. When it does not, the data says which of three things happened:
+not. When it does not, the data states the available evidence:
 
 - **`"pre_commitment": true`, there was no proof to make.** The pick predates
   sealing, or it reached kickoff unsealed, or its game started before this
@@ -75,9 +84,15 @@ not. When it does not, the data says which of three things happened:
   sealed the pick on time, this repository could not read the ledger before
   kickoff, and the hash landed after the game. The pick keeps its hash and
   names the window under `outages/` that was open when its game started.
-- **Neither.** The pick is proven, or it is a failure. A hash whose first commit
-  is at or after its kickoff, with no window accounting for it, is a `PRE-GAME`
-  failure and turns this repository red.
+- **`"late_unproven": true`, the public hash arrived after kickoff.** Nine
+  commitments affected by the September 22-24 ledger API outage are retained
+  with their original hashes, outcomes and first-commit identities. Their timing
+  is checked against the reviewed incident list in `verify.py`. A new late
+  commitment still turns verification red until it is investigated.
+
+The three-pick pregame cohort in the table is far too small to establish a
+repeatable edge. Its timing classification relies on git author dates, not an
+independent timestamp anchor. The full record also includes unproven history.
 
 An outage window is a checked-in record of when the mirror was down, why, and
 where the incident is written up. It upgrades nothing. A pick covered by one is
@@ -127,7 +142,9 @@ settled pick with no proof, never as a proof written after the fact.
 
 - That the picks are good. A fully verified record can be a losing one.
 - That every pick we made is in here. A pick that is never published leaves no
-  trace, in this repository or in any commit-and-reveal scheme.
+  trace, in this repository or in any commit-and-reveal scheme. Each successful
+  mirror read checks the source identities it is eligible to publish against
+  this repository; offline verification cannot inspect omitted source rows.
 - That history was never rewritten. `main` blocks force-pushes, every write
   comes from a workflow whose source is in this repository, and your own clone
   disagrees with any rewrite. Take one.

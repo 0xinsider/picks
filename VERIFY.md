@@ -3,8 +3,9 @@
 0xinsider publishes up to 6 picks a day, each 1 hour before its own kickoff, and
 a running record of how those picks did. The record is served from our
 database, and this repository is what makes it checkable from outside: every
-pick is committed to before its game and opened after it settles, in a public
-file whose history is timestamped by someone other than us.
+picks that reach this repository before kickoff carry a hash that can be
+reopened after settlement. Git author dates are writer-controlled; this
+repository alone cannot independently prove when GitHub received a hash.
 
 This document specifies the scheme precisely enough to reimplement, and states
 what it does not prove. Read the last section. A verification document that only
@@ -48,8 +49,9 @@ useless here: a pick payload is one market from a known board, one of two sides,
 and a price on a one-cent grid, so the whole space is enumerable in seconds. The
 nonce is what makes the hash safe to publish while the pick is still live.
 
-That commit is the evidence. Its date is what `verify.py` compares against the
-kickoff.
+That commit is evidence of the pick's contents. `verify.py` compares its git
+author date against kickoff. An independently retained clone or a separate
+hash-bearing timestamp receipt is needed for stronger timing evidence.
 
 **Open, after the market settles.** `reveal.yml` appends the nonce, the full
 payload, and the outcome. Anyone can now recompute the hash and confirm it
@@ -150,17 +152,18 @@ hashed bytes if you leave it in.
 
 ## Finding the commit that sealed a pick
 
-The hash alone proves the payload was not altered. What proves the pick existed
-before the game is the date of the commit that first put that hash in this
-repository.
+The hash checks that the payload was not altered. To inspect the timing claim,
+find the commit that first put that hash in this repository.
 
 ```sh
 HASH=$(jq -r '.picks[0].commitment_hash' ledger/2026/09/2026-09-20.json)
 git log --reverse --format='%H %aI %s' -S "$HASH" -- ledger/2026/09/2026-09-20.json
 ```
 
-The first line is the sealing commit. Its date must be earlier than the pick's
-`payload.kickoff`. `verify.py` does the same walk for every pick, reading each
+The first line is the hash's first commit. Its author date must be earlier than
+the pick's `payload.kickoff` for the git-dated cohort. Author dates can be set by
+the committer, so this comparison is not an independent timestamp. `verify.py`
+does the same walk for every pick, reading each
 commit's version of the file rather than trusting `-S`, and deliberately does
 not pass `--follow`, because a rename would let an unrelated file's history
 supply an earlier date.
@@ -204,18 +207,21 @@ When the pick settles, `state` becomes `"opened"` and the entry gains
 and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
 keep the values they were sealed with.
 
-Two optional fields say a pick has no pre-game proof, and which kind of gap it
-is: `"pre_commitment": true` and `"outage": "<window id>"`. Both are described
-below, and both take the pick out of the proven count.
+Three optional fields identify missing pre-game evidence: `"pre_commitment":
+true`, `"outage": "<window id>"`, and `"late_unproven": true`. Each is described
+below and excluded from the git-dated cohort.
 
 `index.json` is every entry in one flat array with the recomputed record, for
 anything that would rather not walk the tree. Its `record` object carries the
-counts (`opened`, `sealed`, `pre_commitment`, `outage`, `proven`, `wins`,
+counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven`, `wins`,
 `losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
 the money
 figures: `stake_usd`, the flat stake every decided pick is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
-total put down. `profit_usd` was named `profit_per_100` until September 22,
+total hypothetical stake. `proven_record` separately reports the git-dated
+cohort. The key `proven` is retained for compatibility; its basis is git author
+date, not an independent receipt. None of these figures establish real fills or
+subscriber profit; fees are excluded. `profit_usd` was named `profit_per_100` until September 22,
 2026, when the stake moved from $100 to $1,000
 (0xinsider/0xinsider#16389); every pick, including those published before
 that date, is recomputed at the current stake, and `stake_usd` says which one.
@@ -384,6 +390,17 @@ mirror, applied to a case the scheme had no word for. Neither one claims a
 proof. Both say, in the data, exactly which kind of gap this is, so that a red
 run keeps meaning a broken proof rather than a broken mirror.
 
+### Late hashes without a prior outage window
+
+The September 22-24, 2026 ledger API outage left nine further hashes absent
+until after their kickoffs. No outage window had been published before those
+hashes, so creating one now would falsely imply contemporaneous evidence.
+Those entries retain their hashes, nonces, outcomes and revisions and carry
+`"late_unproven": true`. `verify.py` checks their first hash commits against the
+reviewed incident list, prints the late timing and excludes them from the
+git-dated cohort. A new late hash is still a PRE-GAME failure; the marker alone
+does not grant an exception.
+
 ## What the workflows do, and do not do
 
 Three workflows, all readable in this repository, all guarded so a fork cannot
@@ -448,21 +465,22 @@ What the window proves is narrower and still worth having: the gap was recorded
 here before the hash it covers landed, so it is not an explanation invented
 afterwards. The pick stays out of the proven count.
 
-**That every pick we made is in here.** The scheme proves that the picks in the
-ledger were sealed before their games. It does not prove the ledger is complete.
+**That every pick we made is in here.** The scheme checks hashes for the picks in
+the ledger. It does not prove the ledger is complete.
 Nothing in a commit-and-reveal scheme can prove that, because a pick that is
 never published leaves no trace anywhere. What is visible: once a pick is
 sealed, it is in a public append-only file, and a sealed entry that never opens
-is reported by `verify.py` 72 hours after its kickoff. Suppressing a loss after
-the fact is caught. Declining to publish a pick at all is not, by this
+is reported by `verify.py` 72 hours after its kickoff. On each successful
+source read, the mirror compares eligible source identities with the public
+ledger and refuses a missing or duplicate row. The offline verifier cannot
+discover a pick omitted by both sources. Declining to publish a pick at all is not caught by this
 repository or by any other commit-and-reveal design.
 
-**That the commit dates are true, on their own.** A git author date is written
-by whoever makes the commit. Ours are made by a GitHub Actions runner, and the
-independent record is GitHub's, not the date in the object: every commit here
-names its Actions run, and the run has GitHub's own start time on it. Compare
-the two if the date is load-bearing for you. A clone you took yourself, at a
-time you remember, is stronger evidence than either.
+**That the commit dates are independently true.** A git author date is written
+by whoever makes the commit. Ours are made by a GitHub Actions runner, but a
+run's start time does not attest that the hash was in a public commit then.
+Inspect the run and retain a copy before kickoff if timing matters to you. A
+durable independent timestamp anchor for future commitments remains missing.
 
 **That history was never rewritten.** This is the attack this design has left.
 `verify.py` check 2 reads git history, so a force-push that replaced the seal
@@ -473,12 +491,12 @@ comes from a workflow whose source is in this repository, and any clone anyone
 has taken disagrees with the rewrite. If you care about this record, take a
 clone. `git fetch` against your own copy is the check, and it costs nothing.
 
-**That a late mirror is not a backdated seal.** If `seal.yml` fails to run and a
-hash reaches this repository after the game has started, `verify.py` reports that
-pick as PRE-GAME failed -- correctly. From this repository alone, a mirror that
-was late and a seal that was backdated look identical. That is why the failure is
-treated as a real one and never explained away, and why `seal.yml` runs every ten
-minutes against a one-hour window rather than just often enough.
+**That a late mirror is not a backdated seal.** If a hash reaches this repository
+after kickoff, it supplies no pregame proof. Nine historical hashes from the
+September 22-24 source outage carry `late_unproven: true`; the verifier pins
+their first-commit identities and prints each one. A new late hash still fails
+until reviewed. From this repository alone, a late mirror and a backdated seal
+look identical, so neither is counted as pregame evidence.
 
 A committed outage window changes what a run PRINTS and never what it counts.
 The pick moves from PRE-GAME to OUTAGE, it stays out of the proven set, and the

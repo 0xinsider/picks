@@ -4,6 +4,7 @@
     {
       "pick_rank": 1,
       "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "c3a40b2f279a8a244f9777cb9ba2012bf6a7a733afb58251c258955ef4e55133",
       "commitment_nonce": "a7c11b4eb40d30de59072ddaeb2ec371b5a6d86387cdbcf4f2384e1b3d288d4c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
@@ -102,6 +103,7 @@
     {
       "pick_rank": 4,
       "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "3beebf467367296cca574cc2896d972c6b20ce99a61eeb43f3f5870605ed4556",
       "commitment_nonce": "f37e2c700774b87a74b28ec7ae0818e13a051a9a678465447f3a547b84f50bf5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
@@ -134,6 +136,7 @@
     {
       "pick_rank": 5,
       "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "a647dcc8d3fe9b94c55c4d4a6dca2ff58e9b3439da91c49ba234fee20ae78600",
       "commitment_nonce": "be8f6a5963d0011c255ef76de4ce8e51eab042c232679d5f7f5cbfd2b6cccfc8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
@@ -166,6 +169,7 @@
     {
       "pick_rank": 6,
       "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "b8fa67e378d5c21f2adc9ca1bf1220d4c27552a2d23dbfa46897c403eb431521",
       "commitment_nonce": "1b87890f71de253a5cc83904ae9d250579e6558ef7451a7ae838a0990d528979",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
