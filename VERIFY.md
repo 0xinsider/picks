@@ -50,8 +50,9 @@ and a price on a one-cent grid, so the whole space is enumerable in seconds. The
 nonce is what makes the hash safe to publish while the pick is still live.
 
 That commit is evidence of the pick's contents. `verify.py` compares its git
-author date against kickoff. An independently retained clone or a separate
-hash-bearing timestamp receipt is needed for stronger timing evidence.
+author date against kickoff. New Seal commits also get a signed receipt for
+their exact SHA. A receipt independently witnessed before kickoff, or a clone
+retained by someone else before kickoff, provides stronger timing evidence.
 
 **Open, after the market settles.** `reveal.yml` appends the nonce, the full
 payload, and the outcome. Anyone can now recompute the hash and confirm it
@@ -401,14 +402,53 @@ reviewed incident list, prints the late timing and excludes them from the
 git-dated cohort. A new late hash is still a PRE-GAME failure; the marker alone
 does not grant an exception.
 
+## Independent timing receipts for new seals
+
+When `seal.yml` pushes a changed ledger head, it writes that exact 40-character
+commit SHA plus a newline to `pick-seal-commit.txt` in the runner, then has
+`actions/attest` sign the file's digest. This repository is public, so GitHub
+uses the Sigstore Public Good instance and its independently witnessed,
+immutable transparency log. The receipt is stored in GitHub's attestations API;
+it is not a new field in the ledger and does not change a pick.
+The manual `attest_current` option can recover a missing receipt for the current
+head, but its new witness time cannot prove any earlier kickoff.
+
+First find the commit that introduced a particular pick's hash using the
+command above. Then reconstruct the receipt file and ask the GitHub CLI to
+verify both the digest and the Seal workflow identity:
+
+```sh
+COMMIT=<first commit containing this pick's hash>
+printf '%s\n' "$COMMIT" > pick-seal-commit.txt
+gh attestation verify pick-seal-commit.txt \
+  --repo 0xinsider/picks \
+  --signer-workflow 0xinsider/picks/.github/workflows/seal.yml \
+  --source-ref refs/heads/main \
+  --format json | jq '.[].verificationResult.verifiedTimestamps'
+```
+
+Compare a **verified** witness timestamp with that pick's kickoff in the
+ledger. It counts as independent pregame timing evidence only if it is earlier.
+An attestation after kickoff is evidence of a late receipt, not a rescue for
+the pick. A missing receipt is not evidence. The existing three-pick git-dated
+cohort has no such receipt and is not upgraded by this workflow. `verify.py`
+remains an offline hash and git-history check; this optional online check
+requires `gh`, `jq`, and access to GitHub's attestation service.
+
+The receipt binds the complete pushed commit, not the backend's selection
+process, a real fill, Polymarket settlement, or a pick omitted from both the
+site and ledger. The signed witness time is the trust boundary; the git author
+date and the attestation's workflow-supplied predicate fields are not.
+
 ## What the workflows do, and do not do
 
 Three workflows, all readable in this repository, all guarded so a fork cannot
 run them, all with `permissions` denied at the workflow level and granted per
 job.
 
-- `seal.yml` appends new commitments. The 0xinsider backend dispatches it the
-  moment a pick is sealed, and it also runs every 10 minutes from 11:07 UTC
+- `seal.yml` appends new commitments and attests each changed pushed head. The
+  0xinsider backend dispatches it when a pick is sealed, and it also runs every
+  10 minutes from 11:07 UTC
   through 04:57 UTC the next morning as a fallback, which is the drop window
   (11:00 UTC to 23:00 US Eastern) plus the hour after its last drop. Dispatch
   runs show as `workflow_dispatch` in the Actions tab. They run the same
@@ -479,8 +519,9 @@ repository or by any other commit-and-reveal design.
 **That the commit dates are independently true.** A git author date is written
 by whoever makes the commit. Ours are made by a GitHub Actions runner, but a
 run's start time does not attest that the hash was in a public commit then.
-Inspect the run and retain a copy before kickoff if timing matters to you. A
-durable independent timestamp anchor for future commitments remains missing.
+Older hashes have no signed receipt. For a new Seal commit, verify the separate
+Sigstore witness time as above; a missing or late receipt does not improve its
+pregame proof. A copy you retained before kickoff is another independent check.
 
 **That history was never rewritten.** This is the attack this design has left.
 `verify.py` check 2 reads git history, so a force-push that replaced the seal

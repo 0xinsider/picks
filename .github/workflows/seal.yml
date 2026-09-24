@@ -7,16 +7,15 @@ name: Seal
 # is produced by the backend at seal time and copied byte for byte. A mirror
 # that derived its own hash would prove only that it can run sha256, and the
 # first disagreement between two serializations would read to a stranger as a
-# falsified record rather than as the formatting bug it is. The check that is
-# supposed to be independent is `verify.py`, which anyone can run.
+# falsified record rather than as the formatting bug it is. `verify.py` checks
+# contents offline; the signed receipt below adds independent timing evidence.
 #
 # TIMING IS THE WHOLE POINT. A pick publishes one hour before kickoff and is
 # sealed in the same pass, so the hash is available to this workflow for about
-# 60 minutes before the game starts. The commit that lands it here is the
-# public, timestamped evidence that the pick existed unchanged before kickoff --
-# `verify.py` check 2 reads exactly that commit date. A run that lands after
-# kickoff does not weaken the proof quietly; it fails verification, loudly and
-# permanently, for that pick.
+# 60 minutes before the game starts. Git author dates are writer controlled.
+# A signed receipt for the pushed commit can provide an independent witness
+# time. Only a verified receipt timestamp before kickoff supports that claim;
+# a late receipt does not upgrade a pick.
 #
 # THE BACKEND DISPATCHES THIS WORKFLOW the moment it seals a pick
 # (0xinsider/0xinsider#15900), so the hash normally lands within a minute or two.
@@ -55,6 +54,10 @@ on:
         description: "Apply to the working tree and show the diff without committing"
         type: boolean
         default: false
+      attest_current:
+        description: "Also sign the current main head if no commit changed; late receipts do not prove pregame timing"
+        type: boolean
+        default: false
 
 permissions: {}
 
@@ -72,6 +75,9 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+      id-token: write
+      attestations: write
+      artifact-metadata: write
     steps:
       - name: Check out the ledger
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -82,10 +88,39 @@ jobs:
           fetch-depth: 0
           persist-credentials: true
 
+      - name: Remember the ledger head
+        id: before
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Append new commitments
         run: |
           python3 .github/scripts/mirror.py --mode seal \
             ${{ inputs.dry_run && '--no-push' || '' }}
+
+      - name: Prepare a receipt for the pushed head
+        id: receipt
+        if: ${{ !inputs.dry_run }}
+        env:
+          BEFORE: ${{ steps.before.outputs.sha }}
+        run: |
+          after=$(git rev-parse HEAD)
+          if [ "$after" = "$BEFORE" ] && [ "${{ inputs.attest_current }}" != "true" ]; then
+            echo "created=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          remote=$(git ls-remote --exit-code origin refs/heads/main | cut -f1)
+          if [ "$remote" != "$after" ]; then
+            echo "Refusing to attest a commit that is not on main" >&2
+            exit 1
+          fi
+          printf '%s\n' "$after" > "$RUNNER_TEMP/pick-seal-commit.txt"
+          echo "created=true" >> "$GITHUB_OUTPUT"
+
+      - name: Attest the pushed commit
+        if: ${{ steps.receipt.outputs.created == 'true' }}
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: ${{ runner.temp }}/pick-seal-commit.txt
 
       - name: Show the uncommitted diff
         if: ${{ inputs.dry_run }}
