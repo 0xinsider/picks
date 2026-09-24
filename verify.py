@@ -13,19 +13,18 @@ SKIP and never silently counted as a pass.
 
 What is being checked
 ---------------------
-Each pick is committed BEFORE its game starts as
+Picks eligible for pre-game evidence are committed as
 
     sha256(canonical_json(payload) || nonce)
 
-which is appended here at that time and reveals nothing: the nonce is 256 bits
+which is appended here if the mirror reaches it before kickoff and reveals nothing: the nonce is 256 bits
 of CSPRNG output, so the low-entropy payload behind it cannot be recovered by
 brute force. After the game settles, the payload and the nonce are appended, and
 the hash can be reopened by anyone.
 
   1. HASH        recompute sha256(canonical_json(payload)||nonce) == committed hash
-  2. PRE-GAME    the commit that FIRST introduced that hash predates the kickoff
-                 recorded in the payload, or the pick names a committed outage
-                 window that was open at kickoff and was itself committed first
+  2. PRE-GAME    the first hash-bearing commit's git author date predates kickoff,
+                 or a late entry has a checked outage or reviewed incident marker
   3. IMMUTABLE   the payload never changed across the file's history
   4. GAPS        no sealed pick stays unopened long past its kickoff
   5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
@@ -33,9 +32,10 @@ the hash can be reopened by anyone.
                  appears in its `revisions`, in the same order; `revisions` only
                  ever grew; `commitment_hash` is the same at every point
 
-Check 2 is the one that matters, and the only one that catches a backdated
-record. A repository of settled picks with no pre-game commitment would pass 1,
-3 and 5 while proving nothing at all.
+Check 2 catches a late hash under the repository's current git history. Git
+author dates are writer-controlled; it cannot alone prove when GitHub received
+the commit. A repository of settled picks with no pre-game commitment would
+pass 1, 3 and 5 while proving nothing about publication time.
 
 Check 6 is the one that catches an outcome edited in place. Nothing else here
 looks at `outcome` at all: the commitment is taken over the pick and never over
@@ -54,12 +54,16 @@ Those carry `"pre_commitment": true` and are excluded from checks 1 and 2 by
 construction -- they are counted in the record and reported separately, never
 mixed into the proven set.
 
+That a reviewed late commitment was public before kickoff. Those retain their
+hashes and outcomes with `late_unproven: true`; each known first hash commit is
+pinned in this script, and an unreviewed new late commitment still fails.
+
 That a pick whose game started while this mirror was down was sealed on time.
 A pick can be in one of three states with respect to proof, and the data says
 which: `pre_commitment`, there was no mirror to be late (or the pick was never
 sealed at all); `outage`, the mirror existed and could not read the ledger, in
 a window committed to this repository BEFORE the hash landed; and neither, in
-which case a hash that arrives after kickoff is a PRE-GAME failure. An `outage`
+which case a newly late hash is a PRE-GAME failure. An `outage`
 pick is reported as OUTAGE, counted, and subtracted from the proven set. The
 window explains the gap. It does not close it, and it is believed only because
 git can show it was written before the thing it explains.
@@ -140,6 +144,20 @@ VECTOR_HASH = "44d18fa5e2aa3a2bf3c971dcc9317c8ccbdfd5480a4773b6d8ffd5fbeeea84dc"
 # Generous on purpose: a market can settle slowly, and this check exists to
 # catch picks that quietly never resolve, not to flag slow ones.
 SETTLEMENT_GRACE = timedelta(hours=72)
+
+# Public commitments first written after kickoff during the 2026-09-22 to
+# 2026-09-24 ledger API outage. These are disclosures, never proofs. Pin the
+# first hash-bearing commit so adding a marker to another late pick cannot
+# quietly turn a new verification failure green. See 0xinsider/picks#9.
+KNOWN_LATE_COMMITS = {
+    ("2026-09-22", rank): "67c9070d9347d6cfb8f8efeaf0e503b4c4a935fc"
+    for rank in (1, 4, 5, 6)
+} | {
+    ("2026-09-23", rank): "67c9070d9347d6cfb8f8efeaf0e503b4c4a935fc"
+    for rank in (1, 2, 3, 5)
+} | {
+    ("2026-09-23", 4): "110a506ebd36e1388b64d710a5d423c045022d2f"
+}
 
 # The flat stake the site's record puts on every pick: $100 until 2026-09-22 and
 # $1,000 since (0xinsider/0xinsider#16389). The ledger stores only the backed
@@ -386,8 +404,8 @@ def window_commit(window: dict) -> tuple[str, datetime]:
 
 def pre_game_check(
     who: str, path: Path, pick: dict, payload: dict, windows: dict[str, dict]
-) -> tuple[list[str], str | None]:
-    """Check 2 for one pick. Returns (failures, outage notice).
+) -> tuple[list[str], str | None, str | None]:
+    """Check 2 for one pick. Returns (failures, notice, unproven class).
 
     The commit that FIRST introduced this pick's hash must predate its kickoff.
     When it does not, there is exactly one thing that turns the failure into a
@@ -409,15 +427,26 @@ def pre_game_check(
     kickoff = parse_ts(payload["kickoff"], "kickoff")
     sha, when = first_commit_introducing(path, pick["commitment_hash"])
     marker = pick.get("outage")
+    late_marker = pick.get("late_unproven")
+
+    if late_marker is not None and late_marker is not True:
+        return [f"PRE-GAME {who}: late_unproven must be true"], None, None
+    if marker is not None and late_marker:
+        return [f"PRE-GAME {who}: outage and late_unproven cannot coexist"], None, None
 
     if when < kickoff:
+        if late_marker:
+            failures.append(
+                f"PRE-GAME {who}: late_unproven marker on a hash first committed "
+                f"{utc(when)}, before kickoff {utc(kickoff)}"
+            )
         if marker is not None:
             failures.append(
                 f"OUTAGE   {who}: carries an outage marker ({marker}) but its hash was "
                 f"first committed {utc(when)}, BEFORE kickoff {utc(kickoff)}. "
                 f"This pick is proven; the marker claims a gap that did not happen to it."
             )
-        return failures, None
+        return failures, None, None
 
     late = (
         f"PRE-GAME {who}: hash first committed {utc(when)} in {sha[:10]}, "
@@ -425,7 +454,17 @@ def pre_game_check(
         f"This pick is not proven to predate its game."
     )
     if marker is None:
-        return [late], None
+        if late_marker:
+            expected = KNOWN_LATE_COMMITS.get((payload["pick_date"], payload["pick_rank"]))
+            if sha == expected:
+                return [], (
+                    f"UNPROVEN {who}: hash first appeared {utc(when)} in {sha[:10]}, "
+                    f"after kickoff {utc(kickoff)}. This historical incident is "
+                    "disclosed, not counted as pre-game proof."
+                ), "late"
+            return [late, f"PRE-GAME {who}: late_unproven is not a reviewed incident "
+                    f"at this first commit ({sha[:10]})"], None, None
+        return [late], None, None
 
     window = windows.get(marker)
     if window is None:
@@ -434,7 +473,7 @@ def pre_game_check(
             f"OUTAGE   {who}: names outage window {marker!r}, which is not committed "
             f"under {OUTAGE_DIR}/. A window that is not in this repository explains "
             f"nothing and was ignored.",
-        ], None
+        ], None, None
 
     if not (window["start_at"] <= kickoff <= window["end_at"]):
         return [
@@ -442,7 +481,7 @@ def pre_game_check(
             f"OUTAGE   {who}: kickoff {utc(kickoff)} is outside window {marker} "
             f"({window_bounds(window)}). A window covers the games that "
             f"started while the mirror was down, and no others. Ignored.",
-        ], None
+        ], None, None
 
     window_sha, window_when = window_commit(window)
     if window_when >= when:
@@ -452,7 +491,7 @@ def pre_game_check(
             f"in {window_sha[:10]}, at or AFTER the hash it covers ({utc(when)} in "
             f"{sha[:10]}). A window written once the hash had landed is an excuse, not a "
             f"record, and was ignored.",
-        ], None
+        ], None, None
 
     return failures, (
         f"OUTAGE   {who}: kickoff {utc(kickoff)} fell inside {marker} "
@@ -460,7 +499,7 @@ def pre_game_check(
         f"{window_sha[:10]}). The hash first reached this repository {utc(when)}, "
         f"after the game, because the mirror could not read the ledger before it. "
         f"NOT proven, and not counted as proven. See {window['path']}."
-    )
+    ), "outage"
 
 
 def pick_history(path: Path, rank: int) -> list[dict]:
@@ -607,9 +646,24 @@ def load_ledger() -> list[tuple[Path, dict]]:
     days = []
     for path in sorted(LEDGER_DIR.rglob("*.json")):
         try:
-            days.append((path, json.loads(path.read_text())))
+            day = json.loads(path.read_text())
         except json.JSONDecodeError as exc:
             raise SystemExit(f"{path}: not valid JSON: {exc}")
+        pick_date = day.get("pick_date")
+        if not isinstance(pick_date, str) or path != LEDGER_DIR / pick_date[:4] / pick_date[5:7] / f"{pick_date}.json":
+            raise SystemExit(f"{path}: filename does not match pick_date {pick_date!r}")
+        seen: set[int] = set()
+        for pick in day.get("picks", []):
+            rank = pick.get("pick_rank")
+            if not isinstance(rank, int) or isinstance(rank, bool) or not 1 <= rank <= 6 or rank in seen:
+                raise SystemExit(f"{path}: invalid or repeated rank {rank!r}")
+            seen.add(rank)
+            payload = pick.get("payload")
+            if isinstance(payload, dict) and (
+                payload.get("pick_date") != pick_date or payload.get("pick_rank") != rank
+            ):
+                raise SystemExit(f"{path}: rank {rank} payload identity disagrees with its ledger row")
+        days.append((path, day))
     return days
 
 
@@ -635,7 +689,8 @@ def main() -> int:
     failures: list[str] = []
     skips: list[str] = []
     outage_notes: list[str] = []
-    opened = sealed = pre_commitment = outage = 0
+    late_notes: list[str] = []
+    opened = sealed = pre_commitment = outage = late_unproven = 0
     wins = losses = voids = 0
     profit = Decimal(0)
     staked = Decimal(0)
@@ -703,13 +758,16 @@ def main() -> int:
                     elif not args.skip_git:
                         # 2. PRE-GAME
                         try:
-                            problems, notice = pre_game_check(
+                            problems, notice, unproven_class = pre_game_check(
                                 who, path, pick, payload, windows
                             )
                             failures.extend(problems)
-                            if notice is not None:
+                            if unproven_class == "outage" and notice is not None:
                                 outage_notes.append(notice)
                                 outage += 1
+                            elif unproven_class == "late" and notice is not None:
+                                late_notes.append(notice)
+                                late_unproven += 1
                         except Failure as exc:
                             failures.append(f"PRE-GAME {who}: {exc}")
                     elif pick.get("outage"):
@@ -719,6 +777,8 @@ def main() -> int:
                         # either way, and the skip notice at the end says what
                         # that count is worth here.
                         outage += 1
+                    elif pick.get("late_unproven"):
+                        late_unproven += 1
                 except KeyError as exc:
                     failures.append(f"HASH     {who}: opened pick missing {exc}")
                 except Failure as exc:
@@ -759,20 +819,25 @@ def main() -> int:
             f"            {outage} kicked off during a committed mirror outage and "
             f"carry NO pre-game proof either"
         )
+    if late_unproven:
+        print(
+            f"            {late_unproven} hashes first appeared after kickoff "
+            f"and carry NO pre-game proof"
+        )
     print(f"record      {wins}W {losses}L {voids}V")
     if decided:
         print(f"hit rate    {wins / decided * 100:.1f}%  over {decided} decided")
     if staked > 0:
         label = f"${STAKE_USD:,.0f}/pick"
         print(
-            f"{label:<12}{profit:+,.2f} USD on {staked:,.0f} staked "
-            f"({profit / staked * 100:+.1f}% ROI)"
+            f"modeled {label}: {profit:+,.2f} USD on {staked:,.0f} "
+            f"hypothetical stakes before fees ({profit / staked * 100:+.1f}% ROI)"
         )
     print("            compare these against https://0xinsider.com/pick-of-the-day\n")
 
-    for note in outage_notes:
+    for note in outage_notes + late_notes:
         print(f"  {note}")
-    if outage_notes:
+    if outage_notes or late_notes:
         print()
 
     for note in skips:
@@ -786,8 +851,12 @@ def main() -> int:
             print(f"  {line}")
         return 1
 
-    proven = opened - pre_commitment - outage
-    print(f"PASSED  {proven} pick(s) proven sealed before their game.")
+    proven = opened - pre_commitment - outage - late_unproven
+    if args.skip_git:
+        print(f"PASSED  arithmetic and available hashes; {proven} pick(s) are unverified by this run.")
+    else:
+        print(f"PASSED  {proven} pick(s) have a git author date before kickoff.")
+        print("        Author dates alone do not prove when GitHub received a hash.")
     if outage:
         print(
             f"        {outage} more reached kickoff during a committed mirror outage\n"

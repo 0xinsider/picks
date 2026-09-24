@@ -188,6 +188,7 @@ RECORD_FIELDS = (
     "state",
     "pre_commitment",
     "outage",
+    "late_unproven",
     "commitment_hash",
     "commitment_nonce",
     "commitment_algo",
@@ -944,6 +945,13 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                     prior_revisions=[],
                     pre_commitment=pre,
                     outage=window,
+                    late_unproven=(
+                        not pre
+                        and window is None
+                        and not is_pre_commitment(entry)
+                        and verify.parse_ts(entry["payload"]["kickoff"], "kickoff")
+                        <= datetime.now(timezone.utc)
+                    ),
                 )
                 day["picks"].append(record)
                 existing[rank] = record
@@ -951,6 +959,8 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                     touched.append(f"rank {rank} opened (pre-commitment)")
                 elif window:
                     touched.append(f"rank {rank} opened, mirror was down ({window})")
+                elif record.get("late_unproven"):
+                    touched.append(f"rank {rank} opened after kickoff, no public pre-game proof")
                 else:
                     touched.append(f"rank {rank} opened, never sealed here")
                 continue
@@ -1037,6 +1047,7 @@ def build_opened(
     sealed: dict | None = None,
     pre_commitment: bool = False,
     outage: str | None = None,
+    late_unproven: bool = False,
 ) -> dict:
     record = ordered(entry, OPENED_FIELDS)
     # Every settled pick is an opened entry here, whatever the endpoint called
@@ -1052,6 +1063,8 @@ def build_opened(
         # produced it. The marker says which committed outage that gap is, and
         # it is set only from `outages/`, never from anything the endpoint sent.
         record["outage"] = outage
+    elif late_unproven:
+        record["late_unproven"] = True
     if sealed is not None:
         # The sealed entry's own values win for anything written before the
         # game. They are what this repository committed to.
@@ -1075,10 +1088,13 @@ def build_opened(
 
 def tally() -> dict:
     """Recompute the record from ledger/, using verify.py's arithmetic."""
-    opened = sealed = pre_commitment = outage = 0
+    opened = sealed = pre_commitment = outage = late_unproven = 0
     wins = losses = voids = 0
     profit = Decimal(0)
     staked = Decimal(0)
+    proven_wins = proven_losses = 0
+    proven_profit = Decimal(0)
+    proven_staked = Decimal(0)
     last_date = None
     flat: list[dict] = []
 
@@ -1095,6 +1111,11 @@ def tally() -> dict:
                 pre_commitment += 1
             elif pick.get("outage"):
                 outage += 1
+            elif pick.get("late_unproven"):
+                late_unproven += 1
+            proven = not any(
+                pick.get(field) for field in ("pre_commitment", "outage", "late_unproven")
+            )
             outcome = pick.get("outcome")
             if outcome == "win":
                 wins += 1
@@ -1107,6 +1128,11 @@ def tally() -> dict:
             if value is not None and outcome in ("win", "loss"):
                 profit += value - verify.STAKE_USD
                 staked += verify.STAKE_USD
+                if proven:
+                    proven_profit += value - verify.STAKE_USD
+                    proven_staked += verify.STAKE_USD
+                    proven_wins += outcome == "win"
+                    proven_losses += outcome == "loss"
 
     decided = wins + losses
     return {
@@ -1117,7 +1143,20 @@ def tally() -> dict:
         # a hash and are NOT pre_commitment, and they are not proven either, so
         # they come out of `proven` the same way. `verify.py` prints each one.
         "outage": outage,
-        "proven": opened - pre_commitment - outage,
+        "late_unproven": late_unproven,
+        "proven": opened - pre_commitment - outage - late_unproven,
+        "proven_record": {
+            "wins": proven_wins,
+            "losses": proven_losses,
+            "decided": proven_wins + proven_losses,
+            "hit_rate": (
+                f"{proven_wins / (proven_wins + proven_losses) * 100:.1f}"
+                if proven_wins + proven_losses else None
+            ),
+            "profit_usd": f"{proven_profit:.2f}" if proven_staked else None,
+            "staked": f"{proven_staked:.0f}" if proven_staked else None,
+            "roi": f"{proven_profit / proven_staked * 100:.1f}" if proven_staked else None,
+        },
         "wins": wins,
         "losses": losses,
         "voids": voids,
@@ -1188,27 +1227,34 @@ def render_record(stats: dict) -> str:
         ("Record", f"{stats['wins']}W {stats['losses']}L {stats['voids']}V"),
         ("Hit rate", f"{stats['hit_rate']}%" if stats["hit_rate"] else "not yet"),
         (
-            f"${verify.STAKE_USD:,.0f} per pick",
+            f"Modeled ${verify.STAKE_USD:,.0f} per pick, before fees",
             # Signed on purpose. An unsigned P&L reads as a gain by default.
             f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} staked"
             if stats["profit_usd"] is not None
             else "not yet",
         ),
-        ("ROI", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
+        ("Modeled ROI before fees", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
         ("Sealed, not yet settled", str(stats["sealed"])),
-        ("Proven sealed before kickoff", str(stats["proven"])),
+        ("Git-dated before kickoff", str(stats["proven"])),
         ("No pre-game proof (pre-commitment)", str(stats["pre_commitment"])),
     ]
     # Only once it has happened. A row that reads 0 forever teaches a reader to
     # skip it, which is the opposite of what it is for.
     if stats["outage"]:
         rows.append(("No pre-game proof (mirror outage)", str(stats["outage"])))
+    if stats["late_unproven"]:
+        rows.append(("No pre-game proof (late public hash)", str(stats["late_unproven"])))
+    proof = stats["proven_record"]
+    rows.append(("Git-dated cohort record", f"{proof['wins']}W {proof['losses']}L"))
+    rows.append(("Git-dated cohort modeled ROI before fees", f"{Decimal(proof['roi']):+.1f}%" if proof["roi"] is not None else "not yet"))
     lines = ["", f"Record through {stats['through'] or 'no settled pick yet'}.", "", "| | |", "| --- | --- |"]
     lines += [f"| {label} | {value} |" for label, value in rows]
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
-        "`python3 verify.py` prints the same numbers from the same data.",
+        "Returns model a flat $1,000 stake at the frozen price on each decided pick, before fees.",
+        "They do not establish fills, actual wagers, or subscriber profit.",
+        "`python3 verify.py` checks the same data and public git history.",
         "",
     ]
     return "\n".join(lines)
@@ -1275,7 +1321,9 @@ def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
         value = verify.stake_return(pick["outcome"], price) if price > 0 else None
         if value is None:
             continue
-        decided.append((pick["pick_date"], value - verify.STAKE_USD, not pick.get("pre_commitment")))
+        decided.append((pick["pick_date"], value - verify.STAKE_USD, not any(
+            pick.get(field) for field in ("pre_commitment", "outage", "late_unproven")
+        )))
 
     per_day: dict[str, int] = {}
     for pick_date, _, _ in decided:
@@ -1320,7 +1368,7 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     )
     out = [head]
     points = cumulative_series(picks)
-    title = f"${verify.STAKE_USD:,.0f} on every pick, cumulative"
+    title = f"Modeled ${verify.STAKE_USD:,.0f} per pick, before fees"
     if not points:
         out.append(f"<title id=\"title\">{esc(title)}</title>\n")
         out.append('<desc id="desc">No settled pick with a price yet.</desc>\n')
@@ -1339,11 +1387,11 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     subtitle = (
         f"{stats['decided']} decided picks since {long_date(first_date)}. "
         f"{stats['wins']}W {stats['losses']}L, {stats['hit_rate']}% hit rate, "
-        f"{Decimal(stats['roi']):+.1f}% ROI on {Decimal(stats['staked']):,.0f} USD staked."
+        f"{Decimal(stats['roi']):+.1f}% modeled ROI on {Decimal(stats['staked']):,.0f} USD hypothetical stakes."
     )
     final = points[-1][1]
     desc = (
-        f"Cumulative return at {verify.STAKE_USD:,.0f} USD per pick from {long_date(first_date)} to "
+        f"Cumulative hypothetical return before fees at {verify.STAKE_USD:,.0f} USD per pick from {long_date(first_date)} to "
         f"{long_date(stats['through'])}: {final:+,.2f} USD. {subtitle}"
     )
     out.append(f'<title id="title">{esc(title)}</title>\n')
@@ -1458,10 +1506,10 @@ def render_chart_embed(stats: dict) -> str:
         alt = "Cumulative return chart. No settled pick yet."
     else:
         alt = (
-            f"Cumulative return at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
-            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked across "
+            f"Cumulative hypothetical return before fees at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD hypothetical stakes across "
             f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
-            f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
+            f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% modeled ROI."
         )
     return (
         '\n<a href="https://0xinsider.com/pick-of-the-day">'
@@ -1537,11 +1585,48 @@ def run_once(mode: str, entries: list[dict]) -> list[str]:
         changes = apply_seal(entries)
     else:
         changes = apply_reveal(entries, context)
+    reconcile_identities(entries, mode)
     # Both modes regenerate, so the record on display never lags the ledger by
     # more than one run: a seal changes the "sealed, not yet settled" count, and
     # a push that lands between a seal and the next reveal would otherwise fail
     # verify.yml's drift check on a README that nobody edited.
     return changes + regenerate()
+
+
+def reconcile_identities(entries: list[dict], mode: str) -> None:
+    """Refuse a successful source read that this mirror represented incompletely.
+
+    The seal lane only owns future sealed entries. Reveal owns every published
+    pick except an uncommitted one still pending, whose side cannot be exposed.
+    An offline verifier cannot discover identities absent from both source and
+    mirror; this comparison is made while the source response is in hand.
+    """
+    now = datetime.now(timezone.utc)
+    source: set[tuple[str, int]] = set()
+    all_source: set[tuple[str, int]] = set()
+    for entry in entries:
+        pick_date, rank, state = validate(entry)
+        identity = (pick_date, rank)
+        require(identity not in all_source, f"source repeats {pick_date} rank {rank}")
+        all_source.add(identity)
+        if mode == "seal":
+            if state == "sealed" and verify.parse_ts(entry["kickoff"], "kickoff") > now:
+                source.add(identity)
+        elif not (state == "uncommitted" and entry.get("outcome") == "pending"):
+            source.add(identity)
+
+    mirrored: set[tuple[str, int]] = set()
+    for _, day in read_all_days():
+        for pick in day.get("picks", []):
+            identity = (day["pick_date"], pick["pick_rank"])
+            require(identity not in mirrored, f"mirror repeats {identity[0]} rank {identity[1]}")
+            mirrored.add(identity)
+
+    missing = source - mirrored
+    extra = mirrored - all_source if mode == "reveal" else set()
+    require(not missing, f"{mode} omitted source identities: {sorted(missing)}")
+    require(not extra, f"mirror has identities absent from source: {sorted(extra)}")
+    log(f"reconciled {len(source)} eligible source identities against ledger/")
 
 
 def main() -> int:
