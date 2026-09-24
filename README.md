@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative hypothetical return before fees at 1,000 USD per pick through Sep 23, 2026: +20,085.93 USD on 264,000 USD hypothetical stakes across 264 decided picks, 179W 85L, 67.8% hit rate, +7.6% modeled ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative hypothetical return before fees at 1,000 USD per pick through Sep 24, 2026: +19,779.17 USD on 267,000 USD hypothetical stakes across 267 decided picks, 181W 86L, 67.8% hit rate, +7.4% modeled ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -38,22 +38,22 @@ history, and those are the ones that catch a backdated record.
 ## The record
 
 <!-- RECORD:BEGIN -->
-Record through 2026-09-23.
+Record through 2026-09-24.
 
 | | |
 | --- | --- |
-| Decided picks | 264 |
-| Record | 179W 85L 0V |
+| Decided picks | 267 |
+| Record | 181W 86L 0V |
 | Hit rate | 67.8% |
-| Modeled $1,000 per pick, before fees | +20,085.93 USD on 264,000 staked |
-| Modeled ROI before fees | +7.6% |
-| Sealed, not yet settled | 6 |
-| Git-dated before kickoff | 3 |
+| Modeled $1,000 per pick, before fees | +19,779.17 USD on 267,000 staked |
+| Modeled ROI before fees | +7.4% |
+| Sealed, not yet settled | 3 |
+| Git-dated before kickoff | 6 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 2 |
 | No pre-game proof (late public hash) | 9 |
-| Git-dated cohort record | 3W 0L |
-| Git-dated cohort modeled ROI before fees | +70.0% |
+| Git-dated cohort record | 5W 1L |
+| Git-dated cohort modeled ROI before fees | +29.9% |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
 Returns model a flat $1,000 stake at the frozen price on each decided pick, before fees.

@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 264,
-    "sealed": 6,
+    "opened": 267,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 3,
+    "proven": 6,
     "proven_record": {
-      "wins": 3,
-      "losses": 0,
-      "decided": 3,
-      "hit_rate": "100.0",
-      "profit_usd": "2100.17",
-      "staked": "3000",
-      "roi": "70.0"
+      "wins": 5,
+      "losses": 1,
+      "decided": 6,
+      "hit_rate": "83.3",
+      "profit_usd": "1793.41",
+      "staked": "6000",
+      "roi": "29.9"
     },
-    "wins": 179,
-    "losses": 85,
+    "wins": 181,
+    "losses": 86,
     "voids": 0,
-    "decided": 264,
+    "decided": 267,
     "hit_rate": "67.8",
     "stake_usd": "1000",
-    "profit_usd": "20085.93",
-    "staked": "264000",
-    "roi": "7.6",
-    "through": "2026-09-23"
+    "profit_usd": "19779.17",
+    "staked": "267000",
+    "roi": "7.4",
+    "through": "2026-09-24"
   },
   "picks": [
     {
@@ -7768,32 +7768,101 @@
     {
       "pick_date": "2026-09-24",
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f2e9d1f06a34f6f82d0507e9e5e9f7dc0781130051055af041e2ddc01d3efe3c",
+      "commitment_nonce": "c9af145ced3238a7cf8925fca1a15c66849a2d43fb6cc31635b8e04803cd2ad3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T17:45:13.561387Z",
       "kickoff": "2026-09-24T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/2"
+      "resolved_at": "2026-09-24T22:52:26.404742Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xeb3478a53a06cb221676e497c8c19f54329afe38eed2c1a92c4dd35812054c00",
+        "kickoff": "2026-09-24T18:45:00Z",
+        "pick_date": "2026-09-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Netherlands vs. Germany",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-24T22:52:26.404742Z",
+          "parent_commit": "b0e79b1a2967d4f8a69eb20b4ce39a97cad5bced",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36074845573"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-24",
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "43255d2e29509e383e4749a9e985a6138141cc70bbfb0e1c9e84146155ca6e02",
+      "commitment_nonce": "af181a827bb606e8eb4f115e5e7ccc0d218f135c7390213d1a7be5eb0670f87b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T17:45:13.618300Z",
       "kickoff": "2026-09-24T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/3"
+      "resolved_at": "2026-09-24T22:52:26.446018Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.875000",
+        "condition_id": "0xa5c246a9c99e8326ca8814f26abb6dba8f1c3553bb83819a5719ac1731c0fc37",
+        "kickoff": "2026-09-24T18:45:00Z",
+        "pick_date": "2026-09-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Austria vs. Israel",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-24T22:52:26.446018Z",
+          "parent_commit": "b0e79b1a2967d4f8a69eb20b4ce39a97cad5bced",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36074845573"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-24",
       "pick_rank": 4,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "011a6a4f8cf20bf344e90b64ade26847d66a0d1c05086a26ce014e4f9589c5be",
+      "commitment_nonce": "f223ca141b0c23067a8f7912c8992c78f074a88660cc0b12609ab5305a77fea7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T17:45:13.661358Z",
       "kickoff": "2026-09-24T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/4"
+      "resolved_at": "2026-09-24T22:52:26.362370Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0x80c7ab790a5ab37e11c79a5a658d729ac29e6e17aa2d3fc859e4a78c0d896369",
+        "kickoff": "2026-09-24T18:45:00Z",
+        "pick_date": "2026-09-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Norway vs. Denmark",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-24T22:52:26.362370Z",
+          "parent_commit": "b0e79b1a2967d4f8a69eb20b4ce39a97cad5bced",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36074845573"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-24",
