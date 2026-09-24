@@ -13,8 +13,10 @@ from the files in `ledger/` on every run, and `verify.py` checks all of it.
 A pick is one Polymarket market, one side, and the price we backed it at. The
 backend hashes those fields with a 32-byte nonce, 1 hour before kickoff, and the
 hash lands here in a git commit. Its author date is controlled by the writer;
-a workflow run's start time alone does not timestamp the hash. An independently
-retained, pregame copy supplies stronger timing evidence. After the market
+a workflow run's start time alone does not timestamp the hash. New Seal commits
+also get a signed receipt for their exact commit SHA when the push succeeds.
+Only a receipt independently witnessed before kickoff strengthens the timing
+claim; an independently retained pregame copy does too. After the market
 settles the nonce and the fields are appended, and the hash reopens for anyone
 with `sha256sum`.
 
@@ -92,7 +94,10 @@ not. When it does not, the data states the available evidence:
 
 The three-pick pregame cohort in the table is far too small to establish a
 repeatable edge. Its timing classification relies on git author dates, not an
-independent timestamp anchor. The full record also includes unproven history.
+independent timestamp anchor. The new signed receipts do not retroactively
+upgrade it. The full record also includes unproven history. See
+[VERIFY.md](VERIFY.md#independent-timing-receipts-for-new-seals) for the receipt
+check and its limits.
 
 An outage window is a checked-in record of when the mirror was down, why, and
 where the incident is written up. It upgrades nothing. A pick covered by one is
