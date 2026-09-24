@@ -3,7 +3,7 @@
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
     "opened": 262,
-    "sealed": 0,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 2,
     "proven": 10,
@@ -7669,6 +7669,16 @@
           "run": "https://github.com/0xinsider/picks/actions/runs/35941595060"
         }
       ]
+    },
+    {
+      "pick_date": "2026-09-23",
+      "pick_rank": 6,
+      "state": "sealed",
+      "commitment_hash": "5613bf3f52f356eadf5737da8aff013ac44243ed5d08059032f26f2f7fefc20c",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-24T01:14:03.754105Z",
+      "kickoff": "2026-09-24T02:10:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/6"
     }
   ]
 }
