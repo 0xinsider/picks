@@ -88,6 +88,13 @@ LEDGER_DIR = Path("ledger")
 # Committed mirror-outage windows, one file per outage. See `load_outages`.
 OUTAGE_DIR = Path("outages")
 
+# The end of an outage window that has not closed yet. A window is opened by the
+# mirror at its first failed fetch, when nobody knows when the ledger will come
+# back, so `end` is null until a run reads the ledger again. Only the "did this
+# kickoff fall inside the window" test reads this value; every other check on a
+# window is the same whether it is open or closed.
+FOREVER = datetime.max.replace(tzinfo=timezone.utc)
+
 # The eight fields the commitment is taken over, and nothing else. An extra or
 # missing key is a failure, not something to tolerate: the hash is only
 # meaningful if both sides agree on exactly what went into it.
@@ -249,6 +256,13 @@ def load_outages() -> list[dict]:
     form as a kickoff, a `cause`, and a `reference` to where the incident is
     written up.
 
+    `end` is null while the window is OPEN. The mirror writes the window itself,
+    in the run that first fails to read the ledger, and at that moment the end of
+    the outage is not a fact anyone has: it is set by the first run that reads
+    the ledger again. An open window is treated as running to FOREVER for the one
+    test that reads its end -- whether a kickoff fell inside it -- and is
+    otherwise an ordinary window.
+
     A window is not a proof and it upgrades nothing. A pick whose kickoff falls
     inside one still has no pre-game commitment in this repository; it is
     reported as OUTAGE and subtracted from the proven set, exactly as
@@ -259,7 +273,9 @@ def load_outages() -> list[dict]:
     anyone: the window's own commit must predate the commit that first
     introduced the hash it covers (`window_commit`). A window written afterwards
     is an excuse composed once the problem was known, which is the backdated
-    record this whole repository exists to rule out.
+    record this whole repository exists to rule out. Writing the window at the
+    moment of failure, rather than remembering to write one later, is what makes
+    that ordering hold by construction instead of by anyone's diligence.
 
     A malformed file stops the run. A window is a claim about history, and one
     nobody can parse is not a claim worth reading past.
@@ -285,13 +301,18 @@ def load_outages() -> list[dict]:
             )
         for field in ("start", "end"):
             value = window[field]
+            if field == "end" and value is None:
+                # Open: the outage has not ended yet. `start` is never null --
+                # a window with no beginning names no period at all.
+                continue
             if not (isinstance(value, str) and len(value) == 20 and value.endswith("Z")):
+                allowed = " (or null, while the window is open)" if field == "end" else ""
                 raise SystemExit(
-                    f"{path}: {field} must be RFC 3339 whole seconds with a literal Z, "
-                    f"got {value!r}"
+                    f"{path}: {field} must be RFC 3339 whole seconds with a literal Z"
+                    f"{allowed}, got {value!r}"
                 )
             # `window_commit` dates this window by searching the file's history
-            # for this exact quoted value. A value that also appears elsewhere
+            # for its exact quoted `start`. A value that also appears elsewhere
             # in the file could match a line nobody meant to pin, and the window
             # would be dated by that line instead of by its own bound.
             occurrences = text.count(f'"{value}"')
@@ -303,13 +324,19 @@ def load_outages() -> list[dict]:
                 )
         try:
             window["start_at"] = parse_ts(window["start"], f"{path} start")
-            window["end_at"] = parse_ts(window["end"], f"{path} end")
+            window["end_at"] = (
+                FOREVER
+                if window["end"] is None
+                else parse_ts(window["end"], f"{path} end")
+            )
         except Failure as exc:
             raise SystemExit(f"{path}: {exc}")
+        # An open window passes this by construction: nothing is after FOREVER.
         if window["start_at"] >= window["end_at"]:
             raise SystemExit(
                 f"{path}: start {window['start']} is not before end {window['end']}"
             )
+        window["open"] = window["end"] is None
         window["path"] = path
         windows.append(window)
     return windows
@@ -323,18 +350,38 @@ def window_covering(kickoff: datetime, windows: list[dict]) -> dict | None:
     return None
 
 
-def window_commit(window: dict) -> tuple[str, datetime]:
-    """When this window's CURRENT bounds were committed, and in which commit.
+def window_bounds(window: dict) -> str:
+    """The window's span, in the form a message prints it."""
+    if window["end"] is None:
+        return f"{window['start']} to still open"
+    return f"{window['start']} to {window['end']}"
 
-    The LATER of the two commits that first introduced `start` and `end`, which
-    is what stops a window from being widened after the fact. An `end` pushed
-    out to cover a hash that has already landed is a new value with a new and
-    later first commit, so it fails the ordering check exactly as a window
-    written late in one piece would.
+
+def window_commit(window: dict) -> tuple[str, datetime]:
+    """When this window was FIRST written here, and in which commit.
+
+    The commit that introduced the window's `start`, which is the commit that
+    created the file: the mirror writes `start` when it opens the window and
+    never rewrites it. That instant is the window's claim -- "the mirror could
+    not read the ledger from here" -- and it is what has to predate the hashes
+    the window covers.
+
+    Deliberately NOT the later of `start` and `end`. A window is opened with
+    `end: null` at the first failed fetch and closed by the first successful
+    one, and closing it is bookkeeping about a gap that was already recorded,
+    not a new claim. Dating the window by its close would move its timestamp
+    forward to the same run -- often the same SECOND, since the close and the
+    backlog commit follow each other by milliseconds -- and the record the
+    mirror made in real time would read as an excuse written afterwards.
+
+    What this gives up is narrow, and the rest of check 2 covers it. Moving
+    `start` earlier after the fact still carries its own late first commit and
+    still fails here. Pushing `end` out later no longer does, but a wider `end`
+    only reaches kickoffs the mirror was up for, and a pick marked `outage`
+    whose hash landed before its kickoff is already reported as a marker
+    claiming a gap that did not happen to it.
     """
-    first_start = first_commit_introducing(window["path"], f'"{window["start"]}"')
-    first_end = first_commit_introducing(window["path"], f'"{window["end"]}"')
-    return max(first_start, first_end, key=lambda found: found[1])
+    return first_commit_introducing(window["path"], f'"{window["start"]}"')
 
 
 def pre_game_check(
@@ -393,7 +440,7 @@ def pre_game_check(
         return [
             late,
             f"OUTAGE   {who}: kickoff {utc(kickoff)} is outside window {marker} "
-            f"({window['start']} to {window['end']}). A window covers the games that "
+            f"({window_bounds(window)}). A window covers the games that "
             f"started while the mirror was down, and no others. Ignored.",
         ], None
 
@@ -409,7 +456,7 @@ def pre_game_check(
 
     return failures, (
         f"OUTAGE   {who}: kickoff {utc(kickoff)} fell inside {marker} "
-        f"({window['start']} to {window['end']}, committed {utc(window_when)} in "
+        f"({window_bounds(window)}, committed {utc(window_when)} in "
         f"{window_sha[:10]}). The hash first reached this repository {utc(when)}, "
         f"after the game, because the mirror could not read the ledger before it. "
         f"NOT proven, and not counted as proven. See {window['path']}."

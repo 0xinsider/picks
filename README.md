@@ -89,8 +89,19 @@ What keeps that from being an excuse is ordering, and git checks it without
 taking anyone's word: the window's own commit must predate the commit that
 first introduced the hash it covers. A window written after the hash landed is
 ignored, and the pick goes back to being a `PRE-GAME` failure that says so.
-Widening a window later fails the same way, because the new bound has its own
-first commit and it is the later of the two that counts.
+Moving a window's `start` earlier later on fails the same way, because the new
+bound carries its own, later, first commit.
+
+The mirror writes these windows itself, which is the only way that ordering
+holds without anyone remembering to make it hold. The run that first fails to
+read the ledger commits an open window -- `end: null`, with the failing run's
+URL -- before it exits, and the first run that reads the ledger again sets `end`
+and commits that before it appends a single hash. A window is dated by the
+commit that OPENED it, not by the one that closed it, because that is when the
+claim was made: the mirror could not read the ledger, and it said so while it
+still could not. Waiting for a person to write one by hand, mid-incident and
+before the fix serves, is what cost eight picks their proof on September 22 and
+23, 2026.
 
 The first one is `outages/2026-09-22-mirror-401.json`: on September 22, 2026 a
 routine key rotation revoked the API key this repository read the ledger with,

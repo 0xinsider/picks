@@ -337,7 +337,21 @@ Those picks carry their hash, are NOT marked `pre_commitment`, and carry
 
 `start` and `end` are in the same RFC 3339 whole-second form as a kickoff. The
 `id` matches the filename. `cause` and `reference` say what happened and where
-it is written up. Extra fields are allowed and ignored.
+it is written up. Extra fields are allowed and ignored. `end` is `null` while
+the window is open, and an open window covers every kickoff after its `start`
+until it closes.
+
+The mirror writes these windows itself, and that is the only reason the ordering
+below can be relied on. The run that first fails to read the ledger commits an
+open window before it exits non-zero, carrying the failing run's URL in
+`first_failure`; the first run that reads the ledger again sets `end` and
+`first_recovery` and commits that BEFORE it appends any hash. Check 2 dates a
+window by the commit that introduced its `start` -- the commit that opened it --
+and not by whatever touched the file last, because the claim being made is "the
+mirror could not read the ledger from here" and it was made at the moment of
+failure. Closing the window afterwards is bookkeeping about a gap that is
+already on record, and dating the window by the close would push its timestamp
+into the same run, sometimes the same second, as the backlog it explains.
 
 `verify.py` reports such a pick as `OUTAGE`: printed in full on every run,
 counted, and SUBTRACTED from the proven set, exactly as `pre_commitment` is. It
@@ -349,8 +363,8 @@ requires the window's own commit to PREDATE the commit that first introduced
 the hash it covers:
 
 ```sh
-# When this window's bounds were committed.
-git log --reverse --format='%H %aI' -S '"2026-09-22T18:39:07Z"' -- outages/2026-09-22-mirror-401.json
+# When this window was opened, which is the commit that introduced its start.
+git log --reverse --format='%H %aI' -S '"2026-09-22T14:51:23Z"' -- outages/2026-09-22-mirror-401.json
 
 # When the hash it covers first appeared.
 git log --reverse --format='%H %aI' -S '<the hash>' -- ledger/2026/09/2026-09-22.json
@@ -358,9 +372,12 @@ git log --reverse --format='%H %aI' -S '<the hash>' -- ledger/2026/09/2026-09-22
 
 The first must come first. A window committed after the hash it names is an
 excuse composed once the problem was known, and `verify.py` ignores it and
-fails the pick `PRE-GAME` with both commits printed. Widening a window later
-fails identically: the check takes the LATER of the commits that introduced
-`start` and `end`, so a bound moved after the fact carries its own late date.
+fails the pick `PRE-GAME` with both commits printed. Moving a window's `start`
+earlier after the fact fails identically, because the new bound carries its own
+late first commit. Pushing `end` out later does not move that date, and does not
+need to: a wider `end` only reaches kickoffs the mirror was up for, and a pick
+whose hash was committed before its kickoff is reported as carrying a marker for
+a gap that did not happen to it.
 
 This is the same reasoning as `pre_commitment` for a pick that predates the
 mirror, applied to a case the scheme had no word for. Neither one claims a
@@ -391,6 +408,10 @@ derived its own hashes would prove only that it can run sha256.
 None of them keeps a cursor. Each run fetches the whole ledger and appends what
 is missing, so a missed run self-heals on the next one and a double run writes
 nothing the second time.
+
+Both writing workflows also keep the outage windows above. A run that cannot
+read the ledger commits an open window and then fails; the next run that can
+read it closes that window, commits it, and only then appends the backlog.
 
 The mirror also refuses to write a nonce or payload for a pick the endpoint
 reports as sealed, and fails the run if it sees one. The endpoint is supposed to
