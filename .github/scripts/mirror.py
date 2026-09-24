@@ -62,6 +62,13 @@ It is honoured only when the window's own commit PREDATES the commit that
 introduces the hash, which git can check and nobody can fake, so an outage can
 never be written to excuse a hash that has already landed late.
 
+This script writes that window itself. The run that first fails to read the
+ledger commits an open window before it exits, and the first run that reads the
+ledger again closes it and commits that before it appends any hash. See the
+"Outage windows" section below for why the alternative -- remembering to commit
+one by hand, in the middle of an incident, before the fix serves -- cost eight
+picks their pre-game proof on 2026-09-22.
+
 MODES
 -----
   seal        fetch, append commitments not yet committed, regenerate
@@ -86,6 +93,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 LEDGER_DIR = REPO_ROOT / "ledger"
+OUTAGE_DIR = REPO_ROOT / "outages"
 INDEX_PATH = REPO_ROOT / "index.json"
 README_PATH = REPO_ROOT / "README.md"
 CHART_PATH = REPO_ROOT / "record.svg"
@@ -98,6 +106,20 @@ import verify  # noqa: E402
 
 DEFAULT_URL = "https://api.0xinsider.com/api/v1/pick-of-the-day/ledger"
 PERMALINK_BASE = "https://0xinsider.com/pick-of-the-day"
+
+# The window this script opens when it cannot read the ledger. One slug, because
+# every outage it can observe by itself is the same observation: the run asked
+# the endpoint for the ledger and did not get one. WHY it could not read it is
+# the `cause` field, which carries the status line or the transport error.
+OUTAGE_SLUG = "ledger-unreachable"
+OUTAGE_REFERENCE = (
+    "https://github.com/0xinsider/picks/blob/main/VERIFY.md"
+    "#picks-whose-game-started-while-the-mirror-was-down"
+)
+
+# The committer for every write this script makes.
+BOT_NAME = "github-actions[bot]"
+BOT_EMAIL = "41898282+github-actions[bot]@users.noreply.github.com"
 
 RECORD_BEGIN = "<!-- RECORD:BEGIN -->"
 RECORD_END = "<!-- RECORD:END -->"
@@ -256,6 +278,216 @@ def fetch_entries(url: str) -> list[dict]:
         raise MirrorError("the ledger contains an entry that is not an object")
     log(f"fetched {len(entries)} entry/entries from {url}")
     return entries
+
+
+# --------------------------------------------------------------------------
+# Outage windows
+# --------------------------------------------------------------------------
+#
+# WHY THIS SCRIPT WRITES ITS OWN OUTAGE RECORD
+#
+# A window under `outages/` is honoured by `verify.py` only when the window's
+# own commit PREDATES the commit that first introduced the hash it covers. That
+# ordering is the whole value of the record: a window written once the late hash
+# has landed is an excuse composed after the fact, and is ignored.
+#
+# Until 0xinsider/0xinsider#17192, nothing produced that commit. It depended on a
+# person noticing the mirror was failing and committing a window by hand BEFORE
+# the ledger came back. On 2026-09-22 the ledger endpoint answered 500 from about
+# 21:40Z until 2026-09-24T01:05Z; the backlog landed here at 01:08:29Z; no window
+# had been committed; and eight picks whose games started in that gap are
+# permanently PRE-GAME failures. The backend had sealed every one of them on
+# time. Only the public copy was late, and no commit made afterwards can fix it.
+#
+# So the mirror records the outage itself, at the only moment when the record is
+# not an excuse: the run that fails. The first failing run commits an OPEN window
+# (`end: null`) before it exits non-zero. The first run that reads the ledger
+# again closes that window -- `end` and `first_recovery` -- and commits THAT
+# before it appends a single hash. The window's commit therefore predates every
+# hash it could ever cover, by construction rather than by anyone's diligence.
+#
+# `verify.py` dates a window by the commit that introduced its `start`, which is
+# the commit that opened it, so closing a window later never moves its timestamp
+# forward past the backlog it explains.
+
+
+def stamp(moment: datetime) -> str:
+    """One instant in the RFC 3339 whole-second form the ledger uses."""
+    return moment.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def read_windows() -> list[tuple[Path, dict]]:
+    """Every file under outages/, parsed, sorted by name.
+
+    Parsed here rather than through `verify.load_outages` on purpose: this runs
+    on the failure path, and `load_outages` exits the process on a malformed
+    window. A window this script cannot read still has to stop it from opening a
+    second one, so a broken file raises and the run fails with that reason
+    instead of quietly starting a duplicate record.
+    """
+    if not OUTAGE_DIR.is_dir():
+        return []
+    found: list[tuple[Path, dict]] = []
+    for path in sorted(OUTAGE_DIR.glob("*.json")):
+        try:
+            window = json.loads(path.read_text())
+        except json.JSONDecodeError as exc:
+            raise MirrorError(f"{path}: not valid JSON: {exc}") from None
+        if not isinstance(window, dict):
+            raise MirrorError(f"{path}: an outage window must be a JSON object")
+        found.append((path, window))
+    return found
+
+
+def open_window() -> tuple[Path, dict] | None:
+    """The one window that has not closed yet, if there is one.
+
+    At most one is ever open: an outage is a state of this mirror, not of a
+    workflow, and Seal and Reveal share a concurrency group precisely so the two
+    of them take turns writing here.
+    """
+    for path, window in read_windows():
+        if window.get("end") is None:
+            return path, window
+    return None
+
+
+def write_window(path: Path, window: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(window, indent=2, ensure_ascii=False) + "\n")
+
+
+def next_window_path(day: str) -> Path:
+    """`outages/<UTC date>-ledger-unreachable.json`, with a suffix if taken.
+
+    The id is the filename and `verify.py` requires the two to match, so a second
+    outage on one day gets `-2`, `-3`, and so on rather than reopening a window
+    that already closed.
+    """
+    path = OUTAGE_DIR / f"{day}-{OUTAGE_SLUG}.json"
+    ordinal = 2
+    while path.exists():
+        path = OUTAGE_DIR / f"{day}-{OUTAGE_SLUG}-{ordinal}.json"
+        ordinal += 1
+    return path
+
+
+def sync_main() -> None:
+    """Throw the local tree away and take origin's, dropping our own commit."""
+    git("fetch", "origin", "main")
+    git("reset", "--hard", "origin/main")
+
+
+def commit_window(path: Path, subject: str, body: str) -> bool:
+    """Commit and push one window file, and nothing else."""
+    git("add", "--", str(path.relative_to(REPO_ROOT)))
+    if not git("diff", "--cached", "--quiet", check=False).returncode:
+        log(f"{path.name}: nothing to commit")
+        return True
+    git(
+        "-c",
+        f"user.name={BOT_NAME}",
+        "-c",
+        f"user.email={BOT_EMAIL}",
+        "commit",
+        "-m",
+        f"{subject}\n\n{body}",
+    )
+    pushed = git("push", "origin", "HEAD:main", check=False)
+    if pushed.returncode == 0:
+        log(f"pushed {head()[:10]}  {subject}")
+        return True
+    log(f"push rejected: {pushed.stderr.strip()}")
+    return False
+
+
+def record_outage(cause: str) -> None:
+    """Open and push a window, now, because the ledger did not answer.
+
+    Idempotent against a racing run the same way the ledger writes are: on a
+    rejected push the local commit is dropped, origin is re-read, and the
+    decision is made again on that tree. If a peer opened a window in the
+    meantime, this sees it and writes nothing -- one outage, one record.
+
+    A failure to record does NOT become the run's error. The caller is already
+    failing on the fetch, which is the thing to report; this is logged and the
+    next failing run tries again.
+    """
+    for attempt in range(1, 4):
+        already = open_window()
+        if already is not None:
+            log(f"outage window {already[0].name} is already open; not opening a second")
+            return
+        started = datetime.now(timezone.utc)
+        path = next_window_path(started.strftime("%Y-%m-%d"))
+        window = {
+            "id": path.stem,
+            "start": stamp(started),
+            "end": None,
+            "cause": cause,
+            "reference": OUTAGE_REFERENCE,
+            "first_failure": run_url(),
+            "first_recovery": None,
+            "notes": (
+                "Opened by the mirror itself, in the run that first failed to read the "
+                "ledger, and committed before that run exited. end is null until a run "
+                "reads the ledger again and closes this window, which it does before it "
+                "appends any hash. A pick whose kickoff falls inside this window and "
+                "whose hash therefore reached this repository late is recorded with an "
+                "outage marker naming this id, and stays unproven: the window explains "
+                "the gap, it does not close it."
+            ),
+        }
+        write_window(path, window)
+        subject = f"outage: {path.stem} opened, the ledger did not answer"
+        body = (
+            f"{cause}\n\n"
+            f"Committed before this run exits, so the record of the gap predates any "
+            f"hash that lands late because of it. Closed by the first run that reads "
+            f"the ledger again.\n"
+            f"run: {run_url()}\n"
+        )
+        if commit_window(path, subject, body):
+            log(f"recorded outage window {path.name}, open from {window['start']}")
+            return
+        log(f"retrying the outage window on a fresh main (attempt {attempt} of 3)")
+        sync_main()
+    log("could not push the outage window after 3 attempts; the next failing run retries")
+
+
+def close_outage(recovered: datetime) -> None:
+    """Close the open window, if any, and push it BEFORE anything else.
+
+    Raises rather than continuing if it cannot. Appending hashes under a window
+    that is still open would produce exactly the ordering this mechanism exists
+    to prevent -- the backlog first, the record of why it was late afterwards --
+    and the next run recovers both, in the right order, at no cost.
+    """
+    for attempt in range(1, 4):
+        found = open_window()
+        if found is None:
+            return
+        path, window = found
+        window["end"] = stamp(recovered)
+        window["first_recovery"] = run_url()
+        write_window(path, window)
+        subject = f"outage: {path.stem} closed, the ledger answered again"
+        body = (
+            f"The mirror read the ledger at {window['end']}, after failing from "
+            f"{window['start']}. Committed before the backlog this run is about to "
+            f"append, so the window predates every hash it covers.\n"
+            f"run: {run_url()}\n"
+        )
+        if commit_window(path, subject, body):
+            log(f"closed outage window {path.name} at {window['end']}")
+            return
+        log(f"retrying the outage close on a fresh main (attempt {attempt} of 3)")
+        sync_main()
+    raise MirrorError(
+        "could not push the outage window's close after 3 attempts. Nothing was "
+        "appended: a hash must never land before the window that explains it. The "
+        "next run closes the window and appends the backlog behind it."
+    )
 
 
 # --------------------------------------------------------------------------
@@ -524,6 +756,13 @@ def outage_window(entry: dict, windows: list[dict]) -> str | None:
     The windows are loaded by `verify.load_outages`, which validates them, and
     read here rather than reimplemented for the same reason the money
     arithmetic is: two readers of one format drift apart quietly.
+
+    An OPEN window is not consulted. Reaching this line means the ledger was
+    read, and any window that was open when the run started has already been
+    closed and committed by `close_outage`, so an open window here can only
+    belong to a `--no-push` dry run. Its end is unknown, which `verify.py` reads
+    as running forever, and stamping a pick against it would claim a gap whose
+    extent nobody knows yet.
     """
     if not entry.get("commitment_hash"):
         return None
@@ -531,7 +770,8 @@ def outage_window(entry: dict, windows: list[dict]) -> str | None:
     if not isinstance(kickoff, str):
         return None
     window = verify.window_covering(
-        datetime.fromisoformat(kickoff.replace("Z", "+00:00")), windows
+        datetime.fromisoformat(kickoff.replace("Z", "+00:00")),
+        [found for found in windows if found.get("end") is not None],
     )
     return window["id"] if window else None
 
@@ -1271,9 +1511,9 @@ def commit_and_push(mode: str, changes: list[str]) -> bool:
     )
     git(
         "-c",
-        "user.name=github-actions[bot]",
+        f"user.name={BOT_NAME}",
         "-c",
-        "user.email=41898282+github-actions[bot]@users.noreply.github.com",
+        f"user.email={BOT_EMAIL}",
         "commit",
         "-m",
         message,
@@ -1333,7 +1573,28 @@ def main() -> int:
     # no amount of loudness recovers a proof that missed its game. The failure
     # modes that remain all fail the run below: an error response, an unexpected
     # shape, or a sealed pick carrying a nonce.
-    entries = fetch_entries(args.url)
+    try:
+        entries = fetch_entries(args.url)
+    except MirrorError as exc:
+        # The window goes in NOW, in its own commit, while the failure is the
+        # only thing that has happened. A record written later cannot be told
+        # apart from an excuse, and `verify.py` refuses to tell them apart.
+        if args.no_push:
+            log("dry run: not recording an outage window")
+        else:
+            cause = " ".join(str(exc).split())[:400]
+            try:
+                record_outage(cause)
+            except MirrorError as inner:
+                log(f"FAILED  could not record the outage window: {inner}")
+        raise
+    read_at = datetime.now(timezone.utc)
+
+    # The ledger answered, so any window that was open is over. Closing it is
+    # pushed before a single hash is appended, which is what keeps a window's
+    # commit ahead of the backlog it explains.
+    if not args.no_push:
+        close_outage(read_at)
 
     # Cursor-free, so a losing race costs one refetch of the local tree and a
     # replay, never a reconciliation. The endpoint is read once.
