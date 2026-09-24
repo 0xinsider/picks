@@ -98,6 +98,38 @@
       ]
     },
     {
+      "pick_rank": 4,
+      "state": "opened",
+      "commitment_hash": "cff4793b06bb7d311cbea1742a48ddf302e810ecff36e9eef183dc49ee27a481",
+      "commitment_nonce": "546ffbdf8aa7fcdebd6ba9f67227ad0313df923c97cd2bcc7a7a1f09799fac6c",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-23T22:05:05.408219Z",
+      "kickoff": "2026-09-23T23:05:00Z",
+      "resolved_at": "2026-09-24T02:25:57.767675Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x7c0742db2ce035582fcd27373cf62ccc300f2fa2d7ad7fe7d4654f12bbc7b6da",
+        "kickoff": "2026-09-23T23:05:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Tampa Bay Rays",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Tampa Bay Rays vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-24T02:25:57.767675Z",
+          "parent_commit": "ff063a90c399f000528933730d00334f56510ce1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35963140257"
+        }
+      ]
+    },
+    {
       "pick_rank": 5,
       "state": "opened",
       "commitment_hash": "9f405dff975caa75d04d2956716b51c0d3bd2740a14c95aef592cc6d70ea944f",
@@ -131,12 +163,35 @@
     },
     {
       "pick_rank": 6,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5613bf3f52f356eadf5737da8aff013ac44243ed5d08059032f26f2f7fefc20c",
+      "commitment_nonce": "c72dd4f5742a976d4cf9737c7965cc05a6cd571347b11324c725ea72a3289aed",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T01:14:03.754105Z",
       "kickoff": "2026-09-24T02:10:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/6"
+      "resolved_at": "2026-09-24T05:50:12.044721Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x057bdb7ed25fe981d389ea6c8222f173cc92db7c5a7aefe6d08fc438a13a2383",
+        "kickoff": "2026-09-24T02:10:00Z",
+        "pick_date": "2026-09-23",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Seattle Mariners",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Houston Astros vs. Seattle Mariners",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-23/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-24T05:50:12.044721Z",
+          "parent_commit": "ff063a90c399f000528933730d00334f56510ce1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/35963140257"
+        }
+      ]
     }
   ]
 }

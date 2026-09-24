@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 23, 2026: +20,251.07 USD on 262,000 USD staked across 262 decided picks, 178W 84L, 67.9% hit rate, +7.7% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative return at 1,000 USD per pick through Sep 23, 2026: +20,085.93 USD on 264,000 USD staked across 264 decided picks, 179W 85L, 67.8% hit rate, +7.6% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -36,13 +36,13 @@ Record through 2026-09-23.
 
 | | |
 | --- | --- |
-| Decided picks | 262 |
-| Record | 178W 84L 0V |
-| Hit rate | 67.9% |
-| $1,000 per pick | +20,251.07 USD on 262,000 staked |
-| ROI | +7.7% |
-| Sealed, not yet settled | 1 |
-| Proven sealed before kickoff | 10 |
+| Decided picks | 264 |
+| Record | 179W 85L 0V |
+| Hit rate | 67.8% |
+| $1,000 per pick | +20,085.93 USD on 264,000 staked |
+| ROI | +7.6% |
+| Sealed, not yet settled | 0 |
+| Proven sealed before kickoff | 12 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 2 |
 
