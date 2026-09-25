@@ -53,12 +53,35 @@
     },
     {
       "pick_rank": 4,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4837eaed596b7c229ef60b1c7c4f716d9d5d03bd07a5cb473e4890f08d94dddd",
+      "commitment_nonce": "d38de96f3ace54d2324d6f4d448f199db2fbbf6284f46d6d0115f97ef6e2eaba",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-25T15:00:08.970869Z",
       "kickoff": "2026-09-25T16:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/4"
+      "resolved_at": "2026-09-25T20:23:12.161747Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xce79f47848161921ea860cd423920b294cae776a9304a3449a06eca98323a66a",
+        "kickoff": "2026-09-25T16:00:00Z",
+        "pick_date": "2026-09-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Georgia vs. Northern Ireland",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-25T20:23:12.161747Z",
+          "parent_commit": "600f3dd53f5d94310154983152eeb24d2d95b7ad",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36196302498"
+        }
+      ]
     },
     {
       "pick_rank": 5,
