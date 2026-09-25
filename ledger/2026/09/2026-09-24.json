@@ -108,21 +108,67 @@
     },
     {
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ac5055a5f428ea2ff650b6892d600905ae3d4c10fb7488e959a004369b0018e7",
+      "commitment_nonce": "3aaa760afd6180938291d50daa04b2fccddc39cd853f677a40cd07ead46da15f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T22:15:05.688687Z",
       "kickoff": "2026-09-24T23:15:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/5"
+      "resolved_at": "2026-09-25T02:18:54.931110Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0xa69826a08aefbfb213677dc6c9e1203c53aef78aaf43a3728bce502b4e37d6ee",
+        "kickoff": "2026-09-24T23:15:00Z",
+        "pick_date": "2026-09-24",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Atlanta Braves",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Cincinnati Reds vs. Atlanta Braves",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-25T02:18:54.931110Z",
+          "parent_commit": "ba6fab1d27cb189bb0140ae1f594ace23ffafb29",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36096316396"
+        }
+      ]
     },
     {
       "pick_rank": 6,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ed0f57c4c40c8b28713d5689e3a7ec506f082946eef2f594e42217fcdd4aadcb",
+      "commitment_nonce": "b7c3aedda7d154c1c3688c516e4bc6bf9f839965116d94c002574faf56f8e4c4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-24T21:05:04.706183Z",
       "kickoff": "2026-09-24T22:05:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/6"
+      "resolved_at": "2026-09-25T01:24:52.234644Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xcb169452dc1771cc194ad61634b529c6df933c76b99fd28782f1c77f71f94955",
+        "kickoff": "2026-09-24T22:05:00Z",
+        "pick_date": "2026-09-24",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Milwaukee Brewers vs. Philadelphia Phillies",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-24/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-25T01:24:52.234644Z",
+          "parent_commit": "ba6fab1d27cb189bb0140ae1f594ace23ffafb29",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36096316396"
+        }
+      ]
     }
   ]
 }
