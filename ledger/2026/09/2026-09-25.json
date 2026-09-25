@@ -11,6 +11,15 @@
       "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/1"
     },
     {
+      "pick_rank": 4,
+      "state": "sealed",
+      "commitment_hash": "4837eaed596b7c229ef60b1c7c4f716d9d5d03bd07a5cb473e4890f08d94dddd",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-25T15:00:08.970869Z",
+      "kickoff": "2026-09-25T16:00:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/4"
+    },
+    {
       "pick_rank": 5,
       "state": "sealed",
       "commitment_hash": "25215d3770d6451b2efd5bec55ffa65c0393a22feed3241259f8bd2182a9cb63",
