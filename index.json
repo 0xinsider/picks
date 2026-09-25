@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 270,
-    "sealed": 5,
+    "opened": 272,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 9,
+    "proven": 11,
     "proven_record": {
-      "wins": 7,
+      "wins": 9,
       "losses": 2,
-      "decided": 9,
-      "hit_rate": "77.8",
-      "profit_usd": "3238.41",
-      "staked": "9000",
-      "roi": "36.0"
+      "decided": 11,
+      "hit_rate": "81.8",
+      "profit_usd": "5479.00",
+      "staked": "11000",
+      "roi": "49.8"
     },
-    "wins": 183,
+    "wins": 185,
     "losses": 87,
     "voids": 0,
-    "decided": 270,
-    "hit_rate": "67.8",
+    "decided": 272,
+    "hit_rate": "68.0",
     "stake_usd": "1000",
-    "profit_usd": "21224.17",
-    "staked": "270000",
-    "roi": "7.9",
-    "through": "2026-09-24"
+    "profit_usd": "23464.77",
+    "staked": "272000",
+    "roi": "8.6",
+    "through": "2026-09-25"
   },
   "picks": [
     {
@@ -7956,12 +7956,35 @@
     {
       "pick_date": "2026-09-25",
       "pick_rank": 1,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "76b84eb294357961013d80e849fe92328d39aa0b9687ecac4fd1cc308a6eb25c",
+      "commitment_nonce": "b8ab48afd03ed7e98b5291f1e992d0bb86987a196645ede830ed7c31e1ace10c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-25T11:00:20.692500Z",
       "kickoff": "2026-09-25T12:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/1"
+      "resolved_at": "2026-09-25T17:17:29.601900Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xfdc7c82d81ad7a1a2f00194244845d97f86b22ddb0b048b1cb29a0ed37e24b36",
+        "kickoff": "2026-09-25T12:00:00Z",
+        "pick_date": "2026-09-25",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "NIP",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: NIP vs 3DMAX (BO3) - 1win Private Club #1 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-25T17:17:29.601900Z",
+          "parent_commit": "926ba7d7a7f2ff3fe27ec1e81fb34991f3000284",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36178504510"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-25",
@@ -7996,12 +8019,35 @@
     {
       "pick_date": "2026-09-25",
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "25215d3770d6451b2efd5bec55ffa65c0393a22feed3241259f8bd2182a9cb63",
+      "commitment_nonce": "d63a87ff6f063d66a0db0efd10ad23b575129481cdf81a7586d1a5c972c958c7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-25T12:00:07.126953Z",
       "kickoff": "2026-09-25T13:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/5"
+      "resolved_at": "2026-09-25T17:50:23.173336Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x368fcd81754f5f50e7ba4abb4ae92d146371b8eaded1410982b7ebf038d45fb0",
+        "kickoff": "2026-09-25T13:00:00Z",
+        "pick_date": "2026-09-25",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "LGD Gaming",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Dota 2: Xtreme Gaming vs LGD Gaming (BO3) - PGL Wallachia Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-25T17:50:23.173336Z",
+          "parent_commit": "926ba7d7a7f2ff3fe27ec1e81fb34991f3000284",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36178504510"
+        }
+      ]
     }
   ]
 }
