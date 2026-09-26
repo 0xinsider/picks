@@ -1227,13 +1227,13 @@ def render_record(stats: dict) -> str:
         ("Record", f"{stats['wins']}W {stats['losses']}L {stats['voids']}V"),
         ("Hit rate", f"{stats['hit_rate']}%" if stats["hit_rate"] else "not yet"),
         (
-            f"Modeled ${verify.STAKE_USD:,.0f} per pick, before fees",
+            f"Profit at ${verify.STAKE_USD:,.0f} per pick, before fees",
             # Signed on purpose. An unsigned P&L reads as a gain by default.
             f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} staked"
             if stats["profit_usd"] is not None
             else "not yet",
         ),
-        ("Modeled ROI before fees", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
+        ("ROI before fees", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
         ("Sealed, not yet settled", str(stats["sealed"])),
         ("Git-dated before kickoff", str(stats["proven"])),
         ("No pre-game proof (pre-commitment)", str(stats["pre_commitment"])),
@@ -1246,13 +1246,13 @@ def render_record(stats: dict) -> str:
         rows.append(("No pre-game proof (late public hash)", str(stats["late_unproven"])))
     proof = stats["proven_record"]
     rows.append(("Git-dated cohort record", f"{proof['wins']}W {proof['losses']}L"))
-    rows.append(("Git-dated cohort modeled ROI before fees", f"{Decimal(proof['roi']):+.1f}%" if proof["roi"] is not None else "not yet"))
+    rows.append(("Git-dated cohort ROI before fees", f"{Decimal(proof['roi']):+.1f}%" if proof["roi"] is not None else "not yet"))
     lines = ["", f"Record through {stats['through'] or 'no settled pick yet'}.", "", "| | |", "| --- | --- |"]
     lines += [f"| {label} | {value} |" for label, value in rows]
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
-        "Returns model a flat $1,000 stake at the frozen price on each decided pick, before fees.",
+        "Profit and ROI count a flat $1,000 stake at the frozen price on each decided pick, before fees.",
         "They do not establish fills, actual wagers, or subscriber profit.",
         "`python3 verify.py` checks the same data and public git history.",
         "",
@@ -1368,7 +1368,7 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     )
     out = [head]
     points = cumulative_series(picks)
-    title = f"Modeled ${verify.STAKE_USD:,.0f} per pick, before fees"
+    title = f"Profit at ${verify.STAKE_USD:,.0f} per pick, before fees"
     if not points:
         out.append(f"<title id=\"title\">{esc(title)}</title>\n")
         out.append('<desc id="desc">No settled pick with a price yet.</desc>\n')
@@ -1387,11 +1387,11 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     subtitle = (
         f"{stats['decided']} decided picks since {long_date(first_date)}. "
         f"{stats['wins']}W {stats['losses']}L, {stats['hit_rate']}% hit rate, "
-        f"{Decimal(stats['roi']):+.1f}% modeled ROI on {Decimal(stats['staked']):,.0f} USD hypothetical stakes."
+        f"{Decimal(stats['roi']):+.1f}% ROI on {Decimal(stats['staked']):,.0f} USD staked."
     )
     final = points[-1][1]
     desc = (
-        f"Cumulative hypothetical return before fees at {verify.STAKE_USD:,.0f} USD per pick from {long_date(first_date)} to "
+        f"Cumulative profit before fees at {verify.STAKE_USD:,.0f} USD per pick from {long_date(first_date)} to "
         f"{long_date(stats['through'])}: {final:+,.2f} USD. {subtitle}"
     )
     out.append(f'<title id="title">{esc(title)}</title>\n')
@@ -1506,10 +1506,10 @@ def render_chart_embed(stats: dict) -> str:
         alt = "Cumulative return chart. No settled pick yet."
     else:
         alt = (
-            f"Cumulative hypothetical return before fees at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
-            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD hypothetical stakes across "
+            f"Cumulative profit before fees at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked across "
             f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
-            f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% modeled ROI."
+            f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
         )
     return (
         '\n<a href="https://0xinsider.com/pick-of-the-day">'
