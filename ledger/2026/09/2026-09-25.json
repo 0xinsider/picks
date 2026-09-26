@@ -116,6 +116,15 @@
       ]
     },
     {
+      "pick_rank": 8,
+      "state": "sealed",
+      "commitment_hash": "be78d7fe36657bd4d4231846c6beed7386f0b727bbdbce9d26a5678f10a0491e",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-26T01:00:07.546062Z",
+      "kickoff": "2026-09-26T02:00:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/8"
+    },
+    {
       "pick_rank": 9,
       "state": "sealed",
       "commitment_hash": "248bf077cbc9ec23e41a452473b948c06bfd19c980f14d04dfc7ff7177851049",
