@@ -1,11 +1,11 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative hypothetical return before fees at 1,000 USD per pick through Sep 25, 2026: +23,991.72 USD on 275,000 USD hypothetical stakes across 275 decided picks, 187W 88L, 68.0% hit rate, +8.7% modeled ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Sep 25, 2026: +23,991.72 USD on 275,000 USD staked across 275 decided picks, 187W 88L, 68.0% hit rate, +8.7% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-6 a day, appears in this public ledger once the source publishes it. Some have
+10 a day, appears in this public ledger once the source publishes it. Some have
 a hash in this repository from before kickoff; older and late entries do not.
 The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
@@ -45,24 +45,24 @@ Record through 2026-09-25.
 | Decided picks | 275 |
 | Record | 187W 88L 0V |
 | Hit rate | 68.0% |
-| Modeled $1,000 per pick, before fees | +23,991.72 USD on 275,000 staked |
-| Modeled ROI before fees | +8.7% |
+| Profit at $1,000 per pick, before fees | +23,991.72 USD on 275,000 staked |
+| ROI before fees | +8.7% |
 | Sealed, not yet settled | 4 |
 | Git-dated before kickoff | 14 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 2 |
 | No pre-game proof (late public hash) | 9 |
 | Git-dated cohort record | 11W 3L |
-| Git-dated cohort modeled ROI before fees | +42.9% |
+| Git-dated cohort ROI before fees | +42.9% |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
-Returns model a flat $1,000 stake at the frozen price on each decided pick, before fees.
+Profit and ROI count a flat $1,000 stake at the frozen price on each decided pick, before fees.
 They do not establish fills, actual wagers, or subscriber profit.
 `python3 verify.py` checks the same data and public git history.
 <!-- RECORD:END -->
 
-Rank 1 each day is free to any signed-in account. Ranks 2 to 6 are Pro. The
-modeled record counts all of them the same way: $1,000 on every pick, a win returns
+Rank 1 each day is free to any signed-in account. Ranks 2 to 10 are Pro. The
+record counts all of them the same way: $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, a void refunds
 it. The stake was $100 until September 22, 2026 (0xinsider/0xinsider#16389);
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
@@ -92,7 +92,7 @@ not. When it does not, the data states the available evidence:
   is checked against the reviewed incident list in `verify.py`. A new late
   commitment still turns verification red until it is investigated.
 
-The three-pick pregame cohort in the table is far too small to establish a
+The git-dated pregame cohort in the table is far too small to establish a
 repeatable edge. Its timing classification relies on git author dates, not an
 independent timestamp anchor. The new signed receipts do not retroactively
 upgrade it. The full record also includes unproven history. See

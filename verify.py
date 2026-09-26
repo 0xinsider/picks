@@ -166,6 +166,11 @@ KNOWN_LATE_COMMITS = {
 # number (`oxinsider_core::constants::PICK_STAKE_USD`); units, ROI and hit rate
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
+# The most picks one product day can carry: ranks run 1 to this. Mirrors the
+# source's `pick_of_day::MAX_DAILY_PICKS`, which moved from 6 to 10 on
+# September 24, 2026; a rank above the old bound made every day since read as a
+# broken ledger.
+MAX_DAILY_PICKS = 10
 
 
 class Failure(Exception):
@@ -655,7 +660,7 @@ def load_ledger() -> list[tuple[Path, dict]]:
         seen: set[int] = set()
         for pick in day.get("picks", []):
             rank = pick.get("pick_rank")
-            if not isinstance(rank, int) or isinstance(rank, bool) or not 1 <= rank <= 6 or rank in seen:
+            if not isinstance(rank, int) or isinstance(rank, bool) or not 1 <= rank <= MAX_DAILY_PICKS or rank in seen:
                 raise SystemExit(f"{path}: invalid or repeated rank {rank!r}")
             seen.add(rank)
             payload = pick.get("payload")
@@ -830,8 +835,8 @@ def main() -> int:
     if staked > 0:
         label = f"${STAKE_USD:,.0f}/pick"
         print(
-            f"modeled {label}: {profit:+,.2f} USD on {staked:,.0f} "
-            f"hypothetical stakes before fees ({profit / staked * 100:+.1f}% ROI)"
+            f"profit at {label}: {profit:+,.2f} USD on {staked:,.0f} "
+            f"staked, before fees ({profit / staked * 100:+.1f}% ROI)"
         )
     print("            compare these against https://0xinsider.com/pick-of-the-day\n")
 

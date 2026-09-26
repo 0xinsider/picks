@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="title desc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
-<title id="title">Modeled $1,000 per pick, before fees</title>
-<desc id="desc">Cumulative hypothetical return before fees at 1,000 USD per pick from Jun 23, 2026 to Sep 25, 2026: +23,991.72 USD. 275 decided picks since Jun 23, 2026. 187W 88L, 68.0% hit rate, +8.7% modeled ROI on 275,000 USD hypothetical stakes.</desc>
+<title id="title">Profit at $1,000 per pick, before fees</title>
+<desc id="desc">Cumulative profit before fees at 1,000 USD per pick from Jun 23, 2026 to Sep 25, 2026: +23,991.72 USD. 275 decided picks since Jun 23, 2026. 187W 88L, 68.0% hit rate, +8.7% ROI on 275,000 USD staked.</desc>
 <rect width="1200" height="480" rx="6" fill="#0b0b0b"/>
-<text x="32" y="52" fill="#ffffff" font-size="28" font-weight="600">Modeled $1,000 per pick, before fees</text>
-<text x="32" y="84" fill="#8f8f8f" font-size="17">275 decided picks since Jun 23, 2026. 187W 88L, 68.0% hit rate, +8.7% modeled ROI on 275,000 USD hypothetical stakes.</text>
+<text x="32" y="52" fill="#ffffff" font-size="28" font-weight="600">Profit at $1,000 per pick, before fees</text>
+<text x="32" y="84" fill="#8f8f8f" font-size="17">275 decided picks since Jun 23, 2026. 187W 88L, 68.0% hit rate, +8.7% ROI on 275,000 USD staked.</text>
 <line x1="92" y1="420.0" x2="980" y2="420.0" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1"/>
 <text x="80" y="425.0" fill="#8f8f8f" font-size="15" text-anchor="end">0</text>
 <line x1="92" y1="358.4" x2="980" y2="358.4" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>

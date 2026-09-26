@@ -1,6 +1,6 @@
 # How to verify the Pick of the Day record
 
-0xinsider publishes up to 6 picks a day, each 1 hour before its own kickoff, and
+0xinsider publishes up to 10 picks a day, each 1 hour before its own kickoff, and
 a running record of how those picks did. The record is served from our
 database, and this repository is what makes it checkable from outside: every
 picks that reach this repository before kickoff carry a hash that can be
@@ -219,7 +219,7 @@ counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven
 the money
 figures: `stake_usd`, the flat stake every decided pick is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
-total hypothetical stake. `proven_record` separately reports the git-dated
+total stake. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
 date, not an independent receipt. None of these figures establish real fills or
 subscriber profit; fees are excluded. `profit_usd` was named `profit_per_100` until September 22,
