@@ -3,21 +3,67 @@
   "picks": [
     {
       "pick_rank": 4,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c1b8808619a37ecca84c187dbecc05b20fc5b31feff22883b091d5833eb4d202",
+      "commitment_nonce": "2a34923fa37924b0331c281f7ab235ad46c8788501fbebd595837c5a678ced39",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-26T11:00:07.807857Z",
       "kickoff": "2026-09-26T12:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/4"
+      "resolved_at": "2026-09-26T14:49:04.023930Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0x0d97f8a6b6e969ea431887eb6dab52ae990de5fc133af551d841582d2b2648b6",
+        "kickoff": "2026-09-26T12:00:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "K27",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Counter-Strike: EYEBALLERS vs K27 (BO3) - 1win Private Club #1 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-26T14:49:04.023930Z",
+          "parent_commit": "43236ab61a7897327044c418fd894b1e158e7772",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36257956031"
+        }
+      ]
     },
     {
       "pick_rank": 7,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "351a1dc0dad1ce564e057f84fa767799e2cd7e2505f080bdd102bb8af7251e74",
+      "commitment_nonce": "449349c4f07e4320d76ab530e4e7631d054c37d1de6338eb8c8ee535f516845d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-26T11:00:07.849224Z",
       "kickoff": "2026-09-26T12:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/7"
+      "resolved_at": "2026-09-26T14:22:56.693684Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xef45a680a4c14a3a304dd620907e58b6748ff4965728ec854a5dc5a862e3a1e5",
+        "kickoff": "2026-09-26T12:00:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "LOUD",
+        "pick_rank": 7,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: LOUD vs EDward Gaming (BO3) - VCT Champions Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-26T14:22:56.693684Z",
+          "parent_commit": "43236ab61a7897327044c418fd894b1e158e7772",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36257956031"
+        }
+      ]
     }
   ]
 }
