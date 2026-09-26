@@ -112,21 +112,67 @@
     },
     {
       "pick_rank": 9,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "27ee7adda871d5c56bf6bb24f73f10df238db4edf7c4b4f7b7a8e3383363ee3a",
+      "commitment_nonce": "e4fa1d46765f02929539da46933a57d39d30faa4640dcad8a2672cce108814e9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-26T18:00:10.261417Z",
       "kickoff": "2026-09-26T19:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/9"
+      "resolved_at": "2026-09-26T21:44:28.990187Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.885000",
+        "condition_id": "0xf15504afc153677457348284c8ddfca7a488931e4d1e28a08289318571dfaab3",
+        "kickoff": "2026-09-26T19:00:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Yazmin Jauregui",
+        "pick_rank": 9,
+        "platform": "polymarket"
+      },
+      "matchup": "UFC Fight Night: Vanessa Demopoulos vs. Yazmin Jauregui (Women's Strawweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-26T21:44:28.990187Z",
+          "parent_commit": "12613db623524946af8421c3e581ff4005ae7f73",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36277389983"
+        }
+      ]
     },
     {
       "pick_rank": 10,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9e646150d6244595c854682a52b538c60eafa0eda0a166da373fe78fa44a566c",
+      "commitment_nonce": "4c6a69ff0e7720de47673fd2ff81b9aaabbb42de64e485e84a0c8bb748b320a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-26T17:45:07.926013Z",
       "kickoff": "2026-09-26T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/10"
+      "resolved_at": "2026-09-26T22:44:40.346282Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x9d61a73b8b3100f24398c4cfe590bad75ee400d69598c188b01d17ca2199aa5e",
+        "kickoff": "2026-09-26T18:45:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 10,
+        "platform": "polymarket"
+      },
+      "matchup": "Czechia vs. Croatia",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-26T22:44:40.346282Z",
+          "parent_commit": "12613db623524946af8421c3e581ff4005ae7f73",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36277389983"
+        }
+      ]
     }
   ]
 }
