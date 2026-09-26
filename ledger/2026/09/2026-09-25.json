@@ -35,21 +35,67 @@
     },
     {
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "990fa8e533df5f404a5c2ef7213ab3906f29b498b75ec9d65724fe7aca22d873",
+      "commitment_nonce": "f6af84052a4243104b8293fd324296e60c1caaa27368c210328ed414bbe67897",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-25T17:45:12.189687Z",
       "kickoff": "2026-09-25T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/2"
+      "resolved_at": "2026-09-25T22:53:22.631203Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.895000",
+        "condition_id": "0xecb55f7852472667e07240fd4056f4dc4cc266549d6a8b2b0f927490619c9d57",
+        "kickoff": "2026-09-25T18:45:00Z",
+        "pick_date": "2026-09-25",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Türkiye vs. France",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-25T22:53:22.631203Z",
+          "parent_commit": "b7f4b5e2b2d9013e76945f35e15475f3124696eb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36208704251"
+        }
+      ]
     },
     {
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f28b72d8dd8a38af795d767cc2fa71a7f2add5c7fa94f621d6f181d4128bf694",
+      "commitment_nonce": "77628f671b662bc20378abb9fa968354ddc13f4a63db66fb55f7ac9f64793bb2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-25T17:45:12.221172Z",
       "kickoff": "2026-09-25T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/3"
+      "resolved_at": "2026-09-25T22:47:52.179973Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0xb2bfc0f4559cdee4c5d41c1dc10317037890d380422531aadba9d0c8c869647d",
+        "kickoff": "2026-09-25T18:45:00Z",
+        "pick_date": "2026-09-25",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Italy vs. Belgium",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-25/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-25T22:47:52.179973Z",
+          "parent_commit": "b7f4b5e2b2d9013e76945f35e15475f3124696eb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36208704251"
+        }
+      ]
     },
     {
       "pick_rank": 4,
