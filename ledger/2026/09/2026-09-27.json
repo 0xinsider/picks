@@ -2,6 +2,15 @@
   "pick_date": "2026-09-27",
   "picks": [
     {
+      "pick_rank": 1,
+      "state": "sealed",
+      "commitment_hash": "0382a8268e4ce76ea30e2cb0c3a320b13d57e86522e8d500d12fc809f462919e",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-27T17:45:22.503523Z",
+      "kickoff": "2026-09-27T18:45:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/1"
+    },
+    {
       "pick_rank": 2,
       "state": "sealed",
       "commitment_hash": "9f2238a79aab6107f4e7bc864d29835d5737ab9d0b97cc9e4d01008d1534977d",
@@ -45,6 +54,15 @@
       "sealed_at": "2026-09-27T16:00:10.954738Z",
       "kickoff": "2026-09-27T17:00:00Z",
       "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/6"
+    },
+    {
+      "pick_rank": 8,
+      "state": "sealed",
+      "commitment_hash": "dca710169d1ab14de69bb76b9416adaa6d278e1880fb144252c25c25a6442c0c",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-27T17:45:22.537647Z",
+      "kickoff": "2026-09-27T18:45:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/8"
     },
     {
       "pick_rank": 9,
