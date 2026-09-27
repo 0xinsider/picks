@@ -67,12 +67,35 @@
     },
     {
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ea7d74c7a7a6fb1e4b42b9e77b809d9dc8e27584be27f5d66b2c21d4f664fa99",
+      "commitment_nonce": "2b4c4e8dc8a9526d415b87d68a141edad3707084795f2a677debe4aab8484daa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-26T22:30:05.867299Z",
       "kickoff": "2026-09-26T23:30:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/3"
+      "resolved_at": "2026-09-27T03:39:20.002340Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0xc932650aa8804df78d28b38bb0035cbf59ad127f105d7f7ebd1618d25d488431",
+        "kickoff": "2026-09-26T23:30:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "LSU",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Texas A&M vs. LSU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T03:39:20.002340Z",
+          "parent_commit": "82ecc11440c5c688d5aff5309f138bf4017ef96f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36305156389"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -108,12 +131,35 @@
     },
     {
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8cc8d4a574988b30437cfa06cc0eb841f682327ec3fe610e947fdb2d8fb530d5",
+      "commitment_nonce": "4103b900812415749593fd7e8f6800ab99be81d418be683cbadb673adf7dcbb3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T00:00:07.824385Z",
       "kickoff": "2026-09-27T01:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/5"
+      "resolved_at": "2026-09-27T04:26:36.113488Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xe3fe15e68d6d4d502228abaee82e7762adb7529c8543b81fc5eb524150d24f6f",
+        "kickoff": "2026-09-27T01:00:00Z",
+        "pick_date": "2026-09-26",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Oregon State vs. UTEP",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-26/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T04:26:36.113488Z",
+          "parent_commit": "82ecc11440c5c688d5aff5309f138bf4017ef96f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36305156389"
+        }
+      ]
     },
     {
       "pick_rank": 6,
