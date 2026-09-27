@@ -12,48 +12,163 @@
     },
     {
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9f2238a79aab6107f4e7bc864d29835d5737ab9d0b97cc9e4d01008d1534977d",
+      "commitment_nonce": "7884725044a284ff170afa23f811f197891110d8707397885f68df451094fa05",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T15:00:09.881215Z",
       "kickoff": "2026-09-27T16:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/2"
+      "resolved_at": "2026-09-27T20:23:34.224855Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x87b64455d7fab6b6988c1a33213afc1dcf17f4136765d24e38202a220ac3ee5f",
+        "kickoff": "2026-09-27T16:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Serbia vs. Netherlands",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T20:23:34.224855Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     },
     {
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0d2662d22cec2fba140a3dde68af1c20d6af0b89bbbf880eb887cd7353100639",
+      "commitment_nonce": "7cacf4c9060b8a2588ac355b10a067f7190a1bfadcffc4cd8f58a77e6eb2fe03",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T15:00:09.924357Z",
       "kickoff": "2026-09-27T16:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/3"
+      "resolved_at": "2026-09-27T20:23:34.299552Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x777707336217dd8109301d4b13b576dfa350bbc906c170c845b234ed930d98b9",
+        "kickoff": "2026-09-27T16:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Denmark vs. Wales",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T20:23:34.299552Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     },
     {
       "pick_rank": 4,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6c35d396bd0c0db79c91eb45b995ce274d51a55c866d0915ae5b2f2963c46946",
+      "commitment_nonce": "01c27b9fcb35640a9d54129e6f58f01085e59201c6f6f86a585a1c1d67737b5b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T16:00:10.877468Z",
       "kickoff": "2026-09-27T17:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/4"
+      "resolved_at": "2026-09-27T21:00:48.962269Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.835000",
+        "condition_id": "0xed537832cbf6774d5b54da06732b53ce6866d82941e593ca71292f8e247babc5",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Chiefs",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Chiefs vs. Dolphins",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T21:00:48.962269Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     },
     {
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "290ca827123810591f8848d3877c72f89865d1fac2ebec2a4e74492fc17f9e72",
+      "commitment_nonce": "b880fbc1b7936c860b97a219748c97a5f497f56e9bbbeae0172f47983faf7afc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T16:00:10.916256Z",
       "kickoff": "2026-09-27T17:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/5"
+      "resolved_at": "2026-09-27T19:53:01.437274Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x9d232fb0b16979c4b3f281d3a53a0441ace232a0b79e1aa0f45fac51e7870be3",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Seahawks vs. Commanders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T19:53:01.437274Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     },
     {
       "pick_rank": 6,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "81cbf3899a2b336f7e3a1459e358041c33ef0c8e094d335cff80e10cd9516378",
+      "commitment_nonce": "ea0bc3b5ff2ecc01d0333a277a32f35e6327ec94db6130de18b23ebfa1e2b98a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T16:00:10.954738Z",
       "kickoff": "2026-09-27T17:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/6"
+      "resolved_at": "2026-09-27T21:00:48.891666Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x9971d93943dc93d5c4a4efe9c2908107fed8d34662d4494e8169c4701df7c819",
+        "kickoff": "2026-09-27T17:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Lions",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Jets vs. Lions",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T21:00:48.891666Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     },
     {
       "pick_rank": 7,
@@ -75,12 +190,35 @@
     },
     {
       "pick_rank": 9,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "203a2dc7afe1244046d7472def7260494c5ba102f1ee76e6f0941927bde2faba",
+      "commitment_nonce": "b5b24bc37f32bf6899d3fc888cc64305bc8c8b963cfde47b93f5a142674b9bcd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T15:00:09.967824Z",
       "kickoff": "2026-09-27T16:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/9"
+      "resolved_at": "2026-09-27T20:23:34.341045Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x68cf7774ba502815fb8effd4c791dfe503bd494f5d138271c6878ef517735300",
+        "kickoff": "2026-09-27T16:00:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 9,
+        "platform": "polymarket"
+      },
+      "matchup": "Austria vs. Kosovo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-27T20:23:34.341045Z",
+          "parent_commit": "8b60b097b2617e51cf9b394096f2eccfac10024a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36354196595"
+        }
+      ]
     }
   ]
 }
