@@ -1,0 +1,14 @@
+{
+  "pick_date": "2026-09-28",
+  "picks": [
+    {
+      "pick_rank": 5,
+      "state": "sealed",
+      "commitment_hash": "091716b346d2fe6a382d2bab3863093d8e1e66cb5b383c09c4b3783dfa349416",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-09-28T15:00:09.148517Z",
+      "kickoff": "2026-09-28T16:00:00Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/5"
+    }
+  ]
+}
