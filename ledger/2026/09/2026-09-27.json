@@ -291,12 +291,35 @@
     },
     {
       "pick_rank": 10,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a31a6bf38049a05f25902f38f3465016619c4c0825a2033ce1255fe9047689ca",
+      "commitment_nonce": "1a8ba71e5d5f293c89aa7d99b2047b5475075c5566ab8a230ea9eb907cac2b20",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T23:20:04.939332Z",
       "kickoff": "2026-09-28T00:20:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/10"
+      "resolved_at": "2026-09-28T05:35:06.101210Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x7a5d47de6d6e3e4fe402307bb10b36f563a02e5b231af171259053806efc6ee6",
+        "kickoff": "2026-09-28T00:20:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 10,
+        "platform": "polymarket"
+      },
+      "matchup": "Rams vs. Broncos",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-28T05:35:06.101210Z",
+          "parent_commit": "653cddabe422d9b282b0506c2a59a5929cca394e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36388484852"
+        }
+      ]
     }
   ]
 }

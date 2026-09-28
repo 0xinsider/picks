@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 298,
-    "sealed": 1,
+    "opened": 299,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 37,
+    "proven": 38,
     "proven_record": {
-      "wins": 27,
+      "wins": 28,
       "losses": 10,
-      "decided": 37,
-      "hit_rate": "73.0",
-      "profit_usd": "7705.84",
-      "staked": "37000",
-      "roi": "20.8"
+      "decided": 38,
+      "hit_rate": "73.7",
+      "profit_usd": "8767.69",
+      "staked": "38000",
+      "roi": "23.1"
     },
-    "wins": 203,
+    "wins": 204,
     "losses": 95,
     "voids": 0,
-    "decided": 298,
-    "hit_rate": "68.1",
+    "decided": 299,
+    "hit_rate": "68.2",
     "stake_usd": "1000",
-    "profit_usd": "25691.60",
-    "staked": "298000",
-    "roi": "8.6",
+    "profit_usd": "26753.45",
+    "staked": "299000",
+    "roi": "8.9",
     "through": "2026-09-27"
   },
   "picks": [
@@ -8880,12 +8880,35 @@
     {
       "pick_date": "2026-09-27",
       "pick_rank": 10,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a31a6bf38049a05f25902f38f3465016619c4c0825a2033ce1255fe9047689ca",
+      "commitment_nonce": "1a8ba71e5d5f293c89aa7d99b2047b5475075c5566ab8a230ea9eb907cac2b20",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-27T23:20:04.939332Z",
       "kickoff": "2026-09-28T00:20:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/10"
+      "resolved_at": "2026-09-28T05:35:06.101210Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x7a5d47de6d6e3e4fe402307bb10b36f563a02e5b231af171259053806efc6ee6",
+        "kickoff": "2026-09-28T00:20:00Z",
+        "pick_date": "2026-09-27",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "pick_rank": 10,
+        "platform": "polymarket"
+      },
+      "matchup": "Rams vs. Broncos",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-27/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-28T05:35:06.101210Z",
+          "parent_commit": "653cddabe422d9b282b0506c2a59a5929cca394e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36388484852"
+        }
+      ]
     }
   ]
 }
