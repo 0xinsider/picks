@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 299,
-    "sealed": 4,
+    "opened": 300,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 38,
+    "proven": 39,
     "proven_record": {
       "wins": 28,
-      "losses": 10,
-      "decided": 38,
-      "hit_rate": "73.7",
-      "profit_usd": "8767.69",
-      "staked": "38000",
-      "roi": "23.1"
+      "losses": 11,
+      "decided": 39,
+      "hit_rate": "71.8",
+      "profit_usd": "7767.69",
+      "staked": "39000",
+      "roi": "19.9"
     },
     "wins": 204,
-    "losses": 95,
+    "losses": 96,
     "voids": 0,
-    "decided": 299,
-    "hit_rate": "68.2",
+    "decided": 300,
+    "hit_rate": "68.0",
     "stake_usd": "1000",
-    "profit_usd": "26753.45",
-    "staked": "299000",
-    "roi": "8.9",
-    "through": "2026-09-27"
+    "profit_usd": "25753.45",
+    "staked": "300000",
+    "roi": "8.6",
+    "through": "2026-09-28"
   },
   "picks": [
     {
@@ -8933,12 +8933,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "091716b346d2fe6a382d2bab3863093d8e1e66cb5b383c09c4b3783dfa349416",
+      "commitment_nonce": "bf732142a661109e4c8f39e3c4901e8006a8e8234ce021d8cb4d1e82762b8d08",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-28T15:00:09.148517Z",
       "kickoff": "2026-09-28T16:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/5"
+      "resolved_at": "2026-09-28T19:55:41.648042Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.325000",
+        "condition_id": "0xa7ffc48097a0fddf9e99534f9ebc67997fc954c72a92d67d4d781dc4b7c98a97",
+        "kickoff": "2026-09-28T16:00:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "Armenia vs. Montenegro",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-28T19:55:41.648042Z",
+          "parent_commit": "c5d31899f4ac56de51fad91712418b3dc897f390",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36489541937"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-28",
