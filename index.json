@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 303,
-    "sealed": 2,
+    "opened": 305,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 42,
+    "proven": 44,
     "proven_record": {
-      "wins": 29,
-      "losses": 13,
-      "decided": 42,
-      "hit_rate": "69.0",
-      "profit_usd": "6166.29",
-      "staked": "42000",
-      "roi": "14.7"
+      "wins": 30,
+      "losses": 14,
+      "decided": 44,
+      "hit_rate": "68.2",
+      "profit_usd": "5508.57",
+      "staked": "44000",
+      "roi": "12.5"
     },
-    "wins": 205,
-    "losses": 98,
+    "wins": 206,
+    "losses": 99,
     "voids": 0,
-    "decided": 303,
-    "hit_rate": "67.7",
+    "decided": 305,
+    "hit_rate": "67.5",
     "stake_usd": "1000",
-    "profit_usd": "24152.05",
-    "staked": "303000",
-    "roi": "8.0",
+    "profit_usd": "23494.34",
+    "staked": "305000",
+    "roi": "7.7",
     "through": "2026-09-28"
   },
   "picks": [
@@ -8913,12 +8913,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 1,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "40a6f4f11645478a7f47c06069484beeda6b688b84cf38da7bbcf20ec28a63ca",
+      "commitment_nonce": "8e9b7452e3bb0bc989495fb7dc38ea70c6c42194bf020b67a8f84bb3db7f78a3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-28T23:15:21.430308Z",
       "kickoff": "2026-09-29T00:15:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/1"
+      "resolved_at": "2026-09-29T03:45:13.888692Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x3ce1a8eb83552ffab3794a33b4ab7d7da750a9cd2246da324b37c5e5b0478575",
+        "kickoff": "2026-09-29T00:15:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Eagles",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Eagles vs. Bears",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-29T03:45:13.888692Z",
+          "parent_commit": "88b32be392ac39e5c7cf6cc8c1f8c02335e1d399",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36542722682"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-28",
@@ -8956,12 +8979,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "889b7a1855036d894e595cde6367c92ae206abb1ef62db0ad6ec1c9eb7a01a09",
+      "commitment_nonce": "6a9b2d678c4d205f9e5001802fc62ffb28a450b6ca8b1504f4f9a8e98fdc0bee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-29T01:00:06.466053Z",
       "kickoff": "2026-09-29T02:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/3"
+      "resolved_at": "2026-09-29T06:05:15.887367Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x17c200b73d013bcfd894d330ba82a79eed584676b0052680d3d097cb46931ee5",
+        "kickoff": "2026-09-29T02:00:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Guatemala vs. El Salvador",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-29T06:05:15.887367Z",
+          "parent_commit": "88b32be392ac39e5c7cf6cc8c1f8c02335e1d399",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36542722682"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-28",
