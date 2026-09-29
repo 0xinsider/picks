@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 305,
-    "sealed": 6,
+    "opened": 307,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 44,
+    "proven": 46,
     "proven_record": {
-      "wins": 30,
-      "losses": 14,
-      "decided": 44,
-      "hit_rate": "68.2",
-      "profit_usd": "5508.57",
-      "staked": "44000",
-      "roi": "12.5"
+      "wins": 31,
+      "losses": 15,
+      "decided": 46,
+      "hit_rate": "67.4",
+      "profit_usd": "5012.33",
+      "staked": "46000",
+      "roi": "10.9"
     },
-    "wins": 206,
-    "losses": 99,
+    "wins": 207,
+    "losses": 100,
     "voids": 0,
-    "decided": 305,
-    "hit_rate": "67.5",
+    "decided": 307,
+    "hit_rate": "67.4",
     "stake_usd": "1000",
-    "profit_usd": "23494.34",
-    "staked": "305000",
-    "roi": "7.7",
-    "through": "2026-09-28"
+    "profit_usd": "22998.09",
+    "staked": "307000",
+    "roi": "7.5",
+    "through": "2026-09-29"
   },
   "picks": [
     {
@@ -9111,22 +9111,68 @@
     {
       "pick_date": "2026-09-29",
       "pick_rank": 1,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f96ce4860309ad2897f86ec5ace8c44ab19dd75753a5ff62f1b0c1dd68e55574",
+      "commitment_nonce": "bcb835409e1b4773f6c8bc7224512d0c473f911dfbed26adf874fce7a14b914d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-29T12:00:21.863668Z",
       "kickoff": "2026-09-29T13:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/1"
+      "resolved_at": "2026-09-29T17:30:34.998077Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xf5514cca9e1a1879e8901c35d33714d446a47613ed39eeab30166eee5c89a6f8",
+        "kickoff": "2026-09-29T13:00:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "LGD Gaming",
+        "pick_rank": 1,
+        "platform": "polymarket"
+      },
+      "matchup": "Dota 2: LGD Gaming vs Xtreme Gaming (BO3) - BLAST Slam Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-29T17:30:34.998077Z",
+          "parent_commit": "4ab8ffc05a915d58702d88f285e31fd1d6465fad",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36628518472"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-29",
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c88749dc7ad28c47c294b20d3b77a9334efbc95fa885c564a94873637bf4e016",
+      "commitment_nonce": "fe4de2cbf804072449381d24e3203a3ca96f24966300f1960d0621628a97af59",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-29T11:00:06.202194Z",
       "kickoff": "2026-09-29T12:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/2"
+      "resolved_at": "2026-09-29T16:09:14.372781Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x1d922efc5cceb04f39bb048da13e9d9f2fa821d75363f5d8826f7baa0a6e29f0",
+        "kickoff": "2026-09-29T12:00:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Karmine Corp",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Valorant: Karmine Corp vs NRG (BO3) - VCT Champions Group D",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-29T16:09:14.372781Z",
+          "parent_commit": "4ab8ffc05a915d58702d88f285e31fd1d6465fad",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36628518472"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-29",
