@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 300,
-    "sealed": 5,
+    "opened": 303,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 39,
+    "proven": 42,
     "proven_record": {
-      "wins": 28,
-      "losses": 11,
-      "decided": 39,
-      "hit_rate": "71.8",
-      "profit_usd": "7767.69",
-      "staked": "39000",
-      "roi": "19.9"
+      "wins": 29,
+      "losses": 13,
+      "decided": 42,
+      "hit_rate": "69.0",
+      "profit_usd": "6166.29",
+      "staked": "42000",
+      "roi": "14.7"
     },
-    "wins": 204,
-    "losses": 96,
+    "wins": 205,
+    "losses": 98,
     "voids": 0,
-    "decided": 300,
-    "hit_rate": "68.0",
+    "decided": 303,
+    "hit_rate": "67.7",
     "stake_usd": "1000",
-    "profit_usd": "25753.45",
-    "staked": "300000",
-    "roi": "8.6",
+    "profit_usd": "24152.05",
+    "staked": "303000",
+    "roi": "8.0",
     "through": "2026-09-28"
   },
   "picks": [
@@ -8923,12 +8923,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "520f43c12baa270cb02115f1d100a19e4bd9e4cf9ab03e8e49ef355da1a279fe",
+      "commitment_nonce": "1e8fc0074273ceb21ba2738532189c4c1bd65901771576cbae2eabac9007bae3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-28T17:45:10.183396Z",
       "kickoff": "2026-09-28T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/2"
+      "resolved_at": "2026-09-28T22:58:48.309409Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x3d0e110a6fb9ae0caebe8808b40b7e27de398af0d373e69ea6abb9bdbae61b3e",
+        "kickoff": "2026-09-28T18:45:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Belgium vs. France",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-28T22:58:48.309409Z",
+          "parent_commit": "130ad08a92b9a7f90478a84610edeae44fbef158",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36510126757"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-28",
@@ -8943,12 +8966,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 4,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a2ba768106a8b654e28a3b60486c7f8d11642dee4ec8d708b18c16be29bfcdea",
+      "commitment_nonce": "615d77b0f982f4598185f0054fd583126e52a732bae0dec4188b786293a86179",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-28T17:45:10.223828Z",
       "kickoff": "2026-09-28T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/4"
+      "resolved_at": "2026-09-28T22:47:12.530297Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x81942e58ac9ad4538de6924b757fb57775e1e8f99df7ef67f61c5de1d83e3cdf",
+        "kickoff": "2026-09-28T18:45:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "pick_rank": 4,
+        "platform": "polymarket"
+      },
+      "matchup": "Türkiye vs. Italy",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-28T22:47:12.530297Z",
+          "parent_commit": "130ad08a92b9a7f90478a84610edeae44fbef158",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36510126757"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-28",
@@ -8986,12 +9032,35 @@
     {
       "pick_date": "2026-09-28",
       "pick_rank": 6,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ccebf98993e372de759b756e984e11224cf4ed183de27cbb5c5fb8d3d5951f52",
+      "commitment_nonce": "f0d9a5b8c2439e373d606af4e91162b6cdeb0485d64d8521166938f70a07a273",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-28T17:45:10.283336Z",
       "kickoff": "2026-09-28T18:45:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/6"
+      "resolved_at": "2026-09-28T22:40:24.790200Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0xe173073b68ad4b30a5e36a2cf132cdacda4432c4dba0ce98118b7e8726435217",
+        "kickoff": "2026-09-28T18:45:00Z",
+        "pick_date": "2026-09-28",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 6,
+        "platform": "polymarket"
+      },
+      "matchup": "Romania vs. Bosnia and Herzegovina",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-28/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-28T22:40:24.790200Z",
+          "parent_commit": "130ad08a92b9a7f90478a84610edeae44fbef158",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36510126757"
+        }
+      ]
     }
   ]
 }
