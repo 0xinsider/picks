@@ -91,9 +91,8 @@ newly exposed ID resolves its already mirrored legacy slot without rewriting it.
 
 ## The canonical form for version 1
 
-The hash is taken over one JSON object serialized exactly this way. The backend
-owns this form (`pick_of_day::commitment` in the 0xinsider backend); this is a
-copy of its specification, not a second design.
+The hash is taken over one JSON object serialized exactly this way. The source
+endpoint owns this form; this is a copy of its specification, not a second design.
 
 - **Eight members, no more and no fewer:** `backed_price`, `condition_id`,
   `kickoff`, `pick_date`, `pick_outcome_index`, `pick_outcome_label`,
@@ -250,8 +249,7 @@ total stake. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
 date, not an independent receipt. None of these figures establish real fills or
 subscriber profit; fees are excluded. `profit_usd` was named `profit_per_100` until September 22,
-2026, when the stake moved from $100 to $1,000
-(0xinsider/0xinsider#16389); every pick, including those published before
+2026, when the stake moved from $100 to $1,000; every pick, including those published before
 that date, is recomputed at the current stake, and `stake_usd` says which one.
 `record.svg` is the chart at the top of the README, the cumulative return of
 $1,000 on every decided pick. Both are generated from `ledger/` and prove
@@ -365,7 +363,7 @@ Those picks carry their hash, are NOT marked `pre_commitment`, and carry
   "start": "2026-09-22T14:51:23Z",
   "end": "2026-09-22T18:39:07Z",
   "cause": "Every Seal and Reveal run answered 401 ...",
-  "reference": "https://github.com/0xinsider/0xinsider/issues/16459"
+  "reference": "https://github.com/0xinsider/picks/blob/main/VERIFY.md#picks-whose-game-started-while-the-mirror-was-down"
 }
 ```
 

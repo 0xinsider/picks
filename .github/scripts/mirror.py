@@ -11,9 +11,9 @@ Compute a commitment hash. Every hash in `ledger/` is produced by the backend at
 seal time and copied here byte for byte. A mirror that derived its own hash
 would be proving only that it can run sha256, and the first disagreement between
 two serializations would read to a stranger as a falsified record rather than as
-the formatting bug it is. The single owner of the canonical form is
-`pick_of_day::commitment` in the backend; `verify.py` reimplements it on purpose,
-because an independent check is the point there. This script does not.
+the formatting bug it is. The source endpoint owns the canonical form;
+`verify.py` reimplements it on purpose, because an independent check is the
+point there. This script does not.
 
 It also must never write the nonce or payload of a pick the endpoint reports as
 `sealed`. The endpoint is supposed to make that impossible by serving two
@@ -49,8 +49,7 @@ the after-the-fact proof this repository refuses to present as one. Once the
 first seal has landed here, that exception closes: a hash that reaches this
 repository after its kickoff is written as it is, and `verify.py` fails it.
 
-There is a third case, and it is the one this script had no vocabulary for
-until 0xinsider/0xinsider#16526: the mirror existed and was DOWN. On 2026-09-22
+There is a third case: the mirror existed and was DOWN. On 2026-09-22
 the ledger endpoint answered 401 to every run for nearly four hours, and two
 picks reached kickoff with no hash mirrored here. Those picks are not
 `pre_commitment` -- they were sealed, on time, by a backend that was working --
@@ -233,9 +232,9 @@ def log(message: str) -> None:
 
 
 def fetch_entries(url: str) -> list[dict]:
-    # NO CREDENTIAL. The ledger endpoint is public (0xinsider/0xinsider#16459).
+    # NO CREDENTIAL. The ledger endpoint is public.
     # It was API-key gated until 2026-09-22, when the key held in the repository
-    # secret OXINSIDER_API_KEY was revoked by a routine key rotation on the
+    # secret was revoked by a routine key rotation on the
     # account that owned it -- one active key per user -- and every Seal and
     # Reveal run failed 401 from 14:51Z. A pick that reaches kickoff without a
     # mirrored hash can never be proven by any later run, so a public record
@@ -254,16 +253,17 @@ def fetch_entries(url: str) -> list[dict]:
         with urllib.request.urlopen(request, timeout=60) as response:
             body = response.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
-        # The body can carry an error reason and never carries a credential.
-        detail = exc.read().decode("utf-8", "replace")[:400]
-        raise MirrorError(f"GET {url} answered {exc.code}: {detail}") from None
+        # Public logs and outage records must not copy an upstream error body.
+        raise MirrorError(f"GET {url} answered HTTP {exc.code}") from None
     except urllib.error.URLError as exc:
-        raise MirrorError(f"GET {url} failed: {exc.reason}") from None
+        raise MirrorError(f"GET {url} failed to connect ({type(exc.reason).__name__})") from None
 
     try:
         parsed = json.loads(body)
     except json.JSONDecodeError as exc:
-        raise MirrorError(f"GET {url} did not return JSON: {exc}") from None
+        raise MirrorError(
+            f"GET {url} did not return JSON (line {exc.lineno}, column {exc.colno})"
+        ) from None
 
     # The v1 envelope: {"object": "pick_of_the_day_ledger", "data": {"entries":
     # [...], "entry_count": ...}, "meta": {...}}. Unwrapped first, and the object
@@ -272,7 +272,7 @@ def fetch_entries(url: str) -> list[dict]:
     if isinstance(parsed, dict) and isinstance(parsed.get("data"), dict):
         name = parsed.get("object")
         if name is not None and name != "pick_of_the_day_ledger":
-            raise MirrorError(f"GET {url} returned object {name!r}, not pick_of_the_day_ledger")
+            raise MirrorError(f"GET {url} returned an unexpected response object")
         parsed = parsed["data"]
 
     # Past the envelope, accept a bare array or a single list-valued member, and
@@ -283,8 +283,7 @@ def fetch_entries(url: str) -> list[dict]:
         found = [key for key in ("entries", "picks", "ledger", "data") if isinstance(parsed.get(key), list)]
         if len(found) != 1:
             raise MirrorError(
-                f"GET {url} returned an object with no single list member "
-                f"(top-level keys: {sorted(parsed)})"
+                f"GET {url} returned an object without one supported list member"
             )
         entries = parsed[found[0]]
     else:
@@ -307,7 +306,7 @@ def fetch_entries(url: str) -> list[dict]:
 # ordering is the whole value of the record: a window written once the late hash
 # has landed is an excuse composed after the fact, and is ignored.
 #
-# Until 0xinsider/0xinsider#17192, nothing produced that commit. It depended on a
+# Previously, nothing produced that commit. It depended on a
 # person noticing the mirror was failing and committing a window by hand BEFORE
 # the ledger came back. On 2026-09-22 the ledger endpoint answered 500 from about
 # 21:40Z until 2026-09-24T01:05Z; the backlog landed here at 01:08:29Z; no window
@@ -526,7 +525,7 @@ def check_canonical_timestamp(entry: dict, field: str, who: str) -> None:
     value = entry.get(field)
     require(
         isinstance(value, str) and TS_RE.match(value) is not None,
-        f"{who}: {field} is not RFC 3339 whole seconds with a literal Z: {value!r}",
+        f"{who}: {field} is not RFC 3339 whole seconds with a literal Z",
     )
 
 
@@ -547,7 +546,7 @@ def check_timestamp(entry: dict, field: str, who: str, nullable: bool = False) -
     try:
         datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
-        raise MirrorError(f"{who}: {field} is not a valid timestamp: {value!r}") from None
+        raise MirrorError(f"{who}: {field} is not a valid timestamp") from None
 
 
 def validate(entry: dict) -> tuple[str, int, str]:
@@ -555,21 +554,21 @@ def validate(entry: dict) -> tuple[str, int, str]:
     pick_date = entry.get("pick_date")
     require(
         isinstance(pick_date, str) and DATE_RE.match(pick_date) is not None,
-        f"entry has no usable pick_date: {pick_date!r}",
+        "entry has no usable pick_date",
     )
     rank = entry.get("pick_rank")
     require(
         isinstance(rank, int) and not isinstance(rank, bool) and rank >= 1,
-        f"{pick_date}: pick_rank is not a positive integer: {rank!r}",
+        f"{pick_date}: pick_rank is not a positive integer",
     )
     who = f"{pick_date} rank {rank}"
     state = entry.get("state")
-    require(state in STATES, f"{who}: unknown state {state!r}")
+    require(state in STATES, f"{who}: unknown state")
     try:
         verify.pick_identity(entry)
         version = verify.commitment_version(entry)
-    except verify.Failure as exc:
-        raise MirrorError(f"{who}: {exc}") from None
+    except verify.Failure:
+        raise MirrorError(f"{who}: invalid proof identity or version") from None
     if "pick_id" in entry:
         require(type(entry.get("publication_order")) is int
                 and 1 <= entry["publication_order"] <= verify.MAX_DAILY_PICKS,
@@ -584,9 +583,9 @@ def validate(entry: dict) -> tuple[str, int, str]:
         require("commitment_version" not in entry,
                 f"{who}: uncommitted disclosure cannot claim a proof version")
 
-    unknown = sorted(set(entry) - KNOWN_FIELDS)
+    unknown = set(entry) - KNOWN_FIELDS
     if unknown:
-        log(f"NOTICE {who}: endpoint sent unknown field(s) {unknown}; not mirrored")
+        log(f"NOTICE {who}: endpoint sent {len(unknown)} unknown field(s); not mirrored")
 
     if state == "sealed":
         leaked = [f for f in SEALED_FORBIDDEN if entry.get(f) is not None]
@@ -594,9 +593,9 @@ def validate(entry: dict) -> tuple[str, int, str]:
             # The value is deliberately not printed. This is the failure the
             # second lock exists for, and it must not be the thing that leaks.
             raise MirrorError(
-                f"{who}: the endpoint served {leaked} on a SEALED pick. That is the "
-                f"backed side of a live pick. Nothing was written. Fix the endpoint "
-                f"(0xinsider/0xinsider#15704) before running this again."
+                f"{who}: the endpoint served {len(leaked)} withheld field(s) on a "
+                f"SEALED pick. That is the backed side of a live pick. Nothing was "
+                f"written. Fix the endpoint before running this again."
             )
         require(
             isinstance(entry.get("commitment_hash"), str)
@@ -605,8 +604,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
         )
         require(
             entry.get("commitment_algo") == verify.COMMITMENT_ALGO,
-            f"{who}: commitment_algo is {entry.get('commitment_algo')!r}, "
-            f"expected {verify.COMMITMENT_ALGO!r}",
+            f"{who}: commitment_algo is unsupported",
         )
         check_timestamp(entry, "sealed_at", who)
         # Strict: this is the same instant the payload will carry when the pick
@@ -620,7 +618,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
         validate_uncommitted(entry, pick_date, rank, who)
         return pick_date, rank, state
 
-    require(entry.get("outcome") in OUTCOMES, f"{who}: unknown outcome {entry.get('outcome')!r}")
+    require(entry.get("outcome") in OUTCOMES, f"{who}: unknown outcome")
     check_timestamp(entry, "resolved_at", who, nullable=True)
 
     payload = entry.get("payload")
@@ -630,8 +628,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
     if entry.get("kickoff") is not None:
         require(
             entry["kickoff"] == payload["kickoff"],
-            f"{who}: entry kickoff {entry['kickoff']} disagrees with payload "
-            f"kickoff {payload['kickoff']}",
+            f"{who}: entry kickoff disagrees with payload kickoff",
         )
 
     if is_pre_commitment(entry):
@@ -653,8 +650,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
     )
     require(
         entry.get("commitment_algo") == verify.COMMITMENT_ALGO,
-        f"{who}: commitment_algo is {entry.get('commitment_algo')!r}, "
-        f"expected {verify.COMMITMENT_ALGO!r}",
+        f"{who}: commitment_algo is unsupported",
     )
     check_timestamp(entry, "sealed_at", who)
     return pick_date, rank, state
@@ -670,7 +666,7 @@ def check_payload(
     extra = payload.keys() - keys
     require(
         not missing and not extra,
-        f"{who}: payload key mismatch (missing={sorted(missing)}, unexpected={sorted(extra)})",
+        f"{who}: payload key mismatch (missing={len(missing)}, unexpected={len(extra)})",
     )
     require(
         isinstance(payload["backed_price"], str),
@@ -700,17 +696,18 @@ def validate_uncommitted(entry: dict, pick_date: str, rank: int, who: str) -> No
     """
     require(entry.get("pre_commitment") is True, f"{who}: uncommitted entry is not marked pre_commitment")
     carried = [f for f in ("commitment_hash", "commitment_nonce") if entry.get(f) is not None]
-    require(not carried, f"{who}: uncommitted entry carries {carried}")
+    require(not carried, f"{who}: uncommitted entry carries {len(carried)} commitment field(s)")
     outcome = entry.get("outcome")
-    require(outcome in OUTCOMES + ("pending",), f"{who}: unknown outcome {outcome!r}")
+    require(outcome in OUTCOMES + ("pending",), f"{who}: unknown outcome")
 
     if outcome == "pending":
         leaked = [f for f in SEALED_FORBIDDEN if f != "outcome" and entry.get(f) is not None]
         if leaked:
             raise MirrorError(
-                f"{who}: the endpoint served {leaked} on a PENDING uncommitted pick. "
+                f"{who}: the endpoint served {len(leaked)} withheld field(s) on a "
+                f"PENDING uncommitted pick. "
                 f"That is the backed side of a live pick. Nothing was written. Fix "
-                f"the endpoint (0xinsider/0xinsider#15892) before running this again."
+                f"the endpoint before running this again."
             )
         return
 
@@ -965,15 +962,14 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             if entry["outcome"] == "pending":
                 still_pending += 1
                 continue
-            # An endpoint older than 0xinsider/0xinsider#15892 omits `payload`
+            # An older endpoint omits `payload`
             # entirely; a current one always sends it, `null` included. Writing
             # a settled pick without its side would be permanent, because this
             # ledger only appends, so the run stops instead.
             require(
                 "payload" in entry,
                 f"{pick_date} rank {entry['pick_rank']}: the endpoint serves settled "
-                f"uncommitted picks without a payload field. It predates "
-                f"0xinsider/0xinsider#15892; nothing was written.",
+                f"uncommitted picks without a payload field. Nothing was written.",
             )
             by_date.setdefault(pick_date, []).append(entry)
     if still_pending:
@@ -1242,7 +1238,7 @@ def tally() -> dict:
         "hit_rate": f"{wins / decided * 100:.1f}" if decided else None,
         # The stake every money figure below is computed at. Stated in the
         # record so a reader of index.json alone can tell which basis it is on:
-        # $100 until 2026-09-22, $1,000 since (0xinsider/0xinsider#16389).
+        # $100 until 2026-09-22, $1,000 since.
         "stake_usd": f"{verify.STAKE_USD:.0f}",
         "profit_usd": f"{profit:.2f}" if staked else None,
         "staked": f"{staked:.0f}" if staked else None,
@@ -1352,7 +1348,7 @@ def render_record(stats: dict) -> str:
 # Deterministic on purpose. No timestamp, no random id, fixed-precision
 # coordinates. Same ledger, same bytes.
 #
-# Palette is the site's (DESIGN.md in 0xinsider/0xinsider): near-black surface,
+# Palette matches the site: near-black surface,
 # profit green and loss red for the line, white and #8f8f8f ink for text. The
 # brand neon never encodes P&L, so it is not on this chart.
 
@@ -1739,7 +1735,7 @@ def main() -> int:
         return 0 if commit_and_push("chore", changes or ["regenerate"]) else 1
 
     # No credential guard, and nothing to restore if one goes missing: the
-    # endpoint is public (0xinsider/0xinsider#16459), so this run depends on
+    # endpoint is public, so this run depends on
     # nothing that a key rotation elsewhere can revoke. The guard this replaces
     # existed to tell "the key was never stored" apart from "the key stopped
     # working", and on 2026-09-22 it did its job -- it failed every run, loudly,

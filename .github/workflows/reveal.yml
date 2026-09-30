@@ -15,7 +15,7 @@ name: Reveal
 # with its own timestamp and run link, and the diff shows both values.
 #
 # NO CREDENTIAL, same as seal.yml: the ledger endpoint is public
-# (0xinsider/0xinsider#16459). Do not add a key back here.
+# with no credentials required. Do not add a key back here.
 #
 # HOURLY, at :17. The backfill pass that settles outcomes runs on a 30-minute
 # cadence, so nothing here needs to be faster than an hour, and there is no

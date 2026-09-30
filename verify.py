@@ -118,8 +118,7 @@ V2_PAYLOAD_KEYS = (PAYLOAD_KEYS - {"pick_rank"}) | {"pick_id", "version"}
 
 COMMITMENT_ALGO = "sha256(canonical_json(payload)||nonce)"
 
-# Pinned against the backend's own implementation
-# (backend/crates/pick-of-day/src/pick_of_day/commitment.rs). If this vector
+# Pinned against the source endpoint's canonical form. If this vector
 # stops matching, this script and the sealer have diverged and every result
 # below is suspect -- so it is checked before anything else and is fatal.
 VECTOR_CANONICAL = (
@@ -161,14 +160,14 @@ KNOWN_LATE_COMMITS = {
 }
 
 # The flat stake the site's record puts on every pick: $100 until 2026-09-22 and
-# $1,000 since (0xinsider/0xinsider#16389). The ledger stores only the backed
+# $1,000 since. The ledger stores only the backed
 # price and the outcome, so every money figure is recomputed at this stake, the
 # picks before that date included. The site's own arithmetic uses the same
-# number (`oxinsider_core::constants::PICK_STAKE_USD`); units, ROI and hit rate
+# number; units, ROI and hit rate
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
 # The most picks one product day can carry: ranks run 1 to this. Mirrors the
-# source's `pick_of_day::MAX_DAILY_PICKS`, which moved from 6 to 10 on
+# public daily bound, which moved from 6 to 10 on
 # September 24, 2026; a rank above the old bound made every day since read as a
 # broken ledger.
 MAX_DAILY_PICKS = 10
