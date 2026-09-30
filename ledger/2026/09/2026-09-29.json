@@ -67,12 +67,35 @@
     },
     {
       "pick_rank": 3,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ad31be19bba082c052f56a1e09732fa35e24a6e91079c3833fed4883029a10aa",
+      "commitment_nonce": "e245be057dcc352cef25a71c5beee09f5584ab85cc0f8030bee443e9fcd23a13",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-30T01:00:06.915055Z",
       "kickoff": "2026-09-30T02:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/3"
+      "resolved_at": "2026-09-30T05:33:45.025886Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x8c5295595ccbc3034a03ac22f95b135aef3137d83ce5aaad98498142f443744c",
+        "kickoff": "2026-09-30T02:00:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "San Diego Padres",
+        "pick_rank": 3,
+        "platform": "polymarket"
+      },
+      "matchup": "Chicago Cubs vs. San Diego Padres",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-30T05:33:45.025886Z",
+          "parent_commit": "564a3198cb700b1b1f8ee146c7f9d0b69ac99f5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36679486804"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -204,30 +227,99 @@
     },
     {
       "pick_rank": 8,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7aea152abe94b741facf45629af7ea337f72577e7442c36aa2e90d621350d020",
+      "commitment_nonce": "b4c9a8a542630e57e61ebcd37da6a2846c847168ab2f7f0ecea5cc5ae8529ec7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-29T21:30:04.918025Z",
       "kickoff": "2026-09-29T22:30:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/8"
+      "resolved_at": "2026-09-30T01:23:43.084522Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xd1d2ac5d75291c0fb8f8092a9305e0aead56d523ef6525f7f14ec90fa235c13c",
+        "kickoff": "2026-09-29T22:30:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Indiana Fever",
+        "pick_rank": 8,
+        "platform": "polymarket"
+      },
+      "matchup": "Las Vegas Aces vs. Indiana Fever",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-30T01:23:43.084522Z",
+          "parent_commit": "564a3198cb700b1b1f8ee146c7f9d0b69ac99f5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36679486804"
+        }
+      ]
     },
     {
       "pick_rank": 9,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bb5e122633506bc63c33e39f1c080006d9b1533cf1f340910b40e17865dc3eec",
+      "commitment_nonce": "4d1d7888bd9fbd8df1568fd1795660bb1c5e9ba1d290baedd502a0537dfa487d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-30T02:00:07.078878Z",
       "kickoff": "2026-09-30T03:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/9"
+      "resolved_at": "2026-09-30T05:03:45.097395Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x0f4a2baeaadc0944d9a0d9abb0c4ed52977619aea3d44fcb714870ce3c3ea68f",
+        "kickoff": "2026-09-30T03:00:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Karen Khachanov",
+        "pick_rank": 9,
+        "platform": "polymarket"
+      },
+      "matchup": "China Open: Karen Khachanov vs Felix Auger-Aliassime",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-30T05:03:45.097395Z",
+          "parent_commit": "564a3198cb700b1b1f8ee146c7f9d0b69ac99f5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36679486804"
+        }
+      ]
     },
     {
       "pick_rank": 10,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "794704197b216e8f9f9820b3fd7c49857a617a8598daff3b07fd9ab397473975",
+      "commitment_nonce": "4d77542a26c6d63495304cfec3f7d919e7928264cc9f73acc1b0c74e4913d468",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-30T00:00:07.349661Z",
       "kickoff": "2026-09-30T01:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/10"
+      "resolved_at": "2026-09-30T05:03:45.049033Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.285000",
+        "condition_id": "0x50a45f22a5619b3901202b983b97d155753ad0f88e34d6251203de978c9eb683",
+        "kickoff": "2026-09-30T01:00:00Z",
+        "pick_date": "2026-09-29",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "pick_rank": 10,
+        "platform": "polymarket"
+      },
+      "matchup": "Mexico vs. Peru",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-29/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-30T05:03:45.049033Z",
+          "parent_commit": "564a3198cb700b1b1f8ee146c7f9d0b69ac99f5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36679486804"
+        }
+      ]
     }
   ]
 }
