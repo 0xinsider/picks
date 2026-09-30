@@ -677,6 +677,9 @@ def check_payload(
         f"{who}: backed_price must be a JSON string at full stored precision, "
         f"got {type(payload['backed_price']).__name__}",
     )
+    require(type(payload["pick_outcome_index"]) is int
+            and payload["pick_outcome_index"] in (0, 1),
+            f"{who}: pick_outcome_index must be integer 0 or 1")
     require(
         payload["pick_date"] == pick_date
         and (payload.get("pick_rank") == rank if version == 1

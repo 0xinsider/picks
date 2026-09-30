@@ -732,6 +732,8 @@ def load_ledger() -> list[tuple[Path, dict]]:
                 if pick_id in stable_ids:
                     raise SystemExit(f"{path}: repeated stable pick_id {pick_id}")
                 stable_ids.add(pick_id)
+                if "publication_order" not in pick:
+                    raise SystemExit(f"{path}: stable pick lacks publication_order")
                 if type(pick.get("is_free_selection")) is not bool:
                     raise SystemExit(f"{path}: stable pick lacks explicit free designation")
                 replacement = pick.get("supersedes_pick_id")
