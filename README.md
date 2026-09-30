@@ -64,7 +64,7 @@ They do not establish fills, actual wagers, or subscriber profit.
 Rank 1 each day is free to any signed-in account. Ranks 2 to 10 are Pro. The
 record counts all of them the same way: $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, a void refunds
-it. The stake was $100 until September 22, 2026 (0xinsider/0xinsider#16389);
+it. The stake was $100 until September 22, 2026;
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
 including the ones published before that date, and the units, ROI and hit
 rate are the same under either stake.
