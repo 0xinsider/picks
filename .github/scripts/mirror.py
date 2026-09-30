@@ -1682,8 +1682,13 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
     now = datetime.now(timezone.utc)
     source: set[tuple[str, tuple[str, str | int]]] = set()
     all_source: set[tuple[str, tuple[str, str | int]]] = set()
+    source_ids: set[str] = set()
     for entry in entries:
         pick_date, rank, state = validate(entry)
+        if "pick_id" in entry:
+            require(entry["pick_id"] not in source_ids,
+                    f"source repeats stable pick_id {entry['pick_id']}")
+            source_ids.add(entry["pick_id"])
         prior = existing_pick(load_day(pick_date)["picks"], entry)
         identity = (pick_date, verify.pick_identity(prior if prior is not None else entry))
         require(identity not in all_source, f"source repeats {pick_date} rank {rank}")
@@ -1695,8 +1700,13 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
             source.add(identity)
 
     mirrored: set[tuple[str, tuple[str, str | int]]] = set()
+    mirrored_ids: set[str] = set()
     for _, day in read_all_days():
         for pick in day.get("picks", []):
+            if "pick_id" in pick:
+                require(pick["pick_id"] not in mirrored_ids,
+                        f"mirror repeats stable pick_id {pick['pick_id']}")
+                mirrored_ids.add(pick["pick_id"])
             identity = (day["pick_date"], verify.pick_identity(pick))
             require(identity not in mirrored, f"mirror repeats {identity[0]} rank {identity[1]}")
             mirrored.add(identity)
