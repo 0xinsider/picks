@@ -47,7 +47,7 @@ Record through 2026-09-29.
 | Hit rate | 67.6% |
 | Profit at $1,000 per pick, before fees | +28,688.34 USD on 315,000 staked |
 | ROI before fees | +9.1% |
-| Sealed, not yet settled | 1 |
+| Sealed, not yet settled | 2 |
 | Git-dated before kickoff | 54 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 2 |
