@@ -152,6 +152,11 @@ SEALED_FORBIDDEN = (
 # an append-only file.
 SEALED_FIELDS = (
     "pick_rank",
+    "pick_id",
+    "publication_order",
+    "is_free_selection",
+    "supersedes_pick_id",
+    "commitment_version",
     "state",
     "commitment_hash",
     "commitment_algo",
@@ -161,6 +166,11 @@ SEALED_FIELDS = (
 )
 OPENED_FIELDS = (
     "pick_rank",
+    "pick_id",
+    "publication_order",
+    "is_free_selection",
+    "supersedes_pick_id",
+    "commitment_version",
     "state",
     "pre_commitment",
     "commitment_hash",
@@ -185,6 +195,11 @@ KNOWN_FIELDS = frozenset(SEALED_FIELDS) | frozenset(OPENED_FIELDS) | {"pick_date
 # other unannounced field rather than being copied onto a proof surface.
 RECORD_FIELDS = (
     "pick_rank",
+    "pick_id",
+    "publication_order",
+    "is_free_selection",
+    "supersedes_pick_id",
+    "commitment_version",
     "state",
     "pre_commitment",
     "outage",
@@ -550,6 +565,24 @@ def validate(entry: dict) -> tuple[str, int, str]:
     who = f"{pick_date} rank {rank}"
     state = entry.get("state")
     require(state in STATES, f"{who}: unknown state {state!r}")
+    try:
+        verify.pick_identity(entry)
+        version = verify.commitment_version(entry)
+    except verify.Failure as exc:
+        raise MirrorError(f"{who}: {exc}") from None
+    if "pick_id" in entry:
+        require(type(entry.get("publication_order")) is int
+                and 1 <= entry["publication_order"] <= verify.MAX_DAILY_PICKS,
+                f"{who}: publication_order is missing or invalid")
+        require(type(entry.get("is_free_selection")) is bool,
+                f"{who}: is_free_selection must be an explicit boolean")
+        replacement = entry.get("supersedes_pick_id")
+        require(replacement is None or (verify.valid_pick_id(replacement)
+                and replacement != entry["pick_id"]),
+                f"{who}: invalid replacement lineage")
+    if state == "uncommitted":
+        require("commitment_version" not in entry,
+                f"{who}: uncommitted disclosure cannot claim a proof version")
 
     unknown = sorted(set(entry) - KNOWN_FIELDS)
     if unknown:
@@ -592,7 +625,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
 
     payload = entry.get("payload")
     require(isinstance(payload, dict), f"{who}: opened entry has no payload object")
-    check_payload(payload, pick_date, rank, who)
+    check_payload(payload, pick_date, rank, who, version, entry.get("pick_id"))
     check_canonical_timestamp(payload, "kickoff", f"{who} payload")
     if entry.get("kickoff") is not None:
         require(
@@ -627,10 +660,14 @@ def validate(entry: dict) -> tuple[str, int, str]:
     return pick_date, rank, state
 
 
-def check_payload(payload: dict, pick_date: str, rank: int, who: str) -> None:
-    """The eight payload fields, hashed or not. Kickoff form is the caller's."""
-    missing = verify.PAYLOAD_KEYS - payload.keys()
-    extra = payload.keys() - verify.PAYLOAD_KEYS
+def check_payload(
+    payload: dict, pick_date: str, rank: int, who: str,
+    version: int = 1, pick_id: str | None = None,
+) -> None:
+    """Validate the declared payload form without computing a commitment."""
+    keys = verify.PAYLOAD_KEYS if version == 1 else verify.V2_PAYLOAD_KEYS
+    missing = keys - payload.keys()
+    extra = payload.keys() - keys
     require(
         not missing and not extra,
         f"{who}: payload key mismatch (missing={sorted(missing)}, unexpected={sorted(extra)})",
@@ -640,9 +677,16 @@ def check_payload(payload: dict, pick_date: str, rank: int, who: str) -> None:
         f"{who}: backed_price must be a JSON string at full stored precision, "
         f"got {type(payload['backed_price']).__name__}",
     )
+    require(type(payload["pick_outcome_index"]) is int
+            and payload["pick_outcome_index"] in (0, 1),
+            f"{who}: pick_outcome_index must be integer 0 or 1")
     require(
-        payload["pick_date"] == pick_date and payload["pick_rank"] == rank,
-        f"{who}: payload identifies {payload['pick_date']} rank {payload['pick_rank']}",
+        payload["pick_date"] == pick_date
+        and (payload.get("pick_rank") == rank if version == 1
+             else payload.get("pick_id") == pick_id
+             and verify.valid_pick_id(payload.get("pick_id"))
+             and type(payload.get("version")) is int and payload["version"] == 2),
+        f"{who}: payload identity/version disagrees with its ledger entry",
     )
 
 
@@ -802,12 +846,39 @@ def load_day(pick_date: str) -> dict:
 def write_day(day: dict) -> None:
     path = day_path(day["pick_date"])
     path.parent.mkdir(parents=True, exist_ok=True)
-    day["picks"].sort(key=lambda pick: pick["pick_rank"])
+    day["picks"].sort(key=publication_key)
     path.write_text(json.dumps(day, indent=2, ensure_ascii=False) + "\n")
 
 
 def ordered(entry: dict, fields: tuple[str, ...]) -> dict:
     return {field: entry[field] for field in fields if entry.get(field) is not None}
+
+
+def publication_key(pick: dict) -> tuple[int, str]:
+    return pick.get("publication_order", pick["pick_rank"]), pick.get("pick_id", "")
+
+
+def existing_pick(picks: list[dict], entry: dict) -> dict | None:
+    """Match IDs; a v1 source may resolve its unchanged historic slot record."""
+    identity = verify.pick_identity(entry)
+    for pick in picks:
+        if verify.pick_identity(pick) == identity:
+            return pick
+        if ("pick_id" not in pick and verify.commitment_version(entry) == 1
+                and pick.get("pick_rank") == entry.get("pick_rank")):
+            # Legacy proofs never gain a new identity or payload. Matching the
+            # old slot only maps its newly exposed ID to the already stored row.
+            require(pick.get("commitment_hash") == entry.get("commitment_hash")
+                    or pick.get("pre_commitment") is True,
+                    "legacy slot's commitment changed under its stable identity")
+            return pick
+    return None
+
+
+def default_permalink(entry: dict) -> str:
+    if "pick_id" in entry:
+        return f"{DEFAULT_URL}/{entry['pick_id']}"
+    return f"{PERMALINK_BASE}/{entry['pick_date']}/{entry['pick_rank']}"
 
 
 def read_all_days() -> list[tuple[Path, dict]]:
@@ -846,13 +917,12 @@ def apply_seal(entries: list[dict]) -> list[str]:
 
     for pick_date in sorted(by_date):
         day = load_day(pick_date)
-        known = {pick["pick_rank"] for pick in day["picks"]}
         added = 0
-        for entry in sorted(by_date[pick_date], key=lambda item: item["pick_rank"]):
-            if entry["pick_rank"] in known:
+        for entry in sorted(by_date[pick_date], key=publication_key):
+            if existing_pick(day["picks"], entry) is not None:
                 continue
             record = ordered(entry, SEALED_FIELDS)
-            record.setdefault("permalink", f"{PERMALINK_BASE}/{pick_date}/{entry['pick_rank']}")
+            record.setdefault("permalink", default_permalink(entry))
             day["picks"].append(record)
             added += 1
         if added:
@@ -914,13 +984,12 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
 
     for pick_date in sorted(by_date):
         day = load_day(pick_date)
-        existing = {pick["pick_rank"]: pick for pick in day["picks"]}
         touched: list[str] = []
 
-        for entry in sorted(by_date[pick_date], key=lambda item: item["pick_rank"]):
+        for entry in sorted(by_date[pick_date], key=publication_key):
             rank = entry["pick_rank"]
             who = f"{pick_date} rank {rank}"
-            prior = existing.get(rank)
+            prior = existing_pick(day["picks"], entry)
 
             if prior is None:
                 # Never mirrored while it was sealed. Recorded in full, with no
@@ -954,7 +1023,6 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                     ),
                 )
                 day["picks"].append(record)
-                existing[rank] = record
                 if record.get("pre_commitment"):
                     touched.append(f"rank {rank} opened (pre-commitment)")
                 elif window:
@@ -966,6 +1034,8 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 continue
 
             if prior.get("state") == "sealed":
+                require(verify.commitment_version(prior) == verify.commitment_version(entry),
+                        f"{who}: commitment version changed between seal and reveal")
                 # A pick sealed here opens with that same hash or not at all.
                 # Recording it as pre_commitment instead would drop a committed
                 # pick out of the proven set with nothing failing, which is the
@@ -986,7 +1056,6 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                 )
                 record = build_opened(entry, context, prior_revisions=[], sealed=prior)
                 day["picks"][day["picks"].index(prior)] = record
-                existing[rank] = record
                 touched.append(f"rank {rank} opened")
                 continue
 
@@ -995,12 +1064,17 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             # compare, including one recorded without the hash the endpoint
             # serves because its game predates the mirror.
             if not prior.get("pre_commitment"):
+                require(verify.commitment_version(prior) == verify.commitment_version(entry),
+                        f"{who}: commitment version changed after opening")
                 require(
                     prior.get("commitment_hash") == entry.get("commitment_hash"),
                     f"{who}: commitment_hash changed after the pick was opened. "
                     f"The commitment is over the pick, never over the outcome. "
                     f"Nothing was written.",
                 )
+            if isinstance(prior.get("payload"), dict) and isinstance(entry.get("payload"), dict):
+                require(prior["payload"] == entry["payload"],
+                        f"{who}: payload changed after opening; nothing was written")
             # The endpoint serves `payload: null` for a settled uncommitted pick
             # whose row lacks a column. Once it serves the payload, the record
             # gains it: a field that was absent is added, never rewritten, and
@@ -1029,10 +1103,10 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
     # An entry that disappears from the endpoint is kept, and said out loud. If
     # it never opens, verify.py's GAPS check reports it 72 hours after kickoff,
     # which is the shape a suppressed loss would take.
-    served = {(entry["pick_date"], entry["pick_rank"]) for entry in entries}
     for _, day in read_all_days():
         for pick in day.get("picks", []):
-            if (day["pick_date"], pick["pick_rank"]) not in served:
+            if not any(entry["pick_date"] == day["pick_date"]
+                       and existing_pick([pick], entry) is not None for entry in entries):
                 log(
                     f"NOTICE {day['pick_date']} rank {pick['pick_rank']} is committed here "
                     f"but the endpoint no longer serves it. Kept: this ledger only appends."
@@ -1071,12 +1145,16 @@ def build_opened(
         for field in ("commitment_hash", "commitment_algo", "sealed_at", "kickoff", "permalink"):
             if field in sealed:
                 record[field] = sealed[field]
+        if "pick_id" not in sealed:
+            # Opening a legacy seal appends its disclosure, never new proof
+            # metadata or a rewritten permalink to its pre-game record.
+            for field in ("pick_id", "publication_order", "is_free_selection",
+                          "supersedes_pick_id", "commitment_version"):
+                record.pop(field, None)
     payload_kickoff = (entry.get("payload") or {}).get("kickoff")
     if payload_kickoff is not None:
         record.setdefault("kickoff", payload_kickoff)
-    record.setdefault(
-        "permalink", f"{PERMALINK_BASE}/{entry['pick_date']}/{entry['pick_rank']}"
-    )
+    record.setdefault("permalink", default_permalink(entry))
     record["revisions"] = list(prior_revisions) + [revision(entry, context)]
     return {field: record[field] for field in RECORD_FIELDS if field in record}
 
@@ -1314,7 +1392,7 @@ def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
     use.
     """
     decided = []
-    for pick in sorted(picks, key=lambda item: (item["pick_date"], item["pick_rank"])):
+    for pick in sorted(picks, key=lambda item: (item["pick_date"], publication_key(item))):
         if pick.get("state") != "opened" or pick.get("outcome") not in ("win", "loss"):
             continue
         price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
@@ -1602,11 +1680,17 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
     mirror; this comparison is made while the source response is in hand.
     """
     now = datetime.now(timezone.utc)
-    source: set[tuple[str, int]] = set()
-    all_source: set[tuple[str, int]] = set()
+    source: set[tuple[str, tuple[str, str | int]]] = set()
+    all_source: set[tuple[str, tuple[str, str | int]]] = set()
+    source_ids: set[str] = set()
     for entry in entries:
         pick_date, rank, state = validate(entry)
-        identity = (pick_date, rank)
+        if "pick_id" in entry:
+            require(entry["pick_id"] not in source_ids,
+                    f"source repeats stable pick_id {entry['pick_id']}")
+            source_ids.add(entry["pick_id"])
+        prior = existing_pick(load_day(pick_date)["picks"], entry)
+        identity = (pick_date, verify.pick_identity(prior if prior is not None else entry))
         require(identity not in all_source, f"source repeats {pick_date} rank {rank}")
         all_source.add(identity)
         if mode == "seal":
@@ -1615,10 +1699,15 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
         elif not (state == "uncommitted" and entry.get("outcome") == "pending"):
             source.add(identity)
 
-    mirrored: set[tuple[str, int]] = set()
+    mirrored: set[tuple[str, tuple[str, str | int]]] = set()
+    mirrored_ids: set[str] = set()
     for _, day in read_all_days():
         for pick in day.get("picks", []):
-            identity = (day["pick_date"], pick["pick_rank"])
+            if "pick_id" in pick:
+                require(pick["pick_id"] not in mirrored_ids,
+                        f"mirror repeats stable pick_id {pick['pick_id']}")
+                mirrored_ids.add(pick["pick_id"])
+            identity = (day["pick_date"], verify.pick_identity(pick))
             require(identity not in mirrored, f"mirror repeats {identity[0]} rank {identity[1]}")
             mirrored.add(identity)
 

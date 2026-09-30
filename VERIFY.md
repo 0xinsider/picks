@@ -31,14 +31,14 @@ Each pick has three moments.
 
 **Publish, kickoff minus one hour.** The pick goes live on the site. The backed
 side of it -- which market, which outcome, at what price -- is behind sign-in
-for rank 1 and behind Pro for ranks 2 to 6. In the same pass the backend
+for the designated free selection and behind Pro for the other selections. In the same pass the backend
 computes
 
 ```
 commitment_hash = sha256(canonical_json(payload) || nonce)
 ```
 
-over the eight fields below, using a fresh 32-byte nonce from the operating
+over the versioned fields below, using a fresh 32-byte nonce from the operating
 system CSPRNG.
 
 **Seal, within minutes of publish.** `seal.yml` in this repository fetches
@@ -62,7 +62,34 @@ The backend refuses to seal a pick whose kickoff has passed. A pick that reaches
 kickoff unsealed stays unsealed forever, and shows up here as a settled pick with
 no proof rather than as a proof written after the fact.
 
-## The canonical form
+## Stable identity and commitment versions
+
+New mirrored entries carry `pick_id`, a positive decimal string, plus explicit
+`publication_order`, `is_free_selection`, and optional `supersedes_pick_id`.
+The publication order is a compatibility slot, not a quality score. A new
+selection that replaces a published one has its own ID; the original proof
+remains in its original file.
+
+Committed entries declare `commitment_version`. The mirror and verifier refuse
+an unknown version or a committed stable-ID entry with no version. Stored legacy
+entries with neither ID nor version retain the original version 1 interpretation;
+the mirror can also read the legacy API during the deployment transition.
+Uncommitted disclosures claim no versioned proof and retain their eight-field
+unhashed payload.
+
+Version 2 uses exactly 9 members, sorted in this order: `backed_price`,
+`condition_id`, `kickoff`, `pick_date`, `pick_id`, `pick_outcome_index`,
+`pick_outcome_label`, `platform`, and `version`. `pick_id` is a decimal string,
+and `version` is the integer `2`. The remaining values and serialization rules
+are identical to version 1. Dispatch from the entry's `commitment_version`,
+not from a guessed payload shape.
+
+Day filenames stay `ledger/<YYYY>/<MM>/<date>.json`. New entries are matched by
+`pick_id`; existing slot entries retain their exact payloads, hashes, links,
+outage disclosures, and proof classifications. A version 1 API entry with a
+newly exposed ID resolves its already mirrored legacy slot without rewriting it.
+
+## The canonical form for version 1
 
 The hash is taken over one JSON object serialized exactly this way. The backend
 owns this form (`pick_of_day::commitment` in the 0xinsider backend); this is a
