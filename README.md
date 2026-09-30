@@ -157,6 +157,14 @@ settled pick with no proof, never as a proof written after the fact.
 [VERIFY.md](VERIFY.md) states each of these in full, with the canonical form, a
 pinned test vector, and the checks in the order they run.
 
+## Stable pick identities
+
+New entries carry a decimal-string `pick_id` and an explicit
+`commitment_version`. Version 1 preserves the original slot-based proof bytes.
+Version 2 commits the stable ID and integer `version: 2` instead of `pick_rank`.
+The independent verifier dispatches on that declaration and refuses an unknown
+version. Existing day files and historical proofs stay unchanged.
+
 ## Layout
 
 ```

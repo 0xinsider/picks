@@ -114,6 +114,7 @@ PAYLOAD_KEYS = frozenset(
         "kickoff",
     }
 )
+V2_PAYLOAD_KEYS = (PAYLOAD_KEYS - {"pick_rank"}) | {"pick_id", "version"}
 
 COMMITMENT_ALGO = "sha256(canonical_json(payload)||nonce)"
 
@@ -177,33 +178,90 @@ class Failure(Exception):
     """A check that did not pass, with the reason a reader needs."""
 
 
-def canonical_json(payload: dict) -> str:
+def valid_pick_id(value: object) -> bool:
+    """The API's positive bigint identity, without numeric JSON rounding."""
+    return (
+        isinstance(value, str)
+        and value.isascii()
+        and value.isdecimal()
+        and not value.startswith("0")
+        and len(value) <= 19
+        and int(value) <= 9_223_372_036_854_775_807
+    )
+
+
+def commitment_version(pick: dict) -> int:
+    """Use explicit proof provenance; only legacy rows may omit it."""
+    version = pick.get("commitment_version")
+    if version is None:
+        if pick.get("pre_commitment") or pick.get("state") == "uncommitted":
+            if pick.get("commitment_hash") or pick.get("commitment_nonce"):
+                raise Failure("uncommitted disclosure cannot carry a hash or nonce")
+            return 1  # Unhashed disclosures retain the eight-field shape.
+        if "pick_id" not in pick:
+            return 1  # Existing records before stable identity are v1.
+        raise Failure("committed stable pick has no commitment_version")
+    if type(version) is not int or version not in (1, 2):
+        raise Failure(f"unknown commitment_version {version!r}")
+    if version == 2 and not valid_pick_id(pick.get("pick_id")):
+        raise Failure("commitment_version 2 requires a stable pick_id")
+    return version
+
+
+def pick_identity(pick: dict) -> tuple[str, str | int]:
+    """Stable ID for new records; the unchanged date file scopes legacy slots."""
+    if "pick_id" in pick:
+        if not valid_pick_id(pick["pick_id"]):
+            raise Failure("pick_id must be a positive bigint decimal string")
+        return "id", pick["pick_id"]
+    if any(field in pick for field in (
+        "publication_order", "is_free_selection", "supersedes_pick_id", "commitment_version"
+    )):
+        raise Failure("stable identity metadata is missing pick_id")
+    rank = pick.get("pick_rank")
+    if type(rank) is not int or not 1 <= rank <= MAX_DAILY_PICKS:
+        raise Failure(f"invalid legacy pick_rank {rank!r}")
+    return "rank", rank
+
+
+def canonical_json(payload: dict, version: int = 1) -> str:
     """Reproduce the backend's canonical form byte for byte.
 
     Sorted keys, no insignificant whitespace, non-ASCII left raw. `backed_price`
     arrives as a STRING and stays one: rendering it as a float here would round
     it, and the hash would miss for exactly the picks whose price does not sit
-    on a binary fraction. `pick_outcome_index` and `pick_rank` are JSON numbers.
+    on a binary fraction. V1 keeps `pick_rank`; v2 replaces it with the stable
+    string `pick_id` and adds integer `version: 2`.
     """
-    missing = PAYLOAD_KEYS - payload.keys()
-    extra = payload.keys() - PAYLOAD_KEYS
+    if type(version) is not int or version not in (1, 2):
+        raise Failure(f"unknown commitment_version {version!r}")
+    keys = PAYLOAD_KEYS if version == 1 else V2_PAYLOAD_KEYS
+    missing = keys - payload.keys()
+    extra = payload.keys() - keys
     if missing or extra:
         raise Failure(
             f"payload key mismatch (missing={sorted(missing)}, unexpected={sorted(extra)})"
         )
     if not isinstance(payload["backed_price"], str):
         raise Failure("backed_price must be a JSON string to survive round-tripping")
+    if version == 2:
+        if type(payload["version"]) is not int or payload["version"] != 2:
+            raise Failure("v2 payload must declare integer version 2")
+        if not valid_pick_id(payload["pick_id"]):
+            raise Failure("v2 payload pick_id must be a positive bigint decimal string")
+        if type(payload["pick_outcome_index"]) is not int or payload["pick_outcome_index"] not in (0, 1):
+            raise Failure("v2 payload pick_outcome_index must be integer 0 or 1")
     return json.dumps(payload, sort_keys=True, separators=(",", ":"), ensure_ascii=False)
 
 
-def seal(payload: dict, nonce_hex: str) -> str:
+def seal(payload: dict, nonce_hex: str, version: int = 1) -> str:
     try:
         nonce = bytes.fromhex(nonce_hex)
     except ValueError as exc:
         raise Failure(f"nonce is not hex: {exc}") from None
     if len(nonce) != 32:
         raise Failure(f"nonce must be 32 bytes, got {len(nonce)}")
-    return hashlib.sha256(canonical_json(payload).encode("utf-8") + nonce).hexdigest()
+    return hashlib.sha256(canonical_json(payload, version).encode("utf-8") + nonce).hexdigest()
 
 
 def self_test() -> None:
@@ -460,7 +518,7 @@ def pre_game_check(
     )
     if marker is None:
         if late_marker:
-            expected = KNOWN_LATE_COMMITS.get((payload["pick_date"], payload["pick_rank"]))
+            expected = KNOWN_LATE_COMMITS.get((payload["pick_date"], payload.get("pick_rank")))
             if sha == expected:
                 return [], (
                     f"UNPROVEN {who}: hash first appeared {utc(when)} in {sha[:10]}, "
@@ -507,13 +565,13 @@ def pre_game_check(
     ), "outage"
 
 
-def pick_history(path: Path, rank: int) -> list[dict]:
+def pick_history(path: Path, current: dict) -> list[dict]:
     """Every committed version of one pick in this file, oldest first.
 
     One `git show` per commit that touched the file. Checks 3 and 6 both read
     this, so the history is walked once per pick rather than once per check.
     A commit whose version of the file does not parse, or does not contain this
-    rank, contributes nothing and is skipped rather than guessed at.
+    identity, contributes nothing and is skipped rather than guessed at.
     """
     versions: list[dict] = []
     for sha in git("log", "--reverse", "--format=%H", "--", str(path)).split():
@@ -530,7 +588,7 @@ def pick_history(path: Path, rank: int) -> list[dict]:
         except json.JSONDecodeError:
             continue
         for pick in day.get("picks", []):
-            if pick.get("pick_rank") == rank:
+            if pick_identity(pick) == pick_identity(current):
                 versions.append({"commit": sha, "pick": pick})
                 break
     return versions
@@ -544,7 +602,7 @@ def payload_versions(history: list[dict]) -> list[str]:
         if "payload" not in pick:
             continue
         try:
-            form = canonical_json(pick["payload"])
+            form = canonical_json(pick["payload"], commitment_version(pick))
         except Failure:
             form = json.dumps(pick["payload"], sort_keys=True)
         if form not in seen:
@@ -649,6 +707,7 @@ def load_ledger() -> list[tuple[Path, dict]]:
     if not LEDGER_DIR.is_dir():
         raise SystemExit(f"no {LEDGER_DIR}/ directory -- run this from the repository root")
     days = []
+    stable_ids: set[str] = set()
     for path in sorted(LEDGER_DIR.rglob("*.json")):
         try:
             day = json.loads(path.read_text())
@@ -657,17 +716,44 @@ def load_ledger() -> list[tuple[Path, dict]]:
         pick_date = day.get("pick_date")
         if not isinstance(pick_date, str) or path != LEDGER_DIR / pick_date[:4] / pick_date[5:7] / f"{pick_date}.json":
             raise SystemExit(f"{path}: filename does not match pick_date {pick_date!r}")
-        seen: set[int] = set()
+        seen: set[tuple[str, str | int]] = set()
         for pick in day.get("picks", []):
             rank = pick.get("pick_rank")
-            if not isinstance(rank, int) or isinstance(rank, bool) or not 1 <= rank <= MAX_DAILY_PICKS or rank in seen:
-                raise SystemExit(f"{path}: invalid or repeated rank {rank!r}")
-            seen.add(rank)
+            try:
+                identity = pick_identity(pick)
+                version = commitment_version(pick)
+            except Failure as exc:
+                raise SystemExit(f"{path}: {exc}") from None
+            if identity in seen:
+                raise SystemExit(f"{path}: repeated pick identity {identity!r}")
+            seen.add(identity)
+            if identity[0] == "id":
+                pick_id = pick["pick_id"]
+                if pick_id in stable_ids:
+                    raise SystemExit(f"{path}: repeated stable pick_id {pick_id}")
+                stable_ids.add(pick_id)
+                if type(pick.get("is_free_selection")) is not bool:
+                    raise SystemExit(f"{path}: stable pick lacks explicit free designation")
+                replacement = pick.get("supersedes_pick_id")
+                if replacement is not None and (
+                    not valid_pick_id(replacement) or replacement == pick_id
+                ):
+                    raise SystemExit(f"{path}: invalid supersedes_pick_id")
+            order = pick.get("publication_order", rank)
+            if type(order) is not int or not 1 <= order <= MAX_DAILY_PICKS:
+                raise SystemExit(f"{path}: invalid publication_order {order!r}")
             payload = pick.get("payload")
             if isinstance(payload, dict) and (
-                payload.get("pick_date") != pick_date or payload.get("pick_rank") != rank
+                payload.get("pick_date") != pick_date
+                or (version == 1 and payload.get("pick_rank") != rank)
+                or (version == 2 and payload.get("pick_id") != pick.get("pick_id"))
             ):
-                raise SystemExit(f"{path}: rank {rank} payload identity disagrees with its ledger row")
+                raise SystemExit(f"{path}: {identity!r} payload identity disagrees with its ledger row")
+            if isinstance(payload, dict) and not pick.get("pre_commitment"):
+                try:
+                    canonical_json(payload, version)
+                except Failure as exc:
+                    raise SystemExit(f"{path}: {identity!r}: {exc}") from None
         days.append((path, day))
     return days
 
@@ -704,7 +790,8 @@ def main() -> int:
     for path, day in days:
         for pick in day.get("picks", []):
             rank = pick.get("pick_rank")
-            who = f"{day.get('pick_date')} rank {rank}"
+            identity = pick_identity(pick)
+            who = f"{day.get('pick_date')} {identity[0]} {identity[1]}"
             state = pick.get("state")
 
             if state == "sealed":
@@ -744,7 +831,7 @@ def main() -> int:
             history: list[dict] | None = None
             if not args.skip_git:
                 try:
-                    history = pick_history(path, rank)
+                    history = pick_history(path, pick)
                 except Failure as exc:
                     skips.append(f"HISTORY  {who}: {exc}")
 
@@ -754,7 +841,7 @@ def main() -> int:
                 # 1. HASH
                 try:
                     payload = pick["payload"]
-                    recomputed = seal(payload, pick["commitment_nonce"])
+                    recomputed = seal(payload, pick["commitment_nonce"], commitment_version(pick))
                     if recomputed != pick["commitment_hash"]:
                         failures.append(
                             f"HASH     {who}: recomputed {recomputed[:16]}... "
