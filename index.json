@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 315,
-    "sealed": 2,
+    "opened": 317,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 54,
+    "proven": 56,
     "proven_record": {
-      "wins": 37,
-      "losses": 17,
-      "decided": 54,
-      "hit_rate": "68.5",
-      "profit_usd": "10702.58",
-      "staked": "54000",
-      "roi": "19.8"
+      "wins": 38,
+      "losses": 18,
+      "decided": 56,
+      "hit_rate": "67.9",
+      "profit_usd": "10141.43",
+      "staked": "56000",
+      "roi": "18.1"
     },
-    "wins": 213,
-    "losses": 102,
+    "wins": 214,
+    "losses": 103,
     "voids": 0,
-    "decided": 315,
-    "hit_rate": "67.6",
+    "decided": 317,
+    "hit_rate": "67.5",
     "stake_usd": "1000",
-    "profit_usd": "28688.34",
-    "staked": "315000",
-    "roi": "9.1",
-    "through": "2026-09-29"
+    "profit_usd": "28127.19",
+    "staked": "317000",
+    "roi": "8.9",
+    "through": "2026-09-30"
   },
   "picks": [
     {
@@ -9441,22 +9441,68 @@
     {
       "pick_date": "2026-09-30",
       "pick_rank": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "20abc8efdb338f9bc649cd8cd6a02212737e71b27a97cb9459be82671161a83f",
+      "commitment_nonce": "a880f22680d6e7d4e3d3e77b8b3c354d9ed187354312014a9256024ea0aee175",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-30T12:00:05.934519Z",
       "kickoff": "2026-09-30T13:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-30/2"
+      "resolved_at": "2026-09-30T14:39:35.361573Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0x6360b525bae4448463a4b534f9b9189400cee5b44452ba124d1703fb7413d83e",
+        "kickoff": "2026-09-30T13:00:00Z",
+        "pick_date": "2026-09-30",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "1win",
+        "pick_rank": 2,
+        "platform": "polymarket"
+      },
+      "matchup": "Dota 2: Team Spirit vs 1win (BO3) - BLAST Slam Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-30/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-09-30T14:39:35.361573Z",
+          "parent_commit": "e56fd3b1d53e8378db3b0402cb85634486143dd8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36764576617"
+        }
+      ]
     },
     {
       "pick_date": "2026-09-30",
       "pick_rank": 5,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "df901b8586363fa974997dd9fe28c01f36dae83fa72249cdfaff666ce95da249",
+      "commitment_nonce": "0c2621a00b462deb908b45db9fdc933e312046e97a9fd988b55687ea9d85ad6e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-09-30T14:00:05.930084Z",
       "kickoff": "2026-09-30T15:00:00Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-30/5"
+      "resolved_at": "2026-09-30T18:05:26.759530Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0xa24fa53b557a971e0909b8865b7f9b631fb96f88acb859a4b117c7f865127193",
+        "kickoff": "2026-09-30T15:00:00Z",
+        "pick_date": "2026-09-30",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "TLN Pirates",
+        "pick_rank": 5,
+        "platform": "polymarket"
+      },
+      "matchup": "LoL: TLN Pirates vs Valerion (BO3) - EMEA Masters Swiss Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-09-30/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-09-30T18:05:26.759530Z",
+          "parent_commit": "e56fd3b1d53e8378db3b0402cb85634486143dd8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36764576617"
+        }
+      ]
     }
   ]
 }
