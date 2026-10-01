@@ -207,6 +207,7 @@ RECORD_FIELDS = (
     "commitment_nonce",
     "commitment_algo",
     "sealed_at",
+    "first_observation",
     "kickoff",
     "resolved_at",
     "outcome",
@@ -607,11 +608,10 @@ def validate(entry: dict) -> tuple[str, int, str]:
             f"{who}: commitment_algo is unsupported",
         )
         check_timestamp(entry, "sealed_at", who)
-        # Strict: this is the same instant the payload will carry when the pick
-        # opens, so it has to be written in the same canonical form. A sealed
-        # kickoff in another precision would silently disagree with the payload
-        # it is supposed to match.
-        check_canonical_timestamp(entry, "kickoff", who)
+        # A legacy public kickoff must match the canonical opened payload.
+        # A hidden game omits it; never replace it with an inferred clock.
+        if entry.get("kickoff") is not None:
+            check_canonical_timestamp(entry, "kickoff", who)
         return pick_date, rank, state
 
     if state == "uncommitted":
@@ -890,7 +890,7 @@ def read_all_days() -> list[tuple[Path, dict]]:
 # --------------------------------------------------------------------------
 
 
-def apply_seal(entries: list[dict]) -> list[str]:
+def apply_seal(entries: list[dict], context: dict) -> list[str]:
     """Append commitments this repository has not recorded yet.
 
     Sealed entries only. An entry that arrives already settled belongs to
@@ -904,10 +904,9 @@ def apply_seal(entries: list[dict]) -> list[str]:
         pick_date, rank, state = validate(entry)
         if state != "sealed":
             continue
-        # A hash committed after kickoff can never be a pre-game proof. Writing
-        # it here as `sealed` would only guarantee a PRE-GAME failure later, so
-        # it is left to `reveal`, which records it with everything it knows.
-        if datetime.fromisoformat(entry["kickoff"].replace("Z", "+00:00")) <= now:
+        # When kickoff is public, keep the existing refusal to seal late. A
+        # hidden kickoff defers timing classification until canonical opening.
+        if entry.get("kickoff") is not None and verify.parse_ts(entry["kickoff"], "kickoff") <= now:
             log(f"NOTICE {pick_date} rank {rank}: kickoff has passed; not sealing it late")
             continue
         by_date.setdefault(pick_date, []).append(entry)
@@ -919,6 +918,10 @@ def apply_seal(entries: list[dict]) -> list[str]:
             if existing_pick(day["picks"], entry) is not None:
                 continue
             record = ordered(entry, SEALED_FIELDS)
+            if entry.get("kickoff") is None:
+                # A local observation is context, not an independent timing
+                # witness. The committed payload supplies kickoff only at open.
+                record["first_observation"] = dict(context)
             record.setdefault("permalink", default_permalink(entry))
             day["picks"].append(record)
             added += 1
@@ -1044,13 +1047,33 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
                     f"{entry.get('commitment_hash')}. A commitment is never rewritten or "
                     f"withdrawn. Nothing was written.",
                 )
-                require(
-                    prior.get("kickoff") == entry["payload"]["kickoff"],
-                    f"{who}: sealed against kickoff {prior.get('kickoff')} but the "
-                    f"opened payload says {entry['payload']['kickoff']}. The pick that "
-                    f"was committed to is not the pick being opened.",
+                window = None
+                late = False
+                if prior.get("kickoff") is not None:
+                    require(
+                        prior["kickoff"] == entry["payload"]["kickoff"],
+                        f"{who}: sealed against kickoff {prior['kickoff']} but the "
+                        f"opened payload says {entry['payload']['kickoff']}. The pick that "
+                        f"was committed to is not the pick being opened.",
+                    )
+                else:
+                    # The clock was withheld during seal. Classify now against
+                    # the original hash-bearing commit, never the reveal commit.
+                    # Existing outage/late verifier rules still decide validity.
+                    try:
+                        _, first_commit_at = verify.first_commit_introducing(
+                            day_path(pick_date).relative_to(REPO_ROOT),
+                            prior["commitment_hash"],
+                        )
+                    except verify.Failure as exc:
+                        raise MirrorError(f"{who}: deferred timing needs the original hash history: {exc}") from exc
+                    if first_commit_at >= verify.parse_ts(entry["payload"]["kickoff"], "kickoff"):
+                        window = outage_window(entry, windows)
+                        late = window is None
+                record = build_opened(
+                    entry, context, prior_revisions=[], sealed=prior,
+                    outage=window, late_unproven=late,
                 )
-                record = build_opened(entry, context, prior_revisions=[], sealed=prior)
                 day["picks"][day["picks"].index(prior)] = record
                 touched.append(f"rank {rank} opened")
                 continue
@@ -1138,7 +1161,10 @@ def build_opened(
     if sealed is not None:
         # The sealed entry's own values win for anything written before the
         # game. They are what this repository committed to.
-        for field in ("commitment_hash", "commitment_algo", "sealed_at", "kickoff", "permalink"):
+        for field in (
+            "commitment_hash", "commitment_algo", "sealed_at", "kickoff",
+            "permalink", "first_observation",
+        ):
             if field in sealed:
                 record[field] = sealed[field]
         if "pick_id" not in sealed:
@@ -1653,10 +1679,14 @@ def commit_and_push(mode: str, changes: list[str]) -> bool:
 # --------------------------------------------------------------------------
 
 
-def run_once(mode: str, entries: list[dict]) -> list[str]:
-    context = {"parent_commit": head(), "run": run_url()}
+def run_once(mode: str, entries: list[dict], read_at: datetime) -> list[str]:
+    context = {
+        "observed_at": read_at.astimezone(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "parent_commit": head(),
+        "run": run_url(),
+    }
     if mode == "seal":
-        changes = apply_seal(entries)
+        changes = apply_seal(entries, context)
     else:
         changes = apply_reveal(entries, context)
     reconcile_identities(entries, mode)
@@ -1670,8 +1700,8 @@ def run_once(mode: str, entries: list[dict]) -> list[str]:
 def reconcile_identities(entries: list[dict], mode: str) -> None:
     """Refuse a successful source read that this mirror represented incompletely.
 
-    The seal lane only owns future sealed entries. Reveal owns every published
-    pick except an uncommitted one still pending, whose side cannot be exposed.
+    The seal lane owns future or clock-withheld sealed entries. Reveal owns every
+    published pick except an uncommitted one still pending, whose side cannot be exposed.
     An offline verifier cannot discover identities absent from both source and
     mirror; this comparison is made while the source response is in hand.
     """
@@ -1690,7 +1720,10 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
         require(identity not in all_source, f"source repeats {pick_date} rank {rank}")
         all_source.add(identity)
         if mode == "seal":
-            if state == "sealed" and verify.parse_ts(entry["kickoff"], "kickoff") > now:
+            if state == "sealed" and (
+                entry.get("kickoff") is None
+                or verify.parse_ts(entry["kickoff"], "kickoff") > now
+            ):
                 source.add(identity)
         elif not (state == "uncommitted" and entry.get("outcome") == "pending"):
             source.add(identity)
@@ -1772,7 +1805,7 @@ def main() -> int:
         if attempt > 1:
             git("fetch", "origin", "main")
             git("reset", "--hard", "origin/main")
-        changes = run_once(args.mode, entries)
+        changes = run_once(args.mode, entries, read_at)
         if not changes:
             log("no change")
             return 0

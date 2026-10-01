@@ -5,10 +5,14 @@
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-10 a day, appears in this public ledger once the source publishes it. Some have
+20 a day, appears in this public ledger once the source publishes it. Some have
 a hash in this repository from before kickoff; older and late entries do not.
 The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
+
+Unresolved entries can withhold kickoff as well as game identity. Their hashes
+and first observation stay public; kickoff-based timing checks wait for the
+canonical payload after settlement. A pending hidden clock is not pregame proof.
 
 A pick is one Polymarket market, one side, and the price we backed it at. The
 backend hashes those fields with a 32-byte nonce, 1 hour before kickoff, and the
@@ -135,7 +139,7 @@ rotation.
 1. **Publish, kickoff minus 1 hour.** The pick goes live on the site and the
    backend computes `sha256(canonical_json(payload) || nonce)` in the same pass.
 2. **Seal, within minutes.** The backend dispatches `seal.yml`, which fetches the
-   ledger endpoint and appends the hash, the seal instant and the kickoff to
+   ledger endpoint and appends the hash, the seal instant and an available kickoff to
    `ledger/<YYYY>/<MM>/<date>.json`. No nonce, no payload, no side.
 3. **Open, after settlement.** `reveal.yml` appends the nonce, the payload and
    the outcome. A later correction appends to `revisions` and never overwrites.

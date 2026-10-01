@@ -26,7 +26,8 @@ the hash can be reopened by anyone.
   2. PRE-GAME    the first hash-bearing commit's git author date predates kickoff,
                  or a late entry has a checked outage or reviewed incident marker
   3. IMMUTABLE   the payload never changed across the file's history
-  4. GAPS        no sealed pick stays unopened long past its kickoff
+  4. GAPS        no sealed pick stays unopened long past its public kickoff;
+                 withheld clocks are reported as pending until canonical opening
   5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
   6. CORRECTIONS every outcome this pick has held across the file's history
                  appears in its `revisions`, in the same order; `revisions` only
@@ -167,10 +168,9 @@ KNOWN_LATE_COMMITS = {
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
 # The most picks one product day can carry: ranks run 1 to this. Mirrors the
-# public daily bound, which moved from 6 to 10 on
-# September 24, 2026; a rank above the old bound made every day since read as a
-# broken ledger.
-MAX_DAILY_PICKS = 10
+# public daily bound. Max permits twenty; historical ranks and proof bytes remain
+# unchanged. Private trading has a separate ten-rank contract.
+MAX_DAILY_PICKS = 20
 
 
 class Failure(Exception):
@@ -686,6 +686,15 @@ def correction_failures(who: str, history: list[dict], current: dict) -> list[st
     return failures
 
 
+def observation_failures(who: str, history: list[dict], current: dict) -> list[str]:
+    """A first observation is appended at seal and survives reveal unchanged."""
+    values = [version["pick"].get("first_observation") for version in history]
+    values.append(current.get("first_observation"))
+    if any(value is not None for value in values) and any(value != values[0] for value in values):
+        return [f"OBSERVATION {who}: first observation was added later, changed or removed"]
+    return []
+
+
 def stake_return(outcome: str, price: Decimal) -> Decimal | None:
     """What a flat STAKE_USD stake returned. Mirrors the site's own arithmetic.
 
@@ -744,6 +753,20 @@ def load_ledger() -> list[tuple[Path, dict]]:
             if type(order) is not int or not 1 <= order <= MAX_DAILY_PICKS:
                 raise SystemExit(f"{path}: invalid publication_order {order!r}")
             payload = pick.get("payload")
+            observation = pick.get("first_observation")
+            if pick.get("state") == "sealed" and not pick.get("kickoff") and observation is None:
+                raise SystemExit(f"{path}: {identity!r} hidden sealed kickoff lacks its first observation")
+            if observation is not None:
+                if not isinstance(observation, dict) or set(observation) != {"observed_at", "parent_commit", "run"}:
+                    raise SystemExit(f"{path}: {identity!r} invalid first_observation structure")
+                if not all(isinstance(value, str) and value for value in observation.values()):
+                    raise SystemExit(f"{path}: {identity!r} invalid first_observation values")
+                try:
+                    if not observation["observed_at"].endswith("Z"):
+                        raise Failure("first observation must be an explicit UTC instant")
+                    parse_ts(observation["observed_at"], "first observation")
+                except Failure as exc:
+                    raise SystemExit(f"{path}: {identity!r}: {exc}") from None
             if isinstance(payload, dict) and (
                 payload.get("pick_date") != pick_date
                 or (version == 1 and payload.get("pick_rank") != rank)
@@ -781,6 +804,7 @@ def main() -> int:
     failures: list[str] = []
     skips: list[str] = []
     outage_notes: list[str] = []
+    pending_notes: list[str] = []
     late_notes: list[str] = []
     opened = sealed = pre_commitment = outage = late_unproven = 0
     wins = losses = voids = 0
@@ -808,6 +832,16 @@ def main() -> int:
                             )
                     except Failure as exc:
                         failures.append(f"GAPS     {who}: {exc}")
+                else:
+                    pending_notes.append(
+                        f"PENDING  {who}: kickoff withheld; pre-game timing and "
+                        "kickoff-based gap checks await the canonical opened payload."
+                    )
+                if pick.get("first_observation") is not None and not args.skip_git:
+                    try:
+                        failures.extend(observation_failures(who, pick_history(path, pick), pick))
+                    except Failure as exc:
+                        failures.append(f"OBSERVATION {who}: {exc}")
                 continue
 
             if state != "opened":
@@ -889,6 +923,7 @@ def main() -> int:
             # 6. CORRECTIONS
             if history is not None:
                 failures.extend(correction_failures(who, history, pick))
+                failures.extend(observation_failures(who, history, pick))
 
             # 5. RECORD
             try:
@@ -932,6 +967,11 @@ def main() -> int:
         print(f"  {note}")
     if outage_notes or late_notes:
         print()
+
+    for note in pending_notes:
+        print(note)
+    if pending_notes:
+        print("         Withheld clocks are unresolved checks, not pre-game proof.\n")
 
     for note in skips:
         print(f"SKIP {note}")
