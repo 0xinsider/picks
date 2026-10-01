@@ -65,8 +65,9 @@ They do not establish fills, actual wagers, or subscriber profit.
 `python3 verify.py` checks the same data and public git history.
 <!-- RECORD:END -->
 
-Rank 1 each day is free to any signed-in account. Ranks 2 to 10 are Pro. The
-record counts all of them the same way: $1,000 on every pick, a win returns
+Rank 1 each day is free to any signed-in account. Pro opens the first 5 picks
+in total, and Max opens every available pick, up to 20 a day. Resolved picks
+are public. The record counts all of them the same way: $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, a void refunds
 it. The stake was $100 until September 22, 2026;
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
