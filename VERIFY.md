@@ -1,6 +1,6 @@
 # How to verify the Pick of the Day record
 
-0xinsider publishes up to 10 picks a day, each 1 hour before its own kickoff, and
+0xinsider publishes up to 20 picks a day, each 1 hour before its own kickoff, and
 a running record of how those picks did. The record is served from our
 database, and this repository is what makes it checkable from outside: every
 picks that reach this repository before kickoff carry a hash that can be
@@ -31,7 +31,8 @@ Each pick has three moments.
 
 **Publish, kickoff minus one hour.** The pick goes live on the site. The backed
 side of it -- which market, which outcome, at what price -- is behind sign-in
-for the designated free selection and behind Pro for the other selections. In the same pass the backend
+for the designated free selection, behind Pro for ranks 2-5, and behind Max for
+ranks 6-20. Unauthorized unresolved game identity stays hidden. In the same pass the backend
 computes
 
 ```
@@ -43,7 +44,8 @@ system CSPRNG.
 
 **Seal, within minutes of publish.** `seal.yml` in this repository fetches
 `GET /api/v1/pick-of-the-day/ledger` and appends the hash, the algorithm
-identifier, the seal instant and the kickoff to `ledger/<YYYY>/<MM>/<date>.json`.
+identifier, the seal instant and any publicly available kickoff to
+`ledger/<YYYY>/<MM>/<date>.json`.
 No nonce, no payload, no side. Publishing a bare `sha256(payload)` would be
 useless here: a pick payload is one market from a known board, one of two sides,
 and a price on a one-cent grid, so the whole space is enumerable in seconds. The
@@ -61,6 +63,30 @@ matches the one committed before the game.
 The backend refuses to seal a pick whose kickoff has passed. A pick that reaches
 kickoff unsealed stays unsealed forever, and shows up here as a settled pick with
 no proof rather than as a proof written after the fact.
+
+## Withheld kickoff until resolution
+
+An unresolved sealed entry may omit `kickoff`, preserving hidden game identity.
+The mirror records its unchanged commitment and seal instant immediately, plus
+`first_observation: {observed_at, parent_commit, run}`. The observation is this
+mirror's local read time and run context, not an independent publication witness.
+It is written once and retained unchanged when the entry opens. Existing entries
+with a public kickoff keep their original values and strict equality checks.
+
+Once the source opens the commitment, its canonical payload supplies the kickoff
+bound by that hash. The mirror then classifies timing against the commit that
+first introduced the hash, never the reveal commit. Late and outage markers keep
+their existing rules; a new unreviewed late hash still fails verification and is
+excluded from the displayed pregame cohort. No timestamp is guessed or backfilled
+into the sealed record, and no historical commitment or payload is rewritten.
+
+While kickoff remains withheld, the verifier reports its pregame and
+kickoff-based gap checks as pending. The 72-hour kickoff gap check cannot run
+against an unknown game clock. The immutable pending commitment remains visible
+and successful mirror reads still reconcile source identities. After opening,
+the canonical kickoff enables the existing hash and timing checks. Git author
+dates and local observation clocks remain controlled by the writer; an
+independently verified receipt before the opened kickoff is stronger evidence.
 
 ## Stable identity and commitment versions
 
@@ -232,7 +258,9 @@ One file per product day, at `ledger/<YYYY>/<MM>/<YYYY-MM-DD>.json`.
 When the pick settles, `state` becomes `"opened"` and the entry gains
 `commitment_nonce`, `resolved_at`, `outcome`, `payload`, `matchup`, `category`
 and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
-keep the values they were sealed with.
+keep the values they were sealed with when those fields existed. A hidden
+kickoff is added only from the opened canonical payload; `first_observation`
+keeps its original sealed value.
 
 Three optional fields identify missing pre-game evidence: `"pre_commitment":
 true`, `"outage": "<window id>"`, and `"late_unproven": true`. Each is described
@@ -535,7 +563,9 @@ the ledger. It does not prove the ledger is complete.
 Nothing in a commit-and-reveal scheme can prove that, because a pick that is
 never published leaves no trace anywhere. What is visible: once a pick is
 sealed, it is in a public append-only file, and a sealed entry that never opens
-is reported by `verify.py` 72 hours after its kickoff. On each successful
+is reported by `verify.py` 72 hours after its kickoff when that clock is public.
+For a withheld clock the verifier reports the gap check as pending until opening.
+On each successful
 source read, the mirror compares eligible source identities with the public
 ledger and refuses a missing or duplicate row. The offline verifier cannot
 discover a pick omitted by both sources. Declining to publish a pick at all is not caught by this

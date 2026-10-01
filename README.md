@@ -5,10 +5,14 @@
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-10 a day, appears in this public ledger once the source publishes it. Some have
+20 a day, appears in this public ledger once the source publishes it. Some have
 a hash in this repository from before kickoff; older and late entries do not.
 The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
+
+Unresolved entries can withhold kickoff as well as game identity. Their hashes
+and first observation stay public; kickoff-based timing checks wait for the
+canonical payload after settlement. A pending hidden clock is not pregame proof.
 
 A pick is one Polymarket market, one side, and the price we backed it at. The
 backend hashes those fields with a 32-byte nonce, 1 hour before kickoff, and the
@@ -61,8 +65,10 @@ They do not establish fills, actual wagers, or subscriber profit.
 `python3 verify.py` checks the same data and public git history.
 <!-- RECORD:END -->
 
-Rank 1 each day is free to any signed-in account. Ranks 2 to 10 are Pro. The
-record counts all of them the same way: $1,000 on every pick, a win returns
+One pick each day is free to any signed-in account. Pro opens 5 daily picks
+in total, including the free pick. Max opens every available pick, up to 20 a
+day. Resolved picks are public. The record counts all of them the same way:
+$1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, a void refunds
 it. The stake was $100 until September 22, 2026;
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
@@ -135,7 +141,7 @@ rotation.
 1. **Publish, kickoff minus 1 hour.** The pick goes live on the site and the
    backend computes `sha256(canonical_json(payload) || nonce)` in the same pass.
 2. **Seal, within minutes.** The backend dispatches `seal.yml`, which fetches the
-   ledger endpoint and appends the hash, the seal instant and the kickoff to
+   ledger endpoint and appends the hash, the seal instant and an available kickoff to
    `ledger/<YYYY>/<MM>/<date>.json`. No nonce, no payload, no side.
 3. **Open, after settlement.** `reveal.yml` appends the nonce, the payload and
    the outcome. A later correction appends to `revisions` and never overwrites.
