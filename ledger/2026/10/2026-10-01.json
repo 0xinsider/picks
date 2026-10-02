@@ -81,16 +81,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2849d14ed485db25165d80bd8a03d292d7be653a480efae7dabd81541acc4bcf",
+      "commitment_nonce": "2146edeb84f9ff4e19b0f2513042c0f3093caa18732da7cd9dc7b79ccc7b0e2e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-01T23:15:05.151603Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/3",
       "first_observation": {
         "observed_at": "2026-10-01T23:15:14.356930Z",
         "parent_commit": "6bbef215eb936ef7494a8a4c114cea8b686417f0",
         "run": "https://github.com/0xinsider/picks/actions/runs/36939770607"
-      }
+      },
+      "kickoff": "2026-10-02T00:15:00Z",
+      "resolved_at": "2026-10-02T05:15:51.188947Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x81ed885065c1e4e07c54de6d65c501b7ad1070ed26788b825c89306b3b9c9b72",
+        "kickoff": "2026-10-02T00:15:00Z",
+        "pick_date": "2026-10-01",
+        "pick_id": "443",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Steelers vs. Browns",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T05:15:51.188947Z",
+          "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -172,16 +197,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c4aa6aaaeb821e79ade28235c51c70cdb0fc475ec87505a368ef3bfea75e43e2",
+      "commitment_nonce": "6d9505e04a68c97082ff8981c37f3958e56f55c96f310d584044a0e046fff813",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-01T22:00:03.653723Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/6",
       "first_observation": {
         "observed_at": "2026-10-01T22:00:13.172756Z",
         "parent_commit": "f39b087dbdb31cac91dfea9fee6fff16522d614c",
         "run": "https://github.com/0xinsider/picks/actions/runs/36932319162"
-      }
+      },
+      "kickoff": "2026-10-01T23:00:00Z",
+      "resolved_at": "2026-10-02T02:13:06.488743Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x8c28cb0b67ec0be3d0b0873c836769b720ae02e7342794a7276a59ca9c0fe9a4",
+        "kickoff": "2026-10-01T23:00:00Z",
+        "pick_date": "2026-10-01",
+        "pick_id": "446",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Devils",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flyers vs. Devils",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-02T02:13:06.488743Z",
+          "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        }
+      ]
     },
     {
       "pick_rank": 7,
@@ -226,16 +276,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e07d21c637b79499df534c3e57f41a337c37ab39fef599e4a18b774018afe4b8",
+      "commitment_nonce": "0d17fa051f60560e8a9cb50c7ecef778fef0d5351305210dabd9d1c16b32af34",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T01:00:02.878608Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/8",
       "first_observation": {
         "observed_at": "2026-10-02T01:00:13.046724Z",
         "parent_commit": "78b82beb86af2d67d8b762e8fe53c87953cbc6d8",
         "run": "https://github.com/0xinsider/picks/actions/runs/36948785174"
-      }
+      },
+      "kickoff": "2026-10-02T02:00:00Z",
+      "resolved_at": "2026-10-02T06:17:51.728902Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.785000",
+        "condition_id": "0x02eef8e6e3a3ff98b6438fd5312d5d8743a7eeae310cd2779f35d0244e661381",
+        "kickoff": "2026-10-02T02:00:00Z",
+        "pick_date": "2026-10-01",
+        "pick_id": "448",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nicaragua vs. Costa Rica",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-02T06:17:51.728902Z",
+          "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -243,16 +318,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "83087f071f9a3f9ade99af66b9b43b36944c43db7dca8caab852dfd2f11fe9db",
+      "commitment_nonce": "e6cc66cd680b285deedffd32f2fc47d9e321cc1f32ad920e09bd2202315dbb8a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T00:00:05.620434Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/9",
       "first_observation": {
         "observed_at": "2026-10-02T00:00:14.373963Z",
         "parent_commit": "c5c0766f192b71c95bffa0ead6f7a06302408983",
         "run": "https://github.com/0xinsider/picks/actions/runs/36943732905"
-      }
+      },
+      "kickoff": "2026-10-02T01:00:00Z",
+      "resolved_at": "2026-10-02T05:52:55.316985Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x596a6c2d68c08eb21508bb6ba3a40e3bb3e093b26bc7c5e10dab4f1291827743",
+        "kickoff": "2026-10-02T01:00:00Z",
+        "pick_date": "2026-10-01",
+        "pick_id": "449",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "North Texas",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "North Texas vs. Tulsa",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-02T05:52:55.316985Z",
+          "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -260,16 +360,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "16e8335fcde52678bdb717f37db8a106f9d4eea5d94e1ab741cf913b837a5bf9",
+      "commitment_nonce": "bd59f8ce498a43271011b3064c2772d1d13aceedb48f1b8e213c560d11273a5b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T02:00:03.951706Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/10",
       "first_observation": {
         "observed_at": "2026-10-02T02:00:15.584359Z",
         "parent_commit": "58876b9e3bd498812d408a41dc077f2e9b3751e8",
         "run": "https://github.com/0xinsider/picks/actions/runs/36953564434"
-      }
+      },
+      "kickoff": "2026-10-02T03:00:00Z",
+      "resolved_at": "2026-10-02T04:57:06.296477Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.590000",
+        "condition_id": "0x104da8504024d06a2c9a73d1b3587a685304d659dc91cae6126e4c1a42ea30f0",
+        "kickoff": "2026-10-02T03:00:00Z",
+        "pick_date": "2026-10-01",
+        "pick_id": "450",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yuta Shimizu",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jingshan: Yuta Shimizu vs Bernard Tomic",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T04:57:06.296477Z",
+          "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
+          "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        }
+      ]
     }
   ]
 }
