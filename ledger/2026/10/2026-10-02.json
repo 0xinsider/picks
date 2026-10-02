@@ -58,16 +58,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "355e986d931c4560412f3679caa6acdbd9933b55ef2bdedfc77d6affc13ed2ea",
+      "commitment_nonce": "3f298170fef105898ca485a7a7c482f10a456134041da0a376a918967c8a64c8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T12:00:08.809726Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/4",
       "first_observation": {
         "observed_at": "2026-10-02T12:00:17.182331Z",
         "parent_commit": "2f32d1db5508b5e6a2fb377b6af34d998f41b464",
         "run": "https://github.com/0xinsider/picks/actions/runs/37004132288"
-      }
+      },
+      "kickoff": "2026-10-02T13:00:00Z",
+      "resolved_at": "2026-10-02T16:22:03.226714Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xfab06aabfcaf144dcc4ab8aeb5679c0b7d1abeada9da4e69a7048305f0b69c98",
+        "kickoff": "2026-10-02T13:00:00Z",
+        "pick_date": "2026-10-02",
+        "pick_id": "454",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "1win",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: 1win vs Team Nemesis (BO3) - BLAST Slam Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-02T16:22:03.226714Z",
+          "parent_commit": "154fcac7024bc78077d9e94351a3fe575da65f7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37062276549"
+        }
+      ]
     },
     {
       "pick_rank": 5,
@@ -75,16 +100,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aa9a9264e916d54ba03ac1016ef061567ab4305656f654ab0ffaa07049512408",
+      "commitment_nonce": "6c8ce9ecfa9ee926037744486b566a44ad98b70c63fcd91112a2853fe4a6cef8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T13:00:08.116001Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/5",
       "first_observation": {
         "observed_at": "2026-10-02T13:00:21.724270Z",
         "parent_commit": "ad23e0474ff8294271100b37722f41c269d792be",
         "run": "https://github.com/0xinsider/picks/actions/runs/37010131556"
-      }
+      },
+      "kickoff": "2026-10-02T14:00:00Z",
+      "resolved_at": "2026-10-02T18:05:25.124261Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.795000",
+        "condition_id": "0xe41479388e7db93235df86cbe482386090f4aa91e0a087d5fbc50d6d05dddb44",
+        "kickoff": "2026-10-02T14:00:00Z",
+        "pick_date": "2026-10-02",
+        "pick_id": "455",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kazakhstan vs. Moldova",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T18:05:25.124261Z",
+          "parent_commit": "154fcac7024bc78077d9e94351a3fe575da65f7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37062276549"
+        }
+      ]
     },
     {
       "pick_rank": 7,
@@ -92,16 +142,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4ef7f1737a346523dd880c56430dd97a4e8855b0637e2b5c83742669f207d0c4",
+      "commitment_nonce": "1b85be21eef54ac55f480e00b57d5c5e67ce361ede1445aca44152ce2b0e5c43",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T14:00:05.891880Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/7",
       "first_observation": {
         "observed_at": "2026-10-02T14:00:15.030871Z",
         "parent_commit": "dbff46d0ccfdbcd9458fdd82a1a2c749292cf13f",
         "run": "https://github.com/0xinsider/picks/actions/runs/37016807622"
-      }
+      },
+      "kickoff": "2026-10-02T15:00:00Z",
+      "resolved_at": "2026-10-02T17:38:52.172117Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x54aa1386ca9d7da5e5c0ac0e6487f2021bdef2e5702560978a31c283528a71c3",
+        "kickoff": "2026-10-02T15:00:00Z",
+        "pick_date": "2026-10-02",
+        "pick_id": "457",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "The Secret Club Esport",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Colossal Gaming vs The Secret Club Esport (BO3) - EMEA Masters Swiss Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-02T17:38:52.172117Z",
+          "parent_commit": "154fcac7024bc78077d9e94351a3fe575da65f7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37062276549"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -126,16 +201,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "178ce4dd336821798df863f7fd517f340583cf08c8911d970b0ccdc7b8b83348",
+      "commitment_nonce": "5862d257471bd20ddc03cc98f20f51862cfb36bfb238a9d39a7084f5beb824ce",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-02T15:00:07.479378Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/9",
       "first_observation": {
         "observed_at": "2026-10-02T15:00:20.379824Z",
         "parent_commit": "9db5a4f1fc6092d0e368f8286cafb6d3623e4d64",
         "run": "https://github.com/0xinsider/picks/actions/runs/37023841552"
-      }
+      },
+      "kickoff": "2026-10-02T16:00:00Z",
+      "resolved_at": "2026-10-02T20:06:21.135654Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x5eda707083cb9f4643580c2d5085c05d322a85eb6155da27b98ca017f47dd3d9",
+        "kickoff": "2026-10-02T16:00:00Z",
+        "pick_date": "2026-10-02",
+        "pick_id": "459",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Latvia vs. Montenegro",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-02/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T20:06:21.135654Z",
+          "parent_commit": "154fcac7024bc78077d9e94351a3fe575da65f7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37062276549"
+        }
+      ]
     },
     {
       "pick_rank": 11,
