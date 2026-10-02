@@ -99,6 +99,23 @@
       "sealed_at": "2026-10-01T17:46:29.642378Z",
       "kickoff": "2026-10-01T18:45:00Z",
       "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/7"
+    },
+    {
+      "pick_rank": 9,
+      "pick_id": "449",
+      "publication_order": 9,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "83087f071f9a3f9ade99af66b9b43b36944c43db7dca8caab852dfd2f11fe9db",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-02T00:00:05.620434Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-01/9",
+      "first_observation": {
+        "observed_at": "2026-10-02T00:00:14.373963Z",
+        "parent_commit": "c5c0766f192b71c95bffa0ead6f7a06302408983",
+        "run": "https://github.com/0xinsider/picks/actions/runs/36943732905"
+      }
     }
   ]
 }
