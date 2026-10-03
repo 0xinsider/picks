@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1fdbaafa77d53cb0f9086a4997c45eec3dd9faf2fd3f36a3d898d4ceab60f39b",
+      "commitment_nonce": "64dc44656a725b22e7120a4f190fdefd48ca7182319bb3fda544fb0c1850742b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T18:15:39.404167Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/1",
       "first_observation": {
         "observed_at": "2026-10-03T18:15:46.801690Z",
         "parent_commit": "3f9c237b5d5e8108c66f96910463c49edaa33c12",
         "run": "https://github.com/0xinsider/picks/actions/runs/37143521163"
-      }
+      },
+      "kickoff": "2026-10-03T18:45:00Z",
+      "resolved_at": "2026-10-03T22:50:27.995239Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xf3d84532cc8ccfeda1ab52694e0fa2928147683c0ce3e592b1fb824e32c4ffd0",
+        "kickoff": "2026-10-03T18:45:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "463",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Spain vs. Czechia",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-03T22:50:27.995239Z",
+          "parent_commit": "385b2a33905a1e0e33d4e1e8262294873f8f2fa1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37160388036"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -143,16 +168,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "83fa0e8cc17366a2c03c9f6eaef0b641dfc90e50d673ffbf9b9c1f7f82a565bd",
+      "commitment_nonce": "7da34c0ec191746774576e6f6e4620d3a5682d41f6bcfbb946b826e49a21ef3c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T18:48:17.257582Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/10",
       "first_observation": {
         "observed_at": "2026-10-03T18:48:25.942125Z",
         "parent_commit": "322d7cd2213081ec17d8e5d50b934fe701b9c5e7",
         "run": "https://github.com/0xinsider/picks/actions/runs/37145577109"
-      }
+      },
+      "kickoff": "2026-10-03T20:30:00Z",
+      "resolved_at": "2026-10-03T21:11:55.824629Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xed3f93d7c4f9f7acc3dac96ee01d6b789911ec8fb90d76baf5940cc0f53f1540",
+        "kickoff": "2026-10-03T20:30:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "472",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Ismail Naurdiev",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC 332: Marvin Vettori vs. Ismail Naurdiev (Middleweight, Early Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-03T21:11:55.824629Z",
+          "parent_commit": "385b2a33905a1e0e33d4e1e8262294873f8f2fa1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37160388036"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -160,16 +210,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "72ecbba4848abf2b06da0029aea1cf861e2968a5d291747526c91d7a98ec978f",
+      "commitment_nonce": "cccab7bae9a933524334fecbb76c211f069d09fe7da209e28e67fb03c765c46c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T19:01:32.555556Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/11",
       "first_observation": {
         "observed_at": "2026-10-03T19:01:43.709062Z",
         "parent_commit": "808122aa302a06e21088c9d77b55c6ec1525fec9",
         "run": "https://github.com/0xinsider/picks/actions/runs/37146398967"
-      }
+      },
+      "kickoff": "2026-10-03T19:30:00Z",
+      "resolved_at": "2026-10-03T22:59:08.154385Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xee0399a5c48c36093bcfe5d446ab25a4bc8a2fd1064e24436c98111d67356231",
+        "kickoff": "2026-10-03T19:30:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "473",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Akron",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Akron vs. Central Michigan",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-03T22:59:08.154385Z",
+          "parent_commit": "385b2a33905a1e0e33d4e1e8262294873f8f2fa1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37160388036"
+        }
+      ]
     },
     {
       "pick_rank": 12,
@@ -177,16 +252,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "af2ea7ab9a21c873a8727c6236fba0f8ea154ad795bd112a3eb4ad5c9cef2761",
+      "commitment_nonce": "b6ab0ff751502d75e921dd07d3d240722894251e3dd60682995ea87e994597c9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T20:30:09.570439Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/12",
       "first_observation": {
         "observed_at": "2026-10-03T20:30:19.589036Z",
         "parent_commit": "47d70203ea7788fc22f6505610fbe995740e0df5",
         "run": "https://github.com/0xinsider/picks/actions/runs/37151759974"
-      }
+      },
+      "kickoff": "2026-10-03T21:00:00Z",
+      "resolved_at": "2026-10-03T21:40:57.747012Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x84864263ce0205af79ce30e5e413b8f7a48530cb543d564d225095a20768fc88",
+        "kickoff": "2026-10-03T21:00:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "475",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC 332: Rafael Dos Anjos vs. Alexander Hernandez (Lightweight, Early Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-03T21:40:57.747012Z",
+          "parent_commit": "385b2a33905a1e0e33d4e1e8262294873f8f2fa1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37160388036"
+        }
+      ]
     },
     {
       "pick_rank": 14,
