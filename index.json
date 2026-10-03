@@ -3,7 +3,7 @@
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
     "opened": 337,
-    "sealed": 6,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
@@ -10395,6 +10395,24 @@
     },
     {
       "pick_date": "2026-10-03",
+      "pick_rank": 4,
+      "pick_id": "466",
+      "publication_order": 4,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "091481ff44c741d109cbacab92ce7afe51e606a6e34693e5879ea174eccf1a08",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-03T19:01:32.462679Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/4",
+      "first_observation": {
+        "observed_at": "2026-10-03T19:01:43.709062Z",
+        "parent_commit": "808122aa302a06e21088c9d77b55c6ec1525fec9",
+        "run": "https://github.com/0xinsider/picks/actions/runs/37146398967"
+      }
+    },
+    {
+      "pick_date": "2026-10-03",
       "pick_rank": 7,
       "pick_id": "469",
       "publication_order": 7,
@@ -10445,6 +10463,24 @@
         "observed_at": "2026-10-03T18:48:25.942125Z",
         "parent_commit": "322d7cd2213081ec17d8e5d50b934fe701b9c5e7",
         "run": "https://github.com/0xinsider/picks/actions/runs/37145577109"
+      }
+    },
+    {
+      "pick_date": "2026-10-03",
+      "pick_rank": 11,
+      "pick_id": "473",
+      "publication_order": 11,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "72ecbba4848abf2b06da0029aea1cf861e2968a5d291747526c91d7a98ec978f",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-03T19:01:32.555556Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/11",
+      "first_observation": {
+        "observed_at": "2026-10-03T19:01:43.709062Z",
+        "parent_commit": "808122aa302a06e21088c9d77b55c6ec1525fec9",
+        "run": "https://github.com/0xinsider/picks/actions/runs/37146398967"
       }
     }
   ]
