@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "de3fe61db669f7d5ed521cf81c1d9ed3a69fa8dc21161ba7cec1a8eb5cedde0a",
+      "commitment_nonce": "89c907d75a4c1fd8268c20ba41a2db89df12efe8556116a023dbb484e834865d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T16:50:24.088300Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/2",
       "first_observation": {
         "observed_at": "2026-10-03T16:50:31.458018Z",
         "parent_commit": "ea151d7655da2ff4d891b472a14bf07df787f630",
         "run": "https://github.com/0xinsider/picks/actions/runs/37138327580"
-      }
+      },
+      "kickoff": "2026-10-03T23:30:00Z",
+      "resolved_at": "2026-10-04T03:27:24.635744Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.755000",
+        "condition_id": "0xea33be22543767de5acf367da99381ae355b1b91b7e4f4a9a5cf133883161b37",
+        "kickoff": "2026-10-03T23:30:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "464",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "USC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Washington vs. USC",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-04T03:27:24.635744Z",
+          "parent_commit": "0c33141c9709d7d9bf5514d0d28aac9c5b2a7f55",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37193083263"
+        }
+      ]
     },
     {
       "pick_rank": 3,
@@ -444,16 +469,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1bea016bdf2d4f5be110974aaec0c97dbe5f9757ef807dfe8ef56284e5c1aebb",
+      "commitment_nonce": "0fbffc4c5acbe3f8e1f2161c2ee1ad88536e253485d68118d87574a87ed5911a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-03T23:00:46.690503Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/14",
       "first_observation": {
         "observed_at": "2026-10-03T23:01:14.371245Z",
         "parent_commit": "215a2d5330a673f88111ecf6b1a01d3e92de4b35",
         "run": "https://github.com/0xinsider/picks/actions/runs/37160354167"
-      }
+      },
+      "kickoff": "2026-10-03T23:30:00Z",
+      "resolved_at": "2026-10-04T03:13:58.080030Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x9c6d3fd68a6237c3dce00480fcba91c8d3bd9fe8ac7f0f4b613380dc607fe1cc",
+        "kickoff": "2026-10-03T23:30:00Z",
+        "pick_date": "2026-10-03",
+        "pick_id": "477",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Boise State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Utah State vs. Boise State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-03/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-04T03:13:58.080030Z",
+          "parent_commit": "0c33141c9709d7d9bf5514d0d28aac9c5b2a7f55",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37193083263"
+        }
+      ]
     }
   ]
 }
