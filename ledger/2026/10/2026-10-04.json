@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9991cd55b26a5485803821fb9cbb5dd3a920b25bc1ab28650cd04cdcceda883e",
+      "commitment_nonce": "4c25dab23fc5dacc92d21bccb15dba1c52a1ac5b4f781fb3e3fb9f44d972ad72",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T13:00:17.482608Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/1",
       "first_observation": {
         "observed_at": "2026-10-04T13:00:25.188964Z",
         "parent_commit": "53288dd6aa14171b46fc56cca00870f345f068a8",
         "run": "https://github.com/0xinsider/picks/actions/runs/37204070547"
-      }
+      },
+      "kickoff": "2026-10-04T13:30:00Z",
+      "resolved_at": "2026-10-04T17:13:52.493628Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xa6adb15cbce2cd75e2096070f7e669755ec39f5f3c110ba5a709f5c34cc568b5",
+        "kickoff": "2026-10-04T13:30:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "479",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Commanders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Colts vs. Commanders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-04T17:13:52.493628Z",
+          "parent_commit": "ad01d08e98b67bbab6bb26557880d75217f4ad3c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37228837398"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -218,16 +243,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c3530f39415bec8873e1291020bdfce7b8496e5578823e289ac6528548c5c8c7",
+      "commitment_nonce": "7db7ba9dc7016c05c52c87d01cbbe8f9a66930408e108a63d4e54701bff7a308",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T14:30:25.892939Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/11",
       "first_observation": {
         "observed_at": "2026-10-04T14:30:36.933283Z",
         "parent_commit": "9f9949435453cfae0d6f350c8f407cb2ac5f4a5a",
         "run": "https://github.com/0xinsider/picks/actions/runs/37209508624"
-      }
+      },
+      "kickoff": "2026-10-04T15:00:00Z",
+      "resolved_at": "2026-10-04T17:36:00.194636Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0xeb385d5693e54e9e82659f710e20115d9c099dfbc5d33f4c96261f38cc67c7c6",
+        "kickoff": "2026-10-04T15:00:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "489",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Galorys",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Galorys vs Procyon Gaming (BO3) - CCT South America Series 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/11",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-04T17:36:00.194636Z",
+          "parent_commit": "ad01d08e98b67bbab6bb26557880d75217f4ad3c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37228837398"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -235,16 +285,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9e8a8ebef4b7c676d3d2c04daa3bbe34b48ce0738812ce110e25f8b16963f911",
+      "commitment_nonce": "d763160f9fa837975b514535fbb3263949585b9c6d9b8911d2c8e7e8c997606a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T11:30:10.863012Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/13",
       "first_observation": {
         "observed_at": "2026-10-04T11:30:19.300092Z",
         "parent_commit": "f7f9249d8c182c73024a1c27a0609c033bb22c3e",
         "run": "https://github.com/0xinsider/picks/actions/runs/37198952732"
-      }
+      },
+      "kickoff": "2026-10-04T12:00:00Z",
+      "resolved_at": "2026-10-04T15:26:57.366943Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x2fcbe164a8797c9c7351884314225f7a86f26c484365b0ac9366b369b4782e8d",
+        "kickoff": "2026-10-04T12:00:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "491",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Luminosity",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Luminosity vs Astralis (BO3) - Stake Ranked Episode 4 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-04T15:26:57.366943Z",
+          "parent_commit": "ad01d08e98b67bbab6bb26557880d75217f4ad3c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37228837398"
+        }
+      ]
     },
     {
       "pick_rank": 14,
