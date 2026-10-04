@@ -24,16 +24,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cb7859c964cf388728995c2040503d726908f8268288c4a13ceac71cf7b2a69a",
+      "commitment_nonce": "90ca0f7998aba08516ec1b88a8f54841a13a61bf15be4ccc6d3837c776b21d0c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T07:52:11.824689Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/8",
       "first_observation": {
         "observed_at": "2026-10-04T07:52:21.655461Z",
         "parent_commit": "3ee7a59e156a622418a9aca994b0aeb8af6dcdfb",
         "run": "https://github.com/0xinsider/picks/actions/runs/37187097987"
-      }
+      },
+      "kickoff": "2026-10-04T09:00:00Z",
+      "resolved_at": "2026-10-04T12:42:41.339560Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x02cb8c4937a77c4e539b397d4d450380d09b37bd516266a15fbef7129d8e3b79",
+        "kickoff": "2026-10-04T09:00:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "486",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Spirit",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Spirit vs PARIVISION (BO3) - ESL Pro League Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-04T12:42:41.339560Z",
+          "parent_commit": "254e7dc58ba684eefc5fb255965bdcaa56a06fae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37212618579"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -41,16 +66,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e4c32a6fa46ee9f2ccd10a1e1c8aa95651eeb3b768114107e730bb52c8e83050",
+      "commitment_nonce": "51d43de964b43014b538d325637f17d9dc8c118bbe789dbfa5de80b1be9c1963",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T08:08:57.336886Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/9",
       "first_observation": {
         "observed_at": "2026-10-04T08:09:07.292558Z",
         "parent_commit": "c7613de49da0708e37a34388a4e44385425a08e8",
         "run": "https://github.com/0xinsider/picks/actions/runs/37187981885"
-      }
+      },
+      "kickoff": "2026-10-04T11:00:00Z",
+      "resolved_at": "2026-10-04T14:17:28.917756Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.305000",
+        "condition_id": "0x6f6f877fcea81db41b0c433f19f64716c12f23df8edcae623111244c15d9ce10",
+        "kickoff": "2026-10-04T11:00:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "487",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Novak Djokovic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "China Open: Alexander Zverev vs Novak Djokovic",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-04T14:17:28.917756Z",
+          "parent_commit": "254e7dc58ba684eefc5fb255965bdcaa56a06fae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37212618579"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -58,16 +108,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "beea3bc0ee38060e3ac8162f00f6ea7175cc62fee5edcd5666c155585e6c2e6a",
+      "commitment_nonce": "25a458a439b433b677e8461c3a876f28c689ddce7ee7385b82b92897ad61668d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-04T08:09:09.699467Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/10",
       "first_observation": {
         "observed_at": "2026-10-04T08:09:21.865499Z",
         "parent_commit": "1a48d2acbd37e44c9a8404279a7fdd6f9557ec3b",
         "run": "https://github.com/0xinsider/picks/actions/runs/37187992412"
-      }
+      },
+      "kickoff": "2026-10-04T11:30:00Z",
+      "resolved_at": "2026-10-04T14:37:07.231382Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x97cd107e31e8a4a64f1518ae71722e66fdeed37a30c44db87fdd6abdadac86e4",
+        "kickoff": "2026-10-04T11:30:00Z",
+        "pick_date": "2026-10-04",
+        "pick_id": "488",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Aurora Gaming",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Team Falcons vs Aurora Gaming (BO3) - ESL Pro League Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-04T14:37:07.231382Z",
+          "parent_commit": "254e7dc58ba684eefc5fb255965bdcaa56a06fae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37212618579"
+        }
+      ]
     },
     {
       "pick_rank": 11,
