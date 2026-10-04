@@ -34,6 +34,23 @@
         "parent_commit": "c7613de49da0708e37a34388a4e44385425a08e8",
         "run": "https://github.com/0xinsider/picks/actions/runs/37187981885"
       }
+    },
+    {
+      "pick_rank": 10,
+      "pick_id": "488",
+      "publication_order": 10,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "beea3bc0ee38060e3ac8162f00f6ea7175cc62fee5edcd5666c155585e6c2e6a",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-04T08:09:09.699467Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-04/10",
+      "first_observation": {
+        "observed_at": "2026-10-04T08:09:21.865499Z",
+        "parent_commit": "1a48d2acbd37e44c9a8404279a7fdd6f9557ec3b",
+        "run": "https://github.com/0xinsider/picks/actions/runs/37187992412"
+      }
     }
   ]
 }
