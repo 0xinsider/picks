@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7817d7c219b5fe6cef2fa4fc9adb2eba18bac7059dd2d71906139a784c59a63f",
+      "commitment_nonce": "f13509d9566ddae9abde4e32623116cde8b4b3599ac2371088364301210eeaed",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-05T12:14:20.009806Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/1",
       "first_observation": {
         "observed_at": "2026-10-05T12:14:27.898343Z",
         "parent_commit": "549585b36a3d67768e13a1346525bfe4ef9aae41",
         "run": "https://github.com/0xinsider/picks/actions/runs/37308143448"
-      }
+      },
+      "kickoff": "2026-10-05T14:00:00Z",
+      "resolved_at": "2026-10-05T16:41:46.752331Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xcb5ced6341e2f1defd807d8fab2254a83913868af0b94172d0e23be18ab46475",
+        "kickoff": "2026-10-05T14:00:00Z",
+        "pick_date": "2026-10-05",
+        "pick_id": "495",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Spirit",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Spirit vs MOUZ (BO3) - ESL Pro League Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-05T16:41:46.752331Z",
+          "parent_commit": "6c3ce03de912ba2828be9f0a73b3fa7c533bbd7f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37355689337"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -24,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fb0109c26101b661ac86db884eea0ba409f5490f9becafe9e9487fdb9d2fb8e6",
+      "commitment_nonce": "f7fce5fd163e842674734affb17dca83a01bbffb8b7c1c3281f67877bd53a449",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-05T07:12:30.526155Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/2",
       "first_observation": {
         "observed_at": "2026-10-05T07:12:41.730202Z",
         "parent_commit": "e2f65843f0beecb58f1442d32b382b75e3f5c404",
         "run": "https://github.com/0xinsider/picks/actions/runs/37276447785"
-      }
+      },
+      "kickoff": "2026-10-05T07:40:00Z",
+      "resolved_at": "2026-10-05T11:15:28.841643Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x5c10d31a9cf5d49800fe4f733f4351b40a2e34692568ead9c520d9ababd8ab2b",
+        "kickoff": "2026-10-05T07:40:00Z",
+        "pick_date": "2026-10-05",
+        "pick_id": "494",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hubert Hurkacz",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "China Open: Alex de Minaur vs Hubert Hurkacz",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-05T11:15:28.841643Z",
+          "parent_commit": "6c3ce03de912ba2828be9f0a73b3fa7c533bbd7f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37355689337"
+        }
+      ]
     },
     {
       "pick_rank": 3,
@@ -41,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d493801e3250786632fd28005880a8ad075da1acfbf119a8dba964232598897a",
+      "commitment_nonce": "b3fdc9f429aff9be4d97f695e0bd545ab4ce935a022bf701dbbce29b412159e0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-05T12:14:53.181892Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/3",
       "first_observation": {
         "observed_at": "2026-10-05T12:15:01.949040Z",
         "parent_commit": "5a51bcac510eaaf0ac4bd3b73358bf5f79898379",
         "run": "https://github.com/0xinsider/picks/actions/runs/37308204688"
-      }
+      },
+      "kickoff": "2026-10-05T14:00:00Z",
+      "resolved_at": "2026-10-05T17:49:48.841706Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xe6823535b676dcc2e3416d69dd8d32faaa374d8b88be7013ed1c321fbb6c49ce",
+        "kickoff": "2026-10-05T14:00:00Z",
+        "pick_date": "2026-10-05",
+        "pick_id": "496",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "M80",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: M80 vs TYLOO (BO3) - ESL Pro League Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-05T17:49:48.841706Z",
+          "parent_commit": "6c3ce03de912ba2828be9f0a73b3fa7c533bbd7f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37355689337"
+        }
+      ]
     },
     {
       "pick_rank": 4,
