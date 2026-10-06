@@ -427,16 +427,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3953ec25cfc9f61d54d392605d721531fe7fc9b87c6f4b7571d40de454cda6f1",
+      "commitment_nonce": "75f4bbe2be39da1e1bc7271d75ecb102627bc4d19012c6d2c51fe063a5599f61",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-05T16:37:56.443966Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/11",
       "first_observation": {
         "observed_at": "2026-10-05T16:38:06.226196Z",
         "parent_commit": "90f17f9d2d64cd803be1b1a46672b8aee5347888",
         "run": "https://github.com/0xinsider/picks/actions/runs/37342323254"
-      }
+      },
+      "kickoff": "2026-10-06T00:15:00Z",
+      "resolved_at": "2026-10-06T05:38:17.132164Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xfa8cb407cbd8374537ef084699d7c29d0eae5501049a072251325be268eed216",
+        "kickoff": "2026-10-06T00:15:00Z",
+        "pick_date": "2026-10-05",
+        "pick_id": "509",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Saints",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Falcons vs. Saints",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-05/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-06T05:38:17.132164Z",
+          "parent_commit": "0470001867fa1090b97ee015ded25efac6ce260f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37430262575"
+        }
+      ]
     },
     {
       "pick_rank": 12,
