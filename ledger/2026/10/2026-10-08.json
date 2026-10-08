@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1c5b3a7637f320ced67eabb2776556fb272f6a29976e9afa54d1770b609511f6",
+      "commitment_nonce": "e1dda86f66abb1d76d60523feb23ad2265877a072a468b013b04a94c4345aee1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-08T09:57:57.580533Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/1",
       "first_observation": {
         "observed_at": "2026-10-08T09:58:06.011586Z",
         "parent_commit": "ef73d5a8b18f0ad3b97c593a2a20fcb3b6b7fcec",
         "run": "https://github.com/0xinsider/picks/actions/runs/37760285152"
-      }
+      },
+      "kickoff": "2026-10-08T11:10:00Z",
+      "resolved_at": "2026-10-08T13:42:39.227175Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xc856e5f07cf73a8a79366bcc8070fc749f821072cbcba02f84f64b7ecd7f9bde",
+        "kickoff": "2026-10-08T11:10:00Z",
+        "pick_date": "2026-10-08",
+        "pick_id": "544",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Mirra Andreeva",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "China Open: Ekaterina Alexandrova vs Mirra Andreeva",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T13:42:39.227175Z",
+          "parent_commit": "bc114e3d6b9ea070d8fb6f317565f665550476b0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37801793936"
+        }
+      ]
     },
     {
       "pick_rank": 2,
