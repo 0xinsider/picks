@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3b6daa195227693f61cc4f2d28a2cb5ddbff2da9f692a3c512fcb6622f021f44",
+      "commitment_nonce": "4b2e005b2954fc5c70029cddc18732bdcd70cd02dca0dcd0ce091082471efde5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T14:46:23.664886Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/4",
       "first_observation": {
         "observed_at": "2026-10-07T14:46:34.861842Z",
         "parent_commit": "187f961f02e534e10cd397a0f5b3b84ba2a554f2",
         "run": "https://github.com/0xinsider/picks/actions/runs/37639523276"
-      }
+      },
+      "kickoff": "2026-10-07T17:00:00Z",
+      "resolved_at": "2026-10-07T20:56:23.702987Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x0dff9d77778a16b428c341660ecc93d2720973394537b23db870dd44e494b3d5",
+        "kickoff": "2026-10-07T17:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "534",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Spirit",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Spirit vs M80 (BO3) - ESL Pro League Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-07T20:56:23.702987Z",
+          "parent_commit": "c6d6155bda659c35126a2c51b31365f6392bb18b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37710487673"
+        }
+      ]
     },
     {
       "pick_rank": 5,
@@ -150,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0c5a40a361f0f110392eab89749ddbefea02f5c7e549cb890d6b7dc490c89ce9",
+      "commitment_nonce": "d30156241525cfff690d2e82740974b1b6456c6f38bbcdc460e7c4bc3f624962",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T15:26:50.604189Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/5",
       "first_observation": {
         "observed_at": "2026-10-07T15:27:25.657641Z",
         "parent_commit": "c3dc4a39fd92f699f29e2e6881384dcd52c4badf",
         "run": "https://github.com/0xinsider/picks/actions/runs/37643989425"
-      }
+      },
+      "kickoff": "2026-10-07T16:00:00Z",
+      "resolved_at": "2026-10-07T21:49:38.135729Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.710000",
+        "condition_id": "0x3897b0222281050dd96e391da5559488bd8a8acc7dd774e269f3d24d30d8c8bc",
+        "kickoff": "2026-10-07T16:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "535",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "G2 NORD",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Team Heretics Academy vs G2 NORD (BO5) - EMEA Masters Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-07T21:49:38.135729Z",
+          "parent_commit": "c6d6155bda659c35126a2c51b31365f6392bb18b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37710487673"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -167,16 +217,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ab7f02e7a5d64df9b0d6fcf762af33c1e925edc466465656c2836bb4687249ac",
+      "commitment_nonce": "e6ed74fe30900f74fe94222c148df1b80c1de0693ab8268be21b830abb4f05ee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T18:48:08.611465Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/6",
       "first_observation": {
         "observed_at": "2026-10-07T18:48:16.518213Z",
         "parent_commit": "34f7b0ac63ba23fc63c96528dc85a23dedb0081d",
         "run": "https://github.com/0xinsider/picks/actions/runs/37669609513"
-      }
+      },
+      "kickoff": "2026-10-07T20:00:00Z",
+      "resolved_at": "2026-10-07T23:49:38.248691Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x033e2a9074511d2f4bc58412588ac8c334d71ab9ef7fbed0c59df535d8bfc381",
+        "kickoff": "2026-10-07T20:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "536",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Cleveland Guardians",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cleveland Guardians vs. Chicago White Sox",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-07T23:49:38.248691Z",
+          "parent_commit": "c6d6155bda659c35126a2c51b31365f6392bb18b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37710487673"
+        }
+      ]
     },
     {
       "pick_rank": 7,
