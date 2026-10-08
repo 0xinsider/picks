@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 400,
-    "sealed": 7,
+    "opened": 407,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 139,
+    "proven": 146,
     "proven_record": {
-      "wins": 81,
-      "losses": 57,
-      "decided": 138,
-      "hit_rate": "58.7",
-      "profit_usd": "3851.80",
-      "staked": "138000",
-      "roi": "2.8"
+      "wins": 85,
+      "losses": 60,
+      "decided": 145,
+      "hit_rate": "58.6",
+      "profit_usd": "4766.00",
+      "staked": "145000",
+      "roi": "3.3"
     },
-    "wins": 257,
-    "losses": 142,
+    "wins": 261,
+    "losses": 145,
     "voids": 1,
-    "decided": 399,
-    "hit_rate": "64.4",
+    "decided": 406,
+    "hit_rate": "64.3",
     "stake_usd": "1000",
-    "profit_usd": "21837.56",
-    "staked": "399000",
-    "roi": "5.5",
+    "profit_usd": "22751.76",
+    "staked": "406000",
+    "roi": "5.6",
     "through": "2026-10-07"
   },
   "picks": [
@@ -13055,16 +13055,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aa42cc03ac5d38c8bc3a7e00fdc82aae2460cbe17a8d87d3345b05abdbd1e353",
+      "commitment_nonce": "66d111512930c67afc63d0e8a9593cf26a34c4b6855a0bfa227df617cec9e619",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T19:26:17.935575Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/7",
       "first_observation": {
         "observed_at": "2026-10-07T19:26:26.117280Z",
         "parent_commit": "cb4dd85912b33bfe8cf4099f122dd95335fbfd94",
         "run": "https://github.com/0xinsider/picks/actions/runs/37674480674"
-      }
+      },
+      "kickoff": "2026-10-07T22:00:00Z",
+      "resolved_at": "2026-10-08T01:49:38.160649Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x23e83fa173dbeab2c7345389887766dab0f0139feb2c7185edde23d44ecdc17b",
+        "kickoff": "2026-10-07T22:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "539",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Los Angeles Dodgers vs. Atlanta Braves",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T01:49:38.160649Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13073,16 +13098,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "52b05ec5cc34eade9f940e1e6bec47dd8e55973b9642fc9378881996c7f78412",
+      "commitment_nonce": "a2df7cbb98e0d641adf3bf65abd0c82f00895909e5449b377e68a014fa8e36c5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T18:53:33.156943Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/8",
       "first_observation": {
         "observed_at": "2026-10-07T18:53:41.634337Z",
         "parent_commit": "790daf69181758b179eb226b69f787146ac0e5d9",
         "run": "https://github.com/0xinsider/picks/actions/runs/37670292260"
-      }
+      },
+      "kickoff": "2026-10-08T00:00:00Z",
+      "resolved_at": "2026-10-08T03:19:38.148405Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.835000",
+        "condition_id": "0x9c590cb7f94923807b640b194c1a00ad86216a4be9f4326479c16a6001fdd711",
+        "kickoff": "2026-10-08T00:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "537",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bucks vs. Thunder",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-08T03:19:38.148405Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13091,16 +13141,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a426548b5a0e3d679edfff38d7e87166e7f944cc543653129c6ebb1da73a0c4f",
+      "commitment_nonce": "70c097cad6cb9ebab1ff4eed84db806d7c54cd0df8e2d2df4405fc837c30330e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T21:11:32.948182Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/9",
       "first_observation": {
         "observed_at": "2026-10-07T21:11:41.765267Z",
         "parent_commit": "259caa36b6335a837caabff44414098ec65a57cd",
         "run": "https://github.com/0xinsider/picks/actions/runs/37687629465"
-      }
+      },
+      "kickoff": "2026-10-07T23:00:00Z",
+      "resolved_at": "2026-10-08T04:49:38.194326Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xcc064e864e10caa78882dc3ba9469fbdd61186714bb4400f02ac49abd06a47af",
+        "kickoff": "2026-10-07T23:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "540",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jacksonville State vs. Kennesaw State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-08T04:49:38.194326Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13109,16 +13184,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5de9a1a9d13b85c1e66501f895fffcb726f0dec5faa35324f62872f98667521e",
+      "commitment_nonce": "fd76a53e76ce6618d7d625b4d6cfec0788b2f95df4862a6b92d4238cde3a1a41",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T21:57:22.560386Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/10",
       "first_observation": {
         "observed_at": "2026-10-07T21:57:31.233158Z",
         "parent_commit": "22adc34393e9ea4792f78f512f77dac791be82a9",
         "run": "https://github.com/0xinsider/picks/actions/runs/37692976771"
-      }
+      },
+      "kickoff": "2026-10-08T00:00:00Z",
+      "resolved_at": "2026-10-08T05:19:38.103078Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x5479013e073838093a7fad58fc44b2780b5c20f68194c71621e893735b9ca5cc",
+        "kickoff": "2026-10-08T00:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "541",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tampa Bay Rays vs. New York Yankees",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T05:19:38.103078Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13127,16 +13227,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4dd1deb33a86321e389796719062ce83a89b4b139a73951ab09e5a3ab139a641",
+      "commitment_nonce": "c6c02e690cb4875fdccec17b6ce3f4c47406cc9c087ccb69da2748fba2058086",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-07T18:53:36.961760Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/11",
       "first_observation": {
         "observed_at": "2026-10-07T18:53:41.634337Z",
         "parent_commit": "790daf69181758b179eb226b69f787146ac0e5d9",
         "run": "https://github.com/0xinsider/picks/actions/runs/37670292260"
-      }
+      },
+      "kickoff": "2026-10-08T02:00:00Z",
+      "resolved_at": "2026-10-08T05:19:38.147041Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.805000",
+        "condition_id": "0x21d82ea3337d649dc0cc9bdc4205eed331a2030c636b1ab3ee20d155c648a706",
+        "kickoff": "2026-10-08T02:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "538",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Trail Blazers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Trail Blazers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/11",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T05:19:38.147041Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13145,16 +13270,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "849ebae5f7c336b51bdd11974b97f7fde7ea316cd0c5c9ceedf68fa20d6daeb6",
+      "commitment_nonce": "9636bd69af5a4ba6f9ffd76cfb71c8093ef14846d0d7fcbb75734d70a95dd152",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-08T01:41:17.037564Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/12",
       "first_observation": {
         "observed_at": "2026-10-08T01:41:27.053756Z",
         "parent_commit": "678492dbbe7515414199186c6479116466b7af30",
         "run": "https://github.com/0xinsider/picks/actions/runs/37714164112"
-      }
+      },
+      "kickoff": "2026-10-08T03:30:00Z",
+      "resolved_at": "2026-10-08T06:49:37.919589Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xeb7b4b8fd58ff3f9ffcb72760bf640166001d3b4ea073135d6c91b72be62293d",
+        "kickoff": "2026-10-08T03:30:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "542",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Oleksandra Oliynykova",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Suzhou: Oleksandra Oliynykova vs Aliona Falei",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-08T06:49:37.919589Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-07",
@@ -13163,16 +13313,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "739fe7f279b058af6604bc32cab66454bb247a7c6cb0b06420dceffc06e2c8e1",
+      "commitment_nonce": "3f5c637f0b64ce9a674c2df0db516f48b47295248261be23a24ee942369b4896",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-08T01:41:17.097441Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/13",
       "first_observation": {
         "observed_at": "2026-10-08T01:41:27.053756Z",
         "parent_commit": "678492dbbe7515414199186c6479116466b7af30",
         "run": "https://github.com/0xinsider/picks/actions/runs/37714164112"
-      }
+      },
+      "kickoff": "2026-10-08T04:00:00Z",
+      "resolved_at": "2026-10-08T06:49:37.869971Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0xb7535ab333e792b35ff5cf02756dda19a24dccba833d7e4ae614250ed231ac37",
+        "kickoff": "2026-10-08T04:00:00Z",
+        "pick_date": "2026-10-07",
+        "pick_id": "543",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Jenson Brooksby",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Shanghai Rolex Masters: Jaume Munar vs Jenson Brooksby",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-07/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T06:49:37.869971Z",
+          "parent_commit": "57b90942903b329b8a1667965427fe6522f20ba6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37742895167"
+        }
+      ]
     }
   ]
 }
