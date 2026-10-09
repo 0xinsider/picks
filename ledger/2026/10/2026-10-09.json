@@ -66,16 +66,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7c7926a19b49f62df00acf47c150c66f20343c1d9f623475b7cccaa01894b9e5",
+      "commitment_nonce": "6f4c5a028378266f77e69aad76e11f3064bf9b78b55f7e32795f3e90c1d3b17c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T10:30:44.141857Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/3",
       "first_observation": {
         "observed_at": "2026-10-09T10:30:53.895464Z",
         "parent_commit": "6100c07fe025323d24d759541eda36f6040f1469",
         "run": "https://github.com/0xinsider/picks/actions/runs/37918051978"
-      }
+      },
+      "kickoff": "2026-10-09T15:00:00Z",
+      "resolved_at": "2026-10-09T19:02:00.207382Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x9f53479e350b54a5102086c6b8f1d84efcb29c3cc937bf8f99c64298af1fa631",
+        "kickoff": "2026-10-09T15:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "557",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seinajoen JK vs. FC Lahti",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T19:02:00.207382Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -83,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4325b768d0006fc0254945866e78cc264751081fe81fc5ed8610f9b3c8d61319",
+      "commitment_nonce": "418f1a9d45ff9dd7a56eea7c59c331f07d82342910586bcf02b8634c4ee91fa6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:21:25.491032Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/4",
       "first_observation": {
         "observed_at": "2026-10-09T12:21:34.291347Z",
         "parent_commit": "d1c636dbf0bc7e73f59745441ea703ad9024307b",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929485819"
-      }
+      },
+      "kickoff": "2026-10-09T13:30:00Z",
+      "resolved_at": "2026-10-09T16:46:28.773158Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x2bc93d807c96538e546ead4ec53d53ca93c5b05080d263811d165fd0feb7449f",
+        "kickoff": "2026-10-09T13:30:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "558",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: FURIA vs MOUZ (BO3) - ESL Pro League Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T16:46:28.773158Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 5,
@@ -100,16 +150,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c4dc44f6ca65214018c623cd3f98ac8b7b927e6a03a1c7eb80bafc1d4b9d48e8",
+      "commitment_nonce": "282d3567a28db7f6a2758204b55a213736b80f7b770e431ada010c1690945ccb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:21:30.333433Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/5",
       "first_observation": {
         "observed_at": "2026-10-09T12:21:34.291347Z",
         "parent_commit": "d1c636dbf0bc7e73f59745441ea703ad9024307b",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929485819"
-      }
+      },
+      "kickoff": "2026-10-09T15:00:00Z",
+      "resolved_at": "2026-10-09T19:17:39.128648Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xbb1d20406a9d9723318e334847c709caa7cb494f661f5a89305088fa3d60174b",
+        "kickoff": "2026-10-09T15:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "559",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "K27",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: fnatic vs K27 (BO3) - 1win Private Club #2: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T19:17:39.128648Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -117,16 +192,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ef55c096c769b6f875ef0d561e11be54d350064bc3f960c4b3c3ab34cdf9bd76",
+      "commitment_nonce": "80fa2d39ca604527901e7aff2b363b7d65fff34f6a769c2d8013c20c8c940a7a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:22:37.240324Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/6",
       "first_observation": {
         "observed_at": "2026-10-09T12:22:44.864846Z",
         "parent_commit": "2827a25f3cd902e2ee0b42d17539bb13ec7191d6",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929616116"
-      }
+      },
+      "kickoff": "2026-10-09T16:00:00Z",
+      "resolved_at": "2026-10-09T19:41:52.454048Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x363c38f38536398ea3eab5f57bef48fded8c3291934060346e717f2738805e8f",
+        "kickoff": "2026-10-09T16:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "560",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Spirit",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Team Falcons vs Spirit (BO3) - ESL Pro League Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-09T19:41:52.454048Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 7,
@@ -134,16 +234,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9c60b55d091831e6602bb3890c21ef8302f458f99be3cc3b049416783068ae2d",
+      "commitment_nonce": "c9bf7c7a6eb251b2b506e68c6b1a44a9365eac711b5c274c6d7b4b19d29a32d0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:22:37.281878Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/7",
       "first_observation": {
         "observed_at": "2026-10-09T12:22:44.864846Z",
         "parent_commit": "2827a25f3cd902e2ee0b42d17539bb13ec7191d6",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929616116"
-      }
+      },
+      "kickoff": "2026-10-09T18:30:00Z",
+      "resolved_at": "2026-10-09T20:45:45.037353Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0xae8820d0ac2ebc30ddff96ea38b29d63fed516ad68d05c2e5c4cf5baffd9c40a",
+        "kickoff": "2026-10-09T18:30:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "561",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. SV Werder Bremen",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/7",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T20:45:45.037353Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -151,16 +276,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8f9dfbc0c6d7b6da4cc1cf691ff800d618def07029388b99d3fc754249438e2b",
+      "commitment_nonce": "aea996319bbfd7cadaf8230fdd9ab27fdd795fa4ca209b075f28c5c0a965c624",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:22:37.322345Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/8",
       "first_observation": {
         "observed_at": "2026-10-09T12:22:44.864846Z",
         "parent_commit": "2827a25f3cd902e2ee0b42d17539bb13ec7191d6",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929616116"
-      }
+      },
+      "kickoff": "2026-10-09T18:30:00Z",
+      "resolved_at": "2026-10-09T20:45:45.079701Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x956f118f7c89961fb45615067b8e07ac39159be3d439c8279cabe2d0efd77518",
+        "kickoff": "2026-10-09T18:30:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "562",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. SV Werder Bremen",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-09T20:45:45.079701Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -185,16 +335,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dfc27716bc1b16c14e13929d6e35f767c69aacf325d5e86324a1d31a1909f236",
+      "commitment_nonce": "75189be4741ba49b86f22702acbbd855ba3a6a387b3faac97a444f6c124cd682",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T13:54:15.375104Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/10",
       "first_observation": {
         "observed_at": "2026-10-09T13:54:25.834607Z",
         "parent_commit": "d6c896e265b4f2f8e609a23ca1bb22edc0343c34",
         "run": "https://github.com/0xinsider/picks/actions/runs/37940204701"
-      }
+      },
+      "kickoff": "2026-10-09T16:30:00Z",
+      "resolved_at": "2026-10-09T20:29:45.438730Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0xaacdddf668d09a6792b16eacebe4cd098233fbe90e0458ba0d6cc0e173c69560",
+        "kickoff": "2026-10-09T16:30:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "564",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "1. FC Heidenheim vs. 1. FC Kaiserslautern",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-09T20:29:45.438730Z",
+          "parent_commit": "826ac6a1e3a1c00b77f118cae9190920f2600129",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37989808854"
+        }
+      ]
     },
     {
       "pick_rank": 11,
