@@ -100,16 +100,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "df011d721ec24e8e09f7da6c687402c3a918660715f1bacdede6b93c5d59ec75",
+      "commitment_nonce": "8df9bd5ef16224ce1e92fed30027e2950e67bb3ca70cba494f3e263ffcfae67f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-08T15:16:53.120712Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/5",
       "first_observation": {
         "observed_at": "2026-10-08T15:17:03.452048Z",
         "parent_commit": "184f52b0c15fd4383bfa57e47a598165ad6a3b3e",
         "run": "https://github.com/0xinsider/picks/actions/runs/37799431404"
-      }
+      },
+      "kickoff": "2026-10-08T23:00:00Z",
+      "resolved_at": "2026-10-09T01:44:59.716443Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.765000",
+        "condition_id": "0xf8a3c7decb06b0db9c5864772dd46ab46b65befe562cd4b30c9ebda3c8dca0e7",
+        "kickoff": "2026-10-08T23:00:00Z",
+        "pick_date": "2026-10-08",
+        "pick_id": "548",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hurricanes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Canucks vs. Hurricanes",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-09T01:44:59.716443Z",
+          "parent_commit": "320018d986e8976212c36469ba14c88c8a988944",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37873033684"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -134,16 +159,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ada19d6b7958048e8334350b16c87925f3d439c33ee0ba2da62e78ccb22c0983",
+      "commitment_nonce": "7802615fff672f38a8b296306a585e9a69b1db98ae02df78f8cbfedb60217776",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-08T17:15:42.865036Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/7",
       "first_observation": {
         "observed_at": "2026-10-08T17:15:53.489959Z",
         "parent_commit": "09c56d4f17e55be430619eb5bdf9c97c877e8184",
         "run": "https://github.com/0xinsider/picks/actions/runs/37815186800"
-      }
+      },
+      "kickoff": "2026-10-08T18:45:00Z",
+      "resolved_at": "2026-10-08T22:44:59.669389Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.775000",
+        "condition_id": "0x03a52f17c214da6c5df4bc89b74a03b96c6c588a1128470736f9c2062ce23ec1",
+        "kickoff": "2026-10-08T18:45:00Z",
+        "pick_date": "2026-10-08",
+        "pick_id": "550",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Real Madrid",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Real Madrid vs. Partizan",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-08/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-08T22:44:59.669389Z",
+          "parent_commit": "320018d986e8976212c36469ba14c88c8a988944",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37873033684"
+        }
+      ]
     },
     {
       "pick_rank": 8,
