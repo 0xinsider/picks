@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 418,
-    "sealed": 10,
+    "opened": 419,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 157,
+    "proven": 158,
     "proven_record": {
       "wins": 93,
-      "losses": 63,
-      "decided": 156,
-      "hit_rate": "59.6",
-      "profit_usd": "6545.59",
-      "staked": "156000",
-      "roi": "4.2"
+      "losses": 64,
+      "decided": 157,
+      "hit_rate": "59.2",
+      "profit_usd": "5545.59",
+      "staked": "157000",
+      "roi": "3.5"
     },
     "wins": 269,
-    "losses": 148,
+    "losses": 149,
     "voids": 1,
-    "decided": 417,
-    "hit_rate": "64.5",
+    "decided": 418,
+    "hit_rate": "64.4",
     "stake_usd": "1000",
-    "profit_usd": "24531.35",
-    "staked": "417000",
-    "roi": "5.9",
-    "through": "2026-10-08"
+    "profit_usd": "23531.35",
+    "staked": "418000",
+    "roi": "5.6",
+    "through": "2026-10-09"
   },
   "picks": [
     {
@@ -13829,16 +13829,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "87bf2fe0af8093b30b149419a73c6b5ef3659a941b567979524a427171f4c6b1",
+      "commitment_nonce": "aabec8f4d5b90eec6a774d0dae7ebd60cd7e16af5122b83537a017598b320af8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T07:00:18.695447Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/1",
       "first_observation": {
         "observed_at": "2026-10-09T07:00:30.080053Z",
         "parent_commit": "2c69e56bb8af0522489ba997766879f73307ccbd",
         "run": "https://github.com/0xinsider/picks/actions/runs/37896557353"
-      }
+      },
+      "kickoff": "2026-10-09T07:30:00Z",
+      "resolved_at": "2026-10-09T11:52:27.565153Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x5e84a9e848c8b139e6c69f63c94f04d8760ffe540d8f456e1a56a83141b73066",
+        "kickoff": "2026-10-09T07:30:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "555",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Incheon United FC vs. Pohang Steelers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T11:52:27.565153Z",
+          "parent_commit": "864534b3818aac9adc24034329cb90bbca17e251",
+          "run": "https://github.com/0xinsider/picks/actions/runs/37957065806"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-09",
