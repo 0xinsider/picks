@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 426,
-    "sealed": 7,
+    "opened": 428,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 165,
+    "proven": 167,
     "proven_record": {
       "wins": 96,
-      "losses": 68,
-      "decided": 164,
-      "hit_rate": "58.5",
-      "profit_usd": "4185.23",
-      "staked": "164000",
-      "roi": "2.6"
+      "losses": 70,
+      "decided": 166,
+      "hit_rate": "57.8",
+      "profit_usd": "2185.23",
+      "staked": "166000",
+      "roi": "1.3"
     },
     "wins": 272,
-    "losses": 153,
+    "losses": 155,
     "voids": 1,
-    "decided": 425,
-    "hit_rate": "64.0",
+    "decided": 427,
+    "hit_rate": "63.7",
     "stake_usd": "1000",
-    "profit_usd": "22171.00",
-    "staked": "425000",
-    "roi": "5.2",
+    "profit_usd": "20171.00",
+    "staked": "427000",
+    "roi": "4.7",
     "through": "2026-10-09"
   },
   "picks": [
@@ -13872,16 +13872,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ec820c3674d3659ca6e42a8420208e9932d827ce0c971354ac15b4613c96b288",
+      "commitment_nonce": "3e256076d5c9e0d9d5f74162ae2d0594826023ef1f4e77b2f6be8d09b84a063f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T07:45:47.157905Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/2",
       "first_observation": {
         "observed_at": "2026-10-09T07:45:59.922668Z",
         "parent_commit": "d3bd3d1e387f70519a65e08337d401424d51fa3a",
         "run": "https://github.com/0xinsider/picks/actions/runs/37900886445"
-      }
+      },
+      "kickoff": "2026-10-09T19:00:00Z",
+      "resolved_at": "2026-10-09T21:20:06.720793Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xbb6a7042145977cab1482b11ae1a8f53c2f2878727ca12208f69aa6d4cc5e3a2",
+        "kickoff": "2026-10-09T19:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "556",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Málaga CF vs. RCD Espanyol de Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T21:20:06.720793Z",
+          "parent_commit": "771d0c0ac423e1dee4e353cea7baeea2fe6a5ab8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38010560248"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-09",
@@ -14148,16 +14173,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "10f0a5e5aec9e5164dba4d64e2bafbd36181a3fee4050e2b7eab45b896973374",
+      "commitment_nonce": "56153fdbe615a8ee14f6b4e83e76bb153d4d72b4971dd0f1526dbe7e0de5c25d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T12:23:39.616278Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/9",
       "first_observation": {
         "observed_at": "2026-10-09T12:23:49.162899Z",
         "parent_commit": "0cc880d209d0d73157d1000205f8abc51dde1950",
         "run": "https://github.com/0xinsider/picks/actions/runs/37929730717"
-      }
+      },
+      "kickoff": "2026-10-09T18:45:00Z",
+      "resolved_at": "2026-10-09T21:20:06.771885Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x026aea7ac2f993c2bd541629b237d8a6b5da6a54d21710e72d46c8d191b7dfa7",
+        "kickoff": "2026-10-09T18:45:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "563",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Racing Club de Lens vs. Olympique Lyonnais",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-09T21:20:06.771885Z",
+          "parent_commit": "771d0c0ac423e1dee4e353cea7baeea2fe6a5ab8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38010560248"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-09",
