@@ -427,16 +427,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c08d1b1aa82dc36ab6608a766bb40c8124d30fcc54a30e3bd75279426f7e04f6",
+      "commitment_nonce": "cab229e6a27bfcead7eb4f18469eb2d2806ef5e422b2f7b375532931d4ce2dba",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T18:09:37.778036Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/11",
       "first_observation": {
         "observed_at": "2026-10-09T18:09:47.480666Z",
         "parent_commit": "7ee07448c8e8fc312fd8e70f0d99bbb622d86b39",
         "run": "https://github.com/0xinsider/picks/actions/runs/37971333292"
-      }
+      },
+      "kickoff": "2026-10-09T23:00:00Z",
+      "resolved_at": "2026-10-10T02:09:19.620438Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xebc2cf0a6933005ef53497f06a73f9086339fcfb2b1b343792af1dfa4ee89319",
+        "kickoff": "2026-10-09T23:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "565",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rangers vs. Capitals",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/11",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-10T02:09:19.620438Z",
+          "parent_commit": "00d371fb8ab0b248b65ba2f86a95637a862118d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38033093242"
+        }
+      ]
     },
     {
       "pick_rank": 12,
@@ -444,16 +469,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "82a80107966eb7fca9d9674a6ab8c0a1697f3c3a333e19d755687f9c94ad0963",
+      "commitment_nonce": "2ffe0de4d5937edc4a39ff8e61c5677b976aebccb46c55b8692c81183a1368c5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T18:33:33.540372Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/12",
       "first_observation": {
         "observed_at": "2026-10-09T18:33:42.081590Z",
         "parent_commit": "77c4fac37dcfc26ac5ce9a0e103dd80a4bdbc324",
         "run": "https://github.com/0xinsider/picks/actions/runs/37974123194"
-      }
+      },
+      "kickoff": "2026-10-09T23:00:00Z",
+      "resolved_at": "2026-10-10T02:09:19.669076Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x3d0793362d2ab7e3ff416e342ba980d37326f356e599ed7f1c5861f5385fb023",
+        "kickoff": "2026-10-09T23:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "566",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Red Wings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kraken vs. Red Wings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-10T02:09:19.669076Z",
+          "parent_commit": "00d371fb8ab0b248b65ba2f86a95637a862118d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38033093242"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -461,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ff54b485797e7b515b9b29a06739768202e25ffb0c9d62c61b038cabe8318878",
+      "commitment_nonce": "4f3d1927280eb975c2478c856098500c05b900bfedaf8b44fcfe3c594626005f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T18:34:32.710828Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/13",
       "first_observation": {
         "observed_at": "2026-10-09T18:34:42.377178Z",
         "parent_commit": "3887d7562b7cf1b853b55f9f13115889a54fbe4b",
         "run": "https://github.com/0xinsider/picks/actions/runs/37974234863"
-      }
+      },
+      "kickoff": "2026-10-10T00:00:00Z",
+      "resolved_at": "2026-10-10T03:01:53.165509Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x3ae4dd650e952e1a6fb71b4fe60583f03c1ff54c377c68af5a7720b79ef9d614",
+        "kickoff": "2026-10-10T00:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "567",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Bulls",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Grizzlies vs. Bulls",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-10T03:01:53.165509Z",
+          "parent_commit": "00d371fb8ab0b248b65ba2f86a95637a862118d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38033093242"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -478,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3c185f8bdec9b6d584ef623276f63b420540c41978ebea93dcc99784730e2707",
+      "commitment_nonce": "59a13fe990a13a61784426d639158dd32ea5bb2e8ab929607d67cd606f0b3ff2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T18:37:18.049085Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/14",
       "first_observation": {
         "observed_at": "2026-10-09T18:37:27.933361Z",
         "parent_commit": "b7b4cb7e50f2ea6bc333265db5ce68b8dc80f453",
         "run": "https://github.com/0xinsider/picks/actions/runs/37974551920"
-      }
+      },
+      "kickoff": "2026-10-10T01:00:00Z",
+      "resolved_at": "2026-10-10T04:50:57.593065Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x43b70ae124e0c563f5f00bf1b2e41ffd34b8554f33af4c867dcfb5bba2e7774a",
+        "kickoff": "2026-10-10T01:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "568",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Iowa",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Iowa vs. Washington",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-10T04:50:57.593065Z",
+          "parent_commit": "00d371fb8ab0b248b65ba2f86a95637a862118d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38033093242"
+        }
+      ]
     },
     {
       "pick_rank": 15,
@@ -495,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c7906461c1c94a0a778bde81003cf2ce43dcc680cd1f8ee128db592764ff47a9",
+      "commitment_nonce": "b0c955927f590db98ca1f417da8972b48d6f065dbfef97b489cc47bdd25f6abb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-09T18:39:20.586406Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/15",
       "first_observation": {
         "observed_at": "2026-10-09T18:39:30.862902Z",
         "parent_commit": "099fe8c589df8347582ea710db5ef1f9d957e1de",
         "run": "https://github.com/0xinsider/picks/actions/runs/37974784759"
-      }
+      },
+      "kickoff": "2026-10-10T00:00:00Z",
+      "resolved_at": "2026-10-10T02:51:27.312182Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xf7b1ac0a4fc38d2274fcd21c3e1b522627cde01f8ad61feb25d2fcd1fddcf7dc",
+        "kickoff": "2026-10-10T00:00:00Z",
+        "pick_date": "2026-10-09",
+        "pick_id": "569",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ducks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ducks vs. Jets",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-09/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-10T02:51:27.312182Z",
+          "parent_commit": "00d371fb8ab0b248b65ba2f86a95637a862118d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38033093242"
+        }
+      ]
     }
   ]
 }
