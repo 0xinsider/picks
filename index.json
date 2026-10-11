@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 445,
-    "sealed": 3,
+    "opened": 446,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 184,
+    "proven": 185,
     "proven_record": {
-      "wins": 107,
+      "wins": 108,
       "losses": 76,
-      "decided": 183,
-      "hit_rate": "58.5",
-      "profit_usd": "7007.67",
-      "staked": "183000",
-      "roi": "3.8"
+      "decided": 184,
+      "hit_rate": "58.7",
+      "profit_usd": "8069.53",
+      "staked": "184000",
+      "roi": "4.4"
     },
-    "wins": 283,
+    "wins": 284,
     "losses": 161,
     "voids": 1,
-    "decided": 444,
-    "hit_rate": "63.7",
+    "decided": 445,
+    "hit_rate": "63.8",
     "stake_usd": "1000",
-    "profit_usd": "24993.43",
-    "staked": "444000",
-    "roi": "5.6",
+    "profit_usd": "26055.29",
+    "staked": "445000",
+    "roi": "5.9",
     "through": "2026-10-10"
   },
   "picks": [
@@ -15008,16 +15008,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "21b4009fe61081d416db34ee230dd12e2ba3dd30315b69f9879e48388d70e309",
+      "commitment_nonce": "7dd753db790a797652714fe4cf875d23382961f80cc5a34f8cfcbceb49b712bd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-10T14:07:23.041987Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/14",
       "first_observation": {
         "observed_at": "2026-10-10T14:07:30.490590Z",
         "parent_commit": "1e10f4cd787b391e649cceec885b4c94a1e11ad7",
         "run": "https://github.com/0xinsider/picks/actions/runs/38058365462"
-      }
+      },
+      "kickoff": "2026-10-10T19:30:00Z",
+      "resolved_at": "2026-10-10T23:22:19.167147Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xc2bfe187717c13c48e2874cb66864537ad03b0e95edcb6187a06cccfa1c6f69e",
+        "kickoff": "2026-10-10T19:30:00Z",
+        "pick_date": "2026-10-10",
+        "pick_id": "583",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Duke vs. Georgia Tech",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-10T23:22:19.167147Z",
+          "parent_commit": "109770af9e6fefb32e6afcf2e97c27531729e158",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38103183830"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-10",
