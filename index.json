@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 447,
-    "sealed": 12,
+    "opened": 453,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 186,
+    "proven": 192,
     "proven_record": {
-      "wins": 109,
-      "losses": 76,
-      "decided": 185,
-      "hit_rate": "58.9",
-      "profit_usd": "9089.73",
-      "staked": "185000",
-      "roi": "4.9"
+      "wins": 111,
+      "losses": 80,
+      "decided": 191,
+      "hit_rate": "58.1",
+      "profit_usd": "7229.28",
+      "staked": "191000",
+      "roi": "3.8"
     },
-    "wins": 285,
-    "losses": 161,
+    "wins": 287,
+    "losses": 165,
     "voids": 1,
-    "decided": 446,
-    "hit_rate": "63.9",
+    "decided": 452,
+    "hit_rate": "63.5",
     "stake_usd": "1000",
-    "profit_usd": "27075.49",
-    "staked": "446000",
-    "roi": "6.1",
-    "through": "2026-10-10"
+    "profit_usd": "25215.04",
+    "staked": "452000",
+    "roi": "5.6",
+    "through": "2026-10-11"
   },
   "picks": [
     {
@@ -15130,16 +15130,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a2f2290bc739c5d4639034ba3e3257cf7be43322f149843c7a65478f7f01b8af",
+      "commitment_nonce": "3f9ee757a790a165ed8899e9cfb4d9902ad047ef42982917d6b566c8894b6c8e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T09:11:35.523484Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/3",
       "first_observation": {
         "observed_at": "2026-10-11T09:11:44.250358Z",
         "parent_commit": "620b35c6c35d03136b584d9408e8035fc3b1642b",
         "run": "https://github.com/0xinsider/picks/actions/runs/38127490684"
-      }
+      },
+      "kickoff": "2026-10-11T13:00:00Z",
+      "resolved_at": "2026-10-11T15:21:10.914805Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x7a0d504297e75f9fadb59e3085bc3e70aa8ce24c99d2740a79829f111119e41e",
+        "kickoff": "2026-10-11T13:00:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "587",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hull City AFC vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-11T15:21:10.914805Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
@@ -15148,16 +15173,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4123da4091f65055395ab5998cc36525f8c3d63efc3699b6a480985f2809b625",
+      "commitment_nonce": "2fab267748bfcfb893d205376bb1cefb8c648e2ad8bb075122d63238b7c1f405",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T09:26:39.362479Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/4",
       "first_observation": {
         "observed_at": "2026-10-11T09:26:48.331927Z",
         "parent_commit": "a48356df276368cdb7bf30e6f289dae0d3dca632",
         "run": "https://github.com/0xinsider/picks/actions/runs/38128386318"
-      }
+      },
+      "kickoff": "2026-10-11T13:00:00Z",
+      "resolved_at": "2026-10-11T15:14:11.709034Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x4e96adeeb573649f1d1cb91d41b8cbc7175bd201f30c0ea60730a2de66a090a0",
+        "kickoff": "2026-10-11T13:00:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "588",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SS Lazio vs. AC Monza",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-11T15:14:11.709034Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
@@ -15166,16 +15216,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d5f9d33113f23e714a69b02a5641f018f7b322f1dba00def6b1d21d467c80860",
+      "commitment_nonce": "53f6c7e92013da629dd56a3e564d2e1594d416fda8a263a1e1586c881cccb9e2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T10:05:28.677905Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/5",
       "first_observation": {
         "observed_at": "2026-10-11T10:05:37.855225Z",
         "parent_commit": "d7db559c045fb4c0bdf8aa4348f33243d8137c1b",
         "run": "https://github.com/0xinsider/picks/actions/runs/38130703186"
-      }
+      },
+      "kickoff": "2026-10-11T10:30:00Z",
+      "resolved_at": "2026-10-11T13:02:10.807489Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.315000",
+        "condition_id": "0x7dda5f6f53bfcb6d105709ddfbcf41aa30bf6754b82bf2ace5fc73160681037c",
+        "kickoff": "2026-10-11T10:30:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "589",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Como 1907 vs. AS Roma",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/5",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-11T13:02:10.807489Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
@@ -15184,16 +15259,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c2566d0cef429db7d9155d4603b3c8ccfd536af7a85c92a5abdf9b0f51123630",
+      "commitment_nonce": "7102fa924e9ef92b6c35fd1763919dcc4be29cf1682b521d72325d63b3215be0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T10:08:00.803838Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/6",
       "first_observation": {
         "observed_at": "2026-10-11T10:08:07.687853Z",
         "parent_commit": "11aec6e951d9879679d6a5a442d43c4f25fff76a",
         "run": "https://github.com/0xinsider/picks/actions/runs/38130854660"
-      }
+      },
+      "kickoff": "2026-10-11T10:30:00Z",
+      "resolved_at": "2026-10-11T13:02:10.839774Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xde5ba60f59a83ab931101dac676855092ca8e0d4cba7eec45e76c0acc9c1392d",
+        "kickoff": "2026-10-11T10:30:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "590",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Como 1907 vs. AS Roma",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-11T13:02:10.839774Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
@@ -15202,16 +15302,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cba12581a07c75e3b4c5be24c515582de4753b0259be38986440968813737c73",
+      "commitment_nonce": "1a4c8518239c10b57f3a878c995e604ca832b93c362da0100dc1513ae76b8351",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T10:11:35.086674Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/7",
       "first_observation": {
         "observed_at": "2026-10-11T10:11:44.433281Z",
         "parent_commit": "902c6ea37929466440be7290ae705f204ae18c24",
         "run": "https://github.com/0xinsider/picks/actions/runs/38131067001"
-      }
+      },
+      "kickoff": "2026-10-11T11:00:00Z",
+      "resolved_at": "2026-10-11T15:03:10.127901Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xb3c8b5e0eec25ade9e35d78116d2f637e3d1424832537c180b3e64d3257811e9",
+        "kickoff": "2026-10-11T11:00:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "591",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Southampton FC vs. Portsmouth FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/7",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-11T15:03:10.127901Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
@@ -15220,16 +15345,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4fd1ae9a100bb65ae3a282a9848b8035906cb445de00b24f0fca1e2da592ab18",
+      "commitment_nonce": "3c49f859656cdff4013bc2863a50a6625501a648e92fb0735d13a3b9473fc58a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T10:56:35.268836Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/8",
       "first_observation": {
         "observed_at": "2026-10-11T10:56:46.277981Z",
         "parent_commit": "c2d091df8366d5e2c8869b3976ac07595c8f66d5",
         "run": "https://github.com/0xinsider/picks/actions/runs/38133758844"
-      }
+      },
+      "kickoff": "2026-10-11T11:30:00Z",
+      "resolved_at": "2026-10-11T15:27:06.043834Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x3940db8adce2d4e1c25f20b09cd8b7f793a845fd94a8a4e4a679a214e791ed53",
+        "kickoff": "2026-10-11T11:30:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "592",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hertha BSC vs. SpVgg Greuther Fürth",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-11T15:27:06.043834Z",
+          "parent_commit": "2e59ce2448c24cbad8b6960864cd03ca5d7f38be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38152064943"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
