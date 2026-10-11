@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 446,
-    "sealed": 4,
+    "opened": 447,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 185,
+    "proven": 186,
     "proven_record": {
-      "wins": 108,
+      "wins": 109,
       "losses": 76,
-      "decided": 184,
-      "hit_rate": "58.7",
-      "profit_usd": "8069.53",
-      "staked": "184000",
-      "roi": "4.4"
+      "decided": 185,
+      "hit_rate": "58.9",
+      "profit_usd": "9089.73",
+      "staked": "185000",
+      "roi": "4.9"
     },
-    "wins": 284,
+    "wins": 285,
     "losses": 161,
     "voids": 1,
-    "decided": 445,
-    "hit_rate": "63.8",
+    "decided": 446,
+    "hit_rate": "63.9",
     "stake_usd": "1000",
-    "profit_usd": "26055.29",
-    "staked": "445000",
-    "roi": "5.9",
+    "profit_usd": "27075.49",
+    "staked": "446000",
+    "roi": "6.1",
     "through": "2026-10-10"
   },
   "picks": [
@@ -15051,16 +15051,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "92bba6379d9869f0ac351d5d5f32c9947b3a839a3c8afbe206cb41c8584ef47a",
+      "commitment_nonce": "cea73d42d449bbf7018abe8a1b0bd1e32002dc6dc6fd3600c00b7c21fed63e1a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-10T14:07:23.075558Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/15",
       "first_observation": {
         "observed_at": "2026-10-10T14:07:30.490590Z",
         "parent_commit": "1e10f4cd787b391e649cceec885b4c94a1e11ad7",
         "run": "https://github.com/0xinsider/picks/actions/runs/38058365462"
-      }
+      },
+      "kickoff": "2026-10-10T23:30:00Z",
+      "resolved_at": "2026-10-11T04:10:35.761405Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x7b1076976e3986bfae88136b96f9fde0643a8e75d13982950d6f1318f8a5779b",
+        "kickoff": "2026-10-10T23:30:00Z",
+        "pick_date": "2026-10-10",
+        "pick_id": "584",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Syracuse vs. Virginia",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-11T04:10:35.761405Z",
+          "parent_commit": "dbe7774dffd842605ec4bc83e2e3c90a3b07dccb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38125983877"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-11",
