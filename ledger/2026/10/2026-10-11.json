@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d0103107443f050ca84aaecaa4618bcad48db6e60a1a27c90d3cdcf1280f43cd",
+      "commitment_nonce": "fbd9aaa9f773569605377789f6ccae029e0cfa4b8a8bd58772a3f105efd23840",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T17:16:08.474206Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/13",
       "first_observation": {
         "observed_at": "2026-10-11T17:16:16.736441Z",
         "parent_commit": "fcfdca5054bfb03f5ea0fd5206e9e9f4d38b39fc",
         "run": "https://github.com/0xinsider/picks/actions/runs/38158927465"
-      }
+      },
+      "kickoff": "2026-10-12T00:20:00Z",
+      "resolved_at": "2026-10-12T03:57:31.584800Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x00339e9fdcd545804b4d32b8c6b2fea95ec1288705bd0168f8fc0d906844937e",
+        "kickoff": "2026-10-12T00:20:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "597",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ravens vs. Falcons",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-12T03:57:31.584800Z",
+          "parent_commit": "f358de166e0cde713e7b2e00dcba74dba5558eb6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38209860954"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -570,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "670665dd431d8bb5ec173b294aeee9ea536a30537f6cf42d90281c459c747b90",
+      "commitment_nonce": "e2addefa254087fac0683cec3a63fc6c6501125d9211ad4efa2085b9a615f4c7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-11T21:26:42.467148Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/15",
       "first_observation": {
         "observed_at": "2026-10-11T21:26:50.283013Z",
         "parent_commit": "f2f54c34036e87d74bcd4156c37065ba88f8c810",
         "run": "https://github.com/0xinsider/picks/actions/runs/38176390669"
-      }
+      },
+      "kickoff": "2026-10-12T00:00:00Z",
+      "resolved_at": "2026-10-12T03:57:31.629593Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x7484a52808744d840526973008cf17180844bc4f33ee56ce7ef46b693524157e",
+        "kickoff": "2026-10-12T00:00:00Z",
+        "pick_date": "2026-10-11",
+        "pick_id": "599",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Los Angeles Dodgers vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-11/15",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-12T03:57:31.629593Z",
+          "parent_commit": "f358de166e0cde713e7b2e00dcba74dba5558eb6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38209860954"
+        }
+      ]
     }
   ]
 }
