@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 487,
-    "sealed": 5,
+    "opened": 489,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 226,
+    "proven": 228,
     "proven_record": {
-      "wins": 131,
+      "wins": 133,
       "losses": 94,
-      "decided": 225,
-      "hit_rate": "58.2",
-      "profit_usd": "10249.52",
-      "staked": "225000",
-      "roi": "4.6"
+      "decided": 227,
+      "hit_rate": "58.6",
+      "profit_usd": "10766.13",
+      "staked": "227000",
+      "roi": "4.7"
     },
-    "wins": 307,
+    "wins": 309,
     "losses": 179,
     "voids": 1,
-    "decided": 486,
-    "hit_rate": "63.2",
+    "decided": 488,
+    "hit_rate": "63.3",
     "stake_usd": "1000",
-    "profit_usd": "28235.28",
-    "staked": "486000",
-    "roi": "5.8",
+    "profit_usd": "28751.90",
+    "staked": "488000",
+    "roi": "5.9",
     "through": "2026-10-13"
   },
   "picks": [
@@ -16470,16 +16470,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dccdf983da7550c780620a7606f203f2c159a759d11ff6f9da65042ae821d353",
+      "commitment_nonce": "dbf2053e77d599c460e9a849b658c6aad9a099c0e43147c963b19ba228a11fcb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-13T10:07:30.023571Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/4",
       "first_observation": {
         "observed_at": "2026-10-13T10:07:38.562304Z",
         "parent_commit": "5de6fa4d80bd3c6b5809f5f21b0c6c070c176f14",
         "run": "https://github.com/0xinsider/picks/actions/runs/38381202598"
-      }
+      },
+      "kickoff": "2026-10-13T23:00:00Z",
+      "resolved_at": "2026-10-14T01:29:42.479023Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.810000",
+        "condition_id": "0xb0395710619de75d9686dcf3743173a580e6eba6238593bedec7221b7a8abca0",
+        "kickoff": "2026-10-13T23:00:00Z",
+        "pick_date": "2026-10-13",
+        "pick_id": "618",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Smilla Sundell",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dana White's Contender Series: Aline Pereira vs. Smilla Sundell (Women's Bantamweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-14T01:29:42.479023Z",
+          "parent_commit": "3b552b2ab826db7e612e47b09043a9965b8b8608",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38498273314"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-13",
@@ -16832,16 +16857,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ac180db3fb6bde79172965f40033542c4fdcc9ec4cd7e037568b0b7c861174a2",
+      "commitment_nonce": "34c0fbc9c2c1097cf5fb1c9d5a810c1a97d1f005eb08385b3af320e46844ce1d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-13T18:27:32.502984Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/13",
       "first_observation": {
         "observed_at": "2026-10-13T18:27:42.801690Z",
         "parent_commit": "988db5ffda87d6cd8ceb4239045f365203058e21",
         "run": "https://github.com/0xinsider/picks/actions/runs/38446904986"
-      }
+      },
+      "kickoff": "2026-10-13T22:00:00Z",
+      "resolved_at": "2026-10-13T23:42:21.087765Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.780000",
+        "condition_id": "0x930f9f94cdeb13979c3501bbd28971f9c5f14abc55a84ceea12ab751dd5fac47",
+        "kickoff": "2026-10-13T22:00:00Z",
+        "pick_date": "2026-10-13",
+        "pick_id": "627",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Devils vs. Red Wings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-13T23:42:21.087765Z",
+          "parent_commit": "3b552b2ab826db7e612e47b09043a9965b8b8608",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38498273314"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-13",
