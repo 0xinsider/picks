@@ -553,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bac93b8062e091fc8a4e23afbd3259ba01b0e2d9acf28a7acec1b5c4900d293f",
+      "commitment_nonce": "efd3c3e209aaa895df41516d1b9f345e050aee4b9bc6bb27408396e2853a531e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-13T21:14:11.739907Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/14",
       "first_observation": {
         "observed_at": "2026-10-13T21:14:23.145486Z",
         "parent_commit": "0fc1ef973ee96951765c1afa69fa8133d538dfa8",
         "run": "https://github.com/0xinsider/picks/actions/runs/38469042245"
-      }
+      },
+      "kickoff": "2026-10-13T23:00:00Z",
+      "resolved_at": "2026-10-14T01:59:47.473289Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xa2655607e194b0e8958cb4ecfdda3867b8643641697c008924de10094d46824e",
+        "kickoff": "2026-10-13T23:00:00Z",
+        "pick_date": "2026-10-13",
+        "pick_id": "628",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Raptors",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-14T01:59:47.473289Z",
+          "parent_commit": "63a19bd6f76027772ecb95564807a5737fb04c58",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38529208838"
+        }
+      ]
     },
     {
       "pick_rank": 15,
@@ -570,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "89043690d00648c8ab01ed3c0e939aae7c25362b6632cf06ac8790a2383b9992",
+      "commitment_nonce": "9aadd0ecaabd459e988a0298db68a3b8702d94f71a09d1001e6e4c4f84cab019",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-13T21:15:57.663715Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/15",
       "first_observation": {
         "observed_at": "2026-10-13T21:16:07.572462Z",
         "parent_commit": "8fdadee2fefb86a7e21986dfd8a574ca327f9c7e",
         "run": "https://github.com/0xinsider/picks/actions/runs/38469276041"
-      }
+      },
+      "kickoff": "2026-10-13T23:00:00Z",
+      "resolved_at": "2026-10-14T01:59:47.507899Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x8d20ecced3c5a5221b8ea449741ae9cff5b66ecabab3219b98d5b5033dccd64b",
+        "kickoff": "2026-10-13T23:00:00Z",
+        "pick_date": "2026-10-13",
+        "pick_id": "629",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Cavaliers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cavaliers vs. Magic",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-13/15",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-14T01:59:47.507899Z",
+          "parent_commit": "63a19bd6f76027772ecb95564807a5737fb04c58",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38529208838"
+        }
+      ]
     }
   ]
 }
