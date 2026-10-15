@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2baef2bca17f736f2269db33f53f7b0af1f5b71d6e44b90833e40b101b4e2e4c",
+      "commitment_nonce": "82cd2e87953c5e1ecf9e02ed6bb11ff36097ba3ab997dc1a7e37d24fffbec05e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T10:46:00.484435Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/1",
       "first_observation": {
         "observed_at": "2026-10-15T10:46:11.426495Z",
         "parent_commit": "4ed3f17486558f897013b03254155c8b6b69c908",
         "run": "https://github.com/0xinsider/picks/actions/runs/38722588111"
-      }
+      },
+      "kickoff": "2026-10-15T13:30:00Z",
+      "resolved_at": "2026-10-15T19:00:11.379992Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x622f967d9112e785df51204ce13d4d5377a52ecc7b9ff9e2e481b666b6007ac0",
+        "kickoff": "2026-10-15T13:30:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "645",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: PARIVISION vs BetBoom Team (BO3) - Thunderpick World Championship Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-15T19:00:11.379992Z",
+          "parent_commit": "2a5ce1d1136a9ffc7db33299babd5c8489f36e68",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38801029784"
+        }
+      ]
     },
     {
       "pick_rank": 2,
