@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8fb27537ff0b8a85920b616a585a1899f529166ec65041e86cc57129cb015aa2",
+      "commitment_nonce": "709b17d3a14623cf63110e4386c4fbafddd3a0fddf8b31b3ffb0cf1af72bfeca",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-14T10:45:49.846194Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/3",
       "first_observation": {
         "observed_at": "2026-10-14T10:45:59.261366Z",
         "parent_commit": "aaedc3743cd9eb1180e43dca100d1d16deb3243e",
         "run": "https://github.com/0xinsider/picks/actions/runs/38551836196"
-      }
+      },
+      "kickoff": "2026-10-15T00:30:00Z",
+      "resolved_at": "2026-10-15T03:43:49.798245Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.775000",
+        "condition_id": "0xd3c50957416a37d9b3d1d04c45b696302b708d0cf1ef2e3437c3e6e3f382c254",
+        "kickoff": "2026-10-15T00:30:00Z",
+        "pick_date": "2026-10-14",
+        "pick_id": "632",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Stars vs. Avalanche",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-15T03:43:49.798245Z",
+          "parent_commit": "689c9c2a2fd366e9ffa6b37d002b5d1425dae857",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38689222621"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -528,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd14fce69dfaea863089e2889eb36ffe98e2afcf4c783f74f741b435f1a98f0f",
+      "commitment_nonce": "5f9ec7b164f26b14fe41bb2d419e7dab8e384c4c403521243924acc297987083",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-14T21:04:42.292240Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/14",
       "first_observation": {
         "observed_at": "2026-10-14T21:04:50.817558Z",
         "parent_commit": "2f4b5954b10f8e535e9fe2c5093f9718c4f9c6c6",
         "run": "https://github.com/0xinsider/picks/actions/runs/38637393358"
-      }
+      },
+      "kickoff": "2026-10-14T23:30:00Z",
+      "resolved_at": "2026-10-15T02:13:49.756385Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x038cda121c99f3fe2a847c6b2b5366f63c4a753fd353b9cfc2609a63fcbcb7f6",
+        "kickoff": "2026-10-14T23:30:00Z",
+        "pick_date": "2026-10-14",
+        "pick_id": "643",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Toronto FC vs. Orlando City SC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-15T02:13:49.756385Z",
+          "parent_commit": "689c9c2a2fd366e9ffa6b37d002b5d1425dae857",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38689222621"
+        }
+      ]
     },
     {
       "pick_rank": 15,
@@ -545,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "04beebf7f1e149d5a78021fcfe7ac837c4e2887511cd347ee7ca0241cfc70ca9",
+      "commitment_nonce": "1cf1caf02d24a12155c0325f607162eab43defae3fdd3ed07a81a5e32dac5cbc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-14T21:09:01.763849Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/15",
       "first_observation": {
         "observed_at": "2026-10-14T21:09:09.489363Z",
         "parent_commit": "6a08f1957a139792c76622c62c6e97237525a60b",
         "run": "https://github.com/0xinsider/picks/actions/runs/38637968110"
-      }
+      },
+      "kickoff": "2026-10-15T00:00:00Z",
+      "resolved_at": "2026-10-15T03:43:49.751860Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x75ee71f41c90708fd891f13384bf563016523828c13fe64a268169c5bf68e062",
+        "kickoff": "2026-10-15T00:00:00Z",
+        "pick_date": "2026-10-14",
+        "pick_id": "644",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Los Angeles Dodgers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Milwaukee Brewers vs. Los Angeles Dodgers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-14/15",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-15T03:43:49.751860Z",
+          "parent_commit": "689c9c2a2fd366e9ffa6b37d002b5d1425dae857",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38689222621"
+        }
+      ]
     }
   ]
 }
