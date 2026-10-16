@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 517,
-    "sealed": 8,
+    "opened": 522,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 256,
+    "proven": 261,
     "proven_record": {
-      "wins": 147,
-      "losses": 108,
-      "decided": 255,
-      "hit_rate": "57.6",
-      "profit_usd": "6067.58",
-      "staked": "255000",
-      "roi": "2.4"
+      "wins": 151,
+      "losses": 109,
+      "decided": 260,
+      "hit_rate": "58.1",
+      "profit_usd": "8378.83",
+      "staked": "260000",
+      "roi": "3.2"
     },
-    "wins": 323,
-    "losses": 193,
+    "wins": 327,
+    "losses": 194,
     "voids": 1,
-    "decided": 516,
-    "hit_rate": "62.6",
+    "decided": 521,
+    "hit_rate": "62.8",
     "stake_usd": "1000",
-    "profit_usd": "24053.34",
-    "staked": "516000",
-    "roi": "4.7",
+    "profit_usd": "26364.59",
+    "staked": "521000",
+    "roi": "5.1",
     "through": "2026-10-15"
   },
   "picks": [
@@ -17717,16 +17717,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "135b7c35dad45140782a5279a56637d63567d9eec3a1d3b8805420083e463003",
+      "commitment_nonce": "a6419fd1027e9786ecf705271a9ce9e774c51116f02fd66cc341c1f17ba1b613",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T12:56:43.399945Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/3",
       "first_observation": {
         "observed_at": "2026-10-15T12:57:02.569098Z",
         "parent_commit": "14b9ca522745a7f0e0d99b4a1df3b1610a1b5496",
         "run": "https://github.com/0xinsider/picks/actions/runs/38738581739"
-      }
+      },
+      "kickoff": "2026-10-15T19:00:00Z",
+      "resolved_at": "2026-10-15T23:55:33.098466Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x5ca14fdac5ad811de7d5a3d1075fca78b9fd6e32862e6e1dd7e403e7493cac2b",
+        "kickoff": "2026-10-15T19:00:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "647",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Twente vs. FC Thun",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-15T23:55:33.098466Z",
+          "parent_commit": "3976186a99d37cc38b82a5c9ba0249268de1686f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38850716157"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
@@ -18122,16 +18147,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f408ba656ce3742b88dc9d0dc3b57b6c7d1733549671ac49891a3510ae4aabeb",
+      "commitment_nonce": "cc59773fc24dbf309d84e8cfd5fa60338b1783ba914a39b2fca503d230594f1a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T18:41:48.063984Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/13",
       "first_observation": {
         "observed_at": "2026-10-15T18:41:58.455622Z",
         "parent_commit": "2123acdafcef8158ffad6c239de718a76ad8a65e",
         "run": "https://github.com/0xinsider/picks/actions/runs/38787756555"
-      }
+      },
+      "kickoff": "2026-10-15T23:00:00Z",
+      "resolved_at": "2026-10-16T02:24:25.916915Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x885bd53f5163b582875ac80e65bbf6e1b33f42daf0acad391891976e61dc5709",
+        "kickoff": "2026-10-15T23:00:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "657",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Panthers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Canucks vs. Panthers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T02:24:25.916915Z",
+          "parent_commit": "3976186a99d37cc38b82a5c9ba0249268de1686f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38850716157"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
@@ -18140,16 +18190,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b2e40d66bf5464a1a376cfdb273a5bc848952f9c85ae2c09ad1fb63c3ee9a989",
+      "commitment_nonce": "ee1b1fbcdf8d8f45165b03e29f097c238801b868d114aa9d32e4f43a9d19c6ad",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T18:56:48.325402Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/14",
       "first_observation": {
         "observed_at": "2026-10-15T18:56:58.882098Z",
         "parent_commit": "cb37158579117799a40552cec82130406f101053",
         "run": "https://github.com/0xinsider/picks/actions/runs/38789819743"
-      }
+      },
+      "kickoff": "2026-10-16T00:15:00Z",
+      "resolved_at": "2026-10-16T03:59:17.103104Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x7c61b711c2ebaf7fd3912463259cb1054dae1d58aaa3c5d6eabe22eadea8761c",
+        "kickoff": "2026-10-16T00:15:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "658",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seahawks vs. Broncos",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-16T03:59:17.103104Z",
+          "parent_commit": "3976186a99d37cc38b82a5c9ba0249268de1686f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38850716157"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
@@ -18158,16 +18233,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3ee009c36002e5a25d3fe4d94b15d6b62de13483182a647c7ea0d4c76ba65e2c",
+      "commitment_nonce": "831b55296efd36861ad783249f244713194174a855d06413f5eb59993031683a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T22:41:49.857536Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/15",
       "first_observation": {
         "observed_at": "2026-10-15T22:41:57.436570Z",
         "parent_commit": "a95d117d711d56b004127e74890b13fffe87fe8b",
         "run": "https://github.com/0xinsider/picks/actions/runs/38818856255"
-      }
+      },
+      "kickoff": "2026-10-15T23:30:00Z",
+      "resolved_at": "2026-10-16T03:59:17.059080Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xb0fe63efc91ca2befd24330ead6120f5967625339c743191f1cecf808db66dc1",
+        "kickoff": "2026-10-15T23:30:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "659",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "UAB",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "East Carolina vs. UAB",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T03:59:17.059080Z",
+          "parent_commit": "3976186a99d37cc38b82a5c9ba0249268de1686f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38850716157"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
@@ -18176,16 +18276,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1fa47a81ae73cf679a6d8e0a38c963c6a79c7d90847baaa2385d2f3328120780",
+      "commitment_nonce": "3d0d8df29aad0842c9039f508c8d7098596158e2624187fb5b677289d3eeafd1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T23:27:22.619734Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/16",
       "first_observation": {
         "observed_at": "2026-10-15T23:27:30.668319Z",
         "parent_commit": "b0d2acdd15be026713cb47cc9d83515d94403cd9",
         "run": "https://github.com/0xinsider/picks/actions/runs/38823673089"
-      }
+      },
+      "kickoff": "2026-10-16T00:00:00Z",
+      "resolved_at": "2026-10-16T02:24:25.959200Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xa16de96620595d0027bd2445c85ff5c277bd94ce39518501abf06e437a0aa0f3",
+        "kickoff": "2026-10-16T00:00:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "660",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Colorado State vs. Texas State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/16",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T02:24:25.959200Z",
+          "parent_commit": "3976186a99d37cc38b82a5c9ba0249268de1686f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38850716157"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
