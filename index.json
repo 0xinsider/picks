@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 522,
-    "sealed": 6,
+    "opened": 524,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 261,
+    "proven": 263,
     "proven_record": {
-      "wins": 151,
+      "wins": 153,
       "losses": 109,
-      "decided": 260,
-      "hit_rate": "58.1",
-      "profit_usd": "8378.83",
-      "staked": "260000",
-      "roi": "3.2"
+      "decided": 262,
+      "hit_rate": "58.4",
+      "profit_usd": "9820.00",
+      "staked": "262000",
+      "roi": "3.7"
     },
-    "wins": 327,
+    "wins": 329,
     "losses": 194,
     "voids": 1,
-    "decided": 521,
-    "hit_rate": "62.8",
+    "decided": 523,
+    "hit_rate": "62.9",
     "stake_usd": "1000",
-    "profit_usd": "26364.59",
-    "staked": "521000",
-    "roi": "5.1",
+    "profit_usd": "27805.76",
+    "staked": "523000",
+    "roi": "5.3",
     "through": "2026-10-15"
   },
   "picks": [
@@ -18319,16 +18319,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7e272fcc896faa65e5dfd9e6c8ec3b156a17efb46cc789cb527a422970b51016",
+      "commitment_nonce": "18443144e4c777971e5625bdff1008959b1a6d5909100e6215dfe19f191d7566",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T23:27:22.659820Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/17",
       "first_observation": {
         "observed_at": "2026-10-15T23:27:30.668319Z",
         "parent_commit": "b0d2acdd15be026713cb47cc9d83515d94403cd9",
         "run": "https://github.com/0xinsider/picks/actions/runs/38823673089"
-      }
+      },
+      "kickoff": "2026-10-16T02:00:00Z",
+      "resolved_at": "2026-10-16T05:29:16.897041Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xd83018ada25c77204c4b8730608cbc296545b16655b8d2a1f5337c9cfe711aaf",
+        "kickoff": "2026-10-16T02:00:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "661",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Golden Knights",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Golden Knights",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/17",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T05:29:16.897041Z",
+          "parent_commit": "a9c9cb4c712d7d703608193576b50dee39d3b1d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38882710759"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-15",
@@ -18337,16 +18362,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "356dae9df340ee28bb07d0c22bc48f8de3595f7e77c8045812beabfdcddc87ce",
+      "commitment_nonce": "f54b60c63d0d86b7b41af82025f3c33874ac21c194d9644f5adc56b350fd4d7e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-15T23:41:02.946221Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/18",
       "first_observation": {
         "observed_at": "2026-10-15T23:41:12.366267Z",
         "parent_commit": "e67eec848d5976e300d3711483817b70001eed4c",
         "run": "https://github.com/0xinsider/picks/actions/runs/38825040567"
-      }
+      },
+      "kickoff": "2026-10-16T02:00:00Z",
+      "resolved_at": "2026-10-16T05:29:16.948352Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x26673fd373966b329fdbb0a58084e528f6b6e2b6ec8b8dc37e3597fa10fd84c1",
+        "kickoff": "2026-10-16T02:00:00Z",
+        "pick_date": "2026-10-15",
+        "pick_id": "662",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Golden Knights",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Golden Knights",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-15/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T05:29:16.948352Z",
+          "parent_commit": "a9c9cb4c712d7d703608193576b50dee39d3b1d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38882710759"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-16",
