@@ -358,11 +358,17 @@ git log --format='%H %aI' -S '8c02' -- ledger/2026/09/2026-09-20.json
 
 ### Withdrawn picks
 
-The site withdraws a published pick from its record when Polymarket marks the
-pick's game Cancelled before it settles. The ledger endpoint names that on each
-settled entry as `withdrawal_reason`, and an opened pick here carries
-`"withdrawal_reason": "provider_game_cancelled"` when it was withdrawn. A pick
-that counts carries no such key. The field sits outside `payload`, so it never
+The site withdraws a published pick from its record for one of two reasons,
+and the ledger endpoint names it on each settled entry as `withdrawal_reason`:
+
+- `provider_game_cancelled`: Polymarket marked the pick's game Cancelled before
+  it settled.
+- `published_after_kickoff`: the pick was published at or after its game
+  started, so it was never a pre-game pick. That includes a suspended match
+  that resumed later, where the scheduled start moved to the resumption.
+
+An opened pick here carries that value as `"withdrawal_reason"` when it was
+withdrawn. A pick that counts carries no such key. The field sits outside `payload`, so it never
 touches a commitment.
 
 A withdrawn pick stays in this ledger with its commitment and its real outcome,
@@ -386,15 +392,26 @@ one restates it:
 }
 ```
 
-The site writes a withdrawal only while a pick is pending and never reverses
-one, so a pick arrives here withdrawn at its first opening. A withdrawal that
-appears after the pick opened, or one that is removed or changed, fails check 6.
-The one exception is pinned in `verify.py` as `KNOWN_LATE_WITHDRAWALS`: pick
-514 (2026-10-06) was withdrawn for `provider_game_cancelled` at 07:10:49Z and
-settled void at 08:10:02Z, before the endpoint served the field. It opened here
-with no withdrawal and gains it once, by an appended revision. The pin keeps it out
-of the money before that revision lands, so the record does not depend on when
-the mirror next runs.
+The site writes a cancellation only while a pick is pending and never reverses
+a withdrawal, so a cancelled pick arrives here withdrawn at its first opening. A
+withdrawal that appears after the pick opened, or one that is removed or
+changed, fails check 6. The exceptions are pinned in `verify.py` as
+`KNOWN_LATE_WITHDRAWALS`, each with its evidence. Each opened here with no
+withdrawal and gains it once, by an appended revision. The pin keeps it out of
+the money before that revision lands, so the record does not depend on when the
+mirror next runs.
+
+| Pick | Day | Reason | Evidence |
+| --- | --- | --- | --- |
+| 514 | 2026-10-06 | `provider_game_cancelled` | Withdrawn 07:10:49Z and settled void 08:10:02Z, before the endpoint served the field. |
+| 1 | 2026-06-23 | `published_after_kickoff` | Published 2026-06-24 00:33:17Z; its game kicked off 2026-06-23 17:00Z. |
+| 227 | 2026-09-02 | `published_after_kickoff` | First seen live 2026-09-01 21:20Z; published 2026-09-02 18:15Z. |
+| 450 | 2026-10-01 | `published_after_kickoff` | First seen live 2026-10-01 07:09Z; published 2026-10-02 02:00Z. |
+
+The three `published_after_kickoff` withdrawals were approved on 2026-10-17
+(0xinsider/0xinsider#25838). Picks 1 and 227 are stored here under their legacy
+date and rank, with no `pick_id`, so `LEGACY_LATE_WITHDRAWAL_SLOTS` maps
+2026-06-23 rank 1 and 2026-09-02 rank 6 to them.
 
 ### Picks that predate this scheme
 

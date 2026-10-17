@@ -179,21 +179,59 @@ MAX_DAILY_PICKS = 20
 
 # Why the site withdrew a published pick from its record, as the ledger
 # endpoint names it on a settled entry (`withdrawal_reason`, 0xinsider/0xinsider
-# #25792). The site writes it only while the pick is pending, when Polymarket's
-# canonical sports status reads Cancelled. A withdrawn pick stays here with its
-# commitment and its real outcome; it sits outside the hashed payload, so no
-# hash moves when an entry gains it.
-WITHDRAWAL_REASONS = ("provider_game_cancelled",)
+# #25792). A withdrawn pick stays here with its commitment and its real
+# outcome; it sits outside the hashed payload, so no hash moves when an entry
+# gains it.
+#
+# - provider_game_cancelled: Polymarket's canonical sports status read
+#   Cancelled. The site writes it automatically, only while the pick is pending.
+# - published_after_kickoff (0xinsider/0xinsider#25838): the pick was published
+#   at or after its game started, so it was never a pre-game pick. That includes
+#   a suspended match that resumed later, where the provider moved its start
+#   time to the resumption. Only an approved correction writes it, and it can
+#   reach a pick that has already settled and opened here.
+WITHDRAWAL_REASONS = ("provider_game_cancelled", "published_after_kickoff")
 
-# Picks the site withdrew before the ledger endpoint served
-# `withdrawal_reason`. Each opened here with no field and gains it once, with
-# a disclosed revision (check 6), and is out of the money from the pin
-# (in_money). Every later withdrawal arrives with the
-# pick's first opening, so this set never grows: a new entry needs the same
-# evidence as this one. 2026-10-06 pick 514 was withdrawn 07:10:49Z for
-# provider_game_cancelled and settled void at 08:10:02Z; on 2026-10-17 it was
-# the only withdrawn pick the site had published (0xinsider/0xinsider#25792).
-KNOWN_LATE_WITHDRAWALS = frozenset({"514"})
+# Site pick IDs (the ledger's `pick_id`) withdrawn after they opened here. Each
+# opened with no field and gains it once, with a disclosed revision (check 6),
+# and is out of the money from the pin (in_money, known_late_withdrawal). A
+# cancellation arrives with the pick's first opening, so only a reviewed
+# correction adds an ID, with its evidence:
+#
+# - 514 (2026-10-06): withdrawn 07:10:49Z for provider_game_cancelled and
+#   settled void at 08:10:02Z, before the ledger endpoint served the field
+#   (0xinsider/0xinsider#25792).
+# - 1 (2026-06-23, Portugal vs. Uzbekistan): published 2026-06-24 00:33:17Z;
+#   its game kicked off 2026-06-23 17:00Z. published_after_kickoff.
+# - 227 (2026-09-02, atp-bergs-taberne): first seen live 2026-09-01 21:20Z and
+#   published 2026-09-02 18:15Z. published_after_kickoff.
+# - 450 (2026-10-01, atp-shimizu-tomic): first seen live 2026-10-01 07:09Z and
+#   published 2026-10-02 02:00Z. published_after_kickoff.
+#
+# The withdrawals of 1, 227 and 450 were approved 2026-10-17
+# (0xinsider/0xinsider#25838).
+KNOWN_LATE_WITHDRAWALS = frozenset({"1", "227", "450", "514"})
+
+# Records stored before the ledger served `pick_id` keep a legacy slot identity,
+# (pick_date, pick_rank), and carry no pick_id. This maps each such slot of a
+# pinned pick to its site ID, so the pin reaches it. The slots come from the
+# site's own rows (0xinsider/0xinsider#25838, read 2026-10-17).
+LEGACY_LATE_WITHDRAWAL_SLOTS = {
+    ("2026-06-23", 1): "1",
+    ("2026-09-02", 6): "227",
+}
+
+
+def known_late_withdrawal(pick_date: str | None, pick: dict) -> bool:
+    """Whether this record is a pinned late withdrawal (KNOWN_LATE_WITHDRAWALS).
+
+    A record with a stable `pick_id` matches by it; a legacy record, which has
+    none, matches by its (pick_date, pick_rank) slot.
+    """
+    pick_id = pick.get("pick_id")
+    if pick_id is None:
+        pick_id = LEGACY_LATE_WITHDRAWAL_SLOTS.get((pick_date, pick.get("pick_rank")))
+    return pick_id in KNOWN_LATE_WITHDRAWALS
 
 
 class Failure(Exception):
@@ -646,7 +684,9 @@ def collapse(values: list) -> list:
     return out
 
 
-def correction_failures(who: str, history: list[dict], current: dict) -> list[str]:
+def correction_failures(
+    who: str, history: list[dict], current: dict, pick_date: str | None = None
+) -> list[str]:
     """Check 6. An outcome that moved must say so in `revisions`.
 
     Four assertions, and the first is the one with teeth:
@@ -718,12 +758,14 @@ def correction_failures(who: str, history: list[dict], current: dict) -> list[st
             f"CORRECTIONS {who}: withdrawal went {' -> '.join(str(value) for value in held)} "
             f"across history but revisions record {' -> '.join(str(value) for value in disclosed)}"
         )
-    # The site withdraws a pick only while it is pending, so a pick arrives
-    # here withdrawn at its first opening, and a withdrawal is never reversed.
-    # The one exception is pinned below: a pick withdrawn before the ledger
-    # endpoint named withdrawals gains the field once, disclosed above.
+    # The site's automatic cancellation withdraws a pick only while it is
+    # pending, so such a pick arrives here withdrawn at its first opening, and a
+    # withdrawal is never reversed. The exceptions are pinned
+    # (KNOWN_LATE_WITHDRAWALS): a pick withdrawn before the ledger endpoint
+    # named withdrawals, or by an approved published_after_kickoff correction
+    # after it opened here, gains the field once, disclosed above.
     pinned_late = (
-        len(held) == 2 and held[0] is None and current.get("pick_id") in KNOWN_LATE_WITHDRAWALS
+        len(held) == 2 and held[0] is None and known_late_withdrawal(pick_date, current)
     )
     if len(held) > 1 and not pinned_late:
         failures.append(
@@ -751,7 +793,7 @@ def observation_failures(who: str, history: list[dict], current: dict) -> list[s
     return []
 
 
-def in_money(pick: dict) -> bool:
+def in_money(pick: dict, pick_date: str | None = None) -> bool:
     """Whether a pick's flat stake counts in profit, staked and ROI.
 
     An opened win, loss or void, unless the site withdrew the pick. A void is
@@ -770,7 +812,7 @@ def in_money(pick: dict) -> bool:
         pick.get("state") == "opened"
         and pick.get("outcome") in ("win", "loss", "void")
         and pick.get("withdrawal_reason") is None
-        and pick.get("pick_id") not in KNOWN_LATE_WITHDRAWALS
+        and not known_late_withdrawal(pick_date or pick.get("pick_date"), pick)
     )
 
 
@@ -1013,7 +1055,7 @@ def main() -> int:
 
             # 6. CORRECTIONS
             if history is not None:
-                failures.extend(correction_failures(who, history, pick))
+                failures.extend(correction_failures(who, history, pick, day.get("pick_date")))
                 failures.extend(observation_failures(who, history, pick))
 
             # 5. RECORD
@@ -1022,7 +1064,7 @@ def main() -> int:
             except (InvalidOperation, ValueError):
                 price = Decimal(-1)
             value = stake_return(outcome, price) if price > 0 else None
-            if value is not None and in_money(pick):
+            if value is not None and in_money(pick, day.get("pick_date")):
                 profit += value - STAKE_USD
                 staked += STAKE_USD
 

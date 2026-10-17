@@ -31,10 +31,11 @@ exception the format is built for: a `sealed` entry becomes `opened` when the
 pick settles, which adds the nonce and payload and never touches the hash. A
 later outcome change appends to `revisions` and updates `outcome` in place so the
 current truth is readable at the top; the previous value stays in `revisions`, so
-the change is visible in the file as well as in the diff. A pick the site
-withdrew before the endpoint named withdrawals (verify.KNOWN_LATE_WITHDRAWALS)
-gains `withdrawal_reason` the same way: set at the top, with an appended
-revision that records it.
+the change is visible in the file as well as in the diff. A pinned pick the
+site withdrew after it opened here (verify.KNOWN_LATE_WITHDRAWALS: before the
+endpoint named withdrawals, or by an approved published_after_kickoff
+correction) gains `withdrawal_reason` the same way: set at the top, with an
+appended revision that records it.
 
 PICKS WITH NO PRE-GAME PROOF
 ----------------------------
@@ -1152,10 +1153,13 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             # A withdrawal moves a pick out of the money, so it changes only by
             # a disclosed revision, as the outcome does (verify.py check 6). An
             # endpoint that predates the field sends no key and changes
-            # nothing. A pick withdrawn before the endpoint named withdrawals
-            # gains the field once (verify.KNOWN_LATE_WITHDRAWALS); every other
-            # pick arrives withdrawn at its first opening, because the site
-            # withdraws only while a pick is pending, and never reverses it.
+            # nothing. A pinned pick (verify.KNOWN_LATE_WITHDRAWALS), withdrawn
+            # before the endpoint named withdrawals or by an approved
+            # published_after_kickoff correction after it opened, gains the
+            # field once. Every other pick arrives withdrawn at its first
+            # opening, because the automatic cancellation withdraws only while
+            # a pick is pending, and a withdrawal is never reversed. A legacy
+            # record has no pick_id and matches its pin by date and rank.
             withdrawn = False
             corrected = not (
                 prior.get("outcome") == entry["outcome"]
@@ -1164,9 +1168,7 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             if "withdrawal_reason" in entry and entry["withdrawal_reason"] != prior.get("withdrawal_reason"):
                 require(
                     prior.get("withdrawal_reason") is None
-                    and verify.pick_identity(prior) in {
-                        ("id", pick_id) for pick_id in verify.KNOWN_LATE_WITHDRAWALS
-                    },
+                    and verify.known_late_withdrawal(pick_date, prior),
                     f"{who}: withdrawal_reason moved from {prior.get('withdrawal_reason')!r} to "
                     f"{entry['withdrawal_reason']!r} after the pick opened. A withdrawal is "
                     f"written before settlement and never reversed. Nothing was written.",
@@ -1306,7 +1308,7 @@ def tally() -> dict:
                 # leaves it out (verify.in_money).
                 proven_wins += outcome == "win"
                 proven_losses += outcome == "loss"
-            if value is not None and verify.in_money(pick):
+            if value is not None and verify.in_money(pick, pick_date):
                 profit += value - verify.STAKE_USD
                 staked += verify.STAKE_USD
                 if proven:
