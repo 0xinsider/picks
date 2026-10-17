@@ -69,8 +69,10 @@ One pick each day is free to any signed-in account. Pro opens 5 daily picks
 in total, including the free pick. Max opens every available pick, up to 20 a
 day. Resolved picks are public. The record counts all of them the same way:
 $1,000 on every pick, a win returns
-1,000 divided by the backed price, a loss forfeits the stake, a void refunds
-it. The stake was $100 until September 22, 2026;
+1,000 divided by the backed price, a loss forfeits the stake, and a void is
+left out of the money. A pick the site withdrew because Polymarket cancelled
+its game stays in the ledger with its real outcome and is left out of the
+money too (`VERIFY.md`, "Withdrawn picks"). The stake was $100 until September 22, 2026;
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
 including the ones published before that date, and the units, ROI and hit
 rate are the same under either stake.

@@ -1297,14 +1297,18 @@ def tally() -> dict:
                 voids += 1
             price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
             value = verify.stake_return(outcome, price) if price > 0 else None
-            if value is not None and outcome in ("win", "loss"):
+            if value is not None and proven:
+                # A withdrawn pick keeps its real outcome in the counts, as it
+                # does in `wins`, `losses` and `voids` above; only the money
+                # leaves it out (verify.in_money).
+                proven_wins += outcome == "win"
+                proven_losses += outcome == "loss"
+            if value is not None and verify.in_money(pick):
                 profit += value - verify.STAKE_USD
                 staked += verify.STAKE_USD
                 if proven:
                     proven_profit += value - verify.STAKE_USD
                     proven_staked += verify.STAKE_USD
-                    proven_wins += outcome == "win"
-                    proven_losses += outcome == "loss"
 
     decided = wins + losses
     return {
@@ -1487,7 +1491,7 @@ def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
     """
     decided = []
     for pick in sorted(picks, key=lambda item: (item["pick_date"], publication_key(item))):
-        if pick.get("state") != "opened" or pick.get("outcome") not in ("win", "loss"):
+        if not verify.in_money(pick):
             continue
         price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
         value = verify.stake_return(pick["outcome"], price) if price > 0 else None

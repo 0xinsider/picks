@@ -746,6 +746,20 @@ def observation_failures(who: str, history: list[dict], current: dict) -> list[s
     return []
 
 
+def in_money(pick: dict) -> bool:
+    """Whether a pick's flat stake counts in profit, staked and ROI.
+
+    An opened win or loss, unless the site withdrew the pick. A withdrawn pick
+    stays opened, verified and counted in the outcome tallies with its real
+    outcome; the site leaves it out of every money figure, and so does this.
+    """
+    return (
+        pick.get("state") == "opened"
+        and pick.get("outcome") in ("win", "loss")
+        and pick.get("withdrawal_reason") is None
+    )
+
+
 def stake_return(outcome: str, price: Decimal) -> Decimal | None:
     """What a flat STAKE_USD stake returned. Mirrors the site's own arithmetic.
 
@@ -989,7 +1003,7 @@ def main() -> int:
             except (InvalidOperation, ValueError):
                 price = Decimal(-1)
             value = stake_return(outcome, price) if price > 0 else None
-            if value is not None and outcome in ("win", "loss"):
+            if value is not None and in_money(pick):
                 profit += value - STAKE_USD
                 staked += STAKE_USD
 
