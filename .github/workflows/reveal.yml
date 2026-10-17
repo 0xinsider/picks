@@ -17,11 +17,18 @@ name: Reveal
 # NO CREDENTIAL, same as seal.yml: the ledger endpoint is public
 # with no credentials required. Do not add a key back here.
 #
-# HOURLY, at :17. The backfill pass that settles outcomes runs on a 30-minute
-# cadence, so nothing here needs to be faster than an hour, and there is no
-# deadline the way there is for sealing -- a late reveal delays a disclosure, it
-# does not weaken a proof. The offset is deliberate: GitHub queues scheduled
-# workflows and the top of the hour is the busiest slot.
+# DISPATCHED AT SETTLEMENT, with the hourly cron as the backstop. The backend's
+# outcome backfill dispatches this workflow (ref main, no inputs, so `dry_run`
+# stays false) after every pass that settles a pick (0xinsider/0xinsider#25915),
+# the same way it dispatches seal.yml at release. The dispatch only says "now":
+# this workflow still fetches, diffs and commits, and a repeat run writes
+# nothing. Keep `workflow_dispatch` below: GitHub refuses a dispatch to a
+# workflow without that trigger, and the reveal would fall back to the cron
+# alone. That cron fired 12 times in the 48 hours to 2026-10-17 15:00Z against
+# 48 expected, which left settled picks sealed here for 2 to 5 hours. There is
+# still no deadline the way there is for sealing -- a late reveal delays a
+# disclosure, it does not weaken a proof. The :17 offset is deliberate: GitHub
+# queues scheduled workflows and the top of the hour is the busiest slot.
 
 on:
   schedule:
