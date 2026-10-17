@@ -125,16 +125,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aa3b5c4a257fbdc47690eb179fb8fb32d19a96251ab9e3faba16665a4e031e3f",
+      "commitment_nonce": "d695a949f33796819936f8ee47c34ed904d37377d7447c143174acf5b8b85984",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-16T10:42:31.018812Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/5",
       "first_observation": {
         "observed_at": "2026-10-16T10:42:41.138950Z",
         "parent_commit": "451c6ecc9932c57c561c24597d1359485ea4d2a3",
         "run": "https://github.com/0xinsider/picks/actions/runs/38889002468"
-      }
+      },
+      "kickoff": "2026-10-16T18:30:00Z",
+      "resolved_at": "2026-10-16T22:43:29.225639Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xe6aee3b71949fbf9a5e595d7a89b1845a046345391e34ba3f8ecdcdd70701532",
+        "kickoff": "2026-10-16T18:30:00Z",
+        "pick_date": "2026-10-16",
+        "pick_id": "668",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hellas Verona FC vs. US Catanzaro 1929",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-16T22:43:29.225639Z",
+          "parent_commit": "8874767327b3221ac64fb35d1c03d8b3dee36943",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38986407661"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -378,16 +403,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3edecf7c6e91e6945cc0e1f70a657ed8ec45499f30e3a427e45a4a656133503b",
+      "commitment_nonce": "805997f28fede2af00fa2b178f661e15fe132bcbeb09bf903a038fada1c8e8a9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-16T18:26:26.203817Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/14",
       "first_observation": {
         "observed_at": "2026-10-16T18:26:33.428376Z",
         "parent_commit": "266b7e8cd62e3010bcf45f43e4ed91aa3fa18b89",
         "run": "https://github.com/0xinsider/picks/actions/runs/38947350828"
-      }
+      },
+      "kickoff": "2026-10-16T19:00:00Z",
+      "resolved_at": "2026-10-16T23:07:28.009290Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x8213e65538d54898f1e77a19cb297fdd96aaaa5b41ef4a82c2539e4abbe2f32f",
+        "kickoff": "2026-10-16T19:00:00Z",
+        "pick_date": "2026-10-16",
+        "pick_id": "677",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Burnley FC vs. Wolverhampton Wanderers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-16T23:07:28.009290Z",
+          "parent_commit": "8874767327b3221ac64fb35d1c03d8b3dee36943",
+          "run": "https://github.com/0xinsider/picks/actions/runs/38986407661"
+        }
+      ]
     },
     {
       "pick_rank": 15,
