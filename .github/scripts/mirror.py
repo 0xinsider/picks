@@ -31,7 +31,10 @@ exception the format is built for: a `sealed` entry becomes `opened` when the
 pick settles, which adds the nonce and payload and never touches the hash. A
 later outcome change appends to `revisions` and updates `outcome` in place so the
 current truth is readable at the top; the previous value stays in `revisions`, so
-the change is visible in the file as well as in the diff.
+the change is visible in the file as well as in the diff. A pick the site
+withdrew before the endpoint named withdrawals (verify.KNOWN_LATE_WITHDRAWALS)
+gains `withdrawal_reason` the same way: set at the top, with an appended
+revision that records it.
 
 PICKS WITH NO PRE-GAME PROOF
 ----------------------------
