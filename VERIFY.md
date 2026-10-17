@@ -257,7 +257,8 @@ One file per product day, at `ledger/<YYYY>/<MM>/<YYYY-MM-DD>.json`.
 
 When the pick settles, `state` becomes `"opened"` and the entry gains
 `commitment_nonce`, `resolved_at`, `outcome`, `payload`, `matchup`, `category`
-and `revisions`. `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
+and `revisions`, plus `withdrawal_reason` when the site withdrew the pick
+(see "Withdrawn picks"). `commitment_hash`, `commitment_algo`, `sealed_at` and `kickoff`
 keep the values they were sealed with when those fields existed. A hidden
 kickoff is added only from the opened canonical payload; `first_observation`
 keeps its original sealed value.
@@ -271,16 +272,22 @@ anything that would rather not walk the tree. Its `record` object carries the
 counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven`, `wins`,
 `losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
 the money
-figures: `stake_usd`, the flat stake every decided pick is counted at
+figures: `stake_usd`, the flat stake every win, loss and void is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
-total stake. `proven_record` separately reports the git-dated
+total stake. A win returns `stake_usd / backed_price`, a loss returns 0, and a
+void returns `stake_usd * 0.5 / backed_price`: Polymarket resolves a void
+market 50-50, so each share pays half a dollar and the stake is not refunded.
+A withdrawn pick is left out of the money ("Withdrawn picks"), so `staked` can
+be less than `stake_usd` times the settled count. These are the site's own
+rules, `pick_gross_return` in 0xinsider/0xinsider
+`backend/crates/core/src/pick_valuation.rs`. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
 date, not an independent receipt. None of these figures establish real fills or
 subscriber profit; fees are excluded. `profit_usd` was named `profit_per_100` until September 22,
 2026, when the stake moved from $100 to $1,000; every pick, including those published before
 that date, is recomputed at the current stake, and `stake_usd` says which one.
 `record.svg` is the chart at the top of the README, the cumulative return of
-$1,000 on every decided pick. Both are generated from `ledger/` and prove
+$1,000 on every staked pick. Both are generated from `ledger/` and prove
 nothing on their own; `verify.yml` regenerates them and fails on any diff, so
 neither can drift from the data.
 
@@ -322,7 +329,8 @@ survive.
 version of a pick in the file's git history, collapses the sequence of outcomes
 it has held, and requires `revisions` to record that same sequence in the same
 order. It also requires each committed `revisions` array to be a prefix of the
-next, and `commitment_hash` to be identical at every point.
+next, and `commitment_hash` to be identical at every point. It applies the same
+rule to `withdrawal_reason` (see "Withdrawn picks").
 
 The check exists because nothing else here looks at `outcome` at all. The
 commitment is taken over the pick, so editing a settled `"loss"` to `"win"` in
@@ -347,6 +355,46 @@ rather than ours. To find the commit itself:
 ```sh
 git log --format='%H %aI' -S '8c02' -- ledger/2026/09/2026-09-20.json
 ```
+
+### Withdrawn picks
+
+The site withdraws a published pick from its record when Polymarket marks the
+pick's game Cancelled before it settles. The ledger endpoint names that on each
+settled entry as `withdrawal_reason`, and an opened pick here carries
+`"withdrawal_reason": "provider_game_cancelled"` when it was withdrawn. A pick
+that counts carries no such key. The field sits outside `payload`, so it never
+touches a commitment.
+
+A withdrawn pick stays in this ledger with its commitment and its real outcome,
+and it is still opened and verified like any other. It counts in `wins`,
+`losses` or `voids` by that outcome, but it is left out of `profit_usd`,
+`staked` and `roi`, for the full record and the git-dated cohort, the way the
+site leaves it out of its money figures.
+
+A withdrawal takes a pick out of the money, which is the shape a suppressed loss
+would take, so check 6 holds it to the outcome's rule: every withdrawal a pick
+has held across history must appear in `revisions`, and a revision that carries
+one restates it:
+
+```json
+{
+  "outcome": "void",
+  "resolved_at": "2026-10-06T08:10:02.741370Z",
+  "withdrawal_reason": "provider_game_cancelled",
+  "parent_commit": "...",
+  "run": "https://github.com/0xinsider/picks/actions/runs/..."
+}
+```
+
+The site writes a withdrawal only while a pick is pending and never reverses
+one, so a pick arrives here withdrawn at its first opening. A withdrawal that
+appears after the pick opened, or one that is removed or changed, fails check 6.
+The one exception is pinned in `verify.py` as `KNOWN_LATE_WITHDRAWALS`: pick
+514 (2026-10-06) was withdrawn for `provider_game_cancelled` at 07:10:49Z and
+settled void at 08:10:02Z, before the endpoint served the field. It opened here
+with no withdrawal and gains it once, by an appended revision. The pin keeps it out
+of the money before that revision lands, so the record does not depend on when
+the mirror next runs.
 
 ### Picks that predate this scheme
 

@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Oct 16, 2026: +24,086.19 USD on 542,000 USD staked across 542 decided picks, 338W 204L, 62.4% hit rate, +4.4% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Oct 16, 2026: +24,086.19 USD on 542,000 USD staked. 542 decided picks, 338W 204L 1V, 62.4% hit rate, +4.4% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -60,7 +60,8 @@ Record through 2026-10-16.
 | Git-dated cohort ROI before fees | +2.2% |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
-Profit and ROI count a flat $1,000 stake at the frozen price on each decided pick, before fees.
+Profit and ROI count a flat $1,000 stake at the frozen price on each win, loss and void, before fees.
+A void pays half of 1 USD a share; a pick the site withdrew is left out.
 They do not establish fills, actual wagers, or subscriber profit.
 `python3 verify.py` checks the same data and public git history.
 <!-- RECORD:END -->
@@ -69,8 +70,12 @@ One pick each day is free to any signed-in account. Pro opens 5 daily picks
 in total, including the free pick. Max opens every available pick, up to 20 a
 day. Resolved picks are public. The record counts all of them the same way:
 $1,000 on every pick, a win returns
-1,000 divided by the backed price, a loss forfeits the stake, a void refunds
-it. The stake was $100 until September 22, 2026;
+1,000 divided by the backed price, a loss forfeits the stake, and a void
+returns 500 divided by the backed price, because Polymarket resolves a void
+market 50-50 and pays half a dollar a share rather than refunding the stake.
+A pick the site withdrew because Polymarket cancelled its game stays in the
+ledger with its real outcome and is left out of the money
+(`VERIFY.md`, "Withdrawn picks"). The stake was $100 until September 22, 2026;
 the figures above and in `index.json` are recomputed at $1,000 for every pick,
 including the ones published before that date, and the units, ROI and hit
 rate are the same under either stake.

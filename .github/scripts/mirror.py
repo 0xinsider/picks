@@ -31,7 +31,10 @@ exception the format is built for: a `sealed` entry becomes `opened` when the
 pick settles, which adds the nonce and payload and never touches the hash. A
 later outcome change appends to `revisions` and updates `outcome` in place so the
 current truth is readable at the top; the previous value stays in `revisions`, so
-the change is visible in the file as well as in the diff.
+the change is visible in the file as well as in the diff. A pick the site
+withdrew before the endpoint named withdrawals (verify.KNOWN_LATE_WITHDRAWALS)
+gains `withdrawal_reason` the same way: set at the top, with an appended
+revision that records it.
 
 PICKS WITH NO PRE-GAME PROOF
 ----------------------------
@@ -179,6 +182,10 @@ OPENED_FIELDS = (
     "kickoff",
     "resolved_at",
     "outcome",
+    # Outside the hashed payload (0xinsider/0xinsider#25792). Written only when
+    # the site withdrew the pick; a counted pick carries no key, and an endpoint
+    # that predates the field sends none.
+    "withdrawal_reason",
     "payload",
     "matchup",
     "category",
@@ -211,6 +218,7 @@ RECORD_FIELDS = (
     "kickoff",
     "resolved_at",
     "outcome",
+    "withdrawal_reason",
     "payload",
     "matchup",
     "category",
@@ -619,6 +627,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
         return pick_date, rank, state
 
     require(entry.get("outcome") in OUTCOMES, f"{who}: unknown outcome")
+    check_withdrawal(entry, who)
     check_timestamp(entry, "resolved_at", who, nullable=True)
 
     payload = entry.get("payload")
@@ -654,6 +663,21 @@ def validate(entry: dict) -> tuple[str, int, str]:
     )
     check_timestamp(entry, "sealed_at", who)
     return pick_date, rank, state
+
+
+def check_withdrawal(entry: dict, who: str) -> None:
+    """A settled entry's withdrawal is null or a reason this script knows.
+
+    Absent is tolerated: an endpoint that predates the field sends none
+    (0xinsider/0xinsider#25792). An unknown reason stops the run, as an unknown
+    outcome does: it decides whether the pick is in the money, so it is read
+    before it lands in an append-only file.
+    """
+    reason = entry.get("withdrawal_reason")
+    require(
+        reason is None or reason in verify.WITHDRAWAL_REASONS,
+        f"{who}: unknown withdrawal_reason",
+    )
 
 
 def check_payload(
@@ -711,6 +735,7 @@ def validate_uncommitted(entry: dict, pick_date: str, rank: int, who: str) -> No
             )
         return
 
+    check_withdrawal(entry, who)
     check_timestamp(entry, "resolved_at", who, nullable=True)
     payload = entry.get("payload")
     if payload is None:
@@ -944,13 +969,32 @@ def revision(entry: dict, context: dict) -> dict:
     (parent_commit, run) is what pins the write: the parent fixes its place in
     history, and the run is GitHub's own timestamped record of the job that made
     it. VERIFY.md gives the command that finds the commit itself.
+
+    `withdrawal_reason` is written only when the site withdrew the pick, so a
+    counted pick's revisions keep the shape they always had.
     """
-    return {
+    line = {
         "outcome": entry["outcome"],
         "resolved_at": entry.get("resolved_at"),
-        "parent_commit": context["parent_commit"],
-        "run": context["run"],
     }
+    if entry.get("withdrawal_reason") is not None:
+        line["withdrawal_reason"] = entry["withdrawal_reason"]
+    line["parent_commit"] = context["parent_commit"]
+    line["run"] = context["run"]
+    return line
+
+
+def with_withdrawal(prior: dict, reason: str) -> None:
+    """Add `withdrawal_reason` to a stored record in RECORD_FIELDS order.
+
+    In place, so the day's list keeps the same object. Only an absent field is
+    added; the caller refuses a change to one already written.
+    """
+    fields = dict(prior)
+    fields["withdrawal_reason"] = reason
+    prior.clear()
+    prior.update({field: fields[field] for field in RECORD_FIELDS if field in fields})
+    prior.update({field: value for field, value in fields.items() if field not in prior})
 
 
 def apply_reveal(entries: list[dict], context: dict) -> list[str]:
@@ -1105,9 +1149,40 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             ):
                 prior["payload"] = entry["payload"]
                 touched.append(f"rank {rank} gained its payload")
-            if prior.get("outcome") == entry["outcome"] and prior.get("resolved_at") == entry.get("resolved_at"):
+            # A withdrawal moves a pick out of the money, so it changes only by
+            # a disclosed revision, as the outcome does (verify.py check 6). An
+            # endpoint that predates the field sends no key and changes
+            # nothing. A pick withdrawn before the endpoint named withdrawals
+            # gains the field once (verify.KNOWN_LATE_WITHDRAWALS); every other
+            # pick arrives withdrawn at its first opening, because the site
+            # withdraws only while a pick is pending, and never reverses it.
+            withdrawn = False
+            corrected = not (
+                prior.get("outcome") == entry["outcome"]
+                and prior.get("resolved_at") == entry.get("resolved_at")
+            )
+            if "withdrawal_reason" in entry and entry["withdrawal_reason"] != prior.get("withdrawal_reason"):
+                require(
+                    prior.get("withdrawal_reason") is None
+                    and verify.pick_identity(prior) in {
+                        ("id", pick_id) for pick_id in verify.KNOWN_LATE_WITHDRAWALS
+                    },
+                    f"{who}: withdrawal_reason moved from {prior.get('withdrawal_reason')!r} to "
+                    f"{entry['withdrawal_reason']!r} after the pick opened. A withdrawal is "
+                    f"written before settlement and never reversed. Nothing was written.",
+                )
+                with_withdrawal(prior, entry["withdrawal_reason"])
+                withdrawn = True
+                touched.append(f"rank {rank} withdrawn ({entry['withdrawal_reason']})")
+            if not withdrawn and not corrected:
                 continue
-            prior.setdefault("revisions", []).append(revision(entry, context))
+            # One revision records the whole change. It carries the stored
+            # withdrawal, so a correction to a withdrawn pick restates it.
+            prior.setdefault("revisions", []).append(
+                revision({**entry, "withdrawal_reason": prior.get("withdrawal_reason")}, context)
+            )
+            if not corrected:
+                continue
             prior["outcome"] = entry["outcome"]
             if entry.get("resolved_at") is None:
                 prior.pop("resolved_at", None)
@@ -1225,14 +1300,18 @@ def tally() -> dict:
                 voids += 1
             price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
             value = verify.stake_return(outcome, price) if price > 0 else None
-            if value is not None and outcome in ("win", "loss"):
+            if value is not None and proven:
+                # A withdrawn pick keeps its real outcome in the counts, as it
+                # does in `wins`, `losses` and `voids` above; only the money
+                # leaves it out (verify.in_money).
+                proven_wins += outcome == "win"
+                proven_losses += outcome == "loss"
+            if value is not None and verify.in_money(pick):
                 profit += value - verify.STAKE_USD
                 staked += verify.STAKE_USD
                 if proven:
                     proven_profit += value - verify.STAKE_USD
                     proven_staked += verify.STAKE_USD
-                    proven_wins += outcome == "win"
-                    proven_losses += outcome == "loss"
 
     decided = wins + losses
     return {
@@ -1352,7 +1431,8 @@ def render_record(stats: dict) -> str:
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
-        "Profit and ROI count a flat $1,000 stake at the frozen price on each decided pick, before fees.",
+        "Profit and ROI count a flat $1,000 stake at the frozen price on each win, loss and void, before fees.",
+        "A void pays half of 1 USD a share; a pick the site withdrew is left out.",
         "They do not establish fills, actual wagers, or subscriber profit.",
         "`python3 verify.py` checks the same data and public git history.",
         "",
@@ -1365,7 +1445,7 @@ def render_record(stats: dict) -> str:
 # --------------------------------------------------------------------------
 #
 # record.svg is the first thing README.md shows: the cumulative return of the
-# flat stake (verify.STAKE_USD) on every decided pick, in the order the picks
+# flat stake (verify.STAKE_USD) on every staked pick (verify.in_money), in the order the picks
 # were made. It is generated from ledger/ by the same regenerate pass that
 # writes index.json and the README table, so verify.yml's drift check covers
 # it too: a chart that disagrees with the ledger fails the repository the same
@@ -1405,7 +1485,7 @@ def long_date(iso: str) -> str:
 
 
 def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
-    """One point per decided pick with a usable price: (x, running profit, proven).
+    """One point per staked pick with a usable price: (x, running profit, proven).
 
     x is the pick's date as an ordinal day plus the pick's share of that day,
     so a day with six picks reads as six steps across the day rather than a
@@ -1415,7 +1495,7 @@ def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
     """
     decided = []
     for pick in sorted(picks, key=lambda item: (item["pick_date"], publication_key(item))):
-        if pick.get("state") != "opened" or pick.get("outcome") not in ("win", "loss"):
+        if not verify.in_money(pick):
             continue
         price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
         value = verify.stake_return(pick["outcome"], price) if price > 0 else None
@@ -1509,7 +1589,7 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     last_x = int(points[-1][0]) + 1
     lo = min(Decimal(0), min(value for _, value, _ in points))
     hi = max(Decimal(0), max(value for _, value, _ in points))
-    # A span of zero (every decided pick returned exactly its stake) falls back
+    # A span of zero (every staked pick returned exactly its stake) falls back
     # to one stake's worth of axis so the chart still has a scale.
     step = nice_step(float(hi - lo) or float(verify.STAKE_USD))
     y_min = (int(lo) // step) * step if lo < 0 else 0
@@ -1607,8 +1687,8 @@ def render_chart_embed(stats: dict) -> str:
     else:
         alt = (
             f"Cumulative profit before fees at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
-            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked across "
-            f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked. "
+            f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L {stats['voids']}V, "
             f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
         )
     return (

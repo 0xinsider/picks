@@ -29,9 +29,10 @@ the hash can be reopened by anyone.
   4. GAPS        no sealed pick stays unopened long past its public kickoff;
                  withheld clocks are reported as pending until canonical opening
   5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
-  6. CORRECTIONS every outcome this pick has held across the file's history
-                 appears in its `revisions`, in the same order; `revisions` only
-                 ever grew; `commitment_hash` is the same at every point
+  6. CORRECTIONS every outcome and every withdrawal this pick has held across
+                 the file's history appears in its `revisions`, in the same
+                 order; `revisions` only ever grew; `commitment_hash` is the
+                 same at every point
 
 Check 2 catches a late hash under the repository's current git history. Git
 author dates are writer-controlled; it cannot alone prove when GitHub received
@@ -167,10 +168,32 @@ KNOWN_LATE_COMMITS = {
 # number; units, ROI and hit rate
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
+
+# What one share pays when Polymarket resolves a binary market 50-50, the only
+# source of a `void` outcome. The site's VOID_PAYOUT_PER_SHARE.
+VOID_PAYOUT_PER_SHARE = Decimal("0.5")
 # The most picks one product day can carry: ranks run 1 to this. Mirrors the
 # public daily bound. Max permits twenty; historical ranks and proof bytes remain
 # unchanged. Private trading has a separate ten-rank contract.
 MAX_DAILY_PICKS = 20
+
+# Why the site withdrew a published pick from its record, as the ledger
+# endpoint names it on a settled entry (`withdrawal_reason`, 0xinsider/0xinsider
+# #25792). The site writes it only while the pick is pending, when Polymarket's
+# canonical sports status reads Cancelled. A withdrawn pick stays here with its
+# commitment and its real outcome; it sits outside the hashed payload, so no
+# hash moves when an entry gains it.
+WITHDRAWAL_REASONS = ("provider_game_cancelled",)
+
+# Picks the site withdrew before the ledger endpoint served
+# `withdrawal_reason`. Each opened here with no field and gains it once, with
+# a disclosed revision (check 6), and is out of the money from the pin
+# (in_money). Every later withdrawal arrives with the
+# pick's first opening, so this set never grows: a new entry needs the same
+# evidence as this one. 2026-10-06 pick 514 was withdrawn 07:10:49Z for
+# provider_game_cancelled and settled void at 08:10:02Z; on 2026-10-17 it was
+# the only withdrawn pick the site had published (0xinsider/0xinsider#25792).
+KNOWN_LATE_WITHDRAWALS = frozenset({"514"})
 
 
 class Failure(Exception):
@@ -626,7 +649,7 @@ def collapse(values: list) -> list:
 def correction_failures(who: str, history: list[dict], current: dict) -> list[str]:
     """Check 6. An outcome that moved must say so in `revisions`.
 
-    Three assertions, and the first is the one with teeth:
+    Four assertions, and the first is the one with teeth:
 
     1. The sequence of outcomes this pick has held, with consecutive repeats
        collapsed, must match the outcomes its final `revisions` array records.
@@ -638,8 +661,12 @@ def correction_failures(who: str, history: list[dict], current: dict) -> list[st
     3. `commitment_hash` is identical at every point. A correction that moves
        the hash is not a correction, because the commitment is over the pick and
        the pick did not change.
+    4. The same disclosure rule as the first, for `withdrawal_reason`: every
+       withdrawal the pick has held must appear in `revisions`, in order. A
+       withdrawal takes the pick out of the money, so one added silently would
+       flatter the record exactly as an edited outcome would.
 
-    Note that a legitimate correction PASSES all three. This check does not
+    Note that a legitimate correction PASSES all four. This check does not
     object to an outcome changing. It objects to an outcome changing quietly.
     """
     failures: list[str] = []
@@ -675,6 +702,35 @@ def correction_failures(who: str, history: list[dict], current: dict) -> list[st
             break
         previous = revisions
 
+    # A withdrawal moves the pick out of the money, which is the shape a
+    # suppressed loss would take, so it is held to the outcome's rule: every
+    # withdrawal this pick has held across history appears in its revisions.
+    # A revision written before the field existed records no withdrawal,
+    # which is what the pick held then.
+    held = collapse(
+        [v["pick"].get("withdrawal_reason") for v in history if v["pick"].get("outcome")]
+    )
+    disclosed = collapse(
+        [entry.get("withdrawal_reason") for entry in current.get("revisions") or [] if isinstance(entry, dict)]
+    )
+    if held and disclosed != held:
+        failures.append(
+            f"CORRECTIONS {who}: withdrawal went {' -> '.join(str(value) for value in held)} "
+            f"across history but revisions record {' -> '.join(str(value) for value in disclosed)}"
+        )
+    # The site withdraws a pick only while it is pending, so a pick arrives
+    # here withdrawn at its first opening, and a withdrawal is never reversed.
+    # The one exception is pinned below: a pick withdrawn before the ledger
+    # endpoint named withdrawals gains the field once, disclosed above.
+    pinned_late = (
+        len(held) == 2 and held[0] is None and current.get("pick_id") in KNOWN_LATE_WITHDRAWALS
+    )
+    if len(held) > 1 and not pinned_late:
+        failures.append(
+            f"CORRECTIONS {who}: withdrawal went {' -> '.join(str(value) for value in held)} "
+            f"after the pick opened. A withdrawal is written before settlement and never reversed."
+        )
+
     hashes = collapse([v["pick"].get("commitment_hash") for v in history])
     hashes = [value for value in hashes if value]
     if len(set(hashes)) > 1:
@@ -695,19 +751,47 @@ def observation_failures(who: str, history: list[dict], current: dict) -> list[s
     return []
 
 
+def in_money(pick: dict) -> bool:
+    """Whether a pick's flat stake counts in profit, staked and ROI.
+
+    An opened win, loss or void, unless the site withdrew the pick. A void is
+    staked: Polymarket resolves its market 50-50, so the stake is not refunded
+    (stake_return). A withdrawn pick stays opened, verified and counted in the
+    outcome tallies with its real outcome; the site leaves it out of every
+    money figure, and so does this. The site's owner of the rule is
+    `pick_staked_outcome` in 0xinsider/0xinsider
+    `backend/crates/core/src/pick_valuation.rs` (#25777, #25784).
+
+    A pinned late withdrawal (KNOWN_LATE_WITHDRAWALS) is out of the money from
+    the pin, before its record gains the field: the pin is the reviewed fact,
+    and the record's figures do not depend on when the mirror next runs.
+    """
+    return (
+        pick.get("state") == "opened"
+        and pick.get("outcome") in ("win", "loss", "void")
+        and pick.get("withdrawal_reason") is None
+        and pick.get("pick_id") not in KNOWN_LATE_WITHDRAWALS
+    )
+
+
 def stake_return(outcome: str, price: Decimal) -> Decimal | None:
     """What a flat STAKE_USD stake returned. Mirrors the site's own arithmetic.
 
-    A win pays STAKE_USD/price, a loss forfeits the stake, a void refunds it.
-    A decided pick with no usable price is excluded from money totals rather
-    than guessed at, and is still counted in the hit rate.
+    The stake buys STAKE_USD/price shares. A win pays 1 on each, so it returns
+    STAKE_USD/price; a loss pays nothing; a void is a market Polymarket
+    resolved 50-50, which pays 0.5 on each share, so it returns
+    STAKE_USD*0.5/price. Polymarket does not refund a void. The site's owner is
+    `pick_gross_return` in 0xinsider/0xinsider
+    `backend/crates/core/src/pick_valuation.rs`. A settled pick with no usable
+    price is excluded from money totals rather than guessed at, and is still
+    counted in the outcome tallies.
     """
     if outcome == "win":
         return None if price <= 0 else STAKE_USD / price
     if outcome == "loss":
         return Decimal(0)
     if outcome == "void":
-        return STAKE_USD
+        return None if price <= 0 else STAKE_USD * VOID_PAYOUT_PER_SHARE / price
     return None
 
 
@@ -752,6 +836,13 @@ def load_ledger() -> list[tuple[Path, dict]]:
             order = pick.get("publication_order", rank)
             if type(order) is not int or not 1 <= order <= MAX_DAILY_PICKS:
                 raise SystemExit(f"{path}: invalid publication_order {order!r}")
+            if "withdrawal_reason" in pick and (
+                pick.get("state") != "opened"
+                or pick["withdrawal_reason"] not in WITHDRAWAL_REASONS
+            ):
+                # The mirror writes the field only on an opened pick, and only
+                # when the site withdrew it; a counted pick carries no key.
+                raise SystemExit(f"{path}: {identity!r} invalid withdrawal_reason")
             payload = pick.get("payload")
             observation = pick.get("first_observation")
             if pick.get("state") == "sealed" and not pick.get("kickoff") and observation is None:
@@ -931,7 +1022,7 @@ def main() -> int:
             except (InvalidOperation, ValueError):
                 price = Decimal(-1)
             value = stake_return(outcome, price) if price > 0 else None
-            if value is not None and outcome in ("win", "loss"):
+            if value is not None and in_money(pick):
                 profit += value - STAKE_USD
                 staked += STAKE_USD
 
