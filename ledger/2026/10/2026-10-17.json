@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3d01b3111bbaf6b1c3f42c12411c2a7258b1ba546203830a6de82eee98daa294",
+      "commitment_nonce": "30b0654c1660e7d1ec54e3ed43a8453b66965dd90ced80210bf66835b19d344f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.795015Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/2",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T16:00:00Z",
+      "resolved_at": "2026-10-17T19:46:39.135981Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x5423e1db90e7ea454ecf0619ad7bb74b1805c8db17badc82d4c3179b2bb5957c",
+        "kickoff": "2026-10-17T16:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "685",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pittsburgh vs. Boston College",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T19:46:39.135981Z",
+          "parent_commit": "faab0c984fd4c8bb6c117da67f043ca3333ee751",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39063909224"
+        }
+      ]
     },
     {
       "pick_rank": 3,
@@ -335,16 +360,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8ec9af4be41c15aac8c2525a339e494686932feeeae6b8d6dc936249ba57fc96",
+      "commitment_nonce": "ee87d9909806d3362e5dc87ea525ec9f36b93182f1ac7310dc5b2a7a8dfda744",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:13:35.363226Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/10",
       "first_observation": {
         "observed_at": "2026-10-17T07:13:42.458445Z",
         "parent_commit": "f1af9b81a3b148c24f81db260fb370ac8f931731",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012840362"
-      }
+      },
+      "kickoff": "2026-10-17T16:00:00Z",
+      "resolved_at": "2026-10-17T19:46:39.146928Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x7761cb75e71757d2096cda5cedf7bddbc13ffa8c4998033595df8288d43fb006",
+        "kickoff": "2026-10-17T16:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1693",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Georgia State vs. James Madison",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T19:46:39.146928Z",
+          "parent_commit": "faab0c984fd4c8bb6c117da67f043ca3333ee751",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39063909224"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -588,16 +638,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "53fa604299eb73dfd176f0ea7dced784ca55a155d0cf60143ffe02de69fe3265",
+      "commitment_nonce": "b5084a035828676def3749b720ad3095c093c5726dc9d39dfac2618426598f6b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T14:13:19.331646Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/19",
       "first_observation": {
         "observed_at": "2026-10-17T14:13:27.429375Z",
         "parent_commit": "6b410883b5b8b1e7d0343967f194ef5b35fc4055",
         "run": "https://github.com/0xinsider/picks/actions/runs/39039817405"
-      }
+      },
+      "kickoff": "2026-10-17T16:00:00Z",
+      "resolved_at": "2026-10-17T19:46:39.151915Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x4cfc7903e743797aeeb084e2392e43c6b7775032eef6a92afd2f10fe0d51ec38",
+        "kickoff": "2026-10-17T16:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1702",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Northwestern vs. Michigan State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/19",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T19:46:39.151915Z",
+          "parent_commit": "faab0c984fd4c8bb6c117da67f043ca3333ee751",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39063909224"
+        }
+      ]
     },
     {
       "pick_rank": 20,
