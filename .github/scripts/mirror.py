@@ -1308,7 +1308,7 @@ def tally() -> dict:
                 # leaves it out (verify.in_money).
                 proven_wins += outcome == "win"
                 proven_losses += outcome == "loss"
-            if value is not None and verify.in_money(pick):
+            if value is not None and verify.in_money(pick, pick_date):
                 profit += value - verify.STAKE_USD
                 staked += verify.STAKE_USD
                 if proven:

@@ -13,9 +13,9 @@
       "losses": 119,
       "decided": 281,
       "hit_rate": "57.7",
-      "profit_usd": "6100.42",
-      "staked": "281000",
-      "roi": "2.2"
+      "profit_usd": "7100.42",
+      "staked": "280000",
+      "roi": "2.5"
     },
     "wins": 338,
     "losses": 204,
@@ -23,9 +23,9 @@
     "decided": 542,
     "hit_rate": "62.4",
     "stake_usd": "1000",
-    "profit_usd": "24086.19",
-    "staked": "542000",
-    "roi": "4.4",
+    "profit_usd": "24876.55",
+    "staked": "539000",
+    "roi": "4.6",
     "through": "2026-10-16"
   },
   "picks": [
