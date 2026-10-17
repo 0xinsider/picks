@@ -41,16 +41,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "deba33ff27c78d9e60a3697a95b7088c602045e24453051036d24d18a5598f46",
+      "commitment_nonce": "fa18e76ba8ac35cbd7750be2aa9ac451f1a0acce17990bd22223da0c963529a4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.810047Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/3",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T10:30:00Z",
+      "resolved_at": "2026-10-17T14:39:02.850579Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x10499028f8356eff49ee5871e516ca6f78b01fc03cc61c815db95e57c22ab565",
+        "kickoff": "2026-10-17T10:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "686",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Erzurumspor FK vs. Eyüpspor",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T14:39:02.850579Z",
+          "parent_commit": "1b3d17babc62b749b769429573e81c19a941c95a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39048589881"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -126,16 +151,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "87d06f478abfd0d3dc9f4c39b4b6c823b8de53ded546c964257f1a99fa8fb99d",
+      "commitment_nonce": "4062c853ea83faa0d72749ec50071dfbd99691ab6059cf1f0816893412eeac96",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.894037Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/8",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T13:30:00Z",
+      "resolved_at": "2026-10-17T16:15:08.611081Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x2ad22fd9ecff7f1265d65bc77b29715f1a9580f06b2e451d1aaf4e4c7a3a6471",
+        "kickoff": "2026-10-17T13:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1691",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SV 07 Elversberg vs. FC Augsburg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T16:15:08.611081Z",
+          "parent_commit": "1b3d17babc62b749b769429573e81c19a941c95a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39048589881"
+        }
+      ]
     },
     {
       "pick_rank": 9,
