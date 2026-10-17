@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e2fbecd079558aed56ef78a97e025a4f69bc571877ffb0300d75c185dde7fec9",
+      "commitment_nonce": "ac3e1091840f6546538c8fd54a7dfdf1a51c82df29ebe37460fc911f8b4b8c76",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.777895Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/1",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T14:00:00Z",
+      "resolved_at": "2026-10-17T16:44:54.700456Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0x4b00e8069d8d62983f36700aad996a0bdb3583760bbc3c3d3777097c5e37bc8f",
+        "kickoff": "2026-10-17T14:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "684",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manchester City FC vs. Ipswich Town FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T16:44:54.700456Z",
+          "parent_commit": "5e1c4b8d9bd2c8ff09d20caac6ea0628db48be2b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39050756815"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -83,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2e7b405186e73362684e5379d35d74fdc2d72a573bbab9908b37871d8667d454",
+      "commitment_nonce": "b4c4eef0beb56c92bf63c4e0d0d965fd598d31d5d85cc9b553c4f53215969ff1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.826495Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/4",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T14:00:00Z",
+      "resolved_at": "2026-10-17T16:44:54.719647Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x508bc37ca4ebe9d7d9ba4129fcb34ed507e86126a3659e9bf32b80708e6fb8fd",
+        "kickoff": "2026-10-17T14:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "687",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brentford FC vs. Liverpool FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T16:44:54.719647Z",
+          "parent_commit": "5e1c4b8d9bd2c8ff09d20caac6ea0628db48be2b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39050756815"
+        }
+      ]
     },
     {
       "pick_rank": 5,
