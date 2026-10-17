@@ -147,6 +147,7 @@
       "pre_commitment": true,
       "kickoff": "2026-09-02T22:20:00Z",
       "outcome": "win",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.961500",
         "condition_id": "0x6c8a38bd5326e1b70643f5f2dd026de7ca6ca26a6d3f04088852950da8f620c3",
@@ -166,6 +167,13 @@
           "resolved_at": null,
           "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
           "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        },
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     }

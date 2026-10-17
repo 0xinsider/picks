@@ -35,6 +35,7 @@
       "state": "opened",
       "pre_commitment": true,
       "outcome": "win",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.855",
         "condition_id": "0x7fb8010a0cdc4ac4f7e93fb7a532731fbb81f951dd451f2402648eaa3cf285e1",
@@ -54,6 +55,13 @@
           "resolved_at": null,
           "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
           "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        },
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     },
@@ -4298,6 +4306,7 @@
       "pre_commitment": true,
       "kickoff": "2026-09-02T22:20:00Z",
       "outcome": "win",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.961500",
         "condition_id": "0x6c8a38bd5326e1b70643f5f2dd026de7ca6ca26a6d3f04088852950da8f620c3",
@@ -4317,6 +4326,13 @@
           "resolved_at": null,
           "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
           "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        },
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     },
@@ -9886,6 +9902,7 @@
       "kickoff": "2026-10-02T03:00:00Z",
       "resolved_at": "2026-10-02T04:57:06.296477Z",
       "outcome": "loss",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.590000",
         "condition_id": "0x104da8504024d06a2c9a73d1b3587a685304d659dc91cae6126e4c1a42ea30f0",
@@ -9906,6 +9923,13 @@
           "resolved_at": "2026-10-02T04:57:06.296477Z",
           "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
           "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        },
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T04:57:06.296477Z",
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     },

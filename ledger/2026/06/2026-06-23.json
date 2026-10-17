@@ -6,6 +6,7 @@
       "state": "opened",
       "pre_commitment": true,
       "outcome": "win",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.855",
         "condition_id": "0x7fb8010a0cdc4ac4f7e93fb7a532731fbb81f951dd451f2402648eaa3cf285e1",
@@ -25,6 +26,13 @@
           "resolved_at": null,
           "parent_commit": "a83882489e7b92dc5e25be2247ffb777e891e364",
           "run": "https://github.com/0xinsider/picks/actions/runs/35560430444"
+        },
+        {
+          "outcome": "win",
+          "resolved_at": null,
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     }

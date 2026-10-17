@@ -373,6 +373,7 @@
       "kickoff": "2026-10-02T03:00:00Z",
       "resolved_at": "2026-10-02T04:57:06.296477Z",
       "outcome": "loss",
+      "withdrawal_reason": "published_after_kickoff",
       "payload": {
         "backed_price": "0.590000",
         "condition_id": "0x104da8504024d06a2c9a73d1b3587a685304d659dc91cae6126e4c1a42ea30f0",
@@ -393,6 +394,13 @@
           "resolved_at": "2026-10-02T04:57:06.296477Z",
           "parent_commit": "5a7d51390e45a6c20e56fb02e252c212acd20f45",
           "run": "https://github.com/0xinsider/picks/actions/runs/36984278172"
+        },
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-02T04:57:06.296477Z",
+          "withdrawal_reason": "published_after_kickoff",
+          "parent_commit": "599ed17593b014741f669640ffa37000f207cfdb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39036228351"
         }
       ]
     }
