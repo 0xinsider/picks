@@ -654,16 +654,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f981a59d00d1ae7cd6a2d01bde0aac2104dcfb8f777f198d04970fa7b7a05b73",
+      "commitment_nonce": "f5a949e8363b85aefe96926a9df51512d142315e7d86891538e22079353b431a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T12:13:36.087625Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/17",
       "first_observation": {
         "observed_at": "2026-10-17T12:13:42.831341Z",
         "parent_commit": "19954cab432fbcfc97d96b1aa10a257ff96e870e",
         "run": "https://github.com/0xinsider/picks/actions/runs/39031687025"
-      }
+      },
+      "kickoff": "2026-10-17T19:30:00Z",
+      "resolved_at": "2026-10-17T22:58:28.315652Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x11f8ef36b32f20f0c9be95a89b7bc25a45330e2c3d6a853490d7ad4ab7f82df0",
+        "kickoff": "2026-10-17T19:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1700",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Northern Illinois vs. Wyoming",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/17",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T22:58:28.315652Z",
+          "parent_commit": "2c12ddc8fbb15539e5f0045546860b99ad5cc5c3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39077188948"
+        }
+      ]
     },
     {
       "pick_rank": 18,
