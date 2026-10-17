@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 557,
-    "sealed": 8,
+    "opened": 558,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 296,
+    "proven": 297,
     "proven_record": {
-      "wins": 169,
+      "wins": 170,
       "losses": 126,
-      "decided": 295,
-      "hit_rate": "57.3",
-      "profit_usd": "6383.16",
-      "staked": "294000",
-      "roi": "2.2"
+      "decided": 296,
+      "hit_rate": "57.4",
+      "profit_usd": "7533.70",
+      "staked": "295000",
+      "roi": "2.6"
     },
-    "wins": 345,
+    "wins": 346,
     "losses": 211,
     "voids": 1,
-    "decided": 556,
+    "decided": 557,
     "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "24159.29",
-    "staked": "553000",
-    "roi": "4.4",
+    "profit_usd": "25309.83",
+    "staked": "554000",
+    "roi": "4.6",
     "through": "2026-10-17"
   },
   "picks": [
@@ -19530,16 +19530,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6cde114eb5dd2399341a2d5160720cacb1a2ac211364ee31268ff84406b8690e",
+      "commitment_nonce": "bbe9fa0e7bf712e6dd4e03a4a003536434cea200df5e87aa0b396c1864deb0c9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.877586Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/7",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T16:30:00Z",
+      "resolved_at": "2026-10-17T20:18:32.583442Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x0e504afd4695f776c3defb40bc63e036dd97883751f4d3ae15d8190c563fec30",
+        "kickoff": "2026-10-17T16:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "690",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rutgers vs. Maryland",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T20:18:32.583442Z",
+          "parent_commit": "808c135eb3c30c64f566d37fcec216b126c4b42a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39066156894"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-17",
