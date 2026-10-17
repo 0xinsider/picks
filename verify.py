@@ -168,6 +168,10 @@ KNOWN_LATE_COMMITS = {
 # number; units, ROI and hit rate
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
+
+# What one share pays when Polymarket resolves a binary market 50-50, the only
+# source of a `void` outcome. The site's VOID_PAYOUT_PER_SHARE.
+VOID_PAYOUT_PER_SHARE = Decimal("0.5")
 # The most picks one product day can carry: ranks run 1 to this. Mirrors the
 # public daily bound. Max permits twenty; historical ranks and proof bytes remain
 # unchanged. Private trading has a separate ten-rank contract.
@@ -183,7 +187,8 @@ WITHDRAWAL_REASONS = ("provider_game_cancelled",)
 
 # Picks the site withdrew before the ledger endpoint served
 # `withdrawal_reason`. Each opened here with no field and gains it once, with
-# a disclosed revision (check 6). Every later withdrawal arrives with the
+# a disclosed revision (check 6), and is out of the money from the pin
+# (in_money). Every later withdrawal arrives with the
 # pick's first opening, so this set never grows: a new entry needs the same
 # evidence as this one. 2026-10-06 pick 514 was withdrawn 07:10:49Z for
 # provider_game_cancelled and settled void at 08:10:02Z; on 2026-10-17 it was
@@ -749,30 +754,44 @@ def observation_failures(who: str, history: list[dict], current: dict) -> list[s
 def in_money(pick: dict) -> bool:
     """Whether a pick's flat stake counts in profit, staked and ROI.
 
-    An opened win or loss, unless the site withdrew the pick. A withdrawn pick
-    stays opened, verified and counted in the outcome tallies with its real
-    outcome; the site leaves it out of every money figure, and so does this.
+    An opened win, loss or void, unless the site withdrew the pick. A void is
+    staked: Polymarket resolves its market 50-50, so the stake is not refunded
+    (stake_return). A withdrawn pick stays opened, verified and counted in the
+    outcome tallies with its real outcome; the site leaves it out of every
+    money figure, and so does this. The site's owner of the rule is
+    `pick_staked_outcome` in 0xinsider/0xinsider
+    `backend/crates/core/src/pick_valuation.rs` (#25777, #25784).
+
+    A pinned late withdrawal (KNOWN_LATE_WITHDRAWALS) is out of the money from
+    the pin, before its record gains the field: the pin is the reviewed fact,
+    and the record's figures do not depend on when the mirror next runs.
     """
     return (
         pick.get("state") == "opened"
-        and pick.get("outcome") in ("win", "loss")
+        and pick.get("outcome") in ("win", "loss", "void")
         and pick.get("withdrawal_reason") is None
+        and pick.get("pick_id") not in KNOWN_LATE_WITHDRAWALS
     )
 
 
 def stake_return(outcome: str, price: Decimal) -> Decimal | None:
     """What a flat STAKE_USD stake returned. Mirrors the site's own arithmetic.
 
-    A win pays STAKE_USD/price, a loss forfeits the stake, a void refunds it.
-    A decided pick with no usable price is excluded from money totals rather
-    than guessed at, and is still counted in the hit rate.
+    The stake buys STAKE_USD/price shares. A win pays 1 on each, so it returns
+    STAKE_USD/price; a loss pays nothing; a void is a market Polymarket
+    resolved 50-50, which pays 0.5 on each share, so it returns
+    STAKE_USD*0.5/price. Polymarket does not refund a void. The site's owner is
+    `pick_gross_return` in 0xinsider/0xinsider
+    `backend/crates/core/src/pick_valuation.rs`. A settled pick with no usable
+    price is excluded from money totals rather than guessed at, and is still
+    counted in the outcome tallies.
     """
     if outcome == "win":
         return None if price <= 0 else STAKE_USD / price
     if outcome == "loss":
         return Decimal(0)
     if outcome == "void":
-        return STAKE_USD
+        return None if price <= 0 else STAKE_USD * VOID_PAYOUT_PER_SHARE / price
     return None
 
 

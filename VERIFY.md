@@ -272,16 +272,22 @@ anything that would rather not walk the tree. Its `record` object carries the
 counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven`, `wins`,
 `losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
 the money
-figures: `stake_usd`, the flat stake every decided pick is counted at
+figures: `stake_usd`, the flat stake every win, loss and void is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
-total stake. `proven_record` separately reports the git-dated
+total stake. A win returns `stake_usd / backed_price`, a loss returns 0, and a
+void returns `stake_usd * 0.5 / backed_price`: Polymarket resolves a void
+market 50-50, so each share pays half a dollar and the stake is not refunded.
+A withdrawn pick is left out of the money ("Withdrawn picks"), so `staked` can
+be less than `stake_usd` times the settled count. These are the site's own
+rules, `pick_gross_return` in 0xinsider/0xinsider
+`backend/crates/core/src/pick_valuation.rs`. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
 date, not an independent receipt. None of these figures establish real fills or
 subscriber profit; fees are excluded. `profit_usd` was named `profit_per_100` until September 22,
 2026, when the stake moved from $100 to $1,000; every pick, including those published before
 that date, is recomputed at the current stake, and `stake_usd` says which one.
 `record.svg` is the chart at the top of the README, the cumulative return of
-$1,000 on every decided pick. Both are generated from `ledger/` and prove
+$1,000 on every staked pick. Both are generated from `ledger/` and prove
 nothing on their own; `verify.yml` regenerates them and fails on any diff, so
 neither can drift from the data.
 
@@ -386,7 +392,9 @@ appears after the pick opened, or one that is removed or changed, fails check 6.
 The one exception is pinned in `verify.py` as `KNOWN_LATE_WITHDRAWALS`: pick
 514 (2026-10-06) was withdrawn for `provider_game_cancelled` at 07:10:49Z and
 settled void at 08:10:02Z, before the endpoint served the field. It opened here
-with no withdrawal and gains it once, by an appended revision.
+with no withdrawal and gains it once, by an appended revision. The pin keeps it out
+of the money before that revision lands, so the record does not depend on when
+the mirror next runs.
 
 ### Picks that predate this scheme
 

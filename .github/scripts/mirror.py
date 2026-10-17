@@ -1431,7 +1431,8 @@ def render_record(stats: dict) -> str:
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
-        "Profit and ROI count a flat $1,000 stake at the frozen price on each decided pick, before fees.",
+        "Profit and ROI count a flat $1,000 stake at the frozen price on each win, loss and void, before fees.",
+        "A void pays half of 1 USD a share; a pick the site withdrew is left out.",
         "They do not establish fills, actual wagers, or subscriber profit.",
         "`python3 verify.py` checks the same data and public git history.",
         "",
@@ -1444,7 +1445,7 @@ def render_record(stats: dict) -> str:
 # --------------------------------------------------------------------------
 #
 # record.svg is the first thing README.md shows: the cumulative return of the
-# flat stake (verify.STAKE_USD) on every decided pick, in the order the picks
+# flat stake (verify.STAKE_USD) on every staked pick (verify.in_money), in the order the picks
 # were made. It is generated from ledger/ by the same regenerate pass that
 # writes index.json and the README table, so verify.yml's drift check covers
 # it too: a chart that disagrees with the ledger fails the repository the same
@@ -1484,7 +1485,7 @@ def long_date(iso: str) -> str:
 
 
 def cumulative_series(picks: list[dict]) -> list[tuple[float, Decimal, bool]]:
-    """One point per decided pick with a usable price: (x, running profit, proven).
+    """One point per staked pick with a usable price: (x, running profit, proven).
 
     x is the pick's date as an ordinal day plus the pick's share of that day,
     so a day with six picks reads as six steps across the day rather than a
@@ -1588,7 +1589,7 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
     last_x = int(points[-1][0]) + 1
     lo = min(Decimal(0), min(value for _, value, _ in points))
     hi = max(Decimal(0), max(value for _, value, _ in points))
-    # A span of zero (every decided pick returned exactly its stake) falls back
+    # A span of zero (every staked pick returned exactly its stake) falls back
     # to one stake's worth of axis so the chart still has a scale.
     step = nice_step(float(hi - lo) or float(verify.STAKE_USD))
     y_min = (int(lo) // step) * step if lo < 0 else 0
@@ -1686,8 +1687,8 @@ def render_chart_embed(stats: dict) -> str:
     else:
         alt = (
             f"Cumulative profit before fees at {verify.STAKE_USD:,.0f} USD per pick through {long_date(stats['through'])}: "
-            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked across "
-            f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L, "
+            f"{Decimal(stats['profit_usd']):+,.2f} USD on {Decimal(stats['staked']):,.0f} USD staked. "
+            f"{stats['decided']} decided picks, {stats['wins']}W {stats['losses']}L {stats['voids']}V, "
             f"{stats['hit_rate']}% hit rate, {Decimal(stats['roi']):+.1f}% ROI."
         )
     return (
