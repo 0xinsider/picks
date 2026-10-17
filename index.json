@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 552,
-    "sealed": 13,
+    "opened": 554,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 291,
+    "proven": 293,
     "proven_record": {
-      "wins": 166,
+      "wins": 168,
       "losses": 124,
-      "decided": 290,
-      "hit_rate": "57.2",
-      "profit_usd": "5563.15",
-      "staked": "289000",
-      "roi": "1.9"
+      "decided": 292,
+      "hit_rate": "57.5",
+      "profit_usd": "7321.31",
+      "staked": "291000",
+      "roi": "2.5"
     },
-    "wins": 342,
+    "wins": 344,
     "losses": 209,
     "voids": 1,
-    "decided": 551,
-    "hit_rate": "62.1",
+    "decided": 553,
+    "hit_rate": "62.2",
     "stake_usd": "1000",
-    "profit_usd": "23339.28",
-    "staked": "548000",
-    "roi": "4.3",
+    "profit_usd": "25097.44",
+    "staked": "550000",
+    "roi": "4.6",
     "through": "2026-10-17"
   },
   "picks": [
@@ -19419,16 +19419,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a1389e5e2b2f103a5273fd9f579bfd0b3b51c09f6b492fbfed9bf2c38fd3b553",
+      "commitment_nonce": "ded1bcbc4885763fbbcecbc24558803e94769bfd969d4e18532ec4bf8d03ef42",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.843249Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/5",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T14:00:00Z",
+      "resolved_at": "2026-10-17T19:20:33.828841Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x920d0b39e52f5b2613aeffc903a408c4aed7369eec3f93a584f7c19e26383f24",
+        "kickoff": "2026-10-17T14:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "688",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bristol City FC vs. Sheffield United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T19:20:33.828841Z",
+          "parent_commit": "ce6e8daac6d79c5e1bf83dacb64bbb215d75e62d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39062047734"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-17",
@@ -19437,16 +19462,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "989c8e99d0159079f8bc755188bc7058824f1990e7639f0f2377f7f1a914ce8a",
+      "commitment_nonce": "dac5f10d775bf1f750b24d644f55079b209fe40d4fd5d2267f987046f8a09fdf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:01:24.862102Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/6",
       "first_observation": {
         "observed_at": "2026-10-17T07:01:33.555790Z",
         "parent_commit": "5235f4e5b1fdc9270df1239f924fd7b9f0084182",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012083257"
-      }
+      },
+      "kickoff": "2026-10-17T16:30:00Z",
+      "resolved_at": "2026-10-17T19:20:33.809973Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x246cc9a0b6737c4b7e6e9f6603b3809cd920600848b1f2193459107444c3d07b",
+        "kickoff": "2026-10-17T16:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "689",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Newcastle United FC vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T19:20:33.809973Z",
+          "parent_commit": "ce6e8daac6d79c5e1bf83dacb64bbb215d75e62d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39062047734"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-17",
