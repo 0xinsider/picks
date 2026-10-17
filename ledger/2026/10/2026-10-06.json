@@ -20,6 +20,7 @@
       "kickoff": "2026-10-06T05:00:00Z",
       "resolved_at": "2026-10-06T08:10:02.741370Z",
       "outcome": "void",
+      "withdrawal_reason": "provider_game_cancelled",
       "payload": {
         "backed_price": "0.499500",
         "condition_id": "0x93ec166b342d39ca9d550619183a5d4df83dad7bbb150bc4bbf75581c8580927",
@@ -40,6 +41,13 @@
           "resolved_at": "2026-10-06T08:10:02.741370Z",
           "parent_commit": "676aa3c68ac4cf4ab9c95e6e8baeb3fd110fede7",
           "run": "https://github.com/0xinsider/picks/actions/runs/37484859946"
+        },
+        {
+          "outcome": "void",
+          "resolved_at": "2026-10-06T08:10:02.741370Z",
+          "withdrawal_reason": "provider_game_cancelled",
+          "parent_commit": "d69015d7f36b5f7babdda046c7041a15ca81e53c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39025715670"
         }
       ]
     },
