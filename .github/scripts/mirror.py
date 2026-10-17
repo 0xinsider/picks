@@ -179,6 +179,10 @@ OPENED_FIELDS = (
     "kickoff",
     "resolved_at",
     "outcome",
+    # Outside the hashed payload (0xinsider/0xinsider#25792). Written only when
+    # the site withdrew the pick; a counted pick carries no key, and an endpoint
+    # that predates the field sends none.
+    "withdrawal_reason",
     "payload",
     "matchup",
     "category",
@@ -211,6 +215,7 @@ RECORD_FIELDS = (
     "kickoff",
     "resolved_at",
     "outcome",
+    "withdrawal_reason",
     "payload",
     "matchup",
     "category",
@@ -619,6 +624,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
         return pick_date, rank, state
 
     require(entry.get("outcome") in OUTCOMES, f"{who}: unknown outcome")
+    check_withdrawal(entry, who)
     check_timestamp(entry, "resolved_at", who, nullable=True)
 
     payload = entry.get("payload")
@@ -654,6 +660,21 @@ def validate(entry: dict) -> tuple[str, int, str]:
     )
     check_timestamp(entry, "sealed_at", who)
     return pick_date, rank, state
+
+
+def check_withdrawal(entry: dict, who: str) -> None:
+    """A settled entry's withdrawal is null or a reason this script knows.
+
+    Absent is tolerated: an endpoint that predates the field sends none
+    (0xinsider/0xinsider#25792). An unknown reason stops the run, as an unknown
+    outcome does: it decides whether the pick is in the money, so it is read
+    before it lands in an append-only file.
+    """
+    reason = entry.get("withdrawal_reason")
+    require(
+        reason is None or reason in verify.WITHDRAWAL_REASONS,
+        f"{who}: unknown withdrawal_reason",
+    )
 
 
 def check_payload(
@@ -711,6 +732,7 @@ def validate_uncommitted(entry: dict, pick_date: str, rank: int, who: str) -> No
             )
         return
 
+    check_withdrawal(entry, who)
     check_timestamp(entry, "resolved_at", who, nullable=True)
     payload = entry.get("payload")
     if payload is None:
@@ -944,13 +966,32 @@ def revision(entry: dict, context: dict) -> dict:
     (parent_commit, run) is what pins the write: the parent fixes its place in
     history, and the run is GitHub's own timestamped record of the job that made
     it. VERIFY.md gives the command that finds the commit itself.
+
+    `withdrawal_reason` is written only when the site withdrew the pick, so a
+    counted pick's revisions keep the shape they always had.
     """
-    return {
+    line = {
         "outcome": entry["outcome"],
         "resolved_at": entry.get("resolved_at"),
-        "parent_commit": context["parent_commit"],
-        "run": context["run"],
     }
+    if entry.get("withdrawal_reason") is not None:
+        line["withdrawal_reason"] = entry["withdrawal_reason"]
+    line["parent_commit"] = context["parent_commit"]
+    line["run"] = context["run"]
+    return line
+
+
+def with_withdrawal(prior: dict, reason: str) -> None:
+    """Add `withdrawal_reason` to a stored record in RECORD_FIELDS order.
+
+    In place, so the day's list keeps the same object. Only an absent field is
+    added; the caller refuses a change to one already written.
+    """
+    fields = dict(prior)
+    fields["withdrawal_reason"] = reason
+    prior.clear()
+    prior.update({field: fields[field] for field in RECORD_FIELDS if field in fields})
+    prior.update({field: value for field, value in fields.items() if field not in prior})
 
 
 def apply_reveal(entries: list[dict], context: dict) -> list[str]:
@@ -1105,9 +1146,40 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             ):
                 prior["payload"] = entry["payload"]
                 touched.append(f"rank {rank} gained its payload")
-            if prior.get("outcome") == entry["outcome"] and prior.get("resolved_at") == entry.get("resolved_at"):
+            # A withdrawal moves a pick out of the money, so it changes only by
+            # a disclosed revision, as the outcome does (verify.py check 6). An
+            # endpoint that predates the field sends no key and changes
+            # nothing. A pick withdrawn before the endpoint named withdrawals
+            # gains the field once (verify.KNOWN_LATE_WITHDRAWALS); every other
+            # pick arrives withdrawn at its first opening, because the site
+            # withdraws only while a pick is pending, and never reverses it.
+            withdrawn = False
+            corrected = not (
+                prior.get("outcome") == entry["outcome"]
+                and prior.get("resolved_at") == entry.get("resolved_at")
+            )
+            if "withdrawal_reason" in entry and entry["withdrawal_reason"] != prior.get("withdrawal_reason"):
+                require(
+                    prior.get("withdrawal_reason") is None
+                    and verify.pick_identity(prior) in {
+                        ("id", pick_id) for pick_id in verify.KNOWN_LATE_WITHDRAWALS
+                    },
+                    f"{who}: withdrawal_reason moved from {prior.get('withdrawal_reason')!r} to "
+                    f"{entry['withdrawal_reason']!r} after the pick opened. A withdrawal is "
+                    f"written before settlement and never reversed. Nothing was written.",
+                )
+                with_withdrawal(prior, entry["withdrawal_reason"])
+                withdrawn = True
+                touched.append(f"rank {rank} withdrawn ({entry['withdrawal_reason']})")
+            if not withdrawn and not corrected:
                 continue
-            prior.setdefault("revisions", []).append(revision(entry, context))
+            # One revision records the whole change. It carries the stored
+            # withdrawal, so a correction to a withdrawn pick restates it.
+            prior.setdefault("revisions", []).append(
+                revision({**entry, "withdrawal_reason": prior.get("withdrawal_reason")}, context)
+            )
+            if not corrected:
+                continue
             prior["outcome"] = entry["outcome"]
             if entry.get("resolved_at") is None:
                 prior.pop("resolved_at", None)
