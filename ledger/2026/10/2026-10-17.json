@@ -420,16 +420,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b92c7e39e938fe549b4cd601c1e12a90c2625898a8fd89c7b77b388ac6764ea6",
+      "commitment_nonce": "e90a149543e52d7e90a69d17b0fba001f7bd9eea4ed5fad879b28a5236c7207e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T10:13:15.026668Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/15",
       "first_observation": {
         "observed_at": "2026-10-17T10:13:22.152010Z",
         "parent_commit": "6b8c5dc6e916bd4257134018ce4b5f2f9b20ad02",
         "run": "https://github.com/0xinsider/picks/actions/runs/39024064479"
-      }
+      },
+      "kickoff": "2026-10-17T13:00:00Z",
+      "resolved_at": "2026-10-17T17:07:02.604872Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x97a1c49554d6fcf7f80a288d3d16e14ec2ff80cda0e777002abc2c56e6972304",
+        "kickoff": "2026-10-17T13:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1698",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Amed Sportif vs. Konyaspor",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T17:07:02.604872Z",
+          "parent_commit": "75876cec3cac9a9bcd5f50fb652ea243b5073565",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39052339952"
+        }
+      ]
     },
     {
       "pick_rank": 16,
