@@ -170,6 +170,57 @@
         "parent_commit": "f1af9b81a3b148c24f81db260fb370ac8f931731",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012840362"
       }
+    },
+    {
+      "pick_rank": 11,
+      "pick_id": "1694",
+      "publication_order": 11,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "5041703f6a84ac63d0984f36cf566762f245d33bc27e11123187218eb4faf40a",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-17T07:43:41.460926Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/11",
+      "first_observation": {
+        "observed_at": "2026-10-17T07:43:49.182547Z",
+        "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
+        "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
+      }
+    },
+    {
+      "pick_rank": 12,
+      "pick_id": "1695",
+      "publication_order": 12,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "fe09420806757a03dd133d4bdfc4ca8eb7abae55f0cec35d3e2a577f8546bce0",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-17T07:43:41.477436Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/12",
+      "first_observation": {
+        "observed_at": "2026-10-17T07:43:49.182547Z",
+        "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
+        "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
+      }
+    },
+    {
+      "pick_rank": 13,
+      "pick_id": "1696",
+      "publication_order": 13,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "35275bb947c43e1fea170cce2cb40d3940cdffa94de76eccb2e532e38dc2a8b0",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-17T07:43:41.493616Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/13",
+      "first_observation": {
+        "observed_at": "2026-10-17T07:43:49.182547Z",
+        "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
+        "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
+      }
     }
   ]
 }
