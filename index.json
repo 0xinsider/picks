@@ -2,30 +2,30 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 551,
-    "sealed": 14,
+    "opened": 552,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 290,
+    "proven": 291,
     "proven_record": {
       "wins": 166,
-      "losses": 123,
-      "decided": 289,
-      "hit_rate": "57.4",
-      "profit_usd": "6563.15",
-      "staked": "288000",
-      "roi": "2.3"
+      "losses": 124,
+      "decided": 290,
+      "hit_rate": "57.2",
+      "profit_usd": "5563.15",
+      "staked": "289000",
+      "roi": "1.9"
     },
     "wins": 342,
-    "losses": 208,
+    "losses": 209,
     "voids": 1,
-    "decided": 550,
-    "hit_rate": "62.2",
+    "decided": 551,
+    "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "24339.28",
-    "staked": "547000",
-    "roi": "4.4",
+    "profit_usd": "23339.28",
+    "staked": "548000",
+    "roi": "4.3",
     "through": "2026-10-17"
   },
   "picks": [
@@ -19516,16 +19516,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "96704e8a34d27934e1d920d5a6fcc3e7d8d01c6f227417fa30cc9f2f1689041c",
+      "commitment_nonce": "f5a372324c49b1c73d3d6995022649f773dd0e38fdfe07b8dfcb4a1d19ed90ab",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:13:35.354133Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/9",
       "first_observation": {
         "observed_at": "2026-10-17T07:13:42.458445Z",
         "parent_commit": "f1af9b81a3b148c24f81db260fb370ac8f931731",
         "run": "https://github.com/0xinsider/picks/actions/runs/39012840362"
-      }
+      },
+      "kickoff": "2026-10-17T16:00:00Z",
+      "resolved_at": "2026-10-17T18:35:14.653845Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xb2a43710b0f46bc39705a45001ea372292699c240b36ffc1162962f1ad442864",
+        "kickoff": "2026-10-17T16:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1692",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bologna FC 1909 vs. FC Internazionale Milano",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T18:35:14.653845Z",
+          "parent_commit": "a0ccde6f466812ce9267bc0f4149fe5d13bef03c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39058753853"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-17",
