@@ -177,16 +177,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5041703f6a84ac63d0984f36cf566762f245d33bc27e11123187218eb4faf40a",
+      "commitment_nonce": "c03c3e34bdfa5b31a400dce407a96b744276b76432e10f67abab29d048b5cd1b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:43:41.460926Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/11",
       "first_observation": {
         "observed_at": "2026-10-17T07:43:49.182547Z",
         "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
         "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
-      }
+      },
+      "kickoff": "2026-10-17T09:00:00Z",
+      "resolved_at": "2026-10-17T13:23:55.150794Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x73c5a95224628de2930ddd7527e5708e7eae9bc9a2f6458d736bfbeb255bbfad",
+        "kickoff": "2026-10-17T09:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1694",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "BNK FEARX",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: BNK FEARX vs Team WE (BO5) - Demacia Cup Global Invitational Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/11",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T13:23:55.150794Z",
+          "parent_commit": "47f667520512ad7b9459a44014d02a90d7843c8e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39039715674"
+        }
+      ]
     },
     {
       "pick_rank": 12,
@@ -194,16 +219,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fe09420806757a03dd133d4bdfc4ca8eb7abae55f0cec35d3e2a577f8546bce0",
+      "commitment_nonce": "a874a5cd3023d911d33ab8265947302c1f4b9720644c0967fb777647dc39edf3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:43:41.477436Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/12",
       "first_observation": {
         "observed_at": "2026-10-17T07:43:49.182547Z",
         "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
         "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
-      }
+      },
+      "kickoff": "2026-10-17T11:00:00Z",
+      "resolved_at": "2026-10-17T13:33:51.961234Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xd3c9fe1c0091a122bc9ee11a15140a6610bef3ddfac9c8952875801110eab9c0",
+        "kickoff": "2026-10-17T11:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1695",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Felix Gill",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Catania: Felix Gill vs Radu Mihai Papoe",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-17T13:33:51.961234Z",
+          "parent_commit": "47f667520512ad7b9459a44014d02a90d7843c8e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39039715674"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -228,16 +278,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "94ad6b3f5ee8cf9dacc17f7f75e33b25949892619e84d9eaec9ff14065ad65ee",
+      "commitment_nonce": "038e8a7a818d7ad757fe92f0c987dc864137edc78fe1616ab6bcec8bc4a3c64b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T09:57:49.596073Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/14",
       "first_observation": {
         "observed_at": "2026-10-17T09:57:58.273260Z",
         "parent_commit": "6361fe2fdd77052bbdbc0606249794654aa778c3",
         "run": "https://github.com/0xinsider/picks/actions/runs/39023087209"
-      }
+      },
+      "kickoff": "2026-10-17T11:30:00Z",
+      "resolved_at": "2026-10-17T14:09:23.664154Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xab12e3a6361f9875cc447c064e1736b7d50dd411cd3991faa8c74f627073bfaa",
+        "kickoff": "2026-10-17T11:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1697",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Everton FC vs. Chelsea FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-17T14:09:23.664154Z",
+          "parent_commit": "47f667520512ad7b9459a44014d02a90d7843c8e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39039715674"
+        }
+      ]
     },
     {
       "pick_rank": 15,
