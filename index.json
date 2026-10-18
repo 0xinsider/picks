@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 566,
-    "sealed": 18,
+    "opened": 567,
+    "sealed": 17,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 305,
+    "proven": 306,
     "proven_record": {
-      "wins": 174,
+      "wins": 175,
       "losses": 128,
-      "decided": 302,
+      "decided": 303,
       "withdrawn": 2,
-      "hit_rate": "57.6",
-      "profit_usd": "8123.99",
-      "staked": "302000",
-      "roi": "2.7"
+      "hit_rate": "57.8",
+      "profit_usd": "8698.79",
+      "staked": "303000",
+      "roi": "2.9"
     },
-    "wins": 348,
+    "wins": 349,
     "losses": 213,
     "voids": 1,
-    "decided": 561,
+    "decided": 562,
     "withdrawn": 4,
-    "hit_rate": "62.0",
+    "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "25900.11",
-    "staked": "561000",
-    "roi": "4.6",
+    "profit_usd": "26474.92",
+    "staked": "562000",
+    "roi": "4.7",
     "through": "2026-10-18"
   },
   "picks": [
@@ -20202,16 +20202,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ea8104e9b885d740ece4cc994691b40a8d8de58478d38378d81837491a913243",
+      "commitment_nonce": "a712e0c80817ecf98df65ba9059f2ce85d5f07ffec3d0254c5f832abcaa045ce",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.010859Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/3",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T12:00:00Z",
+      "resolved_at": "2026-10-18T14:25:02.361303Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x7120d4550d18fbeb991355bc536766b12d3a6f20409f34559360a566378007f3",
+        "kickoff": "2026-10-18T12:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1706",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CA Osasuna vs. Real Racing Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T14:25:02.361303Z",
+          "parent_commit": "abc643e7504796c134f2a4bc9e570a1c2a0430ca",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39135888923"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-18",
