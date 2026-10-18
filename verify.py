@@ -797,9 +797,9 @@ def withdrawn(pick: dict, pick_date: str | None = None) -> bool:
     The site's record (its archive, its stats page, its emails) leaves a
     withdrawn pick out of every count and money figure: wins, losses, voids,
     the hit rate, profit, staked and ROI (0xinsider/0xinsider#26254; the
-    ledger endpoint's contract, `backend/docs/internal-api/167-pick-of-the-day-
-    commitment-ledger.md`). This record applies the same rule, so the two
-    publish one record. The pick stays here, opened and verified with its real
+    ledger endpoint's contract is
+    `backend/docs/internal-api/167-pick-of-the-day-commitment-ledger.md`).
+    This record applies the same rule, so the two publish one record. The pick stays here, opened and verified with its real
     outcome, and the record reports it separately as `withdrawn`.
 
     A pinned late withdrawal (KNOWN_LATE_WITHDRAWALS) is withdrawn from the
