@@ -217,16 +217,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "708cf558ec5393c1d01a37ee6bf935e5f1216f5e5c1d45db5f54b18707ffef4b",
+      "commitment_nonce": "d7474dd009f8ca6655bc0e1155816a40bf948030f744e5dd47c87bf33a002515",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.083552Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/7",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T13:30:00Z",
+      "resolved_at": "2026-10-18T17:12:20.330312Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x004ffe94b8541d80379fe0a7c7f81c1ce63551a9d2c453100916a6f37fb2e4d2",
+        "kickoff": "2026-10-18T13:30:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1710",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Jaguars",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Texans vs. Jaguars",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T17:12:20.330312Z",
+          "parent_commit": "20616cb56cc18520afd809e9fc6c476195185186",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39148494055"
+        }
+      ]
     },
     {
       "pick_rank": 8,
