@@ -91,16 +91,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "04de69058324bbb63221dde195d81b9b4099fff325fed3a49390a8615fc97066",
+      "commitment_nonce": "493fa3e0df0392b6ce1a8c82569da278483bc5294067c906271a9fcefba6adaa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.028333Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/4",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T13:00:00Z",
+      "resolved_at": "2026-10-18T15:22:14.920666Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x00aa38a148c5d70e386b032d7f2fc705299ff48b6127fbd62545ff2c7e61fe87",
+        "kickoff": "2026-10-18T13:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1707",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brighton & Hove Albion FC vs. Crystal Palace FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-18T15:22:14.920666Z",
+          "parent_commit": "f9c33e6f0d0c73c7bf3ea4e4aadca5fa50c8adb3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39140171750"
+        }
+      ]
     },
     {
       "pick_rank": 5,
@@ -108,16 +133,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e20f99c617a06466a7ae6fc941e1a5135c52743fdca786550bdb77b88a125c7c",
+      "commitment_nonce": "f2d3990656185cf9400bf7a55bc744eb1fd800a9f322b88e18a8a8745a413d63",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.046812Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/5",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T13:00:00Z",
+      "resolved_at": "2026-10-18T15:22:14.963944Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x9ace536e6ad15e7dd2c37adc0a74cdfa7873eeb4b6ea8d13f296f3bbfee3400e",
+        "kickoff": "2026-10-18T13:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1708",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AFC Bournemouth vs. Sunderland AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T15:22:14.963944Z",
+          "parent_commit": "f9c33e6f0d0c73c7bf3ea4e4aadca5fa50c8adb3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39140171750"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -125,16 +175,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6576f038296f5c98cbb8dca9ef84410119eea600cea1d730344110bcd0cd7092",
+      "commitment_nonce": "7aa63999c9b8cab2203af30e9c99b4d857f80cfbf8f6c452c59175bcf6898d38",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.065138Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/6",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T13:00:00Z",
+      "resolved_at": "2026-10-18T15:22:14.944909Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x3d735d97dfa0d3717ec3b5bc3e4ba40b2bf52d836a5cdc25992b2bb9bb874e7b",
+        "kickoff": "2026-10-18T13:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1709",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Leeds United FC vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T15:22:14.944909Z",
+          "parent_commit": "f9c33e6f0d0c73c7bf3ea4e4aadca5fa50c8adb3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39140171750"
+        }
+      ]
     },
     {
       "pick_rank": 7,
