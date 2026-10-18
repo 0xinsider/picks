@@ -301,16 +301,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "add857533179197fcdad750699c23ed748f30ffdf2105c404235e5f0b6081de6",
+      "commitment_nonce": "989be02bced29c309f154994d245aacd66ae6fcd4e782e6958104b7579284c70",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.118654Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/9",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T20:31:05.700968Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xf6844f1b440904be8e695a30cb3da5c3497b9ed099c45af09b1b39b1c618a768",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1712",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Jets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jets vs. Patriots",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T20:31:05.700968Z",
+          "parent_commit": "79f1ac54ecd59aae424a97b848405d8e649f5094",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39163667305"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -360,16 +385,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f8b8003e92f6a178ce80655e49d56e38ae8a6db982fec50cf1315fb445b0457d",
+      "commitment_nonce": "b2235021e6fd800bb62bc24768f250398e8e07d68b6803005667fe46ada789f5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.155597Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/11",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T20:31:05.731164Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x805f9815edc00b4e6374b32aa345c151a6602ba816d1aeffacee26910bfe7271",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1714",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Titans vs. Colts",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-18T20:31:05.731164Z",
+          "parent_commit": "79f1ac54ecd59aae424a97b848405d8e649f5094",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39163667305"
+        }
+      ]
     },
     {
       "pick_rank": 12,
@@ -436,16 +486,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3cb0337d7dee3d1b5dc6f70c0d1c0854205ecc1a0b11206729c8a4050e1f9556",
+      "commitment_nonce": "9c4bce8266426fdfe9887c2855bd2734d29fdad616d478f956a36619f133cf7d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.209248Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/14",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T20:31:05.719920Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x2ba774da223f31a6ef3957ae1219cf106fb24448060d962c8d5e1331140f3523",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1717",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bears vs. Falcons",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T20:31:05.719920Z",
+          "parent_commit": "79f1ac54ecd59aae424a97b848405d8e649f5094",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39163667305"
+        }
+      ]
     },
     {
       "pick_rank": 15,
