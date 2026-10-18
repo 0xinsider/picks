@@ -259,16 +259,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5848ee4ef8be10120c8da7b03718a57b2149661cca84778b70134a7c4163cf68",
+      "commitment_nonce": "35376a85052d49f0b0d95af59440b742a3a1816d2a75539dad4e533db320961b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.101355Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/8",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T20:19:51.862727Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x0c98d894e9f21fecb782add5f7f3023143eb7db6404835ee069346a9305f7c69",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1711",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Ravens",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ravens vs. Browns",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T20:19:51.862727Z",
+          "parent_commit": "158ccf73a538a0d2bb51775ce8179b51ede45b21",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39162811309"
+        }
+      ]
     },
     {
       "pick_rank": 9,
