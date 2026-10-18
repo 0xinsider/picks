@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "35275bb947c43e1fea170cce2cb40d3940cdffa94de76eccb2e532e38dc2a8b0",
+      "commitment_nonce": "c4fa10d6c43a952d9e67febaddd5d00174b95cd989564215a24894277dc74470",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T07:43:41.493616Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/13",
       "first_observation": {
         "observed_at": "2026-10-17T07:43:49.182547Z",
         "parent_commit": "16d7835fa325126de14d4440483c64191aca23ee",
         "run": "https://github.com/0xinsider/picks/actions/runs/39014710550"
-      }
+      },
+      "kickoff": "2026-10-17T13:30:00Z",
+      "resolved_at": "2026-10-18T03:05:37.759457Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x03e0fbae113cacf26fe321f8c2afcabc9e546f712934a98693145033eff0e5ed",
+        "kickoff": "2026-10-17T13:30:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1696",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "India",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "West Indies Tour of India T20s: India vs West Indies",
+      "category": "Cricket",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/13",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-10-18T03:05:37.759457Z",
+          "parent_commit": "7e11365073371349050ffabd2ef6fc8a8bdc29cc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39092400302"
+        }
+      ]
     },
     {
       "pick_rank": 14,
