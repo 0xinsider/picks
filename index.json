@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 577,
-    "sealed": 7,
+    "opened": 578,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 316,
+    "proven": 317,
     "proven_record": {
-      "wins": 181,
+      "wins": 182,
       "losses": 132,
-      "decided": 313,
+      "decided": 314,
       "withdrawn": 2,
-      "hit_rate": "57.8",
-      "profit_usd": "9081.49",
-      "staked": "313000",
-      "roi": "2.9"
+      "hit_rate": "58.0",
+      "profit_usd": "9442.03",
+      "staked": "314000",
+      "roi": "3.0"
     },
-    "wins": 355,
+    "wins": 356,
     "losses": 217,
     "voids": 1,
-    "decided": 572,
+    "decided": 573,
     "withdrawn": 4,
     "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "26857.62",
-    "staked": "572000",
-    "roi": "4.7",
+    "profit_usd": "27218.16",
+    "staked": "573000",
+    "roi": "4.8",
     "through": "2026-10-18"
   },
   "picks": [
@@ -20632,16 +20632,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2ab644ad5d980ed44c91265f091fbe137deb427a1876d5ce52c3dfc96b642fa2",
+      "commitment_nonce": "0f268ffb0bdc7451e69e0728bce6c1a83c8fb6502c5f99b528b743abceea73f9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.191354Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/13",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T20:59:17.055866Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x3e89fdd1f6cd80137f54f0824d2f613af41a6697675deba3f1bf3dddd48d8f35",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1716",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Panthers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Panthers vs. Eagles",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T20:59:17.055866Z",
+          "parent_commit": "d118b2a34795910fb962bf819637911d4b496648",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39165784955"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-18",
