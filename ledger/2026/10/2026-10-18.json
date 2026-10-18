@@ -5,18 +5,43 @@
       "pick_rank": 2,
       "pick_id": "1705",
       "publication_order": 2,
-      "is_free_selection": false,
+      "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d8f8930235ae328f26855fccfef73a68232c9d30069f475c06ca7a10346fa402",
+      "commitment_nonce": "28be9a7b84b7dc0670396acee893fbeb1f5b683ffa63e3edeb97c415e1ff72f0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:25.992739Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/2",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T10:30:00Z",
+      "resolved_at": "2026-10-18T12:53:33.391067Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x17e0bb0c083cabdd9a49862c2c4ea81fcd2b577e757370931889e7d9b1d8a98d",
+        "kickoff": "2026-10-18T10:30:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1705",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Udinese Calcio vs. US Lecce",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T12:53:33.391067Z",
+          "parent_commit": "6682aad7164c97a47775595e28b730f942dd4a95",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39129187238"
+        }
+      ]
     },
     {
       "pick_rank": 3,
