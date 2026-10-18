@@ -1433,8 +1433,8 @@ def render_record(stats: dict) -> str:
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
-        "Profit and ROI count a flat $1,000 stake at the frozen price on each win, loss and void, before fees.",
-        "A void pays half of 1 USD a share; a pick the site withdrew is left out.",
+        "Profit and ROI count a flat $1,000 stake at the frozen price on each win and loss, before fees.",
+        "A void and a pick the site withdrew are left out of the money.",
         "They do not establish fills, actual wagers, or subscriber profit.",
         "`python3 verify.py` checks the same data and public git history.",
         "",

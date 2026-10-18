@@ -272,13 +272,14 @@ anything that would rather not walk the tree. Its `record` object carries the
 counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven`, `wins`,
 `losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
 the money
-figures: `stake_usd`, the flat stake every win, loss and void is counted at
+figures: `stake_usd`, the flat stake every win and loss is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
-total stake. A win returns `stake_usd / backed_price`, a loss returns 0, and a
-void returns `stake_usd * 0.5 / backed_price`: Polymarket resolves a void
-market 50-50, so each share pays half a dollar and the stake is not refunded.
-A withdrawn pick is left out of the money ("Withdrawn picks"), so `staked` can
-be less than `stake_usd` times the settled count. These are the site's own
+total stake. A win returns `stake_usd / backed_price` and a loss returns 0. A
+void, a game that ended with no winner, is neither a win nor a loss: it counts
+in `voids` and enters no money figure, as on the site since
+0xinsider/0xinsider#26178. A withdrawn pick is also left out of the money
+("Withdrawn picks"), so `staked` can be less than `stake_usd` times the
+settled count. These are the site's own
 rules, `pick_gross_return` in 0xinsider/0xinsider
 `backend/crates/core/src/pick_valuation.rs`. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
