@@ -352,16 +352,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7a308c38585bed87ac397425338a085a235165fbc2f2a23fcce3b9c0a79a8828",
+      "commitment_nonce": "5620a534b696018897469376ab0d8e47ea5b812243ddc2ead9f706dc2693f6f0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.173073Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/12",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T15:15:00Z",
+      "resolved_at": "2026-10-18T17:33:15.860577Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x7e63fdacda6fed4976ed2a483dec7f3ca4c252a8c64c98defb1ab05e15b21dd0",
+        "kickoff": "2026-10-18T15:15:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1715",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Lorient vs. AS Monaco FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-18T17:33:15.860577Z",
+          "parent_commit": "c162b0e9fdf59a7c7699618a389cfd05780d1974",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39150119881"
+        }
+      ]
     },
     {
       "pick_rank": 13,
