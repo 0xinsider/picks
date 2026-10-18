@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 565,
-    "sealed": 19,
+    "opened": 566,
+    "sealed": 18,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 304,
+    "proven": 305,
     "proven_record": {
-      "wins": 173,
+      "wins": 174,
       "losses": 128,
-      "decided": 301,
+      "decided": 302,
       "withdrawn": 2,
-      "hit_rate": "57.5",
-      "profit_usd": "7103.78",
-      "staked": "301000",
-      "roi": "2.4"
+      "hit_rate": "57.6",
+      "profit_usd": "8123.99",
+      "staked": "302000",
+      "roi": "2.7"
     },
-    "wins": 347,
+    "wins": 348,
     "losses": 213,
     "voids": 1,
-    "decided": 560,
+    "decided": 561,
     "withdrawn": 4,
     "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "24879.91",
-    "staked": "560000",
-    "roi": "4.4",
+    "profit_usd": "25900.11",
+    "staked": "561000",
+    "roi": "4.6",
     "through": "2026-10-18"
   },
   "picks": [
@@ -20436,16 +20436,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4f8943f0a1b4c8e4a9f8ecb4c7833ef68fc8a1eac0b012b56cb9e4da41fd7056",
+      "commitment_nonce": "7219f58a9c5d26b8813732ffd368873cabd19a10abbc75857e5494a03084b263",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:11:39.602589Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/16",
       "first_observation": {
         "observed_at": "2026-10-18T07:11:46.551896Z",
         "parent_commit": "f87409f1b3643cbf0884235e0bc1d7f0d1fb6523",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106749608"
-      }
+      },
+      "kickoff": "2026-10-18T10:30:00Z",
+      "resolved_at": "2026-10-18T13:58:20.030423Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x9ce673cd9b762f7db412e786d2e3d2c46a98b5bbd4c43fa71aef9310302b20ff",
+        "kickoff": "2026-10-18T10:30:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1719",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Maja Chwalinska",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wuhan Tennis Open: Maja Chwalinska vs Sonay Kartal",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/16",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T13:58:20.030423Z",
+          "parent_commit": "20e2df0627425c5031db8cc0204b1c8e64cbf901",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39133887773"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-18",
