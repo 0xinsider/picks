@@ -385,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0d8d8fafaf282179a7ecb855b2baa0942fd3af495d19b88061203f5e17046a3d",
+      "commitment_nonce": "3173ad35f93d2cd145cae2dc68ce0caed19f63e4f96380c402d1f0b8b695d1e5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-16T15:11:23.076461Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/10",
       "first_observation": {
         "observed_at": "2026-10-16T15:11:33.753718Z",
         "parent_commit": "6f6198cd9bd85b2afab2b65f72c2a710b1edeaae",
         "run": "https://github.com/0xinsider/picks/actions/runs/38921884089"
-      }
+      },
+      "kickoff": "2026-10-17T00:00:00Z",
+      "resolved_at": "2026-10-18T06:03:34.729483Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x057ec6d5f642d9de61c95d1ad3d686d6894879e86a6391722be96a06e1e68b9d",
+        "kickoff": "2026-10-17T00:00:00Z",
+        "pick_date": "2026-10-16",
+        "pick_id": "673",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tampa Bay Rays vs. Cleveland Guardians",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-16/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-18T06:03:34.729483Z",
+          "parent_commit": "f4345567f2859bb91b609af4795b89e33aef8097",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39102691213"
+        }
+      ]
     },
     {
       "pick_rank": 11,
