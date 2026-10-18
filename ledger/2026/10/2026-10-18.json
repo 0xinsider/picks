@@ -268,16 +268,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "88ffbed35c969af42c66e10cf2952ebb6c4eba02a142e9810b7bd8e2174e7fa9",
+      "commitment_nonce": "f5052c9a9554b4e8bcbfd58da5bbd64f37a92f07f28e5babcff59f50691cf464",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.137404Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/10",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T11:30:00Z",
+      "resolved_at": "2026-10-18T15:53:42.557978Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xa650f9207c7700a55f1e68201de21bf6d1483970d5fd78db4defd405ace247f5",
+        "kickoff": "2026-10-18T11:30:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1713",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Team Falcons",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Aurora Gaming vs Team Falcons (BO3) - Thunderpick World Championship Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-18T15:53:42.557978Z",
+          "parent_commit": "90be434ad05586a6ba3be3ee01feb670f02d2bc7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39142530513"
+        }
+      ]
     },
     {
       "pick_rank": 11,
