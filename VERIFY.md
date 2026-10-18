@@ -270,16 +270,16 @@ below and excluded from the git-dated cohort.
 `index.json` is every entry in one flat array with the recomputed record, for
 anything that would rather not walk the tree. Its `record` object carries the
 counts (`opened`, `sealed`, `pre_commitment`, `outage`, `late_unproven`, `proven`, `wins`,
-`losses`, `voids`, `decided`), `hit_rate` and `roi` as percentage strings, and
+`losses`, `voids`, `decided`, `withdrawn`), `hit_rate` and `roi` as percentage strings, and
 the money
 figures: `stake_usd`, the flat stake every win and loss is counted at
 (`"1000"`); `profit_usd`, the signed P&L at that stake; and `staked`, the
 total stake. A win returns `stake_usd / backed_price` and a loss returns 0. A
 void, a game that ended with no winner, is neither a win nor a loss: it counts
 in `voids` and enters no money figure, as on the site since
-0xinsider/0xinsider#26178. A withdrawn pick is also left out of the money
-("Withdrawn picks"), so `staked` can be less than `stake_usd` times the
-settled count. These are the site's own
+0xinsider/0xinsider#26178. A withdrawn pick is left out of the record
+altogether, counts and money, and counted in `withdrawn` instead ("Withdrawn
+picks"), so `decided + voids + withdrawn` is `opened`. These are the site's own
 rules, `pick_gross_return` in 0xinsider/0xinsider
 `backend/crates/core/src/pick_valuation.rs`. `proven_record` separately reports the git-dated
 cohort. The key `proven` is retained for compatibility; its basis is git author
@@ -373,12 +373,17 @@ withdrawn. A pick that counts carries no such key. The field sits outside `paylo
 touches a commitment.
 
 A withdrawn pick stays in this ledger with its commitment and its real outcome,
-and it is still opened and verified like any other. It counts in `wins`,
-`losses` or `voids` by that outcome, but it is left out of `profit_usd`,
-`staked` and `roi`, for the full record and the git-dated cohort, the way the
-site leaves it out of its money figures.
+and it is still opened and verified like any other. It leaves the record the
+way it leaves the site's: it is not in `wins`, `losses`, `voids`, `decided`,
+`hit_rate`, `profit_usd`, `staked` or `roi`, for the full record and the
+git-dated cohort. `withdrawn` counts it, in the record and in `proven_record`,
+and `verify.py` prints the withdrawn picks' outcomes on their own line. The
+site's archive, stats page and emails apply the same rule, so the two records
+read the same wins, losses and hit rate (0xinsider/0xinsider#26254). Until
+then this record kept a withdrawn pick in its counts and out of its money, and
+read 348W 213L against the site's 346W 212L on 2026-10-18.
 
-A withdrawal takes a pick out of the money, which is the shape a suppressed loss
+A withdrawal takes a pick out of the record, which is the shape a suppressed loss
 would take, so check 6 holds it to the outcome's rule: every withdrawal a pick
 has held across history must appear in `revisions`, and a revision that carries
 one restates it:
@@ -399,7 +404,7 @@ withdrawal that appears after the pick opened, or one that is removed or
 changed, fails check 6. The exceptions are pinned in `verify.py` as
 `KNOWN_LATE_WITHDRAWALS`, each with its evidence. Each opened here with no
 withdrawal and gains it once, by an appended revision. The pin keeps it out of
-the money before that revision lands, so the record does not depend on when the
+the record before that revision lands, so the record does not depend on when the
 mirror next runs.
 
 | Pick | Day | Reason | Evidence |
