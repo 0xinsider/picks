@@ -780,16 +780,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6af737d33bceb6a3501160261b119b9cbbf81d011e3f5da39180c6d4f009cf54",
+      "commitment_nonce": "b853b21cba72cd2125f3c0f0a557358a51c1418b7abe640d3a7dcd529a42d198",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-17T14:13:19.348440Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/20",
       "first_observation": {
         "observed_at": "2026-10-17T14:13:27.429375Z",
         "parent_commit": "6b410883b5b8b1e7d0343967f194ef5b35fc4055",
         "run": "https://github.com/0xinsider/picks/actions/runs/39039817405"
-      }
+      },
+      "kickoff": "2026-10-17T22:00:00Z",
+      "resolved_at": "2026-10-18T01:17:09.432375Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x2941fb39095cd9aef718bd984e22d3933de9de27e7c41c6bd2bd44853342a316",
+        "kickoff": "2026-10-17T22:00:00Z",
+        "pick_date": "2026-10-17",
+        "pick_id": "1703",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Panthers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kraken vs. Panthers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-17/20",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T01:17:09.432375Z",
+          "parent_commit": "ab1a3cdd57036d13a321e725c22515b8685eb8fc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39085928168"
+        }
+      ]
     }
   ]
 }
