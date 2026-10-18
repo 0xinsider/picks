@@ -553,16 +553,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5777adb78f006e33235a32bbcd8607510f412aa128ede659e3bcefb26138a587",
+      "commitment_nonce": "a968850e9b031f826311277a7231fdef3e2249e6039e9293aca46084c4bb4f48",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T07:01:26.227147Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/15",
       "first_observation": {
         "observed_at": "2026-10-18T07:01:34.949723Z",
         "parent_commit": "e6716d1c503899a24d1937f4e7164c151816d1fd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39106129909"
-      }
+      },
+      "kickoff": "2026-10-18T17:00:00Z",
+      "resolved_at": "2026-10-18T21:03:43.694487Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x47e4c09a578051fd4c18f9e2e4d5d8fddab846796bd2edaa3ba25448104b3b79",
+        "kickoff": "2026-10-18T17:00:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1718",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Steelers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Steelers vs. Buccaneers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-18T21:03:43.694487Z",
+          "parent_commit": "51f1b571bf4a4cb1b52cbdd6e31b6a7db805b160",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39166137336"
+        }
+      ]
     },
     {
       "pick_rank": 16,
