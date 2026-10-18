@@ -28,7 +28,8 @@ the hash can be reopened by anyone.
   3. IMMUTABLE   the payload never changed across the file's history
   4. GAPS        no sealed pick stays unopened long past its public kickoff;
                  withheld clocks are reported as pending until canonical opening
-  5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data
+  5. RECORD      wins, losses, hit rate and $1,000/pick P&L recomputed from raw data;
+                 a pick the site withdrew is verified but left out of the record
   6. CORRECTIONS every outcome and every withdrawal this pick has held across
                  the file's history appears in its `revisions`, in the same
                  order; `revisions` only ever grew; `commitment_hash` is the
@@ -191,7 +192,7 @@ WITHDRAWAL_REASONS = ("provider_game_cancelled", "published_after_kickoff")
 
 # Site pick IDs (the ledger's `pick_id`) withdrawn after they opened here. Each
 # opened with no field and gains it once, with a disclosed revision (check 6),
-# and is out of the money from the pin (in_money, known_late_withdrawal). A
+# and is out of the record from the pin (withdrawn, known_late_withdrawal). A
 # cancellation arrives with the pick's first opening, so only a reviewed
 # correction adds an ID, with its evidence:
 #
@@ -700,8 +701,8 @@ def correction_failures(
        the pick did not change.
     4. The same disclosure rule as the first, for `withdrawal_reason`: every
        withdrawal the pick has held must appear in `revisions`, in order. A
-       withdrawal takes the pick out of the money, so one added silently would
-       flatter the record exactly as an edited outcome would.
+       withdrawal takes the pick out of the record, so one added silently would
+       flatter it exactly as an edited outcome would.
 
     Note that a legitimate correction PASSES all four. This check does not
     object to an outcome changing. It objects to an outcome changing quietly.
@@ -739,7 +740,7 @@ def correction_failures(
             break
         previous = revisions
 
-    # A withdrawal moves the pick out of the money, which is the shape a
+    # A withdrawal moves the pick out of the record, which is the shape a
     # suppressed loss would take, so it is held to the outcome's rule: every
     # withdrawal this pick has held across history appears in its revisions.
     # A revision written before the field existed records no withdrawal,
@@ -790,27 +791,41 @@ def observation_failures(who: str, history: list[dict], current: dict) -> list[s
     return []
 
 
+def withdrawn(pick: dict, pick_date: str | None = None) -> bool:
+    """Whether the site withdrew this opened pick, so it leaves the record.
+
+    The site's record (its archive, its stats page, its emails) leaves a
+    withdrawn pick out of every count and money figure: wins, losses, voids,
+    the hit rate, profit, staked and ROI (0xinsider/0xinsider#26254; the
+    ledger endpoint's contract, `backend/docs/internal-api/167-pick-of-the-day-
+    commitment-ledger.md`). This record applies the same rule, so the two
+    publish one record. The pick stays here, opened and verified with its real
+    outcome, and the record reports it separately as `withdrawn`.
+
+    A pinned late withdrawal (KNOWN_LATE_WITHDRAWALS) is withdrawn from the
+    pin, before its record gains the field: the pin is the reviewed fact, and
+    the record's figures do not depend on when the mirror next runs.
+    """
+    return pick.get("state") == "opened" and (
+        pick.get("withdrawal_reason") is not None
+        or known_late_withdrawal(pick_date or pick.get("pick_date"), pick)
+    )
+
+
 def in_money(pick: dict, pick_date: str | None = None) -> bool:
     """Whether a pick's flat stake counts in profit, staked and ROI.
 
-    An opened win or loss, unless the site withdrew the pick. A void is not
-    staked: its game had no winner, so the record counts it as no bet. It stays
-    in the outcome tallies as a void and enters no money figure, as it enters
-    no hit rate (0xinsider/0xinsider#26178). A withdrawn pick stays opened,
-    verified and counted in the outcome tallies with its real outcome; the site
-    leaves it out of every money figure, and so does this. The site's owner of
+    An opened win or loss, unless the site withdrew the pick (`withdrawn`). A
+    void is not staked: its game had no winner, so the record counts it as no
+    bet. It stays in the outcome tallies as a void and enters no money figure,
+    as it enters no hit rate (0xinsider/0xinsider#26178). The site's owner of
     the rule is `pick_staked_outcome` in 0xinsider/0xinsider
     `backend/crates/core/src/pick_valuation.rs` (#25784, #26178).
-
-    A pinned late withdrawal (KNOWN_LATE_WITHDRAWALS) is out of the money from
-    the pin, before its record gains the field: the pin is the reviewed fact,
-    and the record's figures do not depend on when the mirror next runs.
     """
     return (
         pick.get("state") == "opened"
         and pick.get("outcome") in ("win", "loss")
-        and pick.get("withdrawal_reason") is None
-        and not known_late_withdrawal(pick_date or pick.get("pick_date"), pick)
+        and not withdrawn(pick, pick_date)
     )
 
 
@@ -937,6 +952,9 @@ def main() -> int:
     late_notes: list[str] = []
     opened = sealed = pre_commitment = outage = late_unproven = 0
     wins = losses = voids = 0
+    # Opened picks the site withdrew, by their real outcome. They leave the
+    # record (`withdrawn`) and are reported beside it.
+    withdrawn_outcomes = {"win": 0, "loss": 0, "void": 0}
     profit = Decimal(0)
     staked = Decimal(0)
     now = datetime.now(timezone.utc)
@@ -979,14 +997,16 @@ def main() -> int:
 
             opened += 1
             outcome = pick.get("outcome")
-            if outcome == "win":
+            if outcome not in ("win", "loss", "void"):
+                failures.append(f"STATE    {who}: unknown outcome {outcome!r}")
+            elif withdrawn(pick, day.get("pick_date")):
+                withdrawn_outcomes[outcome] += 1
+            elif outcome == "win":
                 wins += 1
             elif outcome == "loss":
                 losses += 1
-            elif outcome == "void":
-                voids += 1
             else:
-                failures.append(f"STATE    {who}: unknown outcome {outcome!r}")
+                voids += 1
 
             # Walked once here and read by checks 3 and 6. Check 6 covers EVERY
             # opened pick, `pre_commitment` ones included: those carry no hash
@@ -1082,6 +1102,13 @@ def main() -> int:
             f"and carry NO pre-game proof"
         )
     print(f"record      {wins}W {losses}L {voids}V")
+    withdrawn_count = sum(withdrawn_outcomes.values())
+    if withdrawn_count:
+        print(
+            f"withdrawn   {withdrawn_count} opened and verified, left out of the record as on "
+            f"the site ({withdrawn_outcomes['win']}W {withdrawn_outcomes['loss']}L "
+            f"{withdrawn_outcomes['void']}V)"
+        )
     if decided:
         print(f"hit rate    {wins / decided * 100:.1f}%  over {decided} decided")
     if staked > 0:

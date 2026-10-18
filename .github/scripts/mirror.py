@@ -1150,7 +1150,7 @@ def apply_reveal(entries: list[dict], context: dict) -> list[str]:
             ):
                 prior["payload"] = entry["payload"]
                 touched.append(f"rank {rank} gained its payload")
-            # A withdrawal moves a pick out of the money, so it changes only by
+            # A withdrawal moves a pick out of the record, so it changes only by
             # a disclosed revision, as the outcome does (verify.py check 6). An
             # endpoint that predates the field sends no key and changes
             # nothing. A pinned pick (verify.KNOWN_LATE_WITHDRAWALS), withdrawn
@@ -1266,10 +1266,10 @@ def build_opened(
 def tally() -> dict:
     """Recompute the record from ledger/, using verify.py's arithmetic."""
     opened = sealed = pre_commitment = outage = late_unproven = 0
-    wins = losses = voids = 0
+    wins = losses = voids = withdrawn = 0
     profit = Decimal(0)
     staked = Decimal(0)
-    proven_wins = proven_losses = 0
+    proven_wins = proven_losses = proven_withdrawn = 0
     proven_profit = Decimal(0)
     proven_staked = Decimal(0)
     last_date = None
@@ -1294,6 +1294,14 @@ def tally() -> dict:
                 pick.get(field) for field in ("pre_commitment", "outage", "late_unproven")
             )
             outcome = pick.get("outcome")
+            if verify.withdrawn(pick, pick_date):
+                # The site leaves a withdrawn pick out of its record, every
+                # count and money figure, and so does this record. The pick
+                # stays in ledger/, opened and verified; `withdrawn` counts it,
+                # so `decided + voids + withdrawn == opened`.
+                withdrawn += 1
+                proven_withdrawn += proven
+                continue
             if outcome == "win":
                 wins += 1
             elif outcome == "loss":
@@ -1303,9 +1311,6 @@ def tally() -> dict:
             price = Decimal(str(pick.get("payload", {}).get("backed_price", "0")))
             value = verify.stake_return(outcome, price) if price > 0 else None
             if value is not None and proven:
-                # A withdrawn pick keeps its real outcome in the counts, as it
-                # does in `wins`, `losses` and `voids` above; only the money
-                # leaves it out (verify.in_money).
                 proven_wins += outcome == "win"
                 proven_losses += outcome == "loss"
             if value is not None and verify.in_money(pick, pick_date):
@@ -1330,6 +1335,7 @@ def tally() -> dict:
             "wins": proven_wins,
             "losses": proven_losses,
             "decided": proven_wins + proven_losses,
+            "withdrawn": proven_withdrawn,
             "hit_rate": (
                 f"{proven_wins / (proven_wins + proven_losses) * 100:.1f}"
                 if proven_wins + proven_losses else None
@@ -1342,6 +1348,9 @@ def tally() -> dict:
         "losses": losses,
         "voids": voids,
         "decided": decided,
+        # Opened picks the site withdrew: verified here, left out of every
+        # count above and every money figure below, as on the site.
+        "withdrawn": withdrawn,
         "hit_rate": f"{wins / decided * 100:.1f}" if decided else None,
         # The stake every money figure below is computed at. Stated in the
         # record so a reader of index.json alone can tell which basis it is on:
@@ -1415,6 +1424,11 @@ def render_record(stats: dict) -> str:
             else "not yet",
         ),
         ("ROI before fees", f"{Decimal(stats['roi']):+.1f}%" if stats["roi"] is not None else "not yet"),
+    ]
+    # Only once it has happened, like the outage rows below.
+    if stats["withdrawn"]:
+        rows.append(("Withdrawn by the site, left out of the record", str(stats["withdrawn"])))
+    rows += [
         ("Sealed, not yet settled", str(stats["sealed"])),
         ("Git-dated before kickoff", str(stats["proven"])),
         ("No pre-game proof (pre-commitment)", str(stats["pre_commitment"])),
@@ -1433,9 +1447,11 @@ def render_record(stats: dict) -> str:
     lines += [
         "",
         "Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.",
+        "A pick the site withdrew is left out of the record and the money, as on the site;",
+        "it stays in `ledger/` and is verified like any other.",
         "Profit and ROI count a flat $1,000 stake at the frozen price on each win and loss, before fees.",
-        "A void and a pick the site withdrew are left out of the money.",
-        "They do not establish fills, actual wagers, or subscriber profit.",
+        "A void is left out of the money.",
+        "These figures do not establish fills, actual wagers, or subscriber profit.",
         "`python3 verify.py` checks the same data and public git history.",
         "",
     ]
@@ -1565,7 +1581,13 @@ def render_chart(stats: dict, picks: list[dict]) -> str:
         out.append("</svg>\n")
         return "".join(out)
 
-    first_date = min(pick["pick_date"] for pick in picks if pick.get("state") == "opened")
+    # The record's first pick, so a withdrawn pick (outside the record) does not
+    # date it. `points` holds a staked pick, so one exists.
+    first_date = min(
+        pick["pick_date"]
+        for pick in picks
+        if pick.get("state") == "opened" and not verify.withdrawn(pick)
+    )
     subtitle = (
         f"{stats['decided']} decided picks since {long_date(first_date)}. "
         f"{stats['wins']}W {stats['losses']}L, {stats['hit_rate']}% hit rate, "
