@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 587,
-    "sealed": 12,
+    "opened": 588,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 326,
+    "proven": 327,
     "proven_record": {
-      "wins": 188,
+      "wins": 189,
       "losses": 134,
-      "decided": 322,
+      "decided": 323,
       "withdrawn": 2,
-      "hit_rate": "58.4",
-      "profit_usd": "11850.23",
-      "staked": "322000",
-      "roi": "3.7"
+      "hit_rate": "58.5",
+      "profit_usd": "12530.90",
+      "staked": "323000",
+      "roi": "3.9"
     },
-    "wins": 362,
+    "wins": 363,
     "losses": 219,
     "voids": 2,
-    "decided": 581,
+    "decided": 582,
     "withdrawn": 4,
-    "hit_rate": "62.3",
+    "hit_rate": "62.4",
     "stake_usd": "1000",
-    "profit_usd": "29626.36",
-    "staked": "581000",
-    "roi": "5.1",
+    "profit_usd": "30307.03",
+    "staked": "582000",
+    "roi": "5.2",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21073,16 +21073,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1a47aa13246a97f2549bec67e06627761d8d4894d3f6e813db4079991a398922",
+      "commitment_nonce": "964428f827774df83665d17a7a7c3231daabffa481fbc5253f9b4cf25d758680",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.223377Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/5",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-19T18:00:00Z",
+      "resolved_at": "2026-10-19T19:39:44.252682Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xdf508a4aac730589160b38faf501a6ac30f71818232c94380c0afb540adaf0fe",
+        "kickoff": "2026-10-19T18:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1728",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: PARIVISION vs magic (BO3) - 1win Private Club #2 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T19:39:44.252682Z",
+          "parent_commit": "5b9eed00bb2ab2afe7c9b602bc852260f17544f5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39312840590"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",

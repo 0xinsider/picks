@@ -100,16 +100,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1a47aa13246a97f2549bec67e06627761d8d4894d3f6e813db4079991a398922",
+      "commitment_nonce": "964428f827774df83665d17a7a7c3231daabffa481fbc5253f9b4cf25d758680",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.223377Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/5",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-19T18:00:00Z",
+      "resolved_at": "2026-10-19T19:39:44.252682Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xdf508a4aac730589160b38faf501a6ac30f71818232c94380c0afb540adaf0fe",
+        "kickoff": "2026-10-19T18:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1728",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: PARIVISION vs magic (BO3) - 1win Private Club #2 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T19:39:44.252682Z",
+          "parent_commit": "5b9eed00bb2ab2afe7c9b602bc852260f17544f5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39312840590"
+        }
+      ]
     },
     {
       "pick_rank": 7,
