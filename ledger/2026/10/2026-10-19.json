@@ -24,16 +24,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4dd74592eba2baf0c712620765e1dcc2fc9da5889c9336349f58144cb10993ee",
+      "commitment_nonce": "c7e462298fa141c26792b1e9a1e6c66d6044f588382b1a63305c72e7f6b00771",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.180445Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/2",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-19T08:00:00Z",
+      "resolved_at": "2026-10-19T10:08:56.822772Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x74cbe35091f0e8f1d52a87e556541e1c9897aacbc902a3f52d187a9b64cbe720",
+        "kickoff": "2026-10-19T08:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1725",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Aliaksandra Sasnovich",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ningbo Open: Daria Kasatkina vs Aliaksandra Sasnovich",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T10:08:56.822772Z",
+          "parent_commit": "dc9e7401089b2bb89095eb80a7dc962bd641443e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39235338547"
+        }
+      ]
     },
     {
       "pick_rank": 3,
