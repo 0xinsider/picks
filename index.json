@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 581,
-    "sealed": 3,
+    "opened": 582,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 320,
+    "proven": 321,
     "proven_record": {
       "wins": 184,
-      "losses": 133,
-      "decided": 317,
+      "losses": 134,
+      "decided": 318,
       "withdrawn": 2,
-      "hit_rate": "58.0",
-      "profit_usd": "9662.28",
-      "staked": "317000",
-      "roi": "3.0"
+      "hit_rate": "57.9",
+      "profit_usd": "8662.28",
+      "staked": "318000",
+      "roi": "2.7"
     },
     "wins": 358,
-    "losses": 218,
+    "losses": 219,
     "voids": 1,
-    "decided": 576,
+    "decided": 577,
     "withdrawn": 4,
-    "hit_rate": "62.2",
+    "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "27438.40",
-    "staked": "576000",
-    "roi": "4.8",
+    "profit_usd": "26438.40",
+    "staked": "577000",
+    "roi": "4.6",
     "through": "2026-10-18"
   },
   "picks": [
@@ -20847,16 +20847,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d47d55b3fcfad2a10dc4b3e097bfc87d91aa2e2e5de0b9d06272bf8f362b68dd",
+      "commitment_nonce": "2d7876943ac785a51d1fe9d87f348592a12404cd681b0790c39e2111f9ea2f56",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-18T10:41:15.563996Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/18",
       "first_observation": {
         "observed_at": "2026-10-18T10:41:24.117220Z",
         "parent_commit": "fe9d0f6c339ed8580212aea20d50c4b3eb9b65c1",
         "run": "https://github.com/0xinsider/picks/actions/runs/39120233368"
-      }
+      },
+      "kickoff": "2026-10-18T21:08:00Z",
+      "resolved_at": "2026-10-19T00:23:25.111226Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x38d57dc9da5dfbc8e1cc1d03a08edac1918452e7509397bf83c5811dc4d2e5cd",
+        "kickoff": "2026-10-18T21:08:00Z",
+        "pick_date": "2026-10-18",
+        "pick_id": "1721",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Cleveland Guardians",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tampa Bay Rays vs. Cleveland Guardians",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-18/18",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-19T00:23:25.111226Z",
+          "parent_commit": "afbf88d7accdbf996a42c31023af9347e23655db",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39180554896"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-18",
