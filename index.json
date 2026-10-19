@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 589,
-    "sealed": 11,
+    "opened": 590,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 328,
+    "proven": 329,
     "proven_record": {
       "wins": 189,
-      "losses": 135,
-      "decided": 324,
+      "losses": 136,
+      "decided": 325,
       "withdrawn": 2,
-      "hit_rate": "58.3",
-      "profit_usd": "11530.90",
-      "staked": "324000",
-      "roi": "3.6"
+      "hit_rate": "58.2",
+      "profit_usd": "10530.90",
+      "staked": "325000",
+      "roi": "3.2"
     },
     "wins": 363,
-    "losses": 220,
+    "losses": 221,
     "voids": 2,
-    "decided": 583,
+    "decided": 584,
     "withdrawn": 4,
-    "hit_rate": "62.3",
+    "hit_rate": "62.2",
     "stake_usd": "1000",
-    "profit_usd": "29307.03",
-    "staked": "583000",
-    "roi": "5.0",
+    "profit_usd": "28307.03",
+    "staked": "584000",
+    "roi": "4.8",
     "through": "2026-10-19"
   },
   "picks": [
@@ -20976,16 +20976,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7d261fc318d31dc1cb4d2be6c93e740943dfbe08e65a4be01f0b7f3df6b5633c",
+      "commitment_nonce": "8f9b0024d7e6810e66757fec43f44cf1fd178d0a36831d8f679918c489371f19",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.161758Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/1",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-19T19:00:00Z",
+      "resolved_at": "2026-10-19T21:39:44.115519Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0xd2443804ff50d0b0d8a0d9bca2f3816e6465ca2a5b7a08866d7fae68ea155ee1",
+        "kickoff": "2026-10-19T19:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1724",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tottenham Hotspur FC vs. Coventry City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-19T21:39:44.115519Z",
+          "parent_commit": "b1a3991216f15ed89b0c497a0f7c4333c176a8cb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39329234334"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
