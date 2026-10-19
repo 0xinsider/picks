@@ -159,16 +159,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "511174023137d63d1fb39273c317149a1200d2a6df2251d81a55b9d025cbc23b",
+      "commitment_nonce": "2a2afc6ee86eb7563e9462edf6a7eeca6bacc1986366dc575e4bc9880b19cedc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T10:32:03.240016Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/8",
       "first_observation": {
         "observed_at": "2026-10-19T10:32:12.011255Z",
         "parent_commit": "b11defdd46f9a47cc43274bf52339ee1b26357c6",
         "run": "https://github.com/0xinsider/picks/actions/runs/39238135633"
-      }
+      },
+      "kickoff": "2026-10-19T16:30:00Z",
+      "resolved_at": "2026-10-19T19:09:44.104061Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x84edf0081bd85f646f3ade7451809fa7da3f5ff5ebb5190ce85ce9535e7215a5",
+        "kickoff": "2026-10-19T16:30:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1731",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AC Monza vs. Cagliari Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T19:09:44.104061Z",
+          "parent_commit": "2050a37b2032299a99b2bd5efafb63012190c0ed",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39308638021"
+        }
+      ]
     },
     {
       "pick_rank": 9,

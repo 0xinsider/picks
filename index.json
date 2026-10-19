@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 586,
-    "sealed": 13,
+    "opened": 587,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 325,
+    "proven": 326,
     "proven_record": {
-      "wins": 187,
+      "wins": 188,
       "losses": 134,
-      "decided": 321,
+      "decided": 322,
       "withdrawn": 2,
-      "hit_rate": "58.3",
-      "profit_usd": "11431.79",
-      "staked": "321000",
-      "roi": "3.6"
+      "hit_rate": "58.4",
+      "profit_usd": "11850.23",
+      "staked": "322000",
+      "roi": "3.7"
     },
-    "wins": 361,
+    "wins": 362,
     "losses": 219,
     "voids": 2,
-    "decided": 580,
+    "decided": 581,
     "withdrawn": 4,
-    "hit_rate": "62.2",
+    "hit_rate": "62.3",
     "stake_usd": "1000",
-    "profit_usd": "29207.92",
-    "staked": "580000",
-    "roi": "5.0",
+    "profit_usd": "29626.36",
+    "staked": "581000",
+    "roi": "5.1",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21134,16 +21134,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "511174023137d63d1fb39273c317149a1200d2a6df2251d81a55b9d025cbc23b",
+      "commitment_nonce": "2a2afc6ee86eb7563e9462edf6a7eeca6bacc1986366dc575e4bc9880b19cedc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T10:32:03.240016Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/8",
       "first_observation": {
         "observed_at": "2026-10-19T10:32:12.011255Z",
         "parent_commit": "b11defdd46f9a47cc43274bf52339ee1b26357c6",
         "run": "https://github.com/0xinsider/picks/actions/runs/39238135633"
-      }
+      },
+      "kickoff": "2026-10-19T16:30:00Z",
+      "resolved_at": "2026-10-19T19:09:44.104061Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x84edf0081bd85f646f3ade7451809fa7da3f5ff5ebb5190ce85ce9535e7215a5",
+        "kickoff": "2026-10-19T16:30:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1731",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AC Monza vs. Cagliari Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T19:09:44.104061Z",
+          "parent_commit": "2050a37b2032299a99b2bd5efafb63012190c0ed",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39308638021"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
