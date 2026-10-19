@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 585,
-    "sealed": 14,
+    "opened": 586,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 324,
+    "proven": 325,
     "proven_record": {
-      "wins": 186,
+      "wins": 187,
       "losses": 134,
-      "decided": 320,
+      "decided": 321,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "10661.88",
-      "staked": "320000",
-      "roi": "3.3"
+      "hit_rate": "58.3",
+      "profit_usd": "11431.79",
+      "staked": "321000",
+      "roi": "3.6"
     },
-    "wins": 360,
+    "wins": 361,
     "losses": 219,
     "voids": 2,
-    "decided": 579,
+    "decided": 580,
     "withdrawn": 4,
     "hit_rate": "62.2",
     "stake_usd": "1000",
-    "profit_usd": "28438.01",
-    "staked": "579000",
-    "roi": "4.9",
+    "profit_usd": "29207.92",
+    "staked": "580000",
+    "roi": "5.0",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21206,16 +21206,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "821e7ca5c66714ccea033442f95476e34dd200973a1e17b0e760d72366844370",
+      "commitment_nonce": "d8169a76848f331c67732fb91f9cde18312469b665b7505426210cdac8aa47d7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T13:24:02.023124Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/12",
       "first_observation": {
         "observed_at": "2026-10-19T13:24:11.163256Z",
         "parent_commit": "28c2477bfc563ea0a552b6f45bc7aa2e9b6d0dff",
         "run": "https://github.com/0xinsider/picks/actions/runs/39259820223"
-      }
+      },
+      "kickoff": "2026-10-19T14:00:00Z",
+      "resolved_at": "2026-10-19T18:09:44.235872Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0xab81e5de6d312764c6855302f0def4cc7b06457e0505b4da51721578fba8c24a",
+        "kickoff": "2026-10-19T14:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1735",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manisa Futbol Kulubu vs. Muglaspor",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/12",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-19T18:09:44.235872Z",
+          "parent_commit": "67e7fd90d371b4f85049f2ddb0d39000169cf0ea",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39300215223"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
