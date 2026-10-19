@@ -92,16 +92,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "08efb8200cc675acd5bd96ecb87bd6a7a571b85f4aa2352683b05a664356d948",
+      "commitment_nonce": "3bb322807846595c680b996610fafa01fcd15f2689fcc797fa467e5986f00e57",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.254584Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/7",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-20T01:00:00Z",
+      "resolved_at": "2026-10-19T08:08:39.823168Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x35de0fadcf3497f4f556a657a3ebe50d5e16d4f831e5ed5dce8a6e4e49d5e5e7",
+        "kickoff": "2026-10-20T01:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1730",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Kimberly Birrell",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Sonay Kartal vs Kimberly Birrell",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/7",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-10-19T08:08:39.823168Z",
+          "parent_commit": "b124aaeddacfd868cf9ea5b4e7b2ed027e97d6e1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39220672853"
+        }
+      ]
     }
   ]
 }
