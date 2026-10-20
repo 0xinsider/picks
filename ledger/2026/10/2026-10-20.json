@@ -125,16 +125,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1d8cd73bad8fa87b9de86428f6116be912abaf05fd74d4e6edce1b687bc388c5",
+      "commitment_nonce": "09fbbcf959f986517f8545edb6d5e6eb679696aa6520eddde9a5c5a723d4d8bc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T07:00:23.942065Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/7",
       "first_observation": {
         "observed_at": "2026-10-20T07:00:32.568326Z",
         "parent_commit": "444b5c6f70de3b85ff9eff19258a4e4e5e205309",
         "run": "https://github.com/0xinsider/picks/actions/runs/39383745382"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T21:49:56.342517Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x2ffbd2b689b08aedd61d76066fcb5a20e71015e2a239e4afbc8a3095701bbbcb",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1749",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Celtics vs. Pistons",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/7",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T21:49:56.342517Z",
+          "parent_commit": "846e0e5b7d29f65e8ade3e9a96efc77de2bceb7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39503510200"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -142,16 +167,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3db9062e2ebdeb8ca4e7593a5606e13a4686557d3432e84414611819717b2d22",
+      "commitment_nonce": "33013a6e0a920b28a3bcac6601dbab39f8a156d5c5b27063d4c37cc791c8ac66",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T08:56:44.236289Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/8",
       "first_observation": {
         "observed_at": "2026-10-20T08:56:53.689903Z",
         "parent_commit": "4b61fff2cb6f90d9aa1767f05fcea8163647ac21",
         "run": "https://github.com/0xinsider/picks/actions/runs/39397068778"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T21:49:56.364602Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xa281e4187dd0dcd9fb75366b83115625c8bb220b045a1740c9bfa99f59106481",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1750",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manchester City FC vs. AEK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T21:49:56.364602Z",
+          "parent_commit": "846e0e5b7d29f65e8ade3e9a96efc77de2bceb7a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39503510200"
+        }
+      ]
     },
     {
       "pick_rank": 9,
