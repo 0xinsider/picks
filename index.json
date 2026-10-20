@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 611,
-    "sealed": 9,
+    "opened": 613,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 350,
+    "proven": 352,
     "proven_record": {
-      "wins": 200,
-      "losses": 146,
-      "decided": 346,
+      "wins": 201,
+      "losses": 147,
+      "decided": 348,
       "withdrawn": 2,
       "hit_rate": "57.8",
-      "profit_usd": "11102.93",
-      "staked": "346000",
-      "roi": "3.2"
+      "profit_usd": "10904.73",
+      "staked": "348000",
+      "roi": "3.1"
     },
-    "wins": 374,
-    "losses": 231,
+    "wins": 375,
+    "losses": 232,
     "voids": 2,
-    "decided": 605,
+    "decided": 607,
     "withdrawn": 4,
     "hit_rate": "61.8",
     "stake_usd": "1000",
-    "profit_usd": "28879.06",
-    "staked": "605000",
-    "roi": "4.8",
+    "profit_usd": "28680.86",
+    "staked": "607000",
+    "roi": "4.7",
     "through": "2026-10-20"
   },
   "picks": [
@@ -21854,16 +21854,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3acacb6adb7cabf73dd6be051163f70f1bba871e034ed2fbf37a3b16de29f2d4",
+      "commitment_nonce": "99c0f089bc06639c181d3b93b448e5fc37aa3001700966c7ff8e24df90e15e06",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T07:00:23.934733Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/6",
       "first_observation": {
         "observed_at": "2026-10-20T07:00:32.568326Z",
         "parent_commit": "444b5c6f70de3b85ff9eff19258a4e4e5e205309",
         "run": "https://github.com/0xinsider/picks/actions/runs/39383745382"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T22:15:22.370847Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x45597eef94d5c6e78c9a47f34821721145dd8fc57a92f59f5a9a983f3cd12b44",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1748",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SSC Napoli vs. FK Bodø/Glimt",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T22:15:22.370847Z",
+          "parent_commit": "735c13d257f70815ad60ee9039596e30473d45a2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39506752558"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
@@ -22001,16 +22026,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "37067d616ecb99e3995fe20ecaddd0e5fdb2fc6234df3ef58eb5f6fd7dd4d306",
+      "commitment_nonce": "50af89243e3cadf5e231e18fa054a633f1b84b16a2e4709108c40cd731d58551",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T11:25:59.471288Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/10",
       "first_observation": {
         "observed_at": "2026-10-20T11:26:10.390630Z",
         "parent_commit": "e7b182ce421515044ced6b728d8904fa6001e264",
         "run": "https://github.com/0xinsider/picks/actions/runs/39414909717"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T22:15:22.345955Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x01a212b3fcf5b8ad357ccc8749044f7f05ddd5c646beb3a100575cd5336fa653",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1752",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Paris Saint-Germain FC vs. FC Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/10",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T22:15:22.345955Z",
+          "parent_commit": "735c13d257f70815ad60ee9039596e30473d45a2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39506752558"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
