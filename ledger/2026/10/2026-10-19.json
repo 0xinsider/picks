@@ -369,16 +369,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a6343563dd4ba56237546888bf13aea23c203abd14aa56248289c4cc6a053ad2",
+      "commitment_nonce": "596a37ab277f13269d39956eabee588a0ae3006fb073a4e70b24cc4b5973df8c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T16:16:08.317136Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/13",
       "first_observation": {
         "observed_at": "2026-10-19T16:16:17.038532Z",
         "parent_commit": "8dfc143a336ef9dfc2c470e1b071a39bf35e2b80",
         "run": "https://github.com/0xinsider/picks/actions/runs/39284117716"
-      }
+      },
+      "kickoff": "2026-10-19T23:00:00Z",
+      "resolved_at": "2026-10-20T02:09:44.150405Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.315000",
+        "condition_id": "0xfb3a2d8d418be1e893aafc50085aed15ec4b879639c846db3a227a5240fb6d19",
+        "kickoff": "2026-10-19T23:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1736",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Flyers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Avalanche vs. Flyers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T02:09:44.150405Z",
+          "parent_commit": "49496ec71dc086b92ed1ec6d48333076a8018c69",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39357405212"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -420,16 +445,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d344c7886c376e213a04d00ce2d05f4c3476acd30bc291e00669faf0a1465b37",
+      "commitment_nonce": "2c63e883af30f7e916671374d9662c2e7f8580206af82577391fa896a84f7ab5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T18:04:02.541564Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/16",
       "first_observation": {
         "observed_at": "2026-10-19T18:04:11.122259Z",
         "parent_commit": "9988fa00c8561a0233ada57f292fada355ea297c",
         "run": "https://github.com/0xinsider/picks/actions/runs/39299439891"
-      }
+      },
+      "kickoff": "2026-10-19T23:00:00Z",
+      "resolved_at": "2026-10-20T02:09:44.165412Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x8cd07fb7ae18b1a712385e15bb7b8a50851c0f2064feba1d27cb30954e79f22e",
+        "kickoff": "2026-10-19T23:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1739",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ducks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ducks vs. Rangers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/16",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T02:09:44.165412Z",
+          "parent_commit": "49496ec71dc086b92ed1ec6d48333076a8018c69",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39357405212"
+        }
+      ]
     },
     {
       "pick_rank": 17,
