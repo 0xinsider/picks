@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 595,
-    "sealed": 7,
+    "opened": 597,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 334,
+    "proven": 336,
     "proven_record": {
-      "wins": 192,
-      "losses": 138,
-      "decided": 330,
+      "wins": 193,
+      "losses": 139,
+      "decided": 332,
       "withdrawn": 2,
-      "hit_rate": "58.2",
-      "profit_usd": "12673.22",
-      "staked": "330000",
+      "hit_rate": "58.1",
+      "profit_usd": "12542.38",
+      "staked": "332000",
       "roi": "3.8"
     },
-    "wins": 366,
-    "losses": 223,
+    "wins": 367,
+    "losses": 224,
     "voids": 2,
-    "decided": 589,
+    "decided": 591,
     "withdrawn": 4,
     "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "30449.35",
-    "staked": "589000",
-    "roi": "5.2",
+    "profit_usd": "30318.51",
+    "staked": "591000",
+    "roi": "5.1",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21252,16 +21252,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "516d8f040d950811148f675498c0d2e024d145a33eb4958d429d2cca93ffbaba",
+      "commitment_nonce": "8c27fc744c72da697bcd2104ef41ab02fc1ca3be0ee7f0af26a41c7dd93a9c9f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T10:32:03.250593Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/9",
       "first_observation": {
         "observed_at": "2026-10-19T10:32:12.011255Z",
         "parent_commit": "b11defdd46f9a47cc43274bf52339ee1b26357c6",
         "run": "https://github.com/0xinsider/picks/actions/runs/39238135633"
-      }
+      },
+      "kickoff": "2026-10-20T00:15:00Z",
+      "resolved_at": "2026-10-20T04:09:44.024385Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xeb40ee36d8e2086a11a440af14e33e9a41b7772ed5a02168c9d5df6dd0c61d0d",
+        "kickoff": "2026-10-20T00:15:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1732",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Commanders vs. 49ers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T04:09:44.024385Z",
+          "parent_commit": "448e83c0df74a3b4f20516145b1cdc4d99b8d1be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39368087244"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
@@ -21546,16 +21571,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3e35483bbf96e7949218094fe9511bf3096ff6bf51c2aedc8dad4c62630eb327",
+      "commitment_nonce": "491bc473f329f7f9f8a8d5afa35cba74a9ed9b203a435c04c84237771916a23e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T21:31:30.864860Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/17",
       "first_observation": {
         "observed_at": "2026-10-19T21:31:40.266958Z",
         "parent_commit": "a7c76fd2bee4ca4b10208537a229657888ff51fa",
         "run": "https://github.com/0xinsider/picks/actions/runs/39328167175"
-      }
+      },
+      "kickoff": "2026-10-20T01:00:00Z",
+      "resolved_at": "2026-10-20T04:09:44.036331Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x622db97a5fe9deed87f431e86191a7e76ee385549cdd578f595fcac7d6d61249",
+        "kickoff": "2026-10-20T01:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1740",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Penguins",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Penguins vs. Utah",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/17",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T04:09:44.036331Z",
+          "parent_commit": "448e83c0df74a3b4f20516145b1cdc4d99b8d1be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39368087244"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
