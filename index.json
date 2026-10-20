@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 602,
-    "sealed": 13,
+    "opened": 603,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 341,
+    "proven": 342,
     "proven_record": {
       "wins": 196,
-      "losses": 141,
-      "decided": 337,
+      "losses": 142,
+      "decided": 338,
       "withdrawn": 2,
-      "hit_rate": "58.2",
-      "profit_usd": "12139.96",
-      "staked": "337000",
-      "roi": "3.6"
+      "hit_rate": "58.0",
+      "profit_usd": "11139.96",
+      "staked": "338000",
+      "roi": "3.3"
     },
     "wins": 370,
-    "losses": 226,
+    "losses": 227,
     "voids": 2,
-    "decided": 596,
+    "decided": 597,
     "withdrawn": 4,
-    "hit_rate": "62.1",
+    "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "29916.09",
-    "staked": "596000",
-    "roi": "5.0",
+    "profit_usd": "28916.09",
+    "staked": "597000",
+    "roi": "4.8",
     "through": "2026-10-20"
   },
   "picks": [
@@ -21793,16 +21793,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5256e5d4ce2de0a573fd6cec1488ba8472f7ce50e4f8d752f15544fe9b6a2255",
+      "commitment_nonce": "fe777681bbd83b17ffaa0a4219c3289c0e4ab9e7187b89a3ce2218b799bb6c68",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T07:00:23.919758Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/2",
       "first_observation": {
         "observed_at": "2026-10-20T07:00:32.568326Z",
         "parent_commit": "444b5c6f70de3b85ff9eff19258a4e4e5e205309",
         "run": "https://github.com/0xinsider/picks/actions/runs/39383745382"
-      }
+      },
+      "kickoff": "2026-10-20T10:00:00Z",
+      "resolved_at": "2026-10-20T15:09:50.572038Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x483860efdb593363dda51109fc9c8bf7b9ebbf675ffc166585f170e653e34d80",
+        "kickoff": "2026-10-20T10:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1744",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Anyang",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seoul Knights vs. Anyang",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T15:09:50.572038Z",
+          "parent_commit": "d5b04e9c3c912b4beac2f32fa3601a940371de3a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39445879107"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
