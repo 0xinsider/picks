@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 600,
-    "sealed": 7,
+    "opened": 601,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 339,
+    "proven": 340,
     "proven_record": {
       "wins": 195,
-      "losses": 140,
-      "decided": 335,
+      "losses": 141,
+      "decided": 336,
       "withdrawn": 2,
-      "hit_rate": "58.2",
-      "profit_usd": "12400.83",
-      "staked": "335000",
-      "roi": "3.7"
+      "hit_rate": "58.0",
+      "profit_usd": "11400.83",
+      "staked": "336000",
+      "roi": "3.4"
     },
     "wins": 369,
-    "losses": 225,
+    "losses": 226,
     "voids": 2,
-    "decided": 594,
+    "decided": 595,
     "withdrawn": 4,
-    "hit_rate": "62.1",
+    "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "30176.96",
-    "staked": "594000",
-    "roi": "5.1",
+    "profit_usd": "29176.96",
+    "staked": "595000",
+    "roi": "4.9",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21105,16 +21105,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "faf8710c8cbd2b1a98c4ac19c9320b0607063548d7651dfc1aa107297a38fb13",
+      "commitment_nonce": "e9f9cd55ed3a082b94333775e0aa0b1aa2dad88f8b36ce7a6b57db58bc6eb97e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.213630Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/4",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-20T01:00:00Z",
+      "resolved_at": "2026-10-20T08:09:44.038075Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xf1781f905001907ba25a210cc61399fe4cdc4e964da0a51566af2daa802dd166",
+        "kickoff": "2026-10-20T01:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1727",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Paula Badosa",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Paula Badosa vs Antonia Ruzic",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T08:09:44.038075Z",
+          "parent_commit": "dd8f2aecc1744a722118a3e715c22db8f23f5992",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39391409646"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
