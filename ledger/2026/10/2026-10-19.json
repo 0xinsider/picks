@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e63c881b88e5edb134c45ce4d724e3bf17cb0f0935a006ae04619fc5c276550a",
+      "commitment_nonce": "81dc85e13d7cfde74a65faae888e30cdf21b9ca7d8d0d0a3cdfcf9d49d75f791",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T07:00:53.197213Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/3",
       "first_observation": {
         "observed_at": "2026-10-19T07:01:01.142606Z",
         "parent_commit": "42719db5ab25b9d9dad0aa7e945a340bd83b87db",
         "run": "https://github.com/0xinsider/picks/actions/runs/39213286754"
-      }
+      },
+      "kickoff": "2026-10-19T23:30:00Z",
+      "resolved_at": "2026-10-20T02:39:44.040134Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x334958c122da500bec0b9e084d379890ed8e0cfac15530f48ac2ff4e4ccd17ff",
+        "kickoff": "2026-10-19T23:30:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1726",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Maple Leafs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sharks vs. Maple Leafs",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T02:39:44.040134Z",
+          "parent_commit": "1c35e3f603debd0b98a1e35d61ba0cd0e02329ac",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39360117411"
+        }
+      ]
     },
     {
       "pick_rank": 4,
