@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 603,
-    "sealed": 12,
+    "opened": 604,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 342,
+    "proven": 343,
     "proven_record": {
-      "wins": 196,
+      "wins": 197,
       "losses": 142,
-      "decided": 338,
+      "decided": 339,
       "withdrawn": 2,
-      "hit_rate": "58.0",
-      "profit_usd": "11139.96",
-      "staked": "338000",
-      "roi": "3.3"
+      "hit_rate": "58.1",
+      "profit_usd": "12245.23",
+      "staked": "339000",
+      "roi": "3.6"
     },
-    "wins": 370,
+    "wins": 371,
     "losses": 227,
     "voids": 2,
-    "decided": 597,
+    "decided": 598,
     "withdrawn": 4,
     "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "28916.09",
-    "staked": "597000",
-    "roi": "4.8",
+    "profit_usd": "30021.36",
+    "staked": "598000",
+    "roi": "5.0",
     "through": "2026-10-20"
   },
   "picks": [
@@ -21908,16 +21908,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "778cbdb90f8bf46ba5a60e73e90cb5e80e085874ea9d2d9efc5204386aad2451",
+      "commitment_nonce": "7198774b60b7ba463df039183098e4563214974c884632ca6c7a8aec9236da32",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T11:05:13.915759Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/9",
       "first_observation": {
         "observed_at": "2026-10-20T11:05:24.313084Z",
         "parent_commit": "d40b85678a039dfa57c07b3d9cfc528a8af2cf7c",
         "run": "https://github.com/0xinsider/picks/actions/runs/39412463239"
-      }
+      },
+      "kickoff": "2026-10-20T15:00:00Z",
+      "resolved_at": "2026-10-20T16:43:06.045703Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x307c6a3de3b51bdc292c223516042ff380ea53265b3ba361529ff641b5cf2944",
+        "kickoff": "2026-10-20T15:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1751",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BIG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: TheMongolz vs BIG (BO3) - 1win Private Club Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/9",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T16:43:06.045703Z",
+          "parent_commit": "0454a6fa3981f0ad5c8f1b27153b79ae9f492384",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39459894525"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
