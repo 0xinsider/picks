@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 604,
-    "sealed": 16,
+    "opened": 606,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 343,
+    "proven": 345,
     "proven_record": {
       "wins": 197,
-      "losses": 142,
-      "decided": 339,
+      "losses": 144,
+      "decided": 341,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "12245.23",
-      "staked": "339000",
-      "roi": "3.6"
+      "hit_rate": "57.8",
+      "profit_usd": "10245.23",
+      "staked": "341000",
+      "roi": "3.0"
     },
     "wins": 371,
-    "losses": 227,
+    "losses": 229,
     "voids": 2,
-    "decided": 598,
+    "decided": 600,
     "withdrawn": 4,
-    "hit_rate": "62.0",
+    "hit_rate": "61.8",
     "stake_usd": "1000",
-    "profit_usd": "30021.36",
-    "staked": "598000",
-    "roi": "5.0",
+    "profit_usd": "28021.36",
+    "staked": "600000",
+    "roi": "4.7",
     "through": "2026-10-20"
   },
   "picks": [
@@ -21969,16 +21969,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ff77a95c5dd94d67c86c18b689b13a668bfeee8336462f75f4e7ad92933bc8df",
+      "commitment_nonce": "f3b383d7300ae3fe845c12554707cb8afd7e01f54060d4a00ab6405d97472d4e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T11:41:42.213864Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/11",
       "first_observation": {
         "observed_at": "2026-10-20T11:41:49.982328Z",
         "parent_commit": "40cdf63e6999a17c64777e904e85e51388cba3dd",
         "run": "https://github.com/0xinsider/picks/actions/runs/39416777747"
-      }
+      },
+      "kickoff": "2026-10-20T16:45:00Z",
+      "resolved_at": "2026-10-20T19:04:16.469070Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x0146c286c5b10a6099efa9816d54bc439507b53b5c7087fe062de4355c744daa",
+        "kickoff": "2026-10-20T16:45:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1753",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fenerbahçe SK vs. SK Slavia Praha",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T19:04:16.469070Z",
+          "parent_commit": "2158498bcf11743642f0a903bc2eef9511a5d918",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39480278856"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
@@ -22005,16 +22030,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "92548af365b240c4d58fd6d4df27d95945fd67140b10d79fcb18659aa2335bb4",
+      "commitment_nonce": "74201c06feb65ee2e0cf8ee52a7409312736be22dabba0f3f1b69845e3cae4bd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T13:40:53.378823Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/13",
       "first_observation": {
         "observed_at": "2026-10-20T13:41:02.998462Z",
         "parent_commit": "9d17b0ff671f50c8447b8da7d38cd776fbb3f34c",
         "run": "https://github.com/0xinsider/picks/actions/runs/39432508311"
-      }
+      },
+      "kickoff": "2026-10-20T16:45:00Z",
+      "resolved_at": "2026-10-20T19:04:16.480254Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x960e16d0debb7db400dbfdf7a2c8f61ce56aee2f31f1185dbc96c0d2cf1e353c",
+        "kickoff": "2026-10-20T16:45:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1755",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sabah FK vs. BV Borussia 09 Dortmund",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T19:04:16.480254Z",
+          "parent_commit": "2158498bcf11743642f0a903bc2eef9511a5d918",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39480278856"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
