@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 601,
-    "sealed": 9,
+    "opened": 602,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 340,
+    "proven": 341,
     "proven_record": {
-      "wins": 195,
+      "wins": 196,
       "losses": 141,
-      "decided": 336,
+      "decided": 337,
       "withdrawn": 2,
-      "hit_rate": "58.0",
-      "profit_usd": "11400.83",
-      "staked": "336000",
-      "roi": "3.4"
+      "hit_rate": "58.2",
+      "profit_usd": "12139.96",
+      "staked": "337000",
+      "roi": "3.6"
     },
-    "wins": 369,
+    "wins": 370,
     "losses": 226,
     "voids": 2,
-    "decided": 595,
+    "decided": 596,
     "withdrawn": 4,
-    "hit_rate": "62.0",
+    "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "29176.96",
-    "staked": "595000",
-    "roi": "4.9",
-    "through": "2026-10-19"
+    "profit_usd": "29916.09",
+    "staked": "596000",
+    "roi": "5.0",
+    "through": "2026-10-20"
   },
   "picks": [
     {
@@ -21750,16 +21750,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5293e96e49c207780c5339442c4eadf8fe708049dda54c68b9fb6e57f716753b",
+      "commitment_nonce": "cee7b10fcd1374f26aabbc1ccd91b46ed04e993ed4f0cc3cb4bd8e01091dad88",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T07:00:23.894984Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/1",
       "first_observation": {
         "observed_at": "2026-10-20T07:00:32.568326Z",
         "parent_commit": "444b5c6f70de3b85ff9eff19258a4e4e5e205309",
         "run": "https://github.com/0xinsider/picks/actions/runs/39383745382"
-      }
+      },
+      "kickoff": "2026-10-20T08:50:00Z",
+      "resolved_at": "2026-10-20T11:34:40.825083Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x61fb7521a0c5b74b731b71348bf3f12d2b8045e5564e948d124817c4bd3e7a18",
+        "kickoff": "2026-10-20T08:50:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1743",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Belinda Bencic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ningbo Open: Jelena Ostapenko vs Belinda Bencic",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T11:34:40.825083Z",
+          "parent_commit": "742f44dfd0b718707a0035118c23f81ca0820d5b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39415944626"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-20",
