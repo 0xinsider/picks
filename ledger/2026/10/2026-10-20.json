@@ -310,16 +310,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d5dc264ac04cd1ece5b8d4063e1b93fd9fa2773528c563a4961beee880b37acb",
+      "commitment_nonce": "992042608c365e377c281638f2a7177de1e3b6185a6244b558c46b1bd23228f1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T12:40:44.114976Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/12",
       "first_observation": {
         "observed_at": "2026-10-20T12:40:55.278126Z",
         "parent_commit": "dbeb94415cbd39cefeecbbd7314dbd93b9824a1f",
         "run": "https://github.com/0xinsider/picks/actions/runs/39424129387"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T22:01:17.364039Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x79db5a27929fb3e5072945e514ce0374b5eb1263d2190958e470879be52b5eea",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1754",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Porto vs. PSV",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/12",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T22:01:17.364039Z",
+          "parent_commit": "5cd295f38a0f75284e75ec4c4f186acc8fab38a5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39504964282"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -403,16 +428,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fa6c86915446ab8ce13573b5e0fbad88de501c05c50b22fbeb49ee474426a448",
+      "commitment_nonce": "72259681c2a89fa56daec3fa58ccd3291d96ae47979ecfb1f701098a0d84707d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T17:56:43.440202Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/16",
       "first_observation": {
         "observed_at": "2026-10-20T17:56:54.823285Z",
         "parent_commit": "6fbf77bb9ead8c2e4ce9ee633452e5c9c8ac3e56",
         "run": "https://github.com/0xinsider/picks/actions/runs/39470452103"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T22:01:17.338837Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xa3d3cf21cf944837111faf32cf4af550f70220eab242b0ff91762f1fb99863b8",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1758",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "VfB Stuttgart vs. Club Atlético de Madrid",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/16",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T22:01:17.338837Z",
+          "parent_commit": "5cd295f38a0f75284e75ec4c4f186acc8fab38a5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39504964282"
+        }
+      ]
     },
     {
       "pick_rank": 17,
@@ -420,16 +470,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "38c10244f377742d2e7b7ced110bf9f9b935c2dc1454bc06da43d33bbd01d57b",
+      "commitment_nonce": "20f91ae3ff8af7f7402ba1a7abbe952ff0da6b12080c127f7b67bd7c8fc5ef9b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T18:02:33.938852Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/17",
       "first_observation": {
         "observed_at": "2026-10-20T18:02:42.296721Z",
         "parent_commit": "5196bfb42486ca6ea2f6dfa191a9cf5b2e3b32d5",
         "run": "https://github.com/0xinsider/picks/actions/runs/39471294837"
-      }
+      },
+      "kickoff": "2026-10-20T19:00:00Z",
+      "resolved_at": "2026-10-20T22:01:17.382336Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xe70bf4ea647e73aa0f54cb5a7bef2a7f0b35c57e352cacd50e6e2d9d304f681e",
+        "kickoff": "2026-10-20T19:00:00Z",
+        "pick_date": "2026-10-20",
+        "pick_id": "1759",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Villarreal CF",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Liverpool FC vs. Villarreal CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-20/17",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T22:01:17.382336Z",
+          "parent_commit": "5cd295f38a0f75284e75ec4c4f186acc8fab38a5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39504964282"
+        }
+      ]
     },
     {
       "pick_rank": 18,
