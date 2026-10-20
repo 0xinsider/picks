@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 593,
-    "sealed": 9,
+    "opened": 594,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 332,
+    "proven": 333,
     "proven_record": {
-      "wins": 191,
+      "wins": 192,
       "losses": 137,
-      "decided": 328,
+      "decided": 329,
       "withdrawn": 2,
-      "hit_rate": "58.2",
-      "profit_usd": "12475.42",
-      "staked": "328000",
-      "roi": "3.8"
+      "hit_rate": "58.4",
+      "profit_usd": "13673.22",
+      "staked": "329000",
+      "roi": "4.2"
     },
-    "wins": 365,
+    "wins": 366,
     "losses": 222,
     "voids": 2,
-    "decided": 587,
+    "decided": 588,
     "withdrawn": 4,
     "hit_rate": "62.2",
     "stake_usd": "1000",
-    "profit_usd": "30251.55",
-    "staked": "587000",
-    "roi": "5.2",
+    "profit_usd": "31449.35",
+    "staked": "588000",
+    "roi": "5.3",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21417,16 +21417,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e237d10fa01612d6da7d3153f0203d2e8f7b9ab51a5f828c8d61ef472ef31fbf",
+      "commitment_nonce": "27a7efe251d4a0abc6765a0dc3a3fb0fd2b137fd299682cd6099cbefea531206",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T16:31:44.474357Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/14",
       "first_observation": {
         "observed_at": "2026-10-19T16:31:54.791357Z",
         "parent_commit": "67acb06c990201ea6582660fe237fd0335297f98",
         "run": "https://github.com/0xinsider/picks/actions/runs/39286154706"
-      }
+      },
+      "kickoff": "2026-10-20T00:00:00Z",
+      "resolved_at": "2026-10-20T03:09:44.293791Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x4a7aedfdb6d1f52f6c29afbd228d9ccff46e1cc8dbd6cbd4ef34ecc196054702",
+        "kickoff": "2026-10-20T00:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1737",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Dream",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Atlanta Dream vs. Golden State Valkyries",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T03:09:44.293791Z",
+          "parent_commit": "01ef74b060fb25363691934adbad089bcf1b3012",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39362825969"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",

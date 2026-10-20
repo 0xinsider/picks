@@ -436,16 +436,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e237d10fa01612d6da7d3153f0203d2e8f7b9ab51a5f828c8d61ef472ef31fbf",
+      "commitment_nonce": "27a7efe251d4a0abc6765a0dc3a3fb0fd2b137fd299682cd6099cbefea531206",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T16:31:44.474357Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/14",
       "first_observation": {
         "observed_at": "2026-10-19T16:31:54.791357Z",
         "parent_commit": "67acb06c990201ea6582660fe237fd0335297f98",
         "run": "https://github.com/0xinsider/picks/actions/runs/39286154706"
-      }
+      },
+      "kickoff": "2026-10-20T00:00:00Z",
+      "resolved_at": "2026-10-20T03:09:44.293791Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x4a7aedfdb6d1f52f6c29afbd228d9ccff46e1cc8dbd6cbd4ef34ecc196054702",
+        "kickoff": "2026-10-20T00:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1737",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Atlanta Dream",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Atlanta Dream vs. Golden State Valkyries",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T03:09:44.293791Z",
+          "parent_commit": "01ef74b060fb25363691934adbad089bcf1b3012",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39362825969"
+        }
+      ]
     },
     {
       "pick_rank": 15,
