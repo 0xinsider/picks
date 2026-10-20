@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 597,
-    "sealed": 5,
+    "opened": 599,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 336,
+    "proven": 338,
     "proven_record": {
-      "wins": 193,
-      "losses": 139,
-      "decided": 332,
+      "wins": 194,
+      "losses": 140,
+      "decided": 334,
       "withdrawn": 2,
       "hit_rate": "58.1",
-      "profit_usd": "12542.38",
-      "staked": "332000",
-      "roi": "3.8"
+      "profit_usd": "11940.98",
+      "staked": "334000",
+      "roi": "3.6"
     },
-    "wins": 367,
-    "losses": 224,
+    "wins": 368,
+    "losses": 225,
     "voids": 2,
-    "decided": 591,
+    "decided": 593,
     "withdrawn": 4,
     "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "30318.51",
-    "staked": "591000",
-    "roi": "5.1",
+    "profit_usd": "29717.11",
+    "staked": "593000",
+    "roi": "5.0",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21614,16 +21614,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c022c4208fa4b1cce4c2fe4d9762330c948da31d97d56deeaab6a002bdcdfae6",
+      "commitment_nonce": "9847772db1c7059c8903fe0f3eccd977c5a6342efe0e15b504a31404dbeb8124",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T00:31:35.178273Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/18",
       "first_observation": {
         "observed_at": "2026-10-20T00:31:42.965336Z",
         "parent_commit": "7732de00cfe005156142f6cfe9f47b04a4a69398",
         "run": "https://github.com/0xinsider/picks/actions/runs/39348162714"
-      }
+      },
+      "kickoff": "2026-10-20T02:30:00Z",
+      "resolved_at": "2026-10-20T05:09:44.603227Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x08ff9f4b37110c569a7e004844a7877d4fa8ef23c973f2acc2aa7614879eb399",
+        "kickoff": "2026-10-20T02:30:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1741",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ann Li",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Ann Li vs Emerson Jones",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T05:09:44.603227Z",
+          "parent_commit": "81b2e541ed45c3b6feff4fa7fe2f5bfbd660784b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39373403329"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
@@ -21632,16 +21657,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "61cf627ef493d567eea135d3e311942de705eb4b1acb0249f2f78633b4711680",
+      "commitment_nonce": "43c1f4396a7956e735efc3f4853cd0707ba84600ec1dd81b99c35827bea41050",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-20T00:31:35.190394Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/19",
       "first_observation": {
         "observed_at": "2026-10-20T00:31:42.965336Z",
         "parent_commit": "7732de00cfe005156142f6cfe9f47b04a4a69398",
         "run": "https://github.com/0xinsider/picks/actions/runs/39348162714"
-      }
+      },
+      "kickoff": "2026-10-20T02:30:00Z",
+      "resolved_at": "2026-10-20T05:09:44.594750Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x990068da72f27dbf1c88cd09f6831b92d5a8f01fc59ac7705d53107cb665b62c",
+        "kickoff": "2026-10-20T02:30:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1742",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Claire Liu",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Claire Liu vs Magda Linette",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/19",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-20T05:09:44.594750Z",
+          "parent_commit": "81b2e541ed45c3b6feff4fa7fe2f5bfbd660784b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39373403329"
+        }
+      ]
     }
   ]
 }
