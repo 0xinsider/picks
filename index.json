@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 599,
-    "sealed": 3,
+    "opened": 600,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 2,
     "late_unproven": 9,
-    "proven": 338,
+    "proven": 339,
     "proven_record": {
-      "wins": 194,
+      "wins": 195,
       "losses": 140,
-      "decided": 334,
+      "decided": 335,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "11940.98",
-      "staked": "334000",
-      "roi": "3.6"
+      "hit_rate": "58.2",
+      "profit_usd": "12400.83",
+      "staked": "335000",
+      "roi": "3.7"
     },
-    "wins": 368,
+    "wins": 369,
     "losses": 225,
     "voids": 2,
-    "decided": 593,
+    "decided": 594,
     "withdrawn": 4,
     "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "29717.11",
-    "staked": "593000",
-    "roi": "5.0",
+    "profit_usd": "30176.96",
+    "staked": "594000",
+    "roi": "5.1",
     "through": "2026-10-19"
   },
   "picks": [
@@ -21510,16 +21510,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "65ec7729e636d551b4a6b29da8555c878fbbd0891861d6b0ceb2df8f87d873d1",
+      "commitment_nonce": "66815fd986e83463ad356d36102e89be2836aac4be9bdd3f4c08169eca58d4d0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-19T17:47:18.905631Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/15",
       "first_observation": {
         "observed_at": "2026-10-19T17:47:29.159692Z",
         "parent_commit": "463dc3d5c737098ee92129907c5eabad9e1244c1",
         "run": "https://github.com/0xinsider/picks/actions/runs/39297113527"
-      }
+      },
+      "kickoff": "2026-10-20T04:00:00Z",
+      "resolved_at": "2026-10-20T06:39:44.031949Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x0531acaada1e04ef65d9ff122a1aa716ffb3f80213ec705c9d031c548ac4314c",
+        "kickoff": "2026-10-20T04:00:00Z",
+        "pick_date": "2026-10-19",
+        "pick_id": "1738",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Mary Stoiana",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Oleksandra Oliynykova vs Mary Stoiana",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-19/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-20T06:39:44.031949Z",
+          "parent_commit": "7d011163bf15904e0f09b16a458b7be58a3cb8ac",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39381678533"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-19",
