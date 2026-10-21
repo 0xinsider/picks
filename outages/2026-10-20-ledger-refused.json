@@ -1,0 +1,10 @@
+{
+  "id": "2026-10-20-ledger-refused",
+  "start": "2026-10-20T23:31:18Z",
+  "end": null,
+  "cause": "Every Seal and Reveal run fetched the ledger and then refused it: FAILED 2026-10-20 rank 21: publication_order is missing or invalid. The mirror bounded publication_order at 20, the daily pick count, while the site's rank space runs to 25: 2026-10-20 declined ranks 3 and 4 at release and published ranks 21 and 22 as its 19th and 20th picks. The endpoint answered normally the whole time; no hash could be appended because the run failed before writing.",
+  "reference": "https://github.com/0xinsider/0xinsider/issues/27770",
+  "first_failure": "https://github.com/0xinsider/picks/actions/runs/39515540450",
+  "first_recovery": null,
+  "notes": "Recorded by hand on 2026-10-22, because until this change the mirror opened a window only when a fetch failed, never when it refused what it fetched. start is the instant the first failing run, Seal run 39515540450, logged its refusal. This window is committed in the same change as the fix and before any hash it covers reaches this repository, which verify.py checks. end is null until the first run that reads and accepts the ledger closes it, before that run appends any hash. A pick whose kickoff falls inside this window and whose hash therefore reached this repository late is recorded with an outage marker naming this id, and stays unproven: the window explains the gap, it does not close it."
+}

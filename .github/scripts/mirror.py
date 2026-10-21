@@ -115,6 +115,14 @@ PERMALINK_BASE = "https://0xinsider.com/pick-of-the-day"
 # the endpoint for the ledger and did not get one. WHY it could not read it is
 # the `cause` field, which carries the status line or the transport error.
 OUTAGE_SLUG = "ledger-unreachable"
+
+# The window this script opens when the endpoint answered but served an entry
+# this mirror's contract refuses (`validate`). The copy stops just as surely as
+# when the endpoint is down: every run fails before it appends a hash. Until
+# 0xinsider/0xinsider#27770 only a failed fetch opened a window, so a refusal
+# that began 2026-10-20T23:31:18Z left no record while picks reached kickoff
+# unmirrored.
+REFUSAL_SLUG = "ledger-refused"
 OUTAGE_REFERENCE = (
     "https://github.com/0xinsider/picks/blob/main/VERIFY.md"
     "#picks-whose-game-started-while-the-mirror-was-down"
@@ -382,17 +390,17 @@ def write_window(path: Path, window: dict) -> None:
     path.write_text(json.dumps(window, indent=2, ensure_ascii=False) + "\n")
 
 
-def next_window_path(day: str) -> Path:
-    """`outages/<UTC date>-ledger-unreachable.json`, with a suffix if taken.
+def next_window_path(day: str, slug: str) -> Path:
+    """`outages/<UTC date>-<slug>.json`, with a suffix if taken.
 
     The id is the filename and `verify.py` requires the two to match, so a second
     outage on one day gets `-2`, `-3`, and so on rather than reopening a window
     that already closed.
     """
-    path = OUTAGE_DIR / f"{day}-{OUTAGE_SLUG}.json"
+    path = OUTAGE_DIR / f"{day}-{slug}.json"
     ordinal = 2
     while path.exists():
-        path = OUTAGE_DIR / f"{day}-{OUTAGE_SLUG}-{ordinal}.json"
+        path = OUTAGE_DIR / f"{day}-{slug}-{ordinal}.json"
         ordinal += 1
     return path
 
@@ -426,8 +434,12 @@ def commit_window(path: Path, subject: str, body: str) -> bool:
     return False
 
 
-def record_outage(cause: str) -> None:
-    """Open and push a window, now, because the ledger did not answer.
+def record_outage(cause: str, refused: bool = False) -> None:
+    """Open and push a window, now, because the ledger could not be copied.
+
+    `refused` is False when the ledger did not answer and True when it answered
+    with an entry `validate` refuses. Either way no hash can land until a run
+    reads and accepts the ledger again, which is what closes the window.
 
     Idempotent against a racing run the same way the ledger writes are: on a
     rejected push the local commit is dropped, origin is re-read, and the
@@ -435,16 +447,19 @@ def record_outage(cause: str) -> None:
     meantime, this sees it and writes nothing -- one outage, one record.
 
     A failure to record does NOT become the run's error. The caller is already
-    failing on the fetch, which is the thing to report; this is logged and the
-    next failing run tries again.
+    failing on the fetch or the refusal, which is the thing to report; this is
+    logged and the next failing run tries again.
     """
+    failed = "refused an entry the ledger served" if refused else "failed to read the ledger"
     for attempt in range(1, 4):
         already = open_window()
         if already is not None:
             log(f"outage window {already[0].name} is already open; not opening a second")
             return
         started = datetime.now(timezone.utc)
-        path = next_window_path(started.strftime("%Y-%m-%d"))
+        path = next_window_path(
+            started.strftime("%Y-%m-%d"), REFUSAL_SLUG if refused else OUTAGE_SLUG
+        )
         window = {
             "id": path.stem,
             "start": stamp(started),
@@ -454,9 +469,9 @@ def record_outage(cause: str) -> None:
             "first_failure": run_url(),
             "first_recovery": None,
             "notes": (
-                "Opened by the mirror itself, in the run that first failed to read the "
-                "ledger, and committed before that run exited. end is null until a run "
-                "reads the ledger again and closes this window, which it does before it "
+                f"Opened by the mirror itself, in the run that first {failed}, and "
+                "committed before that run exited. end is null until a run reads and "
+                "accepts the ledger again and closes this window, which it does before it "
                 "appends any hash. A pick whose kickoff falls inside this window and "
                 "whose hash therefore reached this repository late is recorded with an "
                 "outage marker naming this id, and stays unproven: the window explains "
@@ -464,7 +479,8 @@ def record_outage(cause: str) -> None:
             ),
         }
         write_window(path, window)
-        subject = f"outage: {path.stem} opened, the ledger did not answer"
+        reason = "the mirror refused the ledger" if refused else "the ledger did not answer"
+        subject = f"outage: {path.stem} opened, {reason}"
         body = (
             f"{cause}\n\n"
             f"Committed before this run exits, so the record of the gap predates any "
@@ -581,7 +597,7 @@ def validate(entry: dict) -> tuple[str, int, str]:
         raise MirrorError(f"{who}: invalid proof identity or version") from None
     if "pick_id" in entry:
         require(type(entry.get("publication_order")) is int
-                and 1 <= entry["publication_order"] <= verify.MAX_DAILY_PICKS,
+                and 1 <= entry["publication_order"] <= verify.MAX_PICK_RANK,
                 f"{who}: publication_order is missing or invalid")
         require(type(entry.get("is_free_selection")) is bool,
                 f"{who}: is_free_selection must be an explicit boolean")
@@ -1851,6 +1867,18 @@ def reconcile_identities(entries: list[dict], mode: str) -> None:
     log(f"reconciled {len(source)} eligible source identities against ledger/")
 
 
+def record_failure(exc: MirrorError, refused: bool, dry_run: bool) -> None:
+    """Open an outage window for a run that is about to fail without copying."""
+    if dry_run:
+        log("dry run: not recording an outage window")
+        return
+    cause = " ".join(str(exc).split())[:400]
+    try:
+        record_outage(cause, refused=refused)
+    except MirrorError as inner:
+        log(f"FAILED  could not record the outage window: {inner}")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--mode", required=True, choices=("seal", "reveal", "regenerate"))
@@ -1886,20 +1914,26 @@ def main() -> int:
         # The window goes in NOW, in its own commit, while the failure is the
         # only thing that has happened. A record written later cannot be told
         # apart from an excuse, and `verify.py` refuses to tell them apart.
-        if args.no_push:
-            log("dry run: not recording an outage window")
-        else:
-            cause = " ".join(str(exc).split())[:400]
-            try:
-                record_outage(cause)
-            except MirrorError as inner:
-                log(f"FAILED  could not record the outage window: {inner}")
+        record_failure(exc, refused=False, dry_run=args.no_push)
         raise
     read_at = datetime.now(timezone.utc)
 
-    # The ledger answered, so any window that was open is over. Closing it is
-    # pushed before a single hash is appended, which is what keeps a window's
-    # commit ahead of the backlog it explains.
+    # The ledger answered. Every entry must still pass this mirror's contract
+    # before an open window closes, because a refused entry stops every run
+    # before it appends a hash, exactly as a failed fetch does. Checked here, as
+    # one pass over the response, so a refusal records its window the same way
+    # and an open window stays open across the failing runs that follow
+    # (0xinsider/0xinsider#27770).
+    try:
+        for entry in entries:
+            validate(entry)
+    except MirrorError as exc:
+        record_failure(exc, refused=True, dry_run=args.no_push)
+        raise
+
+    # The ledger answered and was accepted, so any window that was open is
+    # over. Closing it is pushed before a single hash is appended, which is what
+    # keeps a window's commit ahead of the backlog it explains.
     if not args.no_push:
         close_outage(read_at)
 
