@@ -170,10 +170,17 @@ KNOWN_LATE_COMMITS = {
 # are the same under either stake.
 STAKE_USD = Decimal(1000)
 
-# The most picks one product day can carry: ranks run 1 to this. Mirrors the
-# public daily bound. Max permits twenty; historical ranks and proof bytes remain
-# unchanged. Private trading has a separate ten-rank contract.
-MAX_DAILY_PICKS = 20
+# The highest rank, and so the highest `publication_order`, a product day can
+# use: ranks run 1 to this. It is NOT the daily pick count. A day carries at most
+# twenty live picks, but a pick the site withdrew or finally declined to release
+# keeps its rank, and each one moves the day's rank space up by one, to this
+# physical bound. Mirrors `MAX_PICK_RANK` in the site's backend and its
+# `pick_of_the_day_pick_rank_chk` constraint. 2026-10-20 declined ranks 3 and 4
+# and published ranks 21 and 22 as its 19th and 20th picks; a bound of twenty
+# here stopped every Seal and Reveal run from 2026-10-20T23:31:18Z
+# (0xinsider/0xinsider#27770). Historical ranks and proof bytes are unchanged.
+# Private trading has a separate ten-rank contract.
+MAX_PICK_RANK = 25
 
 # Why the site withdrew a published pick from its record, as the ledger
 # endpoint names it on a settled entry (`withdrawal_reason`, 0xinsider/0xinsider
@@ -277,7 +284,7 @@ def pick_identity(pick: dict) -> tuple[str, str | int]:
     )):
         raise Failure("stable identity metadata is missing pick_id")
     rank = pick.get("pick_rank")
-    if type(rank) is not int or not 1 <= rank <= MAX_DAILY_PICKS:
+    if type(rank) is not int or not 1 <= rank <= MAX_PICK_RANK:
         raise Failure(f"invalid legacy pick_rank {rank!r}")
     return "rank", rank
 
@@ -887,7 +894,7 @@ def load_ledger() -> list[tuple[Path, dict]]:
                 ):
                     raise SystemExit(f"{path}: invalid supersedes_pick_id")
             order = pick.get("publication_order", rank)
-            if type(order) is not int or not 1 <= order <= MAX_DAILY_PICKS:
+            if type(order) is not int or not 1 <= order <= MAX_PICK_RANK:
                 raise SystemExit(f"{path}: invalid publication_order {order!r}")
             if "withdrawal_reason" in pick and (
                 pick.get("state") != "opened"

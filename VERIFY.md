@@ -31,8 +31,8 @@ Each pick has three moments.
 
 **Publish, kickoff minus one hour.** The pick goes live on the site. The backed
 side of it -- which market, which outcome, at what price -- is behind sign-in
-for the designated free selection, behind Pro for ranks 2-5, and behind Max for
-ranks 6-20. Unauthorized unresolved game identity stays hidden. In the same pass the backend
+for the designated free selection, behind Pro for the next four in publication
+order, and behind Max for the rest. Unauthorized unresolved game identity stays hidden. In the same pass the backend
 computes
 
 ```
@@ -95,6 +95,11 @@ New mirrored entries carry `pick_id`, a positive decimal string, plus explicit
 The publication order is a compatibility slot, not a quality score. A new
 selection that replaces a published one has its own ID; the original proof
 remains in its original file.
+
+`publication_order` runs from 1 to 25. A day carries at most twenty live picks,
+but a pick the site withdrew or declined at release keeps its rank, so a later
+pick can take rank 21 or above. On 2026-10-20 ranks 3 and 4 were declined and
+ranks 21 and 22 were the day's 19th and 20th picks.
 
 Committed entries declare `commitment_version`. The mirror and verifier refuse
 an unknown version or a committed stable-ID entry with no version. Stored legacy
@@ -473,10 +478,11 @@ the window is open, and an open window covers every kickoff after its `start`
 until it closes.
 
 The mirror writes these windows itself, and that is the only reason the ordering
-below can be relied on. The run that first fails to read the ledger commits an
-open window before it exits non-zero, carrying the failing run's URL in
-`first_failure`; the first run that reads the ledger again sets `end` and
-`first_recovery` and commits that BEFORE it appends any hash. Check 2 dates a
+below can be relied on. The run that first fails to read the ledger, or reads
+it and refuses an entry it serves, commits an open window before it exits
+non-zero, carrying the failing run's URL in `first_failure`; the first run that
+reads and accepts the ledger again sets `end` and `first_recovery` and commits
+that BEFORE it appends any hash. Check 2 dates a
 window by the commit that introduced its `start` -- the commit that opened it --
 and not by whatever touched the file last, because the claim being made is "the
 mirror could not read the ledger from here" and it was made at the moment of
@@ -514,6 +520,14 @@ This is the same reasoning as `pre_commitment` for a pick that predates the
 mirror, applied to a case the scheme had no word for. Neither one claims a
 proof. Both say, in the data, exactly which kind of gap this is, so that a red
 run keeps meaning a broken proof rather than a broken mirror.
+
+One window was written by hand: `outages/2026-10-20-ledger-refused.json`. From
+2026-10-20T23:31:18Z every run read the ledger and refused it, because the
+mirror bounded `publication_order` at 20 while that day used ranks 21 and 22.
+At the time only a failed fetch opened a window, so no run recorded this one.
+It was committed together with the fix, before any hash it covers reached this
+repository, and its `notes` say so. Check 2 holds it to the same ordering as
+every other window. The refusal now opens its own window.
 
 ### Late hashes without a prior outage window
 
@@ -591,8 +605,9 @@ is missing, so a missed run self-heals on the next one and a double run writes
 nothing the second time.
 
 Both writing workflows also keep the outage windows above. A run that cannot
-read the ledger commits an open window and then fails; the next run that can
-read it closes that window, commits it, and only then appends the backlog.
+read the ledger, or refuses an entry it serves, commits an open window and then
+fails; the next run that reads and accepts it closes that window, commits it,
+and only then appends the backlog.
 
 The mirror also refuses to write a nonce or payload for a pick the endpoint
 reports as sealed, and fails the run if it sees one. The endpoint is supposed to
