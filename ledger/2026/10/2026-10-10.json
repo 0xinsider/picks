@@ -343,16 +343,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7a680d48a5aa48ffee9161508ef97e5b19b3ebc8c1865d96e04730817be1e0c0",
+      "commitment_nonce": "8ae023e70506ec2305331230c648ad9cae56efe27eab57bf2456a441e8e2c073",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-10T10:46:00.195921Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/9",
       "first_observation": {
         "observed_at": "2026-10-10T10:46:09.999295Z",
         "parent_commit": "910b87618736533d82fea37ac25651ac0a01d269",
         "run": "https://github.com/0xinsider/picks/actions/runs/38046046316"
-      }
+      },
+      "kickoff": "2026-10-10T12:00:00Z",
+      "resolved_at": "2026-10-21T00:14:28.293143Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xea83da0f880872e5a9ac39ca5ea06f643871ec9dacf4306eabd56949da983df2",
+        "kickoff": "2026-10-10T12:00:00Z",
+        "pick_date": "2026-10-10",
+        "pick_id": "578",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rayo Vallecano de Madrid vs. Athletic Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-10/9",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-10-21T00:14:28.293143Z",
+          "parent_commit": "829c4d09ea5e291485d65a2e256044589a11fb8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39693563313"
+        }
+      ]
     },
     {
       "pick_rank": 10,
