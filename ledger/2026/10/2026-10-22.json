@@ -260,16 +260,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2f8ae29b2d6992e3eb94f5a222aad182de2fce2f0d37d0b6b55acc093308567f",
+      "commitment_nonce": "ec4a2bb92405c5f4b4dfd5c571d0211bde47e7dd2f8085788d385535d3e1a96c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T11:06:09.499792Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/10",
       "first_observation": {
         "observed_at": "2026-10-22T11:06:17.496590Z",
         "parent_commit": "38343f5244e4fa294cb1c900da339f3fe690f582",
         "run": "https://github.com/0xinsider/picks/actions/runs/39768060276"
-      }
+      },
+      "kickoff": "2026-10-22T16:00:00Z",
+      "resolved_at": "2026-10-22T21:58:20.856474Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x2a913e4df8f6941514cb98e8578ec9dec3b73a2c1f80b19101e02ecf009cce79",
+        "kickoff": "2026-10-22T16:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1794",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Sinners",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Sinners vs Eternal Fire (BO3) - DraculaN Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T21:58:20.856474Z",
+          "parent_commit": "aa0e03bfd481d1d22e0431828e030e52de13cfcf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39861428931"
+        }
+      ]
     },
     {
       "pick_rank": 11,
