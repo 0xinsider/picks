@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 642,
-    "sealed": 13,
+    "opened": 643,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 368,
+    "proven": 369,
     "proven_record": {
-      "wins": 211,
+      "wins": 212,
       "losses": 152,
-      "decided": 363,
+      "decided": 364,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "14664.35",
-      "staked": "363000",
-      "roi": "4.0"
+      "hit_rate": "58.2",
+      "profit_usd": "15082.79",
+      "staked": "364000",
+      "roi": "4.1"
     },
-    "wins": 394,
+    "wins": 395,
     "losses": 241,
     "voids": 3,
-    "decided": 635,
+    "decided": 636,
     "withdrawn": 4,
-    "hit_rate": "62.0",
+    "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "36410.28",
-    "staked": "635000",
-    "roi": "5.7",
-    "through": "2026-10-21"
+    "profit_usd": "36828.72",
+    "staked": "636000",
+    "roi": "5.8",
+    "through": "2026-10-22"
   },
   "picks": [
     {
@@ -23579,16 +23579,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "020cf7678b6f95b4e8f9cb148d17b88e4cdcfad07bbe7021639110d1769a8c38",
+      "commitment_nonce": "3ae2cd975ebf9b9cef7a1e342b9ddd6390381c1be52f49beef5b47763f9a9202",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.266152Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/8",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-22T08:00:00Z",
+      "resolved_at": "2026-10-22T12:58:16.379503Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xe5e58347d5c1171bb088df9cfd3a7ea17d0295674a1b3ff0e43a8bf675842f22",
+        "kickoff": "2026-10-22T08:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1792",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Karen Khachanov",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Almaty Open: Tomas Machac vs Karen Khachanov",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T12:58:16.379503Z",
+          "parent_commit": "a6663e3e4027a1f44caaf721be4be6d6d31fdcd0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39782777419"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
