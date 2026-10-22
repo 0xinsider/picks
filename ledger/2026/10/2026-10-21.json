@@ -446,16 +446,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "000c97a0b6667491c5a3c04b39c0901953fca3e307b169bedd5921026e3584ab",
+      "commitment_nonce": "8afa220b01fa66b21675c2bd56308caf371bfbf5109ef463b059294e401bd599",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-21T07:03:33.510993Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/12",
       "first_observation": {
         "observed_at": "2026-10-21T23:27:14.508145Z",
         "parent_commit": "beeca5763507a4cdb6aee251d62a8166066fed9d",
         "run": "https://github.com/0xinsider/picks/actions/runs/39693495672"
-      }
+      },
+      "kickoff": "2026-10-22T01:00:00Z",
+      "resolved_at": "2026-10-22T04:36:27.608162Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x833944e47f998c62f8ddce63b83662397e00ff03888541cb80a2032ee17c971a",
+        "kickoff": "2026-10-22T01:00:00Z",
+        "pick_date": "2026-10-21",
+        "pick_id": "1776",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Antonia Ruzic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Japan Women's Open: Antonia Ruzic vs Kayla Day",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/12",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T04:36:27.608162Z",
+          "parent_commit": "60a4e96c51820d47d05af36031100b5d139fb552",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39723316108"
+        }
+      ]
     },
     {
       "pick_rank": 13,
