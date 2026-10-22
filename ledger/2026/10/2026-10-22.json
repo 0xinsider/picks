@@ -243,16 +243,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bfa974029790b1082a87af76fb9c00097416fd11ec403aa1ca7aba9d6144ff3e",
+      "commitment_nonce": "135b6adf785a3e8727740b0dc65fb540caf26aa30a7ed33db9d406adb4295806",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T10:13:50.761350Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/9",
       "first_observation": {
         "observed_at": "2026-10-22T10:13:59.346423Z",
         "parent_commit": "5029ab22a87ce2bf11c4b86a3e8f333ab6fdc336",
         "run": "https://github.com/0xinsider/picks/actions/runs/39761525920"
-      }
+      },
+      "kickoff": "2026-10-22T19:00:00Z",
+      "resolved_at": "2026-10-22T22:58:20.865321Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x3d2db7b3234150f957cf0dcbe2acf105c7fc5cefe7f346283a29d17e1abc060f",
+        "kickoff": "2026-10-22T19:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1793",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Celtic FC vs. RC Celta de Vigo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-22T22:58:20.865321Z",
+          "parent_commit": "0cb2e7584f80484a60d4b26a15e18bb4cbf1be98",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39868669126"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -319,16 +344,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b589589fd9134ec62d783602a71f0f3aa0f2a72a6f86c1bc6f29fdedb90b8577",
+      "commitment_nonce": "dc900899da0afad50b23abd527a1956b743400eb80497be329fef2d1408c91f0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T11:25:50.631753Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/12",
       "first_observation": {
         "observed_at": "2026-10-22T11:26:00.805966Z",
         "parent_commit": "d827b56a10f6c2e65c84d34be603c945bc877fc1",
         "run": "https://github.com/0xinsider/picks/actions/runs/39770518081"
-      }
+      },
+      "kickoff": "2026-10-22T19:00:00Z",
+      "resolved_at": "2026-10-22T22:58:20.877536Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x4dc7afd651a29e11e19bca8e701ee2ebc3e99752c81ed2286086a7b3584d0e3c",
+        "kickoff": "2026-10-22T19:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1796",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lillestrøm SK vs. Real Sociedad de Fútbol",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/12",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T22:58:20.877536Z",
+          "parent_commit": "0cb2e7584f80484a60d4b26a15e18bb4cbf1be98",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39868669126"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -336,16 +386,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6da9c6d8a91641395e9868b054088c0617d358475ce60bbdd49c202ace04b4b5",
+      "commitment_nonce": "52a94305c96dab8d6575693038c1fdb3a8a2e29e58b6b266f22947a404ddd269",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T12:41:26.303806Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/13",
       "first_observation": {
         "observed_at": "2026-10-22T12:41:34.325647Z",
         "parent_commit": "b7132d8b73df251080eefa517e4e65edd180f622",
         "run": "https://github.com/0xinsider/picks/actions/runs/39780422174"
-      }
+      },
+      "kickoff": "2026-10-22T19:00:00Z",
+      "resolved_at": "2026-10-22T22:58:20.887431Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x68c097096b41a63c8582393859c5ea5a334567b728748cf663e5040804fb7a9b",
+        "kickoff": "2026-10-22T19:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1797",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Olympiakós SFP vs. AC Sparta Praha",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T22:58:20.887431Z",
+          "parent_commit": "0cb2e7584f80484a60d4b26a15e18bb4cbf1be98",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39868669126"
+        }
+      ]
     },
     {
       "pick_rank": 14,
