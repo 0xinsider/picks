@@ -24,16 +24,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "93842b66e74d81e83ddbe70997feed3a3aebbdf224e4051dbc5ac9a88d5488b1",
+      "commitment_nonce": "a6657b5c820708567676cc4d269d9d16310436a85597b2be57315247f45b61d9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.229798Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/2",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-22T12:00:00Z",
+      "resolved_at": "2026-10-22T13:53:59.742869Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x59cb7019ae9cdfc1ea41dedabb1fa788dac66be5a3c174e5e34d2e00ceecb9c5",
+        "kickoff": "2026-10-22T12:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1786",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Daniel Altmaier",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lyon Open: Borna Gojo vs Daniel Altmaier",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T13:53:59.742869Z",
+          "parent_commit": "33b1b5033782a4f97b546b75fb851a20298df5da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39790982567"
+        }
+      ]
     },
     {
       "pick_rank": 3,
