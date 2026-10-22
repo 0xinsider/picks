@@ -252,16 +252,42 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
+      "outage": "2026-10-20-ledger-refused",
       "commitment_hash": "d17c7e6a14d7af962ec5234a62fcd35c618b9529155032f987a4f1686193aa27",
+      "commitment_nonce": "6a897fc67d59722ca6e905e4d6f065c00d6821dcbe97daaaefeef06016c23b55",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-21T07:03:33.491211Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/8",
       "first_observation": {
         "observed_at": "2026-10-21T23:27:14.508145Z",
         "parent_commit": "beeca5763507a4cdb6aee251d62a8166066fed9d",
         "run": "https://github.com/0xinsider/picks/actions/runs/39693495672"
-      }
+      },
+      "kickoff": "2026-10-21T23:00:00Z",
+      "resolved_at": "2026-10-22T02:06:27.696982Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xa9aabf896bf368f5773833f5b3add71fdcc8b1457e2f19edf9273f420a88ac04",
+        "kickoff": "2026-10-21T23:00:00Z",
+        "pick_date": "2026-10-21",
+        "pick_id": "1772",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bucks vs. Wizards",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T02:06:27.696982Z",
+          "parent_commit": "8ac3e9b37cc5c9895eeddd3a2c9f1f7511c8d35a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39709531750"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -451,16 +477,42 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
+      "outage": "2026-10-20-ledger-refused",
       "commitment_hash": "90d0851e00fab397ee7a1429873dfa2d5a31ecc6edf2ecc25433f0c169b1b9c8",
+      "commitment_nonce": "fd7e8cc8c119705dd607455cd39a7fa8b9aec4e15023782f366297bafde52483",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-21T12:20:16.284229Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/16",
       "first_observation": {
         "observed_at": "2026-10-21T23:27:14.508145Z",
         "parent_commit": "beeca5763507a4cdb6aee251d62a8166066fed9d",
         "run": "https://github.com/0xinsider/picks/actions/runs/39693495672"
-      }
+      },
+      "kickoff": "2026-10-21T23:00:00Z",
+      "resolved_at": "2026-10-22T02:06:27.704460Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xdd6e05bfe76b17e9d36e04ae7f2035f9897d083f797b062e8910b1b6734666ee",
+        "kickoff": "2026-10-21T23:00:00Z",
+        "pick_date": "2026-10-21",
+        "pick_id": "1780",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hawks vs. Magic",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/16",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T02:06:27.704460Z",
+          "parent_commit": "8ac3e9b37cc5c9895eeddd3a2c9f1f7511c8d35a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39709531750"
+        }
+      ]
     },
     {
       "pick_rank": 17,
