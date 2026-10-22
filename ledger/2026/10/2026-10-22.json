@@ -125,16 +125,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "590a3852f5cc4c4d2b2259ec8a7d97364f16e70af089f184955ff01e21f77889",
+      "commitment_nonce": "b979f3b0bb3ea31f75677e442bffb50a8b93dccd8aac012281badcb5ef843ddd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.246395Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/5",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-22T16:45:00Z",
+      "resolved_at": "2026-10-22T21:28:20.848737Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.335000",
+        "condition_id": "0x3e677601e5c330c986726739a4586d17725e9003f17deff1270972091ea814b0",
+        "kickoff": "2026-10-22T16:45:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1789",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Juventus FC vs. Stade Rennais FC 1901",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T21:28:20.848737Z",
+          "parent_commit": "5aff790ab727da0834d1db333168b47004cd2177",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39857526489"
+        }
+      ]
     },
     {
       "pick_rank": 6,
