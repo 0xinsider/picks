@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 636,
-    "sealed": 6,
+    "opened": 638,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 362,
+    "proven": 364,
     "proven_record": {
-      "wins": 207,
-      "losses": 150,
-      "decided": 357,
+      "wins": 208,
+      "losses": 151,
+      "decided": 359,
       "withdrawn": 2,
-      "hit_rate": "58.0",
-      "profit_usd": "13468.73",
-      "staked": "357000",
-      "roi": "3.8"
+      "hit_rate": "57.9",
+      "profit_usd": "13410.48",
+      "staked": "359000",
+      "roi": "3.7"
     },
-    "wins": 390,
-    "losses": 239,
+    "wins": 391,
+    "losses": 240,
     "voids": 3,
-    "decided": 629,
+    "decided": 631,
     "withdrawn": 4,
     "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "35214.66",
-    "staked": "629000",
+    "profit_usd": "35156.41",
+    "staked": "631000",
     "roi": "5.6",
     "through": "2026-10-21"
   },
@@ -22666,16 +22666,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cb5875939ab0f272948416a3358183f73d931f5c107507af0cd90aa4214d5ffd",
+      "commitment_nonce": "d5c87612138261635d8948186b4efb68d919d77918f3e466c47fe3b47ab7e5b4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-21T07:03:33.455079Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/2",
       "first_observation": {
         "observed_at": "2026-10-21T23:27:14.508145Z",
         "parent_commit": "beeca5763507a4cdb6aee251d62a8166066fed9d",
         "run": "https://github.com/0xinsider/picks/actions/runs/39693495672"
-      }
+      },
+      "kickoff": "2026-10-22T00:00:00Z",
+      "resolved_at": "2026-10-22T03:06:27.617353Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x3659aae64ada65eb275fec0018a21a5f7242f75911deda14fbafea17c51ffd6e",
+        "kickoff": "2026-10-22T00:00:00Z",
+        "pick_date": "2026-10-21",
+        "pick_id": "1766",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Grizzlies",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jazz vs. Grizzlies",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T03:06:27.617353Z",
+          "parent_commit": "200f104b6973b05383c5589c6b4b603a0863b587",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39715031145"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-21",
@@ -23249,16 +23274,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "307bf98644be9d5504ceeec29264782e554583742dfb309eb2619981cd83f9d0",
+      "commitment_nonce": "20ee86c0dabd02b00274fd1f997ae27f7f1e37d21e151842d66fef748790acf3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-21T12:26:52.596969Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/18",
       "first_observation": {
         "observed_at": "2026-10-21T23:27:14.508145Z",
         "parent_commit": "beeca5763507a4cdb6aee251d62a8166066fed9d",
         "run": "https://github.com/0xinsider/picks/actions/runs/39693495672"
-      }
+      },
+      "kickoff": "2026-10-21T23:30:00Z",
+      "resolved_at": "2026-10-22T03:06:27.609196Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xbbfa4b036cbdb50142b714f4de55fa5e1361fb02a2737e9d1c8279cc3f29a499",
+        "kickoff": "2026-10-21T23:30:00Z",
+        "pick_date": "2026-10-21",
+        "pick_id": "1782",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bulls vs. Raptors",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-21/18",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-22T03:06:27.609196Z",
+          "parent_commit": "200f104b6973b05383c5589c6b4b603a0863b587",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39715031145"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-21",
