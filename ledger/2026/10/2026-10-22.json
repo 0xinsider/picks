@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8b3be4297b9fcf42584a05c7011dde5ed91f0a033beb78bb711c75a13f491e22",
+      "commitment_nonce": "8480e39271fa598d91e9b562e7f845cf1be3e7dd28d63cbc2343d3bfe399e0b2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.224462Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/1",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-22T12:00:00Z",
+      "resolved_at": "2026-10-22T17:58:20.897792Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x435257a2ffb9752278cac3680a6dcba7d819543fadc89236403c869df1cc26ad",
+        "kickoff": "2026-10-22T12:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1785",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Galions",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Galions vs Solary (BO5) - EMEA Masters Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T17:58:20.897792Z",
+          "parent_commit": "ea26b939ed3ef52b9d1af9eb16fe417cb2a3ca82",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39827303175"
+        }
+      ]
     },
     {
       "pick_rank": 2,
