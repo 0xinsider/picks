@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 651,
-    "sealed": 11,
+    "opened": 653,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 377,
+    "proven": 379,
     "proven_record": {
-      "wins": 219,
+      "wins": 221,
       "losses": 153,
-      "decided": 372,
+      "decided": 374,
       "withdrawn": 2,
-      "hit_rate": "58.9",
-      "profit_usd": "21516.37",
-      "staked": "372000",
-      "roi": "5.8"
+      "hit_rate": "59.1",
+      "profit_usd": "22634.81",
+      "staked": "374000",
+      "roi": "6.1"
     },
-    "wins": 402,
+    "wins": 404,
     "losses": 242,
     "voids": 3,
-    "decided": 644,
+    "decided": 646,
     "withdrawn": 4,
-    "hit_rate": "62.4",
+    "hit_rate": "62.5",
     "stake_usd": "1000",
-    "profit_usd": "43262.30",
-    "staked": "644000",
-    "roi": "6.7",
+    "profit_usd": "44380.74",
+    "staked": "646000",
+    "roi": "6.9",
     "through": "2026-10-22"
   },
   "picks": [
@@ -23618,16 +23618,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "59851099093e661b4f3cf3cc93f01ebae6a57204ca62935ca30e54dd7e47b64e",
+      "commitment_nonce": "e259dd08456d44ff714dd293ca59e48a11589ab5379030910325ce07d91f858e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.249922Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/6",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-22T19:00:00Z",
+      "resolved_at": "2026-10-22T23:28:20.833452Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xbaeddabab1085618ee3138747807b11de3e59707e848c7946b71ff9a4c8abe68",
+        "kickoff": "2026-10-22T19:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1790",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AFC Bournemouth vs. AC Milan",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/6",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T23:28:20.833452Z",
+          "parent_commit": "3a25b07e886b5dba4a981fae723e9c0e355d5a5b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39871997154"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
@@ -23930,16 +23955,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "436260bcba1b6eee718585b16ea19d84081d28eda835ff0c8c8c7953b1fd0355",
+      "commitment_nonce": "51e7f809f90717560305c683af23283c32e5b6826ca85ebff6b419d3bd7e6664",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T13:27:19.492960Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/15",
       "first_observation": {
         "observed_at": "2026-10-22T13:27:29.786594Z",
         "parent_commit": "2a7037f3badeeb8f935ede042c3cefb29f483f50",
         "run": "https://github.com/0xinsider/picks/actions/runs/39786976974"
-      }
+      },
+      "kickoff": "2026-10-22T19:00:00Z",
+      "resolved_at": "2026-10-22T23:28:20.847148Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x3078c89a2949cfbb54797539239c1525ddb7de9fac0ae7acdfce427eb4e1f209",
+        "kickoff": "2026-10-22T19:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1799",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC Braga vs. KAA Gent",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T23:28:20.847148Z",
+          "parent_commit": "3a25b07e886b5dba4a981fae723e9c0e355d5a5b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39871997154"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
