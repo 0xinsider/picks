@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 645,
-    "sealed": 15,
+    "opened": 646,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 371,
+    "proven": 372,
     "proven_record": {
-      "wins": 214,
+      "wins": 215,
       "losses": 152,
-      "decided": 366,
+      "decided": 367,
       "withdrawn": 2,
-      "hit_rate": "58.5",
-      "profit_usd": "17049.40",
-      "staked": "366000",
-      "roi": "4.7"
+      "hit_rate": "58.6",
+      "profit_usd": "17758.81",
+      "staked": "367000",
+      "roi": "4.8"
     },
-    "wins": 397,
+    "wins": 398,
     "losses": 241,
     "voids": 3,
-    "decided": 638,
+    "decided": 639,
     "withdrawn": 4,
-    "hit_rate": "62.2",
+    "hit_rate": "62.3",
     "stake_usd": "1000",
-    "profit_usd": "38795.34",
-    "staked": "638000",
-    "roi": "6.1",
+    "profit_usd": "39504.74",
+    "staked": "639000",
+    "roi": "6.2",
     "through": "2026-10-22"
   },
   "picks": [
@@ -23762,16 +23762,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fe3af1be3418299c6059f11e35a95057faa26c1c0750ac3b044144af7682f1c6",
+      "commitment_nonce": "1fa0eb3da240084f4cb12ff92c8debf62de57e188e7b65c0586375389f0164fd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T13:00:02.047121Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/14",
       "first_observation": {
         "observed_at": "2026-10-22T13:00:12.359905Z",
         "parent_commit": "1c45c34e666093ce5f1f5a83fd1e0ba34f98b893",
         "run": "https://github.com/0xinsider/picks/actions/runs/39783022635"
-      }
+      },
+      "kickoff": "2026-10-22T16:45:00Z",
+      "resolved_at": "2026-10-22T20:58:21.029366Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x03c3edfeb0537a8588d9e184bfda79faa38d6fc2fdfe814dca2b090b606a1854",
+        "kickoff": "2026-10-22T16:45:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1798",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SK Puntigamer Sturm Graz vs. Olympique de Marseille",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/14",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-22T20:58:21.029366Z",
+          "parent_commit": "d740ae0ca938f714f2d8af5e9a9e8d03d53fcdbc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39853384176"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
