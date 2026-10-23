@@ -108,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "eaea56fe6c083f7d2d01d692a1b2fc7350acc3db542c11ab4e7680a23aa6a3ad",
+      "commitment_nonce": "1d3e14d8329c9ab8afb58e04c37308285858b92d7719f66d66a3b9e7ca5f7020",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:00:58.567018Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/4",
       "first_observation": {
         "observed_at": "2026-10-23T07:01:06.740404Z",
         "parent_commit": "358c247795324d0b870ed923562e46fec5778021",
         "run": "https://github.com/0xinsider/picks/actions/runs/39915069252"
-      }
+      },
+      "kickoff": "2026-10-23T20:00:00Z",
+      "resolved_at": "2026-10-23T21:42:42.567791Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x6dccd54ad0aa48eb04c17f1fd0b033c07a95a87ff8c5c882f004ca45c00e7e08",
+        "kickoff": "2026-10-23T20:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1808",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Anyone's Legend",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Anyone's Legend vs Karmine Corp (BO1) - Worlds Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/4",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-23T21:42:42.567791Z",
+          "parent_commit": "48c72fa2bf9d446ec0623c4308a761834ace23c3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40028742624"
+        }
+      ]
     },
     {
       "pick_rank": 5,
