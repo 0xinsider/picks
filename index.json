@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 659,
-    "sealed": 3,
+    "opened": 660,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 385,
+    "proven": 386,
     "proven_record": {
-      "wins": 221,
+      "wins": 222,
       "losses": 159,
-      "decided": 380,
+      "decided": 381,
       "withdrawn": 2,
-      "hit_rate": "58.2",
-      "profit_usd": "16634.81",
-      "staked": "380000",
-      "roi": "4.4"
+      "hit_rate": "58.3",
+      "profit_usd": "17576.56",
+      "staked": "381000",
+      "roi": "4.6"
     },
-    "wins": 404,
+    "wins": 405,
     "losses": 248,
     "voids": 3,
-    "decided": 652,
+    "decided": 653,
     "withdrawn": 4,
     "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "38380.74",
-    "staked": "652000",
-    "roi": "5.9",
+    "profit_usd": "39322.49",
+    "staked": "653000",
+    "roi": "6.0",
     "through": "2026-10-22"
   },
   "picks": [
@@ -23539,16 +23539,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4d04be6b5fb06da9d819ffa7a88e939ce569464ff10e820c2f770df29c88fa6f",
+      "commitment_nonce": "7b997b90553e7c3bb960aa0ac4634b7980946ce43f6466fae3e42d29a9e7606d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T07:00:26.235196Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/3",
       "first_observation": {
         "observed_at": "2026-10-22T07:00:36.879003Z",
         "parent_commit": "c82750140c5c879a6f3f278eee0fb5ae546f5adf",
         "run": "https://github.com/0xinsider/picks/actions/runs/39737544063"
-      }
+      },
+      "kickoff": "2026-10-23T00:15:00Z",
+      "resolved_at": "2026-10-23T03:58:20.851686Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xf8f233c9e72b352ec90537beee7a0decfac312ee822cbbd02bcae59da1266807",
+        "kickoff": "2026-10-23T00:15:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1787",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Patriots vs. Bears",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-23T03:58:20.851686Z",
+          "parent_commit": "19dd35a22682aad02c93902511fa9f7836cb2832",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39897818560"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
