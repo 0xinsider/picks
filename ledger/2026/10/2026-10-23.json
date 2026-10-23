@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c0c304c88c3e530f05464c6722ce0f4f378a87312e7ede881aa2897603de5bef",
+      "commitment_nonce": "fda1722a5906720806bb9fe98e487f6703ffe65ac3c40c519cff5cca8f3ea9d5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:00:58.545133Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/1",
       "first_observation": {
         "observed_at": "2026-10-23T07:01:06.740404Z",
         "parent_commit": "358c247795324d0b870ed923562e46fec5778021",
         "run": "https://github.com/0xinsider/picks/actions/runs/39915069252"
-      }
+      },
+      "kickoff": "2026-10-23T09:00:00Z",
+      "resolved_at": "2026-10-23T12:58:20.924434Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xc7523067d138754126cb80494a2b9d7a28095cae09bf3580896fe3b341a387de",
+        "kickoff": "2026-10-23T09:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1805",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brisbane Roar FC vs. Perth Glory FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-23T12:58:20.924434Z",
+          "parent_commit": "519340fcfe3d3ceefa1a7b93349aec14c1bb4a99",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39957397957"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -24,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c5b747f5ea7956d6bd748341d789d01d6bede685e9944eb9e3d87e9fa7f074fb",
+      "commitment_nonce": "ef05a8da8f5e905a3b8a62b2b556ed57a85d3f23daecb8e7d3d64180693cedb0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:00:58.552290Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/2",
       "first_observation": {
         "observed_at": "2026-10-23T07:01:06.740404Z",
         "parent_commit": "358c247795324d0b870ed923562e46fec5778021",
         "run": "https://github.com/0xinsider/picks/actions/runs/39915069252"
-      }
+      },
+      "kickoff": "2026-10-23T09:30:00Z",
+      "resolved_at": "2026-10-23T12:58:20.937544Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x7b8fc7d962aa3cca3e7a6de24df89e519af4f0360ba3a20fa2f00c4277324345",
+        "kickoff": "2026-10-23T09:30:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1806",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Matthew William Donald",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Florence: Matthew William Donald vs Filippo Romano",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-23T12:58:20.937544Z",
+          "parent_commit": "519340fcfe3d3ceefa1a7b93349aec14c1bb4a99",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39957397957"
+        }
+      ]
     },
     {
       "pick_rank": 3,
