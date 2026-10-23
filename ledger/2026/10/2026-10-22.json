@@ -646,16 +646,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4cd85ffce690051c28a7920117c4367b4f1c67370ae9d1488098d5bd0dfc1106",
+      "commitment_nonce": "2916408d88e53a3358e9168ea8e8de76a9526fbe0c44b6bfc6bb01e291727edc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T19:11:11.154245Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/18",
       "first_observation": {
         "observed_at": "2026-10-22T19:11:20.850562Z",
         "parent_commit": "aaf260b9babca161c388efcaf21e30b40e788a83",
         "run": "https://github.com/0xinsider/picks/actions/runs/39837876880"
-      }
+      },
+      "kickoff": "2026-10-22T23:30:00Z",
+      "resolved_at": "2026-10-23T03:28:20.862788Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x7b8cdeca1024cc3c1b61f5a6c0727859342229a2b7edf322f44e56ce944c0497",
+        "kickoff": "2026-10-22T23:30:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1802",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "East Carolina vs. Memphis",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/18",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-23T03:28:20.862788Z",
+          "parent_commit": "1d307fe342954d51b497ce67feaad5295468c890",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39895191496"
+        }
+      ]
     },
     {
       "pick_rank": 19,
