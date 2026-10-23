@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 661,
-    "sealed": 1,
+    "opened": 662,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 387,
+    "proven": 388,
     "proven_record": {
-      "wins": 222,
+      "wins": 223,
       "losses": 160,
-      "decided": 382,
+      "decided": 383,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "16576.56",
-      "staked": "382000",
-      "roi": "4.3"
+      "hit_rate": "58.2",
+      "profit_usd": "16918.84",
+      "staked": "383000",
+      "roi": "4.4"
     },
-    "wins": 405,
+    "wins": 406,
     "losses": 249,
     "voids": 3,
-    "decided": 654,
+    "decided": 655,
     "withdrawn": 4,
-    "hit_rate": "61.9",
+    "hit_rate": "62.0",
     "stake_usd": "1000",
-    "profit_usd": "38322.49",
-    "staked": "654000",
+    "profit_usd": "38664.77",
+    "staked": "655000",
     "roi": "5.9",
     "through": "2026-10-22"
   },
@@ -23883,16 +23883,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3d973744aeef2694466beaec00c25ee183a92363e3360b0186082c801bfc1bdc",
+      "commitment_nonce": "10c7e4ccb03453840678d76fe773382333eae73a79cba726897ebc8b4032f1b1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T11:25:17.018761Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/11",
       "first_observation": {
         "observed_at": "2026-10-22T11:25:27.226172Z",
         "parent_commit": "e6b6d7ecf6f0798cda5ac76f837123044dfc3292",
         "run": "https://github.com/0xinsider/picks/actions/runs/39770447604"
-      }
+      },
+      "kickoff": "2026-10-23T01:30:00Z",
+      "resolved_at": "2026-10-23T04:58:20.641678Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x3adb3ca4a12b16d8081e6458dbf4fbe13a33e873eedc93f228cbe96f87f8efa8",
+        "kickoff": "2026-10-23T01:30:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1795",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nuggets vs. Thunder",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/11",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-23T04:58:20.641678Z",
+          "parent_commit": "828ab4d4b0bf13304dcd2ecaeb3f22e536633b41",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39903177143"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
