@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 657,
-    "sealed": 5,
+    "opened": 658,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 383,
+    "proven": 384,
     "proven_record": {
       "wins": 221,
-      "losses": 157,
-      "decided": 378,
+      "losses": 158,
+      "decided": 379,
       "withdrawn": 2,
-      "hit_rate": "58.5",
-      "profit_usd": "18634.81",
-      "staked": "378000",
-      "roi": "4.9"
+      "hit_rate": "58.3",
+      "profit_usd": "17634.81",
+      "staked": "379000",
+      "roi": "4.7"
     },
     "wins": 404,
-    "losses": 246,
+    "losses": 247,
     "voids": 3,
-    "decided": 650,
+    "decided": 651,
     "withdrawn": 4,
-    "hit_rate": "62.2",
+    "hit_rate": "62.1",
     "stake_usd": "1000",
-    "profit_usd": "40380.74",
-    "staked": "650000",
-    "roi": "6.2",
+    "profit_usd": "39380.74",
+    "staked": "651000",
+    "roi": "6.0",
     "through": "2026-10-22"
   },
   "picks": [
@@ -24170,16 +24170,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9a0edef750572825585f473bc7f43a724206154a4324bb5bcbc8abb77e02c0c6",
+      "commitment_nonce": "bd4f2bcd80aaecc295c86b61a99e1e14f36007e3e6666779a047ff1eedb52e97",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T22:00:24.537716Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/20",
       "first_observation": {
         "observed_at": "2026-10-22T22:00:32.685397Z",
         "parent_commit": "c9865636dd185361d4ff94ff18a0fb37ea9bc211",
         "run": "https://github.com/0xinsider/picks/actions/runs/39861682921"
-      }
+      },
+      "kickoff": "2026-10-22T23:00:00Z",
+      "resolved_at": "2026-10-23T02:58:20.838227Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x1db8e5a7cb80d80e56d4b6ca6f903cdc0fece141a6e920c38ee57f513e007fb0",
+        "kickoff": "2026-10-22T23:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1804",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kennesaw State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Liberty vs. Kennesaw State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/20",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-23T02:58:20.838227Z",
+          "parent_commit": "a912d2aa9a163ce298a0b7272d4f9f398f0eb648",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39892461881"
+        }
+      ]
     }
   ]
 }
