@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 660,
-    "sealed": 2,
+    "opened": 661,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 386,
+    "proven": 387,
     "proven_record": {
       "wins": 222,
-      "losses": 159,
-      "decided": 381,
+      "losses": 160,
+      "decided": 382,
       "withdrawn": 2,
-      "hit_rate": "58.3",
-      "profit_usd": "17576.56",
-      "staked": "381000",
-      "roi": "4.6"
+      "hit_rate": "58.1",
+      "profit_usd": "16576.56",
+      "staked": "382000",
+      "roi": "4.3"
     },
     "wins": 405,
-    "losses": 248,
+    "losses": 249,
     "voids": 3,
-    "decided": 653,
+    "decided": 654,
     "withdrawn": 4,
-    "hit_rate": "62.0",
+    "hit_rate": "61.9",
     "stake_usd": "1000",
-    "profit_usd": "39322.49",
-    "staked": "653000",
-    "roi": "6.0",
+    "profit_usd": "38322.49",
+    "staked": "654000",
+    "roi": "5.9",
     "through": "2026-10-22"
   },
   "picks": [
@@ -24116,16 +24116,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "596f58e41f73a43da83721eb0179f6e6dfacd8f712683ad891a2bce384026569",
+      "commitment_nonce": "d8d6da33e4d8ab1a4de7fc5150755ace1f3fd53057c1cf28508f0e94fcbba695",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-22T18:44:57.158775Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/17",
       "first_observation": {
         "observed_at": "2026-10-22T18:45:06.867804Z",
         "parent_commit": "567aa199ac5d42c95be511cc905e5ebc156735c7",
         "run": "https://github.com/0xinsider/picks/actions/runs/39834084826"
-      }
+      },
+      "kickoff": "2026-10-23T01:00:00Z",
+      "resolved_at": "2026-10-23T04:28:20.657139Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x30da729d4adecac42fa145f55f73810b9b2a239696641e36d27ebfbd77b4dc76",
+        "kickoff": "2026-10-23T01:00:00Z",
+        "pick_date": "2026-10-22",
+        "pick_id": "1801",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hurricanes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hurricanes vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-22/17",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-23T04:28:20.657139Z",
+          "parent_commit": "9ae970cbc4bf3569c591178497082025813479ab",
+          "run": "https://github.com/0xinsider/picks/actions/runs/39900496461"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-22",
