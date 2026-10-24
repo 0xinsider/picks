@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 695,
-    "sealed": 7,
+    "opened": 696,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 421,
+    "proven": 422,
     "proven_record": {
       "wins": 238,
-      "losses": 178,
-      "decided": 416,
+      "losses": 179,
+      "decided": 417,
       "withdrawn": 2,
-      "hit_rate": "57.2",
-      "profit_usd": "12323.63",
-      "staked": "416000",
-      "roi": "3.0"
+      "hit_rate": "57.1",
+      "profit_usd": "11323.63",
+      "staked": "417000",
+      "roi": "2.7"
     },
     "wins": 421,
-    "losses": 267,
+    "losses": 268,
     "voids": 3,
-    "decided": 688,
+    "decided": 689,
     "withdrawn": 4,
-    "hit_rate": "61.2",
+    "hit_rate": "61.1",
     "stake_usd": "1000",
-    "profit_usd": "34069.56",
-    "staked": "688000",
-    "roi": "5.0",
+    "profit_usd": "33069.56",
+    "staked": "689000",
+    "roi": "4.8",
     "through": "2026-10-24"
   },
   "picks": [
@@ -25259,16 +25259,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "61d0f8e9b06c62c07eb7ccb6f4d0d197f1da401c32afe8a3d7f6804dd6fe33ff",
+      "commitment_nonce": "c6fb4486db4459db5521d00a8b32504f02f6f39a8def0346ab0f1f1e83758eaa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.628441Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/3",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T14:00:00Z",
+      "resolved_at": "2026-10-24T20:08:24.616705Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xe0fc7df425dbc4946684b8c0d0b0e808d469da60e9f21bdbdc73c7153583ff69",
+        "kickoff": "2026-10-24T14:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1828",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ramazan Temirov",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC 333: Ramazan Temirov vs. Lone'er Kavanagh (Flyweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/3",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T20:08:24.616705Z",
+          "parent_commit": "cab0091cbad335b5aa09e868532d6abfea16c047",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40128447959"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-24",
