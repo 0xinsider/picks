@@ -386,16 +386,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a325410ea8f12fb400bc5adfd35354bfb2c4df9b5af83dc355ba4862b3f1337a",
+      "commitment_nonce": "3b882504663e75caeaa307639209e06adf4b2c6c48358258cb528359e90cde08",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:26:23.723452Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/14",
       "first_observation": {
         "observed_at": "2026-10-24T07:26:33.268171Z",
         "parent_commit": "04b2e1eba222dd803d5443f7ad6b161f1e5d3aef",
         "run": "https://github.com/0xinsider/picks/actions/runs/40074133321"
-      }
+      },
+      "kickoff": "2026-10-24T13:00:00Z",
+      "resolved_at": "2026-10-24T17:19:57.397741Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x06c7bb82f7ee44c2424c5badea860c046a7306048ee287c5852c04f5bbb52ddf",
+        "kickoff": "2026-10-24T13:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1839",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "9z",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Vitality vs 9z (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T17:19:57.397741Z",
+          "parent_commit": "345a2eef6266a203438b8a120d85d329ff068b40",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40115632251"
+        }
+      ]
     },
     {
       "pick_rank": 15,
