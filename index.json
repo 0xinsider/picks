@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 675,
-    "sealed": 7,
+    "opened": 677,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 401,
+    "proven": 403,
     "proven_record": {
-      "wins": 230,
-      "losses": 166,
-      "decided": 396,
+      "wins": 231,
+      "losses": 167,
+      "decided": 398,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "17982.21",
-      "staked": "396000",
-      "roi": "4.5"
+      "hit_rate": "58.0",
+      "profit_usd": "17582.21",
+      "staked": "398000",
+      "roi": "4.4"
     },
-    "wins": 413,
-    "losses": 255,
+    "wins": 414,
+    "losses": 256,
     "voids": 3,
-    "decided": 668,
+    "decided": 670,
     "withdrawn": 4,
     "hit_rate": "61.8",
     "stake_usd": "1000",
-    "profit_usd": "39728.14",
-    "staked": "668000",
+    "profit_usd": "39328.14",
+    "staked": "670000",
     "roi": "5.9",
     "through": "2026-10-23"
   },
@@ -24485,16 +24485,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9cd944224119503a28e90e52d66d41cdee87571d4999d712e5bd99d78dd3b6d2",
+      "commitment_nonce": "915e3ae93f0d9341f590c88e043ebddb25330c3cce39e8599c1d7158deef2393",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:00:58.574961Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/5",
       "first_observation": {
         "observed_at": "2026-10-23T07:01:06.740404Z",
         "parent_commit": "358c247795324d0b870ed923562e46fec5778021",
         "run": "https://github.com/0xinsider/picks/actions/runs/39915069252"
-      }
+      },
+      "kickoff": "2026-10-24T00:00:00Z",
+      "resolved_at": "2026-10-24T04:15:24.389770Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xcf6e911182be62ab1fc431dea052e1b357a5e528140c48d3f835a631ddc2918e",
+        "kickoff": "2026-10-24T00:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1809",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Milwaukee Brewers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tampa Bay Rays vs. Milwaukee Brewers",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T04:15:24.389770Z",
+          "parent_commit": "19b1d47a88e8466daac863194dd406726580fad2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40061624143"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-23",
@@ -24650,16 +24675,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5c8fda630cbc7b76cdbad2c144c2bbca9423b8a233432db725ae590c5aa809ee",
+      "commitment_nonce": "9f05b41b3a63f16af8979a7c8350341306b2b1d0ec7ca58b3d5fde4e76baeda4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:40:23.420216Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/11",
       "first_observation": {
         "observed_at": "2026-10-23T07:40:33.939010Z",
         "parent_commit": "a108f788321bb41721577971c8ad371a1dd23391",
         "run": "https://github.com/0xinsider/picks/actions/runs/39919335547"
-      }
+      },
+      "kickoff": "2026-10-24T01:00:00Z",
+      "resolved_at": "2026-10-24T04:15:24.378884Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x6975250b64b09f52a233964f80614a8855d3a3bb19e9088390af8745a9106712",
+        "kickoff": "2026-10-24T01:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1815",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lightning",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lightning vs. Avalanche",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T04:15:24.378884Z",
+          "parent_commit": "19b1d47a88e8466daac863194dd406726580fad2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40061624143"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-23",
