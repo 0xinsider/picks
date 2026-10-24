@@ -217,16 +217,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b285db642e1c561730bc7dce897b43df6b7e8399185143b5df61b86a7ff9e42d",
+      "commitment_nonce": "47b595c5a6d1c9c39f3b50dd3781c5eb5bc8d90feb02722ae4bceac149e8118a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.642801Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/6",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T16:00:00Z",
+      "resolved_at": "2026-10-24T20:44:48.939740Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x7490224ad8f813884f38202f8505779d0c88ef828cb72bd50f931047dd4d8c4e",
+        "kickoff": "2026-10-24T16:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1831",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Indiana vs. Michigan",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/6",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T20:44:48.939740Z",
+          "parent_commit": "b24c272e4540a5c7783f70e91b0bc0a3446228dd",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40131166660"
+        }
+      ]
     },
     {
       "pick_rank": 7,
