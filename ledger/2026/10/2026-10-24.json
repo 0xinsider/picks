@@ -730,16 +730,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "67035306646703dba0d6c805c97a76b5e71efe2af0cdebaf275d2b32aec11716",
+      "commitment_nonce": "582dfff543a41f9973652c2fef9fb4d8667b77e9f12f371eaadd87477d53f928",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T14:26:20.194424Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/21",
       "first_observation": {
         "observed_at": "2026-10-24T14:26:29.944559Z",
         "parent_commit": "0e2e8534fa8c86582915a89f228ef0452231f252",
         "run": "https://github.com/0xinsider/picks/actions/runs/40102493750"
-      }
+      },
+      "kickoff": "2026-10-24T19:00:00Z",
+      "resolved_at": "2026-10-24T23:13:36.515460Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xb50d9f91ebd02f5e10f9049d77a08361942069a3883fe8e68b6ae39a882e13a7",
+        "kickoff": "2026-10-24T19:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1846",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Oregon",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Oregon vs. Illinois",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/21",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T23:13:36.515460Z",
+          "parent_commit": "623d54ea4599237078634ec0c0eba1cde28f2373",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40141853046"
+        }
+      ]
     }
   ]
 }
