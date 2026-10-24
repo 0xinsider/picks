@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 684,
-    "sealed": 17,
+    "opened": 685,
+    "sealed": 16,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 410,
+    "proven": 411,
     "proven_record": {
       "wins": 234,
-      "losses": 171,
-      "decided": 405,
+      "losses": 172,
+      "decided": 406,
       "withdrawn": 2,
-      "hit_rate": "57.8",
-      "profit_usd": "16190.99",
-      "staked": "405000",
-      "roi": "4.0"
+      "hit_rate": "57.6",
+      "profit_usd": "15190.99",
+      "staked": "406000",
+      "roi": "3.7"
     },
     "wins": 417,
-    "losses": 260,
+    "losses": 261,
     "voids": 3,
-    "decided": 677,
+    "decided": 678,
     "withdrawn": 4,
-    "hit_rate": "61.6",
+    "hit_rate": "61.5",
     "stake_usd": "1000",
-    "profit_usd": "37936.92",
-    "staked": "677000",
-    "roi": "5.6",
+    "profit_usd": "36936.92",
+    "staked": "678000",
+    "roi": "5.4",
     "through": "2026-10-24"
   },
   "picks": [
@@ -25475,16 +25475,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "427e4690d78ddae54f39c79a7dc2e2a3da3ea40db550ab46e593eb3d20c84da7",
+      "commitment_nonce": "894c1bee35154d4b3ea157b15c7bf03e4435330c488e2cd56a17bd71514da7b4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T08:26:32.254313Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/16",
       "first_observation": {
         "observed_at": "2026-10-24T08:26:41.894571Z",
         "parent_commit": "b13494f072b0bc5504a861014d5b8b38907d9de8",
         "run": "https://github.com/0xinsider/picks/actions/runs/40078050897"
-      }
+      },
+      "kickoff": "2026-10-24T12:00:00Z",
+      "resolved_at": "2026-10-24T14:25:52.638995Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xbb7b905d8cb7afdebe67db90f61dc30c3f9b2d707970217c22da8cd37f641fea",
+        "kickoff": "2026-10-24T12:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1841",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rayo Vallecano de Madrid vs. Elche CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/16",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T14:25:52.638995Z",
+          "parent_commit": "a435c2bfa2ea234ed0b2fe1525c24c632c8d6072",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40102459493"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-24",
