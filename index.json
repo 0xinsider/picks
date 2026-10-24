@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 682,
-    "sealed": 15,
+    "opened": 683,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 408,
+    "proven": 409,
     "proven_record": {
       "wins": 234,
-      "losses": 169,
-      "decided": 403,
+      "losses": 170,
+      "decided": 404,
       "withdrawn": 2,
-      "hit_rate": "58.1",
-      "profit_usd": "18190.99",
-      "staked": "403000",
-      "roi": "4.5"
+      "hit_rate": "57.9",
+      "profit_usd": "17190.99",
+      "staked": "404000",
+      "roi": "4.3"
     },
     "wins": 417,
-    "losses": 258,
+    "losses": 259,
     "voids": 3,
-    "decided": 675,
+    "decided": 676,
     "withdrawn": 4,
-    "hit_rate": "61.8",
+    "hit_rate": "61.7",
     "stake_usd": "1000",
-    "profit_usd": "39936.92",
-    "staked": "675000",
-    "roi": "5.9",
-    "through": "2026-10-23"
+    "profit_usd": "38936.92",
+    "staked": "676000",
+    "roi": "5.8",
+    "through": "2026-10-24"
   },
   "picks": [
     {
@@ -25173,16 +25173,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c77f1c4b669063a6855ca5343c51779039b7fcc40237454afebba7d568efe9e7",
+      "commitment_nonce": "a3aebbb744aa997687dc085163d9099a2820f8507f04d0a90c362476c2693f59",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.615983Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/1",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T08:00:00Z",
+      "resolved_at": "2026-10-24T10:53:45.925954Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x2ced77c5fdcc809c9e808aa66decf3dd4e3754dbb4f69ca0865b14d1eb297f8b",
+        "kickoff": "2026-10-24T08:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1826",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "1win",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: 1win vs GamerLegion (BO3) - PARI Universe Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/1",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T10:53:45.925954Z",
+          "parent_commit": "1ad8a2d72f62b7122eeec925b1fcb32eb49be5a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40087719808"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-24",
