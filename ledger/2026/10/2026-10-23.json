@@ -554,16 +554,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3c2e5b4873dd3ce7750ba262c01dc70f86309853a03cfe5e0a35fb995623f512",
+      "commitment_nonce": "1cbe8f3c8176c1e1887efae5497dd86c85858707cfd6066633defca9a320ca8f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T16:19:17.669890Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/18",
       "first_observation": {
         "observed_at": "2026-10-23T16:19:27.856454Z",
         "parent_commit": "086051edf25b0766577c67d0c0f204aa848146e5",
         "run": "https://github.com/0xinsider/picks/actions/runs/39985804106"
-      }
+      },
+      "kickoff": "2026-10-24T00:00:00Z",
+      "resolved_at": "2026-10-24T03:15:23.790709Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x938f1c2c5adc09bc70b272a540571c0dc74d0712986e59bf21334cdac984f9ab",
+        "kickoff": "2026-10-24T00:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1822",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pistons vs. Heat",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/18",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T03:15:23.790709Z",
+          "parent_commit": "08b2f05ebafce1295cc3fdc0d70fc620aef76a37",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40057555147"
+        }
+      ]
     },
     {
       "pick_rank": 19,
