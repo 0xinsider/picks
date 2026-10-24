@@ -335,16 +335,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f66fad657aee7b2cbbcf86f86db8e64c2ea3f2bc160167d163834bcb2bac612b",
+      "commitment_nonce": "bdc9c5bd6994aeb1b5b00c0b753fb3a424d4d73607535f4912e3edb958c144c0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.661629Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/10",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T16:30:00Z",
+      "resolved_at": "2026-10-24T19:39:52.193596Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x73839d25b1a9ac32e5142412b94b302385937009df6f44e8ad2d2b1f10c3c69d",
+        "kickoff": "2026-10-24T16:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1835",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Valencia CF vs. Villarreal CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T19:39:52.193596Z",
+          "parent_commit": "0cdb58b5626591ad0cbded3f058180f70844ce5e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40126325042"
+        }
+      ]
     },
     {
       "pick_rank": 11,
