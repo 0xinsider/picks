@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 672,
-    "sealed": 10,
+    "opened": 674,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 398,
+    "proven": 400,
     "proven_record": {
-      "wins": 228,
+      "wins": 230,
       "losses": 165,
-      "decided": 393,
+      "decided": 395,
       "withdrawn": 2,
-      "hit_rate": "58.0",
-      "profit_usd": "17098.71",
-      "staked": "393000",
-      "roi": "4.4"
+      "hit_rate": "58.2",
+      "profit_usd": "18982.21",
+      "staked": "395000",
+      "roi": "4.8"
     },
-    "wins": 411,
+    "wins": 413,
     "losses": 254,
     "voids": 3,
-    "decided": 665,
+    "decided": 667,
     "withdrawn": 4,
-    "hit_rate": "61.8",
+    "hit_rate": "61.9",
     "stake_usd": "1000",
-    "profit_usd": "38844.64",
-    "staked": "665000",
-    "roi": "5.8",
+    "profit_usd": "40728.14",
+    "staked": "667000",
+    "roi": "6.1",
     "through": "2026-10-23"
   },
   "picks": [
@@ -24521,16 +24521,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "052da9ce37e46c225459253476f71c2ef5bc1a74e5953b98f90e8d65601a5e45",
+      "commitment_nonce": "bf888752f63bb8bcea68bd9dd22252970bc226dbae0cc06d9ada98825d8f0372",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T07:00:58.590050Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/7",
       "first_observation": {
         "observed_at": "2026-10-23T07:01:06.740404Z",
         "parent_commit": "358c247795324d0b870ed923562e46fec5778021",
         "run": "https://github.com/0xinsider/picks/actions/runs/39915069252"
-      }
+      },
+      "kickoff": "2026-10-23T23:00:00Z",
+      "resolved_at": "2026-10-24T02:45:23.823416Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x6f22aec2f32fffb4cab0ec8b5dca270bcf9d1e85da5546e69e5cc094f2d352e7",
+        "kickoff": "2026-10-23T23:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1811",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Duke vs. Virginia",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/7",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T02:45:23.823416Z",
+          "parent_commit": "6a9178970189314734f27d715d24073d23d47c8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40055494596"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-23",
@@ -24905,16 +24930,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8d87145ac634858d13b5ee5218068267fab422115e40fbcb1b9c732100e09732",
+      "commitment_nonce": "1b6db1168572fe7d66f124371578051248c64b2235e3a5c4ae54cb698c923579",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-23T18:41:42.377345Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/21",
       "first_observation": {
         "observed_at": "2026-10-23T18:41:51.664668Z",
         "parent_commit": "ef161750f48ada7dde70e5fb9a2ca374d9fce34f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40005400709"
-      }
+      },
+      "kickoff": "2026-10-23T23:00:00Z",
+      "resolved_at": "2026-10-24T02:45:23.815020Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x203e3aafb96e31cee91625bd978901060cb2b37fcc7af94e87d23970ac0be421",
+        "kickoff": "2026-10-23T23:00:00Z",
+        "pick_date": "2026-10-23",
+        "pick_id": "1825",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UMass vs. UConn",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-23/21",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T02:45:23.815020Z",
+          "parent_commit": "6a9178970189314734f27d715d24073d23d47c8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40055494596"
+        }
+      ]
     }
   ]
 }
