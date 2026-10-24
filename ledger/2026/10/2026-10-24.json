@@ -193,16 +193,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b4aa796961fae2bc6e965473cfb2c4c1e225b61bc5a5470686d38960abaaa927",
+      "commitment_nonce": "ba106943a25ec8c7d97cd037f85e7146e38ab5b18fe8b40251700197c36f7355",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.655766Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/9",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T13:00:00Z",
+      "resolved_at": "2026-10-24T15:16:21.466613Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x07d3b3d16e1506364c9fd74d67aec6d114394ca3728febce20eb3e915c0a6a7f",
+        "kickoff": "2026-10-24T13:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1834",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cagliari Calcio vs. Bologna FC 1909",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T15:16:21.466613Z",
+          "parent_commit": "2457f38f5ce09d962160192652732b188125479a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40106211021"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -244,16 +269,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b1ad9cfff60a61ba674d12761d1cf9636faa9f1ba4d4b28ad354dca6871e9a3e",
+      "commitment_nonce": "e6fd96af78334ba491d68df78d6359a6c9d8a67de0e6a2f4e49416917c30550f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:26:23.716171Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/13",
       "first_observation": {
         "observed_at": "2026-10-24T07:26:33.268171Z",
         "parent_commit": "04b2e1eba222dd803d5443f7ad6b161f1e5d3aef",
         "run": "https://github.com/0xinsider/picks/actions/runs/40074133321"
-      }
+      },
+      "kickoff": "2026-10-24T13:00:00Z",
+      "resolved_at": "2026-10-24T15:16:21.485833Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x791f5ae10751eb99cca557bb94e7e619bb73b0afdf078a8f4cba05661bb35fcc",
+        "kickoff": "2026-10-24T13:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1838",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Como 1907 vs. US Sassuolo Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T15:16:21.485833Z",
+          "parent_commit": "2457f38f5ce09d962160192652732b188125479a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40106211021"
+        }
+      ]
     },
     {
       "pick_rank": 14,
