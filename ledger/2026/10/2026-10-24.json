@@ -637,16 +637,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "901c05761e3d9ac8d4deaca920212c460ec9c73bfeab93239602ea76cff334ac",
+      "commitment_nonce": "38d27a50825d54e33cae7af9d7804efc1a8e1fce44d21eb3786b74dfb137d05d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T14:11:45.156617Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/17",
       "first_observation": {
         "observed_at": "2026-10-24T14:11:52.997457Z",
         "parent_commit": "7104e91a6f37d6e7a8005e9802d018d0ddcc99b6",
         "run": "https://github.com/0xinsider/picks/actions/runs/40101410622"
-      }
+      },
+      "kickoff": "2026-10-24T19:30:00Z",
+      "resolved_at": "2026-10-24T22:52:49.178042Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xac9dd26fab4c6bed8f445e610399de4d2de6d5130f826bf5259e99a2f4ada033",
+        "kickoff": "2026-10-24T19:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1842",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "North Texas vs. Navy",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/17",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T22:52:49.178042Z",
+          "parent_commit": "61404353ad30b74aab255ee0dec24093d98b51c2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40140418549"
+        }
+      ]
     },
     {
       "pick_rank": 18,
