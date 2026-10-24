@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f8f72920d0444b1cac0d76f94a6a7d15c8b9d7113c0dbb9f39d4089588f34e0b",
+      "commitment_nonce": "cb5d526ef92ef675ff5c2276b3bc931b5ff695ac6078471512856a0ba8435cf4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.623759Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/2",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T10:00:00Z",
+      "resolved_at": "2026-10-24T12:58:51.253185Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x401c1c0ef39f384fcda0d2371c94ccab64dfed5be0548bbc9c0df31a8898f61b",
+        "kickoff": "2026-10-24T10:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1827",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Stefanos Tsitsipas",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Almaty Open: Nikoloz Basilashvili vs Stefanos Tsitsipas",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/2",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T12:58:51.253185Z",
+          "parent_commit": "52d24aa40b0111b8f2a0dcea920aa66fbd17f6dc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40096174359"
+        }
+      ]
     },
     {
       "pick_rank": 3,
