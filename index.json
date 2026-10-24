@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 687,
-    "sealed": 15,
+    "opened": 688,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 413,
+    "proven": 414,
     "proven_record": {
       "wins": 234,
-      "losses": 174,
-      "decided": 408,
+      "losses": 175,
+      "decided": 409,
       "withdrawn": 2,
-      "hit_rate": "57.4",
-      "profit_usd": "13190.99",
-      "staked": "408000",
-      "roi": "3.2"
+      "hit_rate": "57.2",
+      "profit_usd": "12190.99",
+      "staked": "409000",
+      "roi": "3.0"
     },
     "wins": 417,
-    "losses": 263,
+    "losses": 264,
     "voids": 3,
-    "decided": 680,
+    "decided": 681,
     "withdrawn": 4,
-    "hit_rate": "61.3",
+    "hit_rate": "61.2",
     "stake_usd": "1000",
-    "profit_usd": "34936.92",
-    "staked": "680000",
-    "roi": "5.1",
+    "profit_usd": "33936.92",
+    "staked": "681000",
+    "roi": "5.0",
     "through": "2026-10-24"
   },
   "picks": [
@@ -25428,16 +25428,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "57cee43a9c0a2d6a30a7090e4282118e4d14561c5f418b61b23c98a47e2d0c12",
+      "commitment_nonce": "7fb4eddb08fbc51c7e6e9b2ce8a01419d70feb2d7c840ff7433ee37f7bdeffde",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.665525Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/11",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T13:30:00Z",
+      "resolved_at": "2026-10-24T15:48:03.063286Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.315000",
+        "condition_id": "0x53342bc1a69165fe2c3bc9dd3abbcc000d34a03a1a8ce16001bf704744ad08e7",
+        "kickoff": "2026-10-24T13:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1836",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "RB Leipzig vs. SV 07 Elversberg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T15:48:03.063286Z",
+          "parent_commit": "c92d7e0aee4db757675a92494940edc387e27fc3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40108622350"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-24",
