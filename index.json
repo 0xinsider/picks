@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 690,
-    "sealed": 12,
+    "opened": 691,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 416,
+    "proven": 417,
     "proven_record": {
-      "wins": 235,
+      "wins": 236,
       "losses": 176,
-      "decided": 411,
+      "decided": 412,
       "withdrawn": 2,
-      "hit_rate": "57.2",
-      "profit_usd": "12060.15",
-      "staked": "411000",
-      "roi": "2.9"
+      "hit_rate": "57.3",
+      "profit_usd": "12541.63",
+      "staked": "412000",
+      "roi": "3.0"
     },
-    "wins": 418,
+    "wins": 419,
     "losses": 265,
     "voids": 3,
-    "decided": 683,
+    "decided": 684,
     "withdrawn": 4,
-    "hit_rate": "61.2",
+    "hit_rate": "61.3",
     "stake_usd": "1000",
-    "profit_usd": "33806.08",
-    "staked": "683000",
-    "roi": "4.9",
+    "profit_usd": "34287.56",
+    "staked": "684000",
+    "roi": "5.0",
     "through": "2026-10-24"
   },
   "picks": [
@@ -25295,16 +25295,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2eece4fba05fdc9d8266835a02ac6dc5ad56da8c2809df6e32163f7c2697617e",
+      "commitment_nonce": "f18cd7bebc2ac8340fa6d580f6d8b8cccf3f7f08d772edbf6a0e99811e984e99",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.638683Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/5",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T14:00:00Z",
+      "resolved_at": "2026-10-24T17:05:37.031677Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0x33a835240ed22c5ef25d3fff2cf5d21fca053a141a7529488a2396cd78f90e2e",
+        "kickoff": "2026-10-24T14:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1830",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Arsenal FC vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/5",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T17:05:37.031677Z",
+          "parent_commit": "cbe22014b7f3f76896ebbc515b0a67a69659dcaf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40114547053"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-24",
