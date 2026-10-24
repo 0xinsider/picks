@@ -176,16 +176,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "289b811d0b3d6d603f34c7408169124ab8be66c7091ea47f806668a792aefdf7",
+      "commitment_nonce": "b6d37e88a4c21e4b709c61910d1123dd3711d34e1d979b1ce1b0c6ced6132ab1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.650500Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/8",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T13:30:00Z",
+      "resolved_at": "2026-10-24T16:08:23.917451Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x88e172c31e19c3be5a568f4589516678f5b4747b7dbf4af959e81b8dbf496486",
+        "kickoff": "2026-10-24T13:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1833",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "1. FC Köln vs. FC Schalke 04",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/8",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T16:08:23.917451Z",
+          "parent_commit": "2d1f7b1d79d241fb8145b592912b2ccb2805bfc7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40110167005"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -353,16 +378,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "85e66e3abcd93217907567fc97d02b1d903aed7b6e294ae9e4bf4e009cd0f766",
+      "commitment_nonce": "e2bd4daf3979a3c2010bc4b7a1e08a07fcc407ebea1a3c12796d0371c575d67e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T08:10:52.969777Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/15",
       "first_observation": {
         "observed_at": "2026-10-24T08:11:00.550162Z",
         "parent_commit": "02e479649df15fafff550e633fc69a3cc500cf87",
         "run": "https://github.com/0xinsider/picks/actions/runs/40077027044"
-      }
+      },
+      "kickoff": "2026-10-24T13:30:00Z",
+      "resolved_at": "2026-10-24T16:08:23.912505Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x1edfbde0c0fff1db6292fe3710be1f913da5d7290a829b5f3b84054b185efb79",
+        "kickoff": "2026-10-24T13:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1840",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "1. FSV Mainz 05 vs. SV Werder Bremen",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/15",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T16:08:23.912505Z",
+          "parent_commit": "2d1f7b1d79d241fb8145b592912b2ccb2805bfc7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40110167005"
+        }
+      ]
     },
     {
       "pick_rank": 16,
