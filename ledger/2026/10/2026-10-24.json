@@ -209,16 +209,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "52490b828603bed8a66c5d7df0234c7b96df21156c21069fe51a160e2faa9937",
+      "commitment_nonce": "c30be669d821aafaceefbfc773167fa477b1a9143aefcfa130ba72b24950658f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.647029Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/7",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T16:30:00Z",
+      "resolved_at": "2026-10-24T19:07:40.669577Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x59d4686a0e96b928d1753cce07d056fe3344d66d975c36c9de57d3d0c18b2b97",
+        "kickoff": "2026-10-24T16:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1832",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chelsea FC vs. Tottenham Hotspur FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/7",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-24T19:07:40.669577Z",
+          "parent_commit": "7055bf2d8714d3b95002bde1725422ba7814af59",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40123866058"
+        }
+      ]
     },
     {
       "pick_rank": 8,
