@@ -108,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0ef048a0a35cd56e24a1b436bbb949f2882e4d31565edffdfbefb6304ae9ded1",
+      "commitment_nonce": "ed8f7204e06dc2d339ee7db8723694c4e1e6b9bfc96132d03be9590bad72ef3a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T07:00:26.633024Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/4",
       "first_observation": {
         "observed_at": "2026-10-24T07:00:36.385641Z",
         "parent_commit": "953fae5f74c4b864aa885f14c881045f66dfca15",
         "run": "https://github.com/0xinsider/picks/actions/runs/40072433423"
-      }
+      },
+      "kickoff": "2026-10-24T14:00:00Z",
+      "resolved_at": "2026-10-24T18:08:21.921086Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x7de22aa5cf3a252355923c55e3c3644f553306ae0621dda23f4e74570034bf42",
+        "kickoff": "2026-10-24T14:00:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1829",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Grant Dawson",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC 333: Grant Dawson vs. Nurullo Aliev (Lightweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-24T18:08:21.921086Z",
+          "parent_commit": "ad901f6541a0d7404561b0b42965cdbeee400ac1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40119322607"
+        }
+      ]
     },
     {
       "pick_rank": 5,
