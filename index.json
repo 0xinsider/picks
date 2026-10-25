@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 707,
-    "sealed": 15,
+    "opened": 708,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 433,
+    "proven": 434,
     "proven_record": {
-      "wins": 245,
+      "wins": 246,
       "losses": 183,
-      "decided": 428,
+      "decided": 429,
       "withdrawn": 2,
-      "hit_rate": "57.2",
-      "profit_usd": "13523.88",
-      "staked": "428000",
-      "roi": "3.2"
+      "hit_rate": "57.3",
+      "profit_usd": "14771.07",
+      "staked": "429000",
+      "roi": "3.4"
     },
-    "wins": 428,
+    "wins": 429,
     "losses": 272,
     "voids": 3,
-    "decided": 700,
+    "decided": 701,
     "withdrawn": 4,
-    "hit_rate": "61.1",
+    "hit_rate": "61.2",
     "stake_usd": "1000",
-    "profit_usd": "35269.81",
-    "staked": "700000",
-    "roi": "5.0",
+    "profit_usd": "36517.00",
+    "staked": "701000",
+    "roi": "5.2",
     "through": "2026-10-25"
   },
   "picks": [
@@ -26162,16 +26162,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6edf0b39af5c8d50b3efb35dfe1605b977ff9bb16b9b1274bf715f15e522a880",
+      "commitment_nonce": "6743e23cf4e3ec965e16de924d34341c81ff671a896826f74633c995d545a691",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.278746Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/4",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T15:15:00Z",
+      "resolved_at": "2026-10-25T17:26:18.744576Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xdb7e9b01b2d07d45c26a5d278cc6364da1ee78288724fcab819e0afd909bdd8f",
+        "kickoff": "2026-10-25T15:15:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1850",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "RC Celta de Vigo vs. Real Betis Balompié",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T17:26:18.744576Z",
+          "parent_commit": "0962cc4932c7aedab878b11bb64bd1c29c9e2391",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40216464525"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-25",
