@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0f684e9cd01f8bbb78fd236f131330e0c5828ec3c5adc684dbc3363301a76318",
+      "commitment_nonce": "acf1dca096fd3e4c10de588c693beee958baeb705b584a4820771fc85464edbc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.254881Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/1",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T11:00:00Z",
+      "resolved_at": "2026-10-25T12:21:50.678705Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xcd55f4cdc9e47faf8c95fefb6106a9e99cad37aaa3d663555a13d694ef891657",
+        "kickoff": "2026-10-25T11:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1847",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "BetBoom Team",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: BetBoom Team vs Nemiga (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/1",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T12:21:50.678705Z",
+          "parent_commit": "d0d1d25fe4f4ed605c5e0ed6cf344fdbce6ef4ec",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40192770148"
+        }
+      ]
     },
     {
       "pick_rank": 2,
