@@ -763,16 +763,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "60c555db070d7a0ceced7392d3bd7f3eb14aee40313561f5e90c4429aaacf3a9",
+      "commitment_nonce": "f4830fd3fcae1e1cd4f5f98f1a9985f29dd4592b6ddec022e04cb9859f600fe0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T14:11:45.179752Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/20",
       "first_observation": {
         "observed_at": "2026-10-24T14:11:52.997457Z",
         "parent_commit": "7104e91a6f37d6e7a8005e9802d018d0ddcc99b6",
         "run": "https://github.com/0xinsider/picks/actions/runs/40101410622"
-      }
+      },
+      "kickoff": "2026-10-24T23:30:00Z",
+      "resolved_at": "2026-10-25T03:20:19.397310Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x924f8be7611a8868ec2220888afeffa1f8f95fd04d169dfe0d2a2ad67e3fa8ac",
+        "kickoff": "2026-10-24T23:30:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1845",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Utah State vs. Texas State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/20",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-25T03:20:19.397310Z",
+          "parent_commit": "5a9c3624a21550f58d1e4b45ac0af7adcd5f0f33",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40157835051"
+        }
+      ]
     },
     {
       "pick_rank": 21,
