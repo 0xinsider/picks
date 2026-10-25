@@ -503,16 +503,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "85f90b2bdf6d158b03420e6ee81a5237dd1ea719f9597f9fd3771cadc43f4796",
+      "commitment_nonce": "e02e1639a3c3e49d7c249315e5dea2859accd497de7ce1d1343922d68f69ebb7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T08:11:36.267569Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/14",
       "first_observation": {
         "observed_at": "2026-10-25T08:11:44.796155Z",
         "parent_commit": "ee8cd97e34d86b003da940277be9540347c42b2e",
         "run": "https://github.com/0xinsider/picks/actions/runs/40175653609"
-      }
+      },
+      "kickoff": "2026-10-25T20:00:00Z",
+      "resolved_at": "2026-10-25T22:31:43.741576Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x88a786bf629ab8d95fadec85460dfa68f959cb4c622d634a976004439c2b63d2",
+        "kickoff": "2026-10-25T20:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1860",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Barcelona vs. Real Madrid CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-25T22:31:43.741576Z",
+          "parent_commit": "c1d37dd87193306ee0976a5177d6e6a70cdad29b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40240615636"
+        }
+      ]
     },
     {
       "pick_rank": 15,
