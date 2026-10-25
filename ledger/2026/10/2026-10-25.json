@@ -301,16 +301,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3ad4fb6cc2d991a82faacaea3c3e273466979fb62f86e71261d246c8138f3eb1",
+      "commitment_nonce": "bac7d3400ff73c2f6e30b63135f9153f437d32a0525dfaadb38008b5426b0223",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.305451Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/8",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T17:00:00Z",
+      "resolved_at": "2026-10-25T20:29:46.353006Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x15df4e8f40a6097d410c80c30d8c01627ff22b02bfb6b312a618d6551f6cc195",
+        "kickoff": "2026-10-25T17:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1854",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "49ers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "49ers vs. Falcons",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-25T20:29:46.353006Z",
+          "parent_commit": "b0386bcc23d4466d1aeb44324a038aba4787a21b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40231028161"
+        }
+      ]
     },
     {
       "pick_rank": 9,
