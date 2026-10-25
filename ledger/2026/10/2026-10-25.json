@@ -66,16 +66,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c61eee7a021164e711eb4a8abf8bcad51d41c6e2f3aa7fa881bb299e0c577c33",
+      "commitment_nonce": "8e01a208f076df17a235b9e31c62f10e4ff801ed54ff81ff8a62824ce80a5dcc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.270454Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/3",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T14:00:00Z",
+      "resolved_at": "2026-10-25T16:27:39.181889Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x1e9ef8017365a8a748624a5504d000236cce2b210c55cfca9d82c0c968779c3e",
+        "kickoff": "2026-10-25T14:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1849",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Liverpool FC vs. Brighton & Hove Albion FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/3",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T16:27:39.181889Z",
+          "parent_commit": "428fa2af56ea059896bb7f898d913221e6589ff5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40211773364"
+        }
+      ]
     },
     {
       "pick_rank": 4,
@@ -270,16 +295,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "21186f70beb21f0db66e0c53d317d6343600b083d9c93ef5fcc81516ad70f9ca",
+      "commitment_nonce": "1f0f3a302f73eff652007fac41aa3e147977f19d6d2bbcce1bc18c6a2e1fa262",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T08:56:29.745889Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/15",
       "first_observation": {
         "observed_at": "2026-10-25T08:56:38.588558Z",
         "parent_commit": "294e47988649389337aa61cb97891c72c3d0064d",
         "run": "https://github.com/0xinsider/picks/actions/runs/40178616888"
-      }
+      },
+      "kickoff": "2026-10-25T14:00:00Z",
+      "resolved_at": "2026-10-25T16:27:39.166146Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xfc25921a0a23a5c8165d5b576dee846ea6aa1d782ead75cdd589259f521f6692",
+        "kickoff": "2026-10-25T14:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1861",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Atalanta BC vs. Frosinone Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/15",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-25T16:27:39.166146Z",
+          "parent_commit": "428fa2af56ea059896bb7f898d913221e6589ff5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40211773364"
+        }
+      ]
     },
     {
       "pick_rank": 16,
