@@ -679,16 +679,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ef0addd05cbe6d503c41101381071f6cdf3538091ec38204299b170c6b697a18",
+      "commitment_nonce": "f6c6d5a213c885c45e37a629fd8a06740e94d32621c077f81dacdb59fd090448",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-24T14:11:45.164501Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/18",
       "first_observation": {
         "observed_at": "2026-10-24T14:11:52.997457Z",
         "parent_commit": "7104e91a6f37d6e7a8005e9802d018d0ddcc99b6",
         "run": "https://github.com/0xinsider/picks/actions/runs/40101410622"
-      }
+      },
+      "kickoff": "2026-10-24T19:45:00Z",
+      "resolved_at": "2026-10-25T00:23:20.726383Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x227d0c99d254eebec07e4234309d4fff02d0aaaec2b0f1849a32f76775b45766",
+        "kickoff": "2026-10-24T19:45:00Z",
+        "pick_date": "2026-10-24",
+        "pick_id": "1843",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kansas State vs. Arizona State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-24/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T00:23:20.726383Z",
+          "parent_commit": "8741bc30f07a37ef0a977dfef7d4d4bb0142d887",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40146497329"
+        }
+      ]
     },
     {
       "pick_rank": 19,
