@@ -469,16 +469,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "51bfdabd63f100ad31456cfb1d2dbc2b8313b4e343777f1b09e01c04c033a396",
+      "commitment_nonce": "52210bfd8976bb52312d43354612945bad1cc7988aa0cea233458a10a35205a5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.334031Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/12",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T20:05:00Z",
+      "resolved_at": "2026-10-25T23:18:27.393977Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x3e91ffd8e44ad8b99b95bee5de620421fb246755d4056951af41ae9ed569e850",
+        "kickoff": "2026-10-25T20:05:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1858",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Broncos vs. Cardinals",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/12",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-25T23:18:27.393977Z",
+          "parent_commit": "db24edd6eae8ec4fbfc68509b37b720e7103679a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40244157519"
+        }
+      ]
     },
     {
       "pick_rank": 13,

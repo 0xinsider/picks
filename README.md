@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Oct 25, 2026: +31,804.60 USD on 709,000 USD staked. 709 decided picks, 431W 278L 3V, 60.8% hit rate, +4.5% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Oct 25, 2026: +30,804.60 USD on 710,000 USD staked. 710 decided picks, 431W 279L 3V, 60.7% hit rate, +4.3% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -46,19 +46,19 @@ Record through 2026-10-25.
 
 | | |
 | --- | --- |
-| Decided picks | 709 |
-| Record | 431W 278L 3V |
-| Hit rate | 60.8% |
-| Profit at $1,000 per pick, before fees | +31,804.60 USD on 709,000 staked |
-| ROI before fees | +4.5% |
+| Decided picks | 710 |
+| Record | 431W 279L 3V |
+| Hit rate | 60.7% |
+| Profit at $1,000 per pick, before fees | +30,804.60 USD on 710,000 staked |
+| ROI before fees | +4.3% |
 | Withdrawn by the site, left out of the record | 4 |
-| Sealed, not yet settled | 6 |
-| Git-dated before kickoff | 442 |
+| Sealed, not yet settled | 5 |
+| Git-dated before kickoff | 443 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 15 |
 | No pre-game proof (late public hash) | 9 |
-| Git-dated cohort record | 248W 189L |
-| Git-dated cohort ROI before fees | +2.3% |
+| Git-dated cohort record | 248W 190L |
+| Git-dated cohort ROI before fees | +2.1% |
 
 Recomputed from `ledger/` by `.github/scripts/mirror.py`, not typed in.
 A pick the site withdrew is left out of the record and the money, as on the site;
