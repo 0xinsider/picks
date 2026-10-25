@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "75f172a79aeb1a73db24f39b70e769c119ee3020929e44c6a91b9c1965695a30",
+      "commitment_nonce": "a3a7c8b6b44ca778b8ea426d8a1d820db6e077b927c9e1760c24a3be1de4fc36",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.262477Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/2",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T13:30:00Z",
+      "resolved_at": "2026-10-25T17:05:11.711218Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x18842ecede523ede4c461cc4a6ce901cc8c9eb2f52298ab7621c1415056539f7",
+        "kickoff": "2026-10-25T13:30:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1848",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Steelers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Steelers vs. Saints",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/2",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T17:05:11.711218Z",
+          "parent_commit": "d5163614973e9438737649dda0369c71404a8ca8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40214755961"
+        }
+      ]
     },
     {
       "pick_rank": 3,
@@ -210,16 +235,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "32a3e1a0c414bb600a572a8279f9df3af2997cc2c452d23abaa4e7d8742428d8",
+      "commitment_nonce": "52712121d9c9f203d9e00c534465883651a43ee8f7034e81695195b0f64819aa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.317385Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/10",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T14:30:00Z",
+      "resolved_at": "2026-10-25T17:05:11.691837Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x11f2291063a86d3c3148b0af62b807d39a610edf154a0401e63c54030ad7750c",
+        "kickoff": "2026-10-25T14:30:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1856",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "TSG 1899 Hoffenheim vs. Bayer 04 Leverkusen",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T17:05:11.691837Z",
+          "parent_commit": "d5163614973e9438737649dda0369c71404a8ca8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40214755961"
+        }
+      ]
     },
     {
       "pick_rank": 11,
