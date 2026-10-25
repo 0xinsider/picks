@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "55b4836cbbb0b7cd2c8702ab20742187b72499555aa7924e0f41fc99411ebd1c",
+      "commitment_nonce": "94d876399f001bed34a98ab87c24d59cb9ecad13e9f76367496116b0a0296451",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T07:00:37.342700Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/13",
       "first_observation": {
         "observed_at": "2026-10-25T07:00:45.829384Z",
         "parent_commit": "d73b9546dabd1c7012f6bb211291ec43e8b27de9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40171167987"
-      }
+      },
+      "kickoff": "2026-10-25T20:25:00Z",
+      "resolved_at": "2026-10-25T23:48:24.879723Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x8a49aa2cc29e276c8d71dd317b187f3cd1680451194de6a29ab60c4ba4563489",
+        "kickoff": "2026-10-25T20:25:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1859",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Packers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Packers vs. Lions",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/13",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-25T23:48:24.879723Z",
+          "parent_commit": "d0b458289ead85c7d884ef344c50a07d6c74895b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40246403026"
+        }
+      ]
     },
     {
       "pick_rank": 14,
