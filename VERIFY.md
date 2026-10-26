@@ -1,6 +1,6 @@
 # How to verify the Pick of the Day record
 
-0xinsider publishes up to 20 picks a day, each 1 hour before its own kickoff, and
+0xinsider publishes up to 25 picks a day, each 1 hour before its own kickoff, and
 a running record of how those picks did. The record is served from our
 database, and this repository is what makes it checkable from outside: every
 picks that reach this repository before kickoff carry a hash that can be
@@ -96,10 +96,11 @@ The publication order is a compatibility slot, not a quality score. A new
 selection that replaces a published one has its own ID; the original proof
 remains in its original file.
 
-`publication_order` runs from 1 to 25. A day carries at most twenty live picks,
-but a pick the site withdrew or declined at release keeps its rank, so a later
-pick can take rank 21 or above. On 2026-10-20 ranks 3 and 4 were declined and
-ranks 21 and 22 were the day's 19th and 20th picks.
+`publication_order` runs from 1 to 30. A day carries at most twenty-five live
+picks (twenty, with ranks 1 to 25, until 0xinsider/0xinsider#29429), but a pick
+the site withdrew or declined at release keeps its rank, so a later pick can take
+a rank above the live count. On 2026-10-20 ranks 3 and 4 were declined and ranks
+21 and 22 were the day's 19th and 20th picks.
 
 Committed entries declare `commitment_version`. The mirror and verifier refuse
 an unknown version or a committed stable-ID entry with no version. Stored legacy

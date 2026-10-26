@@ -70,7 +70,7 @@ These figures do not establish fills, actual wagers, or subscriber profit.
 <!-- RECORD:END -->
 
 One pick each day is free to any signed-in account. Pro opens 5 daily picks
-in total, including the free pick. Max opens every available pick, up to 20 a
+in total, including the free pick. Max opens every available pick, up to 25 a
 day. Resolved picks are public. The record counts all of them the same way:
 $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, and a void
