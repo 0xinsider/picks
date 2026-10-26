@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 725,
-    "sealed": 14,
+    "opened": 726,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 451,
+    "proven": 452,
     "proven_record": {
-      "wins": 253,
+      "wins": 254,
       "losses": 193,
-      "decided": 446,
+      "decided": 447,
       "withdrawn": 2,
-      "hit_rate": "56.7",
-      "profit_usd": "8810.17",
-      "staked": "446000",
-      "roi": "2.0"
+      "hit_rate": "56.8",
+      "profit_usd": "9189.48",
+      "staked": "447000",
+      "roi": "2.1"
     },
-    "wins": 436,
+    "wins": 437,
     "losses": 282,
     "voids": 3,
-    "decided": 718,
+    "decided": 719,
     "withdrawn": 4,
-    "hit_rate": "60.7",
+    "hit_rate": "60.8",
     "stake_usd": "1000",
-    "profit_usd": "30556.10",
-    "staked": "718000",
+    "profit_usd": "30935.41",
+    "staked": "719000",
     "roi": "4.3",
     "through": "2026-10-26"
   },
@@ -26929,16 +26929,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9e51bda626f0cd160ffa5e97766efe3fa17f2b2ad143f3b2a519da58b4174c22",
+      "commitment_nonce": "ea7aa4df27305ff875789e3ce4753c5e0179ed7d2959ec63cfffd7e58fa7f930",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T07:00:17.114648Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/4",
       "first_observation": {
         "observed_at": "2026-10-26T07:00:26.807431Z",
         "parent_commit": "8629959bd581d395943de80acd394c71eb87cc5c",
         "run": "https://github.com/0xinsider/picks/actions/runs/40283137168"
-      }
+      },
+      "kickoff": "2026-10-26T19:30:00Z",
+      "resolved_at": "2026-10-26T21:47:24.796808Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xe59bef319d2d5324621eb5d225b0437e3457ddcac91e284d1d0fc7072e9660db",
+        "kickoff": "2026-10-26T19:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1870",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Paris Saint-Germain FC vs. Olympique Lyonnais",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/4",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T21:47:24.796808Z",
+          "parent_commit": "460b24c7d0a177c375e58fa8a028da198c67c124",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40407286749"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-26",
