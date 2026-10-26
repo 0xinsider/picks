@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 722,
-    "sealed": 16,
+    "opened": 723,
+    "sealed": 15,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 448,
+    "proven": 449,
     "proven_record": {
-      "wins": 252,
+      "wins": 253,
       "losses": 191,
-      "decided": 443,
+      "decided": 444,
       "withdrawn": 2,
-      "hit_rate": "56.9",
-      "profit_usd": "10235.37",
-      "staked": "443000",
-      "roi": "2.3"
+      "hit_rate": "57.0",
+      "profit_usd": "10810.17",
+      "staked": "444000",
+      "roi": "2.4"
     },
-    "wins": 435,
+    "wins": 436,
     "losses": 280,
     "voids": 3,
-    "decided": 715,
+    "decided": 716,
     "withdrawn": 4,
-    "hit_rate": "60.8",
+    "hit_rate": "60.9",
     "stake_usd": "1000",
-    "profit_usd": "31981.30",
-    "staked": "715000",
+    "profit_usd": "32556.10",
+    "staked": "716000",
     "roi": "4.5",
-    "through": "2026-10-25"
+    "through": "2026-10-26"
   },
   "picks": [
     {
@@ -27073,16 +27073,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "15e795829ac858da4e80c9ffc944a36a6d81ff1bbd6f2837ba061da7a3dd8550",
+      "commitment_nonce": "fb496924ef4c02b14525d6fae368287d781365f1e77156ba7d75ae8a59ed6b08",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T12:58:17.950849Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/12",
       "first_observation": {
         "observed_at": "2026-10-26T12:58:27.135833Z",
         "parent_commit": "3c6084b742aa989e31c6cb97bf1c2564a59e1a3b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40326659466"
-      }
+      },
+      "kickoff": "2026-10-26T14:00:00Z",
+      "resolved_at": "2026-10-26T17:43:26.034291Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x242e0c10850405b62a8dcc26eee411bb562f54acfaab0ad2036eca7d0913a744",
+        "kickoff": "2026-10-26T14:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1878",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Spirit vs FURIA (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/12",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T17:43:26.034291Z",
+          "parent_commit": "2f16102d5c8f6ac4e76c0bd690a776d750fe3f41",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40371281480"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-26",
