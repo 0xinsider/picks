@@ -185,16 +185,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f39bff2ecce52b600f0b654748ad06342066776be70bd86a54851da595cee1c0",
+      "commitment_nonce": "85f66e9beed78f987a4e4db2621137d8f8f72da4774d38476602d02b06639dc8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T11:40:26.669875Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/11",
       "first_observation": {
         "observed_at": "2026-10-26T11:43:56.218926Z",
         "parent_commit": "056db727edcd11dd0cad43fcfa74098bda916307",
         "run": "https://github.com/0xinsider/picks/actions/runs/40316809717"
-      }
+      },
+      "kickoff": "2026-10-26T19:00:00Z",
+      "resolved_at": "2026-10-26T21:32:51.446787Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x6f22d2b7c295f187d30322064615f212f2f86f558c5193823c3c3931b4f1d1d7",
+        "kickoff": "2026-10-26T19:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1877",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Team Secret Whales",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: LOS vs Team Secret Whales (BO3) - Worlds Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/11",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-26T21:32:51.446787Z",
+          "parent_commit": "9770a7bf6196b819748ff30b58888fb4900820db",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40405269798"
+        }
+      ]
     },
     {
       "pick_rank": 12,
