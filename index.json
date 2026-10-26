@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 723,
-    "sealed": 16,
+    "opened": 724,
+    "sealed": 15,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 449,
+    "proven": 450,
     "proven_record": {
       "wins": 253,
-      "losses": 191,
-      "decided": 444,
+      "losses": 192,
+      "decided": 445,
       "withdrawn": 2,
-      "hit_rate": "57.0",
-      "profit_usd": "10810.17",
-      "staked": "444000",
-      "roi": "2.4"
+      "hit_rate": "56.9",
+      "profit_usd": "9810.17",
+      "staked": "445000",
+      "roi": "2.2"
     },
     "wins": 436,
-    "losses": 280,
+    "losses": 281,
     "voids": 3,
-    "decided": 716,
+    "decided": 717,
     "withdrawn": 4,
-    "hit_rate": "60.9",
+    "hit_rate": "60.8",
     "stake_usd": "1000",
-    "profit_usd": "32556.10",
-    "staked": "716000",
-    "roi": "4.5",
+    "profit_usd": "31556.10",
+    "staked": "717000",
+    "roi": "4.4",
     "through": "2026-10-26"
   },
   "picks": [
@@ -27001,16 +27001,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "81bbe0267133baf7b8a19ee6656110453ada29ddcf8b9bed86fd255dd92990a9",
+      "commitment_nonce": "175c300227072acd95f2b0c520f3c47130b2bcaee6bfe7c07cfb100c1039d63c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T07:10:35.196064Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/8",
       "first_observation": {
         "observed_at": "2026-10-26T07:10:44.816885Z",
         "parent_commit": "1a3025f146d84889b88f09ae9df1cf9d32e0eafe",
         "run": "https://github.com/0xinsider/picks/actions/runs/40284178827"
-      }
+      },
+      "kickoff": "2026-10-26T17:00:00Z",
+      "resolved_at": "2026-10-26T20:20:58.821247Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x429326ce2ed4ed916deb3aa0f68ac8d7af4a70ea988657aa98b5dcddd0fefc72",
+        "kickoff": "2026-10-26T17:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1874",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "G2",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: G2 vs DENDELE CS (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/8",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-26T20:20:58.821247Z",
+          "parent_commit": "ff58642f90cc34817d2e805e8eebae1dc38ff080",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40394830951"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-26",
