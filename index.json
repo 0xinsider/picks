@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 718,
-    "sealed": 4,
+    "opened": 719,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 444,
+    "proven": 445,
     "proven_record": {
-      "wins": 249,
+      "wins": 250,
       "losses": 190,
-      "decided": 439,
+      "decided": 440,
       "withdrawn": 2,
-      "hit_rate": "56.7",
-      "profit_usd": "9400.95",
-      "staked": "439000",
-      "roi": "2.1"
+      "hit_rate": "56.8",
+      "profit_usd": "9743.23",
+      "staked": "440000",
+      "roi": "2.2"
     },
-    "wins": 432,
+    "wins": 433,
     "losses": 279,
     "voids": 3,
-    "decided": 711,
+    "decided": 712,
     "withdrawn": 4,
     "hit_rate": "60.8",
     "stake_usd": "1000",
-    "profit_usd": "31146.88",
-    "staked": "711000",
+    "profit_usd": "31489.17",
+    "staked": "712000",
     "roi": "4.4",
     "through": "2026-10-25"
   },
@@ -26732,16 +26732,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "047b7479b9d6a51816211339c28de155c34408089b96f24dc4150403e0d43d5d",
+      "commitment_nonce": "dae3039d03bfa27532a670e4ed413fc24f791998204591c962f301addca2c9fa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T15:25:47.859055Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/19",
       "first_observation": {
         "observed_at": "2026-10-25T15:25:57.739108Z",
         "parent_commit": "26dc27d97573e54a5c153cb348af258690d16a4c",
         "run": "https://github.com/0xinsider/picks/actions/runs/40206890015"
-      }
+      },
+      "kickoff": "2026-10-25T20:25:00Z",
+      "resolved_at": "2026-10-26T00:18:24.685864Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x5b7874facf2386c3d1de4e9b5910cff08c95e8b70d27b6a77d1de741cee65419",
+        "kickoff": "2026-10-25T20:25:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1865",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Rams",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rams vs. Raiders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/19",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T00:18:24.685864Z",
+          "parent_commit": "27431e5bfe081518480dff01f0956c769a19bb27",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40248711065"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-25",
