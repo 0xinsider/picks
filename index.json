@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 721,
-    "sealed": 1,
+    "opened": 722,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 447,
+    "proven": 448,
     "proven_record": {
-      "wins": 251,
+      "wins": 252,
       "losses": 191,
-      "decided": 442,
+      "decided": 443,
       "withdrawn": 2,
-      "hit_rate": "56.8",
-      "profit_usd": "9684.98",
-      "staked": "442000",
-      "roi": "2.2"
+      "hit_rate": "56.9",
+      "profit_usd": "10235.37",
+      "staked": "443000",
+      "roi": "2.3"
     },
-    "wins": 434,
+    "wins": 435,
     "losses": 280,
     "voids": 3,
-    "decided": 714,
+    "decided": 715,
     "withdrawn": 4,
     "hit_rate": "60.8",
     "stake_usd": "1000",
-    "profit_usd": "31430.91",
-    "staked": "714000",
-    "roi": "4.4",
+    "profit_usd": "31981.30",
+    "staked": "715000",
+    "roi": "4.5",
     "through": "2026-10-25"
   },
   "picks": [
@@ -26764,16 +26764,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "83e50adf4765512cf149c4d5bdca9ac92bce8cebd22ed90a87f57aa9b38036a4",
+      "commitment_nonce": "d9ea44703f1defd9ebdb7f2a13247c8f6ede15f73ccc107fb0048b22e3499faf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T14:06:51.491741Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/18",
       "first_observation": {
         "observed_at": "2026-10-25T14:06:59.822859Z",
         "parent_commit": "da00f46eca65cd20066ef1135d910ed1a9075346",
         "run": "https://github.com/0xinsider/picks/actions/runs/40200712592"
-      }
+      },
+      "kickoff": "2026-10-26T02:00:00Z",
+      "resolved_at": "2026-10-26T05:09:44.920920Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xf0717405277fd3530beacb29b7fddeddeb5de503b57f3060f265e3cc2967ceec",
+        "kickoff": "2026-10-26T02:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1864",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wild",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wild vs. Canucks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T05:09:44.920920Z",
+          "parent_commit": "165c10f1fcbec581e9202b6dc8045b71e1e90495",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40272746361"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-25",

@@ -721,16 +721,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "83e50adf4765512cf149c4d5bdca9ac92bce8cebd22ed90a87f57aa9b38036a4",
+      "commitment_nonce": "d9ea44703f1defd9ebdb7f2a13247c8f6ede15f73ccc107fb0048b22e3499faf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T14:06:51.491741Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/18",
       "first_observation": {
         "observed_at": "2026-10-25T14:06:59.822859Z",
         "parent_commit": "da00f46eca65cd20066ef1135d910ed1a9075346",
         "run": "https://github.com/0xinsider/picks/actions/runs/40200712592"
-      }
+      },
+      "kickoff": "2026-10-26T02:00:00Z",
+      "resolved_at": "2026-10-26T05:09:44.920920Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xf0717405277fd3530beacb29b7fddeddeb5de503b57f3060f265e3cc2967ceec",
+        "kickoff": "2026-10-26T02:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1864",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wild",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wild vs. Canucks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T05:09:44.920920Z",
+          "parent_commit": "165c10f1fcbec581e9202b6dc8045b71e1e90495",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40272746361"
+        }
+      ]
     },
     {
       "pick_rank": 19,
