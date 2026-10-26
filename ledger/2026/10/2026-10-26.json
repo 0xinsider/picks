@@ -328,16 +328,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "17cb33681389684861f33a19e6bd094e54a4a49a134eff44d74babe6835af016",
+      "commitment_nonce": "9e19907f06794f0c38833b4d775ac8df179e109b195cdb2472b6a422247cc2e8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T16:55:58.295791Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/15",
       "first_observation": {
         "observed_at": "2026-10-26T16:56:06.584853Z",
         "parent_commit": "d1d754e3ed65a167bf2ef31468d50feb4d2a8a8f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40363838336"
-      }
+      },
+      "kickoff": "2026-10-26T20:00:00Z",
+      "resolved_at": "2026-10-26T22:27:23.027970Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x593831d3e45940982175cec5141796ed9cffa34b18390e800656d4dae7a16a8e",
+        "kickoff": "2026-10-26T20:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1881",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sevilla FC vs. CA Osasuna",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/15",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T22:27:23.027970Z",
+          "parent_commit": "de9fd5da9842af2cb9598cee0a7c59ba97261403",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40412564321"
+        }
+      ]
     },
     {
       "pick_rank": 16,
@@ -345,16 +370,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2e6818800db4a2b5addbd75a31b030908e202b896171ee5428668d235a502da0",
+      "commitment_nonce": "ac6b0d8bcb70ed2609b7cc35c85071a9c5fd13d65f9a3f50c749a21e1ae8626b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T17:19:44.645415Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/16",
       "first_observation": {
         "observed_at": "2026-10-26T17:19:53.258601Z",
         "parent_commit": "b35814e7b80bc4ee40f8eb2d11777998345766a9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40367574278"
-      }
+      },
+      "kickoff": "2026-10-26T18:30:00Z",
+      "resolved_at": "2026-10-26T22:27:23.019336Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x3fff509faffa1cc28f426fbfa30354a39ee429628a80eef0a17f68c2868b1944",
+        "kickoff": "2026-10-26T18:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1882",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Galatasaray SK vs. Fenerbahçe SK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/16",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-26T22:27:23.019336Z",
+          "parent_commit": "de9fd5da9842af2cb9598cee0a7c59ba97261403",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40412564321"
+        }
+      ]
     },
     {
       "pick_rank": 17,
