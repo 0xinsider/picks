@@ -5,7 +5,7 @@
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-20 a day, appears in this public ledger once the source publishes it. Some have
+25 a day, appears in this public ledger once the source publishes it. Some have
 a hash in this repository from before kickoff; older and late entries do not.
 The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
@@ -70,7 +70,7 @@ These figures do not establish fills, actual wagers, or subscriber profit.
 <!-- RECORD:END -->
 
 One pick each day is free to any signed-in account. Pro opens 5 daily picks
-in total, including the free pick. Max opens every available pick, up to 20 a
+in total, including the free pick. Max opens every available pick, up to 25 a
 day. Resolved picks are public. The record counts all of them the same way:
 $1,000 on every pick, a win returns
 1,000 divided by the backed price, a loss forfeits the stake, and a void
