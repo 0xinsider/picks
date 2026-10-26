@@ -637,16 +637,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "146110b0b4e40c00f58fc42f1d061583e4c25befeb90d67fbb3daae9932eabb0",
+      "commitment_nonce": "7c9f7f0ccc6253cbd9ef678abef5bea7c84c4eef5fdf9375a892a9566dd9308b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T11:11:34.055280Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/16",
       "first_observation": {
         "observed_at": "2026-10-25T11:11:44.086286Z",
         "parent_commit": "56468897a22790adbff69396e838c1391116bffc",
         "run": "https://github.com/0xinsider/picks/actions/runs/40187829396"
-      }
+      },
+      "kickoff": "2026-10-25T23:00:00Z",
+      "resolved_at": "2026-10-26T02:03:33.444750Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x4d3b279606d656c8cd73a837293acdf65fe675ddf910daab34e4acce7e39000a",
+        "kickoff": "2026-10-25T23:00:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1862",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Raptors vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/16",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-26T02:03:33.444750Z",
+          "parent_commit": "84bc43e80731f869081343f67a20a98041bfaa4e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40257212699"
+        }
+      ]
     },
     {
       "pick_rank": 17,
