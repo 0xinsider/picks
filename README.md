@@ -5,7 +5,7 @@
 # 0xinsider picks
 
 Every [0xinsider Pick of the Day](https://0xinsider.com/pick-of-the-day), up to
-20 a day, appears in this public ledger once the source publishes it. Some have
+25 a day, appears in this public ledger once the source publishes it. Some have
 a hash in this repository from before kickoff; older and late entries do not.
 The chart and the table below are recomputed
 from the files in `ledger/` on every run, and `verify.py` checks all of it.
