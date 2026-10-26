@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 720,
-    "sealed": 2,
+    "opened": 721,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 446,
+    "proven": 447,
     "proven_record": {
       "wins": 251,
-      "losses": 190,
-      "decided": 441,
+      "losses": 191,
+      "decided": 442,
       "withdrawn": 2,
-      "hit_rate": "56.9",
-      "profit_usd": "10684.98",
-      "staked": "441000",
-      "roi": "2.4"
+      "hit_rate": "56.8",
+      "profit_usd": "9684.98",
+      "staked": "442000",
+      "roi": "2.2"
     },
     "wins": 434,
-    "losses": 279,
+    "losses": 280,
     "voids": 3,
-    "decided": 713,
+    "decided": 714,
     "withdrawn": 4,
-    "hit_rate": "60.9",
+    "hit_rate": "60.8",
     "stake_usd": "1000",
-    "profit_usd": "32430.91",
-    "staked": "713000",
-    "roi": "4.5",
+    "profit_usd": "31430.91",
+    "staked": "714000",
+    "roi": "4.4",
     "through": "2026-10-25"
   },
   "picks": [
@@ -26721,16 +26721,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2b72056975e5703d326b5980a9f653768d2f7fdd06cd3c429de803fb1eefee26",
+      "commitment_nonce": "5cd547d4ae9ffcffe81b440f7147305695fd07e9d93c97477dc8c338e97dedf9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-25T12:10:36.729024Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/17",
       "first_observation": {
         "observed_at": "2026-10-25T12:10:45.449994Z",
         "parent_commit": "f063d3810bae0756b7cdb36de9e2c98e062b6aa5",
         "run": "https://github.com/0xinsider/picks/actions/runs/40191968260"
-      }
+      },
+      "kickoff": "2026-10-26T00:20:00Z",
+      "resolved_at": "2026-10-26T03:33:56.292205Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xbf52d6e69790e441d9637a85b90c0fa416b444d05243d02106a026b1cb0cf5a5",
+        "kickoff": "2026-10-26T00:20:00Z",
+        "pick_date": "2026-10-25",
+        "pick_id": "1863",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chiefs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chiefs vs. Seahawks",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-25/17",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-26T03:33:56.292205Z",
+          "parent_commit": "534bc23ddb5a771c542f3e6bb0f2ed2ef2458548",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40264696631"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-25",
