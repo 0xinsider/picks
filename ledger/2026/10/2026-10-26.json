@@ -562,16 +562,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "78e8176799029f55b69aff0e64e6b772ab24c681066627cc2ba0cfb341200a0e",
+      "commitment_nonce": "42f267cf670365c04fa8f2287cd01328117e833e130a4ccabefe90aac21d8148",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T17:41:03.569430Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/17",
       "first_observation": {
         "observed_at": "2026-10-26T17:41:15.142775Z",
         "parent_commit": "db9723db11105ddda2c6e89a5f6a61fada7f528e",
         "run": "https://github.com/0xinsider/picks/actions/runs/40370914345"
-      }
+      },
+      "kickoff": "2026-10-27T01:00:00Z",
+      "resolved_at": "2026-10-27T03:55:54.184027Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x60a81cbaa1f7b5263ea14e4a0e7fd73fdfdc03a9e8725defb5f25c7f007f95c8",
+        "kickoff": "2026-10-27T01:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1883",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Grizzlies vs. Jazz",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/17",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T03:55:54.184027Z",
+          "parent_commit": "833a820224a56cd971a3139990d4baa8daf02f29",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40446902488"
+        }
+      ]
     },
     {
       "pick_rank": 18,
