@@ -142,16 +142,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0abbd3022fed3cbeab1ffb1c912cc6ab638e117d9d9e82b6eb657234454346ba",
+      "commitment_nonce": "7424cb5d800428697df036a295c7150a88d0f881ec1491fdfc334e5c859c6b22",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T07:00:17.137564Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/7",
       "first_observation": {
         "observed_at": "2026-10-26T07:00:26.807431Z",
         "parent_commit": "8629959bd581d395943de80acd394c71eb87cc5c",
         "run": "https://github.com/0xinsider/picks/actions/runs/40283137168"
-      }
+      },
+      "kickoff": "2026-10-26T23:30:00Z",
+      "resolved_at": "2026-10-27T02:22:08.562076Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0xb4f418a7adc2356eee252b0206f8cf2febaa1a34db34dfb96c58098340a4e603",
+        "kickoff": "2026-10-26T23:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1873",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Heat",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Heat",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/7",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T02:22:08.562076Z",
+          "parent_commit": "517ad99281a354b8e28cbcf7876aa1c7e572de0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40438016101"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -454,16 +479,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8a6efb5a2bfc042f3390ccd1fbfd2d90feea4323f047ef6555cb88a98dcd740e",
+      "commitment_nonce": "aceb69997ee080456a59e8b3cd2b5ce53c58bc19da7cea54a52d3c74e5c0d04c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T18:28:27.527103Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/18",
       "first_observation": {
         "observed_at": "2026-10-26T18:28:37.236063Z",
         "parent_commit": "8fcaddbcd91d4f6742c3ea925ede840d25355c30",
         "run": "https://github.com/0xinsider/picks/actions/runs/40378044671"
-      }
+      },
+      "kickoff": "2026-10-26T23:30:00Z",
+      "resolved_at": "2026-10-27T02:22:08.577721Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xa31bbb6bd8591de313b822402c5f059cb6e3b088ab3c393199990577506a4577",
+        "kickoff": "2026-10-26T23:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1884",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bulls vs. Celtics",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/18",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T02:22:08.577721Z",
+          "parent_commit": "517ad99281a354b8e28cbcf7876aa1c7e572de0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40438016101"
+        }
+      ]
     },
     {
       "pick_rank": 19,
@@ -488,16 +538,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e95e1d1b66e8622502470819e7177e898e8d52b93fe2ade3e46b6ec6e562a92b",
+      "commitment_nonce": "9a0dc0be9212e611e09050a43cfd4e2beb3b6eddd8f04e44d2e8ec8c15a32a5d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:06:04.017517Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/20",
       "first_observation": {
         "observed_at": "2026-10-26T22:06:13.500300Z",
         "parent_commit": "49d9b4027d3c89fdcb8e59028f0e829530570f0b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40409779091"
-      }
+      },
+      "kickoff": "2026-10-26T23:00:00Z",
+      "resolved_at": "2026-10-27T02:22:08.587425Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x805b0872d02b155b3f5118441ebb30f00ec5854f1e5cf842bcf8c4f93f72165d",
+        "kickoff": "2026-10-26T23:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1886",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Timberwolves vs. Cavaliers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/20",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T02:22:08.587425Z",
+          "parent_commit": "517ad99281a354b8e28cbcf7876aa1c7e572de0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40438016101"
+        }
+      ]
     },
     {
       "pick_rank": 21,
@@ -522,16 +597,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "77675280959c0ed05f832c767c688b14d6af3a8886589339a05686a5eb0dcb3e",
+      "commitment_nonce": "4be4ba75e994d8d8153d0387be9c03bbdcce74df2fdf082519e20eb9dd488c5d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:11:49.846039Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/22",
       "first_observation": {
         "observed_at": "2026-10-26T22:11:57.661733Z",
         "parent_commit": "0b76525b323f16c9846b8b4554b8c18121d7c756",
         "run": "https://github.com/0xinsider/picks/actions/runs/40410538573"
-      }
+      },
+      "kickoff": "2026-10-26T23:00:00Z",
+      "resolved_at": "2026-10-27T02:22:08.603304Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x94def0ffd89805072edd55247b14e5e43482647367220455ee33e64d3242b65d",
+        "kickoff": "2026-10-26T23:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1888",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Timberwolves vs. Cavaliers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/22",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T02:22:08.603304Z",
+          "parent_commit": "517ad99281a354b8e28cbcf7876aa1c7e572de0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40438016101"
+        }
+      ]
     },
     {
       "pick_rank": 23,
@@ -539,16 +639,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d8e5a70a5f28f81944dcd5508e21c22e133a1191f78adf8cb1c247618abc9757",
+      "commitment_nonce": "c6178992b7f4789e46459ffd9acd6497ddea122d2856043e4ab8efa7d97abbb4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:11:49.856648Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/23",
       "first_observation": {
         "observed_at": "2026-10-26T22:11:57.661733Z",
         "parent_commit": "0b76525b323f16c9846b8b4554b8c18121d7c756",
         "run": "https://github.com/0xinsider/picks/actions/runs/40410538573"
-      }
+      },
+      "kickoff": "2026-10-26T23:30:00Z",
+      "resolved_at": "2026-10-27T02:22:08.596910Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x2f47031d7c6a58e14ed5492f69dea4e234f372e4262adb6e146e9ade3e934caf",
+        "kickoff": "2026-10-26T23:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1889",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Heat",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Heat",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/23",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T02:22:08.596910Z",
+          "parent_commit": "517ad99281a354b8e28cbcf7876aa1c7e572de0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40438016101"
+        }
+      ]
     },
     {
       "pick_rank": 24,
