@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 750,
-    "sealed": 8,
+    "opened": 751,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 476,
+    "proven": 477,
     "proven_record": {
-      "wins": 262,
+      "wins": 263,
       "losses": 209,
-      "decided": 471,
+      "decided": 472,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "-959.88",
-      "staked": "471000",
-      "roi": "-0.2"
+      "hit_rate": "55.7",
+      "profit_usd": "-333.87",
+      "staked": "472000",
+      "roi": "-0.1"
     },
-    "wins": 445,
+    "wins": 446,
     "losses": 298,
     "voids": 3,
-    "decided": 743,
+    "decided": 744,
     "withdrawn": 4,
     "hit_rate": "59.9",
     "stake_usd": "1000",
-    "profit_usd": "20786.05",
-    "staked": "743000",
-    "roi": "2.8",
+    "profit_usd": "21412.07",
+    "staked": "744000",
+    "roi": "2.9",
     "through": "2026-10-27"
   },
   "picks": [
@@ -28090,16 +28090,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ff154a8cf0e7227b315a79b3ac4b52648f233413b799e230610c2eededb38fb3",
+      "commitment_nonce": "945f425ecb4d684df7d1499770223a361bbc2f4ca4d522a6b4ad92bb7784ed04",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T08:49:31.677483Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1897",
       "first_observation": {
         "observed_at": "2026-10-27T08:49:41.414154Z",
         "parent_commit": "13b249b1e5e27a12a45ed8c2cedcbd81a09eac0f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40476220961"
-      }
+      },
+      "kickoff": "2026-10-27T14:00:00Z",
+      "resolved_at": "2026-10-27T17:27:41.870106Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x05f1c66eedbc09df2e9a6b9aff79ffaad0ce71f998694bc242f0385afda1cbc5",
+        "kickoff": "2026-10-27T14:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1897",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Adrian Mannarino",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Erste Bank Open: Adrian Mannarino vs Ignacio Buse",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1897",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T17:27:41.870106Z",
+          "parent_commit": "ca48af860eec109fdfbc20e72379984da42f71b2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40550808435"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
