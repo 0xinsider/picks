@@ -318,16 +318,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "167d97f475c09e8079139af33bbe8fcc32c751cf4d10c41306ecc80c651795db",
+      "commitment_nonce": "1e46a23550d44ef44595987784a212314e51547635a5c15a46bb7fedaae6f233",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T09:40:23.686579Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/10",
       "first_observation": {
         "observed_at": "2026-10-26T09:40:32.762859Z",
         "parent_commit": "c016349a50bbf1256e21a36a40a6f2dbf6151ca9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40301363866"
-      }
+      },
+      "kickoff": "2026-10-27T02:00:00Z",
+      "resolved_at": "2026-10-27T04:46:35.442753Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x2e8af92842cf727e8674e298c2cfd9358dc5f1cd262484b3e5ee3746d724c6e4",
+        "kickoff": "2026-10-27T02:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1876",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Nuggets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/10",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T04:46:35.442753Z",
+          "parent_commit": "8a7fffa238ba121aa048b905954b269f8cda6ac6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40451593140"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -461,16 +486,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "20728f05e46098632cb326b939b46d03a4cdc9251d3bd6740824be425a3a8ce2",
+      "commitment_nonce": "fc4c70474198c700362be96e38e222a2c8dad45156a294c11fcbb7027876acc0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T16:41:40.774062Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/14",
       "first_observation": {
         "observed_at": "2026-10-26T16:41:51.675291Z",
         "parent_commit": "bc09dc3782f4c1e94f91291fac7b3b6886ac1bf6",
         "run": "https://github.com/0xinsider/picks/actions/runs/40361560008"
-      }
+      },
+      "kickoff": "2026-10-27T01:30:00Z",
+      "resolved_at": "2026-10-27T04:46:35.450846Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x3a059fc663e7c29601c26589749efcf87ea7ad8b784fdc5a1b52cb7356a6c90b",
+        "kickoff": "2026-10-27T01:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1880",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/14",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T04:46:35.450846Z",
+          "parent_commit": "8a7fffa238ba121aa048b905954b269f8cda6ac6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40451593140"
+        }
+      ]
     },
     {
       "pick_rank": 15,
