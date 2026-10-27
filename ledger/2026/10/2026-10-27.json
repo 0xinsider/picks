@@ -192,16 +192,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "19aff79273250bb6be453d07627ed650bab789b26c7bf03ee88ba058c10753e4",
+      "commitment_nonce": "4f449b1eae999f9dbc7345f850fb49425d88a2e4310e0f5f75caa53ad668bfa1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T08:56:12.511565Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1898",
       "first_observation": {
         "observed_at": "2026-10-27T08:56:22.135795Z",
         "parent_commit": "af52b4d38a38efef4064099639aaab4e0c95c3ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/40477023377"
-      }
+      },
+      "kickoff": "2026-10-27T19:45:00Z",
+      "resolved_at": "2026-10-27T22:30:38.071760Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x769189f4b3e7534799dab819c969d7d16083050a7736a573ad280f004c674fa8",
+        "kickoff": "2026-10-27T19:45:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1898",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Torino FC vs. Como 1907",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1898",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T22:30:38.071760Z",
+          "parent_commit": "0de045304e0e52968da3438490cb28eb42381bd1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40595360514"
+        }
+      ]
     },
     {
       "pick_rank": 7,
