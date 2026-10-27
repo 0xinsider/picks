@@ -630,16 +630,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3bd768634fd7ae9a1f232ebb841e9ba8823524c4cbf53d9741dd16ba83420462",
+      "commitment_nonce": "0c658df933972b25cde7617558884aba0ec336f1ff61e379b35a045bb558a4ae",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:07:10.246481Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/21",
       "first_observation": {
         "observed_at": "2026-10-26T22:07:18.751743Z",
         "parent_commit": "bf867d5942e5d83f475d09b13b13879bfdee9ff7",
         "run": "https://github.com/0xinsider/picks/actions/runs/40409923882"
-      }
+      },
+      "kickoff": "2026-10-27T00:30:00Z",
+      "resolved_at": "2026-10-27T03:18:17.142367Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0xa0a7af7638fea1857f2b781cd8aed33b730494d432f26b0c6946447390c93b92",
+        "kickoff": "2026-10-27T00:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1887",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hawks vs. Rockets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/21",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T03:18:17.142367Z",
+          "parent_commit": "cad2ef21da8d196336c4c9f08a3c59d394c298da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40443419642"
+        }
+      ]
     },
     {
       "pick_rank": 22,
@@ -773,16 +798,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "58b65761f6ead7c56f9a9a9141629121f7e325e15a4be208821f85c966dcd616",
+      "commitment_nonce": "6f899ed486872aa8e263dc65632c0f0d48006658746b8209d9dbcd739ef96d48",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:11:49.872623Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/25",
       "first_observation": {
         "observed_at": "2026-10-26T22:11:57.661733Z",
         "parent_commit": "0b76525b323f16c9846b8b4554b8c18121d7c756",
         "run": "https://github.com/0xinsider/picks/actions/runs/40410538573"
-      }
+      },
+      "kickoff": "2026-10-27T00:30:00Z",
+      "resolved_at": "2026-10-27T03:18:17.158915Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xdb49f021d4ae8e0b6182a179ceb55f790f3987d2714fc3e36ca6f2798b33f736",
+        "kickoff": "2026-10-27T00:30:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1891",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hawks vs. Rockets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/25",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T03:18:17.158915Z",
+          "parent_commit": "cad2ef21da8d196336c4c9f08a3c59d394c298da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40443419642"
+        }
+      ]
     },
     {
       "pick_rank": 26,
