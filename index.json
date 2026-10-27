@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 755,
-    "sealed": 11,
+    "opened": 756,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 481,
+    "proven": 482,
     "proven_record": {
-      "wins": 265,
+      "wins": 266,
       "losses": 211,
-      "decided": 476,
+      "decided": 477,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "-1398.52",
-      "staked": "476000",
-      "roi": "-0.3"
+      "hit_rate": "55.8",
+      "profit_usd": "-293.26",
+      "staked": "477000",
+      "roi": "-0.1"
     },
-    "wins": 448,
+    "wins": 449,
     "losses": 300,
     "voids": 3,
-    "decided": 748,
+    "decided": 749,
     "withdrawn": 4,
     "hit_rate": "59.9",
     "stake_usd": "1000",
-    "profit_usd": "20347.41",
-    "staked": "748000",
-    "roi": "2.7",
+    "profit_usd": "21452.68",
+    "staked": "749000",
+    "roi": "2.9",
     "through": "2026-10-27"
   },
   "picks": [
@@ -28384,16 +28384,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ebd60e2458dc58a5eb43f5f94dc3a499507fd83a422b1867ff52a8e689669102",
+      "commitment_nonce": "f01497cb1c338abcb9897c10f0366f41020cc0b9a40b97899950cba85306d5aa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T19:11:24.116007Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1905",
       "first_observation": {
         "observed_at": "2026-10-27T19:11:34.191488Z",
         "parent_commit": "514a21f2510376b6e9370a092d53536884b264a6",
         "run": "https://github.com/0xinsider/picks/actions/runs/40566835633"
-      }
+      },
+      "kickoff": "2026-10-27T19:45:00Z",
+      "resolved_at": "2026-10-27T23:48:18.609772Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x07731167ef66948bdc6bfd6ee15fd7a21e9db03aabc5ad0c4414649afa1396f7",
+        "kickoff": "2026-10-27T19:45:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1905",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "SV Werder Bremen",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. SV Werder Bremen",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1905",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T23:48:18.609772Z",
+          "parent_commit": "ec40da61587c42f700c8d813eb479002c8199718",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40604604275"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
