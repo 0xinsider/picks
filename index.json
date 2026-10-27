@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 749,
-    "sealed": 8,
+    "opened": 750,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 475,
+    "proven": 476,
     "proven_record": {
-      "wins": 261,
+      "wins": 262,
       "losses": 209,
-      "decided": 470,
+      "decided": 471,
       "withdrawn": 2,
-      "hit_rate": "55.5",
-      "profit_usd": "-1378.32",
-      "staked": "470000",
-      "roi": "-0.3"
+      "hit_rate": "55.6",
+      "profit_usd": "-959.88",
+      "staked": "471000",
+      "roi": "-0.2"
     },
-    "wins": 444,
+    "wins": 445,
     "losses": 298,
     "voids": 3,
-    "decided": 742,
+    "decided": 743,
     "withdrawn": 4,
-    "hit_rate": "59.8",
+    "hit_rate": "59.9",
     "stake_usd": "1000",
-    "profit_usd": "20367.61",
-    "staked": "742000",
-    "roi": "2.7",
+    "profit_usd": "20786.05",
+    "staked": "743000",
+    "roi": "2.8",
     "through": "2026-10-27"
   },
   "picks": [
@@ -28126,16 +28126,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8d68d53fb6496347e8c0c2a7c8e76cbc97f3473e3bdf481a38057d46d2b5228a",
+      "commitment_nonce": "08b60918dbe12e4191063d2eba8c9373eb7ee52f1eb962488f6b19479da32e21",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T09:25:46.877867Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1899",
       "first_observation": {
         "observed_at": "2026-10-27T09:25:57.513189Z",
         "parent_commit": "e44e4aeb2f588beee5706e36cffc069763edcb02",
         "run": "https://github.com/0xinsider/picks/actions/runs/40480703582"
-      }
+      },
+      "kickoff": "2026-10-27T14:00:00Z",
+      "resolved_at": "2026-10-27T15:28:42.652398Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xa8310e4da17a0f0b070884a9331e65f7cda0ccd0da3b163b9faa940d3ec97277",
+        "kickoff": "2026-10-27T14:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1899",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "TheMongolz",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: TheMongolz vs Legacy (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1899",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T15:28:42.652398Z",
+          "parent_commit": "c23a4a093adb7f27b65d5af4691fdb6c966c93a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40531367096"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
