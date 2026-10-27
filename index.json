@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 737,
-    "sealed": 10,
+    "opened": 738,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 463,
+    "proven": 464,
     "proven_record": {
       "wins": 257,
-      "losses": 201,
-      "decided": 458,
+      "losses": 202,
+      "decided": 459,
       "withdrawn": 2,
-      "hit_rate": "56.1",
-      "profit_usd": "3705.22",
-      "staked": "458000",
-      "roi": "0.8"
+      "hit_rate": "56.0",
+      "profit_usd": "2705.22",
+      "staked": "459000",
+      "roi": "0.6"
     },
     "wins": 440,
-    "losses": 290,
+    "losses": 291,
     "voids": 3,
-    "decided": 730,
+    "decided": 731,
     "withdrawn": 4,
-    "hit_rate": "60.3",
+    "hit_rate": "60.2",
     "stake_usd": "1000",
-    "profit_usd": "25451.15",
-    "staked": "730000",
-    "roi": "3.5",
+    "profit_usd": "24451.15",
+    "staked": "731000",
+    "roi": "3.3",
     "through": "2026-10-26"
   },
   "picks": [
@@ -27449,16 +27449,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e80e2f44caa05659d0f0e3b26e4ba3f0b51354994c30b21a997b770cf6236a5a",
+      "commitment_nonce": "6e1c9fe82ca6370a64361355ef8cb150e7c5bace60081a468092f51fd1e80ce4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:06:04.011433Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/19",
       "first_observation": {
         "observed_at": "2026-10-26T22:06:13.500300Z",
         "parent_commit": "49d9b4027d3c89fdcb8e59028f0e829530570f0b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40409779091"
-      }
+      },
+      "kickoff": "2026-10-26T23:00:00Z",
+      "resolved_at": "2026-10-27T03:05:28.915273Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xc235a61249298c8775c851c8cdd6d080ff106a553acd4a902c93c6ae3aec3afd",
+        "kickoff": "2026-10-26T23:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1885",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "CR Flamengo",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CR Flamengo vs. CA Mineiro",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/19",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T03:05:28.915273Z",
+          "parent_commit": "820a124a0c26d60049d8946cc90fbb357fdade33",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40442204461"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-26",
