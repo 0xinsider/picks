@@ -3,7 +3,7 @@
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
     "opened": 746,
-    "sealed": 8,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
@@ -28060,6 +28060,24 @@
         "observed_at": "2026-10-27T09:25:57.513189Z",
         "parent_commit": "e44e4aeb2f588beee5706e36cffc069763edcb02",
         "run": "https://github.com/0xinsider/picks/actions/runs/40480703582"
+      }
+    },
+    {
+      "pick_date": "2026-10-27",
+      "pick_rank": 8,
+      "pick_id": "1900",
+      "publication_order": 8,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "e33609bf6f666f98adbfecd59b3bee918cb402a77ae055eca156711d5b95ad41",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-27T09:41:52.639010Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1900",
+      "first_observation": {
+        "observed_at": "2026-10-27T09:42:03.731360Z",
+        "parent_commit": "90eecaee883b257e73d3ac54d2676969782f9699",
+        "run": "https://github.com/0xinsider/picks/actions/runs/40482749843"
       }
     }
   ]
