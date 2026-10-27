@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 740,
-    "sealed": 7,
+    "opened": 741,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 466,
+    "proven": 467,
     "proven_record": {
       "wins": 257,
-      "losses": 204,
-      "decided": 461,
+      "losses": 205,
+      "decided": 462,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "705.22",
-      "staked": "461000",
-      "roi": "0.2"
+      "hit_rate": "55.6",
+      "profit_usd": "-294.78",
+      "staked": "462000",
+      "roi": "-0.1"
     },
     "wins": 440,
-    "losses": 293,
+    "losses": 294,
     "voids": 3,
-    "decided": 733,
+    "decided": 734,
     "withdrawn": 4,
-    "hit_rate": "60.0",
+    "hit_rate": "59.9",
     "stake_usd": "1000",
-    "profit_usd": "22451.15",
-    "staked": "733000",
-    "roi": "3.1",
+    "profit_usd": "21451.15",
+    "staked": "734000",
+    "roi": "2.9",
     "through": "2026-10-26"
   },
   "picks": [
@@ -27266,16 +27266,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2991393e4440ce8cdadd6b1484a3b3dce67de51999b125907f9db00a3589a896",
+      "commitment_nonce": "b5928de72bb077c1010888e2af116163c24e6afd4482631cf4db37cbb1e66d55",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T15:55:18.364227Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/13",
       "first_observation": {
         "observed_at": "2026-10-26T15:55:28.847912Z",
         "parent_commit": "224595497ac0243d95cbed56a272d35114c20bad",
         "run": "https://github.com/0xinsider/picks/actions/runs/40354060470"
-      }
+      },
+      "kickoff": "2026-10-27T00:00:00Z",
+      "resolved_at": "2026-10-27T03:28:03.352123Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x17a4d10c065149066df12fa321a3843a7e0b1036bdfdc500f4f0094db4ee98a8",
+        "kickoff": "2026-10-27T00:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1879",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Tampa Bay Rays",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Milwaukee Brewers vs. Tampa Bay Rays",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T03:28:03.352123Z",
+          "parent_commit": "3e4a3faa68a5970f38b0d5679478f8a4580fbbd2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40444319359"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-26",

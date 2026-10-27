@@ -369,16 +369,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2991393e4440ce8cdadd6b1484a3b3dce67de51999b125907f9db00a3589a896",
+      "commitment_nonce": "b5928de72bb077c1010888e2af116163c24e6afd4482631cf4db37cbb1e66d55",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T15:55:18.364227Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/13",
       "first_observation": {
         "observed_at": "2026-10-26T15:55:28.847912Z",
         "parent_commit": "224595497ac0243d95cbed56a272d35114c20bad",
         "run": "https://github.com/0xinsider/picks/actions/runs/40354060470"
-      }
+      },
+      "kickoff": "2026-10-27T00:00:00Z",
+      "resolved_at": "2026-10-27T03:28:03.352123Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x17a4d10c065149066df12fa321a3843a7e0b1036bdfdc500f4f0094db4ee98a8",
+        "kickoff": "2026-10-27T00:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1879",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Tampa Bay Rays",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Milwaukee Brewers vs. Tampa Bay Rays",
+      "category": "Baseball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/13",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T03:28:03.352123Z",
+          "parent_commit": "3e4a3faa68a5970f38b0d5679478f8a4580fbbd2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40444319359"
+        }
+      ]
     },
     {
       "pick_rank": 14,
