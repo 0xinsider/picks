@@ -226,16 +226,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7dcb0657e503a3b1b3406cd3a153b0c99dc8f759a2cd587243b1ce9cc6114717",
+      "commitment_nonce": "d4305f2f603c15c57fcec8dffd5a711370f9127b34c94e4cbe13e978d508c17a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T07:25:26.980475Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/9",
       "first_observation": {
         "observed_at": "2026-10-26T07:25:36.513363Z",
         "parent_commit": "5803296ed0ce1220aebb9ee50483a198b872ce34",
         "run": "https://github.com/0xinsider/picks/actions/runs/40285700415"
-      }
+      },
+      "kickoff": "2026-10-27T00:00:00Z",
+      "resolved_at": "2026-10-27T02:48:38.970985Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x4c782bf6837afba76d760cba484a28c9b1ed011765d5a12be3d8a64c9e201b65",
+        "kickoff": "2026-10-27T00:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1875",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Pacers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pacers vs. Bucks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/9",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T02:48:38.970985Z",
+          "parent_commit": "26fcbaa0aff3b3bd3ed183abd2b0b9802eccf3cf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40440584436"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -681,16 +706,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9a50121d916816728372557295d6f96f9e865e4e9f9ef3107be427dac1855152",
+      "commitment_nonce": "8a60cb74202ea1f2ca3dbfecc27e8714067e1fbc99f705b40aa518d7534345aa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-26T22:11:49.864090Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/24",
       "first_observation": {
         "observed_at": "2026-10-26T22:11:57.661733Z",
         "parent_commit": "0b76525b323f16c9846b8b4554b8c18121d7c756",
         "run": "https://github.com/0xinsider/picks/actions/runs/40410538573"
-      }
+      },
+      "kickoff": "2026-10-27T00:00:00Z",
+      "resolved_at": "2026-10-27T02:48:38.985084Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x39908d8509cf41b0fb8e32724fabccbd570bfec14f22e9ecbfade5c88dfffe96",
+        "kickoff": "2026-10-27T00:00:00Z",
+        "pick_date": "2026-10-26",
+        "pick_id": "1890",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Suns",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Suns vs. Thunder",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/2026-10-26/24",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-27T02:48:38.985084Z",
+          "parent_commit": "26fcbaa0aff3b3bd3ed183abd2b0b9802eccf3cf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40440584436"
+        }
+      ]
     },
     {
       "pick_rank": 25,
