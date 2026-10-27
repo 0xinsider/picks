@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 752,
-    "sealed": 10,
+    "opened": 753,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 478,
+    "proven": 479,
     "proven_record": {
-      "wins": 263,
+      "wins": 264,
       "losses": 210,
-      "decided": 473,
+      "decided": 474,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "-1333.87",
-      "staked": "473000",
-      "roi": "-0.3"
+      "hit_rate": "55.7",
+      "profit_usd": "-759.06",
+      "staked": "474000",
+      "roi": "-0.2"
     },
-    "wins": 446,
+    "wins": 447,
     "losses": 299,
     "voids": 3,
-    "decided": 745,
+    "decided": 746,
     "withdrawn": 4,
     "hit_rate": "59.9",
     "stake_usd": "1000",
-    "profit_usd": "20412.07",
-    "staked": "745000",
-    "roi": "2.7",
+    "profit_usd": "20986.87",
+    "staked": "746000",
+    "roi": "2.8",
     "through": "2026-10-27"
   },
   "picks": [
@@ -28273,16 +28273,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6d6f90f03365392ff360f04730b5043cd4c3e67915e65986a7e5a8c999e1057d",
+      "commitment_nonce": "5d577a9acb5ec0a66ab05ac3dfd1cc2f2c79631bd52f66c3bc4673a82ae3747b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T17:25:38.670086Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1903",
       "first_observation": {
         "observed_at": "2026-10-27T17:25:49.786940Z",
         "parent_commit": "fcd96c3b15f20db37775d465fab989f8f91f423f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40550482294"
-      }
+      },
+      "kickoff": "2026-10-27T18:30:00Z",
+      "resolved_at": "2026-10-27T21:51:58.655238Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x6bcd1184bde0dfacf36ec2750f77288cd929efd2ce50da088608bdc35d9818a8",
+        "kickoff": "2026-10-27T18:30:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1903",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "MIBR",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: MIBR vs Eternal Fire (BO3) - Stake Ranked Episode 5 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1903",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T21:51:58.655238Z",
+          "parent_commit": "882066244d597ec921e7b02a244c34dd6edaff43",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40590281354"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
