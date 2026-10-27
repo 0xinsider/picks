@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 747,
-    "sealed": 10,
+    "opened": 749,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 473,
+    "proven": 475,
     "proven_record": {
-      "wins": 259,
+      "wins": 261,
       "losses": 209,
-      "decided": 468,
+      "decided": 470,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "-2448.27",
-      "staked": "468000",
-      "roi": "-0.5"
+      "hit_rate": "55.5",
+      "profit_usd": "-1378.32",
+      "staked": "470000",
+      "roi": "-0.3"
     },
-    "wins": 442,
+    "wins": 444,
     "losses": 298,
     "voids": 3,
-    "decided": 740,
+    "decided": 742,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "19297.66",
-    "staked": "740000",
-    "roi": "2.6",
-    "through": "2026-10-26"
+    "profit_usd": "20367.61",
+    "staked": "742000",
+    "roi": "2.7",
+    "through": "2026-10-27"
   },
   "picks": [
     {
@@ -27968,16 +27968,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e639e95df593cd489d4865ccbb8731968c88f4aa5d9250d714299efd59522075",
+      "commitment_nonce": "caf94533dc1391603e92f2a7f1d28e43bb10999883df8bfb9b49822aaf4e7ca1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T07:00:25.343957Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1893",
       "first_observation": {
         "observed_at": "2026-10-27T07:00:36.345906Z",
         "parent_commit": "516b462619d990878b5bd14c04ffc5cc0ae5360d",
         "run": "https://github.com/0xinsider/picks/actions/runs/40464484051"
-      }
+      },
+      "kickoff": "2026-10-27T11:00:00Z",
+      "resolved_at": "2026-10-27T14:58:41.933849Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0xc9e7d8e3e2fc652b04d4e617e2cfe1de6837b922a405a1fedbf22ff1eae00d57",
+        "kickoff": "2026-10-27T11:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1893",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BIG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: magic vs BIG (BO3) - Stake Ranked Episode 5 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1893",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T14:58:41.933849Z",
+          "parent_commit": "5a9a18f4f39d771778c8d4a1202356bdf3da82b2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40526378735"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
@@ -28004,16 +28029,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5fc5a1561564da0a7480365db6f157e6a740c2d199b2fc134450c46a8b72981f",
+      "commitment_nonce": "4dc9e3e66bc4512036c5cc152210a35e360887f0d6f25ea057cccb579ce8c437",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T07:00:25.354205Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1895",
       "first_observation": {
         "observed_at": "2026-10-27T07:00:36.345906Z",
         "parent_commit": "516b462619d990878b5bd14c04ffc5cc0ae5360d",
         "run": "https://github.com/0xinsider/picks/actions/runs/40464484051"
-      }
+      },
+      "kickoff": "2026-10-27T11:00:00Z",
+      "resolved_at": "2026-10-27T14:58:41.927444Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xb3190794885f832e508d086ffa82d4b84ca1e0ada9c734550637e6fdd9bb1cff",
+        "kickoff": "2026-10-27T11:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1895",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Aurora Gaming",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Liquid vs Aurora Gaming (BO3) - PGL Masters Bucharest Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1895",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-27T14:58:41.927444Z",
+          "parent_commit": "5a9a18f4f39d771778c8d4a1202356bdf3da82b2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40526378735"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
