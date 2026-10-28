@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 768,
-    "sealed": 6,
+    "opened": 769,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 494,
+    "proven": 495,
     "proven_record": {
-      "wins": 272,
+      "wins": 273,
       "losses": 217,
-      "decided": 489,
+      "decided": 490,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "-1042.60",
-      "staked": "489000",
-      "roi": "-0.2"
+      "hit_rate": "55.7",
+      "profit_usd": "-173.44",
+      "staked": "490000",
+      "roi": "-0.0"
     },
-    "wins": 455,
+    "wins": 456,
     "losses": 306,
     "voids": 3,
-    "decided": 761,
+    "decided": 762,
     "withdrawn": 4,
     "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "20703.33",
-    "staked": "761000",
-    "roi": "2.7",
+    "profit_usd": "21572.49",
+    "staked": "762000",
+    "roi": "2.8",
     "through": "2026-10-28"
   },
   "picks": [
@@ -28907,16 +28907,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0e01c2b004780f7b339d54a3ea19ea2b44ef0409982ae4e59fe622458104f1af",
+      "commitment_nonce": "1f0503a243f691f57f6eff96e8cbcff581d625944cd014e4f7c1d1f479b71a1c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T08:38:47.195368Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1917",
       "first_observation": {
         "observed_at": "2026-10-28T08:38:56.125841Z",
         "parent_commit": "643fd011199eb242dd25922abf5170261883af47",
         "run": "https://github.com/0xinsider/picks/actions/runs/40658288250"
-      }
+      },
+      "kickoff": "2026-10-28T11:00:00Z",
+      "resolved_at": "2026-10-28T14:41:10.807834Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xd9b93b2098335d330490164eb11141615dd24dbfdb41068a8b8e39aa2ff99a4b",
+        "kickoff": "2026-10-28T11:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1917",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Astralis",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Astralis vs magic (BO3) - Stake Ranked Episode 5 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1917",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T14:41:10.807834Z",
+          "parent_commit": "3cbbe6ee37c4d97b37ff74313942fc1df78eca55",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40708392266"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
