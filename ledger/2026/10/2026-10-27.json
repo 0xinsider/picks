@@ -478,16 +478,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e140d72bfeef49cb309b775cfcee7d6bf44d2704cc85e291ceea525a0f04e5e7",
+      "commitment_nonce": "fe755c29d10418ce4490627e8e53748464ba78a9afe15a0a0602f54f976b6350",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T20:21:16.694314Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1906",
       "first_observation": {
         "observed_at": "2026-10-27T20:21:26.100701Z",
         "parent_commit": "7ae1092ae9b61b12a9850d171e5fae5c347dadae",
         "run": "https://github.com/0xinsider/picks/actions/runs/40577281651"
-      }
+      },
+      "kickoff": "2026-10-27T23:00:00Z",
+      "resolved_at": "2026-10-28T02:34:58.360252Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xf5f1b62fc44bc060f3e99b4be412911ba90139911e7e4854ad9ab9260c03132d",
+        "kickoff": "2026-10-27T23:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1906",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Delaware",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Delaware vs. Western Kentucky",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1906",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T02:34:58.360252Z",
+          "parent_commit": "ab6e7d002ae3d38775b90ee8654d6a78a5ec0d17",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40621783790"
+        }
+      ]
     },
     {
       "pick_rank": 15,
