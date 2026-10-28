@@ -293,16 +293,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b0f3fb232704f2561e4dfbebb2242e5328f0fbf3880818e44267a50f528e2905",
+      "commitment_nonce": "e1cb85c9016ebc1c710f440d479685b2a76d9f48f08e75efa1f9ce0bdbe7deb4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T14:55:50.526176Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1901",
       "first_observation": {
         "observed_at": "2026-10-27T14:56:01.488114Z",
         "parent_commit": "fd82d887a062643928e611a019513085e78c10da",
         "run": "https://github.com/0xinsider/picks/actions/runs/40525912546"
-      }
+      },
+      "kickoff": "2026-10-27T23:30:00Z",
+      "resolved_at": "2026-10-28T02:18:33.157392Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x72c60fefc9c01a60ab4bcc0862b812ee7b4947d103af06097a25f96bd3f9cfaa",
+        "kickoff": "2026-10-27T23:30:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1901",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nets vs. Celtics",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1901",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T02:18:33.157392Z",
+          "parent_commit": "d88d3028a074b05fb6cb22a61fbae39e02de7af9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40620156079"
+        }
+      ]
     },
     {
       "pick_rank": 10,
