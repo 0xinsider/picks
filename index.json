@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 769,
-    "sealed": 6,
+    "opened": 770,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 495,
+    "proven": 496,
     "proven_record": {
       "wins": 273,
-      "losses": 217,
-      "decided": 490,
+      "losses": 218,
+      "decided": 491,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "-173.44",
-      "staked": "490000",
-      "roi": "-0.0"
+      "hit_rate": "55.6",
+      "profit_usd": "-1173.44",
+      "staked": "491000",
+      "roi": "-0.2"
     },
     "wins": 456,
-    "losses": 306,
+    "losses": 307,
     "voids": 3,
-    "decided": 762,
+    "decided": 763,
     "withdrawn": 4,
     "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "21572.49",
-    "staked": "762000",
-    "roi": "2.8",
+    "profit_usd": "20572.49",
+    "staked": "763000",
+    "roi": "2.7",
     "through": "2026-10-28"
   },
   "picks": [
@@ -28950,16 +28950,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e7433a149d22265a5751d3846669f8bea25b4857e6207c433a5540bfdb68eeb3",
+      "commitment_nonce": "cf1e5d40ebf9b4db5debc3ebdd260a884a207f5de18d5f0c9402ee2afa71dcd9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T08:46:05.489255Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1918",
       "first_observation": {
         "observed_at": "2026-10-28T08:46:14.320039Z",
         "parent_commit": "73837814c2f9cf5dc0508f673703785896a3767b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40659162822"
-      }
+      },
+      "kickoff": "2026-10-28T12:30:00Z",
+      "resolved_at": "2026-10-28T15:23:06.670340Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x40a9e2287b4124c33d6d9e357e9de48fea1d36004f9a679d87dfbe0650795a8e",
+        "kickoff": "2026-10-28T12:30:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1918",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Brandon Nakashima",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Erste Bank Open: Tallon Griekspoor vs Brandon Nakashima",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1918",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-28T15:23:06.670340Z",
+          "parent_commit": "12a31673c06256a2ce544eb445b050dc3ddfd7cc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40715400408"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
