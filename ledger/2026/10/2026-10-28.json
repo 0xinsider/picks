@@ -66,16 +66,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a720f9b1e3077436ecd082c4df209d4ffd59c62c4078e5afc0b540019b7f9f07",
+      "commitment_nonce": "b5cc821b1d90a293b731a4399e3083bc15b2972011155805d8a2cd2f8a6ba199",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T07:55:51.232111Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1916",
       "first_observation": {
         "observed_at": "2026-10-28T07:55:59.294550Z",
         "parent_commit": "010c351426902375092fa8cd76e080985ea42a74",
         "run": "https://github.com/0xinsider/picks/actions/runs/40653255000"
-      }
+      },
+      "kickoff": "2026-10-28T17:00:00Z",
+      "resolved_at": "2026-10-28T21:01:36.333594Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x5dc4e596ccc46e3c83fe8980c5e90251cad4de3b34410c0ca590a109170844b4",
+        "kickoff": "2026-10-28T17:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1916",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC Paderborn 07 vs. VfB Stuttgart",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1916",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T21:01:36.333594Z",
+          "parent_commit": "57f5486fd0d3452cf3889baee0b482fad907ba87",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40768429540"
+        }
+      ]
     },
     {
       "pick_rank": 5,
