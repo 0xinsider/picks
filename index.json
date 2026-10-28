@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 774,
-    "sealed": 13,
+    "opened": 775,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 500,
+    "proven": 501,
     "proven_record": {
-      "wins": 275,
+      "wins": 276,
       "losses": 220,
-      "decided": 495,
+      "decided": 496,
       "withdrawn": 2,
       "hit_rate": "55.6",
-      "profit_usd": "-1396.89",
-      "staked": "495000",
-      "roi": "-0.3"
+      "profit_usd": "-770.87",
+      "staked": "496000",
+      "roi": "-0.2"
     },
-    "wins": 458,
+    "wins": 459,
     "losses": 309,
     "voids": 3,
-    "decided": 767,
+    "decided": 768,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "20349.05",
-    "staked": "767000",
+    "profit_usd": "20975.06",
+    "staked": "768000",
     "roi": "2.7",
     "through": "2026-10-28"
   },
@@ -29291,16 +29291,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2e970c2d7c92850f398f91457a9b0d67dc81fceee83f517201f563d071c0316c",
+      "commitment_nonce": "74b599c39bf8bb4f96146eb438d516b30e823352eca729ab9bdc31227b739bb3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T19:10:42.833652Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1930",
       "first_observation": {
         "observed_at": "2026-10-28T19:10:53.016347Z",
         "parent_commit": "d681e92037a3b0a1073b68dbf2de6f79b485e0f9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40751932774"
-      }
+      },
+      "kickoff": "2026-10-28T19:45:00Z",
+      "resolved_at": "2026-10-28T22:09:40.846312Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x97aff0097e22d8189280bff2b0eda2c06304224a25ed3c369aeb24188c756682",
+        "kickoff": "2026-10-28T19:45:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1930",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Genoa CFC vs. Juventus FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1930",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T22:09:40.846312Z",
+          "parent_commit": "36d5eead06c898b3c0061e2019c31f51e35797df",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40777785608"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
