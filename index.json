@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 762,
-    "sealed": 5,
+    "opened": 763,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 488,
+    "proven": 489,
     "proven_record": {
       "wins": 271,
-      "losses": 212,
-      "decided": 483,
+      "losses": 213,
+      "decided": 484,
       "withdrawn": 2,
-      "hit_rate": "56.1",
-      "profit_usd": "3052.64",
-      "staked": "483000",
-      "roi": "0.6"
+      "hit_rate": "56.0",
+      "profit_usd": "2052.64",
+      "staked": "484000",
+      "roi": "0.4"
     },
     "wins": 454,
-    "losses": 301,
+    "losses": 302,
     "voids": 3,
-    "decided": 755,
+    "decided": 756,
     "withdrawn": 4,
     "hit_rate": "60.1",
     "stake_usd": "1000",
-    "profit_usd": "24798.57",
-    "staked": "755000",
-    "roi": "3.3",
+    "profit_usd": "23798.57",
+    "staked": "756000",
+    "roi": "3.1",
     "through": "2026-10-27"
   },
   "picks": [
@@ -28588,16 +28588,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "665c51b8a18f46803ffa23f51acafc40998a9705ce2524df4598a11f46a17bdc",
+      "commitment_nonce": "35c2f93ef8780d99ae7c54352b7dc784670f450af2b924e65a4208b867f86b6b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-27T22:26:24.672421Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1908",
       "first_observation": {
         "observed_at": "2026-10-27T22:26:34.262339Z",
         "parent_commit": "5e40c32e6eb45a4515475021eb36c9510801c820",
         "run": "https://github.com/0xinsider/picks/actions/runs/40594832114"
-      }
+      },
+      "kickoff": "2026-10-28T00:00:00Z",
+      "resolved_at": "2026-10-28T03:49:20.559719Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x3b08d275cd63b9f0556b7e83bc2c7b0df4711f9eaea360a3b656f589e6f793ba",
+        "kickoff": "2026-10-28T00:00:00Z",
+        "pick_date": "2026-10-27",
+        "pick_id": "1908",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sam Houston vs. Missouri State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1908",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-28T03:49:20.559719Z",
+          "parent_commit": "0201a4cc96655050fb3f5e81da8611783b2777e4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40628848461"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-27",
