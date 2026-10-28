@@ -344,16 +344,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c86b5dd7d878325d2e8cfa8ae752e37a1e19501e132036f3ae363c9ced631286",
+      "commitment_nonce": "15a4bd132759358c186e93babfb35d57fcd9dff9a4dfa45e67b49e84919c7046",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T17:53:40.634654Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1925",
       "first_observation": {
         "observed_at": "2026-10-28T17:53:49.906135Z",
         "parent_commit": "332196a6ce483f7ede8a7e5bd5bd34c6263eb3b9",
         "run": "https://github.com/0xinsider/picks/actions/runs/40740010267"
-      }
+      },
+      "kickoff": "2026-10-28T19:30:00Z",
+      "resolved_at": "2026-10-28T23:05:07.004680Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0xc0b3f6cbcde9f86b75751b8252edef81aeb9d686c5afd531a8faa35c43b701d8",
+        "kickoff": "2026-10-28T19:30:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1925",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Holger Rune",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Swiss Indoors Basel: Hubert Hurkacz vs Holger Rune",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1925",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-28T23:05:07.004680Z",
+          "parent_commit": "2215936475baaf3dd2e1361b62aca0100cba9312",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40784789021"
+        }
+      ]
     },
     {
       "pick_rank": 14,
