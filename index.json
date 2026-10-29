@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 778,
-    "sealed": 14,
+    "opened": 779,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 504,
+    "proven": 505,
     "proven_record": {
       "wins": 278,
-      "losses": 221,
-      "decided": 499,
+      "losses": 222,
+      "decided": 500,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "353.25",
-      "staked": "499000",
-      "roi": "0.1"
+      "hit_rate": "55.6",
+      "profit_usd": "-646.75",
+      "staked": "500000",
+      "roi": "-0.1"
     },
     "wins": 461,
-    "losses": 310,
+    "losses": 311,
     "voids": 3,
-    "decided": 771,
+    "decided": 772,
     "withdrawn": 4,
-    "hit_rate": "59.8",
+    "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "22099.18",
-    "staked": "771000",
-    "roi": "2.9",
+    "profit_usd": "21099.18",
+    "staked": "772000",
+    "roi": "2.7",
     "through": "2026-10-28"
   },
   "picks": [
@@ -29445,16 +29445,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f2f55d7d244eca3efcd237b10708de06043e3c6d9936e7079b4a533a596ac73c",
+      "commitment_nonce": "7044cdd9915ca39252eeada9c6e96a456c3523c48db0c6c4f33102221563d9fd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:05:08.103367Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1933",
       "first_observation": {
         "observed_at": "2026-10-28T22:05:18.257753Z",
         "parent_commit": "3419fb04a432840cf7b3cb7fdb794d3db22f401e",
         "run": "https://github.com/0xinsider/picks/actions/runs/40777185566"
-      }
+      },
+      "kickoff": "2026-10-28T23:00:00Z",
+      "resolved_at": "2026-10-29T02:06:08.639024Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xb1fd2a34fd635592d701d2273c9d099d474007a20b8899b8c2c335d47cee9a3f",
+        "kickoff": "2026-10-28T23:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1933",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Heat vs. Hawks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1933",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T02:06:08.639024Z",
+          "parent_commit": "bef3095623c120fd56e3a4adfca7ac21a01d1685",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40804354430"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
