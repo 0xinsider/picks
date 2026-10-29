@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 796,
-    "sealed": 6,
+    "opened": 797,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 522,
+    "proven": 523,
     "proven_record": {
       "wins": 288,
-      "losses": 229,
-      "decided": 517,
+      "losses": 230,
+      "decided": 518,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "1364.67",
-      "staked": "517000",
-      "roi": "0.3"
+      "hit_rate": "55.6",
+      "profit_usd": "364.67",
+      "staked": "518000",
+      "roi": "0.1"
     },
     "wins": 471,
-    "losses": 318,
+    "losses": 319,
     "voids": 3,
-    "decided": 789,
+    "decided": 790,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.6",
     "stake_usd": "1000",
-    "profit_usd": "23110.60",
-    "staked": "789000",
-    "roi": "2.9",
+    "profit_usd": "22110.60",
+    "staked": "790000",
+    "roi": "2.8",
     "through": "2026-10-29"
   },
   "picks": [
@@ -30075,16 +30075,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c28d409c0c37d5a4a9fb5a09c1fd1fa7f9d3d390e4fc3e4d12171cb93edf7529",
+      "commitment_nonce": "5f40c2be497d5601525bdda5c7a1d2055da245cf5cef0a3a6dce943a933acf0b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T16:32:03.053211Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1947",
       "first_observation": {
         "observed_at": "2026-10-29T16:32:13.865672Z",
         "parent_commit": "ceef0362db8e303a41c8bc2f3f3bbd53b612ceff",
         "run": "https://github.com/0xinsider/picks/actions/runs/40912521045"
-      }
+      },
+      "kickoff": "2026-10-29T17:30:00Z",
+      "resolved_at": "2026-10-29T19:55:40.859721Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.510000",
+        "condition_id": "0x933ecedf496e97b4dd60ee83afb0937448ed7fdfe63d7f11b955117560378f89",
+        "kickoff": "2026-10-29T17:30:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1947",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Frosinone Calcio vs. US Lecce",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1947",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T19:55:40.859721Z",
+          "parent_commit": "b2bf7d2d49dd504f78163084fdf4f87e4388f7cb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40944451717"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-29",
