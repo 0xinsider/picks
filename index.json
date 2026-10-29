@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 795,
-    "sealed": 6,
+    "opened": 796,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 521,
+    "proven": 522,
     "proven_record": {
       "wins": 288,
-      "losses": 228,
-      "decided": 516,
+      "losses": 229,
+      "decided": 517,
       "withdrawn": 2,
-      "hit_rate": "55.8",
-      "profit_usd": "2364.67",
-      "staked": "516000",
-      "roi": "0.5"
+      "hit_rate": "55.7",
+      "profit_usd": "1364.67",
+      "staked": "517000",
+      "roi": "0.3"
     },
     "wins": 471,
-    "losses": 317,
+    "losses": 318,
     "voids": 3,
-    "decided": 788,
+    "decided": 789,
     "withdrawn": 4,
-    "hit_rate": "59.8",
+    "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "24110.60",
-    "staked": "788000",
-    "roi": "3.1",
+    "profit_usd": "23110.60",
+    "staked": "789000",
+    "roi": "2.9",
     "through": "2026-10-29"
   },
   "picks": [
@@ -30032,16 +30032,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "486a4b754ef4aabcc38f1157b9ce0d56344ac865e4244450b5badb0690c88efd",
+      "commitment_nonce": "7a7077d4782785a8e8fe5512123f6932844e12ecbd26d3d90d07f2d4570fbce1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T14:06:52.862480Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1944",
       "first_observation": {
         "observed_at": "2026-10-29T14:07:01.631290Z",
         "parent_commit": "1716ea1cdd6bf907c1cb6b73c9db168c5d942c2f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40888277440"
-      }
+      },
+      "kickoff": "2026-10-29T15:00:00Z",
+      "resolved_at": "2026-10-29T19:25:40.840827Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x687feb32ad0569e6c163758374f6c7b5ef706b6253da310c27c15ae926eda024",
+        "kickoff": "2026-10-29T15:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1944",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: PARIVISION vs Team Yandex (BO3) - PARI Universe Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1944",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T19:25:40.840827Z",
+          "parent_commit": "d81e755c75f3a77a53e3b74dd16ae0df4f8d40a5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40939992079"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-29",
