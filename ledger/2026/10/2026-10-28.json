@@ -528,16 +528,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b118ac7526cd49a51b24790639d482e7372f075c1a6a811f883a9bdc352d9fad",
+      "commitment_nonce": "1f1c6c528b9d2d49c1a2464b02fa13d0b298a8f7f4e0fdfa37590def5947f22b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T18:51:37.988024Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1927",
       "first_observation": {
         "observed_at": "2026-10-28T18:51:49.137866Z",
         "parent_commit": "9ccba45dd19b3df5f0e5e54babac38f9d616d63b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40749022465"
-      }
+      },
+      "kickoff": "2026-10-28T19:45:00Z",
+      "resolved_at": "2026-10-29T07:06:31.147674Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x2d69b9b5abc4d980b2911a5738cb4a00e0879d9492b6790825ca47f8b1ccec94",
+        "kickoff": "2026-10-28T19:45:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1927",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fulham FC vs. Crystal Palace FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1927",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T07:06:31.147674Z",
+          "parent_commit": "03f9a9f83892b1ab0df86a7de3da1d3c7082303b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40833312774"
+        }
+      ]
     },
     {
       "pick_rank": 16,
