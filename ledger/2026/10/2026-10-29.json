@@ -369,16 +369,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e5c294c1051ab20f3965626646edd29341d33b1a501acc48ef255577e7538873",
+      "commitment_nonce": "442327a840c3899ea45e441de495b3193f4b54055605eb62f1441dd68cb3a2ee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T17:40:54.940386Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1951",
       "first_observation": {
         "observed_at": "2026-10-29T17:41:05.156490Z",
         "parent_commit": "6792193ee3b358bea5ca040ff89cacb4e47f02b2",
         "run": "https://github.com/0xinsider/picks/actions/runs/40923643230"
-      }
+      },
+      "kickoff": "2026-10-29T19:45:00Z",
+      "resolved_at": "2026-10-29T22:10:05.768663Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xcd18fd445c2f62913df2805a953a5ce1af6af9cdb803005cd1fba0d244e8d830",
+        "kickoff": "2026-10-29T19:45:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1951",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "ACF Fiorentina vs. Atalanta BC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1951",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T22:10:05.768663Z",
+          "parent_commit": "4c994b4d36432c4c7dd66c0ad2111456941c8b27",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40963737200"
+        }
+      ]
     },
     {
       "pick_rank": 14,
