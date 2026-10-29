@@ -217,16 +217,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7298f261089ae253ce64eb202136fd822529425253ed082bbe38ffbd7c125b14",
+      "commitment_nonce": "6afa0633d440d2648fd5f41df9b5f7485d9b65a1c64556db285735c80a44b7b5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T14:10:32.561673Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1919",
       "first_observation": {
         "observed_at": "2026-10-28T14:10:41.714747Z",
         "parent_commit": "26f96cd15e827578b1f00962c1cb940e556b3b63",
         "run": "https://github.com/0xinsider/picks/actions/runs/40703356335"
-      }
+      },
+      "kickoff": "2026-10-29T02:00:00Z",
+      "resolved_at": "2026-10-29T05:06:31.156085Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xafac62dcb1494cb8d99498a1f926c8f73882463036b82ef371495cf824d1e468",
+        "kickoff": "2026-10-29T02:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1919",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kraken",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Maple Leafs vs. Kraken",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1919",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T05:06:31.156085Z",
+          "parent_commit": "894505c9fdaf0b09ef0c09a0f113640e48f96f58",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40821472040"
+        }
+      ]
     },
     {
       "pick_rank": 8,
