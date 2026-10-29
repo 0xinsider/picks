@@ -646,16 +646,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7d085e8ead1864e00c806167c8be5f75a4e1803a20d4a2841e92a6eca1e985e0",
+      "commitment_nonce": "1753b99ad50c57835fdfc307eff15dc1a8a0bc6f5cc043beaa1a364adf067cd5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T19:45:56.773703Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1931",
       "first_observation": {
         "observed_at": "2026-10-28T19:46:07.340200Z",
         "parent_commit": "8244f06432a958c13574c7ef1a59086761036804",
         "run": "https://github.com/0xinsider/picks/actions/runs/40757220503"
-      }
+      },
+      "kickoff": "2026-10-29T01:00:00Z",
+      "resolved_at": "2026-10-29T03:56:02.711861Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xac33d2e16cb5464de8be4f95b553c2a1d141ed7223579077201fe15a8a8266d9",
+        "kickoff": "2026-10-29T01:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1931",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Jazz",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Spurs vs. Jazz",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1931",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T03:56:02.711861Z",
+          "parent_commit": "de1ffb71f2587f8244f35493726bd3577bcc4f33",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40814899851"
+        }
+      ]
     },
     {
       "pick_rank": 20,
