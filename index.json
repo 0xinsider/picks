@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 791,
-    "sealed": 2,
+    "opened": 792,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 517,
+    "proven": 518,
     "proven_record": {
-      "wins": 285,
+      "wins": 286,
       "losses": 227,
-      "decided": 512,
+      "decided": 513,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "1126.34",
-      "staked": "512000",
-      "roi": "0.2"
+      "hit_rate": "55.8",
+      "profit_usd": "2031.11",
+      "staked": "513000",
+      "roi": "0.4"
     },
-    "wins": 468,
+    "wins": 469,
     "losses": 316,
     "voids": 3,
-    "decided": 784,
+    "decided": 785,
     "withdrawn": 4,
     "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "22872.28",
-    "staked": "784000",
-    "roi": "2.9",
+    "profit_usd": "23777.04",
+    "staked": "785000",
+    "roi": "3.0",
     "through": "2026-10-28"
   },
   "picks": [
@@ -29086,16 +29086,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a2196acfe13027884a6d42d2b84a6180887eb14750c199bd4cdf150739c9923e",
+      "commitment_nonce": "0f81ec764ca1ab33c3eefdc958d960b85e94d1602fdf174f41d6b2060dd2af24",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T14:26:33.126448Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1920",
       "first_observation": {
         "observed_at": "2026-10-28T14:26:44.382875Z",
         "parent_commit": "6b9dba991696725a1b43a8a6dec1cedf8faa295b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40705960689"
-      }
+      },
+      "kickoff": "2026-10-28T23:00:00Z",
+      "resolved_at": "2026-10-29T07:36:31.149845Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x5591f021a3169724380edc0100f1d4926a59da056a31d53a1c6c1b263016f978",
+        "kickoff": "2026-10-28T23:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1920",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kennesaw State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kennesaw State vs. Middle Tennessee",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1920",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T07:36:31.149845Z",
+          "parent_commit": "c19d820d9a9c657a9a52ce1a5de58fe891c7b17d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40836522051"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
