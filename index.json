@@ -3,7 +3,7 @@
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
     "opened": 799,
-    "sealed": 6,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
@@ -30045,6 +30045,24 @@
     },
     {
       "pick_date": "2026-10-29",
+      "pick_rank": 5,
+      "pick_id": "1943",
+      "publication_order": 5,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "b5458c68a3972ce19c66133189ff43b18c090797a1548a93ac587a7c1914e0c9",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-29T22:00:05.609970Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1943",
+      "first_observation": {
+        "observed_at": "2026-10-29T22:00:14.119145Z",
+        "parent_commit": "176d0629cf935d6621df7c5159257a6bc689ec2f",
+        "run": "https://github.com/0xinsider/picks/actions/runs/40962385276"
+      }
+    },
+    {
+      "pick_date": "2026-10-29",
       "pick_rank": 6,
       "pick_id": "1944",
       "publication_order": 6,
@@ -30085,6 +30103,24 @@
           "run": "https://github.com/0xinsider/picks/actions/runs/40939992079"
         }
       ]
+    },
+    {
+      "pick_date": "2026-10-29",
+      "pick_rank": 7,
+      "pick_id": "1945",
+      "publication_order": 7,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "75a3340e6b1b56ff6edff1b4b5d0da478c23b7dbe5ac3f95d22bd2b1cf7741e0",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-10-29T22:00:05.621277Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1945",
+      "first_observation": {
+        "observed_at": "2026-10-29T22:00:14.119145Z",
+        "parent_commit": "176d0629cf935d6621df7c5159257a6bc689ec2f",
+        "run": "https://github.com/0xinsider/picks/actions/runs/40962385276"
+      }
     },
     {
       "pick_date": "2026-10-29",
