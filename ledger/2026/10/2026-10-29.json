@@ -310,16 +310,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "db7c9f5c4a0dff9555db21af7e2123c75dec329b47958cffdc7e956622cc87fd",
+      "commitment_nonce": "364b43c3a0907566dbeba8cb974c86243002c47e3184efe712f1febd486950b9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T17:21:42.976169Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1949",
       "first_observation": {
         "observed_at": "2026-10-29T17:21:53.487419Z",
         "parent_commit": "85ecdf253b5e0dd3e7da75c16b2576496af52d1c",
         "run": "https://github.com/0xinsider/picks/actions/runs/40920586855"
-      }
+      },
+      "kickoff": "2026-10-29T20:00:00Z",
+      "resolved_at": "2026-10-29T22:59:50.320588Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x6bc2cd94e5e92076d76caed7b9eba7a7407759ed77e01fb8ea7d40a654a3b25e",
+        "kickoff": "2026-10-29T20:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1949",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Karmine Corp",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Karmine Corp vs CTBC Flying Oyster (BO3) - Worlds Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1949",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T22:59:50.320588Z",
+          "parent_commit": "b29d28f023a1d1440854331fed189525480467c9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40969979240"
+        }
+      ]
     },
     {
       "pick_rank": 12,
