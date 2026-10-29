@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 787,
-    "sealed": 5,
+    "opened": 788,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 513,
+    "proven": 514,
     "proven_record": {
       "wins": 284,
-      "losses": 224,
-      "decided": 508,
+      "losses": 225,
+      "decided": 509,
       "withdrawn": 2,
-      "hit_rate": "55.9",
-      "profit_usd": "2879.15",
-      "staked": "508000",
-      "roi": "0.6"
+      "hit_rate": "55.8",
+      "profit_usd": "1879.15",
+      "staked": "509000",
+      "roi": "0.4"
     },
     "wins": 467,
-    "losses": 313,
+    "losses": 314,
     "voids": 3,
-    "decided": 780,
+    "decided": 781,
     "withdrawn": 4,
-    "hit_rate": "59.9",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "24625.09",
-    "staked": "780000",
-    "roi": "3.2",
+    "profit_usd": "23625.09",
+    "staked": "781000",
+    "roi": "3.0",
     "through": "2026-10-28"
   },
   "picks": [
@@ -29760,16 +29760,41 @@
       "publication_order": 26,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "da17154ecff236fdd497dfa8170561e265a8fe47b03d7226ca87e8051de3c3fa",
+      "commitment_nonce": "be757775aa737e5c4e6dbd36ad2efbeb8a6dce28822147b6f285114ff31d3f82",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:13:43.048579Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1938",
       "first_observation": {
         "observed_at": "2026-10-28T22:13:53.178376Z",
         "parent_commit": "cda98b90e5a6c8facdb8292b9fdc6430a55b7fc4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40778320847"
-      }
+      },
+      "kickoff": "2026-10-29T01:30:00Z",
+      "resolved_at": "2026-10-29T04:23:34.866293Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xc7db36794c62024a534e102bc83c9b5bf7c3ac80ca59106aec8816b57ec4c6f8",
+        "kickoff": "2026-10-29T01:30:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1938",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Thunder vs. Mavericks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1938",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T04:23:34.866293Z",
+          "parent_commit": "0157982c3bd4988386f714bde783cecce9a8cefe",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40817489973"
+        }
+      ]
     }
   ]
 }
