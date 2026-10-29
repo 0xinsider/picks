@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8120e760d7a9ac2cd4f0a1234bb7fddb019c198025c80ec74bc5dd53d194b6d5",
+      "commitment_nonce": "ec59af29df29850532f0a38ce6d5d753d194ac56b619ecd58d9923740323fadd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T07:00:11.131748Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1939",
       "first_observation": {
         "observed_at": "2026-10-29T07:00:21.342462Z",
         "parent_commit": "d06d121cd82864012c70c5a5de3eca96ca17bcf4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40832632697"
-      }
+      },
+      "kickoff": "2026-10-29T08:00:00Z",
+      "resolved_at": "2026-10-29T10:36:31.137882Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x79884749ee8f4decda00772c9ee3fa36facd307abdda5d6b7d2f4d13a75c18dd",
+        "kickoff": "2026-10-29T08:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1939",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Nemiga",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: FUT Esports vs Nemiga (BO3) - PGL Masters Bucharest Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1939",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T10:36:31.137882Z",
+          "parent_commit": "797e71641e14c87b671d89cbe4f7b8eba02263a6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40858906042"
+        }
+      ]
     },
     {
       "pick_rank": 3,
