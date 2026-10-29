@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 777,
-    "sealed": 15,
+    "opened": 778,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 503,
+    "proven": 504,
     "proven_record": {
       "wins": 278,
-      "losses": 220,
-      "decided": 498,
+      "losses": 221,
+      "decided": 499,
       "withdrawn": 2,
-      "hit_rate": "55.8",
-      "profit_usd": "1353.25",
-      "staked": "498000",
-      "roi": "0.3"
+      "hit_rate": "55.7",
+      "profit_usd": "353.25",
+      "staked": "499000",
+      "roi": "0.1"
     },
     "wins": 461,
-    "losses": 309,
+    "losses": 310,
     "voids": 3,
-    "decided": 770,
+    "decided": 771,
     "withdrawn": 4,
-    "hit_rate": "59.9",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "23099.18",
-    "staked": "770000",
-    "roi": "3.0",
+    "profit_usd": "22099.18",
+    "staked": "771000",
+    "roi": "2.9",
     "through": "2026-10-28"
   },
   "picks": [
@@ -29158,16 +29158,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "682a93d911a38e9b3edd8ceccee6f60ef02345e85f9b1512dcca5c175a4fbb6f",
+      "commitment_nonce": "ba106b5ef7930267e1e6b28896e4d70716d4f41b422ab09442be13bd64ee8467",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T16:36:23.799320Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1924",
       "first_observation": {
         "observed_at": "2026-10-28T16:36:36.143834Z",
         "parent_commit": "4b8a1028de303af7104e195fd3acece64b18ef02",
         "run": "https://github.com/0xinsider/picks/actions/runs/40727617977"
-      }
+      },
+      "kickoff": "2026-10-28T19:45:00Z",
+      "resolved_at": "2026-10-29T00:52:20.449106Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xd124e423194558b8572359f013be0bb90d7f1ff5a506648774cd7e3265bfa0b4",
+        "kickoff": "2026-10-28T19:45:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1924",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Holstein Kiel vs. TSG 1899 Hoffenheim",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1924",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T00:52:20.449106Z",
+          "parent_commit": "b910a108826ed1a9c1e9e2217bfdb3088c9aa4e7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40796848516"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-28",
