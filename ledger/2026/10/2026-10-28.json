@@ -722,16 +722,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0a0d64265f01a3d52abcdfc63c4ac087d2d53638293c247752a01d2da426c658",
+      "commitment_nonce": "6f93982ed990c901c88e3fc43c19b974fe2ae1d725418fced74f486e453b937c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:13:43.028216Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1934",
       "first_observation": {
         "observed_at": "2026-10-28T22:13:53.178376Z",
         "parent_commit": "cda98b90e5a6c8facdb8292b9fdc6430a55b7fc4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40778320847"
-      }
+      },
+      "kickoff": "2026-10-28T23:00:00Z",
+      "resolved_at": "2026-10-29T03:39:25.678178Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x2fc2a68ed19d1dbca2bccc18fa295cb95b71dc31ae23b56558ba6890d0a73f00",
+        "kickoff": "2026-10-28T23:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1934",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Kennesaw State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kennesaw State vs. Middle Tennessee",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1934",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T03:39:25.678178Z",
+          "parent_commit": "7fd3ee280f3a80a7b833b3882ff575833de730d1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40813362442"
+        }
+      ]
     },
     {
       "pick_rank": 23,
@@ -739,16 +764,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "14aea84c4ae8bb6b33fa9ef4a68e37f171869eff4438b28db5c2f8b6388ea836",
+      "commitment_nonce": "6d167881d59ec7b782a47bca2eaa617ec5199d2b995f858267a9680cf4c58f66",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:13:43.033608Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1935",
       "first_observation": {
         "observed_at": "2026-10-28T22:13:53.178376Z",
         "parent_commit": "cda98b90e5a6c8facdb8292b9fdc6430a55b7fc4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40778320847"
-      }
+      },
+      "kickoff": "2026-10-29T00:00:00Z",
+      "resolved_at": "2026-10-29T03:39:25.701112Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x221bf598bd96d922a2ab6bafd09838f37b6a7b23c558bbf3336dca927e5acc4c",
+        "kickoff": "2026-10-29T00:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1935",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New Mexico State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jacksonville State vs. New Mexico State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1935",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T03:39:25.701112Z",
+          "parent_commit": "7fd3ee280f3a80a7b833b3882ff575833de730d1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40813362442"
+        }
+      ]
     },
     {
       "pick_rank": 24,
@@ -798,16 +848,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2bb50bde0e5f7804bb8c7300432bd2beb4021b6bb6559276e80b2afa2e5d0401",
+      "commitment_nonce": "149d89168381ae5c893717bf67ad7b45ea5090d265fab4c86b8bfd2cd147eb4b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:13:43.043898Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1937",
       "first_observation": {
         "observed_at": "2026-10-28T22:13:53.178376Z",
         "parent_commit": "cda98b90e5a6c8facdb8292b9fdc6430a55b7fc4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40778320847"
-      }
+      },
+      "kickoff": "2026-10-29T00:30:00Z",
+      "resolved_at": "2026-10-29T03:39:25.691122Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x338782072160e4142e3762a7d6bc16c59cc794a2b20aa46d0419fb96d34cdca7",
+        "kickoff": "2026-10-29T00:30:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1937",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Oilers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1937",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T03:39:25.691122Z",
+          "parent_commit": "7fd3ee280f3a80a7b833b3882ff575833de730d1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40813362442"
+        }
+      ]
     },
     {
       "pick_rank": 26,
