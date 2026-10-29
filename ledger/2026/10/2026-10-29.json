@@ -234,16 +234,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "08a048ac19b5e103e7ecc45c294deaeb9f718cb02ee8e4749be9eb008bbcd37a",
+      "commitment_nonce": "07f542c5e1ba07c288f2b5a5eb0c39da709ef33146c6d56033b7aaa6df020cff",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T16:56:17.551405Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1948",
       "first_observation": {
         "observed_at": "2026-10-29T16:56:26.625222Z",
         "parent_commit": "f08baa48e8697ff7b99ec8043551bd042245ecc5",
         "run": "https://github.com/0xinsider/picks/actions/runs/40916447493"
-      }
+      },
+      "kickoff": "2026-10-29T18:00:00Z",
+      "resolved_at": "2026-10-29T20:32:30.502014Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x138dca0605577eff0d5c041197110bdaf7be9094b33ef1836533c89fbef43191",
+        "kickoff": "2026-10-29T18:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1948",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "GamerLegion",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: HOTU vs GamerLegion (BO3) - Tesla Cup Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1948",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T20:32:30.502014Z",
+          "parent_commit": "1535c89f7de8e95c9327812b535bff6cc5ad5e40",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40960665435"
+        }
+      ]
     },
     {
       "pick_rank": 11,

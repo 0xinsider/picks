@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 797,
-    "sealed": 8,
+    "opened": 798,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 523,
+    "proven": 524,
     "proven_record": {
       "wins": 288,
-      "losses": 230,
-      "decided": 518,
+      "losses": 231,
+      "decided": 519,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "364.67",
-      "staked": "518000",
-      "roi": "0.1"
+      "hit_rate": "55.5",
+      "profit_usd": "-635.33",
+      "staked": "519000",
+      "roi": "-0.1"
     },
     "wins": 471,
-    "losses": 319,
+    "losses": 320,
     "voids": 3,
-    "decided": 790,
+    "decided": 791,
     "withdrawn": 4,
-    "hit_rate": "59.6",
+    "hit_rate": "59.5",
     "stake_usd": "1000",
-    "profit_usd": "22110.60",
-    "staked": "790000",
-    "roi": "2.8",
+    "profit_usd": "21110.60",
+    "staked": "791000",
+    "roi": "2.7",
     "through": "2026-10-29"
   },
   "picks": [
@@ -30136,16 +30136,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "08a048ac19b5e103e7ecc45c294deaeb9f718cb02ee8e4749be9eb008bbcd37a",
+      "commitment_nonce": "07f542c5e1ba07c288f2b5a5eb0c39da709ef33146c6d56033b7aaa6df020cff",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T16:56:17.551405Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1948",
       "first_observation": {
         "observed_at": "2026-10-29T16:56:26.625222Z",
         "parent_commit": "f08baa48e8697ff7b99ec8043551bd042245ecc5",
         "run": "https://github.com/0xinsider/picks/actions/runs/40916447493"
-      }
+      },
+      "kickoff": "2026-10-29T18:00:00Z",
+      "resolved_at": "2026-10-29T20:32:30.502014Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x138dca0605577eff0d5c041197110bdaf7be9094b33ef1836533c89fbef43191",
+        "kickoff": "2026-10-29T18:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1948",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "GamerLegion",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: HOTU vs GamerLegion (BO3) - Tesla Cup Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1948",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-29T20:32:30.502014Z",
+          "parent_commit": "1535c89f7de8e95c9327812b535bff6cc5ad5e40",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40960665435"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-29",
