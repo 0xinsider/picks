@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 798,
-    "sealed": 7,
+    "opened": 799,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 524,
+    "proven": 525,
     "proven_record": {
-      "wins": 288,
+      "wins": 289,
       "losses": 231,
-      "decided": 519,
+      "decided": 520,
       "withdrawn": 2,
-      "hit_rate": "55.5",
-      "profit_usd": "-635.33",
-      "staked": "519000",
-      "roi": "-0.1"
+      "hit_rate": "55.6",
+      "profit_usd": "426.53",
+      "staked": "520000",
+      "roi": "0.1"
     },
-    "wins": 471,
+    "wins": 472,
     "losses": 320,
     "voids": 3,
-    "decided": 791,
+    "decided": 792,
     "withdrawn": 4,
-    "hit_rate": "59.5",
+    "hit_rate": "59.6",
     "stake_usd": "1000",
-    "profit_usd": "21110.60",
-    "staked": "791000",
-    "roi": "2.7",
+    "profit_usd": "22172.46",
+    "staked": "792000",
+    "roi": "2.8",
     "through": "2026-10-29"
   },
   "picks": [
@@ -30197,16 +30197,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d361834da0420e46d630c04da641a516022d2290adbdebe19ae99172d678be2f",
+      "commitment_nonce": "22917a67f705a9fb73e6e7826b11d1c1243d9dd9ac511996377d25a872c4bc41",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T17:24:28.653194Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1950",
       "first_observation": {
         "observed_at": "2026-10-29T17:24:39.384593Z",
         "parent_commit": "5e283bd168597f5f778b982127b7351ada721250",
         "run": "https://github.com/0xinsider/picks/actions/runs/40921029107"
-      }
+      },
+      "kickoff": "2026-10-29T18:00:00Z",
+      "resolved_at": "2026-10-29T21:55:41.833207Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x99762ea2428ad391cb0e24aedf5fcc8a88240af5851941311ae1cf513f8feefe",
+        "kickoff": "2026-10-29T18:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1950",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Al Riyadh Saudi Club vs. Al Qadisiyah Saudi Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1950",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T21:55:41.833207Z",
+          "parent_commit": "8602adfd7938242cf2523441db4df3e454ef0df3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40961819204"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-29",
