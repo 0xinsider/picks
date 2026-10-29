@@ -293,16 +293,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4fdae265e020fefb84c0e0529f2021d9ecd342bff151fe4756e0440d1031f4eb",
+      "commitment_nonce": "e8e2ab7eb99c2bf80bb98779e3044dd1d9e1c19cfe3f9fbc39cb89f157bf3123",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T15:41:05.271218Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1922",
       "first_observation": {
         "observed_at": "2026-10-28T15:41:15.100546Z",
         "parent_commit": "421f36094eb1a6c44b32b79e9a29dd1cb96cd7b3",
         "run": "https://github.com/0xinsider/picks/actions/runs/40718445960"
-      }
+      },
+      "kickoff": "2026-10-29T00:00:00Z",
+      "resolved_at": "2026-10-29T02:43:37.232885Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x77de7318228493c81b3e995f34aa678cadd8aca3efb5268c4e9c17d167fb884f",
+        "kickoff": "2026-10-29T00:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1922",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Nuggets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nuggets vs. Pelicans",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1922",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T02:43:37.232885Z",
+          "parent_commit": "a931ab7f814a5e03403c2d54f05b8646b1b804f1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40808059970"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -731,16 +756,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "df4fa739f791eba8660ab6c04b1af4da7b4a0c0e9e7f5e3c85f5db320480ec99",
+      "commitment_nonce": "add41cf526cfaa9883c3d76e5872fcd4501f450c83c08bc2540e5ad58ab15b80",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-28T22:13:43.038541Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1936",
       "first_observation": {
         "observed_at": "2026-10-28T22:13:53.178376Z",
         "parent_commit": "cda98b90e5a6c8facdb8292b9fdc6430a55b7fc4",
         "run": "https://github.com/0xinsider/picks/actions/runs/40778320847"
-      }
+      },
+      "kickoff": "2026-10-29T00:00:00Z",
+      "resolved_at": "2026-10-29T02:43:37.246629Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x23086a7a5e4e199779f54269629b29cddef511570fdbfb2240f396e60d2106ee",
+        "kickoff": "2026-10-29T00:00:00Z",
+        "pick_date": "2026-10-28",
+        "pick_id": "1936",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rockets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rockets vs. Bucks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1936",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-29T02:43:37.246629Z",
+          "parent_commit": "a931ab7f814a5e03403c2d54f05b8646b1b804f1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40808059970"
+        }
+      ]
     },
     {
       "pick_rank": 25,
