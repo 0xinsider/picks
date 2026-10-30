@@ -150,16 +150,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e8a3292fdfd0a0efaa74fd6efe93ac9cc5b286b2ce4198bdde01c6b8acc685ae",
+      "commitment_nonce": "f01363b2cf6490c936f85e21b47de49c92fd2deb52edecce9a550c8493f5c3f6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T16:11:29.583034Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1963",
       "first_observation": {
         "observed_at": "2026-10-30T16:11:40.822144Z",
         "parent_commit": "251d6e20be081971f5657c25d4f097832468cc8f",
         "run": "https://github.com/0xinsider/picks/actions/runs/41087605466"
-      }
+      },
+      "kickoff": "2026-10-30T20:00:00Z",
+      "resolved_at": "2026-10-30T22:11:21.724833Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0xf81223cd7131dfb23a2e804d80de6d0f02820408970c4ae85d38ff4f78533082",
+        "kickoff": "2026-10-30T20:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1963",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Villarreal CF vs. RCD Espanyol de Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1963",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T22:11:21.724833Z",
+          "parent_commit": "8c064798b58d241ffea08ffb997f16bb6d00b126",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41136427541"
+        }
+      ]
     },
     {
       "pick_rank": 6,
