@@ -226,16 +226,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "474dae0308d81d076627d51a5d9e5c42ed9f442a5cf907dbe7b974bbe430e5ca",
+      "commitment_nonce": "da701a1553293035b7a4239d9011e7db387660d36dc9df42718d59b59b78b369",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T17:25:31.950227Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1966",
       "first_observation": {
         "observed_at": "2026-10-30T17:25:43.162268Z",
         "parent_commit": "fbd2ce34f6314bef0e997ee087a32b15974ba840",
         "run": "https://github.com/0xinsider/picks/actions/runs/41098706674"
-      }
+      },
+      "kickoff": "2026-10-30T18:30:00Z",
+      "resolved_at": "2026-10-30T20:24:57.459020Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xb5dbb0c08e5c15f06113eabbbd906c042ce7797c8e86b135b0f43eb3a8f959d9",
+        "kickoff": "2026-10-30T18:30:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1966",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Nuno Borges",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Swiss Indoors Basel: Jan-Lennard Struff vs Nuno Borges",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1966",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T20:24:57.459020Z",
+          "parent_commit": "63a0fb33ceb788d0fb0aa94e6e10cbb80b2f0a23",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41123011408"
+        }
+      ]
     },
     {
       "pick_rank": 9,
