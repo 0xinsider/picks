@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b5458c68a3972ce19c66133189ff43b18c090797a1548a93ac587a7c1914e0c9",
+      "commitment_nonce": "88a8e569eb93ddb70c8b1e1f9c5291f63b8ce30232d3014359e9dda9429f1b09",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:00:05.609970Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1943",
       "first_observation": {
         "observed_at": "2026-10-29T22:00:14.119145Z",
         "parent_commit": "176d0629cf935d6621df7c5159257a6bc689ec2f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40962385276"
-      }
+      },
+      "kickoff": "2026-10-30T02:00:00Z",
+      "resolved_at": "2026-10-30T04:48:04.795983Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x92c9c48af78d045a419a6e08b1affb483ff5732cfc89902d84103f0c0ff01811",
+        "kickoff": "2026-10-30T02:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1943",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Trail Blazers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Grizzlies vs. Trail Blazers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1943",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T04:48:04.795983Z",
+          "parent_commit": "e92d2cbcee2b0c51ced3498ceb4bc7ddb289475d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41004893415"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -604,16 +629,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "700749a48b4a9ee06611cf633d26da064c21c0c108865cea174dd9763a1af6aa",
+      "commitment_nonce": "b0eca11842f7413ad665fd7d82784d0b076f6846649076d86a32e73cfaab29ee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:11:14.359027Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1956",
       "first_observation": {
         "observed_at": "2026-10-29T22:11:23.540830Z",
         "parent_commit": "419cf51511f2d1b633192f08308bf9bc3695254e",
         "run": "https://github.com/0xinsider/picks/actions/runs/40963893342"
-      }
+      },
+      "kickoff": "2026-10-30T02:00:00Z",
+      "resolved_at": "2026-10-30T04:48:04.810205Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xc734669e3773a6311c6abefbfabb4a019c85abd68368602db246b3ddaf704fe8",
+        "kickoff": "2026-10-30T02:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1956",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Trail Blazers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Grizzlies vs. Trail Blazers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1956",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T04:48:04.810205Z",
+          "parent_commit": "e92d2cbcee2b0c51ced3498ceb4bc7ddb289475d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41004893415"
+        }
+      ]
     },
     {
       "pick_rank": 19,
