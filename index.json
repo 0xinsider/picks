@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 801,
-    "sealed": 10,
+    "opened": 803,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 527,
+    "proven": 529,
     "proven_record": {
-      "wins": 291,
+      "wins": 293,
       "losses": 231,
-      "decided": 522,
+      "decided": 524,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "1290.83",
-      "staked": "522000",
-      "roi": "0.2"
+      "hit_rate": "55.9",
+      "profit_usd": "3020.43",
+      "staked": "524000",
+      "roi": "0.6"
     },
-    "wins": 474,
+    "wins": 476,
     "losses": 320,
     "voids": 3,
-    "decided": 794,
+    "decided": 796,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "23036.76",
-    "staked": "794000",
-    "roi": "2.9",
+    "profit_usd": "24766.37",
+    "staked": "796000",
+    "roi": "3.1",
     "through": "2026-10-29"
   },
   "picks": [
@@ -30344,16 +30344,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8bdc9aecddd800db0f0d6c7103e02b0ad34cf9a55079d690bfd1f8a8eafd16b9",
+      "commitment_nonce": "f7ea6f95cde60026d62077846cb2882edf21304388046629786f0d904d906925",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T19:30:45.101910Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1952",
       "first_observation": {
         "observed_at": "2026-10-29T19:30:55.274647Z",
         "parent_commit": "54d817043455780f252222ac8b7a928b7f68c474",
         "run": "https://github.com/0xinsider/picks/actions/runs/40940747799"
-      }
+      },
+      "kickoff": "2026-10-29T23:30:00Z",
+      "resolved_at": "2026-10-30T02:36:53.438635Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x388ef6ee4be4f3d5299dc94bd8651e2965402ee00901df0db085d6e17bb68981",
+        "kickoff": "2026-10-29T23:30:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1952",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Red Wings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Blackhawks vs. Red Wings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1952",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T02:36:53.438635Z",
+          "parent_commit": "6ef3f46774ec3339d034ece9594b3744745d594a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40992713183"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-29",
@@ -30452,16 +30477,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6ecd15bd8c49b90ca8866baa6a2dac47b30a7aba38453d74876401d10d263c21",
+      "commitment_nonce": "75c6887f94a82c7f1dc6e9e61b7d1008f49d9b03873a11f7eca39c06f124432e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:31:50.947015Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1958",
       "first_observation": {
         "observed_at": "2026-10-29T22:31:59.771466Z",
         "parent_commit": "54f68383a585c95403e8a81c815f3bf08b15963b",
         "run": "https://github.com/0xinsider/picks/actions/runs/40966562595"
-      }
+      },
+      "kickoff": "2026-10-30T00:00:00Z",
+      "resolved_at": "2026-10-30T02:36:53.544768Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x554e74d3b2df45a0ecf558538bb9dba2bada8c0b995a4b14362428c2cba7f382",
+        "kickoff": "2026-10-30T00:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1958",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kings vs. Pelicans",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1958",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T02:36:53.544768Z",
+          "parent_commit": "6ef3f46774ec3339d034ece9594b3744745d594a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40992713183"
+        }
+      ]
     }
   ]
 }
