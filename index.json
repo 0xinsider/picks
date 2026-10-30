@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 812,
-    "sealed": 7,
+    "opened": 813,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 538,
+    "proven": 539,
     "proven_record": {
-      "wins": 297,
+      "wins": 298,
       "losses": 236,
-      "decided": 533,
+      "decided": 534,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "2609.37",
-      "staked": "533000",
-      "roi": "0.5"
+      "hit_rate": "55.8",
+      "profit_usd": "3090.85",
+      "staked": "534000",
+      "roi": "0.6"
     },
-    "wins": 480,
+    "wins": 481,
     "losses": 325,
     "voids": 3,
-    "decided": 805,
+    "decided": 806,
     "withdrawn": 4,
-    "hit_rate": "59.6",
+    "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "24355.31",
-    "staked": "805000",
-    "roi": "3.0",
+    "profit_usd": "24836.79",
+    "staked": "806000",
+    "roi": "3.1",
     "through": "2026-10-30"
   },
   "picks": [
@@ -30763,16 +30763,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "696af3b031e1ef71f4badf9e3a531cc324ebf78cd2184ab7c1c043c6720ffcfa",
+      "commitment_nonce": "c1eb49241d328bf83ed384d1725b291935e5d15402a5026bb66f02028e6c3801",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T11:08:07.710122Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1960",
       "first_observation": {
         "observed_at": "2026-10-30T11:08:16.887663Z",
         "parent_commit": "233f3fa0009fffd328733f957e353327893c7c92",
         "run": "https://github.com/0xinsider/picks/actions/runs/41045867297"
-      }
+      },
+      "kickoff": "2026-10-30T15:00:00Z",
+      "resolved_at": "2026-10-30T18:46:30.502608Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0xf84666d838cecbe688a45ecfb44b45334b25f4d16ff185add5023d9a0a5d5661",
+        "kickoff": "2026-10-30T15:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1960",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: MOUZ vs FURIA (BO3) - PGL Masters Bucharest Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1960",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T18:46:30.502608Z",
+          "parent_commit": "df167f05c105215a9e59d300df936f579b1bbde0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41109763043"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-30",
