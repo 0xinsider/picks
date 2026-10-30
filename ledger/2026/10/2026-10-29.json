@@ -495,16 +495,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1a5fe5e4dbbf88a58e2fa2ec295def6752b8bf6f54822c223614bb133b4cd651",
+      "commitment_nonce": "4ffaec2a9cc958228b01e40c58bc302a5541df8eb3e55ffa3d7b77a18acc641a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T21:42:02.282578Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1954",
       "first_observation": {
         "observed_at": "2026-10-29T21:42:12.551925Z",
         "parent_commit": "cc4befb83a48c3d2fc587e957f1d5e48e04c0261",
         "run": "https://github.com/0xinsider/picks/actions/runs/40959978434"
-      }
+      },
+      "kickoff": "2026-10-29T22:30:00Z",
+      "resolved_at": "2026-10-30T02:45:58.390105Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x95da4099bbe2e7f28c9639f4988240484e30b8d698700086509a56d642e365ae",
+        "kickoff": "2026-10-29T22:30:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1954",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CA Mineiro vs. Cruzeiro EC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1954",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T02:45:58.390105Z",
+          "parent_commit": "a4397945e8c690d36fcf2971fc7f99e78a56e621",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40993582255"
+        }
+      ]
     },
     {
       "pick_rank": 17,
