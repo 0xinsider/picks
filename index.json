@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 811,
-    "sealed": 3,
+    "opened": 812,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 537,
+    "proven": 538,
     "proven_record": {
-      "wins": 296,
+      "wins": 297,
       "losses": 236,
-      "decided": 532,
+      "decided": 533,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "1256.43",
-      "staked": "532000",
-      "roi": "0.2"
+      "hit_rate": "55.7",
+      "profit_usd": "2609.37",
+      "staked": "533000",
+      "roi": "0.5"
     },
-    "wins": 479,
+    "wins": 480,
     "losses": 325,
     "voids": 3,
-    "decided": 804,
+    "decided": 805,
     "withdrawn": 4,
     "hit_rate": "59.6",
     "stake_usd": "1000",
-    "profit_usd": "23002.37",
-    "staked": "804000",
-    "roi": "2.9",
-    "through": "2026-10-29"
+    "profit_usd": "24355.31",
+    "staked": "805000",
+    "roi": "3.0",
+    "through": "2026-10-30"
   },
   "picks": [
     {
@@ -30720,16 +30720,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a0facf728dd06aecab18b4823d8e033609f8668ac14db227b774affd8c2f3dff",
+      "commitment_nonce": "b5dd892c91f745a8b5349608eeb866e68c59c0b1b4fe2eaff0689fcd1e0bece8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T08:00:44.877570Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1959",
       "first_observation": {
         "observed_at": "2026-10-30T08:00:53.737906Z",
         "parent_commit": "8a81286bcce204f7143bf130740b1735ab7688ef",
         "run": "https://github.com/0xinsider/picks/actions/runs/41023606803"
-      }
+      },
+      "kickoff": "2026-10-30T12:00:00Z",
+      "resolved_at": "2026-10-30T14:41:50.127760Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x17ea8195c1c10258a6da1ddace9fabd8688a4d614cca747d23cc03806ae3ce03",
+        "kickoff": "2026-10-30T12:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1959",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Nemiga",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nemiga vs Vitality (BO3) - PGL Masters Bucharest Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1959",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T14:41:50.127760Z",
+          "parent_commit": "170390f43ffbdae7a6310ab49bba112c29b21924",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41073907835"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-30",
