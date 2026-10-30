@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ddc206cb8779fdca615e25232e09cd587e4037f2c3ef757ea8c83954ef7568c9",
+      "commitment_nonce": "ec9ccce9a3ac4ddd835955e24ea00f8acaf68ff19a5e711a9518f64ff362e976",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T20:15:03.963164Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1940",
       "first_observation": {
         "observed_at": "2026-10-29T20:15:13.086285Z",
         "parent_commit": "a3edd3eae629220f1c94e3b92206c7349f970e90",
         "run": "https://github.com/0xinsider/picks/actions/runs/40947329441"
-      }
+      },
+      "kickoff": "2026-10-30T00:15:00Z",
+      "resolved_at": "2026-10-30T03:43:35.449786Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x546ae9be4585df060195a8434f141820d175a92b4bc20fb16f231f0aeab09078",
+        "kickoff": "2026-10-30T00:15:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1940",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Panthers vs. Packers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1940",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T03:43:35.449786Z",
+          "parent_commit": "26dba62497508dda3732058507b4d21cc4aa8b74",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40998975006"
+        }
+      ]
     },
     {
       "pick_rank": 3,
