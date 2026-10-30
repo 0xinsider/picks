@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 814,
-    "sealed": 8,
+    "opened": 815,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 540,
+    "proven": 541,
     "proven_record": {
       "wins": 299,
-      "losses": 236,
-      "decided": 535,
+      "losses": 237,
+      "decided": 536,
       "withdrawn": 2,
-      "hit_rate": "55.9",
-      "profit_usd": "3489.46",
-      "staked": "535000",
-      "roi": "0.7"
+      "hit_rate": "55.8",
+      "profit_usd": "2489.46",
+      "staked": "536000",
+      "roi": "0.5"
     },
     "wins": 482,
-    "losses": 325,
+    "losses": 326,
     "voids": 3,
-    "decided": 807,
+    "decided": 808,
     "withdrawn": 4,
     "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "25235.39",
-    "staked": "807000",
-    "roi": "3.1",
+    "profit_usd": "24235.39",
+    "staked": "808000",
+    "roi": "3.0",
     "through": "2026-10-30"
   },
   "picks": [
@@ -30824,16 +30824,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dbcd47fc2c29717bb791abf333ab9a8be6475925bdaefa33070647d815ec4563",
+      "commitment_nonce": "970662a3e6085849e0a682a2e3f2057b32d93fe0dbf5de83f13a37931d92ca10",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T15:10:28.774670Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1962",
       "first_observation": {
         "observed_at": "2026-10-30T15:10:40.032613Z",
         "parent_commit": "79e7730e9957412300d1a06bc227f19c87d33941",
         "run": "https://github.com/0xinsider/picks/actions/runs/41078237251"
-      }
+      },
+      "kickoff": "2026-10-30T18:00:00Z",
+      "resolved_at": "2026-10-30T20:12:27.105380Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xf6f7c664dceafe65ae9fb83b1879f7e959fbfdf4d896d89af30e0a94ba631efb",
+        "kickoff": "2026-10-30T18:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1962",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Le Havre AC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Le Havre AC vs. Paris Saint-Germain FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1962",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T20:12:27.105380Z",
+          "parent_commit": "44ed98667eed359a541bb63699412f3e0c7d1f47",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41121367926"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-30",
