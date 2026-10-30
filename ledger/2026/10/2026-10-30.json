@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b31a93c6898235b4c5dba0154bf66a2dec12ece8a93a5c6922ef82e31a42b44c",
+      "commitment_nonce": "9f16375cc4f3fee031d375f263f86d7b02be77e2b990dba0416516241843e7d0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T12:56:00.254512Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1961",
       "first_observation": {
         "observed_at": "2026-10-30T12:56:10.277768Z",
         "parent_commit": "07f6e45b8f99f1f2eeb16387365745d1195ed168",
         "run": "https://github.com/0xinsider/picks/actions/runs/41059114181"
-      }
+      },
+      "kickoff": "2026-10-30T16:00:00Z",
+      "resolved_at": "2026-10-30T23:16:55.153426Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x759fe04d6b1ec6e4381cc012c43f4af93243a1227b433f6ed0af1a39fff69df5",
+        "kickoff": "2026-10-30T16:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1961",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "PRIVATE",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nuclear TigeRES vs PRIVATE (BO3) - CyberClash Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1961",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T23:16:55.153426Z",
+          "parent_commit": "03189d293617aeadc1e9384e4dc7c734130d6c8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41143510808"
+        }
+      ]
     },
     {
       "pick_rank": 4,
