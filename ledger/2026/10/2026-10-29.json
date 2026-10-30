@@ -259,16 +259,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "75a3340e6b1b56ff6edff1b4b5d0da478c23b7dbe5ac3f95d22bd2b1cf7741e0",
+      "commitment_nonce": "4244d3fe34ce4000104a9664a5f9798f4c08ed5018c07725520860e6ec1ceb5d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:00:05.621277Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1945",
       "first_observation": {
         "observed_at": "2026-10-29T22:00:14.119145Z",
         "parent_commit": "176d0629cf935d6621df7c5159257a6bc689ec2f",
         "run": "https://github.com/0xinsider/picks/actions/runs/40962385276"
-      }
+      },
+      "kickoff": "2026-10-30T02:00:00Z",
+      "resolved_at": "2026-10-30T05:17:29.997318Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xc299f9f1cd799de8865126ce5b23a233abe1253e12674ac24a952dbfa78d74d3",
+        "kickoff": "2026-10-30T02:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1945",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Ducks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sabres vs. Ducks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1945",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T05:17:29.997318Z",
+          "parent_commit": "0621ef570c818a25bfaee1de531bdac904acff64",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41007610212"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -612,16 +637,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "924c54afdbbc34c4f29badeff03500aed05b01a983bdc80881c72a4c281ae692",
+      "commitment_nonce": "4adc2c1cad96a412e20842310b51dfd9fe9e39909c78f3872205c1a319c8ee80",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:11:14.354443Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1955",
       "first_observation": {
         "observed_at": "2026-10-29T22:11:23.540830Z",
         "parent_commit": "419cf51511f2d1b633192f08308bf9bc3695254e",
         "run": "https://github.com/0xinsider/picks/actions/runs/40963893342"
-      }
+      },
+      "kickoff": "2026-10-30T02:00:00Z",
+      "resolved_at": "2026-10-30T05:17:30.009415Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x481429cfe9c1edf9dd22d878d1f51c4e012602574670b6e79614feb050f435b8",
+        "kickoff": "2026-10-30T02:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1955",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Senators vs. Kings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1955",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T05:17:30.009415Z",
+          "parent_commit": "0621ef570c818a25bfaee1de531bdac904acff64",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41007610212"
+        }
+      ]
     },
     {
       "pick_rank": 18,
