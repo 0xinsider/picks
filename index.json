@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 813,
-    "sealed": 7,
+    "opened": 814,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 539,
+    "proven": 540,
     "proven_record": {
-      "wins": 298,
+      "wins": 299,
       "losses": 236,
-      "decided": 534,
+      "decided": 535,
       "withdrawn": 2,
-      "hit_rate": "55.8",
-      "profit_usd": "3090.85",
-      "staked": "534000",
-      "roi": "0.6"
+      "hit_rate": "55.9",
+      "profit_usd": "3489.46",
+      "staked": "535000",
+      "roi": "0.7"
     },
-    "wins": 481,
+    "wins": 482,
     "losses": 325,
     "voids": 3,
-    "decided": 806,
+    "decided": 807,
     "withdrawn": 4,
     "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "24836.79",
-    "staked": "806000",
+    "profit_usd": "25235.39",
+    "staked": "807000",
     "roi": "3.1",
     "through": "2026-10-30"
   },
@@ -30878,16 +30878,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "de380f790aa9316150590dfc5445bc733f1c80c350b0833a7ebcc0633dc11b9f",
+      "commitment_nonce": "60fb6d705af41644235698d78ab0e9b5e622cad4c33d89d54114d4a6319cd430",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T16:34:50.500775Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1965",
       "first_observation": {
         "observed_at": "2026-10-30T16:35:01.194443Z",
         "parent_commit": "228c56594d303f39fcc8960a867e151d01ce9e46",
         "run": "https://github.com/0xinsider/picks/actions/runs/41091186510"
-      }
+      },
+      "kickoff": "2026-10-30T18:30:00Z",
+      "resolved_at": "2026-10-30T19:26:38.282225Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x7c86f62f337eec8f65e94ee960f92f0e6fc576dc68784cc830501178a4bba1ad",
+        "kickoff": "2026-10-30T18:30:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1965",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Jiri Lehecka",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Swiss Indoors Basel: Jerome Kym vs Jiri Lehecka",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1965",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T19:26:38.282225Z",
+          "parent_commit": "0d0ee63c7ae0392a3827e78563b8ba6c719fc4be",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41115296140"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-30",
