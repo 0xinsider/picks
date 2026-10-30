@@ -478,16 +478,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "042f354476dfd97ce1e79d42a0e325ed8cae4047051014e89e32538ecf0cfc92",
+      "commitment_nonce": "835dd0eae8a8d8130915f834b9c42d37c55f558b38dab377631ccb2732733c91",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T20:32:34.900203Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1953",
       "first_observation": {
         "observed_at": "2026-10-29T20:32:54.843710Z",
         "parent_commit": "8b1ceb4c5d69e4afdd74c6141881b269fd85e7c7",
         "run": "https://github.com/0xinsider/picks/actions/runs/40949953873"
-      }
+      },
+      "kickoff": "2026-10-30T00:00:00Z",
+      "resolved_at": "2026-10-30T03:13:35.592620Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xaf4f11806bc0a8f784e463183d02be9578a47cd80b284ac471c7046be3b54641",
+        "kickoff": "2026-10-30T00:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1953",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Blues",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bruins vs. Blues",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1953",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-30T03:13:35.592620Z",
+          "parent_commit": "737f7a00225eedbfdf4e03222d6155c35dcf3897",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40996170369"
+        }
+      ]
     },
     {
       "pick_rank": 16,
@@ -571,16 +596,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d4f11385bfda8c5bb406ddb00c6ce8b74a98a4b05de166c044c1709d20a43057",
+      "commitment_nonce": "3e0d580c7628023469f2c8747c1a970f90afa0e0f790942e4a5543f85060bc05",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-29T22:26:53.856251Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1957",
       "first_observation": {
         "observed_at": "2026-10-29T22:27:02.726032Z",
         "parent_commit": "8ddf77db2ff40434aa97ef19da25def52a3f5e07",
         "run": "https://github.com/0xinsider/picks/actions/runs/40965941092"
-      }
+      },
+      "kickoff": "2026-10-29T23:00:00Z",
+      "resolved_at": "2026-10-30T03:13:35.606269Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x053a64b77a0bd036fffb946c3cf48c79a94a580e35609262f9e587b363e1e7e2",
+        "kickoff": "2026-10-29T23:00:00Z",
+        "pick_date": "2026-10-29",
+        "pick_id": "1957",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CR Vasco da Gama vs. CR Flamengo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1957",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-30T03:13:35.606269Z",
+          "parent_commit": "737f7a00225eedbfdf4e03222d6155c35dcf3897",
+          "run": "https://github.com/0xinsider/picks/actions/runs/40996170369"
+        }
+      ]
     },
     {
       "pick_rank": 20,
