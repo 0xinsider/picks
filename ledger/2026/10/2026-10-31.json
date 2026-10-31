@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5f9927e518d9810b89d5a6483d66f95971741e398f9254314ca39935e1228d92",
+      "commitment_nonce": "ff62c5c94c2216ea2ea55fbab88c9a142b586ac9f1ea398ac6bc1dc9f0f469c5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T07:02:39.893216Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1974",
       "first_observation": {
         "observed_at": "2026-10-31T07:02:48.117696Z",
         "parent_commit": "edf27bf5b7fc69eb3a48b15b34db48d5aa5561f9",
         "run": "https://github.com/0xinsider/picks/actions/runs/41179009023"
-      }
+      },
+      "kickoff": "2026-10-31T11:00:00Z",
+      "resolved_at": "2026-10-31T16:22:14.908005Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xdf35c6f986f48548d3f5a10b3f7d5db283011675089414f82e97ed00dd6e0155",
+        "kickoff": "2026-10-31T11:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1974",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nemiga vs FURIA (BO5) - PGL Masters Bucharest Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1974",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T16:22:14.908005Z",
+          "parent_commit": "a022394f5712d603079bcdb53babea0fd542dee4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41219359079"
+        }
+      ]
     },
     {
       "pick_rank": 3,
