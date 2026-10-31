@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 836,
-    "sealed": 10,
+    "opened": 838,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 562,
+    "proven": 564,
     "proven_record": {
-      "wins": 310,
-      "losses": 247,
-      "decided": 557,
+      "wins": 311,
+      "losses": 248,
+      "decided": 559,
       "withdrawn": 2,
-      "hit_rate": "55.7",
-      "profit_usd": "2763.29",
-      "staked": "557000",
+      "hit_rate": "55.6",
+      "profit_usd": "2783.49",
+      "staked": "559000",
       "roi": "0.5"
     },
-    "wins": 493,
-    "losses": 336,
+    "wins": 494,
+    "losses": 337,
     "voids": 3,
-    "decided": 829,
+    "decided": 831,
     "withdrawn": 4,
-    "hit_rate": "59.5",
+    "hit_rate": "59.4",
     "stake_usd": "1000",
-    "profit_usd": "24509.23",
-    "staked": "829000",
+    "profit_usd": "24529.43",
+    "staked": "831000",
     "roi": "3.0",
     "through": "2026-10-31"
   },
@@ -31795,16 +31795,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9438fe130718e4926b3bba63f0d129f2f5f8d4a499016b3dde3b7b9aff08fb69",
+      "commitment_nonce": "0301b14e132784661f1e24434f76bbc2d8bc8184b8345225ee44788019e37344",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T15:11:26.304070Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1984",
       "first_observation": {
         "observed_at": "2026-10-31T15:11:36.209326Z",
         "parent_commit": "ca3e44e21b2945e245efc2d387c0d59b7982973e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41213658509"
-      }
+      },
+      "kickoff": "2026-10-31T16:00:00Z",
+      "resolved_at": "2026-10-31T20:16:05.173559Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.490000",
+        "condition_id": "0x717ef6ce1bdceec529b8e6df0f80d97a04d10bdaa019b1e8857322743575ee4b",
+        "kickoff": "2026-10-31T16:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1984",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Arizona",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Arizona vs. Texas Tech",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1984",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T20:16:05.173559Z",
+          "parent_commit": "34399cc17c237002baa28a0a068289c2ff17ad79",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41238100884"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
@@ -31813,16 +31838,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aaea539fdb37e937f1bcd03ee143fb0f613dd36cbc4d2e092d59c136cacfbb52",
+      "commitment_nonce": "bd856693adc9e8b443e3d0d2513e1b89220d6e3435a697cb47899d76f0754454",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T15:11:26.311744Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1985",
       "first_observation": {
         "observed_at": "2026-10-31T15:11:36.209326Z",
         "parent_commit": "ca3e44e21b2945e245efc2d387c0d59b7982973e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41213658509"
-      }
+      },
+      "kickoff": "2026-10-31T16:30:00Z",
+      "resolved_at": "2026-10-31T20:16:05.239138Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xd21aec4fec636854de29b66dd89a4658e26c3c3497f04c970a0da23748953b2a",
+        "kickoff": "2026-10-31T16:30:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1985",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Rutgers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Michigan vs. Rutgers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1985",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T20:16:05.239138Z",
+          "parent_commit": "34399cc17c237002baa28a0a068289c2ff17ad79",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41238100884"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
