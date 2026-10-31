@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 825,
-    "sealed": 4,
+    "opened": 826,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 551,
+    "proven": 552,
     "proven_record": {
       "wins": 306,
-      "losses": 240,
-      "decided": 546,
+      "losses": 241,
+      "decided": 547,
       "withdrawn": 2,
-      "hit_rate": "56.0",
-      "profit_usd": "6914.16",
-      "staked": "546000",
-      "roi": "1.3"
+      "hit_rate": "55.9",
+      "profit_usd": "5914.16",
+      "staked": "547000",
+      "roi": "1.1"
     },
     "wins": 489,
-    "losses": 329,
+    "losses": 330,
     "voids": 3,
-    "decided": 818,
+    "decided": 819,
     "withdrawn": 4,
-    "hit_rate": "59.8",
+    "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "28660.09",
-    "staked": "818000",
-    "roi": "3.5",
-    "through": "2026-10-30"
+    "profit_usd": "27660.09",
+    "staked": "819000",
+    "roi": "3.4",
+    "through": "2026-10-31"
   },
   "picks": [
     {
@@ -31322,16 +31322,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f1b08de57658d098ea555118884df3bd386b7f298eeb60b6fc0869163da3fa91",
+      "commitment_nonce": "aecbae7ef19bb8b19cf1f768026b26beb4c4da6e20ca35d60fda094af1afd0e3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T07:00:12.353119Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1973",
       "first_observation": {
         "observed_at": "2026-10-31T07:00:22.528684Z",
         "parent_commit": "63a37e896ed08d3b2fe35e82ce33af4ba53a4d92",
         "run": "https://github.com/0xinsider/picks/actions/runs/41178829397"
-      }
+      },
+      "kickoff": "2026-10-31T08:00:00Z",
+      "resolved_at": "2026-10-31T10:36:30.502902Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xb11f2d5dc3d0cdc147f36e3335f3b867432ac85b0984b149af2ec3c6e9eceaa0",
+        "kickoff": "2026-10-31T08:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1973",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Vitality",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Vitality vs MOUZ (BO3) - PGL Masters Bucharest Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1973",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T10:36:30.502902Z",
+          "parent_commit": "dbf3a48d3a818eec701cf62e912d15aec4b551c7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41193450650"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
