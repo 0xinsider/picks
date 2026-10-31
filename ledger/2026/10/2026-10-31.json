@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2f45649eb27eebad6c13f16142cba8b902e97b5e05616b341d349ca3291a8226",
+      "commitment_nonce": "16371a4a924afc56200cf184d884ab27d4717e72f63b618bdfb4363935d2e5e9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T11:10:51.133504Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1977",
       "first_observation": {
         "observed_at": "2026-10-31T11:11:00.259048Z",
         "parent_commit": "a736bec67fd8bd60f3280aeabc45bbac5b58584d",
         "run": "https://github.com/0xinsider/picks/actions/runs/41195780399"
-      }
+      },
+      "kickoff": "2026-10-31T15:00:00Z",
+      "resolved_at": "2026-10-31T17:42:17.872645Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x5b0a89f710062bb4df808ec0b9c19f456e1c135cb58efe7603bf853f72ffc86c",
+        "kickoff": "2026-10-31T15:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1977",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hull City AFC vs. Ipswich Town FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1977",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T17:42:17.872645Z",
+          "parent_commit": "fbc4305507ec756cd3152932673dadd7ddf7e355",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41225811841"
+        }
+      ]
     },
     {
       "pick_rank": 6,
