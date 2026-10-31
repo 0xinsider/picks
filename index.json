@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 843,
-    "sealed": 7,
+    "opened": 844,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 569,
+    "proven": 570,
     "proven_record": {
       "wins": 312,
-      "losses": 252,
-      "decided": 564,
+      "losses": 253,
+      "decided": 565,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "-855.96",
-      "staked": "564000",
-      "roi": "-0.2"
+      "hit_rate": "55.2",
+      "profit_usd": "-1855.96",
+      "staked": "565000",
+      "roi": "-0.3"
     },
     "wins": 495,
-    "losses": 341,
+    "losses": 342,
     "voids": 3,
-    "decided": 836,
+    "decided": 837,
     "withdrawn": 4,
-    "hit_rate": "59.2",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "20889.97",
-    "staked": "836000",
-    "roi": "2.5",
+    "profit_usd": "19889.97",
+    "staked": "837000",
+    "roi": "2.4",
     "through": "2026-10-31"
   },
   "picks": [
@@ -32071,16 +32071,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cd54e246139eae7661183cf837b56c18f93035d805423ce49e5e235ac587eae7",
+      "commitment_nonce": "09cf06c5a9b2927e04825abccc37648614baf8f8eb17d6c778fe15abeaa4fe61",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T18:40:44.433338Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1991",
       "first_observation": {
         "observed_at": "2026-10-31T18:40:52.822449Z",
         "parent_commit": "2f8009e511d1e73d27bfec4de78b1fc25e042ecf",
         "run": "https://github.com/0xinsider/picks/actions/runs/41230579620"
-      }
+      },
+      "kickoff": "2026-10-31T20:15:00Z",
+      "resolved_at": "2026-10-31T23:43:20.177526Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x3f876c80630830d34402c0b3d0411601fce4be096988c5aa5d7d3b8091833a71",
+        "kickoff": "2026-10-31T20:15:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1991",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Purdue",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Purdue vs. Penn State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1991",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T23:43:20.177526Z",
+          "parent_commit": "a019f34507b9fd2c8bc28456674e6586e5c99d33",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41253702578"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
