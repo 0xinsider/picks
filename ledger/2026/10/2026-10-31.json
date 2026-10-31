@@ -595,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "18f726e2d09498931932ef4cd92461065eadd4cc148257d80d075f2cda6d9f7f",
+      "commitment_nonce": "ade5f3e5bc57884e80b6b5100e1f461df1077da0d9bed0c98a75f3d3481ce5d5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T15:56:25.980656Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1987",
       "first_observation": {
         "observed_at": "2026-10-31T15:56:34.428513Z",
         "parent_commit": "d9759459f5d916083be04723b901031611944605",
         "run": "https://github.com/0xinsider/picks/actions/runs/41217229168"
-      }
+      },
+      "kickoff": "2026-10-31T19:45:00Z",
+      "resolved_at": "2026-10-31T22:00:52.528095Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x49eda6609cc0a1629399a1c0e18491fc8441907cb45b53272f56c0437f1d3d41",
+        "kickoff": "2026-10-31T19:45:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1987",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AC Milan vs. FC Internazionale Milano",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1987",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T22:00:52.528095Z",
+          "parent_commit": "ea59a1efc8f80cd3e75edaf8ff638ba7f03c0586",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41246214669"
+        }
+      ]
     },
     {
       "pick_rank": 16,
