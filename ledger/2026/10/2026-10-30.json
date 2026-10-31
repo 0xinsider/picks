@@ -343,16 +343,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2f8e5ae7747fe586888eff4d89c6c6e9edadae340c69917dbf4306aeda93e3a8",
+      "commitment_nonce": "e9757fc3fba823591093680f9b781407199a7e04bb6ebda7041d25a3b4655219",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T19:10:32.212118Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1967",
       "first_observation": {
         "observed_at": "2026-10-30T19:10:43.780043Z",
         "parent_commit": "f442e80582e72dc255559977a91b4d6b2fed54c7",
         "run": "https://github.com/0xinsider/picks/actions/runs/41113062811"
-      }
+      },
+      "kickoff": "2026-10-30T23:00:00Z",
+      "resolved_at": "2026-10-31T01:50:01.166612Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x786477de245fa8dcb4f06619a84e02a631f2f202a6c60424612f42d85b0f5c23",
+        "kickoff": "2026-10-30T23:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1967",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hornets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hornets vs. Wizards",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1967",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T01:50:01.166612Z",
+          "parent_commit": "1f1200fb5ee908749b21d0a429711e6b5edfe97a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41157204621"
+        }
+      ]
     },
     {
       "pick_rank": 10,
