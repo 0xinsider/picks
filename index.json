@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 838,
-    "sealed": 10,
+    "opened": 839,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 564,
+    "proven": 565,
     "proven_record": {
       "wins": 311,
-      "losses": 248,
-      "decided": 559,
+      "losses": 249,
+      "decided": 560,
       "withdrawn": 2,
-      "hit_rate": "55.6",
-      "profit_usd": "2783.49",
-      "staked": "559000",
-      "roi": "0.5"
+      "hit_rate": "55.5",
+      "profit_usd": "1783.49",
+      "staked": "560000",
+      "roi": "0.3"
     },
     "wins": 494,
-    "losses": 337,
+    "losses": 338,
     "voids": 3,
-    "decided": 831,
+    "decided": 832,
     "withdrawn": 4,
     "hit_rate": "59.4",
     "stake_usd": "1000",
-    "profit_usd": "24529.43",
-    "staked": "831000",
-    "roi": "3.0",
+    "profit_usd": "23529.43",
+    "staked": "832000",
+    "roi": "2.8",
     "through": "2026-10-31"
   },
   "picks": [
@@ -31953,16 +31953,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bcd8fa4ff5ae0a732dcacc7fb4ccd5d2d7173045237df354096c25caf8981740",
+      "commitment_nonce": "c3e17dfec3b9686d9536ff031be3579b114f889b4297e45e01946ef4ebaf2a42",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T18:25:01.540189Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1990",
       "first_observation": {
         "observed_at": "2026-10-31T18:25:10.914652Z",
         "parent_commit": "88fb304de59d78124502fd323f177988daf4d7ac",
         "run": "https://github.com/0xinsider/picks/actions/runs/41229310445"
-      }
+      },
+      "kickoff": "2026-10-31T19:00:00Z",
+      "resolved_at": "2026-10-31T21:27:21.192720Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x71874bcad405009c538f8c567061064b7d3aba050ab859a99636c01264de25d4",
+        "kickoff": "2026-10-31T19:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1990",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "St. Louis City SC vs. San Diego FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1990",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T21:27:21.192720Z",
+          "parent_commit": "230cf85e47cc3d939be269ca008af70ca8d07fe1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41243664136"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
