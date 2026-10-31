@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 831,
-    "sealed": 10,
+    "opened": 832,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 557,
+    "proven": 558,
     "proven_record": {
       "wins": 309,
-      "losses": 243,
-      "decided": 552,
+      "losses": 244,
+      "decided": 553,
       "withdrawn": 2,
-      "hit_rate": "56.0",
-      "profit_usd": "6053.89",
-      "staked": "552000",
-      "roi": "1.1"
+      "hit_rate": "55.9",
+      "profit_usd": "5053.89",
+      "staked": "553000",
+      "roi": "0.9"
     },
     "wins": 492,
-    "losses": 332,
+    "losses": 333,
     "voids": 3,
-    "decided": 824,
+    "decided": 825,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.6",
     "stake_usd": "1000",
-    "profit_usd": "27799.82",
-    "staked": "824000",
-    "roi": "3.4",
+    "profit_usd": "26799.82",
+    "staked": "825000",
+    "roi": "3.2",
     "through": "2026-10-31"
   },
   "picks": [
@@ -31537,16 +31537,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d4d661f196263c4603ac5ac214e87710c76892312a13217b633c6b5fb4c5d1d7",
+      "commitment_nonce": "0821808ab7821af5e160d3b02fb68138dc6e319fedafcef2fad0e1e4734072e0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T11:25:18.584Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1978",
       "first_observation": {
         "observed_at": "2026-10-31T11:25:26.678359Z",
         "parent_commit": "4e22545ad4137049ade224eae003414d83088fb1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41196787894"
-      }
+      },
+      "kickoff": "2026-10-31T15:15:00Z",
+      "resolved_at": "2026-10-31T18:07:07.430987Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0xbb224b89954045f1afe3e3f8be8c23e37b5870c91a2790d6c7fd773d7c4bc1db",
+        "kickoff": "2026-10-31T15:15:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1978",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rayo Vallecano de Madrid vs. RC Celta de Vigo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1978",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T18:07:07.430987Z",
+          "parent_commit": "ddb9dd8d8c980540ea2207ccedfe077caf705e35",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41227812704"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
