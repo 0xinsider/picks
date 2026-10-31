@@ -260,16 +260,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ea3c8a8ac1e9efe34d46c8ed93794f8ed9b918f6b81e86bf4fae40db42e99e63",
+      "commitment_nonce": "9c09fa56f23b8fc37d9e2fb7bd191868888cd776b537ca8aaaa5d22ed10b95c2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T14:09:13.322178Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1982",
       "first_observation": {
         "observed_at": "2026-10-31T14:09:21.755131Z",
         "parent_commit": "5a38a7d0fc65385691aac9db7ec7543c9fe20dfc",
         "run": "https://github.com/0xinsider/picks/actions/runs/41208799875"
-      }
+      },
+      "kickoff": "2026-10-31T15:00:00Z",
+      "resolved_at": "2026-10-31T17:11:44.367236Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x2b5361d9756413e40c8f4d38679ee3fa0b58b395d56428329551d65f257a4676",
+        "kickoff": "2026-10-31T15:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1982",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brentford FC vs. Nottingham Forest FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1982",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T17:11:44.367236Z",
+          "parent_commit": "7baa1c9937bc7787720edf9e659e2a418bd0b88e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41223339539"
+        }
+      ]
     },
     {
       "pick_rank": 11,
