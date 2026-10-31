@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 826,
-    "sealed": 5,
+    "opened": 827,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 552,
+    "proven": 553,
     "proven_record": {
-      "wins": 306,
+      "wins": 307,
       "losses": 241,
-      "decided": 547,
+      "decided": 548,
       "withdrawn": 2,
-      "hit_rate": "55.9",
-      "profit_usd": "5914.16",
-      "staked": "547000",
-      "roi": "1.1"
+      "hit_rate": "56.0",
+      "profit_usd": "6322.61",
+      "staked": "548000",
+      "roi": "1.2"
     },
-    "wins": 489,
+    "wins": 490,
     "losses": 330,
     "voids": 3,
-    "decided": 819,
+    "decided": 820,
     "withdrawn": 4,
-    "hit_rate": "59.7",
+    "hit_rate": "59.8",
     "stake_usd": "1000",
-    "profit_usd": "27660.09",
-    "staked": "819000",
+    "profit_usd": "28068.54",
+    "staked": "820000",
     "roi": "3.4",
     "through": "2026-10-31"
   },
@@ -31383,16 +31383,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e9d384e803211e1a0e2d6a939410cb0ec834b22ed643f640b4269c4a9bd732a3",
+      "commitment_nonce": "b15e57e8cb00d09a1d2f5e62893c0039dc4882ceef50c48d11a5435cec314948",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T08:25:27.784917Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1975",
       "first_observation": {
         "observed_at": "2026-10-31T08:25:36.668068Z",
         "parent_commit": "455a5e9054a9b548d16c4eaadc93496820bd8ee1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41184553416"
-      }
+      },
+      "kickoff": "2026-10-31T09:00:00Z",
+      "resolved_at": "2026-10-31T12:35:01.942927Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.710000",
+        "condition_id": "0x680d34edfeda5dab9aa3a952bc66eb297b1f3deffddb5e8e47981a6850fe02ff",
+        "kickoff": "2026-10-31T09:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1975",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "HOTU",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: HOTU vs The Huns Esports (BO3) - Moscow Cyber Games Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1975",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T12:35:01.942927Z",
+          "parent_commit": "fe28fa71ee3fd4b6174369a8a6c69f878c7ed82c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41201756305"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
