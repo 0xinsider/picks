@@ -108,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5b71b0a60db017320720b44b079f4ede07150e24ee203d4b1a809f4ddf353b37",
+      "commitment_nonce": "ec555af392f92d64fcd1324a6bc8787c9567aae2957a3b278f8740c3684aa09c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T08:38:46.474151Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1976",
       "first_observation": {
         "observed_at": "2026-10-31T08:39:02.797195Z",
         "parent_commit": "47fd7ba0374f43b60d15e7e2df0f0649f736b246",
         "run": "https://github.com/0xinsider/picks/actions/runs/41185448985"
-      }
+      },
+      "kickoff": "2026-10-31T12:30:00Z",
+      "resolved_at": "2026-10-31T14:58:01.744692Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x871c424db72644585e0791b16a865ff4c02118ea9673a00c5a2c7ecac785b582",
+        "kickoff": "2026-10-31T12:30:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1976",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chelsea FC vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1976",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T14:58:01.744692Z",
+          "parent_commit": "4dd8d13b592d07b8bafd752b3045389390c7a2f0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41212562043"
+        }
+      ]
     },
     {
       "pick_rank": 5,
