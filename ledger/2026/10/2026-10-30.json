@@ -360,16 +360,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ab4ce4caab6554076673a8eee48d72bcb7375df9dfb6831016a6781431eefc06",
+      "commitment_nonce": "89c7b99ccb78b7e55d466a2ac5484c8cd8f68117fac14bf779b35801fe9199d1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T19:31:29.344161Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1968",
       "first_observation": {
         "observed_at": "2026-10-30T19:31:39.649522Z",
         "parent_commit": "61a5f3cf5107e0bddd79e5d35d0b2957029f5794",
         "run": "https://github.com/0xinsider/picks/actions/runs/41115947628"
-      }
+      },
+      "kickoff": "2026-10-30T23:30:00Z",
+      "resolved_at": "2026-10-31T01:05:20.561549Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.590000",
+        "condition_id": "0x600f5d4b61614be9ad25c6e9a74d95ce5b56cabc24edd90318999e77a8edebd5",
+        "kickoff": "2026-10-30T23:30:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1968",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "DENDELE CS",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: DENDELE CS vs Turma do Pagode (BO3) - Gamers Club Masters Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1968",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T01:05:20.561549Z",
+          "parent_commit": "a3dfae38c682fb3fbfbd02256f68a06f454d0451",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41153592197"
+        }
+      ]
     },
     {
       "pick_rank": 11,
