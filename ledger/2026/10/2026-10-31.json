@@ -553,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cb9e55caa67644f58c6b21de1277caa8aebebabc13a3f3ba6936d830066a6d07",
+      "commitment_nonce": "c91968decdd90c043825181ebb3d495e50e1dc9659f14ec80422d5e56f6a2532",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T15:11:26.315469Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1986",
       "first_observation": {
         "observed_at": "2026-10-31T15:11:36.209326Z",
         "parent_commit": "ca3e44e21b2945e245efc2d387c0d59b7982973e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41213658509"
-      }
+      },
+      "kickoff": "2026-10-31T19:00:00Z",
+      "resolved_at": "2026-10-31T21:46:16.471455Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x7dd681de58b43f936d0a3ff16c4bdec46eb58c46816a467e48f842246bcfbe31",
+        "kickoff": "2026-10-31T19:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1986",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Trail Blazers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Trail Blazers vs. Jazz",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1986",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T21:46:16.471455Z",
+          "parent_commit": "449284356509098bb23840f5b39033105889c86d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41245126089"
+        }
+      ]
     },
     {
       "pick_rank": 15,
