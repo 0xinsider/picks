@@ -427,16 +427,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ba94feb5fd1e100b2af90716a01ecf228ec3fa4ecadd5125951885fe1545f21b",
+      "commitment_nonce": "4b62f31ec2b49ece1ad861ea9260ff71a950c348b8919064b903b5d45c4d4b4d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T19:41:21.192816Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1969",
       "first_observation": {
         "observed_at": "2026-10-30T19:41:31.545403Z",
         "parent_commit": "749e4028425f452328a638053f1beae54f2636c0",
         "run": "https://github.com/0xinsider/picks/actions/runs/41117279867"
-      }
+      },
+      "kickoff": "2026-10-30T23:30:00Z",
+      "resolved_at": "2026-10-31T02:31:02.828003Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x124b43c1e612cd900304968d43f620735fcc02b92c8f738701e9d9f11584f41b",
+        "kickoff": "2026-10-30T23:30:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1969",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "76ers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. 76ers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1969",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T02:31:02.828003Z",
+          "parent_commit": "885ef5dc5ec5239ccd65359affbf5d9bfb495daa",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41160359224"
+        }
+      ]
     },
     {
       "pick_rank": 12,
