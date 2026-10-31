@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 832,
-    "sealed": 13,
+    "opened": 836,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 558,
+    "proven": 562,
     "proven_record": {
-      "wins": 309,
-      "losses": 244,
-      "decided": 553,
+      "wins": 310,
+      "losses": 247,
+      "decided": 557,
       "withdrawn": 2,
-      "hit_rate": "55.9",
-      "profit_usd": "5053.89",
-      "staked": "553000",
-      "roi": "0.9"
+      "hit_rate": "55.7",
+      "profit_usd": "2763.29",
+      "staked": "557000",
+      "roi": "0.5"
     },
-    "wins": 492,
-    "losses": 333,
+    "wins": 493,
+    "losses": 336,
     "voids": 3,
-    "decided": 825,
+    "decided": 829,
     "withdrawn": 4,
-    "hit_rate": "59.6",
+    "hit_rate": "59.5",
     "stake_usd": "1000",
-    "profit_usd": "26799.82",
-    "staked": "825000",
-    "roi": "3.2",
+    "profit_usd": "24509.23",
+    "staked": "829000",
+    "roi": "3.0",
     "through": "2026-10-31"
   },
   "picks": [
@@ -31580,16 +31580,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3db6b1de6d49102baadf29704ac6fcab23702701f8674664e223e7e44a72f08f",
+      "commitment_nonce": "a99bd898a21a7554dd5090b6a8f0ae91a4feb5fea118ae1f6a9f2646339b313d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T13:18:11.580808Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1979",
       "first_observation": {
         "observed_at": "2026-10-31T13:18:19.644972Z",
         "parent_commit": "e18bce7f60c5a1eb1cccda52a06d32793be7d4e9",
         "run": "https://github.com/0xinsider/picks/actions/runs/41204947400"
-      }
+      },
+      "kickoff": "2026-10-31T14:00:00Z",
+      "resolved_at": "2026-10-31T19:56:43.150221Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xab1b88d02c694ab9a631add9eca0fe3229a2dfc4212080ebc2e69e26c6ccb3a1",
+        "kickoff": "2026-10-31T14:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1979",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "US Cremonese vs. Benevento Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1979",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T19:56:43.150221Z",
+          "parent_commit": "44b83fed8509ff33a69b15c7d215947f5b3ffc46",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41236555594"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
@@ -31598,16 +31623,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e43cb87c2f4cff6355e808312fe3ad53ea3c603ef5d7edb4e5dacee8c5fafdfc",
+      "commitment_nonce": "2944666f0821a620aee4dc8780cdfdd6836fc9f36e3713ff7bbd19061c5cea8f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T13:41:26.578760Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1980",
       "first_observation": {
         "observed_at": "2026-10-31T13:41:34.858391Z",
         "parent_commit": "354773d8bb82b1555de34afd743df459c72e961e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41206702809"
-      }
+      },
+      "kickoff": "2026-10-31T17:00:00Z",
+      "resolved_at": "2026-10-31T19:56:43.160922Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0x0938dcb9f89b62fbc7cee027a30e24d4ec1df482369c176d6c79785c2fa6bd0c",
+        "kickoff": "2026-10-31T17:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1980",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Movistar KOI",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Karmine Corp vs Movistar KOI (BO3) - Worlds Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1980",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T19:56:43.160922Z",
+          "parent_commit": "44b83fed8509ff33a69b15c7d215947f5b3ffc46",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41236555594"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
@@ -31616,16 +31666,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "381327f8628a2521fc43666833e8fd1612e62be2eb0e47ce3fc77426b0761e5c",
+      "commitment_nonce": "b53b7f6f737c13c2631ecb01529c06df17483af1d312a1d030eac8a1b4b9040a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T13:41:26.587562Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1981",
       "first_observation": {
         "observed_at": "2026-10-31T13:41:34.858391Z",
         "parent_commit": "354773d8bb82b1555de34afd743df459c72e961e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41206702809"
-      }
+      },
+      "kickoff": "2026-10-31T17:30:00Z",
+      "resolved_at": "2026-10-31T19:56:43.167172Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x0059a5d95a7d7fb7cc9a8dcb79cbacd626384d97649aa770a931c637d6f630a8",
+        "kickoff": "2026-10-31T17:30:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1981",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tottenham Hotspur FC vs. Crystal Palace FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1981",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T19:56:43.167172Z",
+          "parent_commit": "44b83fed8509ff33a69b15c7d215947f5b3ffc46",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41236555594"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
@@ -31677,16 +31752,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "310ca68699dcc13bb44567191b245bef961218e40b7f69acdbd706744b0b5a79",
+      "commitment_nonce": "2e210f7f0072dccd4f67dea7ef8d338b8459e47e0781dc33a12b7a73619276f6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T14:10:51.445050Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1983",
       "first_observation": {
         "observed_at": "2026-10-31T14:10:59.211247Z",
         "parent_commit": "5828d34160db304c6a93863fe5e82d772b24a38d",
         "run": "https://github.com/0xinsider/picks/actions/runs/41208931085"
-      }
+      },
+      "kickoff": "2026-10-31T17:30:00Z",
+      "resolved_at": "2026-10-31T19:56:43.175580Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x89f55a4e1aeece4495ea1f6bf58a4edf789513ddbf8e74783f08d30159d7858a",
+        "kickoff": "2026-10-31T17:30:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1983",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Bayern München vs. BV Borussia 09 Dortmund",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1983",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T19:56:43.175580Z",
+          "parent_commit": "44b83fed8509ff33a69b15c7d215947f5b3ffc46",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41236555594"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
