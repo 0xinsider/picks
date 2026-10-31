@@ -637,16 +637,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7241399391acaa701164fd7c63473130a95e3ccfcce3769277b57aa0ea6c5b5e",
+      "commitment_nonce": "717c62b793158abd2cf2ccb946ad54122d4842ab33aa960360746bcd954ab795",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T16:10:23.829487Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1988",
       "first_observation": {
         "observed_at": "2026-10-31T16:10:33.699346Z",
         "parent_commit": "4277762d3efc10bb448fe5a9516fed7d602a7d33",
         "run": "https://github.com/0xinsider/picks/actions/runs/41218376606"
-      }
+      },
+      "kickoff": "2026-10-31T20:00:00Z",
+      "resolved_at": "2026-10-31T22:21:49.727947Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x30ae47b1ba044d91627b8226074d5e40947241fcc771fdb95e66a2c850cc3b05",
+        "kickoff": "2026-10-31T20:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1988",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Aston Villa FC vs. Fulham FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1988",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T22:21:49.727947Z",
+          "parent_commit": "9025cd0309532174752b035cdac5d913c08965f0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41247847712"
+        }
+      ]
     },
     {
       "pick_rank": 17,
@@ -730,16 +755,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a1e60112c268fd18a57ec70120983ef69668f018ede92c340e765f31d77d64a6",
+      "commitment_nonce": "d3f591504ac684615ba0616b410848524820631e2dc8ad186be9836c072c9070",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T19:11:41.035124Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1992",
       "first_observation": {
         "observed_at": "2026-10-31T19:11:51.222208Z",
         "parent_commit": "e41dc50bc9cb151f5645ddc519b59b652d23591a",
         "run": "https://github.com/0xinsider/picks/actions/runs/41233052883"
-      }
+      },
+      "kickoff": "2026-10-31T20:00:00Z",
+      "resolved_at": "2026-10-31T22:21:49.745538Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xd1f3539dd05813a0dee804f1880d834b68cab01e6bd39d6531c1d0726eb30b91",
+        "kickoff": "2026-10-31T20:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1992",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Deportivo Alavés",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Barcelona vs. Deportivo Alavés",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1992",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-10-31T22:21:49.745538Z",
+          "parent_commit": "9025cd0309532174752b035cdac5d913c08965f0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41247847712"
+        }
+      ]
     },
     {
       "pick_rank": 21,
