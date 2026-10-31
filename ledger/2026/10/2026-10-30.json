@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "890d2ebda734b91f393f51a01fb986c03474db8ddad27bf2aa471b3bfe6199de",
+      "commitment_nonce": "d0ff2d86d6f7b6ec98a81be073bdbd6e573cef652f20d6b2a936aa4508f3f73b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T22:41:33.269326Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1971",
       "first_observation": {
         "observed_at": "2026-10-30T22:41:45.465739Z",
         "parent_commit": "5f31dc58989c8e11c290773c3c0eb0eb48055ef3",
         "run": "https://github.com/0xinsider/picks/actions/runs/41139784674"
-      }
+      },
+      "kickoff": "2026-10-31T01:00:00Z",
+      "resolved_at": "2026-10-31T05:09:10.122430Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xd23f3ff5020d74b556e362f977ef07fe327cbc849aa243fd38147561c3bce54a",
+        "kickoff": "2026-10-31T01:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1971",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Atlético San Luis vs. Atlas FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1971",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T05:09:10.122430Z",
+          "parent_commit": "3f077eebbb0106f5dcbfdf5ccf5de931f62c08ef",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41171431549"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -528,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dc84f0ae7a8d06d2746ef8d52add4c6c65997d2644d9fce61133d1f4a6705339",
+      "commitment_nonce": "c035cd18ef4c85d21319ed51acbded6e95713484f52a95617a2cf5d33c2ea0fd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T00:55:30.431903Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1972",
       "first_observation": {
         "observed_at": "2026-10-31T00:55:40.440906Z",
         "parent_commit": "09bea6d148dead9f0a82126005123425815ad7ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/41152759190"
-      }
+      },
+      "kickoff": "2026-10-31T02:00:00Z",
+      "resolved_at": "2026-10-31T05:09:10.065073Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xed91f2fcaaaa61ab7f6f0dace4892b2724660998e64fdbe86f6b8c10c0bcd20d",
+        "kickoff": "2026-10-31T02:00:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1972",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Warriors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lakers vs. Warriors",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1972",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T05:09:10.065073Z",
+          "parent_commit": "3f077eebbb0106f5dcbfdf5ccf5de931f62c08ef",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41171431549"
+        }
+      ]
     }
   ]
 }
