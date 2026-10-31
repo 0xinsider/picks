@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 822,
-    "sealed": 3,
+    "opened": 823,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 548,
+    "proven": 549,
     "proven_record": {
-      "wins": 303,
+      "wins": 304,
       "losses": 240,
-      "decided": 543,
+      "decided": 544,
       "withdrawn": 2,
-      "hit_rate": "55.8",
-      "profit_usd": "3200.51",
-      "staked": "543000",
-      "roi": "0.6"
+      "hit_rate": "55.9",
+      "profit_usd": "4262.37",
+      "staked": "544000",
+      "roi": "0.8"
     },
-    "wins": 486,
+    "wins": 487,
     "losses": 329,
     "voids": 3,
-    "decided": 815,
+    "decided": 816,
     "withdrawn": 4,
-    "hit_rate": "59.6",
+    "hit_rate": "59.7",
     "stake_usd": "1000",
-    "profit_usd": "24946.45",
-    "staked": "815000",
-    "roi": "3.1",
+    "profit_usd": "26008.30",
+    "staked": "816000",
+    "roi": "3.2",
     "through": "2026-10-30"
   },
   "picks": [
@@ -31193,16 +31193,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "30e7980ab72501cf9e16c650967632a6eb99b6aad98207e9f743a7da2e561040",
+      "commitment_nonce": "f908f4c0fef6ae9483ab0fb09468ee8f570a7cbe7a16ec325e3e1fc4e1da984b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-30T21:16:35.385009Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1970",
       "first_observation": {
         "observed_at": "2026-10-30T21:16:44.831876Z",
         "parent_commit": "09df69db0a15f15fb1ae70266691c53f7f5f5f05",
         "run": "https://github.com/0xinsider/picks/actions/runs/41129801985"
-      }
+      },
+      "kickoff": "2026-10-30T23:30:00Z",
+      "resolved_at": "2026-10-31T03:44:53.933395Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x0c265cdbb373bd8571ec7212e382a2b283fb8ed23edf75733669c4a7a2effd54",
+        "kickoff": "2026-10-30T23:30:00Z",
+        "pick_date": "2026-10-30",
+        "pick_id": "1970",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Baylor",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Baylor vs. UCF",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1970",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-10-31T03:44:53.933395Z",
+          "parent_commit": "63f7892fb4105bc746ffadf7be8562e8b67a3020",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41165687690"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-30",
