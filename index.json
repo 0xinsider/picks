@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 848,
-    "sealed": 2,
+    "opened": 849,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 574,
+    "proven": 575,
     "proven_record": {
       "wins": 315,
-      "losses": 254,
-      "decided": 569,
+      "losses": 255,
+      "decided": 570,
       "withdrawn": 2,
-      "hit_rate": "55.4",
-      "profit_usd": "52.40",
-      "staked": "569000",
-      "roi": "0.0"
+      "hit_rate": "55.3",
+      "profit_usd": "-947.60",
+      "staked": "570000",
+      "roi": "-0.2"
     },
     "wins": 498,
-    "losses": 343,
+    "losses": 344,
     "voids": 3,
-    "decided": 841,
+    "decided": 842,
     "withdrawn": 4,
-    "hit_rate": "59.2",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "21798.34",
-    "staked": "841000",
-    "roi": "2.6",
+    "profit_usd": "20798.34",
+    "staked": "842000",
+    "roi": "2.5",
     "through": "2026-10-31"
   },
   "picks": [
@@ -32225,16 +32225,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0ade7f23bf7665aced5bd4b88925e4403d24d8e729aa37659ca1317e9741d7d8",
+      "commitment_nonce": "88a2a6332a2f066263e1ce1706b56e1913eb94b084183dbf24251649e200d393",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T20:26:29.606466Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1994",
       "first_observation": {
         "observed_at": "2026-10-31T20:26:38.465953Z",
         "parent_commit": "1bda103290a0c8764b126b1ec838ed3af206ff76",
         "run": "https://github.com/0xinsider/picks/actions/runs/41238917009"
-      }
+      },
+      "kickoff": "2026-10-31T23:00:00Z",
+      "resolved_at": "2026-11-01T03:27:26.497431Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xf7a697fb4e3c2e8e716d9b4b19515921afc69ca12f62e13c560df9fb338f22d2",
+        "kickoff": "2026-10-31T23:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1994",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Oklahoma State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Oklahoma State vs. Iowa State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1994",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T03:27:26.497431Z",
+          "parent_commit": "f388a3c869d6f9406464bf860069d0105013cf7b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41269250519"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
