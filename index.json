@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 853,
-    "sealed": 17,
+    "opened": 854,
+    "sealed": 16,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 579,
+    "proven": 580,
     "proven_record": {
-      "wins": 317,
+      "wins": 318,
       "losses": 257,
-      "decided": 574,
+      "decided": 575,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-985.65",
-      "staked": "574000",
-      "roi": "-0.2"
+      "hit_rate": "55.3",
+      "profit_usd": "-116.49",
+      "staked": "575000",
+      "roi": "-0.0"
     },
-    "wins": 500,
+    "wins": 501,
     "losses": 346,
     "voids": 3,
-    "decided": 846,
+    "decided": 847,
     "withdrawn": 4,
     "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "20760.29",
-    "staked": "846000",
-    "roi": "2.5",
+    "profit_usd": "21629.44",
+    "staked": "847000",
+    "roi": "2.6",
     "through": "2026-11-01"
   },
   "picks": [
@@ -32616,16 +32616,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2e74bb21715d7a663dfbcc96f99864c9b60714eec7179d62baae6f82f0faf4c4",
+      "commitment_nonce": "fde6a38ce69a2668bd564b3de7358ced119601c4c6036aae55edd4b624239053",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T15:26:30.545671Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2006",
       "first_observation": {
         "observed_at": "2026-11-01T15:26:41.133813Z",
         "parent_commit": "5636846efcc50dded573083cdece3d2b8d925819",
         "run": "https://github.com/0xinsider/picks/actions/runs/41321237604"
-      }
+      },
+      "kickoff": "2026-11-01T16:15:00Z",
+      "resolved_at": "2026-11-01T18:28:05.005486Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xa38884516008f038165519a28bbe0d6f5ad847b3c1a5ce1fedde19209e68b144",
+        "kickoff": "2026-11-01T16:15:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2006",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Paris FC vs. AS Monaco FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2006",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T18:28:05.005486Z",
+          "parent_commit": "d298be4b28622f2920ecd727b29deba0d174b041",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41336767434"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
