@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b0dfbde159ccc978b65aa50a741e93dfdabd57198eaa01e5a33980c3c4cb5d54",
+      "commitment_nonce": "299201e8844ed71101641cc8af2efbb0dd19d36ae6025983bf2bbb5b4187ff12",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T14:03:57.913071Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2001",
       "first_observation": {
         "observed_at": "2026-11-01T14:04:08.494951Z",
         "parent_commit": "ae7b735c41c8afe78cc72b7701c88520d22a26e7",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314295699"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:12:21.548366Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x13db2675fa432e07ffd6a557f44b60af52750a80b774578b25dde915deabaac5",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2001",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Falcons",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Falcons vs. Buccaneers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2001",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T21:12:21.548366Z",
+          "parent_commit": "f37d7a8216e46a70782e1c19b58cba1cffe7d3da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41350798830"
+        }
+      ]
     },
     {
       "pick_rank": 5,
@@ -201,16 +226,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0443202c0b46a482f9f8ba6409d8e1c6a0d96ba3dba44c5e94a95c4168c5e3dd",
+      "commitment_nonce": "1d9bcde216485ac91afbb1fbed40daccc67697b9429897873885b9b7ecef2ad4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T14:11:33.789704Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2005",
       "first_observation": {
         "observed_at": "2026-11-01T14:11:42.368779Z",
         "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:12:21.563886Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x8bc3652dfafdab8a4e339cf3cf48c6f92542cd75aafd7e30c16e16c17f3a3b05",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2005",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Falcons",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Falcons vs. Buccaneers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2005",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T21:12:21.563886Z",
+          "parent_commit": "f37d7a8216e46a70782e1c19b58cba1cffe7d3da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41350798830"
+        }
+      ]
     },
     {
       "pick_rank": 9,
@@ -412,16 +462,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c97feee89fde643bbea71504014336f99fb725bcc54c003f39b28d86bcf5b4b8",
+      "commitment_nonce": "8bf8c63ee4dbb3118f154506bd420bc73029a972d650b1258a2595b3b3600369",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T16:41:28.116040Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2013",
       "first_observation": {
         "observed_at": "2026-11-01T16:41:36.441406Z",
         "parent_commit": "2e41e47024dc2ff42b6540994116400425b74d5d",
         "run": "https://github.com/0xinsider/picks/actions/runs/41327613499"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:12:21.571258Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xfa8bd8b518a9b1a5f733c41a01e69bd83b3749b66892fb50b580e63d5f081441",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2013",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Titans vs. Bengals",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2013",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T21:12:21.571258Z",
+          "parent_commit": "f37d7a8216e46a70782e1c19b58cba1cffe7d3da",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41350798830"
+        }
+      ]
     },
     {
       "pick_rank": 17,
