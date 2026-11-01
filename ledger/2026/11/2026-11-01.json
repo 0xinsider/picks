@@ -68,6 +68,74 @@
         "parent_commit": "ae7b735c41c8afe78cc72b7701c88520d22a26e7",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314295699"
       }
+    },
+    {
+      "pick_rank": 5,
+      "pick_id": "2002",
+      "publication_order": 5,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "d1d92de73592df42926c43e9b6542292db98304148becf1065562a0efec31da1",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-11-01T14:11:33.757616Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2002",
+      "first_observation": {
+        "observed_at": "2026-11-01T14:11:42.368779Z",
+        "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
+        "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
+      }
+    },
+    {
+      "pick_rank": 6,
+      "pick_id": "2003",
+      "publication_order": 6,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "382af6fdee386fd9f16d072ffddbb7d02d64dcad2442595359b581c7ddee3421",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-11-01T14:11:33.768721Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2003",
+      "first_observation": {
+        "observed_at": "2026-11-01T14:11:42.368779Z",
+        "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
+        "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
+      }
+    },
+    {
+      "pick_rank": 7,
+      "pick_id": "2004",
+      "publication_order": 7,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "f099c6f307b6fde70ff5b345f7b870434a0d4512880bd6ef63c5fa31bdbba9a4",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-11-01T14:11:33.778910Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2004",
+      "first_observation": {
+        "observed_at": "2026-11-01T14:11:42.368779Z",
+        "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
+        "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
+      }
+    },
+    {
+      "pick_rank": 8,
+      "pick_id": "2005",
+      "publication_order": 8,
+      "is_free_selection": false,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "0443202c0b46a482f9f8ba6409d8e1c6a0d96ba3dba44c5e94a95c4168c5e3dd",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-11-01T14:11:33.789704Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2005",
+      "first_observation": {
+        "observed_at": "2026-11-01T14:11:42.368779Z",
+        "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
+        "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
+      }
     }
   ]
 }
