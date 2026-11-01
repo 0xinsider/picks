@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 850,
-    "sealed": 10,
+    "opened": 851,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 576,
+    "proven": 577,
     "proven_record": {
       "wins": 316,
-      "losses": 255,
-      "decided": 571,
+      "losses": 256,
+      "decided": 572,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "72.60",
-      "staked": "571000",
-      "roi": "0.0"
+      "hit_rate": "55.2",
+      "profit_usd": "-927.40",
+      "staked": "572000",
+      "roi": "-0.2"
     },
     "wins": 499,
-    "losses": 344,
+    "losses": 345,
     "voids": 3,
-    "decided": 843,
+    "decided": 844,
     "withdrawn": 4,
-    "hit_rate": "59.2",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "21818.54",
-    "staked": "843000",
-    "roi": "2.6",
-    "through": "2026-10-31"
+    "profit_usd": "20818.54",
+    "staked": "844000",
+    "roi": "2.5",
+    "through": "2026-11-01"
   },
   "picks": [
     {
@@ -32397,16 +32397,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "207bae8149108d9f74126619c3437b7150ebeafc096cf4667d200ecb7e7768a4",
+      "commitment_nonce": "d804c01194f7fa4587bd36af27e59f29706e5af58db990ab4d524a1ec0e47343",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T08:00:11.464091Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1998",
       "first_observation": {
         "observed_at": "2026-11-01T08:00:19.958981Z",
         "parent_commit": "0e7ca0e22623524ebc69b02c2a73ae0f240b1c75",
         "run": "https://github.com/0xinsider/picks/actions/runs/41286994346"
-      }
+      },
+      "kickoff": "2026-11-01T11:00:00Z",
+      "resolved_at": "2026-11-01T15:31:38.972458Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x76b95600939d25a82ec6b25754f74c9e24628010599b65e6fa8b1f9aa2d832d5",
+        "kickoff": "2026-11-01T11:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "1998",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Phantom",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Betclic Apogee Esports vs Phantom (BO3) - CCT Europe Series #12 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1998",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T15:31:38.972458Z",
+          "parent_commit": "3c2d9974d7044b8f1b5b22bfd10c40e0def6f7ce",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41321670856"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
