@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 859,
-    "sealed": 12,
+    "opened": 862,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 585,
+    "proven": 588,
     "proven_record": {
-      "wins": 320,
+      "wins": 323,
       "losses": 260,
-      "decided": 580,
+      "decided": 583,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-1656.03",
-      "staked": "580000",
-      "roi": "-0.3"
+      "hit_rate": "55.4",
+      "profit_usd": "1494.91",
+      "staked": "583000",
+      "roi": "0.3"
     },
-    "wins": 503,
+    "wins": 506,
     "losses": 349,
     "voids": 3,
-    "decided": 852,
+    "decided": 855,
     "withdrawn": 4,
-    "hit_rate": "59.0",
+    "hit_rate": "59.2",
     "stake_usd": "1000",
-    "profit_usd": "20089.90",
-    "staked": "852000",
-    "roi": "2.4",
+    "profit_usd": "23240.84",
+    "staked": "855000",
+    "roi": "2.7",
     "through": "2026-11-01"
   },
   "picks": [
@@ -32587,16 +32587,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "382af6fdee386fd9f16d072ffddbb7d02d64dcad2442595359b581c7ddee3421",
+      "commitment_nonce": "8db91ac1326a4d498a296d10cf2c9624a20334f23f5af0565ceadb9e469c3c6e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T14:11:33.768721Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2003",
       "first_observation": {
         "observed_at": "2026-11-01T14:11:42.368779Z",
         "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:25:41.405640Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x1cecad283512fa09937db3dfc7106b17bff150dfcc944b0785225eeb7d39ea05",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2003",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Raiders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Raiders vs. Jets",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2003",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T21:25:41.405640Z",
+          "parent_commit": "3ded38c12e27ead4d006ad8b78325354acf3e60a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41351952586"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
@@ -32605,16 +32630,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f099c6f307b6fde70ff5b345f7b870434a0d4512880bd6ef63c5fa31bdbba9a4",
+      "commitment_nonce": "f3042ad44f7c646994d2be6eaa631836a2a538dcb2f68bde3cc45056b3ccf628",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T14:11:33.778910Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2004",
       "first_observation": {
         "observed_at": "2026-11-01T14:11:42.368779Z",
         "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:25:41.422531Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xf2dbcfb9f08554bd5fbf1c37313875a1ab52ac64c2599f5840403996c74b1f9b",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2004",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Raiders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Raiders vs. Jets",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2004",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T21:25:41.422531Z",
+          "parent_commit": "3ded38c12e27ead4d006ad8b78325354acf3e60a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41351952586"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
@@ -32928,16 +32978,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "92abec7c65253b50bd0926911742fe08d96704dba6e4aac787bcf63fe2796104",
+      "commitment_nonce": "8de3499c22aabcad1a9ee6e966e5f671c9864050db4361ae8792e92c9f2da3b4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T17:09:48.289143Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2015",
       "first_observation": {
         "observed_at": "2026-11-01T17:09:57.184061Z",
         "parent_commit": "06ac27c1d9f145604b0e9e2895e5f85669b3b1d4",
         "run": "https://github.com/0xinsider/picks/actions/runs/41330044119"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:25:41.416519Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xc428f6d38b0855bcdc6d7fb8eab97cc9871005c0c9e8b7ff1ad7db09ea689af5",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2015",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Steelers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Browns vs. Steelers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2015",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T21:25:41.416519Z",
+          "parent_commit": "3ded38c12e27ead4d006ad8b78325354acf3e60a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41351952586"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
