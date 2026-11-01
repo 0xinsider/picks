@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 864,
-    "sealed": 7,
+    "opened": 865,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 590,
+    "proven": 591,
     "proven_record": {
       "wins": 324,
-      "losses": 261,
-      "decided": 585,
+      "losses": 262,
+      "decided": 586,
       "withdrawn": 2,
-      "hit_rate": "55.4",
-      "profit_usd": "1600.17",
-      "staked": "585000",
-      "roi": "0.3"
+      "hit_rate": "55.3",
+      "profit_usd": "600.17",
+      "staked": "586000",
+      "roi": "0.1"
     },
     "wins": 507,
-    "losses": 350,
+    "losses": 351,
     "voids": 3,
-    "decided": 857,
+    "decided": 858,
     "withdrawn": 4,
-    "hit_rate": "59.2",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "23346.10",
-    "staked": "857000",
-    "roi": "2.7",
+    "profit_usd": "22346.10",
+    "staked": "858000",
+    "roi": "2.6",
     "through": "2026-11-01"
   },
   "picks": [
@@ -33010,16 +33010,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "83c0d1555db978ea7b81ae2824426b8ea90cdf6c0c0b571ece34757ffba449f2",
+      "commitment_nonce": "8fa597de7beb29d580fadbf2617d520ee9d08a245c904551c7a7c8319600579e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T16:56:45.802817Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2014",
       "first_observation": {
         "observed_at": "2026-11-01T16:56:54.100505Z",
         "parent_commit": "4ff809f192e1c053bfc30c0713402b0831d667c5",
         "run": "https://github.com/0xinsider/picks/actions/runs/41328896759"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:43:15.369090Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xd28da6358b89e1f71bae3c2f5dde31884686608ab7994f213d613692353d1a90",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2014",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ravens vs. Bills",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2014",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T21:43:15.369090Z",
+          "parent_commit": "d9637af1b90205a064b02c1837314e59c130167a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41353447414"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
