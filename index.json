@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 854,
-    "sealed": 16,
+    "opened": 855,
+    "sealed": 15,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 580,
+    "proven": 581,
     "proven_record": {
-      "wins": 318,
+      "wins": 319,
       "losses": 257,
-      "decided": 575,
+      "decided": 576,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "-116.49",
-      "staked": "575000",
-      "roi": "-0.0"
+      "hit_rate": "55.4",
+      "profit_usd": "282.11",
+      "staked": "576000",
+      "roi": "0.0"
     },
-    "wins": 501,
+    "wins": 502,
     "losses": 346,
     "voids": 3,
-    "decided": 847,
+    "decided": 848,
     "withdrawn": 4,
-    "hit_rate": "59.1",
+    "hit_rate": "59.2",
     "stake_usd": "1000",
-    "profit_usd": "21629.44",
-    "staked": "847000",
+    "profit_usd": "22028.05",
+    "staked": "848000",
     "roi": "2.6",
     "through": "2026-11-01"
   },
@@ -32695,16 +32695,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "839817ca967263ae66c9a7541abdbd5e46a74ae4cf04a4bcef86fb73d28aa1ae",
+      "commitment_nonce": "69517ca8d0fe6a319f94d4784daf096f14df4a40e767d091d5927e952db28d73",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T15:40:29.371244Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2009",
       "first_observation": {
         "observed_at": "2026-11-01T15:40:38.584826Z",
         "parent_commit": "ffa98547679bb5f8e9ddb0f0e2447805cb4f21c0",
         "run": "https://github.com/0xinsider/picks/actions/runs/41322416292"
-      }
+      },
+      "kickoff": "2026-11-01T16:30:00Z",
+      "resolved_at": "2026-11-01T18:49:31.935179Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0xb1d48634f85dae4ebd1b141ec4e4631279c741245e704c8f802762c885bc4f3d",
+        "kickoff": "2026-11-01T16:30:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2009",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Liverpool FC vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2009",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T18:49:31.935179Z",
+          "parent_commit": "43dbc467eecaff5e8d88e746686f81775911cc2f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41338584661"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
