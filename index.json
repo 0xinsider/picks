@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 844,
-    "sealed": 6,
+    "opened": 845,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 570,
+    "proven": 571,
     "proven_record": {
-      "wins": 312,
+      "wins": 313,
       "losses": 253,
-      "decided": 565,
+      "decided": 566,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-1855.96",
-      "staked": "565000",
-      "roi": "-0.3"
+      "hit_rate": "55.3",
+      "profit_usd": "-914.21",
+      "staked": "566000",
+      "roi": "-0.2"
     },
-    "wins": 495,
+    "wins": 496,
     "losses": 342,
     "voids": 3,
-    "decided": 837,
+    "decided": 838,
     "withdrawn": 4,
-    "hit_rate": "59.1",
+    "hit_rate": "59.2",
     "stake_usd": "1000",
-    "profit_usd": "19889.97",
-    "staked": "837000",
-    "roi": "2.4",
+    "profit_usd": "20831.72",
+    "staked": "838000",
+    "roi": "2.5",
     "through": "2026-10-31"
   },
   "picks": [
@@ -32010,16 +32010,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a8ed9178f54472598f3aabebf635931e5918fce1aa5578cc6301c52d4b7f9fc4",
+      "commitment_nonce": "13251f759dc8a9f2788885554cfe0ca8c0ca32e97b82b126b7adf878406a3180",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T18:11:23.763015Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1989",
       "first_observation": {
         "observed_at": "2026-10-31T18:11:32.135504Z",
         "parent_commit": "ba15e1c58f5cde0e9332caa084b87f19aa6233b5",
         "run": "https://github.com/0xinsider/picks/actions/runs/41228163818"
-      }
+      },
+      "kickoff": "2026-10-31T22:00:00Z",
+      "resolved_at": "2026-11-01T01:02:30.179561Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xa54108c7e2c9764f25d43aaa84a1a389a0ad27d4a7396f72e2195c32f7dca7b2",
+        "kickoff": "2026-10-31T22:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1989",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "76ers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "76ers vs. Hornets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1989",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T01:02:30.179561Z",
+          "parent_commit": "000e2e0135164c72997f92f77c968f9db954c18f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41259369785"
+        }
+      ]
     },
     {
       "pick_date": "2026-10-31",
