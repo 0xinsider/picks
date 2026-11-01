@@ -1,0 +1,22 @@
+{
+  "pick_date": "2026-11-01",
+  "picks": [
+    {
+      "pick_rank": 1,
+      "pick_id": "1998",
+      "publication_order": 1,
+      "is_free_selection": true,
+      "commitment_version": 2,
+      "state": "sealed",
+      "commitment_hash": "207bae8149108d9f74126619c3437b7150ebeafc096cf4667d200ecb7e7768a4",
+      "commitment_algo": "sha256(canonical_json(payload)||nonce)",
+      "sealed_at": "2026-11-01T08:00:11.464091Z",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1998",
+      "first_observation": {
+        "observed_at": "2026-11-01T08:00:19.958981Z",
+        "parent_commit": "0e7ca0e22623524ebc69b02c2a73ae0f240b1c75",
+        "run": "https://github.com/0xinsider/picks/actions/runs/41286994346"
+      }
+    }
+  ]
+}
