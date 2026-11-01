@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 851,
-    "sealed": 14,
+    "opened": 852,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 577,
+    "proven": 578,
     "proven_record": {
       "wins": 316,
-      "losses": 256,
-      "decided": 572,
+      "losses": 257,
+      "decided": 573,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-927.40",
-      "staked": "572000",
-      "roi": "-0.2"
+      "hit_rate": "55.1",
+      "profit_usd": "-1927.40",
+      "staked": "573000",
+      "roi": "-0.3"
     },
     "wins": 499,
-    "losses": 345,
+    "losses": 346,
     "voids": 3,
-    "decided": 844,
+    "decided": 845,
     "withdrawn": 4,
     "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "20818.54",
-    "staked": "844000",
-    "roi": "2.5",
+    "profit_usd": "19818.54",
+    "staked": "845000",
+    "roi": "2.3",
     "through": "2026-11-01"
   },
   "picks": [
@@ -32458,16 +32458,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2c46315b53532f72b5bca3a6fb4b5d59a592fb6a2d023f03f4f2a4dd35d779fc",
+      "commitment_nonce": "7540cd0ca356e7be23731342c7b0ddfd5f024e13c1a43b226c7eafee2e9ffd49",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T11:54:11.108037Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2000",
       "first_observation": {
         "observed_at": "2026-11-01T11:54:21.451900Z",
         "parent_commit": "cd1698e0bb8f85b307f009f1da2776115daa50b0",
         "run": "https://github.com/0xinsider/picks/actions/runs/41303937465"
-      }
+      },
+      "kickoff": "2026-11-01T12:30:00Z",
+      "resolved_at": "2026-11-01T16:34:29.224165Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x3ffcc16ba6f1a545187743e956d90d8ae6c320adf159343f8d7fb272b37bb993",
+        "kickoff": "2026-11-01T12:30:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2000",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cercle Brugge vs. Royal Antwerp FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2000",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T16:34:29.224165Z",
+          "parent_commit": "d0a0cab99299d4d74b6cf2ee331d8a4ef396d1c8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41327027759"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
