@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 855,
-    "sealed": 15,
+    "opened": 856,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 581,
+    "proven": 582,
     "proven_record": {
       "wins": 319,
-      "losses": 257,
-      "decided": 576,
+      "losses": 258,
+      "decided": 577,
       "withdrawn": 2,
-      "hit_rate": "55.4",
-      "profit_usd": "282.11",
-      "staked": "576000",
-      "roi": "0.0"
+      "hit_rate": "55.3",
+      "profit_usd": "-717.89",
+      "staked": "577000",
+      "roi": "-0.1"
     },
     "wins": 502,
-    "losses": 346,
+    "losses": 347,
     "voids": 3,
-    "decided": 848,
+    "decided": 849,
     "withdrawn": 4,
-    "hit_rate": "59.2",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "22028.05",
-    "staked": "848000",
-    "roi": "2.6",
+    "profit_usd": "21028.05",
+    "staked": "849000",
+    "roi": "2.5",
     "through": "2026-11-01"
   },
   "picks": [
@@ -32677,16 +32677,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a144ba22269d0a7e7573a74b289f44b0a7069b35ed264a8cef8a090def963e33",
+      "commitment_nonce": "5dbaf34ad775e402df6d8c8646d080a475a1c233111345577c914a00f4fda1cd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T15:39:46.503547Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2008",
       "first_observation": {
         "observed_at": "2026-11-01T15:39:55.193346Z",
         "parent_commit": "a352178eea894f3fe6103b49428e233580efeb70",
         "run": "https://github.com/0xinsider/picks/actions/runs/41322354742"
-      }
+      },
+      "kickoff": "2026-11-01T17:30:00Z",
+      "resolved_at": "2026-11-01T20:09:24.127353Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0xbb874baae902f11808f4aa6d905bc27e582f16f966fad17c54e3f4b594ff4600",
+        "kickoff": "2026-11-01T17:30:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2008",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Elche CF vs. Valencia CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2008",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T20:09:24.127353Z",
+          "parent_commit": "19ba5b5835394b8d4d18317f3218d3b675b8bbb2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41345375612"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
