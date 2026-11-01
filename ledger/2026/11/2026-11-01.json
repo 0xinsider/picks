@@ -385,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ee9f01a90efef7da1cc1ca6a2f71b6a1d8fc2ed23e96eb9d3095cc2a9e41d59a",
+      "commitment_nonce": "6acaa575e9a06ea10217968265b7b92a882a18f1487034299a9124fefda37a10",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T15:26:30.552621Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2007",
       "first_observation": {
         "observed_at": "2026-11-01T15:26:41.133813Z",
         "parent_commit": "5636846efcc50dded573083cdece3d2b8d925819",
         "run": "https://github.com/0xinsider/picks/actions/runs/41321237604"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T22:02:46.188142Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xb15aacaaa914f236e1e8e8a55fd006e7e300dd97bdbf61408178d8ab8970c8b3",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2007",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Cardinals",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cardinals vs. Cowboys",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2007",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T22:02:46.188142Z",
+          "parent_commit": "bbd27e3ffca098950dbe45392558228ea2f6704e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41355086867"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -486,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "53a582cdb7ff17fe2b2b7a35ed9234968412bc0c470cd0fe67cc06b3bf72ad7f",
+      "commitment_nonce": "4a263cfcb508c5a4f1956b741b92e79a0f26fea23a862924c6856b021aa15d25",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T15:56:37.409884Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2010",
       "first_observation": {
         "observed_at": "2026-11-01T15:56:45.873268Z",
         "parent_commit": "6f7cbe9af1ef7e5108b76919942fc5a0ee6ab56f",
         "run": "https://github.com/0xinsider/picks/actions/runs/41323748197"
-      }
+      },
+      "kickoff": "2026-11-01T19:45:00Z",
+      "resolved_at": "2026-11-01T22:02:46.203860Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x65dccf97833cdd937f8eeb74edecdcb450574a4214d4ef6c68711cd1627a58b3",
+        "kickoff": "2026-11-01T19:45:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2010",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Juventus FC vs. SSC Napoli",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2010",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T22:02:46.203860Z",
+          "parent_commit": "bbd27e3ffca098950dbe45392558228ea2f6704e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41355086867"
+        }
+      ]
     },
     {
       "pick_rank": 14,
