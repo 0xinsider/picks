@@ -1015,16 +1015,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "179d003afbd08227f75793e96845b9f2c38f556f2239c2c9db3005db54ef1efe",
+      "commitment_nonce": "b02bd36dddec09f9c90af79cc150b44b8ba509f9aa929feb41066f98dba1f3d7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-10-31T22:02:22.265308Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1997",
       "first_observation": {
         "observed_at": "2026-10-31T22:02:31.132224Z",
         "parent_commit": "b1c7416a536a1a90cbaf98afc9e518e3b505f959",
         "run": "https://github.com/0xinsider/picks/actions/runs/41246335447"
-      }
+      },
+      "kickoff": "2026-11-01T02:00:00Z",
+      "resolved_at": "2026-11-01T04:45:59.902984Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x0a04d8f260ba0cd172d3ebcd902747b7cfd1df4aa98ea5ca929514e019d283c4",
+        "kickoff": "2026-11-01T02:00:00Z",
+        "pick_date": "2026-10-31",
+        "pick_id": "1997",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Avalanche",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/1997",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T04:45:59.902984Z",
+          "parent_commit": "3189c4c6cef0c3d891311fe9f6c94d8d4c282642",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41274349474"
+        }
+      ]
     }
   ]
 }
