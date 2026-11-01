@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 867,
-    "sealed": 4,
+    "opened": 868,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 593,
+    "proven": 594,
     "proven_record": {
       "wins": 325,
-      "losses": 263,
-      "decided": 588,
+      "losses": 264,
+      "decided": 589,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "-20.52",
-      "staked": "588000",
-      "roi": "-0.0"
+      "hit_rate": "55.2",
+      "profit_usd": "-1020.52",
+      "staked": "589000",
+      "roi": "-0.2"
     },
     "wins": 508,
-    "losses": 352,
+    "losses": 353,
     "voids": 3,
-    "decided": 860,
+    "decided": 861,
     "withdrawn": 4,
-    "hit_rate": "59.1",
+    "hit_rate": "59.0",
     "stake_usd": "1000",
-    "profit_usd": "21725.41",
-    "staked": "860000",
-    "roi": "2.5",
+    "profit_usd": "20725.41",
+    "staked": "861000",
+    "roi": "2.4",
     "through": "2026-11-01"
   },
   "picks": [
@@ -32956,16 +32956,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4319ed415cd76e7e7fcf171896f4b7e2a822fd32fd366fee199baed2b086d7bd",
+      "commitment_nonce": "7df9e1c2338cc36fb3d56c89f991065389be51af67375b397f10fa94b2181e6d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T16:00:42.652650Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2011",
       "first_observation": {
         "observed_at": "2026-11-01T16:00:51.289978Z",
         "parent_commit": "473dd26b6a98f6659043c14c563ec744e9589619",
         "run": "https://github.com/0xinsider/picks/actions/runs/41324088955"
-      }
+      },
+      "kickoff": "2026-11-01T20:00:00Z",
+      "resolved_at": "2026-11-01T22:24:25.971342Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x2e84830b3198180f91380549f7c73370053019db9f6cd44a707ae097287b9958",
+        "kickoff": "2026-11-01T20:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2011",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Athletic Club vs. Real Sociedad de Fútbol",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2011",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T22:24:25.971342Z",
+          "parent_commit": "3fbf85feeaafc61de23590a2ffbc339f69095f6b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41356970169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
