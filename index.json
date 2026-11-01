@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 862,
-    "sealed": 9,
+    "opened": 864,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 588,
+    "proven": 590,
     "proven_record": {
-      "wins": 323,
-      "losses": 260,
-      "decided": 583,
+      "wins": 324,
+      "losses": 261,
+      "decided": 585,
       "withdrawn": 2,
       "hit_rate": "55.4",
-      "profit_usd": "1494.91",
-      "staked": "583000",
+      "profit_usd": "1600.17",
+      "staked": "585000",
       "roi": "0.3"
     },
-    "wins": 506,
-    "losses": 349,
+    "wins": 507,
+    "losses": 350,
     "voids": 3,
-    "decided": 855,
+    "decided": 857,
     "withdrawn": 4,
     "hit_rate": "59.2",
     "stake_usd": "1000",
-    "profit_usd": "23240.84",
-    "staked": "855000",
+    "profit_usd": "23346.10",
+    "staked": "857000",
     "roi": "2.7",
     "through": "2026-11-01"
   },
@@ -32569,16 +32569,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d1d92de73592df42926c43e9b6542292db98304148becf1065562a0efec31da1",
+      "commitment_nonce": "907fb30c62641d846d40b1c34c4617341797d6e21824ed675a1575e42386114f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T14:11:33.757616Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2002",
       "first_observation": {
         "observed_at": "2026-11-01T14:11:42.368779Z",
         "parent_commit": "c647193286b9a37d19f46cdede63445720b877d1",
         "run": "https://github.com/0xinsider/picks/actions/runs/41314953407"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:31:25.140443Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x417e836121b74f6bbb0d8a657e148f71ff4a53b2fb14bf7f25a7a34e731b9a4c",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2002",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Colts",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Colts vs. Jaguars",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2002",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-01T21:31:25.140443Z",
+          "parent_commit": "292f6d7017f8b82916ca420fa074cea2ae3acfae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41352437146"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
@@ -32899,16 +32924,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bec5587455ad3bcbf9e3a0749e6c833869d04021fc1fc83a0b07ff4c9583b8db",
+      "commitment_nonce": "f863d90677a8ca9ab37d1752bac03f6178ea5cee596b484640afd735f43455dd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T16:04:57.939722Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2012",
       "first_observation": {
         "observed_at": "2026-11-01T16:05:06.262479Z",
         "parent_commit": "374dc0779d2d4ae985fdc071ce378932145b2dac",
         "run": "https://github.com/0xinsider/picks/actions/runs/41324455513"
-      }
+      },
+      "kickoff": "2026-11-01T18:00:00Z",
+      "resolved_at": "2026-11-01T21:31:25.152622Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xf4f41b9765da89f2cb14211b5528abc964220ba3bf05607313bc4994d50f7227",
+        "kickoff": "2026-11-01T18:00:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2012",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lions",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Vikings vs. Lions",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2012",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-01T21:31:25.152622Z",
+          "parent_commit": "292f6d7017f8b82916ca420fa074cea2ae3acfae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41352437146"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
