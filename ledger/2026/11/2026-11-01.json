@@ -847,16 +847,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "345214c8a8e1632e72b6d94864f2f7a57065bc4bc3e28a7af79225c7fb718d82",
+      "commitment_nonce": "1f729f1b5822833fb81a1ee7c82b4bc8d708af63cff0b219d76d0bb1e3c2535f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T21:22:57.316825Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2018",
       "first_observation": {
         "observed_at": "2026-11-01T21:23:06.279362Z",
         "parent_commit": "02a7e54e916e59d9fc947dec0d655f1dbfcdd30b",
         "run": "https://github.com/0xinsider/picks/actions/runs/41351722492"
-      }
+      },
+      "kickoff": "2026-11-02T01:20:00Z",
+      "resolved_at": "2026-11-02T04:55:49.308394Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x4379d7ea674ecaa4fbe8a711f7b0aee29f2409a51891011c3dd6c27ad57e75ae",
+        "kickoff": "2026-11-02T01:20:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2018",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Eagles",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Eagles vs. Commanders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2018",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-02T04:55:49.308394Z",
+          "parent_commit": "4d80e84a23c3b8bc98b5eea852a562bd65c80fa7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41391123741"
+        }
+      ]
     }
   ]
 }
