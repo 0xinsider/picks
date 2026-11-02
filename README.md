@@ -1,5 +1,5 @@
 <!-- CHART:BEGIN -->
-<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Nov 1, 2026: +19,104.72 USD on 864,000 USD staked. 864 decided picks, 509W 355L 3V, 58.9% hit rate, +2.2% ROI." width="100%"></a>
+<a href="https://0xinsider.com/pick-of-the-day"><img src="record.svg" alt="Cumulative profit before fees at 1,000 USD per pick through Nov 2, 2026: +19,104.72 USD on 864,000 USD staked. 864 decided picks, 509W 355L 4V, 58.9% hit rate, +2.2% ROI." width="100%"></a>
 <!-- CHART:END -->
 
 # 0xinsider picks
@@ -42,18 +42,18 @@ history, and those are the ones that catch a backdated record.
 ## The record
 
 <!-- RECORD:BEGIN -->
-Record through 2026-11-01.
+Record through 2026-11-02.
 
 | | |
 | --- | --- |
 | Decided picks | 864 |
-| Record | 509W 355L 3V |
+| Record | 509W 355L 4V |
 | Hit rate | 58.9% |
 | Profit at $1,000 per pick, before fees | +19,104.72 USD on 864,000 staked |
 | ROI before fees | +2.2% |
 | Withdrawn by the site, left out of the record | 4 |
-| Sealed, not yet settled | 3 |
-| Git-dated before kickoff | 597 |
+| Sealed, not yet settled | 2 |
+| Git-dated before kickoff | 598 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 15 |
 | No pre-game proof (late public hash) | 9 |

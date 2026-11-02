@@ -2,12 +2,12 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 871,
-    "sealed": 3,
+    "opened": 872,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 597,
+    "proven": 598,
     "proven_record": {
       "wins": 326,
       "losses": 266,
@@ -20,7 +20,7 @@
     },
     "wins": 509,
     "losses": 355,
-    "voids": 3,
+    "voids": 4,
     "decided": 864,
     "withdrawn": 4,
     "hit_rate": "58.9",
@@ -28,7 +28,7 @@
     "profit_usd": "19104.72",
     "staked": "864000",
     "roi": "2.2",
-    "through": "2026-11-01"
+    "through": "2026-11-02"
   },
   "picks": [
     {
@@ -33336,16 +33336,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0d29e338b2d1c4c4c2bf5a1188ea782b2196c591761604f01f2af8c713d9de73",
+      "commitment_nonce": "c9c1b33e572f98b6d102ef8274d7b373419b1b4d52e8a451015655fb099a2bb2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T10:10:17.321226Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2021",
       "first_observation": {
         "observed_at": "2026-11-02T10:10:28.460019Z",
         "parent_commit": "41c3920199e4c4a889758a90f0e2a4e952f03980",
         "run": "https://github.com/0xinsider/picks/actions/runs/41426608939"
-      }
+      },
+      "kickoff": "2026-11-02T13:00:00Z",
+      "resolved_at": "2026-11-02T10:59:38.894033Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x1623fe580adb4bab3e8a9bca1a1b50000bf38308ee4c96257305836c73d5856a",
+        "kickoff": "2026-11-02T13:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2021",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Daniel Merida Aguilar",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rolex Paris Masters: Daniel Merida Aguilar vs Alexander Blockx",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2021",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-11-02T10:59:38.894033Z",
+          "parent_commit": "5f09659167e5792217c2b0b37d80077803d815f9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41433172420"
+        }
+      ]
     }
   ]
 }
