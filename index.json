@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 875,
-    "sealed": 9,
+    "opened": 877,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 601,
+    "proven": 603,
     "proven_record": {
-      "wins": 329,
-      "losses": 266,
-      "decided": 595,
+      "wins": 330,
+      "losses": 267,
+      "decided": 597,
       "withdrawn": 2,
       "hit_rate": "55.3",
-      "profit_usd": "-1181.55",
-      "staked": "595000",
+      "profit_usd": "-1379.75",
+      "staked": "597000",
       "roi": "-0.2"
     },
-    "wins": 512,
-    "losses": 355,
+    "wins": 513,
+    "losses": 356,
     "voids": 4,
-    "decided": 867,
+    "decided": 869,
     "withdrawn": 4,
-    "hit_rate": "59.1",
+    "hit_rate": "59.0",
     "stake_usd": "1000",
-    "profit_usd": "20564.38",
-    "staked": "867000",
-    "roi": "2.4",
+    "profit_usd": "20366.18",
+    "staked": "869000",
+    "roi": "2.3",
     "through": "2026-11-02"
   },
   "picks": [
@@ -33472,16 +33472,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9d898b3f8c8037a4574e48c0cf2d4bf72b5c7cea62952c4a2c0663b4266ede97",
+      "commitment_nonce": "26c078704b4f45667bf1f4d9db6f11316063a426abaae35c785eac70beda97e0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T16:04:07.454296Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2023",
       "first_observation": {
         "observed_at": "2026-11-02T16:04:19.045050Z",
         "parent_commit": "022bd6df4fbdfa1fa4a92db117929a56f07869af",
         "run": "https://github.com/0xinsider/picks/actions/runs/41477805907"
-      }
+      },
+      "kickoff": "2026-11-02T20:00:00Z",
+      "resolved_at": "2026-11-02T22:26:45.360164Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x040716f5f77b940fca4e255ee8a7ea916a16ccc13840a86f82696cbc709e5d35",
+        "kickoff": "2026-11-02T20:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2023",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "RC Deportivo A Coruña vs. CA Osasuna",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2023",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-02T22:26:45.360164Z",
+          "parent_commit": "c3e000d258fafa896ccbfa1e019d4211757f1a6c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41537327536"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-02",
@@ -33490,16 +33515,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "052444d23cc31fd0b65232394687619280b7b26b37943e1203a20b8b2cfc41ad",
+      "commitment_nonce": "55437a3377b13b4adbad86e47cd31b86fa012b8e932d732ea66f4012ab159e04",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T16:10:15.434022Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2024",
       "first_observation": {
         "observed_at": "2026-11-02T16:10:27.180016Z",
         "parent_commit": "1c6e3801edd0eef97bd53943495a793765aa6d5f",
         "run": "https://github.com/0xinsider/picks/actions/runs/41478810407"
-      }
+      },
+      "kickoff": "2026-11-02T20:00:00Z",
+      "resolved_at": "2026-11-02T22:26:45.347751Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xea60e2e993fed8ea4571c5710872037167a385939c1c8146d58823a72b8f6647",
+        "kickoff": "2026-11-02T20:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2024",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Newcastle United FC vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2024",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-02T22:26:45.347751Z",
+          "parent_commit": "c3e000d258fafa896ccbfa1e019d4211757f1a6c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41537327536"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-02",
