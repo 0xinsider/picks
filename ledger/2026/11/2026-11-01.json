@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3675bacae9f8600b309639dbfc523e39a0c594d6e11716c9b8583280e87f0ffb",
+      "commitment_nonce": "c19c4f1b6186e133072040cea1b6299296823aa6fb1ee4fc73be6b559a765a71",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T17:26:14.418889Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2016",
       "first_observation": {
         "observed_at": "2026-11-01T17:26:22.962845Z",
         "parent_commit": "c0da8a09e69e6e9c2056c472c28f95a868bcf730",
         "run": "https://github.com/0xinsider/picks/actions/runs/41331454070"
-      }
+      },
+      "kickoff": "2026-11-01T21:25:00Z",
+      "resolved_at": "2026-11-02T00:59:59.311640Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xc9ce30cf5c67cb844e4e5088508d12229f8de12e7abd89ad435a47e3667bf854",
+        "kickoff": "2026-11-01T21:25:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2016",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chiefs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chiefs vs. Broncos",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2016",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-02T00:59:59.311640Z",
+          "parent_commit": "3e5e11d9d37fbcc4f3599020e346c8836433cc1d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41370114781"
+        }
+      ]
     },
     {
       "pick_rank": 20,
