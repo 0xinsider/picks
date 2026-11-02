@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 868,
-    "sealed": 3,
+    "opened": 869,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 594,
+    "proven": 595,
     "proven_record": {
-      "wins": 325,
+      "wins": 326,
       "losses": 264,
-      "decided": 589,
+      "decided": 590,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-1020.52",
-      "staked": "589000",
-      "roi": "-0.2"
+      "hit_rate": "55.3",
+      "profit_usd": "-641.21",
+      "staked": "590000",
+      "roi": "-0.1"
     },
-    "wins": 508,
+    "wins": 509,
     "losses": 353,
     "voids": 3,
-    "decided": 861,
+    "decided": 862,
     "withdrawn": 4,
     "hit_rate": "59.0",
     "stake_usd": "1000",
-    "profit_usd": "20725.41",
-    "staked": "861000",
+    "profit_usd": "21104.72",
+    "staked": "862000",
     "roi": "2.4",
     "through": "2026-11-01"
   },
@@ -33189,16 +33189,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "03133c60c86e57037cec300fc720290017defcb75e00cdeecc5947cf91ca96e5",
+      "commitment_nonce": "6e15d4970cb123345a99bca5c2c7be7508f228fbdfa83e0ab5e1eb8cd88f086c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-01T17:26:21.245650Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2017",
       "first_observation": {
         "observed_at": "2026-11-01T17:26:22.962845Z",
         "parent_commit": "c0da8a09e69e6e9c2056c472c28f95a868bcf730",
         "run": "https://github.com/0xinsider/picks/actions/runs/41331454070"
-      }
+      },
+      "kickoff": "2026-11-01T21:25:00Z",
+      "resolved_at": "2026-11-02T00:15:07.678513Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x14bc54c0b48a2e6bf7299eac2d57269f6d73d66ac5a88434af84baaa3eae9060",
+        "kickoff": "2026-11-01T21:25:00Z",
+        "pick_date": "2026-11-01",
+        "pick_id": "2017",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Patriots vs. Dolphins",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2017",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-02T00:15:07.678513Z",
+          "parent_commit": "30275f4e82baa3e82529c2b9f425913605e1fed9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41366132222"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-01",
