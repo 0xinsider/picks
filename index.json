@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 874,
-    "sealed": 8,
+    "opened": 875,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 600,
+    "proven": 601,
     "proven_record": {
-      "wins": 328,
+      "wins": 329,
       "losses": 266,
-      "decided": 594,
+      "decided": 595,
       "withdrawn": 2,
-      "hit_rate": "55.2",
-      "profit_usd": "-1542.10",
-      "staked": "594000",
-      "roi": "-0.3"
+      "hit_rate": "55.3",
+      "profit_usd": "-1181.55",
+      "staked": "595000",
+      "roi": "-0.2"
     },
-    "wins": 511,
+    "wins": 512,
     "losses": 355,
     "voids": 4,
-    "decided": 866,
+    "decided": 867,
     "withdrawn": 4,
-    "hit_rate": "59.0",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "20203.84",
-    "staked": "866000",
-    "roi": "2.3",
+    "profit_usd": "20564.38",
+    "staked": "867000",
+    "roi": "2.4",
     "through": "2026-11-02"
   },
   "picks": [
@@ -33429,16 +33429,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "31002ceccc359e5fa586e7da105223b2277c8bade457c363b948d766d347f716",
+      "commitment_nonce": "b2e32f48e0d2f070dae83686befc2bdaa2eddfbdff81d94026fb5248e3c3e0c0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T13:32:37.746627Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2022",
       "first_observation": {
         "observed_at": "2026-11-02T13:32:49.839875Z",
         "parent_commit": "861156601e32391e78134398a48c104688fa4948",
         "run": "https://github.com/0xinsider/picks/actions/runs/41453882895"
-      }
+      },
+      "kickoff": "2026-11-02T17:30:00Z",
+      "resolved_at": "2026-11-02T21:56:45.338958Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x7161644d05d2f9c0e61e6e4f878d31c15f25942ab5c7c1c5f6446132b42c1032",
+        "kickoff": "2026-11-02T17:30:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2022",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Real Valladolid CF vs. CD Leganés",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2022",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-02T21:56:45.338958Z",
+          "parent_commit": "63ec378cca9ecb9c5c098d2cf43b9101d9fa8d34",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41532914906"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-02",
