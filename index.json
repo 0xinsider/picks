@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 872,
-    "sealed": 3,
+    "opened": 873,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 598,
+    "proven": 599,
     "proven_record": {
-      "wins": 326,
+      "wins": 327,
       "losses": 266,
-      "decided": 592,
+      "decided": 593,
       "withdrawn": 2,
       "hit_rate": "55.1",
-      "profit_usd": "-2641.21",
-      "staked": "592000",
+      "profit_usd": "-2222.77",
+      "staked": "593000",
       "roi": "-0.4"
     },
-    "wins": 509,
+    "wins": 510,
     "losses": 355,
     "voids": 4,
-    "decided": 864,
+    "decided": 865,
     "withdrawn": 4,
-    "hit_rate": "58.9",
+    "hit_rate": "59.0",
     "stake_usd": "1000",
-    "profit_usd": "19104.72",
-    "staked": "864000",
-    "roi": "2.2",
+    "profit_usd": "19523.16",
+    "staked": "865000",
+    "roi": "2.3",
     "through": "2026-11-02"
   },
   "picks": [
@@ -33300,16 +33300,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d2540b3115e5ea29c3186697fe82097222e1d428e7acbcd313079c88bbf3b659",
+      "commitment_nonce": "e0cf5cdc09f662459a0b1827ffaa26050cd9adb7201aef774543566433686d6c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T08:00:13.611565Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2019",
       "first_observation": {
         "observed_at": "2026-11-02T08:00:28.467938Z",
         "parent_commit": "8846907239fb23ae0eec9477cb8ba579ba01d002",
         "run": "https://github.com/0xinsider/picks/actions/runs/41409921791"
-      }
+      },
+      "kickoff": "2026-11-02T09:30:00Z",
+      "resolved_at": "2026-11-02T13:57:48.312497Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x0a94bcbd2cd9d1823efe898b4d32459f7c759f6f6ce5daafc3616df4a439c5b4",
+        "kickoff": "2026-11-02T09:30:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2019",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Natus Vincere",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Natus Vincere vs Team Falcons (BO3) - IEM Beijing Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2019",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-02T13:57:48.312497Z",
+          "parent_commit": "b5684fc0ef7e21f8c111640771a1a61a49c44b89",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41457523311"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-02",
