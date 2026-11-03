@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 885,
-    "sealed": 7,
+    "opened": 886,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 611,
+    "proven": 612,
     "proven_record": {
-      "wins": 335,
+      "wins": 336,
       "losses": 270,
-      "decided": 605,
+      "decided": 606,
       "withdrawn": 2,
       "hit_rate": "55.4",
-      "profit_usd": "-589.34",
-      "staked": "605000",
-      "roi": "-0.1"
+      "profit_usd": "-210.03",
+      "staked": "606000",
+      "roi": "-0.0"
     },
-    "wins": 518,
+    "wins": 519,
     "losses": 359,
     "voids": 4,
-    "decided": 877,
+    "decided": 878,
     "withdrawn": 4,
     "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "21156.59",
-    "staked": "877000",
-    "roi": "2.4",
-    "through": "2026-11-02"
+    "profit_usd": "21535.90",
+    "staked": "878000",
+    "roi": "2.5",
+    "through": "2026-11-03"
   },
   "picks": [
     {
@@ -33920,16 +33920,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd7917db780abdf95937c4536f4f2fce366e66631f549a93e4bf8d0d4147b6b3",
+      "commitment_nonce": "f2c697806f213f53b48e7783909ac3bd46fabed234479df413afc7a7138c2909",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-03T13:46:19.110884Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2034",
       "first_observation": {
         "observed_at": "2026-11-03T13:46:25.030457Z",
         "parent_commit": "94af445f7ca4dadee7ddb3e0a4738f2393ed0620",
         "run": "https://github.com/0xinsider/picks/actions/runs/41647315787"
-      }
+      },
+      "kickoff": "2026-11-03T17:45:00Z",
+      "resolved_at": "2026-11-03T19:55:18.768772Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x7ffc11c1531725e3402038c6ee146ebf1f278274200a206acf6f39ac4ff04819",
+        "kickoff": "2026-11-03T17:45:00Z",
+        "pick_date": "2026-11-03",
+        "pick_id": "2034",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FK Shakhtar Donetsk vs. Sporting CP",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2034",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-03T19:55:18.768772Z",
+          "parent_commit": "07f726471e6563907ca7d15d17ab79bd6a89f3b3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41707759491"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-03",
