@@ -15,8 +15,8 @@ and first observation stay public; kickoff-based timing checks wait for the
 canonical payload after settlement. A pending hidden clock is not pregame proof.
 
 A pick is one Polymarket market, one side, and the price we backed it at. The
-backend hashes those fields with a 32-byte nonce, 1 hour before kickoff, and the
-hash lands here in a git commit. Its author date is controlled by the writer;
+backend hashes those fields with a 32-byte nonce when the pick publishes, between
+4 hours and 30 minutes before kickoff, and the hash lands here in a git commit. Its author date is controlled by the writer;
 a workflow run's start time alone does not timestamp the hash. New Seal commits
 also get a signed receipt for their exact commit SHA when the push succeeds.
 Only a receipt independently witnessed before kickoff strengthens the timing
@@ -146,8 +146,11 @@ rotation.
 
 ## How a pick gets here
 
-1. **Publish, kickoff minus 1 hour.** The pick goes live on the site and the
-   backend computes `sha256(canonical_json(payload) || nonce)` in the same pass.
+1. **Publish, 4 hours to 30 minutes before kickoff.** A pick publishes when it
+   qualifies, never more than 4 hours before its kickoff (since October 29,
+   2026; earlier picks could publish up to 19 hours ahead) and never less than
+   30 minutes. The pick goes live on the site and the backend computes
+   `sha256(canonical_json(payload) || nonce)` in the same pass.
 2. **Seal, within minutes.** The backend dispatches `seal.yml`, which fetches the
    ledger endpoint and appends the hash, the seal instant and an available kickoff to
    `ledger/<YYYY>/<MM>/<date>.json`. No nonce, no payload, no side.

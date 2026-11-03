@@ -1,6 +1,7 @@
 # How to verify the Pick of the Day record
 
-0xinsider publishes up to 25 picks a day, each 1 hour before its own kickoff, and
+0xinsider publishes up to 25 picks a day, each between 4 hours and 30 minutes
+before its own kickoff, and
 a running record of how those picks did. The record is served from our
 database, and this repository is what makes it checkable from outside: every
 picks that reach this repository before kickoff carry a hash that can be
@@ -29,7 +30,10 @@ purpose, and says so in its output.
 
 Each pick has three moments.
 
-**Publish, kickoff minus one hour.** The pick goes live on the site. The backed
+**Publish, 4 hours to 30 minutes before kickoff.** A pick publishes when it
+qualifies: never more than 4 hours before its kickoff, a bound in force since
+October 29, 2026 (earlier picks could publish up to 19 hours ahead), and never
+less than 30 minutes. The pick goes live on the site. The backed
 side of it -- which market, which outcome, at what price -- is behind sign-in
 for the designated free selection, behind Pro for the next four in publication
 order, and behind Max for the rest. Unauthorized unresolved game identity stays hidden. In the same pass the backend
@@ -579,6 +583,23 @@ process, a real fill, Polymarket settlement, or a pick omitted from both the
 site and ledger. The signed witness time is the trust boundary; the git author
 date and the attestation's workflow-supplied predicate fields are not.
 
+### Seal commits without a receipt
+
+A Seal commit can land with no receipt: the commit is pushed first, then
+signed, and a run that fails to sign leaves the commit on `main` unsigned. No
+later run signs it, because each run attests only the commit it pushed.
+`seal.yml` now tries three times before it fails the run. Every Seal commit
+that first carried a pick's hash and has no receipt, since the first receipt
+(19fbdd7, 2026-09-24), apart from the hashes that first landed in Reveal commits
+during the 2026-10-20/21 outage:
+
+| Seal commit | Pick | Kickoff | Why |
+| --- | --- | --- | --- |
+| `bc2065b61d6d953c17cd6ce88be11e233529be9b` | 2019, 2026-11-02, sealed 08:00:13Z | 2026-11-02T09:30:00Z | Seal run 41409921791 pushed it at 08:00:28Z and then failed to sign it once: `Failed to get ID token ... socket hang up`. The run had no retry then. |
+
+A pick in this table has git history and the ledger's `sealed_at` as its only
+clocks. It is not counted as having an independent pregame timestamp.
+
 ## What the workflows do, and do not do
 
 Three workflows, all readable in this repository, all guarded so a fork cannot
@@ -587,9 +608,10 @@ job.
 
 - `seal.yml` appends new commitments and attests each changed pushed head. The
   0xinsider backend dispatches it when a pick is sealed, and it also runs every
-  10 minutes from 11:07 UTC
-  through 04:57 UTC the next morning as a fallback, which is the drop window
-  (11:00 UTC to 23:00 US Eastern) plus the hour after its last drop. Dispatch
+  10 minutes from 07:07 UTC through 04:57 UTC the next morning as a fallback,
+  which is the drop window (03:00 to 23:30 US Eastern) in either season plus
+  the half hour after its last drop. It tries the receipt three times before
+  the run fails. Dispatch
   runs show as `workflow_dispatch` in the Actions tab. They run the same
   workflow source as every other run.
 - `reveal.yml`, hourly at :17, opens settled commitments. Both it and

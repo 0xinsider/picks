@@ -10,9 +10,13 @@ name: Seal
 # falsified record rather than as the formatting bug it is. `verify.py` checks
 # contents offline; the signed receipt below adds independent timing evidence.
 #
-# TIMING IS THE WHOLE POINT. A pick publishes one hour before kickoff and is
-# sealed in the same pass, so the hash is available to this workflow for about
-# 60 minutes before the game starts. Git author dates are writer controlled.
+# TIMING IS THE WHOLE POINT. A pick publishes when it qualifies, which is at
+# most 4 hours and at least 30 minutes before its kickoff, and it is sealed in
+# the same pass. So the hash is available to this workflow for between 30
+# minutes and 4 hours before the game starts. The ledger shows it: the 76 picks
+# dated 2026-10-30 to 2026-11-03 sealed 0.58 to 3.99 hours before kickoff,
+# median 3.81. Before 2026-10-29 there was no 4-hour bound, and a pick could
+# seal up to 19 hours ahead. Git author dates are writer controlled.
 # A signed receipt for the pushed commit can provide an independent witness
 # time. Only a verified receipt timestamp before kickoff supports that claim;
 # a late receipt does not upgrade a pick.
@@ -25,12 +29,14 @@ name: Seal
 # scheduled runs between 18:52Z and 23:59Z. The minutes are offset from :00,
 # where GitHub sheds the most scheduled runs.
 #
-# WINDOW. Picks drop between 11:00 UTC and 23:00 US Eastern, one hour before
-# the latest kickoff that still counts as the product day.
-# 23:00 ET is 03:00 UTC in summer and 04:00 UTC in winter, so the window
-# crosses UTC midnight: hours 11-23 cover the daytime drops and hours 0-4 cover
-# the late slate, Monday Night Football and the West Coast games. The 04:57 run
-# covers a 04:00 drop whose kickoff is 05:00 UTC.
+# WINDOW. Picks publish from 03:00 to 23:30 US Eastern, and the latest kickoff
+# that still counts as the product day is midnight Eastern. In UTC that is
+# 07:00 to 04:00 the next morning in summer and 08:00 to 05:00 in winter, so
+# the window crosses UTC midnight: hours 7-23 cover the daytime drops and
+# hours 0-4 cover the late slate, Monday Night Football and the West Coast
+# games. The 04:57 run covers a 04:30 drop whose kickoff is 05:00 UTC. Until
+# 2026-11-03 the schedule started at 11:00 UTC, so a drop between 07:00 and
+# 11:00 UTC had the dispatch and no fallback.
 #
 # NO CURSOR. The repository is the cursor. A missed run self-heals on the next
 # one, and running this twice in a row writes nothing the second time.
@@ -46,7 +52,7 @@ name: Seal
 
 on:
   schedule:
-    - cron: "7-59/10 0-4,11-23 * * *"
+    - cron: "7-59/10 0-4,7-23 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -115,11 +121,51 @@ jobs:
           printf '%s\n' "$after" > "$RUNNER_TEMP/pick-seal-commit.txt"
           echo "created=true" >> "$GITHUB_OUTPUT"
 
+      # THE RECEIPT GETS THREE TRIES. The commit is already on main when this
+      # runs, and no later run attests it: the next run starts from it and
+      # signs only its own commit. So a receipt this run fails to create is
+      # lost for good. On 2026-11-02 Seal run 41409921791 pushed bc2065b
+      # (pick 2019) and then failed here, once, on "Failed to get ID token ...
+      # socket hang up", a transient error from the token service; VERIFY.md,
+      # "Seal commits without a receipt", lists that commit. The first two
+      # attempts continue on error, so the next one can run (`outcome` is the
+      # result before continue-on-error, `conclusion` after it). The third
+      # does not, so a receipt that never arrives still fails the run.
       - name: Attest the pushed commit
+        id: attest_1
         if: ${{ steps.receipt.outputs.created == 'true' }}
+        continue-on-error: true
         uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
         with:
           subject-path: ${{ runner.temp }}/pick-seal-commit.txt
+
+      - name: Wait before the second receipt attempt
+        if: ${{ steps.attest_1.outcome == 'failure' }}
+        run: sleep 15
+
+      - name: Attest the pushed commit, second attempt
+        id: attest_2
+        if: ${{ steps.attest_1.outcome == 'failure' }}
+        continue-on-error: true
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: ${{ runner.temp }}/pick-seal-commit.txt
+
+      - name: Wait before the last receipt attempt
+        if: ${{ steps.attest_2.outcome == 'failure' }}
+        run: sleep 45
+
+      - name: Attest the pushed commit, last attempt
+        id: attest_3
+        if: ${{ steps.attest_2.outcome == 'failure' }}
+        uses: actions/attest@1e69f48acb82d1966a394da916b4c1698aa569d6 # v4.2.2
+        with:
+          subject-path: ${{ runner.temp }}/pick-seal-commit.txt
+
+      - name: Name the commit left without a receipt
+        if: ${{ failure() && steps.attest_3.outcome == 'failure' }}
+        run: |
+          echo "::error::Seal commit $(cat "$RUNNER_TEMP/pick-seal-commit.txt") is on main with no receipt. Add it to VERIFY.md, \"Seal commits without a receipt\"."
 
       - name: Show the uncommitted diff
         if: ${{ inputs.dry_run }}
