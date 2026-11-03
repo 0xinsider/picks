@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 877,
-    "sealed": 8,
+    "opened": 878,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 603,
+    "proven": 604,
     "proven_record": {
-      "wins": 330,
+      "wins": 331,
       "losses": 267,
-      "decided": 597,
+      "decided": 598,
       "withdrawn": 2,
-      "hit_rate": "55.3",
-      "profit_usd": "-1379.75",
-      "staked": "597000",
-      "roi": "-0.2"
+      "hit_rate": "55.4",
+      "profit_usd": "-474.99",
+      "staked": "598000",
+      "roi": "-0.1"
     },
-    "wins": 513,
+    "wins": 514,
     "losses": 356,
     "voids": 4,
-    "decided": 869,
+    "decided": 870,
     "withdrawn": 4,
-    "hit_rate": "59.0",
+    "hit_rate": "59.1",
     "stake_usd": "1000",
-    "profit_usd": "20366.18",
-    "staked": "869000",
-    "roi": "2.3",
+    "profit_usd": "21270.94",
+    "staked": "870000",
+    "roi": "2.4",
     "through": "2026-11-02"
   },
   "picks": [
@@ -33630,16 +33630,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fcd1c2c76231715739ae10acf09fba79e94fda3b4dd9af42306e6e4f1bc2d867",
+      "commitment_nonce": "7a7320ae31f0ecda8ae1803759d858b2572b5568a2c40650133136ba7997cf87",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T21:51:38.912991Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2029",
       "first_observation": {
         "observed_at": "2026-11-02T21:51:49.632013Z",
         "parent_commit": "c6c95f5dd9dc8f52e3f811ff85437af234651b4b",
         "run": "https://github.com/0xinsider/picks/actions/runs/41532166106"
-      }
+      },
+      "kickoff": "2026-11-03T00:00:00Z",
+      "resolved_at": "2026-11-03T02:26:46.311193Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xdcfdf45ad9960649cb69582ee2cd5e8b90afef1877b294741fda43a7ac2c5f50",
+        "kickoff": "2026-11-03T00:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2029",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Panthers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2029",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-03T02:26:46.311193Z",
+          "parent_commit": "dfcbab89084fbe07acba2142d74a440e2b4c9710",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41566161421"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-02",
