@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 886,
-    "sealed": 7,
+    "opened": 887,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 612,
+    "proven": 613,
     "proven_record": {
       "wins": 336,
-      "losses": 270,
-      "decided": 606,
+      "losses": 271,
+      "decided": 607,
       "withdrawn": 2,
       "hit_rate": "55.4",
-      "profit_usd": "-210.03",
-      "staked": "606000",
-      "roi": "-0.0"
+      "profit_usd": "-1210.03",
+      "staked": "607000",
+      "roi": "-0.2"
     },
     "wins": 519,
-    "losses": 359,
+    "losses": 360,
     "voids": 4,
-    "decided": 878,
+    "decided": 879,
     "withdrawn": 4,
-    "hit_rate": "59.1",
+    "hit_rate": "59.0",
     "stake_usd": "1000",
-    "profit_usd": "21535.90",
-    "staked": "878000",
-    "roi": "2.5",
+    "profit_usd": "20535.90",
+    "staked": "879000",
+    "roi": "2.3",
     "through": "2026-11-03"
   },
   "picks": [
@@ -33902,16 +33902,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dfb38f8716b2b29376407edea10b8666e7d9881851f511487fb5b1abcfeae021",
+      "commitment_nonce": "b1c9246f4ef11f8d221c82bc0e7909ca78725fdaec813c6d2267abccafad16ef",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-03T13:46:14.792726Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2033",
       "first_observation": {
         "observed_at": "2026-11-03T13:46:25.030457Z",
         "parent_commit": "94af445f7ca4dadee7ddb3e0a4738f2393ed0620",
         "run": "https://github.com/0xinsider/picks/actions/runs/41647315787"
-      }
+      },
+      "kickoff": "2026-11-03T17:45:00Z",
+      "resolved_at": "2026-11-03T20:04:30.906150Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x824d83ff2c740aa027b47ae2f0f7abe7492e435c5faef09202495c4f34ab96a8",
+        "kickoff": "2026-11-03T17:45:00Z",
+        "pick_date": "2026-11-03",
+        "pick_id": "2033",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Galatasaray SK vs. VfB Stuttgart",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2033",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-03T20:04:30.906150Z",
+          "parent_commit": "9f8619fbac35b35b23bbfa8b5e25a783c7ed7e76",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41709169919"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-03",
