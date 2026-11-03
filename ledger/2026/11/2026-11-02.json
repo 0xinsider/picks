@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c20db0bedcfc9b361d70b1b0b20985ebc9d6d13cbc6308e9229f4e49f3b0305a",
+      "commitment_nonce": "7a51295e344227b5a1229d331d4e648ccfc2d01969760b8ccb68506c22045911",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T22:02:22.557605Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2031",
       "first_observation": {
         "observed_at": "2026-11-02T22:02:30.536004Z",
         "parent_commit": "df6ad3d3189d7eed68c081ccf0df6f5783238661",
         "run": "https://github.com/0xinsider/picks/actions/runs/41533726846"
-      }
+      },
+      "kickoff": "2026-11-03T02:00:00Z",
+      "resolved_at": "2026-11-03T05:56:45.171787Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x0f8541c8c3d8a383d72c61a91d0fb962b81fd35f3042314c192bf777060464df",
+        "kickoff": "2026-11-03T02:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2031",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "G2",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Aurora Gaming vs G2 (BO3) - IEM Beijing Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2031",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-03T05:56:45.171787Z",
+          "parent_commit": "52d40afac815ad3271eaab460c170fd6ad8c4a3d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41586838437"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -528,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c06ccce2a000bacf9f62bf3344da2c65b77840d38972f5f797bd115ea638027d",
+      "commitment_nonce": "9a1db7974e26504705473c1c9c9ea80bd3bcbf51809ef86f3fd4321dedd803e7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-02T23:01:51.172984Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2032",
       "first_observation": {
         "observed_at": "2026-11-02T23:02:02.211907Z",
         "parent_commit": "414401b5a1cfc85a836439e1f6b69d6fcad55e77",
         "run": "https://github.com/0xinsider/picks/actions/runs/41542134406"
-      }
+      },
+      "kickoff": "2026-11-03T03:00:00Z",
+      "resolved_at": "2026-11-03T05:56:45.161062Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x65078511524219d7f8f8d746c1c97337b18d6156b37229cf39afd7c2092dff93",
+        "kickoff": "2026-11-03T03:00:00Z",
+        "pick_date": "2026-11-02",
+        "pick_id": "2032",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Lakers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Heat vs. Lakers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2032",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-03T05:56:45.161062Z",
+          "parent_commit": "52d40afac815ad3271eaab460c170fd6ad8c4a3d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41586838437"
+        }
+      ]
     }
   ]
 }
