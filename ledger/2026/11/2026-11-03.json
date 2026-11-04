@@ -469,16 +469,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cc825149250de0c3946fb062b2c61e3825cc1e10236a8a1b807784225b750c52",
+      "commitment_nonce": "6ea11a0aaf2b343ed44d4edc96dbe1478b18503c6f2de463f8d4e67df64fe564",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T00:30:41.555174Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2044",
       "first_observation": {
         "observed_at": "2026-11-04T00:30:52.653481Z",
         "parent_commit": "3ffdcb85c12ad3fab6ecf0cd2ef08c41dc31bf70",
         "run": "https://github.com/0xinsider/picks/actions/runs/41747366989"
-      }
+      },
+      "kickoff": "2026-11-04T04:30:00Z",
+      "resolved_at": "2026-11-04T06:46:48.092371Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x53dff4125a9dbe91882b58efd3a056e9654c870f36d3e62b914d844b355e9f6b",
+        "kickoff": "2026-11-04T04:30:00Z",
+        "pick_date": "2026-11-03",
+        "pick_id": "2044",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Heroic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Heroic vs Team Falcons (BO3) - IEM Beijing Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2044",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T06:46:48.092371Z",
+          "parent_commit": "6a24f16f5547bbe56dde3fc9d4cc5533a750da73",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41787798782"
+        }
+      ]
     }
   ]
 }
