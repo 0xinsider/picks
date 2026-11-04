@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "484cf91763fb802392ade1cc64cca7baea9e5f3b1b7bff8539af7ce706b12031",
+      "commitment_nonce": "03c85d156b6272926d971b527bb05d9c7f0562f94c1fd18ce91b0ae237086238",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T08:00:15.523581Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2045",
       "first_observation": {
         "observed_at": "2026-11-04T08:00:30.743512Z",
         "parent_commit": "e323ff41095833a2a54250b183da9c62b4b6a4db",
         "run": "https://github.com/0xinsider/picks/actions/runs/41796189481"
-      }
+      },
+      "kickoff": "2026-11-04T09:30:00Z",
+      "resolved_at": "2026-11-04T13:02:01.277430Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x1fd8883f3d7dc0601c55f513738ec840ee31a8880bf8309d9ca77bfaac267f02",
+        "kickoff": "2026-11-04T09:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2045",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: TheMongolz vs FURIA (BO3) - IEM Beijing Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2045",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T13:02:01.277430Z",
+          "parent_commit": "6816c4b756ff3d527e53b4f1d74b8ab865d859b8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41834417087"
+        }
+      ]
     },
     {
       "pick_rank": 2,
