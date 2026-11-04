@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f58deb381831249ad89cb922325d7a45d91d88b9e2a0030aa15979911d22b1c4",
+      "commitment_nonce": "5d71a00ae3231b858c2031a879099aa5e7c7599c76a048b603d5b6c86ac30c70",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T08:40:13.887321Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2046",
       "first_observation": {
         "observed_at": "2026-11-04T08:40:23.347614Z",
         "parent_commit": "79ceab77ad0f12352ec6f3f64df78de6635da0f2",
         "run": "https://github.com/0xinsider/picks/actions/runs/41801290044"
-      }
+      },
+      "kickoff": "2026-11-04T09:30:00Z",
+      "resolved_at": "2026-11-04T13:32:00.934563Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x7a03f001c5bce6997f54ec95eadf916a50e28e4fb38123803cba4b242aea17cf",
+        "kickoff": "2026-11-04T09:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2046",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Natus Vincere",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Natus Vincere vs Team Falcons (BO3) - IEM Beijing Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2046",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-04T13:32:00.934563Z",
+          "parent_commit": "14fcad1a2589219995069ab8fa7b3dda6839fdd2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41838955425"
+        }
+      ]
     }
   ]
 }
