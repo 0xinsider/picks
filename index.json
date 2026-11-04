@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 901,
-    "sealed": 8,
+    "opened": 906,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 627,
+    "proven": 632,
     "proven_record": {
-      "wins": 340,
-      "losses": 281,
-      "decided": 621,
+      "wins": 343,
+      "losses": 283,
+      "decided": 626,
       "withdrawn": 2,
       "hit_rate": "54.8",
-      "profit_usd": "-6849.49",
-      "staked": "621000",
+      "profit_usd": "-6617.54",
+      "staked": "626000",
       "roi": "-1.1"
     },
-    "wins": 523,
-    "losses": 370,
+    "wins": 526,
+    "losses": 372,
     "voids": 4,
-    "decided": 893,
+    "decided": 898,
     "withdrawn": 4,
     "hit_rate": "58.6",
     "stake_usd": "1000",
-    "profit_usd": "14896.44",
-    "staked": "893000",
+    "profit_usd": "15128.39",
+    "staked": "898000",
     "roi": "1.7",
     "through": "2026-11-04"
   },
@@ -34590,16 +34590,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1cfdd1e8a24b83a6c330e5441424e6b11679de823e40eaf37ff0b657218e501d",
+      "commitment_nonce": "7da0bdcfffee3e769dc3cacf69dabc2030b0b328177ac0b1327de6e14746f5d1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T16:11:06.585059Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2049",
       "first_observation": {
         "observed_at": "2026-11-04T16:11:18.595399Z",
         "parent_commit": "580626bac3b8e49125974863333d2185b916a49a",
         "run": "https://github.com/0xinsider/picks/actions/runs/41864795174"
-      }
+      },
+      "kickoff": "2026-11-04T20:00:00Z",
+      "resolved_at": "2026-11-04T22:24:31.284096Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xa98f1371108dfffc8908efcdd5ccbe93cfdd2ab148d37eb5910072fc80b80030",
+        "kickoff": "2026-11-04T20:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2049",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "PSV vs. Club Brugge KV",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2049",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T22:24:31.284096Z",
+          "parent_commit": "102d3ad38a8e235e7210cc0cccfcbe9c90a36650",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41925012090"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -34608,16 +34633,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5ff32ea51e21c6ad62205c38b4b17f274f0280d2abbc2ab21b7975e935d6c5ef",
+      "commitment_nonce": "ae39289634ad8d63208374d4c44ccc043f2fe8858c724a019d231d5603ff1111",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T16:11:06.594488Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2050",
       "first_observation": {
         "observed_at": "2026-11-04T16:11:18.595399Z",
         "parent_commit": "580626bac3b8e49125974863333d2185b916a49a",
         "run": "https://github.com/0xinsider/picks/actions/runs/41864795174"
-      }
+      },
+      "kickoff": "2026-11-04T20:00:00Z",
+      "resolved_at": "2026-11-04T22:24:31.294684Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x9456a82fb361d548a5dfdbc75742eae85c2e65da33e7fe05e9f8cc4cc48eea31",
+        "kickoff": "2026-11-04T20:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2050",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Racing Club de Lens vs. Como 1907",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2050",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T22:24:31.294684Z",
+          "parent_commit": "102d3ad38a8e235e7210cc0cccfcbe9c90a36650",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41925012090"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -34626,16 +34676,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b30fd77b9af122d945d68d4066da73d6fd1d93c821616c4080c74aafbcca6053",
+      "commitment_nonce": "ed689068084e202a9dc7211c5dba943427bfa6554492c29eb6102d08907e441e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T18:10:12.300183Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2051",
       "first_observation": {
         "observed_at": "2026-11-04T18:10:25.043261Z",
         "parent_commit": "d53e7a5a026a213b9d0d07e97435e2193f483452",
         "run": "https://github.com/0xinsider/picks/actions/runs/41884428637"
-      }
+      },
+      "kickoff": "2026-11-04T20:00:00Z",
+      "resolved_at": "2026-11-04T22:24:31.305726Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x21cb3058a5a4a4c1be68401a8fe47494240a8e908807cc6bdb66566616b44a30",
+        "kickoff": "2026-11-04T20:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2051",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Porto vs. SSC Napoli",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2051",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-04T22:24:31.305726Z",
+          "parent_commit": "102d3ad38a8e235e7210cc0cccfcbe9c90a36650",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41925012090"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -34644,16 +34719,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "be52225a7becd5bbea3cbfa3c696c9635bbe03ac028b0b4d19b1ed2f6541bd09",
+      "commitment_nonce": "c015e4e847541df6a06ef579a7e0dbc2265e4b0b6e2d2fb6672b00e74ab11d15",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T18:40:43.558446Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2052",
       "first_observation": {
         "observed_at": "2026-11-04T18:40:56.522290Z",
         "parent_commit": "bf41d4cedbe7ce8f2a92e78038a2279a74a93f3f",
         "run": "https://github.com/0xinsider/picks/actions/runs/41889511604"
-      }
+      },
+      "kickoff": "2026-11-04T20:00:00Z",
+      "resolved_at": "2026-11-04T22:24:31.313624Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xcc34514620301b68e493728b7ef3a82d2b706eafc0f308d07d2d5c69a4539de0",
+        "kickoff": "2026-11-04T20:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2052",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. Real Betis Balompié",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2052",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-04T22:24:31.313624Z",
+          "parent_commit": "102d3ad38a8e235e7210cc0cccfcbe9c90a36650",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41925012090"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -34680,16 +34780,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "95550921bb7b556ff4ea7c34e407851126d154e82869b8e31637cc8579dec563",
+      "commitment_nonce": "b957e384f6ebb1dc04c225dddd1e901b9ab823a49200c5344155fc866180fe48",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T18:55:20.083779Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2054",
       "first_observation": {
         "observed_at": "2026-11-04T18:55:29.727714Z",
         "parent_commit": "178d163d44997641b1eaeefcedc6983c79be49ff",
         "run": "https://github.com/0xinsider/picks/actions/runs/41891872154"
-      }
+      },
+      "kickoff": "2026-11-04T20:00:00Z",
+      "resolved_at": "2026-11-04T22:24:31.320571Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xa9d4eaafc540cace2982f01aaf813d3923a5988bf65a192dd8dbb3147bd40e7d",
+        "kickoff": "2026-11-04T20:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2054",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "SK Slavia Praha",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SK Slavia Praha vs. Arsenal FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2054",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-04T22:24:31.320571Z",
+          "parent_commit": "102d3ad38a8e235e7210cc0cccfcbe9c90a36650",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41925012090"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
