@@ -318,16 +318,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "60d1f01fcf8c5e07b528568b109dadc5a761a256583339d02d35fe676fecdf70",
+      "commitment_nonce": "94aafec14059c8377d9774f6bc2a46e725b8014c6bfbefc1c7b6bac1b8236bfe",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-03T20:10:37.110046Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2041",
       "first_observation": {
         "observed_at": "2026-11-03T20:11:04.487883Z",
         "parent_commit": "b6dc44c4f1cf1b91aebecde25705da541f5e116d",
         "run": "https://github.com/0xinsider/picks/actions/runs/41710127348"
-      }
+      },
+      "kickoff": "2026-11-04T00:00:00Z",
+      "resolved_at": "2026-11-04T02:57:34.360919Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xecbe725ab74fad86a87baf2cf01125b736615615d4a2d67b82174b5caa4e0f6a",
+        "kickoff": "2026-11-04T00:00:00Z",
+        "pick_date": "2026-11-03",
+        "pick_id": "2041",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Avalanche",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Avalanche vs. Blue Jackets",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2041",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T02:57:34.360919Z",
+          "parent_commit": "7e630b35c975e294396186c78a218922e3242934",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41764050858"
+        }
+      ]
     },
     {
       "pick_rank": 10,
