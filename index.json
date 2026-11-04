@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 895,
-    "sealed": 2,
+    "opened": 896,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 621,
+    "proven": 622,
     "proven_record": {
-      "wins": 338,
+      "wins": 339,
       "losses": 277,
-      "decided": 615,
+      "decided": 616,
       "withdrawn": 2,
       "hit_rate": "55.0",
-      "profit_usd": "-5061.88",
-      "staked": "615000",
-      "roi": "-0.8"
+      "profit_usd": "-4000.03",
+      "staked": "616000",
+      "roi": "-0.6"
     },
-    "wins": 521,
+    "wins": 522,
     "losses": 366,
     "voids": 4,
-    "decided": 887,
+    "decided": 888,
     "withdrawn": 4,
-    "hit_rate": "58.7",
+    "hit_rate": "58.8",
     "stake_usd": "1000",
-    "profit_usd": "16684.05",
-    "staked": "887000",
-    "roi": "1.9",
+    "profit_usd": "17745.90",
+    "staked": "888000",
+    "roi": "2.0",
     "through": "2026-11-03"
   },
   "picks": [
@@ -34289,16 +34289,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1575c3c9d8714cae3b55aee6b4859ef64a51b486b000abc8b6c4dad058cb0c14",
+      "commitment_nonce": "fa70b1b89ec5c6c70b4e65cb37ed4007e3af18fb7e5962ac7fb0a6790f4c780c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-03T21:38:41.013362Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2042",
       "first_observation": {
         "observed_at": "2026-11-03T21:39:02.882294Z",
         "parent_commit": "1b8842ac2fc7000db05fae69e2e0f02c8528b293",
         "run": "https://github.com/0xinsider/picks/actions/runs/41723663653"
-      }
+      },
+      "kickoff": "2026-11-04T01:00:00Z",
+      "resolved_at": "2026-11-04T04:18:29.837644Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x586614ba6082e2e17999e710042afba622d362a636505d93a99acbbaf6227c0c",
+        "kickoff": "2026-11-04T01:00:00Z",
+        "pick_date": "2026-11-03",
+        "pick_id": "2042",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Buffalo vs. Miami (OH)",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2042",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-04T04:18:29.837644Z",
+          "parent_commit": "80d4354ba1dc65bd3cb2bd31dc2b5e7d6aadd991",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41772406700"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-03",
