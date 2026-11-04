@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 899,
-    "sealed": 8,
+    "opened": 901,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 625,
+    "proven": 627,
     "proven_record": {
       "wins": 340,
-      "losses": 279,
-      "decided": 619,
+      "losses": 281,
+      "decided": 621,
       "withdrawn": 2,
-      "hit_rate": "54.9",
-      "profit_usd": "-4849.49",
-      "staked": "619000",
-      "roi": "-0.8"
+      "hit_rate": "54.8",
+      "profit_usd": "-6849.49",
+      "staked": "621000",
+      "roi": "-1.1"
     },
     "wins": 523,
-    "losses": 368,
+    "losses": 370,
     "voids": 4,
-    "decided": 891,
+    "decided": 893,
     "withdrawn": 4,
-    "hit_rate": "58.7",
+    "hit_rate": "58.6",
     "stake_usd": "1000",
-    "profit_usd": "16896.44",
-    "staked": "891000",
-    "roi": "1.9",
+    "profit_usd": "14896.44",
+    "staked": "893000",
+    "roi": "1.7",
     "through": "2026-11-04"
   },
   "picks": [
@@ -34504,16 +34504,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aa79728262b366903cc429f21b3996e6dbd3fa5d207d8f70e1111053d70a2aa2",
+      "commitment_nonce": "d664f1c2c166f301b87b3fcaff382dbcba8889ccb90e48fa5ab65a94fbdf6be6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T13:55:50.965453Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2047",
       "first_observation": {
         "observed_at": "2026-11-04T13:56:02.078775Z",
         "parent_commit": "9f0652c376fd1935b49b72258b354ffeb76f8421",
         "run": "https://github.com/0xinsider/picks/actions/runs/41842609319"
-      }
+      },
+      "kickoff": "2026-11-04T17:45:00Z",
+      "resolved_at": "2026-11-04T20:24:30.724698Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xd1f28c6f358f5b9a6db57cc5cedd56870bff5b1aebb728416f0e884c2f62cd71",
+        "kickoff": "2026-11-04T17:45:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2047",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Real Madrid CF",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AEK vs. Real Madrid CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2047",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T20:24:30.724698Z",
+          "parent_commit": "8663f405254c7bef4311c8df3ecf3003d8f479bf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41906315797"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -34522,16 +34547,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6cc9baabca62845be430c477c89586bdf0aafbffdab8d73a49f16229cd8c5b3a",
+      "commitment_nonce": "4db3d21d64600a37160e174c176cf5d8d634947670374a437ed02d14018fe700",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T15:30:52.786880Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2048",
       "first_observation": {
         "observed_at": "2026-11-04T15:31:04.116716Z",
         "parent_commit": "2a76dd4ca79f6457238ae049902b43a8bb4cb761",
         "run": "https://github.com/0xinsider/picks/actions/runs/41858527415"
-      }
+      },
+      "kickoff": "2026-11-04T17:45:00Z",
+      "resolved_at": "2026-11-04T20:24:30.711641Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x00bf60ca050d9b85b354bcdbb72c1de9a6856ac1ab42b5a10a93efd5c2030448",
+        "kickoff": "2026-11-04T17:45:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2048",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fenerbahçe SK vs. Liverpool FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2048",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-04T20:24:30.711641Z",
+          "parent_commit": "8663f405254c7bef4311c8df3ecf3003d8f479bf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41906315797"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
