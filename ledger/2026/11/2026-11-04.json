@@ -343,16 +343,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8fa1164e1293041736e72ba4d26bcf335543807089bc15e3dede058d60c51e6a",
+      "commitment_nonce": "6dcd80e79ea2e5389d67b4eda4a899b556555565e63c3977814172ee1a5d9449",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T18:46:09.675324Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2053",
       "first_observation": {
         "observed_at": "2026-11-04T18:46:26.680841Z",
         "parent_commit": "3c1dcf3ea0dd89a99741d333bec0f859487329a7",
         "run": "https://github.com/0xinsider/picks/actions/runs/41890382438"
-      }
+      },
+      "kickoff": "2026-11-04T22:00:00Z",
+      "resolved_at": "2026-11-05T01:24:30.859287Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x1467169f8779f28db6181e56f909c5f5e982bda9df99c8432a8e2400393e9300",
+        "kickoff": "2026-11-04T22:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2053",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "LYON",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Gen.G vs LYON (BO5) - Worlds Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2053",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T01:24:30.859287Z",
+          "parent_commit": "694e417efaa41944d3742c92cab925867cdbb92c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41948317569"
+        }
+      ]
     },
     {
       "pick_rank": 10,
