@@ -427,16 +427,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d132ec2a991ba619747f3173b99c714a90578a51ef85295db3d79283a17d31cc",
+      "commitment_nonce": "45b1787f219a3000ebf0df3b61acb9d403cf137eef9052766e4ccd20123f520f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T20:32:20.125928Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2055",
       "first_observation": {
         "observed_at": "2026-11-04T20:32:30.134794Z",
         "parent_commit": "c07e0c2358d3e2be20f565a98ec44bdad57324ac",
         "run": "https://github.com/0xinsider/picks/actions/runs/41907552554"
-      }
+      },
+      "kickoff": "2026-11-05T00:30:00Z",
+      "resolved_at": "2026-11-05T03:54:30.751745Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xd9ea740a2c6dac2ac23d72fdb92a2cf3d81bff309d9a3d086b89319f66c28e62",
+        "kickoff": "2026-11-05T00:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2055",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Sabres",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Senators vs. Sabres",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2055",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-05T03:54:30.751745Z",
+          "parent_commit": "f80f202a537ca23d9f20a34e06cb74d83f34c1ae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41964484045"
+        }
+      ]
     },
     {
       "pick_rank": 12,
@@ -461,16 +486,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cafdb1f35dd41c4906c5797df1147fdd84decf77e1c634136fb3fe0dcaea7e30",
+      "commitment_nonce": "a01eeb4d5092b85598bf8f69d8f9a28b76ed054d7e49e9032d8b3af790d5764c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T22:52:28.787776Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2057",
       "first_observation": {
         "observed_at": "2026-11-04T22:52:39.644361Z",
         "parent_commit": "1d434987817cce3c962436a5fe549296bcaab2d7",
         "run": "https://github.com/0xinsider/picks/actions/runs/41929026407"
-      }
+      },
+      "kickoff": "2026-11-05T00:00:00Z",
+      "resolved_at": "2026-11-05T03:54:30.759529Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x2b14473a3e7bc0e14084c0e0ef9e8430f8893c9e37fd3111e15b7798223c46f8",
+        "kickoff": "2026-11-05T00:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2057",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ball State vs. UMass",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2057",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T03:54:30.759529Z",
+          "parent_commit": "f80f202a537ca23d9f20a34e06cb74d83f34c1ae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41964484045"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -495,16 +545,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4069cbe0e92d32d02154f960ec3105a63f5ed15729b2c829235116f584b69732",
+      "commitment_nonce": "e6c2cd81329bff19cc41cbf0fc3c85cfc860edce234af5ec5a4aeab8bec3ee81",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T23:47:04.044267Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2059",
       "first_observation": {
         "observed_at": "2026-11-04T23:47:15.929123Z",
         "parent_commit": "066edc12a8491426370695abfe7360b3ac4fd35c",
         "run": "https://github.com/0xinsider/picks/actions/runs/41936420933"
-      }
+      },
+      "kickoff": "2026-11-05T00:30:00Z",
+      "resolved_at": "2026-11-05T03:54:30.777038Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x5e05533be232a3db1c0d0bd0d31e03e92f23d49c76cb3858f36c76137160a993",
+        "kickoff": "2026-11-05T00:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2059",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hornets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hornets vs. Nets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2059",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T03:54:30.777038Z",
+          "parent_commit": "f80f202a537ca23d9f20a34e06cb74d83f34c1ae",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41964484045"
+        }
+      ]
     },
     {
       "pick_rank": 16,
