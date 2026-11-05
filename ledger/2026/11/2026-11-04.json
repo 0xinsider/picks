@@ -654,16 +654,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "792ea8da77aa353b5a919f9df8b182b86fd8aa66e92e39fc0df352f538aae003",
+      "commitment_nonce": "7e02e9718464134aecbe49a4ed626a1af0df96a0712f0fe88488e2bc8529ba79",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T01:08:34.427029Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2061",
       "first_observation": {
         "observed_at": "2026-11-05T01:08:44.084307Z",
         "parent_commit": "ffee484754162f98a5c4a69158f54028029556c0",
         "run": "https://github.com/0xinsider/picks/actions/runs/41946452750"
-      }
+      },
+      "kickoff": "2026-11-05T02:00:00Z",
+      "resolved_at": "2026-11-05T04:54:30.846131Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x34b52d09a61a92ccc9e3ab59aac069aeb064cf51db985da515f9f43f02dd14ba",
+        "kickoff": "2026-11-05T02:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2061",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Trail Blazers vs. Suns",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2061",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T04:54:30.846131Z",
+          "parent_commit": "d4f9aec77c4ac3af02875a65f65d32d3bd2396cb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41970674198"
+        }
+      ]
     }
   ]
 }
