@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 914,
-    "sealed": 1,
+    "opened": 915,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 640,
+    "proven": 641,
     "proven_record": {
-      "wins": 345,
+      "wins": 346,
       "losses": 289,
-      "decided": 634,
+      "decided": 635,
       "withdrawn": 2,
-      "hit_rate": "54.4",
-      "profit_usd": "-11333.47",
-      "staked": "634000",
-      "roi": "-1.8"
+      "hit_rate": "54.5",
+      "profit_usd": "-10733.47",
+      "staked": "635000",
+      "roi": "-1.7"
     },
-    "wins": 528,
+    "wins": 529,
     "losses": 378,
     "voids": 4,
-    "decided": 906,
+    "decided": 907,
     "withdrawn": 4,
     "hit_rate": "58.3",
     "stake_usd": "1000",
-    "profit_usd": "10412.46",
-    "staked": "906000",
-    "roi": "1.1",
-    "through": "2026-11-04"
+    "profit_usd": "11012.46",
+    "staked": "907000",
+    "roi": "1.2",
+    "through": "2026-11-05"
   },
   "picks": [
     {
@@ -35149,16 +35149,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5ce07a81896eeab0bfb3f84c597f330f7b6176b328cda778c3067fc0cc82d7ed",
+      "commitment_nonce": "3b62270e368f7951b19e34c769fd1f6d1a6a99c74a265174e6805b79d964ab4c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T08:54:17.626790Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2062",
       "first_observation": {
         "observed_at": "2026-11-05T08:54:29.907648Z",
         "parent_commit": "10fd9c8420f8e2023314bc07900b0b36e1edca4c",
         "run": "https://github.com/0xinsider/picks/actions/runs/41998062028"
-      }
+      },
+      "kickoff": "2026-11-05T10:30:00Z",
+      "resolved_at": "2026-11-05T13:54:30.610171Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xf487be4f2fd5e90d12e4714f58b7c5bf44f7b652f19118a23b40900d2e4fc48c",
+        "kickoff": "2026-11-05T10:30:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2062",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Alexandra Eala",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Prudential Hong Kong Tennis Open: Tereza Valentova vs Alexandra Eala",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2062",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-05T13:54:30.610171Z",
+          "parent_commit": "a678c37960fcfaeb24f3043b5742c8c33f67a086",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42039953391"
+        }
+      ]
     }
   ]
 }
