@@ -553,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8a6b6a05efb84c926a3a588d2cd2b3aab820fc83176a8113523b958ce5685d82",
+      "commitment_nonce": "b8f7536733e1d55d98413c16371f563badcf0007d93533b090aa1f491572dde0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T23:10:30.441591Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2058",
       "first_observation": {
         "observed_at": "2026-11-04T23:10:40.064549Z",
         "parent_commit": "dfdbf087bce77e7efed87eef52f3115d6908a7c4",
         "run": "https://github.com/0xinsider/picks/actions/runs/41931571536"
-      }
+      },
+      "kickoff": "2026-11-05T03:00:00Z",
+      "resolved_at": "2026-11-05T06:24:30.606542Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xd118fd413bb9d39928b6b5e7e0e8bcf63184d981d946b81d4f78128a722b9961",
+        "kickoff": "2026-11-05T03:00:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2058",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lakers vs. Kings",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2058",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-05T06:24:30.606542Z",
+          "parent_commit": "9bfcbddd0278fe0cd70807b59abbdea9f46e6396",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41980205594"
+        }
+      ]
     },
     {
       "pick_rank": 15,
