@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 910,
-    "sealed": 4,
+    "opened": 912,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 636,
+    "proven": 638,
     "proven_record": {
       "wins": 344,
-      "losses": 286,
-      "decided": 630,
+      "losses": 288,
+      "decided": 632,
       "withdrawn": 2,
-      "hit_rate": "54.6",
-      "profit_usd": "-9238.23",
-      "staked": "630000",
-      "roi": "-1.5"
+      "hit_rate": "54.4",
+      "profit_usd": "-11238.23",
+      "staked": "632000",
+      "roi": "-1.8"
     },
     "wins": 527,
-    "losses": 375,
+    "losses": 377,
     "voids": 4,
-    "decided": 902,
+    "decided": 904,
     "withdrawn": 4,
-    "hit_rate": "58.4",
+    "hit_rate": "58.3",
     "stake_usd": "1000",
-    "profit_usd": "12507.70",
-    "staked": "902000",
-    "roi": "1.4",
+    "profit_usd": "10507.70",
+    "staked": "904000",
+    "roi": "1.2",
     "through": "2026-11-04"
   },
   "picks": [
@@ -34891,16 +34891,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "32ed560584422b5b14f1bcc6bc7c9146431f4a5096222155d42fb77084354d9c",
+      "commitment_nonce": "4d98e2e58345adbf35589c23d4054d23789277cf6cc6a5f1c609329f50e6b692",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-04T21:40:29.037434Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2056",
       "first_observation": {
         "observed_at": "2026-11-04T21:40:47.444622Z",
         "parent_commit": "f2ffa302c580bef98d2b61517915099148b0837e",
         "run": "https://github.com/0xinsider/picks/actions/runs/41918279242"
-      }
+      },
+      "kickoff": "2026-11-05T00:30:00Z",
+      "resolved_at": "2026-11-05T04:24:34.386284Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x1a3af66306c5e1b904ff1c64612906a44faddcae68fbc6c29a8e0d891628099b",
+        "kickoff": "2026-11-05T00:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2056",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Eastern Michigan",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Central Michigan vs. Eastern Michigan",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2056",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T04:24:34.386284Z",
+          "parent_commit": "2d2aeee1342feb9b7c4c79675822ba0615a6adcf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41967623339"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
@@ -35013,16 +35038,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bf7a1ddd9663f4b0101d647853c6afdd97311d91630dec00e1a619b656d21a7b",
+      "commitment_nonce": "2c8fe5f4dda7078786d1e586211d21e4f35cd4ee571824bd26448f838ec64cb4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T00:34:04.595295Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2060",
       "first_observation": {
         "observed_at": "2026-11-05T00:34:16.301015Z",
         "parent_commit": "c97bccd661234a5461215328f48a554164904b43",
         "run": "https://github.com/0xinsider/picks/actions/runs/41942282325"
-      }
+      },
+      "kickoff": "2026-11-05T01:30:00Z",
+      "resolved_at": "2026-11-05T04:24:34.395008Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xeeae54f60e4201109194ffbf3b972a013865b5e0e8979b3acc1d3a0b616f9575",
+        "kickoff": "2026-11-05T01:30:00Z",
+        "pick_date": "2026-11-04",
+        "pick_id": "2060",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Rockets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Timberwolves vs. Rockets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2060",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T04:24:34.395008Z",
+          "parent_commit": "2d2aeee1342feb9b7c4c79675822ba0615a6adcf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/41967623339"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-04",
