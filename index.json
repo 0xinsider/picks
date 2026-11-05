@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 915,
-    "sealed": 9,
+    "opened": 916,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 641,
+    "proven": 642,
     "proven_record": {
       "wins": 346,
-      "losses": 289,
-      "decided": 635,
+      "losses": 290,
+      "decided": 636,
       "withdrawn": 2,
-      "hit_rate": "54.5",
-      "profit_usd": "-10733.47",
-      "staked": "635000",
-      "roi": "-1.7"
+      "hit_rate": "54.4",
+      "profit_usd": "-11733.47",
+      "staked": "636000",
+      "roi": "-1.8"
     },
     "wins": 529,
-    "losses": 378,
+    "losses": 379,
     "voids": 4,
-    "decided": 907,
+    "decided": 908,
     "withdrawn": 4,
     "hit_rate": "58.3",
     "stake_usd": "1000",
-    "profit_usd": "11012.46",
-    "staked": "907000",
-    "roi": "1.2",
+    "profit_usd": "10012.46",
+    "staked": "908000",
+    "roi": "1.1",
     "through": "2026-11-05"
   },
   "picks": [
@@ -35192,16 +35192,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "092953fd518e8c800338e8fd705b5869998c6d185a215988ebce2b9f93d44542",
+      "commitment_nonce": "246aacbfa0584c8222784126d384f937afb4071f4d9f00335a9fd391c1ab1fe7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T15:15:39.397250Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2063",
       "first_observation": {
         "observed_at": "2026-11-05T15:15:53.023511Z",
         "parent_commit": "4c23db7c8c7f3d741b801e39e79fe69ef63084d7",
         "run": "https://github.com/0xinsider/picks/actions/runs/42053153286"
-      }
+      },
+      "kickoff": "2026-11-05T17:45:00Z",
+      "resolved_at": "2026-11-05T22:10:09.588021Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0xd89ed9aea30f0ebe806a4cc5a39678a89ad6651fe1cd1ff01a9e3323ad9f3f7b",
+        "kickoff": "2026-11-05T17:45:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2063",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AC Milan vs. Ferencvárosi TC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2063",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-05T22:10:09.588021Z",
+          "parent_commit": "c13c3ba48c47943e3ad7f36098953a3b8cf28710",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42119145961"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
