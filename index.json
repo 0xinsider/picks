@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 916,
-    "sealed": 9,
+    "opened": 920,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 642,
+    "proven": 646,
     "proven_record": {
-      "wins": 346,
-      "losses": 290,
-      "decided": 636,
+      "wins": 348,
+      "losses": 292,
+      "decided": 640,
       "withdrawn": 2,
       "hit_rate": "54.4",
-      "profit_usd": "-11733.47",
-      "staked": "636000",
-      "roi": "-1.8"
+      "profit_usd": "-12383.32",
+      "staked": "640000",
+      "roi": "-1.9"
     },
-    "wins": 529,
-    "losses": 379,
+    "wins": 531,
+    "losses": 381,
     "voids": 4,
-    "decided": 908,
+    "decided": 912,
     "withdrawn": 4,
-    "hit_rate": "58.3",
+    "hit_rate": "58.2",
     "stake_usd": "1000",
-    "profit_usd": "10012.46",
-    "staked": "908000",
-    "roi": "1.1",
+    "profit_usd": "9362.62",
+    "staked": "912000",
+    "roi": "1.0",
     "through": "2026-11-05"
   },
   "picks": [
@@ -35235,16 +35235,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7a9adde3f2de630b8ec46ca4bab4c8c5fec74d1dd8a4c3cfecf9ab348d05edde",
+      "commitment_nonce": "d17c00208728a3c56ac88e3403dd278d9d5f065d28f5fa2fb72cf5f9db5afeff",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T16:02:09.712990Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2064",
       "first_observation": {
         "observed_at": "2026-11-05T16:02:23.664522Z",
         "parent_commit": "e222bd60a67b83fc2177e756f5a995d9740cdb30",
         "run": "https://github.com/0xinsider/picks/actions/runs/42060889872"
-      }
+      },
+      "kickoff": "2026-11-05T20:00:00Z",
+      "resolved_at": "2026-11-06T00:10:09.531908Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.580000",
+        "condition_id": "0x6724d33659f487f9f6d76ba303682cee3b5f515624497f45e29fb74065d0df00",
+        "kickoff": "2026-11-05T20:00:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2064",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Twente vs. Páfos FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2064",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-06T00:10:09.531908Z",
+          "parent_commit": "e0c97c2250a2a879e8ff4956c0d16e4aea084232",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42134834856"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
@@ -35253,16 +35278,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "536e2ee276a0647ee665b6c5be8dddc96fa587dc7b0cf89094ac4c33e18139cc",
+      "commitment_nonce": "4fb0920ea460908e673fb342552911afed001095a813513e7b56acb5a8c61012",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T16:02:09.719167Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2065",
       "first_observation": {
         "observed_at": "2026-11-05T16:02:23.664522Z",
         "parent_commit": "e222bd60a67b83fc2177e756f5a995d9740cdb30",
         "run": "https://github.com/0xinsider/picks/actions/runs/42060889872"
-      }
+      },
+      "kickoff": "2026-11-05T20:00:00Z",
+      "resolved_at": "2026-11-06T00:10:09.543869Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x8c65777010e960770ba4773b3ec55c13b5220fb46ea0853ac62b633f92be280c",
+        "kickoff": "2026-11-05T20:00:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2065",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Getafe CF vs. Brighton & Hove Albion FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2065",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-06T00:10:09.543869Z",
+          "parent_commit": "e0c97c2250a2a879e8ff4956c0d16e4aea084232",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42134834856"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
@@ -35271,16 +35321,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cb149d40359ed6355a24885cb69ef9c44b7bca84bafd4977f09d47b3d708b333",
+      "commitment_nonce": "bae635ba2a9f02ba08ceee1bedd29adae84d3e3dfe1b2409b08d9dc9b37af426",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T16:30:14.369352Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2066",
       "first_observation": {
         "observed_at": "2026-11-05T16:30:27.788957Z",
         "parent_commit": "48877e2034b868d2e663db7606885d8707d15cac",
         "run": "https://github.com/0xinsider/picks/actions/runs/42065110671"
-      }
+      },
+      "kickoff": "2026-11-05T20:00:00Z",
+      "resolved_at": "2026-11-06T00:10:09.553348Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xf74fe8126d6313642be8cb1223715f3c2aad3c345dcf92e940ce178fd64306a3",
+        "kickoff": "2026-11-05T20:00:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2066",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "K. Sint-Truidense VV vs. SK Brann",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2066",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T00:10:09.553348Z",
+          "parent_commit": "e0c97c2250a2a879e8ff4956c0d16e4aea084232",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42134834856"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
@@ -35289,16 +35364,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5a753879185d67ac62fa4bc0eaff29c4b3d26031d0cf94989ca48aeab84e0193",
+      "commitment_nonce": "740f52984f5f70e24b3aeb24a445a85e77d756cf66ff8e9a22bbe5e1df220a71",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T16:45:08.429900Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2067",
       "first_observation": {
         "observed_at": "2026-11-05T16:45:20.695068Z",
         "parent_commit": "b4d5bba72fdc79f7228e5aa9680a188ccd8a7c67",
         "run": "https://github.com/0xinsider/picks/actions/runs/42067662572"
-      }
+      },
+      "kickoff": "2026-11-05T20:00:00Z",
+      "resolved_at": "2026-11-06T00:10:09.566315Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xf9b2647ad9d004feba19feaad6f1e5ab9fb2e2884434ea1705048d08d368e929",
+        "kickoff": "2026-11-05T20:00:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2067",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bayer 04 Leverkusen vs. Olympique de Marseille",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2067",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T00:10:09.566315Z",
+          "parent_commit": "e0c97c2250a2a879e8ff4956c0d16e4aea084232",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42134834856"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
