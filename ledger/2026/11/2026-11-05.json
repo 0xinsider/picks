@@ -318,16 +318,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "abcae43ce1e9f8e461492d567d0066bffa471a7348d0bedaa07e34331b580c32",
+      "commitment_nonce": "39b6968872dc5f1d89640bb99a31662aa054c3cdbc1893b3e1cf4cffe1550b20",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T21:16:20.090916Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2070",
       "first_observation": {
         "observed_at": "2026-11-05T21:16:30.778991Z",
         "parent_commit": "2d75942e85cbaa042dd40bef51b0df07b20a5a62",
         "run": "https://github.com/0xinsider/picks/actions/runs/42111107185"
-      }
+      },
+      "kickoff": "2026-11-06T01:15:00Z",
+      "resolved_at": "2026-11-06T04:40:09.683080Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x8e0015aece3f438dee2d5522c5c52b12da94232749db7239ce51551507a3f2ca",
+        "kickoff": "2026-11-06T01:15:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2070",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jaguars vs. Ravens",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2070",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T04:40:09.683080Z",
+          "parent_commit": "436dafc3e693eed1ba7ec6857f185bb6e60af2a9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42163862678"
+        }
+      ]
     },
     {
       "pick_rank": 10,
