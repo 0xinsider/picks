@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 920,
-    "sealed": 5,
+    "opened": 921,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 646,
+    "proven": 647,
     "proven_record": {
       "wins": 348,
-      "losses": 292,
-      "decided": 640,
+      "losses": 293,
+      "decided": 641,
       "withdrawn": 2,
-      "hit_rate": "54.4",
-      "profit_usd": "-12383.32",
-      "staked": "640000",
-      "roi": "-1.9"
+      "hit_rate": "54.3",
+      "profit_usd": "-13383.32",
+      "staked": "641000",
+      "roi": "-2.1"
     },
     "wins": 531,
-    "losses": 381,
+    "losses": 382,
     "voids": 4,
-    "decided": 912,
+    "decided": 913,
     "withdrawn": 4,
     "hit_rate": "58.2",
     "stake_usd": "1000",
-    "profit_usd": "9362.62",
-    "staked": "912000",
-    "roi": "1.0",
+    "profit_usd": "8362.62",
+    "staked": "913000",
+    "roi": "0.9",
     "through": "2026-11-05"
   },
   "picks": [
@@ -35407,16 +35407,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "533bf0902428337d4637e732c8c4c5114f9061dd49ac81e5598d4a8a3e584808",
+      "commitment_nonce": "3332fcbd35546010638ea6c123a5289fd5b022e8bcb86deacdd1a16ace89e986",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-05T18:01:08.641772Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2068",
       "first_observation": {
         "observed_at": "2026-11-05T18:01:20.938469Z",
         "parent_commit": "438697cac59ce6cc65588cc2460eae906272e894",
         "run": "https://github.com/0xinsider/picks/actions/runs/42080205891"
-      }
+      },
+      "kickoff": "2026-11-05T22:00:00Z",
+      "resolved_at": "2026-11-06T01:40:09.497995Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x1061afb6b7e064e3a9a8606800b626f7e8111765ed9db58f5622acc6a83240eb",
+        "kickoff": "2026-11-05T22:00:00Z",
+        "pick_date": "2026-11-05",
+        "pick_id": "2068",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Dplus KIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Dplus KIA vs Bilibili Gaming (BO5) - Worlds Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2068",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T01:40:09.497995Z",
+          "parent_commit": "d393fc4e152ee7d8e2f594c0b240d905854f9350",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42145359677"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-05",
