@@ -125,16 +125,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "696fb3e88b03a6f15bb541c639bed1f982ad9d097d0e9e537e86f957c74ff775",
+      "commitment_nonce": "073ef68487dd8f5ff66edf6dd0d86f6584811f83a20c507d4c035bc1fa4fe821",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T19:25:10.144264Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2077",
       "first_observation": {
         "observed_at": "2026-11-06T19:25:20.041290Z",
         "parent_commit": "ef7a11a06d9db064c1133791a2753c84e18f51ea",
         "run": "https://github.com/0xinsider/picks/actions/runs/42279447265"
-      }
+      },
+      "kickoff": "2026-11-06T20:00:00Z",
+      "resolved_at": "2026-11-06T22:19:37.286630Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x3677c251947318cc64698988355cb2bbb5fe9a20f8c18c9e614cacc719026338",
+        "kickoff": "2026-11-06T20:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2077",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Everton FC vs. Coventry City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2077",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-06T22:19:37.286630Z",
+          "parent_commit": "065bc4fad7bd1474494dc76ecefc13737b814bda",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42303835527"
+        }
+      ]
     },
     {
       "pick_rank": 6,
