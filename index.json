@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 925,
-    "sealed": 1,
+    "opened": 926,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 651,
+    "proven": 652,
     "proven_record": {
       "wins": 349,
-      "losses": 296,
-      "decided": 645,
+      "losses": 297,
+      "decided": 646,
       "withdrawn": 2,
-      "hit_rate": "54.1",
-      "profit_usd": "-15185.51",
-      "staked": "645000",
-      "roi": "-2.4"
+      "hit_rate": "54.0",
+      "profit_usd": "-16185.51",
+      "staked": "646000",
+      "roi": "-2.5"
     },
     "wins": 532,
-    "losses": 385,
+    "losses": 386,
     "voids": 4,
-    "decided": 917,
+    "decided": 918,
     "withdrawn": 4,
     "hit_rate": "58.0",
     "stake_usd": "1000",
-    "profit_usd": "6560.42",
-    "staked": "917000",
-    "roi": "0.7",
-    "through": "2026-11-05"
+    "profit_usd": "5560.42",
+    "staked": "918000",
+    "roi": "0.6",
+    "through": "2026-11-06"
   },
   "picks": [
     {
@@ -35622,16 +35622,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "272919a31380c4fe7dd67eb966666829ffa1b7d491cc77a32f556ec6fc8f8abc",
+      "commitment_nonce": "c03aaf3b1239bd10ad95b6df9a6c4aaadc740db8b3a396ab09007440b2e5234c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T08:00:11.900027Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2073",
       "first_observation": {
         "observed_at": "2026-11-06T08:00:23.467388Z",
         "parent_commit": "4795523331ce1a44aac4193cce259adb27b45c38",
         "run": "https://github.com/0xinsider/picks/actions/runs/42184578892"
-      }
+      },
+      "kickoff": "2026-11-06T09:45:00Z",
+      "resolved_at": "2026-11-06T15:10:09.376837Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x995336898ee77b1733e1fad3934241c1cbf5b93aade93b1aa2363262de389984",
+        "kickoff": "2026-11-06T09:45:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2073",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: FURIA vs BetBoom Team (BO3) - IEM Beijing Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2073",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T15:10:09.376837Z",
+          "parent_commit": "e5aa95849fe41155f7feb29b2477386a468d1b19",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42240510642"
+        }
+      ]
     }
   ]
 }
