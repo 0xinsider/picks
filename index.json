@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 928,
-    "sealed": 4,
+    "opened": 929,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 654,
+    "proven": 655,
     "proven_record": {
       "wins": 350,
-      "losses": 298,
-      "decided": 648,
+      "losses": 299,
+      "decided": 649,
       "withdrawn": 2,
-      "hit_rate": "54.0",
-      "profit_usd": "-16446.38",
-      "staked": "648000",
-      "roi": "-2.5"
+      "hit_rate": "53.9",
+      "profit_usd": "-17446.38",
+      "staked": "649000",
+      "roi": "-2.7"
     },
     "wins": 533,
-    "losses": 387,
+    "losses": 388,
     "voids": 4,
-    "decided": 920,
+    "decided": 921,
     "withdrawn": 4,
     "hit_rate": "57.9",
     "stake_usd": "1000",
-    "profit_usd": "5299.55",
-    "staked": "920000",
-    "roi": "0.6",
+    "profit_usd": "4299.55",
+    "staked": "921000",
+    "roi": "0.5",
     "through": "2026-11-06"
   },
   "picks": [
@@ -35708,16 +35708,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7ebf9de13489aef902948e83172f7e03780252d76b615d3f4bea04f2b99a3d9a",
+      "commitment_nonce": "5396f75d21ca2809995d6772de30d2399432e57ce1816731d41ea7e4dedd36ea",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T18:31:23.703820Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2075",
       "first_observation": {
         "observed_at": "2026-11-06T18:31:34.143755Z",
         "parent_commit": "72fe7d51f8ad3141ca8223ed242a8b9bbfcc01cd",
         "run": "https://github.com/0xinsider/picks/actions/runs/42271470889"
-      }
+      },
+      "kickoff": "2026-11-06T20:00:00Z",
+      "resolved_at": "2026-11-06T23:54:51.856094Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x5b8f91882bef1d6fecc08e83248e943f4862af7f919c4c30a48a04ad07ced728",
+        "kickoff": "2026-11-06T20:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2075",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Derby County FC vs. Bolton Wanderers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2075",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-06T23:54:51.856094Z",
+          "parent_commit": "1894df0771463113f88d1c74cbf94396dbcd0ec5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42314945820"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
