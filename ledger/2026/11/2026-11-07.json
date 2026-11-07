@@ -436,16 +436,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9af9f3a510b3a6c0ab078ef19b7b38c8ac5056c2b9b71c4a5a46c672a732e8a3",
+      "commitment_nonce": "b4c09520feb5d2f534b5ab990a8cc0429e6350d69e86d632cf1a7ccb78ce38ae",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T13:31:58.187910Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2096",
       "first_observation": {
         "observed_at": "2026-11-07T13:32:06.563951Z",
         "parent_commit": "9e3d580979a8dbb477b77ccc49a793f1538f78b6",
         "run": "https://github.com/0xinsider/picks/actions/runs/42377388747"
-      }
+      },
+      "kickoff": "2026-11-07T17:30:00Z",
+      "resolved_at": "2026-11-07T19:43:50.394332Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x77e2a154d6810e63cd01b10283159771447b06054885581a408448b5565f8e9e",
+        "kickoff": "2026-11-07T17:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2096",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nottingham Forest FC vs. Manchester City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2096",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T19:43:50.394332Z",
+          "parent_commit": "fddc2fbf70907d1af468b30cc561aef1ddd592a1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42407621934"
+        }
+      ]
     },
     {
       "pick_rank": 14,
