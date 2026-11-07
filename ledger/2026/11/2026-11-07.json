@@ -243,16 +243,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d18edfd088516a32c74cc03785dbc6e998b76cb411c941b61568ccd32452b20d",
+      "commitment_nonce": "e65c14bd484d00cf0867a6c9c25903f1d03f715257045a7b8b4a5e0b040c4d0b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T13:10:10.724451Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2092",
       "first_observation": {
         "observed_at": "2026-11-07T13:10:20.426351Z",
         "parent_commit": "ff8f818011b655d4016f426c0e3a068f609b6267",
         "run": "https://github.com/0xinsider/picks/actions/runs/42375718901"
-      }
+      },
+      "kickoff": "2026-11-07T14:00:00Z",
+      "resolved_at": "2026-11-07T16:45:52.251180Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x096c3f70655c53f164c41b289e67ba8785cda63e72441ba0cf43fa16046cdf3a",
+        "kickoff": "2026-11-07T14:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2092",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Torino FC vs. US Lecce",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2092",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T16:45:52.251180Z",
+          "parent_commit": "4ebb0c6508abf515a9d8892a4967fdd0d6c97c36",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42392923491"
+        }
+      ]
     },
     {
       "pick_rank": 10,
