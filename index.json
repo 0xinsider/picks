@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 931,
-    "sealed": 5,
+    "opened": 932,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 657,
+    "proven": 658,
     "proven_record": {
       "wins": 350,
-      "losses": 301,
-      "decided": 651,
+      "losses": 302,
+      "decided": 652,
       "withdrawn": 2,
-      "hit_rate": "53.8",
-      "profit_usd": "-19446.38",
-      "staked": "651000",
-      "roi": "-3.0"
+      "hit_rate": "53.7",
+      "profit_usd": "-20446.38",
+      "staked": "652000",
+      "roi": "-3.1"
     },
     "wins": 533,
-    "losses": 390,
+    "losses": 391,
     "voids": 4,
-    "decided": 923,
+    "decided": 924,
     "withdrawn": 4,
     "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "2299.55",
-    "staked": "923000",
-    "roi": "0.2",
+    "profit_usd": "1299.55",
+    "staked": "924000",
+    "roi": "0.1",
     "through": "2026-11-06"
   },
   "picks": [
@@ -35880,16 +35880,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "84ae1c4f01603ef363cada04710b7dd6bb803ed3497de523bc0fa2d0d0be9f4e",
+      "commitment_nonce": "7e1595ed58af7329a659e70b4c93b9fe1728178021426eb5dc4c650ea245f3f1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T22:10:21.416491Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2079",
       "first_observation": {
         "observed_at": "2026-11-06T22:10:29.971971Z",
         "parent_commit": "62593a0ab3f3c0749beb8eb0e0322e29e66cf64b",
         "run": "https://github.com/0xinsider/picks/actions/runs/42302615396"
-      }
+      },
+      "kickoff": "2026-11-07T02:00:00Z",
+      "resolved_at": "2026-11-07T05:27:08.235823Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x5b717fa2ee44e6bc6bad7ab59ac46b5fe4c0eee1b3dc46ace4ad80c788358f4f",
+        "kickoff": "2026-11-07T02:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2079",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Nevada",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "New Mexico vs. Nevada",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2079",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T05:27:08.235823Z",
+          "parent_commit": "d235f5779f650bc8d1c8188920b8318ff1f6c0c2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42342785079"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
