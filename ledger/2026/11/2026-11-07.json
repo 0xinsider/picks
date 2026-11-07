@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "eb95762143d0125a6733ad4edac25f063074dc5d14904366f5c5dcc1eb77a03f",
+      "commitment_nonce": "8f893de7801da91ffa5904f816d2536d701a0843f66d01d734b6c2a32396a405",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T15:40:27.059363Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2100",
       "first_observation": {
         "observed_at": "2026-11-07T15:40:37.002542Z",
         "parent_commit": "b60ef473b7afeb8fec9fc5aa547779cb9dc45ea8",
         "run": "https://github.com/0xinsider/picks/actions/runs/42387516562"
-      }
+      },
+      "kickoff": "2026-11-07T19:30:00Z",
+      "resolved_at": "2026-11-07T23:49:49.826250Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x94c4e0d20266c9a27a9462fc92416cd234a937b8057f33da3a1abd41854fa6e8",
+        "kickoff": "2026-11-07T19:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2100",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hertha BSC vs. VfL Wolfsburg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2100",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T23:49:49.826250Z",
+          "parent_commit": "c8394974ec0bf241ab026ce1946db4ec1c2f55ce",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42427003116"
+        }
+      ]
     },
     {
       "pick_rank": 18,
@@ -797,16 +822,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cdce6e04aaf0f1a2c44ea1806a43f38dd60d8648470c032d223051ba98d1f94d",
+      "commitment_nonce": "5a207efccdbacd9bf1fc057aa442a5494ec4d1bda53d4bea12104c2f1153eb50",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T17:25:27.140510Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2104",
       "first_observation": {
         "observed_at": "2026-11-07T17:25:39.429466Z",
         "parent_commit": "fe0717c08ecdf04feeeed2640c386e69bbd50290",
         "run": "https://github.com/0xinsider/picks/actions/runs/42396238182"
-      }
+      },
+      "kickoff": "2026-11-07T21:00:00Z",
+      "resolved_at": "2026-11-07T23:49:49.730230Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x761409ad0de89cb2177680d88425186d157d29d697bc50a7bc12a271cca10c2a",
+        "kickoff": "2026-11-07T21:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2104",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CF Montréal vs. Vancouver Whitecaps FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2104",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T23:49:49.730230Z",
+          "parent_commit": "c8394974ec0bf241ab026ce1946db4ec1c2f55ce",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42427003116"
+        }
+      ]
     },
     {
       "pick_rank": 22,
