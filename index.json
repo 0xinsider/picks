@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 952,
-    "sealed": 8,
+    "opened": 954,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 678,
+    "proven": 680,
     "proven_record": {
       "wins": 362,
-      "losses": 310,
-      "decided": 672,
+      "losses": 312,
+      "decided": 674,
       "withdrawn": 2,
-      "hit_rate": "53.9",
-      "profit_usd": "-15341.77",
-      "staked": "672000",
-      "roi": "-2.3"
+      "hit_rate": "53.7",
+      "profit_usd": "-17341.77",
+      "staked": "674000",
+      "roi": "-2.6"
     },
     "wins": 545,
-    "losses": 399,
+    "losses": 401,
     "voids": 4,
-    "decided": 944,
+    "decided": 946,
     "withdrawn": 4,
-    "hit_rate": "57.7",
+    "hit_rate": "57.6",
     "stake_usd": "1000",
-    "profit_usd": "6404.16",
-    "staked": "944000",
-    "roi": "0.7",
+    "profit_usd": "4404.16",
+    "staked": "946000",
+    "roi": "0.5",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36801,16 +36801,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cf6c9e47f0065b3658471d664c62ac618f5f9fe58b9023426065d13c3519feba",
+      "commitment_nonce": "02821db5febb0185c6225758468ea03ff2636272243857e06323ac5bef58f50d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T15:55:13.821068Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2101",
       "first_observation": {
         "observed_at": "2026-11-07T15:55:22.947780Z",
         "parent_commit": "90b73e11b19d1c569bc0fa8e40bd85eb005685c8",
         "run": "https://github.com/0xinsider/picks/actions/runs/42388692875"
-      }
+      },
+      "kickoff": "2026-11-07T19:45:00Z",
+      "resolved_at": "2026-11-07T22:03:15.728284Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.265000",
+        "condition_id": "0x849a976c3eeb671621164f69d73940e4917a37573602259baea38d45c258f95a",
+        "kickoff": "2026-11-07T19:45:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2101",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AS Roma vs. US Sassuolo Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2101",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T22:03:15.728284Z",
+          "parent_commit": "9e3a98204db95c15a5b60748908b84c95f26a8cb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42418764606"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36837,16 +36862,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e76e4b7f2c098f5ebd47fba77c95d76369600aa28daaa25c50eae1668584e7c9",
+      "commitment_nonce": "8321092a5be11e8b09cd4e2e9892d4ddcedd0015778b8ac4e4432380a2b4933e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T16:55:23.145720Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2103",
       "first_observation": {
         "observed_at": "2026-11-07T16:55:31.270903Z",
         "parent_commit": "53ca46c8efa77fcbcae2c1a666f8c4602aaa3108",
         "run": "https://github.com/0xinsider/picks/actions/runs/42393709904"
-      }
+      },
+      "kickoff": "2026-11-07T17:30:00Z",
+      "resolved_at": "2026-11-07T22:03:15.703061Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x484b61b313e6924810739583be19cf22df77a799617c85a70f1e6f5bdaf426a6",
+        "kickoff": "2026-11-07T17:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2103",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CD Leganés vs. Albacete Balompié",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2103",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T22:03:15.703061Z",
+          "parent_commit": "9e3a98204db95c15a5b60748908b84c95f26a8cb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42418764606"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
