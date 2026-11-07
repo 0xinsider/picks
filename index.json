@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 941,
-    "sealed": 14,
+    "opened": 943,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 667,
+    "proven": 669,
     "proven_record": {
-      "wins": 355,
-      "losses": 306,
-      "decided": 661,
+      "wins": 356,
+      "losses": 307,
+      "decided": 663,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-19595.65",
-      "staked": "661000",
-      "roi": "-3.0"
+      "profit_usd": "-19126.52",
+      "staked": "663000",
+      "roi": "-2.9"
     },
-    "wins": 538,
-    "losses": 395,
+    "wins": 539,
+    "losses": 396,
     "voids": 4,
-    "decided": 933,
+    "decided": 935,
     "withdrawn": 4,
-    "hit_rate": "57.7",
+    "hit_rate": "57.6",
     "stake_usd": "1000",
-    "profit_usd": "2150.28",
-    "staked": "933000",
-    "roi": "0.2",
+    "profit_usd": "2619.41",
+    "staked": "935000",
+    "roi": "0.3",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36181,16 +36181,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "449ca6b0686a0ab124bc43b1d4ec457b1052b5f3e08b77a257108dba07c5e247",
+      "commitment_nonce": "d15d14becff72e277a4de845816924828d4170ac4fcc8ceb0c66347e8c7eb0d9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T10:34:40.011533Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2086",
       "first_observation": {
         "observed_at": "2026-11-07T10:34:50.204574Z",
         "parent_commit": "1ab212620ef84fb06394939896659cb3f9004e97",
         "run": "https://github.com/0xinsider/picks/actions/runs/42364542657"
-      }
+      },
+      "kickoff": "2026-11-07T14:30:00Z",
+      "resolved_at": "2026-11-07T16:51:44.175858Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x49158b5f973dcaeaf06f78a21c2f7f98017c6efd187b72bd149270ac26312ae8",
+        "kickoff": "2026-11-07T14:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2086",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "1. FSV Mainz 05 vs. FC Bayern München",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2086",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T16:51:44.175858Z",
+          "parent_commit": "9a27046aca6c9b08eafedef99073105e434bb8c4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42393411451"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36199,16 +36224,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3f9de02fac8d992721debe6d16bc353f388aee137f30c51481f8a458f8e775db",
+      "commitment_nonce": "4d9d5f61db853720147c59dfde31172f364087728b89a67dec6308c8f55f4c68",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T10:40:09.513260Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2087",
       "first_observation": {
         "observed_at": "2026-11-07T10:40:20.331005Z",
         "parent_commit": "2814c3126c6299faa472a8da30c84621da19c726",
         "run": "https://github.com/0xinsider/picks/actions/runs/42364922210"
-      }
+      },
+      "kickoff": "2026-11-07T14:30:00Z",
+      "resolved_at": "2026-11-07T16:51:44.190934Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.265000",
+        "condition_id": "0xc45d9c8061ba4dc77c88b96ed2496517342bc42b0b6f5f0d87aabac33fc75e18",
+        "kickoff": "2026-11-07T14:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2087",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BV Borussia 09 Dortmund vs. SV 07 Elversberg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2087",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T16:51:44.190934Z",
+          "parent_commit": "9a27046aca6c9b08eafedef99073105e434bb8c4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42393411451"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
