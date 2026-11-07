@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 944,
-    "sealed": 13,
+    "opened": 945,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 670,
+    "proven": 671,
     "proven_record": {
       "wins": 357,
-      "losses": 307,
-      "decided": 664,
+      "losses": 308,
+      "decided": 665,
       "withdrawn": 2,
-      "hit_rate": "53.8",
-      "profit_usd": "-17227.97",
-      "staked": "664000",
-      "roi": "-2.6"
+      "hit_rate": "53.7",
+      "profit_usd": "-18227.97",
+      "staked": "665000",
+      "roi": "-2.7"
     },
     "wins": 540,
-    "losses": 396,
+    "losses": 397,
     "voids": 4,
-    "decided": 936,
+    "decided": 937,
     "withdrawn": 4,
-    "hit_rate": "57.7",
+    "hit_rate": "57.6",
     "stake_usd": "1000",
-    "profit_usd": "4517.97",
-    "staked": "936000",
-    "roi": "0.5",
+    "profit_usd": "3517.97",
+    "staked": "937000",
+    "roi": "0.4",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36529,16 +36529,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "330e71ad32cd02706a1dbd732cdb09ff21b8d3441c63704278af93903f83245f",
+      "commitment_nonce": "fd2a567a40a8101aab8a4d93e52beac256e2944074fd5b0ccfeb41a9417a9ccc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T14:25:12.973917Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2097",
       "first_observation": {
         "observed_at": "2026-11-07T14:25:23.604015Z",
         "parent_commit": "532d353ce0210355de02378a5ccc2e67b88d9dae",
         "run": "https://github.com/0xinsider/picks/actions/runs/42381512195"
-      }
+      },
+      "kickoff": "2026-11-07T15:00:00Z",
+      "resolved_at": "2026-11-07T17:50:29.357125Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xc2f84d5b3866212ecbd7c23ebdb51d9a82ab3b3688a176c6557323a41bea641f",
+        "kickoff": "2026-11-07T15:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2097",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fulham FC vs. Newcastle United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2097",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T17:50:29.357125Z",
+          "parent_commit": "4de01468f5f4607413cc178818af3756e58b4247",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42398282705"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
