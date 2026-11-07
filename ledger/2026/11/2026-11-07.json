@@ -159,16 +159,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b57f0e198f28a0a29f20973bbf7dd0adb248245cf712bb6bd9cb68a51e82a1f1",
+      "commitment_nonce": "9d82050e9c53923f239392d0ea947812a47ca30f1df362db69d3a6071d7ee9b5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T11:55:17.726035Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2090",
       "first_observation": {
         "observed_at": "2026-11-07T11:55:26.792146Z",
         "parent_commit": "725c1a04005631ff0922878db25627dec63b967d",
         "run": "https://github.com/0xinsider/picks/actions/runs/42370205925"
-      }
+      },
+      "kickoff": "2026-11-07T12:30:00Z",
+      "resolved_at": "2026-11-07T16:33:05.066727Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x9a4954b884764b0da909c86794024041b1fdf9dc8cd40a99af01a05e25fa715d",
+        "kickoff": "2026-11-07T12:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2090",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wrexham AFC vs. Wolverhampton Wanderers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2090",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T16:33:05.066727Z",
+          "parent_commit": "190865964b31e5ffff8b37d58a67d1d64754036a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42391857699"
+        }
+      ]
     },
     {
       "pick_rank": 8,
