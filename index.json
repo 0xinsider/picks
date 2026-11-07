@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 930,
-    "sealed": 6,
+    "opened": 931,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 656,
+    "proven": 657,
     "proven_record": {
       "wins": 350,
-      "losses": 300,
-      "decided": 650,
+      "losses": 301,
+      "decided": 651,
       "withdrawn": 2,
       "hit_rate": "53.8",
-      "profit_usd": "-18446.38",
-      "staked": "650000",
-      "roi": "-2.8"
+      "profit_usd": "-19446.38",
+      "staked": "651000",
+      "roi": "-3.0"
     },
     "wins": 533,
-    "losses": 389,
+    "losses": 390,
     "voids": 4,
-    "decided": 922,
+    "decided": 923,
     "withdrawn": 4,
-    "hit_rate": "57.8",
+    "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "3299.55",
-    "staked": "922000",
-    "roi": "0.4",
+    "profit_usd": "2299.55",
+    "staked": "923000",
+    "roi": "0.2",
     "through": "2026-11-06"
   },
   "picks": [
@@ -35837,16 +35837,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4ec0bae79f45adff605c206da7f2cb70cff93c95201f7d6f86adda8a9a377d55",
+      "commitment_nonce": "beb92b9d819ef622cb2b6407bc44eee23ee701ce7663e84478a97f252af6a4a9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T21:02:24.534215Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2078",
       "first_observation": {
         "observed_at": "2026-11-06T21:02:33.260596Z",
         "parent_commit": "3606d59e4e9225b9e66cf9e65b6aaa7512b24721",
         "run": "https://github.com/0xinsider/picks/actions/runs/42293378533"
-      }
+      },
+      "kickoff": "2026-11-07T01:00:00Z",
+      "resolved_at": "2026-11-07T04:56:53.410664Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x6594eab5cb178d119b8a5c84557fd23b078d5d2941207a211ebc3ac55b8f09d9",
+        "kickoff": "2026-11-07T01:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2078",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Nebraska",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nebraska vs. Illinois",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2078",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T04:56:53.410664Z",
+          "parent_commit": "39ed3553230cf0fde96ab51b9eced34b49af3d8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42340613252"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
