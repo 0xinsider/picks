@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 943,
-    "sealed": 14,
+    "opened": 944,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 669,
+    "proven": 670,
     "proven_record": {
-      "wins": 356,
+      "wins": 357,
       "losses": 307,
-      "decided": 663,
+      "decided": 664,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-19126.52",
-      "staked": "663000",
-      "roi": "-2.9"
+      "hit_rate": "53.8",
+      "profit_usd": "-17227.97",
+      "staked": "664000",
+      "roi": "-2.6"
     },
-    "wins": 539,
+    "wins": 540,
     "losses": 396,
     "voids": 4,
-    "decided": 935,
+    "decided": 936,
     "withdrawn": 4,
-    "hit_rate": "57.6",
+    "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "2619.41",
-    "staked": "935000",
-    "roi": "0.3",
+    "profit_usd": "4517.97",
+    "staked": "936000",
+    "roi": "0.5",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36267,16 +36267,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "69fa6b4fe19c48e8f7cd3e63a91e79d8512fec8130ff7337803795b99079b2ce",
+      "commitment_nonce": "2fa1e50f45464e43c269fcf76d7863a180ef4eaa23e933d2800c96f130a13aa7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T11:06:24.194478Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2088",
       "first_observation": {
         "observed_at": "2026-11-07T11:06:33.293679Z",
         "parent_commit": "96f7fcc8104e73069d685e3c2f10e384f2ebcade",
         "run": "https://github.com/0xinsider/picks/actions/runs/42366759273"
-      }
+      },
+      "kickoff": "2026-11-07T15:00:00Z",
+      "resolved_at": "2026-11-07T17:31:57.116218Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.345000",
+        "condition_id": "0x9cb342fc4996927b9d49fa0cb8d9a4bc6e3521c227af164367a75a912766bbea",
+        "kickoff": "2026-11-07T15:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2088",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hull City AFC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Arsenal FC vs. Hull City AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2088",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T17:31:57.116218Z",
+          "parent_commit": "142a8630dba17934b1932b471e9ebc3a10561877",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42396773246"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
