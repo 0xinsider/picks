@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 947,
-    "sealed": 12,
+    "opened": 952,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 673,
+    "proven": 678,
     "proven_record": {
-      "wins": 358,
-      "losses": 309,
-      "decided": 667,
+      "wins": 362,
+      "losses": 310,
+      "decided": 672,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-17875.03",
-      "staked": "667000",
-      "roi": "-2.7"
+      "hit_rate": "53.9",
+      "profit_usd": "-15341.77",
+      "staked": "672000",
+      "roi": "-2.3"
     },
-    "wins": 541,
-    "losses": 398,
+    "wins": 545,
+    "losses": 399,
     "voids": 4,
-    "decided": 939,
+    "decided": 944,
     "withdrawn": 4,
-    "hit_rate": "57.6",
+    "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "3870.91",
-    "staked": "939000",
-    "roi": "0.4",
+    "profit_usd": "6404.16",
+    "staked": "944000",
+    "roi": "0.7",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36482,16 +36482,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5ff099bb5e4368ff38fb8022e41e4e25b880f3cd626d238ea19923d6048019a0",
+      "commitment_nonce": "c8e75cc8b21e7598ec7034df64ec0f5e4805c500db69f2f2a62a2e08752a2789",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T13:10:10.730907Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2093",
       "first_observation": {
         "observed_at": "2026-11-07T13:10:20.426351Z",
         "parent_commit": "ff8f818011b655d4016f426c0e3a068f609b6267",
         "run": "https://github.com/0xinsider/picks/actions/runs/42375718901"
-      }
+      },
+      "kickoff": "2026-11-07T17:00:00Z",
+      "resolved_at": "2026-11-07T20:53:45.998077Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xb42ad65576f06075e925d1e726cb6cb5a1b9325f41347c14bb8b08a5fccf7abf",
+        "kickoff": "2026-11-07T17:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2093",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Boston College",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Florida State vs. Boston College",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2093",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T20:53:45.998077Z",
+          "parent_commit": "b1767d80f0bc4ed74b5f1ba651c1b0191c000a07",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42413232169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36500,16 +36525,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "faf53153426ca0742b291604a58b15153e7111ac1becf9500dd91458c3893e41",
+      "commitment_nonce": "fe8fbe49f8e73402c398c2d4aca40061757b87bf74d7cd730f79843e8951adac",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T13:10:10.738187Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2094",
       "first_observation": {
         "observed_at": "2026-11-07T13:10:20.426351Z",
         "parent_commit": "ff8f818011b655d4016f426c0e3a068f609b6267",
         "run": "https://github.com/0xinsider/picks/actions/runs/42375718901"
-      }
+      },
+      "kickoff": "2026-11-07T17:00:00Z",
+      "resolved_at": "2026-11-07T20:53:46.003647Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x1f38676cfb6ff86a27d3fab8c2a04b87f003f822918dee2dfdeeac680e6f42de",
+        "kickoff": "2026-11-07T17:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2094",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Utah",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BYU vs. Utah",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2094",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T20:53:46.003647Z",
+          "parent_commit": "b1767d80f0bc4ed74b5f1ba651c1b0191c000a07",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42413232169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36518,16 +36568,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "eea04a57566f40697a6309edf6b0fc1060e548af5216bb63973b19283cb85d28",
+      "commitment_nonce": "9d737918d116a3785f7097b8cc12d3f254aa372dff61d4ea109ab6f69abfdb46",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T13:10:10.777507Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2095",
       "first_observation": {
         "observed_at": "2026-11-07T13:10:20.426351Z",
         "parent_commit": "ff8f818011b655d4016f426c0e3a068f609b6267",
         "run": "https://github.com/0xinsider/picks/actions/runs/42375718901"
-      }
+      },
+      "kickoff": "2026-11-07T17:00:00Z",
+      "resolved_at": "2026-11-07T20:53:45.969649Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x514270399d8ff4c9b071c481f9b43b75925dcaa3623db0f74ec9321877f57b0c",
+        "kickoff": "2026-11-07T17:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2095",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Clemson",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Clemson vs. Syracuse",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2095",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T20:53:45.969649Z",
+          "parent_commit": "b1767d80f0bc4ed74b5f1ba651c1b0191c000a07",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42413232169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36622,16 +36697,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8ebb79f7344c39a571303d9f884e699641370a5a6e7a75dc6c943d6b298c15e7",
+      "commitment_nonce": "89c7e9a118961b77fd4be236cbbfdb0cf04715048c73b4a2a57df8dc6516c910",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T15:25:23.175609Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2098",
       "first_observation": {
         "observed_at": "2026-11-07T15:25:32.266290Z",
         "parent_commit": "a67f8f77d5cabac622e02afcd397b59fae6abb72",
         "run": "https://github.com/0xinsider/picks/actions/runs/42386305531"
-      }
+      },
+      "kickoff": "2026-11-07T17:00:00Z",
+      "resolved_at": "2026-11-07T20:53:45.983208Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xd66c88f208ff66aa5d8616e38dd1d3e5a42c783da97e93440c7dd233a7176acf",
+        "kickoff": "2026-11-07T17:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2098",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Tulsa",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tulsa vs. Tulane",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2098",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T20:53:45.983208Z",
+          "parent_commit": "b1767d80f0bc4ed74b5f1ba651c1b0191c000a07",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42413232169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -36640,16 +36740,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "816b0cca30f8d59e387b66dd705255590f980681854828f7ab2c30737589d1e1",
+      "commitment_nonce": "6fd3ec2e86bbc647d4fb28958e5a7323ea88193eaeeca2fbc07503bef20f1eac",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T15:40:27.056368Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2099",
       "first_observation": {
         "observed_at": "2026-11-07T15:40:37.002542Z",
         "parent_commit": "b60ef473b7afeb8fec9fc5aa547779cb9dc45ea8",
         "run": "https://github.com/0xinsider/picks/actions/runs/42387516562"
-      }
+      },
+      "kickoff": "2026-11-07T17:00:00Z",
+      "resolved_at": "2026-11-07T20:53:45.991316Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xc715b4ef470aa80d587db095b245334b168a06166ff0a2028c1defa8bdd67c67",
+        "kickoff": "2026-11-07T17:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2099",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "UConn",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "North Carolina vs. UConn",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2099",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T20:53:45.991316Z",
+          "parent_commit": "b1767d80f0bc4ed74b5f1ba651c1b0191c000a07",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42413232169"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
