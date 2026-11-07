@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f35c987405b4f92794be213acadd7cfdd79f3fed7ce1294ebe9624475b027b79",
+      "commitment_nonce": "d4e00206f42303bd092d1aabbdb075ff9564d6527a18338b384b75fec818482d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T08:30:22.969342Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2085",
       "first_observation": {
         "observed_at": "2026-11-07T08:30:32.490452Z",
         "parent_commit": "403ce69d7516bcd0f93846c6c2a32fefef45ccde",
         "run": "https://github.com/0xinsider/picks/actions/runs/42355764615"
-      }
+      },
+      "kickoff": "2026-11-07T12:30:00Z",
+      "resolved_at": "2026-11-07T15:09:25.604661Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x23883c40d48be8f1d8395a56a3f64fba1a76b4321bd0dd05d6b1ec35d0df62aa",
+        "kickoff": "2026-11-07T12:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2085",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Leeds United FC vs. Tottenham Hotspur FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2085",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T15:09:25.604661Z",
+          "parent_commit": "38b062ca90a6fa49d75efe5e72dd591ef492112f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42384996642"
+        }
+      ]
     },
     {
       "pick_rank": 3,
