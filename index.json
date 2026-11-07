@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 932,
-    "sealed": 4,
+    "opened": 934,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 658,
+    "proven": 660,
     "proven_record": {
-      "wins": 350,
-      "losses": 302,
-      "decided": 652,
+      "wins": 351,
+      "losses": 303,
+      "decided": 654,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-20446.38",
-      "staked": "652000",
+      "profit_usd": "-20363.05",
+      "staked": "654000",
       "roi": "-3.1"
     },
-    "wins": 533,
-    "losses": 391,
+    "wins": 534,
+    "losses": 392,
     "voids": 4,
-    "decided": 924,
+    "decided": 926,
     "withdrawn": 4,
     "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "1299.55",
-    "staked": "924000",
+    "profit_usd": "1382.88",
+    "staked": "926000",
     "roi": "0.1",
     "through": "2026-11-06"
   },
@@ -35923,16 +35923,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "62a9e20b9724fe148878c3cfef4e465ea2c9bf6d83bdddd108ad277b15d2b0be",
+      "commitment_nonce": "70a39a5e35fcf66fcd5455ce7beb5c7696c5c223a1f92860c6cab2cf76cfa459",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T00:55:08.461992Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2080",
       "first_observation": {
         "observed_at": "2026-11-07T00:55:18.687680Z",
         "parent_commit": "fa17e613883dfc1e083a31e183db0c4ece7c0af9",
         "run": "https://github.com/0xinsider/picks/actions/runs/42321106470"
-      }
+      },
+      "kickoff": "2026-11-07T03:15:00Z",
+      "resolved_at": "2026-11-07T07:15:47.913849Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.480000",
+        "condition_id": "0x8a1d80e50e201efed28a1924123cdd7bb2f1d7351cf4cbbb6857cd5ad3e7f375",
+        "kickoff": "2026-11-07T03:15:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2080",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "TCU vs. Arizona",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2080",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T07:15:47.913849Z",
+          "parent_commit": "cdc37043190403f21aab1d1e90e210e38e9355c2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42350540311"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
@@ -35941,16 +35966,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "da3a5205cf6d0a206b5913d2b8e2edf170dd16709b8e31602d6c0fd0b5d3f826",
+      "commitment_nonce": "560dc11115fb25e2697085595ba65d25e71abba09fdb4f5d1c8e6eba42771111",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T02:19:41.354069Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2081",
       "first_observation": {
         "observed_at": "2026-11-07T02:19:49.694719Z",
         "parent_commit": "76bbc52a601c970e852e94618c24a3404af4f05f",
         "run": "https://github.com/0xinsider/picks/actions/runs/42328682645"
-      }
+      },
+      "kickoff": "2026-11-07T03:00:00Z",
+      "resolved_at": "2026-11-07T07:15:47.897677Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x4916d919922f391ad90cc71cc734db7d26f69bef40e6d1546c6907fe0e98ce41",
+        "kickoff": "2026-11-07T03:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2081",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Atlante FC vs. Club Santos Laguna",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2081",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T07:15:47.897677Z",
+          "parent_commit": "cdc37043190403f21aab1d1e90e210e38e9355c2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42350540311"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
