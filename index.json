@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 929,
-    "sealed": 5,
+    "opened": 930,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 655,
+    "proven": 656,
     "proven_record": {
       "wins": 350,
-      "losses": 299,
-      "decided": 649,
+      "losses": 300,
+      "decided": 650,
       "withdrawn": 2,
-      "hit_rate": "53.9",
-      "profit_usd": "-17446.38",
-      "staked": "649000",
-      "roi": "-2.7"
+      "hit_rate": "53.8",
+      "profit_usd": "-18446.38",
+      "staked": "650000",
+      "roi": "-2.8"
     },
     "wins": 533,
-    "losses": 388,
+    "losses": 389,
     "voids": 4,
-    "decided": 921,
+    "decided": 922,
     "withdrawn": 4,
-    "hit_rate": "57.9",
+    "hit_rate": "57.8",
     "stake_usd": "1000",
-    "profit_usd": "4299.55",
-    "staked": "921000",
-    "roi": "0.5",
+    "profit_usd": "3299.55",
+    "staked": "922000",
+    "roi": "0.4",
     "through": "2026-11-06"
   },
   "picks": [
@@ -35751,16 +35751,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e20b3018af11480812caebcb88e191d0fe27bf755a5b049f139773149753ba9b",
+      "commitment_nonce": "f17dd799b1078e19d5ba9b39245b6037863b9970a8a54f10a4f456fc350c4ca7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-06T18:55:25.377061Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2076",
       "first_observation": {
         "observed_at": "2026-11-06T18:55:35.864110Z",
         "parent_commit": "71a76265c40ba0633b3b6c2bc66fc87c2e7528af",
         "run": "https://github.com/0xinsider/picks/actions/runs/42275055941"
-      }
+      },
+      "kickoff": "2026-11-06T22:00:00Z",
+      "resolved_at": "2026-11-07T02:52:20.560140Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0xe8fee37e26925d24605d1b88b5f5b237530b626d578571939a8a0bbffc602909",
+        "kickoff": "2026-11-06T22:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2076",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Karmine Corp",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Karmine Corp vs T1 (BO5) - Worlds Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2076",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T02:52:20.560140Z",
+          "parent_commit": "f929a47555c5f7e0bc488022bdfd4ae0107f2bca",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42331333362"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
