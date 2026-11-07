@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 934,
-    "sealed": 2,
+    "opened": 935,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 660,
+    "proven": 661,
     "proven_record": {
-      "wins": 351,
+      "wins": 352,
       "losses": 303,
-      "decided": 654,
+      "decided": 655,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-20363.05",
-      "staked": "654000",
-      "roi": "-3.1"
+      "profit_usd": "-19212.51",
+      "staked": "655000",
+      "roi": "-2.9"
     },
-    "wins": 534,
+    "wins": 535,
     "losses": 392,
     "voids": 4,
-    "decided": 926,
+    "decided": 927,
     "withdrawn": 4,
     "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "1382.88",
-    "staked": "926000",
-    "roi": "0.1",
+    "profit_usd": "2533.42",
+    "staked": "927000",
+    "roi": "0.3",
     "through": "2026-11-06"
   },
   "picks": [
@@ -36009,16 +36009,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b72ba221c353e5f491b18819831f0c7757ced49875ec9b0e89b98c580b5fcf27",
+      "commitment_nonce": "82ffa27a1bb7e52da4ac0dd28d784a4d0efb54d99c7d1b5ca8025af41332cea4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T04:25:09.605993Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2082",
       "first_observation": {
         "observed_at": "2026-11-07T04:25:20.500303Z",
         "parent_commit": "615e309c2cc4b8937cef9e23fb99b7893a825e0c",
         "run": "https://github.com/0xinsider/picks/actions/runs/42338374516"
-      }
+      },
+      "kickoff": "2026-11-07T05:00:00Z",
+      "resolved_at": "2026-11-07T07:31:48.638141Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x18bcacff75b6a60553d6d1dcf090c69f8d35e45e8907d238d1888170baf941cd",
+        "kickoff": "2026-11-07T05:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2082",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nagoya Grampus vs. Kyōto Sanga FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2082",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T07:31:48.638141Z",
+          "parent_commit": "c509fcca2f98a758263de04b36635a3baad7b485",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42351660071"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-06",
