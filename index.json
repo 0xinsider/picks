@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 935,
-    "sealed": 3,
+    "opened": 936,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 661,
+    "proven": 662,
     "proven_record": {
-      "wins": 352,
+      "wins": 353,
       "losses": 303,
-      "decided": 655,
+      "decided": 656,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-19212.51",
-      "staked": "655000",
-      "roi": "-2.9"
+      "hit_rate": "53.8",
+      "profit_usd": "-18150.66",
+      "staked": "656000",
+      "roi": "-2.8"
     },
-    "wins": 535,
+    "wins": 536,
     "losses": 392,
     "voids": 4,
-    "decided": 927,
+    "decided": 928,
     "withdrawn": 4,
-    "hit_rate": "57.7",
+    "hit_rate": "57.8",
     "stake_usd": "1000",
-    "profit_usd": "2533.42",
-    "staked": "927000",
-    "roi": "0.3",
+    "profit_usd": "3595.28",
+    "staked": "928000",
+    "roi": "0.4",
     "through": "2026-11-06"
   },
   "picks": [
@@ -36052,16 +36052,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e709917be41ec20d757ee8afcd173782db52f077fed4835cb77360c29a3f7e6b",
+      "commitment_nonce": "6cb3d2cc0ddbeb6df49168ede729715b492fe7cde2bd16550342dcab6facc410",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T04:25:09.614677Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2083",
       "first_observation": {
         "observed_at": "2026-11-07T04:25:20.500303Z",
         "parent_commit": "615e309c2cc4b8937cef9e23fb99b7893a825e0c",
         "run": "https://github.com/0xinsider/picks/actions/runs/42338374516"
-      }
+      },
+      "kickoff": "2026-11-07T05:00:00Z",
+      "resolved_at": "2026-11-07T09:01:48.420628Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x3c2099800c586da0e45471b88e0112311f96b72060c04e090249d5626d39e1d1",
+        "kickoff": "2026-11-07T05:00:00Z",
+        "pick_date": "2026-11-06",
+        "pick_id": "2083",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sagan Tosu vs. Kataller Toyama",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2083",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-07T09:01:48.420628Z",
+          "parent_commit": "db91262d5f73581def3f4a6c26063874f6daba75",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42357956498"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
