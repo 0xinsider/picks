@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 938,
-    "sealed": 13,
+    "opened": 939,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 664,
+    "proven": 665,
     "proven_record": {
       "wins": 354,
-      "losses": 304,
-      "decided": 658,
+      "losses": 305,
+      "decided": 659,
       "withdrawn": 2,
-      "hit_rate": "53.8",
-      "profit_usd": "-18575.85",
-      "staked": "658000",
-      "roi": "-2.8"
+      "hit_rate": "53.7",
+      "profit_usd": "-19575.85",
+      "staked": "659000",
+      "roi": "-3.0"
     },
     "wins": 537,
-    "losses": 393,
+    "losses": 394,
     "voids": 4,
-    "decided": 930,
+    "decided": 931,
     "withdrawn": 4,
     "hit_rate": "57.7",
     "stake_usd": "1000",
-    "profit_usd": "3170.08",
-    "staked": "930000",
-    "roi": "0.3",
+    "profit_usd": "2170.08",
+    "staked": "931000",
+    "roi": "0.2",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36271,16 +36271,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3048a7554be935ba9cdbed0dc6a322da6af47b0cdfe851bf7e9b5da0f682e462",
+      "commitment_nonce": "a20d1c1c3a2606a54bb3c806f17e5030a3f4a087b7885ceb670b28032b4b0027",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T12:10:31.729217Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2091",
       "first_observation": {
         "observed_at": "2026-11-07T12:10:40.379108Z",
         "parent_commit": "8a398676f843c3f9df4596bd22e8adeb8410fe1a",
         "run": "https://github.com/0xinsider/picks/actions/runs/42371303891"
-      }
+      },
+      "kickoff": "2026-11-07T13:00:00Z",
+      "resolved_at": "2026-11-07T15:39:25.614318Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x4e607bb630f4987a0931f7b2be82fa5f384d5793e8bf717ddc22db4ad2d53a24",
+        "kickoff": "2026-11-07T13:00:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2091",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Málaga CF vs. Real Racing Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2091",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-07T15:39:25.614318Z",
+          "parent_commit": "ba7ff68b49229a2a64c860794a7649afe7c970de",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42387433621"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
