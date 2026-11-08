@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 963,
-    "sealed": 13,
+    "opened": 964,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 689,
+    "proven": 690,
     "proven_record": {
       "wins": 366,
-      "losses": 317,
-      "decided": 683,
+      "losses": 318,
+      "decided": 684,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-19101.36",
-      "staked": "683000",
-      "roi": "-2.8"
+      "hit_rate": "53.5",
+      "profit_usd": "-20101.36",
+      "staked": "684000",
+      "roi": "-2.9"
     },
     "wins": 549,
-    "losses": 406,
+    "losses": 407,
     "voids": 4,
-    "decided": 955,
+    "decided": 956,
     "withdrawn": 4,
-    "hit_rate": "57.5",
+    "hit_rate": "57.4",
     "stake_usd": "1000",
-    "profit_usd": "2644.58",
-    "staked": "955000",
-    "roi": "0.3",
+    "profit_usd": "1644.58",
+    "staked": "956000",
+    "roi": "0.2",
     "through": "2026-11-08"
   },
   "picks": [
@@ -37267,16 +37267,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "28521d0dfa6b22247aff1a57b0aa7c58901e1eb39f53dda323a68e67dade7a03",
+      "commitment_nonce": "df402fb56c7590ed1df89a0ec497566dbd75cebc1148fae7b3c34f530083fe8a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T14:00:33.149486Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2113",
       "first_observation": {
         "observed_at": "2026-11-08T14:00:42.018223Z",
         "parent_commit": "f331782dae1cb8314fc38269508a48517c61df74",
         "run": "https://github.com/0xinsider/picks/actions/runs/42487646304"
-      }
+      },
+      "kickoff": "2026-11-08T18:00:00Z",
+      "resolved_at": "2026-11-08T21:29:36.360885Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x3878431c8979ff90eb6cf942e0643bf11dcb9ab4ce6ef2f2d5f8190afa2d69a2",
+        "kickoff": "2026-11-08T18:00:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2113",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Commanders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rams vs. Commanders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2113",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-08T21:29:36.360885Z",
+          "parent_commit": "a886cffbc103c0896991a480ff36a26823dc697d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42525466357"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-08",
