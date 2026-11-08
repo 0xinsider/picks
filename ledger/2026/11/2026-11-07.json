@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b83ed6424237d73efca77bf3919246f99127728ad33964c2ed2ec97359cf0aa0",
+      "commitment_nonce": "66450b89795c75e59f57e89f22161955d29f15f8b2c2f7bacdd49130f838a4e7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T16:40:09.427465Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2102",
       "first_observation": {
         "observed_at": "2026-11-07T16:40:20.042594Z",
         "parent_commit": "74b0c064484d55d62d50b36722808027ff951dad",
         "run": "https://github.com/0xinsider/picks/actions/runs/42392447220"
-      }
+      },
+      "kickoff": "2026-11-07T20:30:00Z",
+      "resolved_at": "2026-11-08T00:49:49.591470Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x420aed52fb1560c0a6c033c271afa01532786963267264f2ceb123e70b41d1f4",
+        "kickoff": "2026-11-07T20:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2102",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Alabama vs. LSU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2102",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-08T00:49:49.591470Z",
+          "parent_commit": "71574fae0a851339b7bab5aaec28a6cc8d676fc2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42431540604"
+        }
+      ]
     },
     {
       "pick_rank": 20,
