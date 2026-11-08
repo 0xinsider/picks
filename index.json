@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 962,
-    "sealed": 13,
+    "opened": 963,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 688,
+    "proven": 689,
     "proven_record": {
-      "wins": 365,
+      "wins": 366,
       "losses": 317,
-      "decided": 682,
+      "decided": 683,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-19970.52",
-      "staked": "682000",
-      "roi": "-2.9"
+      "hit_rate": "53.6",
+      "profit_usd": "-19101.36",
+      "staked": "683000",
+      "roi": "-2.8"
     },
-    "wins": 548,
+    "wins": 549,
     "losses": 406,
     "voids": 4,
-    "decided": 954,
+    "decided": 955,
     "withdrawn": 4,
-    "hit_rate": "57.4",
+    "hit_rate": "57.5",
     "stake_usd": "1000",
-    "profit_usd": "1775.42",
-    "staked": "954000",
-    "roi": "0.2",
+    "profit_usd": "2644.58",
+    "staked": "955000",
+    "roi": "0.3",
     "through": "2026-11-08"
   },
   "picks": [
@@ -37285,16 +37285,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0dba0056c53e765b951c24ade6f192be0006507a819cf576b584933aa1194432",
+      "commitment_nonce": "4d13e62b28096c5334ba669d2a666071b3e20088be90e87831d680de77ce8323",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T15:36:16.178717Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2114",
       "first_observation": {
         "observed_at": "2026-11-08T15:36:25.483038Z",
         "parent_commit": "ec41bc125b80f01c736e171afaacd6531928014b",
         "run": "https://github.com/0xinsider/picks/actions/runs/42495654776"
-      }
+      },
+      "kickoff": "2026-11-08T16:30:00Z",
+      "resolved_at": "2026-11-08T18:49:20.386974Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x7ef37ab1c5a9aa47e03e9ca4fbc77aa2511c9275b8a064802a44f2461c1f691a",
+        "kickoff": "2026-11-08T16:30:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2114",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manchester United FC vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2114",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-08T18:49:20.386974Z",
+          "parent_commit": "9fad163c6ea56ca69b1da3cfa0862e910288acc1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42511894953"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-08",
