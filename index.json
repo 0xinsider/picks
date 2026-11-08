@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 958,
-    "sealed": 3,
+    "opened": 960,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 684,
+    "proven": 686,
     "proven_record": {
       "wins": 364,
-      "losses": 314,
-      "decided": 678,
+      "losses": 316,
+      "decided": 680,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-17570.52",
-      "staked": "678000",
-      "roi": "-2.6"
+      "hit_rate": "53.5",
+      "profit_usd": "-19570.52",
+      "staked": "680000",
+      "roi": "-2.9"
     },
     "wins": 547,
-    "losses": 403,
+    "losses": 405,
     "voids": 4,
-    "decided": 950,
+    "decided": 952,
     "withdrawn": 4,
-    "hit_rate": "57.6",
+    "hit_rate": "57.5",
     "stake_usd": "1000",
-    "profit_usd": "4175.42",
-    "staked": "950000",
-    "roi": "0.4",
+    "profit_usd": "2175.42",
+    "staked": "952000",
+    "roi": "0.2",
     "through": "2026-11-07"
   },
   "picks": [
@@ -36998,16 +36998,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ceebbcc3653a6bec1463bd0f1977f6972021eb36753c15a2deb965e8e73de82b",
+      "commitment_nonce": "1a9cc5478c256db4b84fee56b67da15b88508030c6b3e45952afd732a4acb7cd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T20:31:02.545981Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2105",
       "first_observation": {
         "observed_at": "2026-11-07T20:31:12.026432Z",
         "parent_commit": "b03a1aaefb7bb611e080a48cfa63fe475db046d3",
         "run": "https://github.com/0xinsider/picks/actions/runs/42411428772"
-      }
+      },
+      "kickoff": "2026-11-08T00:30:00Z",
+      "resolved_at": "2026-11-08T04:29:34.377831Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x1e21f43d92f35874e1a291120039ee3ed1e41d8e0413f9abbe3a6b3af1e3d3b2",
+        "kickoff": "2026-11-08T00:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2105",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Northwestern",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Iowa vs. Northwestern",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2105",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-08T04:29:34.377831Z",
+          "parent_commit": "2c5fec61eabfec3a25dbd9fc16c4fe2d742d3c12",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42447024483"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
@@ -37016,16 +37041,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ce15408f39696a10d49c8b744e270f7f5f38582f366691df563abc3e1f77e854",
+      "commitment_nonce": "f60631339ed80f9708be4a7dd6046aad9a86314a35bac2c83eb8ce51c13de0a7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T20:31:02.550539Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2106",
       "first_observation": {
         "observed_at": "2026-11-07T20:31:12.026432Z",
         "parent_commit": "b03a1aaefb7bb611e080a48cfa63fe475db046d3",
         "run": "https://github.com/0xinsider/picks/actions/runs/42411428772"
-      }
+      },
+      "kickoff": "2026-11-08T00:30:00Z",
+      "resolved_at": "2026-11-08T04:29:34.361408Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x06b23c68e63c61350b0c980b074b3a9223c93751bfe5678652dc2f0575da01b8",
+        "kickoff": "2026-11-08T00:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2106",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Notre Dame",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Miami (FL) vs. Notre Dame",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2106",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-08T04:29:34.361408Z",
+          "parent_commit": "2c5fec61eabfec3a25dbd9fc16c4fe2d742d3c12",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42447024483"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
