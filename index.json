@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 957,
-    "sealed": 4,
+    "opened": 958,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 683,
+    "proven": 684,
     "proven_record": {
-      "wins": 363,
+      "wins": 364,
       "losses": 314,
-      "decided": 677,
+      "decided": 678,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-18632.37",
-      "staked": "677000",
-      "roi": "-2.8"
+      "hit_rate": "53.7",
+      "profit_usd": "-17570.52",
+      "staked": "678000",
+      "roi": "-2.6"
     },
-    "wins": 546,
+    "wins": 547,
     "losses": 403,
     "voids": 4,
-    "decided": 949,
+    "decided": 950,
     "withdrawn": 4,
-    "hit_rate": "57.5",
+    "hit_rate": "57.6",
     "stake_usd": "1000",
-    "profit_usd": "3113.56",
-    "staked": "949000",
-    "roi": "0.3",
+    "profit_usd": "4175.42",
+    "staked": "950000",
+    "roi": "0.4",
     "through": "2026-11-07"
   },
   "picks": [
@@ -37034,16 +37034,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "565da783b21231866a84f6b05f198e6bb82aa7e79e382cd43af283c8ae05ff34",
+      "commitment_nonce": "1dc0c1d3d4bd51f912f7925e296a4fdafd0e000337db64a95b383967d98bb15c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T21:15:49.195367Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2107",
       "first_observation": {
         "observed_at": "2026-11-07T21:15:58.289059Z",
         "parent_commit": "077e51514087ac203bba9834c495a244a733d20f",
         "run": "https://github.com/0xinsider/picks/actions/runs/42415017611"
-      }
+      },
+      "kickoff": "2026-11-07T23:15:00Z",
+      "resolved_at": "2026-11-08T02:59:34.511834Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xb8f8c8f8bec4a1fe611675e1037a01c954aabf32fc75e109f6743c1620cd70e5",
+        "kickoff": "2026-11-07T23:15:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2107",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Tennessee",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kentucky vs. Tennessee",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2107",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-08T02:59:34.511834Z",
+          "parent_commit": "1a13b0d62340918120db0cdd5de832ac65a8b77d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42440797266"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-07",
