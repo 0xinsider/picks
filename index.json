@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 960,
-    "sealed": 1,
+    "opened": 961,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 686,
+    "proven": 687,
     "proven_record": {
       "wins": 364,
-      "losses": 316,
-      "decided": 680,
+      "losses": 317,
+      "decided": 681,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-19570.52",
-      "staked": "680000",
-      "roi": "-2.9"
+      "profit_usd": "-20570.52",
+      "staked": "681000",
+      "roi": "-3.0"
     },
     "wins": 547,
-    "losses": 405,
+    "losses": 406,
     "voids": 4,
-    "decided": 952,
+    "decided": 953,
     "withdrawn": 4,
-    "hit_rate": "57.5",
+    "hit_rate": "57.4",
     "stake_usd": "1000",
-    "profit_usd": "2175.42",
-    "staked": "952000",
-    "roi": "0.2",
+    "profit_usd": "1175.42",
+    "staked": "953000",
+    "roi": "0.1",
     "through": "2026-11-07"
   },
   "picks": [
@@ -37127,16 +37127,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9f67e216ed9da89ccf1d848bfde608f387c2e421ac486e11cb6b24b382bab9ea",
+      "commitment_nonce": "bc9c0a96f138f023a4857f6b8fd0eb0013ed28cc633cab129e6e7ef67a93a162",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-07T22:33:42.425410Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2108",
       "first_observation": {
         "observed_at": "2026-11-07T22:33:52.964902Z",
         "parent_commit": "0be9a1f6336703956f0dba154ce64fd944b80183",
         "run": "https://github.com/0xinsider/picks/actions/runs/42421189076"
-      }
+      },
+      "kickoff": "2026-11-08T02:30:00Z",
+      "resolved_at": "2026-11-08T06:08:47.075130Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x0eb507c5aba94534705ee5f93e587e97e5fb18821259d3a1f09a86fbcef6a7a2",
+        "kickoff": "2026-11-08T02:30:00Z",
+        "pick_date": "2026-11-07",
+        "pick_id": "2108",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Fresno State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fresno State vs. Utah State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2108",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-08T06:08:47.075130Z",
+          "parent_commit": "1713c160c58718d00c7aaf5cdfe1a595639a95a7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42453535043"
+        }
+      ]
     }
   ]
 }
