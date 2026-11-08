@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "aff068bc3eaac417ca31476edbcc41e1e76f77287e492d9f37c3f8d92688b4c9",
+      "commitment_nonce": "3dedf4945569a53e883cc7dee15893f3986c62143306aa6705d48a719151d878",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T13:58:24.450628Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2109",
       "first_observation": {
         "observed_at": "2026-11-08T13:58:32.201739Z",
         "parent_commit": "10d7c3f6c8213c599db1466e907bd9b65d721695",
         "run": "https://github.com/0xinsider/picks/actions/runs/42487476925"
-      }
+      },
+      "kickoff": "2026-11-08T14:30:00Z",
+      "resolved_at": "2026-11-08T18:06:53.246757Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xa2820c65110ecc5b6f6fce19e04f2a7cdd26c3c23f8c3e737de5b8cc3c82fbc2",
+        "kickoff": "2026-11-08T14:30:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2109",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Bengals",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bengals vs. Falcons",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2109",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-08T18:06:53.246757Z",
+          "parent_commit": "2e432d6dd2f016affab93e871115580e1b7e9c17",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42508330882"
+        }
+      ]
     },
     {
       "pick_rank": 2,
