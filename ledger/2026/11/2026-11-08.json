@@ -637,16 +637,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd41641ea563e7eb80138d94f1ef6c9c751eadbc4ed9f744454b7776ca09c826",
+      "commitment_nonce": "9723beb1e6489ff9642e87cc6b9b7f6db607a9fa1795b6389996c3298f4994ae",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T22:00:16.720814Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2124",
       "first_observation": {
         "observed_at": "2026-11-08T22:00:27.460615Z",
         "parent_commit": "aef5ef894b946f59b5bec0628309018d1112ee5c",
         "run": "https://github.com/0xinsider/picks/actions/runs/42527986133"
-      }
+      },
+      "kickoff": "2026-11-09T01:20:00Z",
+      "resolved_at": "2026-11-09T04:46:45.628425Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xae5acbf37a1310a3103ece6c14e0aa1e36487545bfd8b6fd0650f50ed2e509a8",
+        "kickoff": "2026-11-09T01:20:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2124",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Buccaneers vs. Bears",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2124",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-09T04:46:45.628425Z",
+          "parent_commit": "b253a12f50d2d3bb95d81bb6849d78ff7303efea",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42563659904"
+        }
+      ]
     },
     {
       "pick_rank": 17,
