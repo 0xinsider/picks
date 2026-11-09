@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "574f7540aba0b3a0372377e1deb3ebc323eae0532ba1345c4227951db6bf25e7",
+      "commitment_nonce": "de0cb2a02ae53fc8c16face45eb2d2f8784a2d66c6d4d8721e7731a66b8f430d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T22:00:16.745588Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2125",
       "first_observation": {
         "observed_at": "2026-11-08T22:00:27.460615Z",
         "parent_commit": "aef5ef894b946f59b5bec0628309018d1112ee5c",
         "run": "https://github.com/0xinsider/picks/actions/runs/42527986133"
-      }
+      },
+      "kickoff": "2026-11-09T02:00:00Z",
+      "resolved_at": "2026-11-09T05:16:45.536815Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x95aeb8446336e14e0a78f3b8f7242fd08a3f39c201740901089f984a32b9c660",
+        "kickoff": "2026-11-09T02:00:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2125",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Heat vs. Kings",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2125",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-09T05:16:45.536815Z",
+          "parent_commit": "e67d95c338e35d6b3e1b117ac1c712835482c019",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42566369258"
+        }
+      ]
     }
   ]
 }
