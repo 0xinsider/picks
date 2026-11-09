@@ -343,16 +343,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bc334ef54f33f3ec4b33b06838c3987d7be4faaff0acc3c2b6017a3aad9cd7f6",
+      "commitment_nonce": "200421ead9e4b42a846d14e9dceeb9dd9520a55113bc472955f6e8b536081756",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T17:13:33.257605Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2117",
       "first_observation": {
         "observed_at": "2026-11-08T17:13:44.118546Z",
         "parent_commit": "fa865be57a4f4c07313a3095a96cf23272745a20",
         "run": "https://github.com/0xinsider/picks/actions/runs/42503886132"
-      }
+      },
+      "kickoff": "2026-11-08T21:05:00Z",
+      "resolved_at": "2026-11-09T00:46:45.671335Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.325000",
+        "condition_id": "0x9d038b5e1e46d49dad8c2a586efcbba2678000aa9318f45af10933be5cf97684",
+        "kickoff": "2026-11-08T21:05:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2117",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chargers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Texans vs. Chargers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2117",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-09T00:46:45.671335Z",
+          "parent_commit": "5cb8dc870d9e567b8e4b2636a47bea14087228c0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42542024268"
+        }
+      ]
     },
     {
       "pick_rank": 10,
@@ -360,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a2df21d29e44146965ee17f231e4cacd816f31593786ae1d7e86d545f682f5eb",
+      "commitment_nonce": "e010010193284f38af0877bef1b2f9f5404d6f24734a869a06872a0ead0fe700",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T17:27:56.879113Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2118",
       "first_observation": {
         "observed_at": "2026-11-08T17:28:05.428733Z",
         "parent_commit": "f4338470e094f92aa1a7406c0a380c90c82c1ac8",
         "run": "https://github.com/0xinsider/picks/actions/runs/42505092466"
-      }
+      },
+      "kickoff": "2026-11-08T21:25:00Z",
+      "resolved_at": "2026-11-09T00:46:45.739372Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.295000",
+        "condition_id": "0xe4fb76846f61c2cf2b4d4b9ee192b952a3f1a28c44ae12ea94973a02271960cb",
+        "kickoff": "2026-11-08T21:25:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2118",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Seahawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cardinals vs. Seahawks",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2118",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-09T00:46:45.739372Z",
+          "parent_commit": "5cb8dc870d9e567b8e4b2636a47bea14087228c0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42542024268"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -394,16 +444,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b85d676fa8fe4a9fb4b27ad0c8f1d4fbb66cd4470af833a655a83bd7634db7d2",
+      "commitment_nonce": "b8b909c88b8db17f45f5fb0fb9e75da37cf0b9ce1bee989a97dff9a34faf4c78",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T18:06:02.514894Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2120",
       "first_observation": {
         "observed_at": "2026-11-08T18:06:12.370849Z",
         "parent_commit": "93e6cbbb7de512ae14b2a07f62f55d0707e5e9d0",
         "run": "https://github.com/0xinsider/picks/actions/runs/42508260891"
-      }
+      },
+      "kickoff": "2026-11-08T21:05:00Z",
+      "resolved_at": "2026-11-09T00:46:45.824327Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x6e23493a4cbfd5d40d96aad142f90fdfca9551626cef1d70491c29192648d025",
+        "kickoff": "2026-11-08T21:05:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2120",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chargers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Texans vs. Chargers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2120",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-09T00:46:45.824327Z",
+          "parent_commit": "5cb8dc870d9e567b8e4b2636a47bea14087228c0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42542024268"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -411,16 +486,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0ae4f152b00a788dd255b20a9234df41dc09663904f544635ae065d72b3a4802",
+      "commitment_nonce": "bb0388514a8994fd6187ac002230b13e2feecdc77e6283ef958a70eb000e737f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-08T18:16:28.225125Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2121",
       "first_observation": {
         "observed_at": "2026-11-08T18:16:37.044039Z",
         "parent_commit": "fbec3d91b6e23d87569a103a9279b6977d9177b8",
         "run": "https://github.com/0xinsider/picks/actions/runs/42509163981"
-      }
+      },
+      "kickoff": "2026-11-08T21:25:00Z",
+      "resolved_at": "2026-11-09T00:46:45.733118Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xeefa00b6d3e6a8c636f0a6604a76566f86ecdd4af14220d09b46a56a8e469f1e",
+        "kickoff": "2026-11-08T21:25:00Z",
+        "pick_date": "2026-11-08",
+        "pick_id": "2121",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Raiders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Raiders vs. 49ers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2121",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-09T00:46:45.733118Z",
+          "parent_commit": "5cb8dc870d9e567b8e4b2636a47bea14087228c0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42542024268"
+        }
+      ]
     },
     {
       "pick_rank": 14,
