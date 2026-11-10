@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "20f06ceed7fec7722ef07cd50d618a79ad126b72a4dbe96c99032015cc8d6a2d",
+      "commitment_nonce": "498cca131aaf2055c031269a9a137308f215904407829e2be2654c745a2a7a87",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-09T21:15:18.983438Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2126",
       "first_observation": {
         "observed_at": "2026-11-09T21:15:30.278087Z",
         "parent_commit": "4c6461435e0609aa820a70471754363f86f0ad30",
         "run": "https://github.com/0xinsider/picks/actions/runs/42700749164"
-      }
+      },
+      "kickoff": "2026-11-10T01:15:00Z",
+      "resolved_at": "2026-11-10T04:57:27.508323Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xb9a7b47c2b3c56a902bd706745a98c3f627e6f25e3566205b362856f2804c721",
+        "kickoff": "2026-11-10T01:15:00Z",
+        "pick_date": "2026-11-09",
+        "pick_id": "2126",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Bills",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bills vs. Vikings",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2126",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-10T04:57:27.508323Z",
+          "parent_commit": "89f438cf19796805d79e7c570f1b99f7d8c7b3b5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42759069009"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -24,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e21a22adf73aa437a6a268567a2cf5b6476ec96956684335023dae460b898ea9",
+      "commitment_nonce": "f5f417cef385c6a9415109d7e21e220cebfbfe39e29b4cd24414db16b2d112ee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-09T21:25:30.583097Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2127",
       "first_observation": {
         "observed_at": "2026-11-09T21:25:39.773086Z",
         "parent_commit": "7b3d677cefc036aa237cb8395ee8df55ea935c84",
         "run": "https://github.com/0xinsider/picks/actions/runs/42702365272"
-      }
+      },
+      "kickoff": "2026-11-10T01:15:00Z",
+      "resolved_at": "2026-11-10T04:57:27.520393Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xae130eadd35add39a97bbc1af18fecd6d6e7afbab8127c9c0cf5103d287f9806",
+        "kickoff": "2026-11-10T01:15:00Z",
+        "pick_date": "2026-11-09",
+        "pick_id": "2127",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Bills",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bills vs. Vikings",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2127",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-10T04:57:27.520393Z",
+          "parent_commit": "89f438cf19796805d79e7c570f1b99f7d8c7b3b5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42759069009"
+        }
+      ]
     }
   ]
 }
