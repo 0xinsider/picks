@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b838320b8262334e7cada8496a362d81d1b6888cd96f6c9b143a17633b069d72",
+      "commitment_nonce": "f91af2737c2ef89bdedf624fb919ace0e582aa6c1ffd0b34aa5fc34ec0c1aa14",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T10:56:41.747577Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2128",
       "first_observation": {
         "observed_at": "2026-11-10T10:56:53.010648Z",
         "parent_commit": "46e5d1fd1540abeb17e2de4fe5ea4b1d10f02a3a",
         "run": "https://github.com/0xinsider/picks/actions/runs/42803365338"
-      }
+      },
+      "kickoff": "2026-11-10T12:00:00Z",
+      "resolved_at": "2026-11-10T14:04:49.833957Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xe8daa670cbe9f842937afe95b213f5277cf9a3a21b18883c32aef24e5ed539fb",
+        "kickoff": "2026-11-10T12:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2128",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Alexander Shevchenko",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BNP Paribas Nordic Open: Adrian Mannarino vs Alexander Shevchenko",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2128",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-10T14:04:49.833957Z",
+          "parent_commit": "b89087896141fb4eff820e21d9d7f97f2378d74f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42830491592"
+        }
+      ]
     },
     {
       "pick_rank": 2,
@@ -24,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2e9f00521b22600cfac642f1dea46c7d7d24fce04b7c02cbc7008ff2697a5ca0",
+      "commitment_nonce": "16ffb7932fa67499d6fc16bdf2b7bc40d177582d68d94cd142b2896a99dd6a61",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T11:45:05.834015Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2129",
       "first_observation": {
         "observed_at": "2026-11-10T11:45:17.372545Z",
         "parent_commit": "b6d89fc634e2c39a88b4ac5fe3f4a1cb2d4e0499",
         "run": "https://github.com/0xinsider/picks/actions/runs/42810002893"
-      }
+      },
+      "kickoff": "2026-11-10T13:30:00Z",
+      "resolved_at": "2026-11-10T14:04:49.818824Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xd9d57d0a14f033826a0647389cc5c17e48da61b0926aea089a94fb95fbca5b7a",
+        "kickoff": "2026-11-10T13:30:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2129",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Thiago Agustin Tirante",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BNP Paribas Nordic Open: Tomas Etcheverry vs Thiago Agustin Tirante",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2129",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-11-10T14:04:49.818824Z",
+          "parent_commit": "b89087896141fb4eff820e21d9d7f97f2378d74f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42830491592"
+        }
+      ]
     },
     {
       "pick_rank": 3,
