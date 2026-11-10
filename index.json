@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 983,
-    "sealed": 8,
+    "opened": 984,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 709,
+    "proven": 710,
     "proven_record": {
       "wins": 375,
-      "losses": 327,
-      "decided": 702,
+      "losses": 328,
+      "decided": 703,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-19632.70",
-      "staked": "702000",
-      "roi": "-2.8"
+      "hit_rate": "53.3",
+      "profit_usd": "-20632.70",
+      "staked": "703000",
+      "roi": "-2.9"
     },
     "wins": 558,
-    "losses": 416,
+    "losses": 417,
     "voids": 5,
-    "decided": 974,
+    "decided": 975,
     "withdrawn": 4,
-    "hit_rate": "57.3",
+    "hit_rate": "57.2",
     "stake_usd": "1000",
-    "profit_usd": "2113.23",
-    "staked": "974000",
-    "roi": "0.2",
+    "profit_usd": "1113.23",
+    "staked": "975000",
+    "roi": "0.1",
     "through": "2026-11-10"
   },
   "picks": [
@@ -38116,16 +38116,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ba35b00fa06d3ab586619587c43fd4794414e3741da1189969a77dd5d75e121f",
+      "commitment_nonce": "22f7a5db9372c0ecf35cf796e2555207674940019f233b35923f3e529aca0c4d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T18:05:11.403580Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2131",
       "first_observation": {
         "observed_at": "2026-11-10T18:05:23.311834Z",
         "parent_commit": "8f6cb87f197c10b7b7e7e6c4524cff8d5edc2305",
         "run": "https://github.com/0xinsider/picks/actions/runs/42871552511"
-      }
+      },
+      "kickoff": "2026-11-10T20:00:00Z",
+      "resolved_at": "2026-11-10T22:34:38.140265Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x3ce2a216531a6dc7cd670a68d7e2b8337134401a185bc21622ed8e5a28677e77",
+        "kickoff": "2026-11-10T20:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2131",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Marta Kostyuk",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "WTA Finals, Group A: Marta Kostyuk vs Jessica Pegula",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2131",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-10T22:34:38.140265Z",
+          "parent_commit": "3d3ef5b031e7bf5d74bdabe40beeb24ddbcf7f48",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42915839539"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-10",
