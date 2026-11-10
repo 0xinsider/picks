@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 982,
-    "sealed": 1,
+    "opened": 983,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 708,
+    "proven": 709,
     "proven_record": {
-      "wins": 374,
+      "wins": 375,
       "losses": 327,
-      "decided": 701,
+      "decided": 702,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-20783.24",
-      "staked": "701000",
-      "roi": "-3.0"
+      "profit_usd": "-19632.70",
+      "staked": "702000",
+      "roi": "-2.8"
     },
-    "wins": 557,
+    "wins": 558,
     "losses": 416,
     "voids": 5,
-    "decided": 973,
+    "decided": 974,
     "withdrawn": 4,
-    "hit_rate": "57.2",
+    "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "962.69",
-    "staked": "973000",
-    "roi": "0.1",
+    "profit_usd": "2113.23",
+    "staked": "974000",
+    "roi": "0.2",
     "through": "2026-11-10"
   },
   "picks": [
@@ -38073,16 +38073,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "28f46fad3d8c8dfc05b0a34a990c7e6149126bb658cdf0055e8db267d335be61",
+      "commitment_nonce": "58cd5b5a9a4120ecfa346e56b0a42bbb7cafb6480340471bda6f84b2626f9401",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T12:36:34.884271Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2130",
       "first_observation": {
         "observed_at": "2026-11-10T12:36:45.043000Z",
         "parent_commit": "879b99f31d63a9b0b926d0f42dee87fc7738345e",
         "run": "https://github.com/0xinsider/picks/actions/runs/42817217095"
-      }
+      },
+      "kickoff": "2026-11-10T13:30:00Z",
+      "resolved_at": "2026-11-10T15:30:50.404587Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x2a527aaa7edc1b720351ae57517918543029d3b18d663ad35b77e022b4e3ed9d",
+        "kickoff": "2026-11-10T13:30:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2130",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lorenzo Sonego",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BNP Paribas Nordic Open: Lorenzo Sonego vs Quentin Halys",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2130",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-10T15:30:50.404587Z",
+          "parent_commit": "61b68417362dd40015606336d64fa2d8c8932158",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42845111919"
+        }
+      ]
     }
   ]
 }
