@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1009,
-    "sealed": 8,
+    "opened": 1010,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 735,
+    "proven": 736,
     "proven_record": {
       "wins": 391,
-      "losses": 337,
-      "decided": 728,
+      "losses": 338,
+      "decided": 729,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-16625.77",
-      "staked": "728000",
-      "roi": "-2.3"
+      "hit_rate": "53.6",
+      "profit_usd": "-17625.77",
+      "staked": "729000",
+      "roi": "-2.4"
     },
     "wins": 574,
-    "losses": 426,
+    "losses": 427,
     "voids": 5,
-    "decided": 1000,
+    "decided": 1001,
     "withdrawn": 4,
-    "hit_rate": "57.4",
+    "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "5120.17",
-    "staked": "1000000",
-    "roi": "0.5",
+    "profit_usd": "4120.17",
+    "staked": "1001000",
+    "roi": "0.4",
     "through": "2026-11-11"
   },
   "picks": [
@@ -39234,16 +39234,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8a5088d167438afa9c9c81d194beb8395226e74760b442ba773c8f806dbf19f2",
+      "commitment_nonce": "d4550ae364f45c8bc5de7a1f7fb4dede587bb8855b8f51bf40139d4cf8308c2e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T18:10:07.330659Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2157",
       "first_observation": {
         "observed_at": "2026-11-11T18:10:18.949875Z",
         "parent_commit": "66fc08158255e728ca10b743331b28bee2f8ea0a",
         "run": "https://github.com/0xinsider/picks/actions/runs/43075154686"
-      }
+      },
+      "kickoff": "2026-11-11T20:00:00Z",
+      "resolved_at": "2026-11-11T22:59:55.499710Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0xc017609e846b09a7aca07af50ddaeb53431b77de61f855283e7e41969ae2915c",
+        "kickoff": "2026-11-11T20:00:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2157",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Karolina Muchova",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "WTA Finals, Group B: Elina Svitolina vs Karolina Muchova",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2157",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-11T22:59:55.499710Z",
+          "parent_commit": "6ad26b2f910cc5237d166a6d61326f00e017b2cd",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43116321846"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-11",
