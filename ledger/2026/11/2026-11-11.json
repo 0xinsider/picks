@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7f61e713d6875f1fe65793e94755b865d425fd27474d395d881d9682404fb53b",
+      "commitment_nonce": "79417a0c946053fcfbe23374a8b3adac65dd2441fe2ecc7e8ee400fa81b0c00c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T10:40:05.175464Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2154",
       "first_observation": {
         "observed_at": "2026-11-11T10:40:15.351742Z",
         "parent_commit": "71820565bdb16c526bf524a79e34017b6fba89f4",
         "run": "https://github.com/0xinsider/picks/actions/runs/43005530918"
-      }
+      },
+      "kickoff": "2026-11-11T12:10:00Z",
+      "resolved_at": "2026-11-11T15:53:12.274922Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.510000",
+        "condition_id": "0xe35c00ec3d3793721206dbba6a62e1a557271e1bb8a07cbe933a39149212f537",
+        "kickoff": "2026-11-11T12:10:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2154",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lorenzo Sonego",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BNP Paribas Nordic Open: Lorenzo Sonego vs Alejandro Tabilo",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2154",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-11T15:53:12.274922Z",
+          "parent_commit": "93a5bb1a824b628694e3523f3a9492f1d1ab468c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43052794190"
+        }
+      ]
     },
     {
       "pick_rank": 3,
