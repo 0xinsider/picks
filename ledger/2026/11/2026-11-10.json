@@ -805,16 +805,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4d0b62b7bca0c1b070e5f2ff94eb74d7aab2afb5509a9c164db9f79cdf08c6e3",
+      "commitment_nonce": "853dffaf744572d044b517edfd362841bb2aa0341c4c32132eddc77f10796b23",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T00:00:54.522427Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2147",
       "first_observation": {
         "observed_at": "2026-11-11T00:01:05.692967Z",
         "parent_commit": "3e8f0bdb550aaf04e7963bb99faab3d84a497620",
         "run": "https://github.com/0xinsider/picks/actions/runs/42927970456"
-      }
+      },
+      "kickoff": "2026-11-11T02:00:00Z",
+      "resolved_at": "2026-11-11T04:42:23.843255Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x067621776943b1d64784d9c738eceb8caadd016bc8b047a02f130b73780ac39d",
+        "kickoff": "2026-11-11T02:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2147",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Clippers vs. Suns",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2147",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T04:42:23.843255Z",
+          "parent_commit": "513063afc54a9b279b0ac487cec34880f16ba96c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42960964563"
+        }
+      ]
     },
     {
       "pick_rank": 21,
