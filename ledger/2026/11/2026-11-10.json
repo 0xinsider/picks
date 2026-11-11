@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f5778d64b5fd20e7c0b44fe05362d1018d94d835fa57133a49659d2e8802bec2",
+      "commitment_nonce": "9064f4cd814bbe59636e9dc6c932a13f361f122e8987784ad64698a1161ac7f2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T23:00:25.179264Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2140",
       "first_observation": {
         "observed_at": "2026-11-10T23:00:36.874708Z",
         "parent_commit": "7b58ccc2b8516a49a736861078ed9a9e097c2b7b",
         "run": "https://github.com/0xinsider/picks/actions/runs/42919614928"
-      }
+      },
+      "kickoff": "2026-11-11T01:00:00Z",
+      "resolved_at": "2026-11-11T04:08:26.292513Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xaa56b60480c6afa3a2da3ce2e7e1692b3fe75d58ee9106fd314d38da2d41db2f",
+        "kickoff": "2026-11-11T01:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2140",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Red Wings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Blues",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2140",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-11T04:08:26.292513Z",
+          "parent_commit": "4be970451d4a6463b7cb0401fa49b99253f23693",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42957269238"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -528,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "81e29f646d9d9cc75284310f7a53f24e2d453cda9e7879fcd0e80df35c36dd2e",
+      "commitment_nonce": "a5d016742e9a946e7e4029098b8bda6422c5716dc62274bbb274b6f78afcf15d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T23:00:25.187317Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2141",
       "first_observation": {
         "observed_at": "2026-11-10T23:00:36.874708Z",
         "parent_commit": "7b58ccc2b8516a49a736861078ed9a9e097c2b7b",
         "run": "https://github.com/0xinsider/picks/actions/runs/42919614928"
-      }
+      },
+      "kickoff": "2026-11-11T01:00:00Z",
+      "resolved_at": "2026-11-11T04:08:26.306222Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xd390ea1029304d4792495cceb663c540cf4803aacae08696a507806a4edb18d0",
+        "kickoff": "2026-11-11T01:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2141",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Red Wings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Blues",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2141",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T04:08:26.306222Z",
+          "parent_commit": "4be970451d4a6463b7cb0401fa49b99253f23693",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42957269238"
+        }
+      ]
     },
     {
       "pick_rank": 15,
