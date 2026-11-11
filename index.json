@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1005,
-    "sealed": 4,
+    "opened": 1006,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 731,
+    "proven": 732,
     "proven_record": {
-      "wins": 389,
+      "wins": 390,
       "losses": 335,
-      "decided": 724,
+      "decided": 725,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-16156.35",
-      "staked": "724000",
-      "roi": "-2.2"
+      "hit_rate": "53.8",
+      "profit_usd": "-15176.15",
+      "staked": "725000",
+      "roi": "-2.1"
     },
-    "wins": 572,
+    "wins": 573,
     "losses": 424,
     "voids": 5,
-    "decided": 996,
+    "decided": 997,
     "withdrawn": 4,
-    "hit_rate": "57.4",
+    "hit_rate": "57.5",
     "stake_usd": "1000",
-    "profit_usd": "5589.58",
-    "staked": "996000",
-    "roi": "0.6",
-    "through": "2026-11-10"
+    "profit_usd": "6569.78",
+    "staked": "997000",
+    "roi": "0.7",
+    "through": "2026-11-11"
   },
   "picks": [
     {
@@ -39062,16 +39062,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "eac844bb51a772903d523e8ce79a8dbdbc49e352142c91334c416e7648b3765f",
+      "commitment_nonce": "bab9cd8a042207e558a0f5c716ef677f2e9f5e009234e86b6c9b925288d2a8b3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T08:00:07.816002Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2153",
       "first_observation": {
         "observed_at": "2026-11-11T08:00:18.255837Z",
         "parent_commit": "e2a4e57077db306c43d5c86c03c7c7e53bab0fa6",
         "run": "https://github.com/0xinsider/picks/actions/runs/42983589504"
-      }
+      },
+      "kickoff": "2026-11-11T09:30:00Z",
+      "resolved_at": "2026-11-11T13:11:00.747366Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xef8894cdde6bb66ec568f9dcd7d9e59422cc494ea94e528bbb505fc5089d36b3",
+        "kickoff": "2026-11-11T09:30:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2153",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "G2",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: MOUZ vs G2 (BO3) - BLAST Rivals Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2153",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T13:11:00.747366Z",
+          "parent_commit": "4e239637d8aacd7bb3c03f66d4524d837d0eec7d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43026817440"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-11",
