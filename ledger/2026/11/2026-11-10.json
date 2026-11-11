@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3913d2dc1e2d2d92bb1b718343aa8945ada04ed0519c63009cc97e9f1b781817",
+      "commitment_nonce": "d8f6ddbfbe0bcaa11ea992830df19622deb06506adcd3d06f19628f97d39aad2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T00:00:54.517812Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2146",
       "first_observation": {
         "observed_at": "2026-11-11T00:01:05.692967Z",
         "parent_commit": "3e8f0bdb550aaf04e7963bb99faab3d84a497620",
         "run": "https://github.com/0xinsider/picks/actions/runs/42927970456"
-      }
+      },
+      "kickoff": "2026-11-11T02:00:00Z",
+      "resolved_at": "2026-11-11T04:31:09.326451Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x62b6c35e0085fbede09a6a501a3774c2acb473591c520299b51b10aea601e302",
+        "kickoff": "2026-11-11T02:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2146",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FURIA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Legacy vs FURIA (BO3) - BLAST Rivals Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2146",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T04:31:09.326451Z",
+          "parent_commit": "535135f596f52c335912fb559a98c2b137f6550b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42959755061"
+        }
+      ]
     },
     {
       "pick_rank": 20,
