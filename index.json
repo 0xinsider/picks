@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1004,
-    "sealed": 1,
+    "opened": 1005,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 730,
+    "proven": 731,
     "proven_record": {
-      "wins": 388,
+      "wins": 389,
       "losses": 335,
-      "decided": 723,
+      "decided": 724,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-16637.83",
-      "staked": "723000",
-      "roi": "-2.3"
+      "profit_usd": "-16156.35",
+      "staked": "724000",
+      "roi": "-2.2"
     },
-    "wins": 571,
+    "wins": 572,
     "losses": 424,
     "voids": 5,
-    "decided": 995,
+    "decided": 996,
     "withdrawn": 4,
     "hit_rate": "57.4",
     "stake_usd": "1000",
-    "profit_usd": "5108.10",
-    "staked": "995000",
-    "roi": "0.5",
+    "profit_usd": "5589.58",
+    "staked": "996000",
+    "roi": "0.6",
     "through": "2026-11-10"
   },
   "picks": [
@@ -39019,16 +39019,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "548e8d42895d021656d8f9333e96f8aff6dc412981b9957e7f632399c0771f42",
+      "commitment_nonce": "7a5cad9d8207199cff494f271804c3ab8c65c76f7d43ff22042eaed15a7532c0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T01:00:09.331506Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2152",
       "first_observation": {
         "observed_at": "2026-11-11T01:00:21.704969Z",
         "parent_commit": "6aee270400f88d489101e0668fdef141dea43ca0",
         "run": "https://github.com/0xinsider/picks/actions/runs/42935677725"
-      }
+      },
+      "kickoff": "2026-11-11T03:00:00Z",
+      "resolved_at": "2026-11-11T06:12:29.767749Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.675000",
+        "condition_id": "0xd0fbdff783c542d27af1e231ab059b3d596a1ef9d0db1b9662c96946c4738fd5",
+        "kickoff": "2026-11-11T03:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2152",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Predators",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Predators vs. Kings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2152",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T06:12:29.767749Z",
+          "parent_commit": "2a914fd78bf68d91fd761b55216e4781c3ab4c55",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42970807439"
+        }
+      ]
     }
   ]
 }
