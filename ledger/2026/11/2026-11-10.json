@@ -973,16 +973,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ec6dce6c8240dd712187509a7082dcc66831ffff3cf01cfea7ac4de6dbd647a4",
+      "commitment_nonce": "23f17f3f0a7e8d07770330d9dbfa01e96a7032bb35dade8809072e3860ca2384",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T00:15:14.442511Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2151",
       "first_observation": {
         "observed_at": "2026-11-11T00:15:23.828449Z",
         "parent_commit": "00995366f8c57c609183a2cc94b0033ba3dd14cc",
         "run": "https://github.com/0xinsider/picks/actions/runs/42929887004"
-      }
+      },
+      "kickoff": "2026-11-11T01:00:00Z",
+      "resolved_at": "2026-11-11T05:07:33.989513Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x3a4c5765319423caf83bee135ae8cb07dbab25d2d0ece652fb5cbd2af8a7f147",
+        "kickoff": "2026-11-11T01:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2151",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Miami (OH)",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Ohio vs. Miami (OH)",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2151",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T05:07:33.989513Z",
+          "parent_commit": "2a1aef607cdcaee468e6f0e74b4ea39cd0d7556f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42963665625"
+        }
+      ]
     },
     {
       "pick_rank": 25,
