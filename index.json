@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 995,
-    "sealed": 10,
+    "opened": 996,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 721,
+    "proven": 722,
     "proven_record": {
-      "wins": 382,
+      "wins": 383,
       "losses": 332,
-      "decided": 714,
+      "decided": 715,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-18402.78",
-      "staked": "714000",
-      "roi": "-2.6"
+      "hit_rate": "53.6",
+      "profit_usd": "-17852.40",
+      "staked": "715000",
+      "roi": "-2.5"
     },
-    "wins": 565,
+    "wins": 566,
     "losses": 421,
     "voids": 5,
-    "decided": 986,
+    "decided": 987,
     "withdrawn": 4,
     "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "3343.15",
-    "staked": "986000",
-    "roi": "0.3",
+    "profit_usd": "3893.54",
+    "staked": "987000",
+    "roi": "0.4",
     "through": "2026-11-10"
   },
   "picks": [
@@ -38460,16 +38460,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "644e87a7823bcce9d4405ccaa78a48094888712a19b2ff9675239b9a7ecce96d",
+      "commitment_nonce": "3ce1e377b63ea6a84f6ae14efa667cb02cf398aea1d3bf1d776334e051557fd2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-10T22:39:10.700755Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2139",
       "first_observation": {
         "observed_at": "2026-11-10T22:39:20.474256Z",
         "parent_commit": "60dc8e48bbf0c90ad4935fed9cc41cd808a842be",
         "run": "https://github.com/0xinsider/picks/actions/runs/42916520128"
-      }
+      },
+      "kickoff": "2026-11-11T00:00:00Z",
+      "resolved_at": "2026-11-11T03:53:49.989422Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x3ea4cac0f0246d638a92de272e311853729555c94dd804426618fbc6b3acfa92",
+        "kickoff": "2026-11-11T00:00:00Z",
+        "pick_date": "2026-11-10",
+        "pick_id": "2139",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Bowling Green",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kent State vs. Bowling Green",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2139",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-11T03:53:49.989422Z",
+          "parent_commit": "e8d84c707a4125eeb5b24bee3c1bdca658a5f608",
+          "run": "https://github.com/0xinsider/picks/actions/runs/42955708101"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-10",
