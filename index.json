@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1008,
-    "sealed": 2,
+    "opened": 1009,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 734,
+    "proven": 735,
     "proven_record": {
       "wins": 391,
-      "losses": 336,
-      "decided": 727,
+      "losses": 337,
+      "decided": 728,
       "withdrawn": 2,
-      "hit_rate": "53.8",
-      "profit_usd": "-15625.77",
-      "staked": "727000",
-      "roi": "-2.1"
+      "hit_rate": "53.7",
+      "profit_usd": "-16625.77",
+      "staked": "728000",
+      "roi": "-2.3"
     },
     "wins": 574,
-    "losses": 425,
+    "losses": 426,
     "voids": 5,
-    "decided": 999,
+    "decided": 1000,
     "withdrawn": 4,
-    "hit_rate": "57.5",
+    "hit_rate": "57.4",
     "stake_usd": "1000",
-    "profit_usd": "6120.17",
-    "staked": "999000",
-    "roi": "0.6",
+    "profit_usd": "5120.17",
+    "staked": "1000000",
+    "roi": "0.5",
     "through": "2026-11-11"
   },
   "picks": [
@@ -39191,16 +39191,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5173b110e30569238fba78a3d6a615591c9772018e95e1b82cd581d2bff4d886",
+      "commitment_nonce": "02a941fe6f20cf66f10cd0db281c1cb2d4480a2a1355791443b7983ccfc2f798",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T13:10:51.643985Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2156",
       "first_observation": {
         "observed_at": "2026-11-11T13:11:12.300954Z",
         "parent_commit": "f1d6768e2cc44317ae9023de19e1ce2055b6c192",
         "run": "https://github.com/0xinsider/picks/actions/runs/43026796861"
-      }
+      },
+      "kickoff": "2026-11-11T15:00:00Z",
+      "resolved_at": "2026-11-11T19:16:04.877095Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x9bd7bc1e3de4b995f9e655e702230d9872c0a6be758d93012c45c78c3dd9063a",
+        "kickoff": "2026-11-11T15:00:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2156",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BakS eSports",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nexus vs BakS eSports (BO3) - CCT Europe Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2156",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-11T19:16:04.877095Z",
+          "parent_commit": "3dac00693f65c25d2946e30e0037e94a13e78940",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43085595976"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-11",
