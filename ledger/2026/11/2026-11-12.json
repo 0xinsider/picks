@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4ef5b5fccfa0b5303a1eb9de7ecd37cb5a7abe566b8eaaaaa66405187e5aca18",
+      "commitment_nonce": "5c5184b7834fcc45a307d49d8645c8c1c43f4daac8586348b9860d09f047df8a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T08:00:13.321979Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2178",
       "first_observation": {
         "observed_at": "2026-11-12T08:00:26.351070Z",
         "parent_commit": "0b2d0a96e7fd882a5ec58034e692fd2487f85d90",
         "run": "https://github.com/0xinsider/picks/actions/runs/43179427228"
-      }
+      },
+      "kickoff": "2026-11-12T09:30:00Z",
+      "resolved_at": "2026-11-12T14:28:09.408188Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x2d236b9cba065ffed92d82c52210b9f6979d29d4680831d1693c41eb5f97ff6f",
+        "kickoff": "2026-11-12T09:30:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2178",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "G2",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Spirit vs G2 (BO3) - BLAST Rivals Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2178",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-12T14:28:09.408188Z",
+          "parent_commit": "0372a1499e52a7020d78f0d477f2fdad4c45485a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43237493736"
+        }
+      ]
     },
     {
       "pick_rank": 2,
