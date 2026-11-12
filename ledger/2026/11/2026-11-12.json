@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c45fdbd59f8f337df9adfe5ab3f20f3fd5c0db7827fb08f27c4f2ccf7f70f318",
+      "commitment_nonce": "fd0860a620582a68ce180476ff8e9df841bc9409ae8b88739aaf4479c9d66875",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T12:10:09.855355Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2179",
       "first_observation": {
         "observed_at": "2026-11-12T12:10:22.119981Z",
         "parent_commit": "615c7337cc70cc90d4aff7b42d6aeced4614323b",
         "run": "https://github.com/0xinsider/picks/actions/runs/43215449278"
-      }
+      },
+      "kickoff": "2026-11-12T14:00:00Z",
+      "resolved_at": "2026-11-12T17:47:06.608824Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x1066f20457ec50adaa14b492e6360d6ac4483078f415995c31f277b1eaa69c2f",
+        "kickoff": "2026-11-12T14:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2179",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Alexander Shevchenko",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "BNP Paribas Nordic Open: Thiago Agustin Tirante vs Alexander Shevchenko",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2179",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-12T17:47:06.608824Z",
+          "parent_commit": "c981630f3726b0c4200aa6da4d2a27417d60316f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43273064585"
+        }
+      ]
     },
     {
       "pick_rank": 3,
