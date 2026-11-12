@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a01eaeab0cc729b43c2cf232a1842fadd8a588e10c0cb10c66834b7f272e454b",
+      "commitment_nonce": "69718c3f9cadbeabf41a1249ea9ef766434f9a22054df0020bd1db15af2bffbc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T13:40:32.051605Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2180",
       "first_observation": {
         "observed_at": "2026-11-12T13:40:45.176981Z",
         "parent_commit": "61c42dfb5a8a0703909081898e734f5caee42a68",
         "run": "https://github.com/0xinsider/picks/actions/runs/43229539425"
-      }
+      },
+      "kickoff": "2026-11-12T15:00:00Z",
+      "resolved_at": "2026-11-12T18:06:08.914260Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xe5100adfdcc70b368d312365bacec3b0b9bd1a6ebe8c1ca014cbb3d4df462fb6",
+        "kickoff": "2026-11-12T15:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2180",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "BakS eSports",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: BakS eSports vs The Last Resort (BO3) - CCT Europe Group Stage",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2180",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-12T18:06:08.914260Z",
+          "parent_commit": "92ac2ba9495c05e4fb179db8af61ff32511ffd17",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43276317558"
+        }
+      ]
     },
     {
       "pick_rank": 4,
