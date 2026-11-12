@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d7e8f6743bc089c234c796a495b3052f482f206928ac568b500280fa07320396",
+      "commitment_nonce": "8bbbee0125585f6014cdb20ae5d5cd26c5ab0e237682e78e79d5df18d7f6e148",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T15:04:30.079365Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2181",
       "first_observation": {
         "observed_at": "2026-11-12T15:04:40.024704Z",
         "parent_commit": "00033d497acb65e94e8a2a650d53f0e4b44e9652",
         "run": "https://github.com/0xinsider/picks/actions/runs/43243840685"
-      }
+      },
+      "kickoff": "2026-11-12T17:00:00Z",
+      "resolved_at": "2026-11-12T20:04:09.381913Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xf580f0bd2c432b8c12bf71c23366eff4a6e2f6fe96b8f466884b06b1f58f5782",
+        "kickoff": "2026-11-12T17:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2181",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Hurricanes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hurricanes vs. Kraken",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2181",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-12T20:04:09.381913Z",
+          "parent_commit": "665597d909130cc7d5343bb4a1b122fb2cee62ec",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43296564558"
+        }
+      ]
     }
   ]
 }
