@@ -847,16 +847,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1ea7071b59d37c7bf84995b588dcade6fbfd5439c866999e08a164f9d3d7bce5",
+      "commitment_nonce": "4973ed4974aa7003c26ad01dc4645f9e41c671e3e817d36ed2d723edc067c440",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T00:00:34.048180Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2173",
       "first_observation": {
         "observed_at": "2026-11-12T00:00:43.491755Z",
         "parent_commit": "a4db4811e559961815ed19eba707e3f35575ba1e",
         "run": "https://github.com/0xinsider/picks/actions/runs/43124077248"
-      }
+      },
+      "kickoff": "2026-11-12T02:00:00Z",
+      "resolved_at": "2026-11-12T05:12:36.555756Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x898df8722b5903f613c90ebb8ebc95546f8511c0d63260c67c883ccae58d6363",
+        "kickoff": "2026-11-12T02:00:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2173",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flyers vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2173",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-12T05:12:36.555756Z",
+          "parent_commit": "a5227a3c3c951fff8d84ecc6995bc6fd300e3e71",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43159836302"
+        }
+      ]
     },
     {
       "pick_rank": 22,
@@ -906,16 +931,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0d9f4047579dca9cce20cb6ee006272df5ca74fa431365f649b7f71b9402412e",
+      "commitment_nonce": "0fe22f8ca5e00e334af848a2e39f13b0644564d0aac7fdfd436c0295575843b1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T00:10:12.769883Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2175",
       "first_observation": {
         "observed_at": "2026-11-12T00:10:28.503782Z",
         "parent_commit": "79a7f18fa571ae948dd71f01d8c1d60fc86133a6",
         "run": "https://github.com/0xinsider/picks/actions/runs/43125295890"
-      }
+      },
+      "kickoff": "2026-11-12T02:00:00Z",
+      "resolved_at": "2026-11-12T05:12:36.591116Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xed32537c0b86e297ffd857faa5a8e24541c30ab98a6a566d8bab85d69cd7b5fa",
+        "kickoff": "2026-11-12T02:00:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2175",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Oilers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flyers vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2175",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-12T05:12:36.591116Z",
+          "parent_commit": "a5227a3c3c951fff8d84ecc6995bc6fd300e3e71",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43159836302"
+        }
+      ]
     },
     {
       "pick_rank": 24,
