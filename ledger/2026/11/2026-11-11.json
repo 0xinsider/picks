@@ -595,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "99db35db6af2d2902965b190dc0021835d91fe9b733a5594a24d4f4ebc19755b",
+      "commitment_nonce": "c23620d9fa9137af454fecaaced9103bb20d4e02713da28ba38d59fb5e5cfbd3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-11T23:10:13.407418Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2167",
       "first_observation": {
         "observed_at": "2026-11-11T23:10:25.732569Z",
         "parent_commit": "6c07cebc1ca13c028d70e46121f99b200695d841",
         "run": "https://github.com/0xinsider/picks/actions/runs/43117716194"
-      }
+      },
+      "kickoff": "2026-11-12T00:30:00Z",
+      "resolved_at": "2026-11-12T04:27:07.339830Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x83e47bcc91a54f6a49da40ccd7f31b81b40ea38c88d949725163eaee4f105a9b",
+        "kickoff": "2026-11-12T00:30:00Z",
+        "pick_date": "2026-11-11",
+        "pick_id": "2167",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UMass vs. Toledo",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2167",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-12T04:27:07.339830Z",
+          "parent_commit": "f5c61e56393f5e98c531c23734835150f49c1ec1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43154887140"
+        }
+      ]
     },
     {
       "pick_rank": 16,
