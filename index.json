@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1049,
-    "sealed": 1,
+    "opened": 1050,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 775,
+    "proven": 776,
     "proven_record": {
-      "wins": 413,
+      "wins": 414,
       "losses": 355,
-      "decided": 768,
+      "decided": 769,
       "withdrawn": 2,
       "hit_rate": "53.8",
-      "profit_usd": "-17752.54",
-      "staked": "768000",
-      "roi": "-2.3"
+      "profit_usd": "-17126.52",
+      "staked": "769000",
+      "roi": "-2.2"
     },
-    "wins": 596,
+    "wins": 597,
     "losses": 444,
     "voids": 5,
-    "decided": 1040,
+    "decided": 1041,
     "withdrawn": 4,
     "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "3993.39",
-    "staked": "1040000",
+    "profit_usd": "4619.41",
+    "staked": "1041000",
     "roi": "0.4",
-    "through": "2026-11-12"
+    "through": "2026-11-13"
   },
   "picks": [
     {
@@ -40954,16 +40954,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f17d794790bdf2b75e3c9ac2ad0908824a3755983c53c3550d2b12becf073a6a",
+      "commitment_nonce": "fb5146da08fe243327e29b188b0439bba93a65cb34381274efe7e2b9924b674f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T08:30:40.460526Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2197",
       "first_observation": {
         "observed_at": "2026-11-13T08:30:57.597878Z",
         "parent_commit": "0487294135725bafdec06a39a0af1288ccace519",
         "run": "https://github.com/0xinsider/picks/actions/runs/43393776795"
-      }
+      },
+      "kickoff": "2026-11-13T10:30:00Z",
+      "resolved_at": "2026-11-13T14:26:10.167096Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x1ad2b9ec36ee688ca112499eca0b180b665eee00b6ca4d9881dc2ec665429a88",
+        "kickoff": "2026-11-13T10:30:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2197",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "G2",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: G2 vs Team Falcons (BO3) - BLAST Rivals Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2197",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T14:26:10.167096Z",
+          "parent_commit": "fde7307800a52771c732b68a7043d8ac3bcd55f9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43442683295"
+        }
+      ]
     }
   ]
 }
