@@ -671,16 +671,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bb0095266f9cdde7244f45070b9b010156aa3d4d976a44bda8349b72bd8210cb",
+      "commitment_nonce": "ef56c3a8feae3baf156faed8feb16ba337e7fe001974f36de57b4dfa5817d9cf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T00:24:42.623556Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2195",
       "first_observation": {
         "observed_at": "2026-11-13T00:24:57.739143Z",
         "parent_commit": "f4fd26a0124cc5eeaa66c4aadac3340282c7a986",
         "run": "https://github.com/0xinsider/picks/actions/runs/43336850200"
-      }
+      },
+      "kickoff": "2026-11-13T01:15:00Z",
+      "resolved_at": "2026-11-13T04:37:16.672555Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x3e2266088f5b074f7c6e5805ac2eb29b03a65aabce5c7f557d209f92edb92321",
+        "kickoff": "2026-11-13T01:15:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2195",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Commanders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Commanders vs. Giants",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2195",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T04:37:16.672555Z",
+          "parent_commit": "eb6de303338bab6ee3b11f9f2b4212420bf6dbec",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43366712329"
+        }
+      ]
     },
     {
       "pick_rank": 19,
