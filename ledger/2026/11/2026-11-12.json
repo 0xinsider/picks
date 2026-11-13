@@ -234,16 +234,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6a192e8e38b62b71a69476a7aa3e4c629d538f0d1549183a8bce9e9a2f564c4c",
+      "commitment_nonce": "66b0f4c141482dd1d71a7854625764f24be79682f43965c8a09d449f09cfadf0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T22:08:54.876302Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2184",
       "first_observation": {
         "observed_at": "2026-11-12T22:09:04.283850Z",
         "parent_commit": "f8e1771a4fd292dc844c1a490414c3c8354f1a16",
         "run": "https://github.com/0xinsider/picks/actions/runs/43317159599"
-      }
+      },
+      "kickoff": "2026-11-13T00:00:00Z",
+      "resolved_at": "2026-11-13T02:57:10.335285Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x103c77334e95bdaa7549876354ce70fe212d31b2833d28fb83e237d1236bf287",
+        "kickoff": "2026-11-13T00:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2184",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Capitals",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Capitals vs. Devils",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2184",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-13T02:57:10.335285Z",
+          "parent_commit": "9b437d3c5bc0e31127867501a281165e2aeeddab",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43355646102"
+        }
+      ]
     },
     {
       "pick_rank": 8,
