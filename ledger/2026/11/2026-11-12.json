@@ -637,16 +637,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2830d9b44e34e9a085b93e373f609c22b2f8e1effa06d891415e1199fb5f2d92",
+      "commitment_nonce": "17ae843ddc4ef8af37c9821aeeef2423feccd0df9a46d3163b93217e6a2de1c7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T23:10:09.153639Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2193",
       "first_observation": {
         "observed_at": "2026-11-12T23:10:21.089900Z",
         "parent_commit": "2bb2e9d8c0a22841a5017226fdd4bc11208a7a27",
         "run": "https://github.com/0xinsider/picks/actions/runs/43326514161"
-      }
+      },
+      "kickoff": "2026-11-13T01:00:00Z",
+      "resolved_at": "2026-11-13T05:10:12.135738Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xc806df864d8543c97a6f51561c0d4eedec3ebb0dcb5338d625ee1ccf0c6b2054",
+        "kickoff": "2026-11-13T01:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2193",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Memphis",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Memphis vs. South Florida",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2193",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T05:10:12.135738Z",
+          "parent_commit": "f316f6ed5a221e89140673a28112a6b20510118d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43370231064"
+        }
+      ]
     },
     {
       "pick_rank": 17,
