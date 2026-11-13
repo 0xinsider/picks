@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7367776efdb98e57afe19ab3f2007a1da1f887ff343fe29767322bb9ff38d301",
+      "commitment_nonce": "a826b91f0eb272cab594fae3634100d78d47daed9ce366bc77eb8eaeebe1f32a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T22:00:55.119234Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2182",
       "first_observation": {
         "observed_at": "2026-11-12T22:01:04.882692Z",
         "parent_commit": "f852297eece9664a84f38c398511ed10cc4eb6d7",
         "run": "https://github.com/0xinsider/picks/actions/runs/43315853672"
-      }
+      },
+      "kickoff": "2026-11-13T00:00:00Z",
+      "resolved_at": "2026-11-13T02:44:13.968229Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x283479baef1c11e28422fe29810643afbc0974ae61608b26c52127a6ee90eb44",
+        "kickoff": "2026-11-13T00:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2182",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Raptors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Raptors vs. 76ers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2182",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-13T02:44:13.968229Z",
+          "parent_commit": "99f42fd0e3cb56adf2085171a78d2f2dde3d9f02",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43354222714"
+        }
+      ]
     },
     {
       "pick_rank": 6,
