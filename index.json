@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1039,
-    "sealed": 10,
+    "opened": 1040,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 765,
+    "proven": 766,
     "proven_record": {
-      "wins": 405,
+      "wins": 406,
       "losses": 353,
-      "decided": 758,
+      "decided": 759,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-23142.53",
-      "staked": "758000",
-      "roi": "-3.1"
+      "hit_rate": "53.5",
+      "profit_usd": "-22200.79",
+      "staked": "759000",
+      "roi": "-2.9"
     },
-    "wins": 588,
+    "wins": 589,
     "losses": 442,
     "voids": 5,
-    "decided": 1030,
+    "decided": 1031,
     "withdrawn": 4,
     "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "-1396.60",
-    "staked": "1030000",
-    "roi": "-0.1",
+    "profit_usd": "-454.85",
+    "staked": "1031000",
+    "roi": "-0.0",
     "through": "2026-11-12"
   },
   "picks": [
@@ -40481,16 +40481,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "848fbc07f1040f6aeec814ff98dc61c233468e6cb41d90b93b12978bba735b24",
+      "commitment_nonce": "f3ac6914097215b1ec462b16bb4f18f56b79111a4fcd836aa5716e0cc144e685",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T22:08:54.893862Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2186",
       "first_observation": {
         "observed_at": "2026-11-12T22:09:04.283850Z",
         "parent_commit": "f8e1771a4fd292dc844c1a490414c3c8354f1a16",
         "run": "https://github.com/0xinsider/picks/actions/runs/43317159599"
-      }
+      },
+      "kickoff": "2026-11-13T00:00:00Z",
+      "resolved_at": "2026-11-13T03:32:17.439144Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xb32c4eab59d602dd069cbc0cc133e3bff093f39e862b8cdebe40940a6992a826",
+        "kickoff": "2026-11-13T00:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2186",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Wizards",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pistons vs. Wizards",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2186",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T03:32:17.439144Z",
+          "parent_commit": "f419ce277c919d1047b1369bed74b3eb0f47c749",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43359626873"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-12",
