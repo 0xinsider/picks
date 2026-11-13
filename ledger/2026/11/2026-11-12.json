@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c1767acbebbf8b690a54bc7250495a19416b51371773dd3601674bebb66317ca",
+      "commitment_nonce": "53ee3f961d96d1390012ed0ec0bcde14d36734c2a0b2c8f93755825b332b83a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T01:10:08.979144Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2196",
       "first_observation": {
         "observed_at": "2026-11-13T01:10:20.290633Z",
         "parent_commit": "346793490d950a589756cdc4cea5db26e8be2d77",
         "run": "https://github.com/0xinsider/picks/actions/runs/43342824768"
-      }
+      },
+      "kickoff": "2026-11-13T03:00:00Z",
+      "resolved_at": "2026-11-13T06:12:08.614592Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x09a4e9c13f6c9dbd5c2ecf529972860c0ddf273af6305afab3e648fe787564c5",
+        "kickoff": "2026-11-13T03:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2196",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Islanders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Islanders vs. Kings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2196",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T06:12:08.614592Z",
+          "parent_commit": "ad350faf1fd60a7634d0f659a20fae7bcb329f18",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43377052122"
+        }
+      ]
     }
   ]
 }

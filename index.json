@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1048,
-    "sealed": 1,
+    "opened": 1049,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 774,
+    "proven": 775,
     "proven_record": {
-      "wins": 412,
+      "wins": 413,
       "losses": 355,
-      "decided": 767,
+      "decided": 768,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-18903.08",
-      "staked": "767000",
-      "roi": "-2.5"
+      "hit_rate": "53.8",
+      "profit_usd": "-17752.54",
+      "staked": "768000",
+      "roi": "-2.3"
     },
-    "wins": 595,
+    "wins": 596,
     "losses": 444,
     "voids": 5,
-    "decided": 1039,
+    "decided": 1040,
     "withdrawn": 4,
     "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "2842.86",
-    "staked": "1039000",
-    "roi": "0.3",
+    "profit_usd": "3993.39",
+    "staked": "1040000",
+    "roi": "0.4",
     "through": "2026-11-12"
   },
   "picks": [
@@ -40911,16 +40911,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c1767acbebbf8b690a54bc7250495a19416b51371773dd3601674bebb66317ca",
+      "commitment_nonce": "53ee3f961d96d1390012ed0ec0bcde14d36734c2a0b2c8f93755825b332b83a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T01:10:08.979144Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2196",
       "first_observation": {
         "observed_at": "2026-11-13T01:10:20.290633Z",
         "parent_commit": "346793490d950a589756cdc4cea5db26e8be2d77",
         "run": "https://github.com/0xinsider/picks/actions/runs/43342824768"
-      }
+      },
+      "kickoff": "2026-11-13T03:00:00Z",
+      "resolved_at": "2026-11-13T06:12:08.614592Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x09a4e9c13f6c9dbd5c2ecf529972860c0ddf273af6305afab3e648fe787564c5",
+        "kickoff": "2026-11-13T03:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2196",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Islanders",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Islanders vs. Kings",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2196",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T06:12:08.614592Z",
+          "parent_commit": "ad350faf1fd60a7634d0f659a20fae7bcb329f18",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43377052122"
+        }
+      ]
     }
   ]
 }
