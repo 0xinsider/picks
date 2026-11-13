@@ -217,16 +217,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "faf5e72a485870500a614356004c8d22ab44c6c127b049e5ecc452cd88ca368c",
+      "commitment_nonce": "805992df8ac4b998bf24335b80d161efa3fd2a3217d5350b21c6adae35d52cac",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T22:01:53.602849Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2183",
       "first_observation": {
         "observed_at": "2026-11-12T22:02:04.508564Z",
         "parent_commit": "ba68bbbb71750eb6e06a9ea4a8a13e3d06985535",
         "run": "https://github.com/0xinsider/picks/actions/runs/43316016551"
-      }
+      },
+      "kickoff": "2026-11-13T00:00:00Z",
+      "resolved_at": "2026-11-13T02:59:27.585706Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x5d4e444674b75296b14fe072553ceea820afef50d8ab6759e278c879c78e4fde",
+        "kickoff": "2026-11-13T00:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2183",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lightning",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lightning vs. Blue Jackets",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2183",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T02:59:27.585706Z",
+          "parent_commit": "6fe26d812c140ff6cdf3115508c792c8e07dbe68",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43355885407"
+        }
+      ]
     },
     {
       "pick_rank": 7,
