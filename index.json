@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1040,
-    "sealed": 9,
+    "opened": 1042,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 766,
+    "proven": 768,
     "proven_record": {
-      "wins": 406,
+      "wins": 408,
       "losses": 353,
-      "decided": 759,
+      "decided": 761,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-22200.79",
-      "staked": "759000",
-      "roi": "-2.9"
+      "hit_rate": "53.6",
+      "profit_usd": "-20792.27",
+      "staked": "761000",
+      "roi": "-2.7"
     },
-    "wins": 589,
+    "wins": 591,
     "losses": 442,
     "voids": 5,
-    "decided": 1031,
+    "decided": 1033,
     "withdrawn": 4,
-    "hit_rate": "57.1",
+    "hit_rate": "57.2",
     "stake_usd": "1000",
-    "profit_usd": "-454.85",
-    "staked": "1031000",
-    "roi": "-0.0",
+    "profit_usd": "953.67",
+    "staked": "1033000",
+    "roi": "0.1",
     "through": "2026-11-12"
   },
   "picks": [
@@ -40567,16 +40567,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "495e840f200e4987bfe3574b34de8cca54aabfb2aabee6fe7ba7dd0ce00806ac",
+      "commitment_nonce": "bb23e0e315962e2b5daa097ecf896ea624826b493c0fe22f5c0e8e02f041d450",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T23:00:13.812017Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2188",
       "first_observation": {
         "observed_at": "2026-11-12T23:00:26.713358Z",
         "parent_commit": "e08b80a20dc6ecb8f50f450534dfbb9a6b02b519",
         "run": "https://github.com/0xinsider/picks/actions/runs/43325007784"
-      }
+      },
+      "kickoff": "2026-11-13T01:00:00Z",
+      "resolved_at": "2026-11-13T03:34:05.804487Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x3d078969f4deb67560f1fe37a0296d40e89fcdafc15e324e70c83d6052422962",
+        "kickoff": "2026-11-13T01:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2188",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2188",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T03:34:05.804487Z",
+          "parent_commit": "986906f81e68dc367a2b5ab5f53fd59eb38de65f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43359828684"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-12",
@@ -40639,16 +40664,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7670ce1eb02dc704eaeb83d83b207a0105910bda9d3a597f96c796337772b5ef",
+      "commitment_nonce": "9dc816d387cf16e5e581f2e1a1c3cd69900b83bb3309893b02aab53890be582d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T23:01:51.058274Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2192",
       "first_observation": {
         "observed_at": "2026-11-12T23:02:02.452723Z",
         "parent_commit": "3f66e5545ff867723d3e8b51fd7cef2bd4d0a672",
         "run": "https://github.com/0xinsider/picks/actions/runs/43325264395"
-      }
+      },
+      "kickoff": "2026-11-13T01:00:00Z",
+      "resolved_at": "2026-11-13T03:34:10.624809Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xc096d9590945f29434681ef1e972af587ff836fc2d0d5101ad652caecf7beb97",
+        "kickoff": "2026-11-13T01:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2192",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2192",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T03:34:10.624809Z",
+          "parent_commit": "986906f81e68dc367a2b5ab5f53fd59eb38de65f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43359828684"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-12",
