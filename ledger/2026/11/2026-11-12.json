@@ -360,16 +360,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6cae3bbc895a8af271cf98b4fbbb3cd6d84973f47036804df528d5ce13a1929b",
+      "commitment_nonce": "eaf01dc89ec3fcd689686f5ae72a4c3b3f02f216137d8a9fa20120bda632f425",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-12T22:16:53.680969Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2187",
       "first_observation": {
         "observed_at": "2026-11-12T22:17:03.216338Z",
         "parent_commit": "e28b63a776fee273d2ea8362f51d9310abf9e3e6",
         "run": "https://github.com/0xinsider/picks/actions/runs/43318449807"
-      }
+      },
+      "kickoff": "2026-11-13T00:00:00Z",
+      "resolved_at": "2026-11-13T03:07:07.861481Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xf6486a23e682e13d29e6ec7293ba254747e20a6df046af1ac3f5a1c1e4546fbc",
+        "kickoff": "2026-11-13T00:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2187",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Avalanche",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Avalanche vs. Senators",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2187",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T03:07:07.861481Z",
+          "parent_commit": "8f55634ea775180918272e8511ada0ffea51d229",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43356786468"
+        }
+      ]
     },
     {
       "pick_rank": 11,
