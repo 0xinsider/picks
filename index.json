@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1047,
-    "sealed": 2,
+    "opened": 1048,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 773,
+    "proven": 774,
     "proven_record": {
-      "wins": 411,
+      "wins": 412,
       "losses": 355,
-      "decided": 766,
+      "decided": 767,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-19362.93",
-      "staked": "766000",
+      "profit_usd": "-18903.08",
+      "staked": "767000",
       "roi": "-2.5"
     },
-    "wins": 594,
+    "wins": 595,
     "losses": 444,
     "voids": 5,
-    "decided": 1038,
+    "decided": 1039,
     "withdrawn": 4,
-    "hit_rate": "57.2",
+    "hit_rate": "57.3",
     "stake_usd": "1000",
-    "profit_usd": "2383.00",
-    "staked": "1038000",
-    "roi": "0.2",
+    "profit_usd": "2842.86",
+    "staked": "1039000",
+    "roi": "0.3",
     "through": "2026-11-12"
   },
   "picks": [
@@ -40825,16 +40825,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd73bd078725797b1a42c3e727b5a663705f1a32f7add91f98228442d80c7fba",
+      "commitment_nonce": "3183164ea1471dcb511dc824bf0e54a127ff905b2eeb837dd3ab9d936fa6b4bb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T00:10:10.853566Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2194",
       "first_observation": {
         "observed_at": "2026-11-13T00:10:21.034729Z",
         "parent_commit": "0106f698fc6307a4f62d09fec30021ef1fac2b4b",
         "run": "https://github.com/0xinsider/picks/actions/runs/43334880986"
-      }
+      },
+      "kickoff": "2026-11-13T02:00:00Z",
+      "resolved_at": "2026-11-13T05:30:08.492143Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0xeca0701ed9c63e232add5956c7b8dd8c9bfc99af10e5ededca8231968be64a60",
+        "kickoff": "2026-11-13T02:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2194",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Utah",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Blues vs. Utah",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2194",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T05:30:08.492143Z",
+          "parent_commit": "7247cd07120752b554639d1fa818cf74a2270530",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43372423689"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-12",

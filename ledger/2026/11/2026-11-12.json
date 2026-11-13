@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd73bd078725797b1a42c3e727b5a663705f1a32f7add91f98228442d80c7fba",
+      "commitment_nonce": "3183164ea1471dcb511dc824bf0e54a127ff905b2eeb837dd3ab9d936fa6b4bb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T00:10:10.853566Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2194",
       "first_observation": {
         "observed_at": "2026-11-13T00:10:21.034729Z",
         "parent_commit": "0106f698fc6307a4f62d09fec30021ef1fac2b4b",
         "run": "https://github.com/0xinsider/picks/actions/runs/43334880986"
-      }
+      },
+      "kickoff": "2026-11-13T02:00:00Z",
+      "resolved_at": "2026-11-13T05:30:08.492143Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0xeca0701ed9c63e232add5956c7b8dd8c9bfc99af10e5ededca8231968be64a60",
+        "kickoff": "2026-11-13T02:00:00Z",
+        "pick_date": "2026-11-12",
+        "pick_id": "2194",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Utah",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Blues vs. Utah",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2194",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-13T05:30:08.492143Z",
+          "parent_commit": "7247cd07120752b554639d1fa818cf74a2270530",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43372423689"
+        }
+      ]
     },
     {
       "pick_rank": 18,
