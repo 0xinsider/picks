@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1056,
-    "sealed": 2,
+    "opened": 1058,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 782,
+    "proven": 784,
     "proven_record": {
       "wins": 417,
-      "losses": 358,
-      "decided": 775,
+      "losses": 360,
+      "decided": 777,
       "withdrawn": 2,
-      "hit_rate": "53.8",
-      "profit_usd": "-17372.42",
-      "staked": "775000",
-      "roi": "-2.2"
+      "hit_rate": "53.7",
+      "profit_usd": "-19372.42",
+      "staked": "777000",
+      "roi": "-2.5"
     },
     "wins": 600,
-    "losses": 447,
+    "losses": 449,
     "voids": 5,
-    "decided": 1047,
+    "decided": 1049,
     "withdrawn": 4,
-    "hit_rate": "57.3",
+    "hit_rate": "57.2",
     "stake_usd": "1000",
-    "profit_usd": "4373.52",
-    "staked": "1047000",
-    "roi": "0.4",
+    "profit_usd": "2373.52",
+    "staked": "1049000",
+    "roi": "0.2",
     "through": "2026-11-13"
   },
   "picks": [
@@ -41255,16 +41255,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f6269b6edd9fbfd4f9305789b3417370b1d3352e6f65d0220607a09c84fb8fce",
+      "commitment_nonce": "b9037a2d110e41b5ef64367dfa1073913da35a91c4eeded0c0efbddfbe4f0c2e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T01:30:39.822667Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2204",
       "first_observation": {
         "observed_at": "2026-11-14T01:30:48.063701Z",
         "parent_commit": "745dc956effa888eed3c027b4c79c8acfc5d323f",
         "run": "https://github.com/0xinsider/picks/actions/runs/43541014400"
-      }
+      },
+      "kickoff": "2026-11-14T03:30:00Z",
+      "resolved_at": "2026-11-14T06:12:14.572736Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0x6c0dac1551a12d7ade3ac5585a587c251f9d78e00f55ee6e42b72c2bf38a9955",
+        "kickoff": "2026-11-14T03:30:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2204",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Thunder vs. Clippers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2204",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T06:12:14.572736Z",
+          "parent_commit": "b8431a4ea17f18e0fc25f106b83ee8ec54c86344",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43565176788"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-13",
@@ -41273,16 +41298,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e9f6de24c3a5cad3ff22dbd09a30341a20c8cb302762522be38631376ab779d1",
+      "commitment_nonce": "4806230a65023354ecf4e033f6c2b3a93d6db9fad35c204bd642f92c9aaf096c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T02:40:09.610518Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2205",
       "first_observation": {
         "observed_at": "2026-11-14T02:40:22.165095Z",
         "parent_commit": "c094f643fadecc12c58d768e3e44290377eab747",
         "run": "https://github.com/0xinsider/picks/actions/runs/43547574033"
-      }
+      },
+      "kickoff": "2026-11-14T03:30:00Z",
+      "resolved_at": "2026-11-14T06:12:14.594261Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x1aa45adf5d37a2f53d0a296f815d982d116bd097f6457a8ddb8d9b48a1fbdc97",
+        "kickoff": "2026-11-14T03:30:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2205",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Thunder vs. Clippers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2205",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T06:12:14.594261Z",
+          "parent_commit": "b8431a4ea17f18e0fc25f106b83ee8ec54c86344",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43565176788"
+        }
+      ]
     }
   ]
 }
