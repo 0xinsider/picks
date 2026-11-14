@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1067,
-    "sealed": 8,
+    "opened": 1068,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 793,
+    "proven": 794,
     "proven_record": {
-      "wins": 421,
+      "wins": 422,
       "losses": 365,
-      "decided": 786,
+      "decided": 787,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-20740.04",
-      "staked": "786000",
-      "roi": "-2.6"
+      "profit_usd": "-19678.18",
+      "staked": "787000",
+      "roi": "-2.5"
     },
-    "wins": 604,
+    "wins": 605,
     "losses": 454,
     "voids": 5,
-    "decided": 1058,
+    "decided": 1059,
     "withdrawn": 4,
     "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "1005.90",
-    "staked": "1058000",
-    "roi": "0.1",
+    "profit_usd": "2067.75",
+    "staked": "1059000",
+    "roi": "0.2",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41800,16 +41800,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7de1e7694b502bcb69b82540db9b557b6ef5dc9520a62813ee3ec0f19730f150",
+      "commitment_nonce": "28938b5c559eef108bd52233c8d92e5f26a35fc5b843bf85dc05e217b3db05db",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T17:25:26.598463Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2219",
       "first_observation": {
         "observed_at": "2026-11-14T17:25:35.401277Z",
         "parent_commit": "c99bf579cad7e77ffab0730961fbfac3087145f1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43621027130"
-      }
+      },
+      "kickoff": "2026-11-14T18:00:00Z",
+      "resolved_at": "2026-11-14T21:37:12.264479Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x288d9def5117707f2df767a10ec083a96b6e51c9f73642c7b03186e5d832b20f",
+        "kickoff": "2026-11-14T18:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2219",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UAB vs. Temple",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2219",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T21:37:12.264479Z",
+          "parent_commit": "311f4a51a798497f55f29e9268480355987e3c40",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43643780708"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
