@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1066,
-    "sealed": 9,
+    "opened": 1067,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 792,
+    "proven": 793,
     "proven_record": {
-      "wins": 420,
+      "wins": 421,
       "losses": 365,
-      "decided": 785,
+      "decided": 786,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-21760.24",
-      "staked": "785000",
-      "roi": "-2.8"
+      "hit_rate": "53.6",
+      "profit_usd": "-20740.04",
+      "staked": "786000",
+      "roi": "-2.6"
     },
-    "wins": 603,
+    "wins": 604,
     "losses": 454,
     "voids": 5,
-    "decided": 1057,
+    "decided": 1058,
     "withdrawn": 4,
-    "hit_rate": "57.0",
+    "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "-14.30",
-    "staked": "1057000",
-    "roi": "-0.0",
+    "profit_usd": "1005.90",
+    "staked": "1058000",
+    "roi": "0.1",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41739,16 +41739,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b4749d066b7501b4a00e101efc3a565d56452a535eabc520a7b0fcffea4e587b",
+      "commitment_nonce": "5743a81df84a2031fce7af9fde74cd96ac567e3309dbf855f100b630920d78c0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T17:08:24.971426Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2217",
       "first_observation": {
         "observed_at": "2026-11-14T17:08:34.403742Z",
         "parent_commit": "fd322bae6a2855dd19852467b9d2c70e4dbced51",
         "run": "https://github.com/0xinsider/picks/actions/runs/43619457412"
-      }
+      },
+      "kickoff": "2026-11-14T17:45:00Z",
+      "resolved_at": "2026-11-14T21:21:47.972814Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xf7ab147a6878321568ae4f7ea180cec13aebc70f775d18714d22ec3f176ecd11",
+        "kickoff": "2026-11-14T17:45:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2217",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Alabama",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Alabama vs. Vanderbilt",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2217",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T21:21:47.972814Z",
+          "parent_commit": "7dce45238162c91a300763adaee1e16f32923d34",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43642415446"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
