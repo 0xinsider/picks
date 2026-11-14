@@ -66,16 +66,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f90e46e6a405fd307ed12a4df69aba624d7efc14106cad92a9288581bb716aa2",
+      "commitment_nonce": "55d506c84967f8150057a8f5c82281d79349ba3ee966392cc96b443706fed7f4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T22:10:12.279265Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2199",
       "first_observation": {
         "observed_at": "2026-11-13T22:10:30.142745Z",
         "parent_commit": "5963f5eb8b072acc843bf29e83db5afe560d3b51",
         "run": "https://github.com/0xinsider/picks/actions/runs/43517024928"
-      }
+      },
+      "kickoff": "2026-11-14T00:00:00Z",
+      "resolved_at": "2026-11-14T02:47:14.267935Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x93ba528d19e19c8887a24165b1df72857cd1bff84c4c570f890aa17e9239b635",
+        "kickoff": "2026-11-14T00:00:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2199",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Bucks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bucks vs. Magic",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2199",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T02:47:14.267935Z",
+          "parent_commit": "a30588331909e9b30dd33a616ab61abc1d54bd22",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43548200155"
+        }
+      ]
     },
     {
       "pick_rank": 4,
