@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9f3e49a1666a63dfa8a9355556f5c20fe61fafc9172330d5855f1946a9fcc52c",
+      "commitment_nonce": "2fc0ef7b6ed4950784cbeb4b1bf35286f2c371e174b990981c9336910f8f22d0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T10:00:33.083772Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2206",
       "first_observation": {
         "observed_at": "2026-11-14T10:00:41.809480Z",
         "parent_commit": "45e8df341c3dd79a623522f85d62618609f5228f",
         "run": "https://github.com/0xinsider/picks/actions/runs/43583193432"
-      }
+      },
+      "kickoff": "2026-11-14T12:00:00Z",
+      "resolved_at": "2026-11-14T14:59:04.004193Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.345000",
+        "condition_id": "0xefe36dd6303e1a6890b3c123f5d9417a1819f69f05ad1e0f4eae7c3366cb85b6",
+        "kickoff": "2026-11-14T12:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2206",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BakS eSports",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Virtus.pro vs BakS eSports (BO3) - CCT Europe Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2206",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T14:59:04.004193Z",
+          "parent_commit": "4d9502ad0668c72c005f2069ace767509afca559",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43607678912"
+        }
+      ]
     },
     {
       "pick_rank": 2,
