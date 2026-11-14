@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1059,
-    "sealed": 13,
+    "opened": 1060,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 785,
+    "proven": 786,
     "proven_record": {
       "wins": 417,
-      "losses": 361,
-      "decided": 778,
+      "losses": 362,
+      "decided": 779,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-20372.42",
-      "staked": "778000",
-      "roi": "-2.6"
+      "hit_rate": "53.5",
+      "profit_usd": "-21372.42",
+      "staked": "779000",
+      "roi": "-2.7"
     },
     "wins": 600,
-    "losses": 450,
+    "losses": 451,
     "voids": 5,
-    "decided": 1050,
+    "decided": 1051,
     "withdrawn": 4,
     "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "1373.52",
-    "staked": "1050000",
-    "roi": "0.1",
+    "profit_usd": "373.52",
+    "staked": "1051000",
+    "roi": "0.0",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41384,16 +41384,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "31af07af50635704b540118dea7adbb0bbb47d2f96bab1abbdaf3094f7b60356",
+      "commitment_nonce": "f90f5e0183f81cb00bc9019221ff8d1c0bf5da2e7514e1dc6283910b4e06c635",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T13:09:28.231970Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2207",
       "first_observation": {
         "observed_at": "2026-11-14T13:09:37.852408Z",
         "parent_commit": "cc4442997d6d43d9b369031167393634469bf49d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43598337909"
-      }
+      },
+      "kickoff": "2026-11-14T14:00:00Z",
+      "resolved_at": "2026-11-14T17:32:09.933454Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0x6e1a8c5a89c787524795d13bf4d6d7f0d46dded3dd8a63cb04c3a915365831c1",
+        "kickoff": "2026-11-14T14:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2207",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "ex-INOX Division",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: ex-INOX Division vs Alliance (BO3) - ESL Challenger League Europe Cup #12 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2207",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T17:32:09.933454Z",
+          "parent_commit": "402679d1172129eba0fadace1f6c920210e873d4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43621631991"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
