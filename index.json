@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1069,
-    "sealed": 14,
+    "opened": 1070,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 795,
+    "proven": 796,
     "proven_record": {
-      "wins": 423,
+      "wins": 424,
       "losses": 365,
-      "decided": 788,
+      "decided": 789,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-18616.32",
-      "staked": "788000",
-      "roi": "-2.4"
+      "profit_usd": "-18112.56",
+      "staked": "789000",
+      "roi": "-2.3"
     },
-    "wins": 606,
+    "wins": 607,
     "losses": 454,
     "voids": 5,
-    "decided": 1060,
+    "decided": 1061,
     "withdrawn": 4,
     "hit_rate": "57.2",
     "stake_usd": "1000",
-    "profit_usd": "3129.61",
-    "staked": "1060000",
+    "profit_usd": "3633.37",
+    "staked": "1061000",
     "roi": "0.3",
     "through": "2026-11-14"
   },
@@ -41746,16 +41746,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "00f8c540e11f8abeba9169144035ecb83293ed45ae58c788050986a75fe2be7e",
+      "commitment_nonce": "eaa6d0ef1bbcd0dd8dc8ced0501d5d90aef7a85fb9fc270789553328d95281a0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T17:07:45.553161Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2216",
       "first_observation": {
         "observed_at": "2026-11-14T17:07:56.015131Z",
         "parent_commit": "e3717ca9fe91ae0b7a62e39cde1e0a22d65f135f",
         "run": "https://github.com/0xinsider/picks/actions/runs/43619398065"
-      }
+      },
+      "kickoff": "2026-11-14T19:00:00Z",
+      "resolved_at": "2026-11-14T23:05:12.313513Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xe38143c8ab14e3778ddfe167f696cfca9ec2b04fc96a8f3040ddb72dc83424a1",
+        "kickoff": "2026-11-14T19:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2216",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "ex-Yawara",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: QUINTESSÊNCIA vs ex-Yawara (BO3) - CCT South America Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2216",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T23:05:12.313513Z",
+          "parent_commit": "a4e7f5fcdef7ae4077e06259bb3fad535c9820a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43651429234"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
