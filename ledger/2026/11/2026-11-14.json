@@ -318,16 +318,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e849c8061788370a9a7b9ecb3ae80152239725d302ab68b65470fe09c5b94708",
+      "commitment_nonce": "96e4e1cff729624792de98451dd574851e7056e3f80d5c77e343b067b80e2a46",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T16:40:26.412160Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2214",
       "first_observation": {
         "observed_at": "2026-11-14T16:40:35.546025Z",
         "parent_commit": "4bdaa4b4047790992bccf98d4a84f0341136c827",
         "run": "https://github.com/0xinsider/picks/actions/runs/43616884280"
-      }
+      },
+      "kickoff": "2026-11-14T17:30:00Z",
+      "resolved_at": "2026-11-14T21:13:51.068277Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x04188c934466aa23dd6115d210034fb93269eaef2b6e107d1cd6b2a48eff5971",
+        "kickoff": "2026-11-14T17:30:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2214",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Georgia Tech",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Georgia Tech vs. Clemson",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2214",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T21:13:51.068277Z",
+          "parent_commit": "d6ccd3bc98f563e17b91ac334191cf7511577542",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43641698051"
+        }
+      ]
     },
     {
       "pick_rank": 10,
