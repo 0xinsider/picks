@@ -301,16 +301,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c99d2ca372cfecdc07ee97c552da8b7cb62069b8f48049f84a5785eac73d47d6",
+      "commitment_nonce": "0fab8f4a0e0951789050df6a323ab094556723132f33ab34a70405d818dfdbba",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T16:23:56.028734Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2213",
       "first_observation": {
         "observed_at": "2026-11-14T16:24:10.022264Z",
         "parent_commit": "8923b62ae7f87a41d05945c80d6127106e1a6031",
         "run": "https://github.com/0xinsider/picks/actions/runs/43615389448"
-      }
+      },
+      "kickoff": "2026-11-14T18:00:00Z",
+      "resolved_at": "2026-11-14T21:40:14.611848Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xf506f28e388a3db0de094355c18554656dfca9b2ac1b677fcd0b63a5583b6180",
+        "kickoff": "2026-11-14T18:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2213",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Coastal Carolina",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Arkansas State vs. Coastal Carolina",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2213",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T21:40:14.611848Z",
+          "parent_commit": "6107f798e13d5f465278674aaccb3759f2f8d9ac",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43644036742"
+        }
+      ]
     },
     {
       "pick_rank": 9,
