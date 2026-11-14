@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f379925b06b5096207abf403c04f156caa2d94497f983498e76855f48bcfdb36",
+      "commitment_nonce": "27661bf7bad66946c2e43ecb8abe7266d0eb643bda319ba23dba0812c1390522",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T15:02:06.917293Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2210",
       "first_observation": {
         "observed_at": "2026-11-14T15:02:15.842010Z",
         "parent_commit": "98515189b356730d0b563580ce4a3761ad8aff95",
         "run": "https://github.com/0xinsider/picks/actions/runs/43607962030"
-      }
+      },
+      "kickoff": "2026-11-14T17:00:00Z",
+      "resolved_at": "2026-11-14T20:58:58.080639Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x07fa1ea8c4c8616015312a68383f943a033963aaac8372abbb5511d0cdd25a1d",
+        "kickoff": "2026-11-14T17:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2210",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Miami (FL)",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Duke vs. Miami (FL)",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2210",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T20:58:58.080639Z",
+          "parent_commit": "351806c2e95098d62fd61c9812fb44544550c4fb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43640331765"
+        }
+      ]
     },
     {
       "pick_rank": 6,
