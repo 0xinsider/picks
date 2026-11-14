@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1061,
-    "sealed": 13,
+    "opened": 1062,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 787,
+    "proven": 788,
     "proven_record": {
-      "wins": 417,
+      "wins": 418,
       "losses": 363,
-      "decided": 780,
+      "decided": 781,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-22372.42",
-      "staked": "780000",
-      "roi": "-2.9"
+      "profit_usd": "-21845.70",
+      "staked": "781000",
+      "roi": "-2.8"
     },
-    "wins": 600,
+    "wins": 601,
     "losses": 452,
     "voids": 5,
-    "decided": 1052,
+    "decided": 1053,
     "withdrawn": 4,
-    "hit_rate": "57.0",
+    "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "-626.48",
-    "staked": "1052000",
-    "roi": "-0.1",
+    "profit_usd": "-99.77",
+    "staked": "1053000",
+    "roi": "-0.0",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41470,16 +41470,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e21cce4d260ffbc06b1973e268db680ae0c14821020211dd4d2f63aa128a2cf0",
+      "commitment_nonce": "201c46415e76b5e8431070e08ce7069cefb934b460f862d74b0b8399858c5e65",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T14:11:58.093148Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2209",
       "first_observation": {
         "observed_at": "2026-11-14T14:12:06.856935Z",
         "parent_commit": "d3a52f08733344ea26c3ff0625c7b37360dac3df",
         "run": "https://github.com/0xinsider/picks/actions/runs/43603609431"
-      }
+      },
+      "kickoff": "2026-11-14T16:00:00Z",
+      "resolved_at": "2026-11-14T19:49:12.162837Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x7f0a0d1a525aad75f59f1f379f1798ae9719ac8c1e6f0eea7bf7cf32b7dce24e",
+        "kickoff": "2026-11-14T16:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2209",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BARCA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: tao toma vs BARCA (BO3) - CCT South America Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2209",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T19:49:12.162837Z",
+          "parent_commit": "86fbab30ff88601abfb55d0e815e72268754c561",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43634147596"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
