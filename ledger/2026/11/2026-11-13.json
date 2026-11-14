@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6463b546061e0999a6fb1e01382e7e922cecd91a99562bde2f66b3d6cb8a9153",
+      "commitment_nonce": "6d9078c187e235366fa1f48dec64bfc615c5739760b6ac59097e9b551c14d083",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T00:00:13.690928Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2201",
       "first_observation": {
         "observed_at": "2026-11-14T00:00:23.747248Z",
         "parent_commit": "b87aed3c6a3bbfe35f4c6dba56eaf367e6c55ff2",
         "run": "https://github.com/0xinsider/picks/actions/runs/43531162641"
-      }
+      },
+      "kickoff": "2026-11-14T02:00:00Z",
+      "resolved_at": "2026-11-14T04:54:13.972027Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xb6069bb487027020d248865b8d2959c9a0b113f85c895f4f26787ec33604af9d",
+        "kickoff": "2026-11-14T02:00:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2201",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rangers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rangers vs. Canucks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2201",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T04:54:13.972027Z",
+          "parent_commit": "6ae0b5f67aa8af556ba721f3413ae656e6318d5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43558910121"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -209,16 +234,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2def07a82d20709c3419e0e28e86f023ff5caa27f565cfa257a3cc46c56a3e0c",
+      "commitment_nonce": "10611acb496519a254bdd63871e54e27b054c719a90ea90aa7d0687637bf8a26",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T00:02:10.711874Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2203",
       "first_observation": {
         "observed_at": "2026-11-14T00:02:19.310310Z",
         "parent_commit": "b2df107d3e314c89868f9d862824ed73b964279c",
         "run": "https://github.com/0xinsider/picks/actions/runs/43531400317"
-      }
+      },
+      "kickoff": "2026-11-14T02:00:00Z",
+      "resolved_at": "2026-11-14T04:54:12.492658Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x1e0c1d321a2b8638d97bf3cb9bd73cc656c167b8f72ae15405d15c800f4b651f",
+        "kickoff": "2026-11-14T02:00:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2203",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rangers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rangers vs. Canucks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2203",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T04:54:12.492658Z",
+          "parent_commit": "6ae0b5f67aa8af556ba721f3413ae656e6318d5f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43558910121"
+        }
+      ]
     },
     {
       "pick_rank": 8,
