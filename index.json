@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1063,
-    "sealed": 12,
+    "opened": 1064,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 789,
+    "proven": 790,
     "proven_record": {
-      "wins": 418,
+      "wins": 419,
       "losses": 364,
-      "decided": 782,
+      "decided": 783,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-22845.70",
-      "staked": "782000",
-      "roi": "-2.9"
+      "profit_usd": "-21740.44",
+      "staked": "783000",
+      "roi": "-2.8"
     },
-    "wins": 601,
+    "wins": 602,
     "losses": 453,
     "voids": 5,
-    "decided": 1054,
+    "decided": 1055,
     "withdrawn": 4,
-    "hit_rate": "57.0",
+    "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "-1099.77",
-    "staked": "1054000",
-    "roi": "-0.1",
+    "profit_usd": "5.50",
+    "staked": "1055000",
+    "roi": "0.0",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41531,16 +41531,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1b0bab89b3ad9d3abddf9fba899dc1aeb5addb275924f08e80227bd8f0253cd4",
+      "commitment_nonce": "807211ef8d72b5f78776a75675f3f6226f1ec08fcb71ca38856b634cbf93a54e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T15:31:10.883241Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2211",
       "first_observation": {
         "observed_at": "2026-11-14T15:31:19.935560Z",
         "parent_commit": "24b36cb53628937c44b160734af9bd96a958900d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43610610136"
-      }
+      },
+      "kickoff": "2026-11-14T17:00:00Z",
+      "resolved_at": "2026-11-14T20:47:10.829173Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xfb6db6bdae40130fd8f20c694f38fc6b04e3cc40341c35775ed956fd17015dfe",
+        "kickoff": "2026-11-14T17:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2211",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wake Forest",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wake Forest vs. SMU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2211",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T20:47:10.829173Z",
+          "parent_commit": "16c91098f54919b38d25b07411a0699a2b18dc8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43639326621"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",

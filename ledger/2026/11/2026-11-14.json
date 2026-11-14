@@ -192,16 +192,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1b0bab89b3ad9d3abddf9fba899dc1aeb5addb275924f08e80227bd8f0253cd4",
+      "commitment_nonce": "807211ef8d72b5f78776a75675f3f6226f1ec08fcb71ca38856b634cbf93a54e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T15:31:10.883241Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2211",
       "first_observation": {
         "observed_at": "2026-11-14T15:31:19.935560Z",
         "parent_commit": "24b36cb53628937c44b160734af9bd96a958900d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43610610136"
-      }
+      },
+      "kickoff": "2026-11-14T17:00:00Z",
+      "resolved_at": "2026-11-14T20:47:10.829173Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xfb6db6bdae40130fd8f20c694f38fc6b04e3cc40341c35775ed956fd17015dfe",
+        "kickoff": "2026-11-14T17:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2211",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wake Forest",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wake Forest vs. SMU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2211",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-14T20:47:10.829173Z",
+          "parent_commit": "16c91098f54919b38d25b07411a0699a2b18dc8a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43639326621"
+        }
+      ]
     },
     {
       "pick_rank": 7,
