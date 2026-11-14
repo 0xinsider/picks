@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1060,
-    "sealed": 13,
+    "opened": 1061,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 786,
+    "proven": 787,
     "proven_record": {
       "wins": 417,
-      "losses": 362,
-      "decided": 779,
+      "losses": 363,
+      "decided": 780,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-21372.42",
-      "staked": "779000",
-      "roi": "-2.7"
+      "profit_usd": "-22372.42",
+      "staked": "780000",
+      "roi": "-2.9"
     },
     "wins": 600,
-    "losses": 451,
+    "losses": 452,
     "voids": 5,
-    "decided": 1051,
+    "decided": 1052,
     "withdrawn": 4,
-    "hit_rate": "57.1",
+    "hit_rate": "57.0",
     "stake_usd": "1000",
-    "profit_usd": "373.52",
-    "staked": "1051000",
-    "roi": "0.0",
+    "profit_usd": "-626.48",
+    "staked": "1052000",
+    "roi": "-0.1",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41427,16 +41427,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "27dbcdfff997ad44f7ae6e823eb08c767f3f21b510cb1e4f33d1721860ac3872",
+      "commitment_nonce": "62c512f06d64810bf38d2ea0f38b5fe1fcf0ef8c628860bdcb9b4d3e8ab6bc99",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T13:09:28.252038Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2208",
       "first_observation": {
         "observed_at": "2026-11-14T13:09:37.852408Z",
         "parent_commit": "cc4442997d6d43d9b369031167393634469bf49d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43598337909"
-      }
+      },
+      "kickoff": "2026-11-14T15:00:00Z",
+      "resolved_at": "2026-11-14T19:20:17.142626Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x3547978e065a8780cae74e280e82ad45767d7678ae92593d071363306f5d124f",
+        "kickoff": "2026-11-14T15:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2208",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FORZE Reload",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Iberian Soul vs FORZE Reload (BO3) - CCT Europe Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2208",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T19:20:17.142626Z",
+          "parent_commit": "c000d50c25e22951fca2f5ad07b4a86712d5fb94",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43631544283"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
