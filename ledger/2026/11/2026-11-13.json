@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fcc8d7153d4f1602324a9594762d400761ce6b89c1d8aba025e46ebb75cc4877",
+      "commitment_nonce": "18ab1d47f1d88b348020aa49a0d2f6d143111d46a4bf20ea4de4e3a0fd0fad72",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-13T22:00:42.189131Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2198",
       "first_observation": {
         "observed_at": "2026-11-13T22:00:54.465805Z",
         "parent_commit": "a487ca6c7626649b28502bcd95b639dfd01147e3",
         "run": "https://github.com/0xinsider/picks/actions/runs/43515651965"
-      }
+      },
+      "kickoff": "2026-11-14T00:00:00Z",
+      "resolved_at": "2026-11-14T03:02:14.930666Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xa480394beb14c97a7e4df24e511b96353a99f84bd784f1f780e1818a671e0044",
+        "kickoff": "2026-11-14T00:00:00Z",
+        "pick_date": "2026-11-13",
+        "pick_id": "2198",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Knicks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Pacers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2198",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T03:02:14.930666Z",
+          "parent_commit": "61357af15a84305b3a0315f6e39b342f56e897ea",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43549492174"
+        }
+      ]
     },
     {
       "pick_rank": 3,
