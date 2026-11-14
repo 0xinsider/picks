@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1062,
-    "sealed": 13,
+    "opened": 1063,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 788,
+    "proven": 789,
     "proven_record": {
       "wins": 418,
-      "losses": 363,
-      "decided": 781,
+      "losses": 364,
+      "decided": 782,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-21845.70",
-      "staked": "781000",
-      "roi": "-2.8"
+      "profit_usd": "-22845.70",
+      "staked": "782000",
+      "roi": "-2.9"
     },
     "wins": 601,
-    "losses": 452,
+    "losses": 453,
     "voids": 5,
-    "decided": 1053,
+    "decided": 1054,
     "withdrawn": 4,
-    "hit_rate": "57.1",
+    "hit_rate": "57.0",
     "stake_usd": "1000",
-    "profit_usd": "-99.77",
-    "staked": "1053000",
-    "roi": "-0.0",
+    "profit_usd": "-1099.77",
+    "staked": "1054000",
+    "roi": "-0.1",
     "through": "2026-11-14"
   },
   "picks": [
@@ -41549,16 +41549,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "116c976d8d04b693bc704970a6438cc1bb864ea57dcf8c14d7ba19cfaba897a6",
+      "commitment_nonce": "30613725419cfce0cf656bffc0f816f10df7ae6ede243336ab72d479cb0a02df",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T15:40:09.757941Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2212",
       "first_observation": {
         "observed_at": "2026-11-14T15:40:20.365395Z",
         "parent_commit": "85e6da0d46745814444a8c4f11ab1080d4907932",
         "run": "https://github.com/0xinsider/picks/actions/runs/43611409317"
-      }
+      },
+      "kickoff": "2026-11-14T17:00:00Z",
+      "resolved_at": "2026-11-14T20:43:44.630052Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x3abe67ebee0a4b7f52809a0c58ddf07c74330c452d61b867e936ea071ed82bb0",
+        "kickoff": "2026-11-14T17:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2212",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ohio State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Northwestern vs. Ohio State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2212",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-14T20:43:44.630052Z",
+          "parent_commit": "3a14a5e8e7d91dadf2cbe4ee2965912d8095220c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43639024877"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
