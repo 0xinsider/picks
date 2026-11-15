@@ -385,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b1adde3390a1af4389940e34fa38bab5f34b1c76c76b39f0175fa98dc249eb92",
+      "commitment_nonce": "bd95da2f812288843f416909472805751268924833ff726619713bbea1851c6e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T17:06:19.644992Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2215",
       "first_observation": {
         "observed_at": "2026-11-14T17:06:28.205666Z",
         "parent_commit": "9e1af6cc919b9ac08d0d05cd79d29bdaa7d1fa49",
         "run": "https://github.com/0xinsider/picks/actions/runs/43619262053"
-      }
+      },
+      "kickoff": "2026-11-14T19:00:00Z",
+      "resolved_at": "2026-11-15T01:18:15.209204Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x41f94101d57bf028eff62f2cc3714adb79722553dc59c1676071459c0b009e45",
+        "kickoff": "2026-11-14T19:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2215",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Gen.G",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2215",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T01:18:15.209204Z",
+          "parent_commit": "ac91fc41d7fe9318b9632f35233a95f45e913ac0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43662446362"
+        }
+      ]
     },
     {
       "pick_rank": 11,
@@ -486,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d1f910fda82fe20baf8c825ab472d343ec184d43b94cb0d44da7f9c464326417",
+      "commitment_nonce": "9cfc118eb7c68dbd8cc8925c24f634270d80595deff1ce055ce3159dbb04ad83",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T17:10:36.579265Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2218",
       "first_observation": {
         "observed_at": "2026-11-14T17:10:49.037914Z",
         "parent_commit": "76bce535dff01196088c7a698ae71b62fa383d3f",
         "run": "https://github.com/0xinsider/picks/actions/runs/43619665634"
-      }
+      },
+      "kickoff": "2026-11-14T19:00:00Z",
+      "resolved_at": "2026-11-15T01:18:12.087067Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x363208b57ab901cf848d4c6ee70a04412dda68ae75972bfc2ac08fb364769a19",
+        "kickoff": "2026-11-14T19:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2218",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "LoL: Bilibili Gaming vs Gen.G (BO5) - Worlds Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2218",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T01:18:12.087067Z",
+          "parent_commit": "ac91fc41d7fe9318b9632f35233a95f45e913ac0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43662446362"
+        }
+      ]
     },
     {
       "pick_rank": 14,
