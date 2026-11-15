@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "17957af95eba29462e0ae6727e4652294038851f9b056d9eba85506d575759d1",
+      "commitment_nonce": "b124e42fe05bf6ac6a3b11d9e63d7f6b55fa55540adf684dda24c69afe3e6d49",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T14:25:31.287766Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2234",
       "first_observation": {
         "observed_at": "2026-11-15T14:25:39.849867Z",
         "parent_commit": "0877f0aaeb076a6cd303ca8fa1d9315f090ad2b4",
         "run": "https://github.com/0xinsider/picks/actions/runs/43724282545"
-      }
+      },
+      "kickoff": "2026-11-15T15:00:00Z",
+      "resolved_at": "2026-11-15T19:00:20.361669Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x067651bb68011363ce94f8d057d9d2153c60afc9d8f361b59d36f1a150d086c2",
+        "kickoff": "2026-11-15T15:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2234",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FaZe",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Cluj-Napoca: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2234",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T19:00:20.361669Z",
+          "parent_commit": "4f2b22efbfb7d03a0888b03476791affa08d0b24",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43749916557"
+        }
+      ]
     },
     {
       "pick_rank": 5,

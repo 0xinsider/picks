@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1085,
-    "sealed": 11,
+    "opened": 1086,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 811,
+    "proven": 812,
     "proven_record": {
       "wins": 432,
-      "losses": 372,
-      "decided": 804,
+      "losses": 373,
+      "decided": 805,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-17988.18",
-      "staked": "804000",
-      "roi": "-2.2"
+      "profit_usd": "-18988.18",
+      "staked": "805000",
+      "roi": "-2.4"
     },
     "wins": 615,
-    "losses": 461,
+    "losses": 462,
     "voids": 5,
-    "decided": 1076,
+    "decided": 1077,
     "withdrawn": 4,
-    "hit_rate": "57.2",
+    "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "3757.75",
-    "staked": "1076000",
+    "profit_usd": "2757.75",
+    "staked": "1077000",
     "roi": "0.3",
     "through": "2026-11-15"
   },
@@ -42520,16 +42520,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "17957af95eba29462e0ae6727e4652294038851f9b056d9eba85506d575759d1",
+      "commitment_nonce": "b124e42fe05bf6ac6a3b11d9e63d7f6b55fa55540adf684dda24c69afe3e6d49",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T14:25:31.287766Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2234",
       "first_observation": {
         "observed_at": "2026-11-15T14:25:39.849867Z",
         "parent_commit": "0877f0aaeb076a6cd303ca8fa1d9315f090ad2b4",
         "run": "https://github.com/0xinsider/picks/actions/runs/43724282545"
-      }
+      },
+      "kickoff": "2026-11-15T15:00:00Z",
+      "resolved_at": "2026-11-15T19:00:20.361669Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x067651bb68011363ce94f8d057d9d2153c60afc9d8f361b59d36f1a150d086c2",
+        "kickoff": "2026-11-15T15:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2234",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FaZe",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Heroic vs FaZe (BO3) - PGL Cluj-Napoca: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2234",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T19:00:20.361669Z",
+          "parent_commit": "4f2b22efbfb7d03a0888b03476791affa08d0b24",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43749916557"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-15",
