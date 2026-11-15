@@ -965,16 +965,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "662a918a3334f48a75e9ea3596c8073e3f47acec5ece3b75e5e6bd7a029c06c0",
+      "commitment_nonce": "8c0886ee3017ab3b70b2523b1bd0e45281ab5ab9141dcfd6f046fe27a10472e6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.731826Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2230",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T03:50:17.964328Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0xa30dd7f5318e06b3d85bc0c5d775b3b9190f26fb2d9d8a3081a92307e1780879",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2230",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Air Force",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "San Jose State vs. Air Force",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2230",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T03:50:17.964328Z",
+          "parent_commit": "69347de8c5f0a18d7b4a522f0df582e75fbb6bf7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43674126650"
+        }
+      ]
     }
   ]
 }
