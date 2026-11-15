@@ -486,16 +486,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c8c5c54a25cf202068d5d40137f4464fed57acaa5ab1170b7e524fdb4b33c894",
+      "commitment_nonce": "58473cd52f03db5abf8e8a1700f4ca034e8a997317d78e0310def22ce6f374de",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T17:25:34.086194Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2243",
       "first_observation": {
         "observed_at": "2026-11-15T17:25:44.123187Z",
         "parent_commit": "5d2d0879974994b6794aa30b9d1268488d61987c",
         "run": "https://github.com/0xinsider/picks/actions/runs/43741033145"
-      }
+      },
+      "kickoff": "2026-11-15T18:00:00Z",
+      "resolved_at": "2026-11-15T21:34:26.318846Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x93506952d2ea600971f44b6fe54d60c68efcaff2edba9acce05af1fd7d95c862",
+        "kickoff": "2026-11-15T18:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2243",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Colts",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dolphins vs. Colts",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2243",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T21:34:26.318846Z",
+          "parent_commit": "f1f9ef8d210e9e4a6bc3db6d46b92b304ff4b200",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43764429468"
+        }
+      ]
     },
     {
       "pick_rank": 14,
