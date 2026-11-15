@@ -730,16 +730,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2145484eef5b9a3550109f50f0baa58dc63bbd1211d2268aa236f8a4ba731d7e",
+      "commitment_nonce": "8a700479af1632a9a84e9ddaa10c6cf5b6289a458028d14c761ce252f13237d9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:03:52.265066Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2225",
       "first_observation": {
         "observed_at": "2026-11-14T22:04:03.817893Z",
         "parent_commit": "9a863a62a88596920f45dfcae7b75916aeeefa21",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646080851"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T03:42:51.827219Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x3094e61ba7fd4ddb0a8d7a3202dcd717a31903803fff06f25179c765bec3bb3f",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2225",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Louisville",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Louisville vs. North Carolina",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2225",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T03:42:51.827219Z",
+          "parent_commit": "14c922d89c549d4dc1e92aee0b2142c2e73e8d72",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43673588174"
+        }
+      ]
     },
     {
       "pick_rank": 21,
@@ -873,16 +898,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "af260214318c0455f9e97785a0bbb7bdde7e7d0ebfdf18a4e8bec3165483abdd",
+      "commitment_nonce": "0093f94eb1114e96b6a0fd167e04de3a9aaa24078a484a5ac2b89d57d8a3536a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.717657Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2229",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T03:42:50.405880Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x60e7cd0522a16cfd92335c31f23adc5ca8eea05ffab4f5abc17d3765381e3707",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2229",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Louisville",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Louisville vs. North Carolina",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2229",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T03:42:50.405880Z",
+          "parent_commit": "14c922d89c549d4dc1e92aee0b2142c2e73e8d72",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43673588174"
+        }
+      ]
     },
     {
       "pick_rank": 25,
