@@ -747,16 +747,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b5938c35c0969f949425cdc123f2f0fa52cfe4bb366ea3b8f93b5d2c52f8b934",
+      "commitment_nonce": "6a1334ecfa8adbe27078901d497016b2935611a3246f6aebb98d6ea667aa6448",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.676533Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2226",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T02:56:05.626595Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x3372f702550dbcd6dc07c468096f0a15ce59557bc08f04eff998d8a3ba4c2538",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2226",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Flyers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flyers vs. Blue Jackets",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2226",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T02:56:05.626595Z",
+          "parent_commit": "047aef4f3d70cea11a2d20f6a6a46db5b5de19aa",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43670042835"
+        }
+      ]
     },
     {
       "pick_rank": 22,
