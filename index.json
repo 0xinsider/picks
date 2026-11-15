@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1092,
-    "sealed": 12,
+    "opened": 1093,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 818,
+    "proven": 819,
     "proven_record": {
       "wins": 435,
-      "losses": 376,
-      "decided": 811,
+      "losses": 377,
+      "decided": 812,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-19282.43",
-      "staked": "811000",
-      "roi": "-2.4"
+      "profit_usd": "-20282.43",
+      "staked": "812000",
+      "roi": "-2.5"
     },
     "wins": 618,
-    "losses": 465,
+    "losses": 466,
     "voids": 5,
-    "decided": 1083,
+    "decided": 1084,
     "withdrawn": 4,
-    "hit_rate": "57.1",
+    "hit_rate": "57.0",
     "stake_usd": "1000",
-    "profit_usd": "2463.50",
-    "staked": "1083000",
-    "roi": "0.2",
+    "profit_usd": "1463.50",
+    "staked": "1084000",
+    "roi": "0.1",
     "through": "2026-11-15"
   },
   "picks": [
@@ -42796,16 +42796,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "423a8e978ae1d102cd57a36d4139c18ffeadda36de974690ec0ba910b4dd19c0",
+      "commitment_nonce": "7e7912b500c070f6c78adce2eac126604453e20b1ecbdc5ba98267b35d0f2d0f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T17:02:34.953237Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2241",
       "first_observation": {
         "observed_at": "2026-11-15T17:02:43.609686Z",
         "parent_commit": "0197531d76496be39360e4281ed498e1f3d7ee0b",
         "run": "https://github.com/0xinsider/picks/actions/runs/43738840588"
-      }
+      },
+      "kickoff": "2026-11-15T18:00:00Z",
+      "resolved_at": "2026-11-15T21:30:28.233741Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x6500dbd78b1bd0f52fb6af73d144dabd179307a5a10dee45630c3166531125da",
+        "kickoff": "2026-11-15T18:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2241",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Titans",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jaguars vs. Titans",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2241",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T21:30:28.233741Z",
+          "parent_commit": "0c448a768e2632079afd359d7824f7b71028a847",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43764055174"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-15",
