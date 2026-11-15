@@ -789,16 +789,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "67a73fdb69f8f8a00e812aca6ffe8f4ebc20db0a0b0ed78006277516627518b0",
+      "commitment_nonce": "439e9e13b1a682eae5f4168533d3b7f77230ce9d57dd2ee7178f71e47632d4ca",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.688092Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2227",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T02:59:52.148946Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x2debab2c1ff21675f4b15cc424979ac27e4187001172ee5fc12c6330136595a1",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2227",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Maple Leafs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Oilers vs. Maple Leafs",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2227",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T02:59:52.148946Z",
+          "parent_commit": "fce69b3c8de6808ed79601fae61e043786aa4dfa",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43670302390"
+        }
+      ]
     },
     {
       "pick_rank": 23,
