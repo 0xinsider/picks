@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c74b3e867dc74bf4eee21d8e6aae6f0780389f6e22810ef6fd52897df20a41f5",
+      "commitment_nonce": "cacc36414e8d394a26c05f5a97d3e3fcb94c2b1249823ccb4f2f8944440e1afe",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T20:10:21.196181Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2222",
       "first_observation": {
         "observed_at": "2026-11-14T20:10:32.021940Z",
         "parent_commit": "3c41f12abb0b21fd851bb784c1b986cf20e52d1c",
         "run": "https://github.com/0xinsider/picks/actions/runs/43636054085"
-      }
+      },
+      "kickoff": "2026-11-14T22:00:00Z",
+      "resolved_at": "2026-11-15T06:11:50.683678Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.335000",
+        "condition_id": "0xc8cfc009e5ef7798f16727298e98712da56877f3c78d0bd1a69992c91371ef69",
+        "kickoff": "2026-11-14T22:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2222",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Josh Hokit",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC 334: Josh Hokit vs. Ciryl Gane (Heavyweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2222",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T06:11:50.683678Z",
+          "parent_commit": "482f77aafa2fa00c866da1ae9066a86b391ba2f5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43684334407"
+        }
+      ]
     },
     {
       "pick_rank": 18,
