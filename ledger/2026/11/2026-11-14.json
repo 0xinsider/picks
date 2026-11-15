@@ -545,16 +545,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "15be14c4957069448a31d5870d82c217de8c921f7b9021695190810c7641d196",
+      "commitment_nonce": "358386f022502523986e034cf18468923f9055b90661dcdc8a3f1ab78136a4c9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T19:10:14.235766Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2220",
       "first_observation": {
         "observed_at": "2026-11-14T19:10:24.169305Z",
         "parent_commit": "c0c368a7319c27e6f6f6234c8e77feb68d62199d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43630616334"
-      }
+      },
+      "kickoff": "2026-11-14T21:00:00Z",
+      "resolved_at": "2026-11-15T00:45:21.253736Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x0ba773d41763b0867213fcc7893d91f3d8d5f56174e60245f4ee8d0937ee39f5",
+        "kickoff": "2026-11-14T21:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2220",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Fresno State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Fresno State vs. Texas State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2220",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T00:45:21.253736Z",
+          "parent_commit": "b0960389b60ce4b7b4c883c46fecce92f6ff5964",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43659751765"
+        }
+      ]
     },
     {
       "pick_rank": 16,
