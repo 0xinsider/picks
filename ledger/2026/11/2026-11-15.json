@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9d264d8e242920111eb5c623a84f390116298b48eadf05a5d25d9c6c9ce9abd3",
+      "commitment_nonce": "bbe0802a4481cfcf56a585a0a47141a1faa2f00a7698cadee01991999df74f0d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T12:30:40.754129Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2233",
       "first_observation": {
         "observed_at": "2026-11-15T12:30:52.139254Z",
         "parent_commit": "b826ca0f3fa7c936a73cd5c42c9e37274f8e5561",
         "run": "https://github.com/0xinsider/picks/actions/runs/43714214759"
-      }
+      },
+      "kickoff": "2026-11-15T14:30:00Z",
+      "resolved_at": "2026-11-15T17:54:28.149856Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xecbfaf9f3950fe3bb70053492cb4d6714bec94a488680ac59ff544e939ce78ba",
+        "kickoff": "2026-11-15T14:30:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2233",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Lions",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Patriots vs. Lions",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2233",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T17:54:28.149856Z",
+          "parent_commit": "064c5ea74714647ce5fdd7c284679480da8a543b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43743725222"
+        }
+      ]
     },
     {
       "pick_rank": 4,
