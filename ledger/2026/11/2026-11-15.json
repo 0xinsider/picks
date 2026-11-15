@@ -234,16 +234,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f1281e6a7d1286a3aaee1b46d48acb58daafc5f2f76e3584c98a4f5675381067",
+      "commitment_nonce": "2588303fb13ef1ce244130f2a9d0ae6d63102e5473a5451bda827149501887f8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T16:10:58.432Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2237",
       "first_observation": {
         "observed_at": "2026-11-15T16:11:06.368474Z",
         "parent_commit": "f8a1e41b852aab5949386c9827a3afa589adb86f",
         "run": "https://github.com/0xinsider/picks/actions/runs/43734018454"
-      }
+      },
+      "kickoff": "2026-11-15T18:00:00Z",
+      "resolved_at": "2026-11-15T21:16:19.463117Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x2ac8c0825864f18ae4ebe9420fababb5aab486ebc9239cf76c151715e9d6e492",
+        "kickoff": "2026-11-15T18:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2237",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Vikings vs. Packers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2237",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T21:16:19.463117Z",
+          "parent_commit": "21536ec6aed22a9d3c0a8e94e564e933cf19e60f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43762749464"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -319,16 +344,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5dd26088f91d25e0dd27eecfa6d332e58b912c725c01bc44d9dbee3a179a66d0",
+      "commitment_nonce": "5b14066e78b6e0392153092436b9ecf6e2f61101420f260ebfb007874e381326",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T17:10:26.466359Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2242",
       "first_observation": {
         "observed_at": "2026-11-15T17:10:37.007329Z",
         "parent_commit": "6ef65e375665d6467f76b2c523e59f04ce46b83c",
         "run": "https://github.com/0xinsider/picks/actions/runs/43739604214"
-      }
+      },
+      "kickoff": "2026-11-15T18:00:00Z",
+      "resolved_at": "2026-11-15T21:16:19.453928Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x70fb7404fa510ff5178452a3a631d334d59c223ed1d43784f4dad58c9d94646c",
+        "kickoff": "2026-11-15T18:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2242",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Vikings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Vikings vs. Packers",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2242",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-15T21:16:19.453928Z",
+          "parent_commit": "21536ec6aed22a9d3c0a8e94e564e933cf19e60f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43762749464"
+        }
+      ]
     },
     {
       "pick_rank": 13,
