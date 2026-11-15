@@ -781,16 +781,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7d9e4d922398f4c334c09fc3406c52a6d4c1d141c71d2654f6893a94d5d33f38",
+      "commitment_nonce": "42ebe364a90e9eb4ae718af7e294b2ca3d4d3c056711510ea4272233d8ef6d82",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.705931Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2228",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T02:53:10.695049Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xa215f4dc906a3275b58f84dc281141f51ce161b61e1cb06ca5c99ad3df7284a1",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2228",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lightning",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Lightning",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2228",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T02:53:10.695049Z",
+          "parent_commit": "1ee91633900b05957b5e42742f03a78d710ea52d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43669833797"
+        }
+      ]
     },
     {
       "pick_rank": 24,

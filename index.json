@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1074,
-    "sealed": 9,
+    "opened": 1075,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 800,
+    "proven": 801,
     "proven_record": {
       "wins": 426,
-      "losses": 367,
-      "decided": 793,
+      "losses": 368,
+      "decided": 794,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-18411.64",
-      "staked": "793000",
-      "roi": "-2.3"
+      "profit_usd": "-19411.64",
+      "staked": "794000",
+      "roi": "-2.4"
     },
     "wins": 609,
-    "losses": 456,
+    "losses": 457,
     "voids": 5,
-    "decided": 1065,
+    "decided": 1066,
     "withdrawn": 4,
-    "hit_rate": "57.2",
+    "hit_rate": "57.1",
     "stake_usd": "1000",
-    "profit_usd": "3334.29",
-    "staked": "1065000",
-    "roi": "0.3",
+    "profit_usd": "2334.29",
+    "staked": "1066000",
+    "roi": "0.2",
     "through": "2026-11-14"
   },
   "picks": [
@@ -42137,16 +42137,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7d9e4d922398f4c334c09fc3406c52a6d4c1d141c71d2654f6893a94d5d33f38",
+      "commitment_nonce": "42ebe364a90e9eb4ae718af7e294b2ca3d4d3c056711510ea4272233d8ef6d82",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:10:16.705931Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2228",
       "first_observation": {
         "observed_at": "2026-11-14T22:10:28.410170Z",
         "parent_commit": "cb4228989035845d204ef2179603987b228d6ca1",
         "run": "https://github.com/0xinsider/picks/actions/runs/43646659511"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T02:53:10.695049Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xa215f4dc906a3275b58f84dc281141f51ce161b61e1cb06ca5c99ad3df7284a1",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2228",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lightning",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Red Wings vs. Lightning",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2228",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T02:53:10.695049Z",
+          "parent_commit": "1ee91633900b05957b5e42742f03a78d710ea52d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43669833797"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
