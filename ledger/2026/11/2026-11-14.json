@@ -587,16 +587,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ac96c4231705c7ee12f068030033d88686571b40d194e81d19d3b72479a91dd3",
+      "commitment_nonce": "bd91d37bc0665abe02bd872d765c5ea914436afc43525aecf9074912a86a6f30",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T19:25:10.848525Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2221",
       "first_observation": {
         "observed_at": "2026-11-14T19:25:21.612421Z",
         "parent_commit": "15bc08189e5b2fc1c98f616c29092f9e91954b84",
         "run": "https://github.com/0xinsider/picks/actions/runs/43631987422"
-      }
+      },
+      "kickoff": "2026-11-14T21:15:00Z",
+      "resolved_at": "2026-11-15T01:04:17.187257Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x85d21f47fef94c7df2cc9e557720ac2f17ee59f130200176cd3b97673a1cd5a2",
+        "kickoff": "2026-11-14T21:15:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2221",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Mississippi State",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Auburn vs. Mississippi State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2221",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T01:04:17.187257Z",
+          "parent_commit": "adc69dc4501cc576bbedd2b7404308383235b79f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43661298294"
+        }
+      ]
     },
     {
       "pick_rank": 17,
