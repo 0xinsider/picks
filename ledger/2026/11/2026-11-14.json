@@ -696,16 +696,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4b7d53b346e2cbbf58e015c45e9129a62f44a13ac2e0ee54928b577f191e3d6b",
+      "commitment_nonce": "16c9c3d47fbf923696bcc6b3e39af01b069cb42d7d28a16161f50e46e453b95d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:00:50.363578Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2223",
       "first_observation": {
         "observed_at": "2026-11-14T22:01:02.319301Z",
         "parent_commit": "cf57207d88f5848d6badf110d2c5a67c2f61bcae",
         "run": "https://github.com/0xinsider/picks/actions/runs/43645803929"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T03:47:23.606172Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x259a6fa569bb25b05540505b04436aadd435139c9fdf438c1087b3d95ce006f6",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2223",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Baylor",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Baylor vs. BYU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2223",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T03:47:23.606172Z",
+          "parent_commit": "06054fc0a3320f7ab98136b36dbcdd4c4ecb0219",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43673917127"
+        }
+      ]
     },
     {
       "pick_rank": 19,

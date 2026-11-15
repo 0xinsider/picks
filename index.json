@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1079,
-    "sealed": 4,
+    "opened": 1080,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 805,
+    "proven": 806,
     "proven_record": {
       "wins": 428,
-      "losses": 370,
-      "decided": 798,
+      "losses": 371,
+      "decided": 799,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-19512.79",
-      "staked": "798000",
-      "roi": "-2.4"
+      "profit_usd": "-20512.79",
+      "staked": "799000",
+      "roi": "-2.6"
     },
     "wins": 611,
-    "losses": 459,
+    "losses": 460,
     "voids": 5,
-    "decided": 1070,
+    "decided": 1071,
     "withdrawn": 4,
-    "hit_rate": "57.1",
+    "hit_rate": "57.0",
     "stake_usd": "1000",
-    "profit_usd": "2233.14",
-    "staked": "1070000",
-    "roi": "0.2",
+    "profit_usd": "1233.14",
+    "staked": "1071000",
+    "roi": "0.1",
     "through": "2026-11-14"
   },
   "picks": [
@@ -42047,16 +42047,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4b7d53b346e2cbbf58e015c45e9129a62f44a13ac2e0ee54928b577f191e3d6b",
+      "commitment_nonce": "16c9c3d47fbf923696bcc6b3e39af01b069cb42d7d28a16161f50e46e453b95d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:00:50.363578Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2223",
       "first_observation": {
         "observed_at": "2026-11-14T22:01:02.319301Z",
         "parent_commit": "cf57207d88f5848d6badf110d2c5a67c2f61bcae",
         "run": "https://github.com/0xinsider/picks/actions/runs/43645803929"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-15T03:47:23.606172Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x259a6fa569bb25b05540505b04436aadd435139c9fdf438c1087b3d95ce006f6",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2223",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Baylor",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Baylor vs. BYU",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2223",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-15T03:47:23.606172Z",
+          "parent_commit": "06054fc0a3320f7ab98136b36dbcdd4c4ecb0219",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43673917127"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-14",
