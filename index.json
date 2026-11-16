@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1106,
-    "sealed": 5,
+    "opened": 1107,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 832,
+    "proven": 833,
     "proven_record": {
-      "wins": 440,
+      "wins": 441,
       "losses": 385,
-      "decided": 825,
+      "decided": 826,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-24316.99",
-      "staked": "825000",
+      "hit_rate": "53.4",
+      "profit_usd": "-23577.86",
+      "staked": "826000",
       "roi": "-2.9"
     },
-    "wins": 623,
+    "wins": 624,
     "losses": 474,
     "voids": 5,
-    "decided": 1097,
+    "decided": 1098,
     "withdrawn": 4,
     "hit_rate": "56.8",
     "stake_usd": "1000",
-    "profit_usd": "-2571.05",
-    "staked": "1097000",
+    "profit_usd": "-1831.92",
+    "staked": "1098000",
     "roi": "-0.2",
-    "through": "2026-11-15"
+    "through": "2026-11-16"
   },
   "picks": [
     {
@@ -43441,16 +43441,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3f55bdf297b286deb25baf61c85bb7c13ac31b41ddd4ec6554e8458cc9d799b1",
+      "commitment_nonce": "695f0b533b930691c537e9dcbc9bc1c893e8530c1d62dcc9bc25f5a2c88508df",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T12:00:30.863176Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2256",
       "first_observation": {
         "observed_at": "2026-11-16T12:01:08.724655Z",
         "parent_commit": "3a51b0717f27bda06a546b35408108aabe1b50e0",
         "run": "https://github.com/0xinsider/picks/actions/runs/43862696101"
-      }
+      },
+      "kickoff": "2026-11-16T14:00:00Z",
+      "resolved_at": "2026-11-16T17:14:27.857429Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xcb3a77feacfbafd82f798184dce1d2ea1be88c23ef2ba366d17ddd61c10b9f50",
+        "kickoff": "2026-11-16T14:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2256",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Omega",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Omega vs PRIVATE (BO3) - CCT Europe Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2256",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T17:14:27.857429Z",
+          "parent_commit": "40c4e86796c56d3119db83ead76a4d1650a424fb",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43916267417"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-16",
