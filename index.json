@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1107,
-    "sealed": 4,
+    "opened": 1108,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 833,
+    "proven": 834,
     "proven_record": {
-      "wins": 441,
+      "wins": 442,
       "losses": 385,
-      "decided": 826,
+      "decided": 827,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-23577.86",
-      "staked": "826000",
-      "roi": "-2.9"
+      "profit_usd": "-22597.66",
+      "staked": "827000",
+      "roi": "-2.7"
     },
-    "wins": 624,
+    "wins": 625,
     "losses": 474,
     "voids": 5,
-    "decided": 1098,
+    "decided": 1099,
     "withdrawn": 4,
-    "hit_rate": "56.8",
+    "hit_rate": "56.9",
     "stake_usd": "1000",
-    "profit_usd": "-1831.92",
-    "staked": "1098000",
-    "roi": "-0.2",
+    "profit_usd": "-851.72",
+    "staked": "1099000",
+    "roi": "-0.1",
     "through": "2026-11-16"
   },
   "picks": [
@@ -43484,16 +43484,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "daf7bfb99d202c8dfb2f4b0f2352e6d57ed7b7a9c47c1155619d6f25fa0b824d",
+      "commitment_nonce": "b05c0ebfe7d91cc837e00fc40d87b5436bc206c277ff4ef436bbf96ec2c3b4e0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T13:10:18.262840Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2257",
       "first_observation": {
         "observed_at": "2026-11-16T13:10:29.020810Z",
         "parent_commit": "9bba9e0973c584a149e592997f51fd9eb6689b18",
         "run": "https://github.com/0xinsider/picks/actions/runs/43873232013"
-      }
+      },
+      "kickoff": "2026-11-16T15:00:00Z",
+      "resolved_at": "2026-11-16T17:16:52.505319Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0xc3d6ff3008e1f602df0fa2ef33aa72d044cea53b01cf33cf5ce7774458dfe79c",
+        "kickoff": "2026-11-16T15:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2257",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "magic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: magic vs Eternal Fire (BO3) - PGL Cluj-Napoca: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2257",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T17:16:52.505319Z",
+          "parent_commit": "8d04d609a312a5ef0fee2a604f5ba6ffccded274",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43916708610"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-16",
