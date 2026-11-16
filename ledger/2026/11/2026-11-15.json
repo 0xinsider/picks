@@ -822,16 +822,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c84966c00443b3f3f577c0f0f210523b9e178ddc243e71c0169b82b1b003bfc1",
+      "commitment_nonce": "36b313a1176634fb543629d525731afc9f19148a7dc6210351f9e5bb7536cf76",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T21:10:09.557869Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2251",
       "first_observation": {
         "observed_at": "2026-11-15T21:10:19.246205Z",
         "parent_commit": "7157a2ec830b869d9c48f25e8d2a5c4ba60f15e5",
         "run": "https://github.com/0xinsider/picks/actions/runs/43762161576"
-      }
+      },
+      "kickoff": "2026-11-15T23:00:00Z",
+      "resolved_at": "2026-11-16T01:26:27.158925Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xee19747f7bbef1a4fc1322dc7d4c674ba14276baeeaec41b51612bd96be908f2",
+        "kickoff": "2026-11-15T23:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2251",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Celtics",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Celtics",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2251",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T01:26:27.158925Z",
+          "parent_commit": "1d11352caa04f8f61e8a84f1c9fcb5099a8bf3e7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43786285212"
+        }
+      ]
     },
     {
       "pick_rank": 22,
