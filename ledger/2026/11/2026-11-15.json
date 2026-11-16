@@ -595,16 +595,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1a64b40c73850c966e36a679f8b51d46a86e728eba543b586ecb56ec315164cb",
+      "commitment_nonce": "37f42c89acdc96a49f1c3c62e6c9a86c5b63cf62d07b079ac27714c05297f724",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T19:13:26.368764Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2245",
       "first_observation": {
         "observed_at": "2026-11-15T19:13:35.534790Z",
         "parent_commit": "b36742283748f6a03532b68c2d62c3a019041a11",
         "run": "https://github.com/0xinsider/picks/actions/runs/43751209893"
-      }
+      },
+      "kickoff": "2026-11-15T21:05:00Z",
+      "resolved_at": "2026-11-16T00:07:24.372350Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xa7594e07aaa6604c8e55721b9afd57da56f01d166e39492ec6c693fb415630ed",
+        "kickoff": "2026-11-15T21:05:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2245",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rams",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rams vs. Cardinals",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2245",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T00:07:24.372350Z",
+          "parent_commit": "f3ffcfa14414810a9277101a6f9ca67073c2050d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43778487274"
+        }
+      ]
     },
     {
       "pick_rank": 16,
