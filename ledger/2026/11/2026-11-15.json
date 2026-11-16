@@ -864,16 +864,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e3ef98c10377b95b294d73deeba6e42575fd342c9214c946d1292df3858731ed",
+      "commitment_nonce": "a991345977452244a042fc9893f25474a9bead1c3c051c9121204513dadefc5f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T22:10:08.042342Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2252",
       "first_observation": {
         "observed_at": "2026-11-15T22:10:19.836319Z",
         "parent_commit": "5cf9afe985114a2141ba21e3d00d71723385ada8",
         "run": "https://github.com/0xinsider/picks/actions/runs/43767753945"
-      }
+      },
+      "kickoff": "2026-11-16T00:00:00Z",
+      "resolved_at": "2026-11-16T02:48:24.939798Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xd42bdffea6aafbfb7c24feb0434fe68f890878d7aca7734b84015beaeb223299",
+        "kickoff": "2026-11-16T00:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2252",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Wizards",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rockets vs. Wizards",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2252",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-16T02:48:24.939798Z",
+          "parent_commit": "084e48908bdca4ab8b54b81c8c2a006371f3706d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43794360592"
+        }
+      ]
     },
     {
       "pick_rank": 23,
