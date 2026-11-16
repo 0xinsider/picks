@@ -637,16 +637,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b20233d31d8d1d98c70272fb8263cd6dd9677b3fa1188702c0b53bddb1fd8619",
+      "commitment_nonce": "52692c408343c5c8438889eadb2984e0542c683ddd25ffed5ce6fab97f86cbe6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T19:13:11.295271Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2246",
       "first_observation": {
         "observed_at": "2026-11-15T19:13:21.027377Z",
         "parent_commit": "3941827042ef467e23b12d81b0a36e1871ba8e12",
         "run": "https://github.com/0xinsider/picks/actions/runs/43751188554"
-      }
+      },
+      "kickoff": "2026-11-15T21:05:00Z",
+      "resolved_at": "2026-11-16T00:15:28.285946Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x0d236eea211e307101c70ac81da84c09cf30e897ffcf210d9e750de8166b1bdc",
+        "kickoff": "2026-11-15T21:05:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2246",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seahawks vs. Raiders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2246",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-16T00:15:28.285946Z",
+          "parent_commit": "5a6206037b66a95a604c4217b075bd521b15556c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43779286465"
+        }
+      ]
     },
     {
       "pick_rank": 17,
@@ -671,16 +696,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "72f9a21a8423d5932b4b485d2c66c12b6eb196c7058b8957ac5210ef7562b397",
+      "commitment_nonce": "58076be65e89423bdec743aee73ea4295fb68d85720f19f1105b3683a1c1636d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T20:02:35.471162Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2248",
       "first_observation": {
         "observed_at": "2026-11-15T20:02:48.737800Z",
         "parent_commit": "df5774e77381c2f3bfb1b341052dd9398b4e6fcd",
         "run": "https://github.com/0xinsider/picks/actions/runs/43755775276"
-      }
+      },
+      "kickoff": "2026-11-15T21:05:00Z",
+      "resolved_at": "2026-11-16T00:15:32.498108Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x6619c2b5337061520e670b00bc7d630e12c95f0ca1fcc8076cfabd5d388df1a7",
+        "kickoff": "2026-11-15T21:05:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2248",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Seahawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seahawks vs. Raiders",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2248",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T00:15:32.498108Z",
+          "parent_commit": "5a6206037b66a95a604c4217b075bd521b15556c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43779286465"
+        }
+      ]
     },
     {
       "pick_rank": 19,
