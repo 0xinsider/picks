@@ -948,16 +948,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3475ae88d4406a48e0fd6e15b238f8a2bcc85665cac4567cf4e7568c26caa8e9",
+      "commitment_nonce": "06469ee7d3812f8ac6e291444f4cd46cc470a9124867ec7247b15b132fd636cf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T23:02:27.865205Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2254",
       "first_observation": {
         "observed_at": "2026-11-15T23:02:36.929074Z",
         "parent_commit": "b350ce17aefbf4e0e8152f5aa2f756b981b77016",
         "run": "https://github.com/0xinsider/picks/actions/runs/43772594355"
-      }
+      },
+      "kickoff": "2026-11-16T01:00:00Z",
+      "resolved_at": "2026-11-16T04:00:20.806171Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x775f9a02471cf3445de62d1ba337ad5587699e44c948e878f773d905bfbd728f",
+        "kickoff": "2026-11-16T01:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2254",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Panthers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Panthers vs. Stars",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2254",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-16T04:00:20.806171Z",
+          "parent_commit": "113bbcf825847d0d64d2b9059849186ba70cf4a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43801430977"
+        }
+      ]
     },
     {
       "pick_rank": 25,
@@ -965,16 +990,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fd6157dd3bf078b48e83f90132a75e868f8aa4bb9725ba02d89775cf1d4e54ff",
+      "commitment_nonce": "d2494fae03c9562f97b668657811ccd0a762600042e339dfe81f804e522b267d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T23:10:21.753912Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2255",
       "first_observation": {
         "observed_at": "2026-11-15T23:10:31.279965Z",
         "parent_commit": "9b27f47f5a4fbf13cc7691d9a04320748414341e",
         "run": "https://github.com/0xinsider/picks/actions/runs/43773342532"
-      }
+      },
+      "kickoff": "2026-11-16T01:00:00Z",
+      "resolved_at": "2026-11-16T03:43:39.583353Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x2b57544d14c8caebecdafec56bdde206776adfb99f545d5a976720514f552675",
+        "kickoff": "2026-11-16T01:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2255",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hawks vs. Bucks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2255",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-16T03:43:39.583353Z",
+          "parent_commit": "113bbcf825847d0d64d2b9059849186ba70cf4a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43801430977"
+        }
+      ]
     }
   ]
 }
