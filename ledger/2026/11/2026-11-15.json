@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0424957b2a2df31c393d83e73b93828a859d097bace269a5748b228aa715bfd9",
+      "commitment_nonce": "20f36e15ec4051235961a9564e15ac246726b3f55f939b0c32197d274b410bd5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T19:25:42.703212Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2247",
       "first_observation": {
         "observed_at": "2026-11-15T19:25:53.896913Z",
         "parent_commit": "6a4639f93a94fb4a786d85451ef6e8422a25a761",
         "run": "https://github.com/0xinsider/picks/actions/runs/43752365022"
-      }
+      },
+      "kickoff": "2026-11-15T21:25:00Z",
+      "resolved_at": "2026-11-16T01:02:32.884239Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xb89444f470b749b70246fda605252c7737c0d7caa0083bcfe01a5eebfe6ef6e5",
+        "kickoff": "2026-11-15T21:25:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2247",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Cowboys",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "49ers vs. Cowboys",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2247",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-16T01:02:32.884239Z",
+          "parent_commit": "e756bf9e028ab2609b3aa498a52f83a3783d83fc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43783889327"
+        }
+      ]
     },
     {
       "pick_rank": 18,
