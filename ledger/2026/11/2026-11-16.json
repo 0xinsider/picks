@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4218048cc41f3d311d08783eae0631e0e2dec303aeae6a230c2e9c838bb3a9a1",
+      "commitment_nonce": "2d09100528f5ef52a0f86b6bd18a5a73eedef48abf1a7de4ee2e09407395f6eb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T16:03:55.082465Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2258",
       "first_observation": {
         "observed_at": "2026-11-16T16:04:15.183746Z",
         "parent_commit": "2e73e5482124323bac98552eee4700bfd13bd19d",
         "run": "https://github.com/0xinsider/picks/actions/runs/43903311878"
-      }
+      },
+      "kickoff": "2026-11-16T18:00:00Z",
+      "resolved_at": "2026-11-16T20:34:30.480283Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xe3e398cb241a9da84a8ab4963dce0ae7fd748fe0c1f52ec7d5c7a117cdbcb614",
+        "kickoff": "2026-11-16T18:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2258",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Heroic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Heroic vs PARIVISION (BO3) - PGL Cluj-Napoca: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2258",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-16T20:34:30.480283Z",
+          "parent_commit": "17a92bed95944239084c1debc43dcd60ca76f5b7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/43951195059"
+        }
+      ]
     }
   ]
 }
