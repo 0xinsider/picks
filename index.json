@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1126,
-    "sealed": 3,
+    "opened": 1127,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 852,
+    "proven": 853,
     "proven_record": {
-      "wins": 450,
+      "wins": 451,
       "losses": 394,
-      "decided": 844,
+      "decided": 845,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-24503.05",
-      "staked": "844000",
-      "roi": "-2.9"
+      "hit_rate": "53.4",
+      "profit_usd": "-23255.86",
+      "staked": "845000",
+      "roi": "-2.8"
     },
-    "wins": 633,
+    "wins": 634,
     "losses": 483,
     "voids": 6,
-    "decided": 1116,
+    "decided": 1117,
     "withdrawn": 4,
-    "hit_rate": "56.7",
+    "hit_rate": "56.8",
     "stake_usd": "1000",
-    "profit_usd": "-2757.12",
-    "staked": "1116000",
-    "roi": "-0.2",
+    "profit_usd": "-1509.93",
+    "staked": "1117000",
+    "roi": "-0.1",
     "through": "2026-11-17"
   },
   "picks": [
@@ -44283,16 +44283,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "481963686573128cfb6789610c6a9d8292718e4242bdbc2bc5354806a290cc7d",
+      "commitment_nonce": "fb1283ea25a37847aa3dc07b0217b0efc6f7c358f7c20a8060717ba036b8ed83",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T16:31:13.589023Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2275",
       "first_observation": {
         "observed_at": "2026-11-17T16:31:23.584941Z",
         "parent_commit": "d2cd2b94f7665e0ebb77be4bf44363f89f4aee18",
         "run": "https://github.com/0xinsider/picks/actions/runs/44126693417"
-      }
+      },
+      "kickoff": "2026-11-17T18:30:00Z",
+      "resolved_at": "2026-11-17T21:09:06.283342Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x5a2e10bc6fd21b426e142f7cf0e96d4bf883b78170718902e3292c4756cc9a94",
+        "kickoff": "2026-11-17T18:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2275",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Luminosity",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: GamerLegion vs Luminosity (BO3) - Stake Ranked Episode 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2275",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-17T21:09:06.283342Z",
+          "parent_commit": "cfb106916cd869aab5507909c73e01beb21d63a5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44176768991"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-17",
