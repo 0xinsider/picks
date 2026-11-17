@@ -469,16 +469,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "68708b92f5a8aba5f618fbcd207329ac4549c364e1d40661f255037f1f9f683b",
+      "commitment_nonce": "31104fc396297cdd51df703876444ddce39635dcbcbc8d3fc4309e08859e21b4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T23:25:13.658785Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2267",
       "first_observation": {
         "observed_at": "2026-11-16T23:25:26.028345Z",
         "parent_commit": "71d163f49ef7af2955a9936fabaf927ecdb4eee8",
         "run": "https://github.com/0xinsider/picks/actions/runs/43979121580"
-      }
+      },
+      "kickoff": "2026-11-17T01:15:00Z",
+      "resolved_at": "2026-11-17T04:41:44.491222Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x82fffe3310c79693b170fe3dbe72df418b63efa063400e090852835d2cc6c707",
+        "kickoff": "2026-11-17T01:15:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2267",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Ravens",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chargers vs. Ravens",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2267",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T04:41:44.491222Z",
+          "parent_commit": "4295399e32fcad4b93854160c88b63a3dcf224a0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44018943176"
+        }
+      ]
     },
     {
       "pick_rank": 13,
