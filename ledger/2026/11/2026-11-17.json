@@ -66,16 +66,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "86985dedbc782473b43fd2f1eeee87e04f3645191a3b71cb9e13ca729e14c5fb",
+      "commitment_nonce": "781f733d60522bd9c70523adbc43b47e74680d195281e83e52300668d8567848",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T11:24:04.222966Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2272",
       "first_observation": {
         "observed_at": "2026-11-17T11:24:13.390573Z",
         "parent_commit": "0e747687caf88aa64f4257cfe33a83aa15d4b9d6",
         "run": "https://github.com/0xinsider/picks/actions/runs/44073678816"
-      }
+      },
+      "kickoff": "2026-11-17T12:00:00Z",
+      "resolved_at": "2026-11-17T15:10:06.337730Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.450000",
+        "condition_id": "0x918caf44658efb04557798b0d6e78a1f91a2e7d4e21840ad173a31959eee8442",
+        "kickoff": "2026-11-17T12:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2272",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "fnatic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: fnatic vs 100 Thieves (BO3) - PGL Cluj-Napoca: Closed Qualifier Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2272",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T15:10:06.337730Z",
+          "parent_commit": "b7b10011cdef10aa17cfac6e8f229b851a0b93c5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44111198579"
+        }
+      ]
     },
     {
       "pick_rank": 4,
