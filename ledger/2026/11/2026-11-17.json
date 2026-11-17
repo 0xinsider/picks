@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a87fbea87abb557d3bfa012beb13a28535f06301f627a9ece8cb52e0d82919ea",
+      "commitment_nonce": "d8c486fad187d3da22b10eb08461aab32ab35c88480f553b8c579dc43f5706b1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T11:10:26.828983Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2271",
       "first_observation": {
         "observed_at": "2026-11-17T11:10:36.618921Z",
         "parent_commit": "7dc551e095c99c638747164862fae8d08fe3eb0e",
         "run": "https://github.com/0xinsider/picks/actions/runs/44071589270"
-      }
+      },
+      "kickoff": "2026-11-17T13:00:00Z",
+      "resolved_at": "2026-11-17T16:04:05.741642Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xac655fa0ded72aaf325b3cc85a028e74c46993081528908941b4294308c418b5",
+        "kickoff": "2026-11-17T13:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2271",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Alliance",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Alliance vs Iberian Soul (BO3) - Tipsport RUSH Brno Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2271",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-17T16:04:05.741642Z",
+          "parent_commit": "d27e069c59a4c948aa05c0d0292089973fd61cd7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44121495590"
+        }
+      ]
     },
     {
       "pick_rank": 3,
