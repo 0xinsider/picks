@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "61d8bfeeecf7704279a640b0d08fe836d5f9f7febecde6d8875b878ffc39b47f",
+      "commitment_nonce": "23a053ca354704603a66d1a7b160d6d3ca5a4c871c7fc1b4751db2f918453922",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T11:55:08.381326Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2273",
       "first_observation": {
         "observed_at": "2026-11-17T11:55:25.352141Z",
         "parent_commit": "a2fbe3af942c112a43c6ceca0df96edfbfa382e1",
         "run": "https://github.com/0xinsider/picks/actions/runs/44078316644"
-      }
+      },
+      "kickoff": "2026-11-17T13:00:00Z",
+      "resolved_at": "2026-11-17T16:52:04.976545Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.355000",
+        "condition_id": "0xe5fe261c5e2e678403ca18e0203d142c191604364c9c71a3ed849cf15d8a24cb",
+        "kickoff": "2026-11-17T13:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2273",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "LEGION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: LGD Gaming vs LEGION (BO3) - 1win Essence Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2273",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T16:52:04.976545Z",
+          "parent_commit": "8aefe52ed1f7511b6e13e204773101f1d575681c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44130625905"
+        }
+      ]
     },
     {
       "pick_rank": 5,
