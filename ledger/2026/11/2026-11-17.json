@@ -259,16 +259,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "723e0b6598d0c4b71b56da3f1dd05accfb0853252afa93bf10c7ad81f3301c55",
+      "commitment_nonce": "8ecc2e4fa1c1c7cd508587d6e224378f50ce56f9dbcc0e23b12d76369558461c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T17:04:13.019546Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2276",
       "first_observation": {
         "observed_at": "2026-11-17T17:04:26.448615Z",
         "parent_commit": "1fa86615078d9703f4098122c0eab9f00ea194a3",
         "run": "https://github.com/0xinsider/picks/actions/runs/44132866269"
-      }
+      },
+      "kickoff": "2026-11-17T19:00:00Z",
+      "resolved_at": "2026-11-17T22:45:28.426659Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x4639a86ed1a9d9ba4fd70a34765bee1e2e0fc70516ba8e882cb04263ac7a5451",
+        "kickoff": "2026-11-17T19:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2276",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Envy",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Envy vs Metizport (BO3) - Tipsport RUSH Brno Group B",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2276",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-17T22:45:28.426659Z",
+          "parent_commit": "06109ebd7d39737249e5d35e7a8deb21dc480748",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44193129242"
+        }
+      ]
     },
     {
       "pick_rank": 8,
