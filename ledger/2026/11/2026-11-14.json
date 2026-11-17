@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7d973330b88f391aa24b10b79482fa6d1055e19044ba91c16c2a9b868fdfe573",
+      "commitment_nonce": "9bb86f0b489a65924e14ce8319aa8d5052b0d598acf7c839cd74dc1eaba50a89",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-14T22:00:50.378080Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2224",
       "first_observation": {
         "observed_at": "2026-11-14T22:01:02.319301Z",
         "parent_commit": "cf57207d88f5848d6badf110d2c5a67c2f61bcae",
         "run": "https://github.com/0xinsider/picks/actions/runs/43645803929"
-      }
+      },
+      "kickoff": "2026-11-15T00:00:00Z",
+      "resolved_at": "2026-11-17T07:04:29.627349Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x3973b1825585afc8ab2a6c2a2323937be97b911ceec9075d945a36ebce0b77b9",
+        "kickoff": "2026-11-15T00:00:00Z",
+        "pick_date": "2026-11-14",
+        "pick_id": "2224",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Louisiana-Lafayette Ragin' Cajuns",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Louisiana-Lafayette Ragin' Cajuns vs. UNCW Seahawks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2224",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-11-17T07:04:29.627349Z",
+          "parent_commit": "fa5b9ceeb4f1f7e3d620caa91624eaf240bb0e52",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44035895319"
+        }
+      ]
     },
     {
       "pick_rank": 20,
