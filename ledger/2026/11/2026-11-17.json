@@ -125,16 +125,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4e2e9be9ce7f9134525cb42ebd6d466f00b15fb0829a20db87d1312b47d5d304",
+      "commitment_nonce": "aa94c2460c49e183663e7df4abb787fc427651299dbbb0e272ee0309b8f3fe5f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T12:30:47.542163Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2274",
       "first_observation": {
         "observed_at": "2026-11-17T12:30:57.644321Z",
         "parent_commit": "395d58ee0a271c776d149ab7669abaaf2d241dc1",
         "run": "https://github.com/0xinsider/picks/actions/runs/44083829981"
-      }
+      },
+      "kickoff": "2026-11-17T13:30:00Z",
+      "resolved_at": "2026-11-17T15:35:05.827863Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0x2a8d6ed1d7e10223582b87bc11b713c27d345cd5eeccbcf1a3333f1d814ab55d",
+        "kickoff": "2026-11-17T13:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2274",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "BIG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: BIG vs Sangal (BO3) - Stake Ranked Episode 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2274",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T15:35:05.827863Z",
+          "parent_commit": "51b5144a0d9af68041979a128f5f3df1f183324d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44116011343"
+        }
+      ]
     }
   ]
 }
