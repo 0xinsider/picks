@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4481c354a5b50bf27f4ef55317b1c25ec64dd34bfbfed8601bcd0d39353604a9",
+      "commitment_nonce": "b110a2d652caa9e95e01bd32df4c4a508c89af87ce5ace725dbd34a9896649a0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T00:39:22.099960Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2268",
       "first_observation": {
         "observed_at": "2026-11-17T00:39:32.809277Z",
         "parent_commit": "1cab16d597db59242048df9b38191547b7750cf2",
         "run": "https://github.com/0xinsider/picks/actions/runs/43989369211"
-      }
+      },
+      "kickoff": "2026-11-17T02:30:00Z",
+      "resolved_at": "2026-11-17T05:37:39.505273Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x23912566c55e4cb5058e3905dfa1d0e0d19ccdfe85f70c55cea3c6cd7ed3dd78",
+        "kickoff": "2026-11-17T02:30:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2268",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Utah",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Canucks vs. Utah",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2268",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T05:37:39.505273Z",
+          "parent_commit": "c5ab35fcd95ad42a68bd8df2c0f05c3d3cd58720",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44025431972"
+        }
+      ]
     },
     {
       "pick_rank": 14,
