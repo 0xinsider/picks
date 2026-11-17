@@ -252,16 +252,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f5e7eef208b6a495cf0981e99592572adcc4cf65fc6de2e7df0837db2f55494f",
+      "commitment_nonce": "8f30db403494a6b43c33d136baaadd728e4c89aa318efcbc7c8446731a535960",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T23:23:20.922176Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2266",
       "first_observation": {
         "observed_at": "2026-11-16T23:23:31.089046Z",
         "parent_commit": "9f105b79d34d2afd72fb2792739ad57dfc3827cf",
         "run": "https://github.com/0xinsider/picks/actions/runs/43978851268"
-      }
+      },
+      "kickoff": "2026-11-17T00:00:00Z",
+      "resolved_at": "2026-11-17T02:38:08.211297Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x205a78a150a9374b5c0d7b5ce1ad808f8a815c0dd5fab67a8844d2208c68cac0",
+        "kickoff": "2026-11-17T00:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2266",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Grizzlies vs. Wizards",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2266",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T02:38:08.211297Z",
+          "parent_commit": "aa066cebda4efa9d64de6b2bd6de435a3b6aede7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44004440206"
+        }
+      ]
     },
     {
       "pick_rank": 12,
