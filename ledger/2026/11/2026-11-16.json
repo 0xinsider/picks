@@ -234,16 +234,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7ac9e7e5443a43252af311a7c54f586149ec0a30c4b9cb0ebc5aee0d6b8ef19f",
+      "commitment_nonce": "21a2bb04a1322a34c854ad06717537951d26ba747151a8bac6d89ba1c0dd14f7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T23:01:25.195721Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2262",
       "first_observation": {
         "observed_at": "2026-11-16T23:01:34.632400Z",
         "parent_commit": "e00e4cb7d8760513b2b121a8c12f9e041d28f9fe",
         "run": "https://github.com/0xinsider/picks/actions/runs/43975521615"
-      }
+      },
+      "kickoff": "2026-11-17T01:00:00Z",
+      "resolved_at": "2026-11-17T03:44:14.678307Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x651f52936b2119794ceb56335c2131816880e31e2f0f112d7f68fb059200cea5",
+        "kickoff": "2026-11-17T01:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2262",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Pelicans",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Pelicans",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2262",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-17T03:44:14.678307Z",
+          "parent_commit": "400a7b7748d901831a4f529ddbdf0172bdb57f06",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44012276879"
+        }
+      ]
     },
     {
       "pick_rank": 8,
@@ -251,16 +276,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d2cf295745cca9cc01bfeb9ad259ee1d6e20a7a680d3d66d1c26f768bf29e56b",
+      "commitment_nonce": "25cba4cd3f155b815e652e467ca8dac6373c98497291b33c70d5f864093a6766",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T23:01:51.417880Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2263",
       "first_observation": {
         "observed_at": "2026-11-16T23:02:02.560531Z",
         "parent_commit": "cadb39252782e7d0d901beb454dac1f6f8008f7e",
         "run": "https://github.com/0xinsider/picks/actions/runs/43975588075"
-      }
+      },
+      "kickoff": "2026-11-17T01:00:00Z",
+      "resolved_at": "2026-11-17T03:44:16.922123Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0xa4205ef4d7859ca4bbfbe3bf42454f854489c4187133b895d17a21175d4d668b",
+        "kickoff": "2026-11-17T01:00:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2263",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Pelicans",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Pelicans",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2263",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-17T03:44:16.922123Z",
+          "parent_commit": "400a7b7748d901831a4f529ddbdf0172bdb57f06",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44012276879"
+        }
+      ]
     },
     {
       "pick_rank": 9,
