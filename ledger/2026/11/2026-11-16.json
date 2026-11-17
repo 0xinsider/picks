@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6ff9cb71c395e035b7f3b42b575c706c74a08f6b6c6d9c0603790b8557a76627",
+      "commitment_nonce": "33ef108390a7ee4034e7572c424dfbf7ceb00ed27ef552575d63526fa21b3d58",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-16T22:30:54.333315Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2260",
       "first_observation": {
         "observed_at": "2026-11-16T22:31:06.802130Z",
         "parent_commit": "b2b6d43947480979734456bb67f711c7b90f5339",
         "run": "https://github.com/0xinsider/picks/actions/runs/43970785379"
-      }
+      },
+      "kickoff": "2026-11-17T00:30:00Z",
+      "resolved_at": "2026-11-17T03:11:13.978045Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x81facc9948195e1264f93cce78dab7d64ef077be45b3e9db75f07cb94d1e5f91",
+        "kickoff": "2026-11-17T00:30:00Z",
+        "pick_date": "2026-11-16",
+        "pick_id": "2260",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rockets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rockets vs. Heat",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2260",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-17T03:11:13.978045Z",
+          "parent_commit": "ce19769173ad8ab5a06326885d6e37a0c7142a03",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44008384327"
+        }
+      ]
     },
     {
       "pick_rank": 6,
