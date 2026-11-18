@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1134,
-    "sealed": 11,
+    "opened": 1135,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 860,
+    "proven": 861,
     "proven_record": {
-      "wins": 456,
+      "wins": 457,
       "losses": 396,
-      "decided": 852,
+      "decided": 853,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-20698.67",
-      "staked": "852000",
-      "roi": "-2.4"
+      "hit_rate": "53.6",
+      "profit_usd": "-19756.92",
+      "staked": "853000",
+      "roi": "-2.3"
     },
-    "wins": 639,
+    "wins": 640,
     "losses": 485,
     "voids": 6,
-    "decided": 1124,
+    "decided": 1125,
     "withdrawn": 4,
     "hit_rate": "56.9",
     "stake_usd": "1000",
-    "profit_usd": "1047.26",
-    "staked": "1124000",
-    "roi": "0.1",
+    "profit_usd": "1989.01",
+    "staked": "1125000",
+    "roi": "0.2",
     "through": "2026-11-17"
   },
   "picks": [
@@ -44584,16 +44584,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "90f263f43dc405b98a4b26ca5ad5c772a9ca1ff06866d99e52221fba3ff6d44d",
+      "commitment_nonce": "233d449061b1b85399a431ee31e77dbc215268df0e015a598cf3ebcc45105ffc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T22:00:52.883409Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2282",
       "first_observation": {
         "observed_at": "2026-11-17T22:01:05.544265Z",
         "parent_commit": "b0276023ce769a6c6bc383eb6421acce2d5061f9",
         "run": "https://github.com/0xinsider/picks/actions/runs/44185748574"
-      }
+      },
+      "kickoff": "2026-11-18T00:00:00Z",
+      "resolved_at": "2026-11-18T03:09:55.381424Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x5a0f5d9fe61995f5be0d507ba01d04d13a777af579dc8185c291dfcdbeb5e8ea",
+        "kickoff": "2026-11-18T00:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2282",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Miami (OH) vs. Kent State",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2282",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T03:09:55.381424Z",
+          "parent_commit": "666790e792b0491fbbe703fe8c5f9e8a889d68b2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44228454580"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-17",
