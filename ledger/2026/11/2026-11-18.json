@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "acea36e0a6b3d20b471c8792205fce0d440ba461a482bc11c92326f0982b8110",
+      "commitment_nonce": "269a34025ead209f66b71056d6802641c0997aa9571c67faae3a53df32c2e5fe",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T14:08:57.571437Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2295",
       "first_observation": {
         "observed_at": "2026-11-18T14:09:10.655387Z",
         "parent_commit": "e81ea73786cccc62e3283334b4ebd52e860de696",
         "run": "https://github.com/0xinsider/picks/actions/runs/44321097950"
-      }
+      },
+      "kickoff": "2026-11-18T16:00:00Z",
+      "resolved_at": "2026-11-18T19:09:12.109018Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xca51c5b4cd5785ac9ddf24cef2a13e4feb5eb8739fd529f8a7ff03f1e0a71138",
+        "kickoff": "2026-11-18T16:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2295",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Sangal",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Inner Circle Esports vs Sangal (BO3) - Stake Ranked Episode 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2295",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T19:09:12.109018Z",
+          "parent_commit": "38eb7ee25fa5da4db5c93a9cf6db6859fcc26424",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44377437589"
+        }
+      ]
     },
     {
       "pick_rank": 4,
