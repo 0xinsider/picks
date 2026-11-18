@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1137,
-    "sealed": 8,
+    "opened": 1138,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 863,
+    "proven": 864,
     "proven_record": {
       "wins": 457,
-      "losses": 398,
-      "decided": 855,
+      "losses": 399,
+      "decided": 856,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-21756.92",
-      "staked": "855000",
-      "roi": "-2.5"
+      "hit_rate": "53.4",
+      "profit_usd": "-22756.92",
+      "staked": "856000",
+      "roi": "-2.7"
     },
     "wins": 640,
-    "losses": 487,
+    "losses": 488,
     "voids": 6,
-    "decided": 1127,
+    "decided": 1128,
     "withdrawn": 4,
-    "hit_rate": "56.8",
+    "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "-10.99",
-    "staked": "1127000",
-    "roi": "-0.0",
+    "profit_usd": "-1010.99",
+    "staked": "1128000",
+    "roi": "-0.1",
     "through": "2026-11-17"
   },
   "picks": [
@@ -44670,16 +44670,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "be826bd254942049595f80649fd827172eb14e3c2cac50d9db6fe715d0798e22",
+      "commitment_nonce": "a480d73338b39ee6d531929cc32b8517918dabeb7ffd8bd8ba6112e3f1e0ae2f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T22:30:20.989578Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2284",
       "first_observation": {
         "observed_at": "2026-11-17T22:30:30.443988Z",
         "parent_commit": "3fc50746e0c771f676272389775b7c47657995e1",
         "run": "https://github.com/0xinsider/picks/actions/runs/44190698327"
-      }
+      },
+      "kickoff": "2026-11-18T00:30:00Z",
+      "resolved_at": "2026-11-18T03:29:04.446839Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xc1e6de878482c409afbf7b307f3e67bf39fc2b4f206949927c9ecd9de31e6b77",
+        "kickoff": "2026-11-18T00:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2284",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Maple Leafs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Maple Leafs vs. Blackhawks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2284",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-18T03:29:04.446839Z",
+          "parent_commit": "f7d4b9791bcace0de64ccd5474570c35dd49fbd8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44230732779"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-17",
