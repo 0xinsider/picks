@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "42606d5f0674c5496d61335fb671bd5af51374676573eb91acf610b384cc2d3c",
+      "commitment_nonce": "5ee6d42dfe0eef964a1d402dfd133678cc456192d5567c6f2df931b2c3d70eec",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T23:00:21.409971Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2286",
       "first_observation": {
         "observed_at": "2026-11-17T23:00:33.076393Z",
         "parent_commit": "cffd2c2f05cb26920091b79ca6ad828091160958",
         "run": "https://github.com/0xinsider/picks/actions/runs/44195419235"
-      }
+      },
+      "kickoff": "2026-11-18T01:00:00Z",
+      "resolved_at": "2026-11-18T03:55:26.234584Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xbeb98384f95fbd6ee0a695e4faac9f249c3f1731ff3dfd5bc2ec937df09ddad1",
+        "kickoff": "2026-11-18T01:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2286",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Trail Blazers vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2286",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-18T03:55:26.234584Z",
+          "parent_commit": "7cc323ff5e52279f30baf78c45b50868d9762cf6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44233751889"
+        }
+      ]
     },
     {
       "pick_rank": 18,
