@@ -831,16 +831,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ec1cbacc4848491bacd15586871811a02a432963f20b4db24b45a29354f08861",
+      "commitment_nonce": "985005ce0a5b7ac37513c2a192ce6ed0e665b431b20770c9f059df7b1e46f28c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T02:59:20.589331Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2292",
       "first_observation": {
         "observed_at": "2026-11-18T02:59:28.745501Z",
         "parent_commit": "da53a89405fe30f8dc59819368cfa717e30ccd79",
         "run": "https://github.com/0xinsider/picks/actions/runs/44227182561"
-      }
+      },
+      "kickoff": "2026-11-18T03:30:00Z",
+      "resolved_at": "2026-11-18T06:00:28.350032Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x462fc1b8975baaff3b61c132cf4e276c93d5ffd95e9694d4031589d4a0c9b86a",
+        "kickoff": "2026-11-18T03:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2292",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jazz vs. Clippers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2292",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T06:00:28.350032Z",
+          "parent_commit": "c0599f79fa488207782a75785adece327ae0ad9e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44248166392"
+        }
+      ]
     }
   ]
 }
