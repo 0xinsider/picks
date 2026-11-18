@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "87617822b4818497427c299e69f746db458cc528798c858f0d729b7cee9e4695",
+      "commitment_nonce": "11ad325618f131ac6f577acb0149dae4eb78466661077fbf64f1308a73790346",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-15T20:01:50.123127Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2249",
       "first_observation": {
         "observed_at": "2026-11-15T20:01:59.872365Z",
         "parent_commit": "fc35d39a0fe4528d94cd15f7f57d7583c767d3d7",
         "run": "https://github.com/0xinsider/picks/actions/runs/43755703204"
-      }
+      },
+      "kickoff": "2026-11-15T22:00:00Z",
+      "resolved_at": "2026-11-18T07:20:34.315867Z",
+      "outcome": "void",
+      "payload": {
+        "backed_price": "0.558000",
+        "condition_id": "0x851e0c5fc2bd239af2ff1fde68825e3afcdef1ee3427972bd4fd23e3ebd348bb",
+        "kickoff": "2026-11-15T22:00:00Z",
+        "pick_date": "2026-11-15",
+        "pick_id": "2249",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Oregon Ducks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pepperdine Waves vs. Oregon Ducks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2249",
+      "revisions": [
+        {
+          "outcome": "void",
+          "resolved_at": "2026-11-18T07:20:34.315867Z",
+          "parent_commit": "5994b360cae9883f183a3205e9afae3907684d5e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44258121988"
+        }
+      ]
     },
     {
       "pick_rank": 20,
