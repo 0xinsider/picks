@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1145,
-    "sealed": 2,
+    "opened": 1146,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 871,
+    "proven": 872,
     "proven_record": {
-      "wins": 461,
+      "wins": 462,
       "losses": 401,
-      "decided": 862,
+      "decided": 863,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-21214.31",
-      "staked": "862000",
-      "roi": "-2.5"
+      "profit_usd": "-19861.37",
+      "staked": "863000",
+      "roi": "-2.3"
     },
-    "wins": 644,
+    "wins": 645,
     "losses": 490,
     "voids": 7,
-    "decided": 1134,
+    "decided": 1135,
     "withdrawn": 4,
     "hit_rate": "56.8",
     "stake_usd": "1000",
-    "profit_usd": "531.63",
-    "staked": "1134000",
-    "roi": "0.0",
-    "through": "2026-11-17"
+    "profit_usd": "1884.57",
+    "staked": "1135000",
+    "roi": "0.2",
+    "through": "2026-11-18"
   },
   "picks": [
     {
@@ -45082,16 +45082,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "30551db0077b3dcdea798d71e59059b09eeecf843cd24d5504a454a552352404",
+      "commitment_nonce": "12307061c299fa5569485d651bf335a0c3d236b9bfbc4af7ea10ee34324eddf6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T08:00:35.967222Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2293",
       "first_observation": {
         "observed_at": "2026-11-18T08:00:50.760186Z",
         "parent_commit": "1edec334620ff4837afb01afe81287091d5a9910",
         "run": "https://github.com/0xinsider/picks/actions/runs/44263337202"
-      }
+      },
+      "kickoff": "2026-11-18T10:00:00Z",
+      "resolved_at": "2026-11-18T12:53:08.574830Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x8c9fb7c3e7bdc44193b49c5568636c14aff59119bc4a47cc8a62a6f2c04387cb",
+        "kickoff": "2026-11-18T10:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2293",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Nexus",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nexus vs Iberian Soul (BO3) - RUSH Brno Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2293",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T12:53:08.574830Z",
+          "parent_commit": "3e2792912cea8070739dd75cd6f31700ef720560",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44308190985"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
