@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1140,
-    "sealed": 5,
+    "opened": 1142,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 866,
+    "proven": 868,
     "proven_record": {
-      "wins": 458,
+      "wins": 460,
       "losses": 400,
-      "decided": 858,
+      "decided": 860,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-22776.72",
-      "staked": "858000",
-      "roi": "-2.7"
+      "hit_rate": "53.5",
+      "profit_usd": "-21119.07",
+      "staked": "860000",
+      "roi": "-2.5"
     },
-    "wins": 641,
+    "wins": 643,
     "losses": 489,
     "voids": 6,
-    "decided": 1130,
+    "decided": 1132,
     "withdrawn": 4,
-    "hit_rate": "56.7",
+    "hit_rate": "56.8",
     "stake_usd": "1000",
-    "profit_usd": "-1030.79",
-    "staked": "1130000",
-    "roi": "-0.1",
+    "profit_usd": "626.87",
+    "staked": "1132000",
+    "roi": "0.1",
     "through": "2026-11-17"
   },
   "picks": [
@@ -44842,16 +44842,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "21a0c1ecd0c3ef97fb481c6b7755b9fa92092b554708659c0042d0c2d46dfdfe",
+      "commitment_nonce": "0fa97211430a865ece43105b4a9770de64843057a11a7ca6958ade309492ea12",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T01:10:16.444178Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2288",
       "first_observation": {
         "observed_at": "2026-11-18T01:10:26.239441Z",
         "parent_commit": "97ea3cd61870c31d348b91be9876e569322ca276",
         "run": "https://github.com/0xinsider/picks/actions/runs/44213713484"
-      }
+      },
+      "kickoff": "2026-11-18T03:00:00Z",
+      "resolved_at": "2026-11-18T06:10:29.624732Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x20136633e2572d13dc3790a97da8582d99a46df5f27ea0fb0f5cc2b6a818001f",
+        "kickoff": "2026-11-18T03:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2288",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Stars",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Stars vs. Golden Knights",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2288",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T06:10:29.624732Z",
+          "parent_commit": "0d7d84bd91b73856cb7545b341d43cff1df08ec6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44249391403"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-17",
@@ -44860,16 +44885,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c940e035edd49d4c59ee2ce466e13b63ff6af42a8eb941a2ee3e5b96b41ff183",
+      "commitment_nonce": "5cd0dd42e66f203e6ae1486a96a0a5d059ccae28df0cd57932ddb81fe0b45390",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T01:10:16.454890Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2289",
       "first_observation": {
         "observed_at": "2026-11-18T01:10:26.239441Z",
         "parent_commit": "97ea3cd61870c31d348b91be9876e569322ca276",
         "run": "https://github.com/0xinsider/picks/actions/runs/44213713484"
-      }
+      },
+      "kickoff": "2026-11-18T03:00:00Z",
+      "resolved_at": "2026-11-18T06:10:29.647940Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x9d556907d239211fa56438cfe927f6f1231f091c3f4e4d901d82fb95f90c00ff",
+        "kickoff": "2026-11-18T03:00:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2289",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Stars",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Stars vs. Golden Knights",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2289",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-18T06:10:29.647940Z",
+          "parent_commit": "0d7d84bd91b73856cb7545b341d43cff1df08ec6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44249391403"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-17",
