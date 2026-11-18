@@ -612,16 +612,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e135a3528871c2272df778849f0fa9fb864a45acf752ab99e55e033e4ecc5e1a",
+      "commitment_nonce": "fbe3bfb0e3623163f7612885c4d34b4a120c9fee670b820acbae8602ff241c4d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T22:31:55.749337Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2285",
       "first_observation": {
         "observed_at": "2026-11-17T22:32:07.634125Z",
         "parent_commit": "eec4f830271cf8d5189aedae36517971a9f9ca78",
         "run": "https://github.com/0xinsider/picks/actions/runs/44190957235"
-      }
+      },
+      "kickoff": "2026-11-18T00:30:00Z",
+      "resolved_at": "2026-11-18T03:14:13.900017Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x47463db8bac7dee7d833b1379ab1404de239bbc827ccc7cc499d5a862904ed33",
+        "kickoff": "2026-11-18T00:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2285",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Raptors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Raptors",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2285",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-18T03:14:13.900017Z",
+          "parent_commit": "8acbdb3ef62477dfd3afc5e48e62d465973c3db2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44228967444"
+        }
+      ]
     },
     {
       "pick_rank": 17,
@@ -646,16 +671,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c28f0d1b45155548291950acb01b0b3830e22555527ab10e06f814dae1f5c1c2",
+      "commitment_nonce": "14f53f19dcff3d4d3a91eebf7b0377296671966f9cbe0006154661f13a9a5813",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-17T23:10:17.033190Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2287",
       "first_observation": {
         "observed_at": "2026-11-17T23:10:26.462135Z",
         "parent_commit": "13a9d43ca45592687ed30a4002ca4b561397f56e",
         "run": "https://github.com/0xinsider/picks/actions/runs/44196961882"
-      }
+      },
+      "kickoff": "2026-11-18T00:30:00Z",
+      "resolved_at": "2026-11-18T03:14:11.278326Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xefe674eda5754a93610852d10432a50de79ea696b2583119634c5fe8944753b1",
+        "kickoff": "2026-11-18T00:30:00Z",
+        "pick_date": "2026-11-17",
+        "pick_id": "2287",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Raptors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Raptors",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2287",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-18T03:14:11.278326Z",
+          "parent_commit": "8acbdb3ef62477dfd3afc5e48e62d465973c3db2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44228967444"
+        }
+      ]
     },
     {
       "pick_rank": 19,
