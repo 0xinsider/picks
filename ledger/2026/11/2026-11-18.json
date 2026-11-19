@@ -511,16 +511,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "23b48fec0a12cc171eceb719da022a07cbe3900091e0a348ca6a1818ee8f73fa",
+      "commitment_nonce": "a162918f83ab8e9fdcd91e53941a6fb0ec24e81ebca7c5616d4da0038bf08886",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T00:30:36.271663Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2305",
       "first_observation": {
         "observed_at": "2026-11-19T00:30:52.828084Z",
         "parent_commit": "0aecdbf44f0f0875a359f1643d40a9dcda35be65",
         "run": "https://github.com/0xinsider/picks/actions/runs/44429569615"
-      }
+      },
+      "kickoff": "2026-11-19T02:30:00Z",
+      "resolved_at": "2026-11-19T05:31:25.037428Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0xcd8c775e8021b7885c6c014203f0ac841ecbf492d449fd2433f78c120eeb399f",
+        "kickoff": "2026-11-19T02:30:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2305",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Nuggets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Celtics vs. Nuggets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2305",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-19T05:31:25.037428Z",
+          "parent_commit": "a9732bcebcf2e928deed4ff7e1d0d58468e1def5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44465739239"
+        }
+      ]
     },
     {
       "pick_rank": 14,
@@ -579,16 +604,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "93b98ba61d84928cc458d50662e9781079e5a583aad2b9ee69fd0c6a1981e8d8",
+      "commitment_nonce": "ba82d8aa0a08dc3998db18a4e349891e45973f849ef532eb68b0ec9c4c88ed15",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T01:40:19.166275Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2309",
       "first_observation": {
         "observed_at": "2026-11-19T01:40:31.499803Z",
         "parent_commit": "2fee6e54f04a099e26dea680f3e96922b0648e8b",
         "run": "https://github.com/0xinsider/picks/actions/runs/44438649133"
-      }
+      },
+      "kickoff": "2026-11-19T02:30:00Z",
+      "resolved_at": "2026-11-19T05:31:21.624401Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xfca40be61371e4de34728e2a2ad4ebf42d4096f880ce6ef6dc446bc7bce0a342",
+        "kickoff": "2026-11-19T02:30:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2309",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Celtics vs. Nuggets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2309",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T05:31:21.624401Z",
+          "parent_commit": "a9732bcebcf2e928deed4ff7e1d0d58468e1def5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44465739239"
+        }
+      ]
     }
   ]
 }
