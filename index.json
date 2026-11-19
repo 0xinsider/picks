@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1163,
-    "sealed": 2,
+    "opened": 1164,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 889,
+    "proven": 890,
     "proven_record": {
       "wins": 468,
-      "losses": 412,
-      "decided": 880,
+      "losses": 413,
+      "decided": 881,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-24270.30",
-      "staked": "880000",
-      "roi": "-2.8"
+      "hit_rate": "53.1",
+      "profit_usd": "-25270.30",
+      "staked": "881000",
+      "roi": "-2.9"
     },
     "wins": 651,
-    "losses": 501,
+    "losses": 502,
     "voids": 7,
-    "decided": 1152,
+    "decided": 1153,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-2524.36",
-    "staked": "1152000",
-    "roi": "-0.2",
+    "profit_usd": "-3524.36",
+    "staked": "1153000",
+    "roi": "-0.3",
     "through": "2026-11-19"
   },
   "picks": [
@@ -45856,16 +45856,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0e8556872ca59fa29e59a754dee110ac521c9f459591f91aab84d4db3f0d7061",
+      "commitment_nonce": "d96692744ed3b2e3e4550f0b415cda28dad956fa284a5db36585a9d4625ba171",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T11:00:12.408153Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2311",
       "first_observation": {
         "observed_at": "2026-11-19T11:00:26.990877Z",
         "parent_commit": "09fbd9e3694dc442cb6cd899cf4e4d3a8e1c64b2",
         "run": "https://github.com/0xinsider/picks/actions/runs/44510805267"
-      }
+      },
+      "kickoff": "2026-11-19T13:00:00Z",
+      "resolved_at": "2026-11-19T15:50:29.090086Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.285000",
+        "condition_id": "0xa771fad33ff45722ecb3787546c6ab2c8b3b4b2677e1d02563982d0c0ca9fef1",
+        "kickoff": "2026-11-19T13:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2311",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Rafael Jodar",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "ATP World Tour Finals, John McEnroe Group: Ben Shelton vs Rafael Jodar",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2311",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T15:50:29.090086Z",
+          "parent_commit": "76fa4d80130cab670f23fc1b423844874980245a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44559331651"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-19",
