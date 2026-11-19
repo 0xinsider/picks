@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1152,
-    "sealed": 10,
+    "opened": 1153,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 878,
+    "proven": 879,
     "proven_record": {
-      "wins": 464,
+      "wins": 465,
       "losses": 405,
-      "decided": 869,
+      "decided": 870,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-21834.15",
-      "staked": "869000",
-      "roi": "-2.5"
+      "profit_usd": "-20365.02",
+      "staked": "870000",
+      "roi": "-2.3"
     },
-    "wins": 647,
+    "wins": 648,
     "losses": 494,
     "voids": 7,
-    "decided": 1141,
+    "decided": 1142,
     "withdrawn": 4,
     "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "-88.22",
-    "staked": "1141000",
-    "roi": "-0.0",
+    "profit_usd": "1380.92",
+    "staked": "1142000",
+    "roi": "0.1",
     "through": "2026-11-18"
   },
   "picks": [
@@ -45376,16 +45376,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ee2be7feeb60f06a70acf397037784e212d6c6223430b22a562f832e0fe6a5f6",
+      "commitment_nonce": "a6ad3562cf6b81d4f014790ffd24c5122b4e03173864e5667d3a82e26cd9c3b9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T23:07:28.404761Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2301",
       "first_observation": {
         "observed_at": "2026-11-18T23:07:40.617220Z",
         "parent_commit": "9c08efe6985f669e4cdd72dfe75db48b5686f3b7",
         "run": "https://github.com/0xinsider/picks/actions/runs/44417947440"
-      }
+      },
+      "kickoff": "2026-11-19T00:00:00Z",
+      "resolved_at": "2026-11-19T03:33:36.516478Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0xd090b450aa71413e33c4b35392ae02cbbe87f48b984ca57cb5c814eba47a47de",
+        "kickoff": "2026-11-19T00:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2301",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Akron",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Akron vs. UMass",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2301",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-19T03:33:36.516478Z",
+          "parent_commit": "9b523de8c37640b42546ae847dd35943c17beb14",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44452280362"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
