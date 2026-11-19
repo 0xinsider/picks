@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1160,
-    "sealed": 2,
+    "opened": 1161,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 886,
+    "proven": 887,
     "proven_record": {
       "wins": 468,
-      "losses": 409,
-      "decided": 877,
+      "losses": 410,
+      "decided": 878,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-21270.30",
-      "staked": "877000",
-      "roi": "-2.4"
+      "hit_rate": "53.3",
+      "profit_usd": "-22270.30",
+      "staked": "878000",
+      "roi": "-2.5"
     },
     "wins": 651,
-    "losses": 498,
+    "losses": 499,
     "voids": 7,
-    "decided": 1149,
+    "decided": 1150,
     "withdrawn": 4,
-    "hit_rate": "56.7",
+    "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "475.64",
-    "staked": "1149000",
-    "roi": "0.0",
+    "profit_usd": "-524.36",
+    "staked": "1150000",
+    "roi": "-0.0",
     "through": "2026-11-18"
   },
   "picks": [
@@ -45659,16 +45659,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e1d74679b84ee5e819343e581389d1a8df949d950eeb7dddd5cd4e0db1561889",
+      "commitment_nonce": "c670e2fa026f80950abc259d7b5b1d848ae515759cd7539587dfb7c9575206ca",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T01:10:32.070311Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2307",
       "first_observation": {
         "observed_at": "2026-11-19T01:10:42.720619Z",
         "parent_commit": "f1bc7920624c965384195ab7ade0e75881dfc900",
         "run": "https://github.com/0xinsider/picks/actions/runs/44434867549"
-      }
+      },
+      "kickoff": "2026-11-19T03:00:00Z",
+      "resolved_at": "2026-11-19T05:48:58.934510Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x7cb3ce2e9353522de1e7a3be3f9e92c3fba6bf7106758da14814f2e222fff346",
+        "kickoff": "2026-11-19T03:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2307",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Lakers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Jazz vs. Lakers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2307",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T05:48:58.934510Z",
+          "parent_commit": "4ec1ea693cdca49789086e5ec4727cbe5afab8b9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44467740579"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
