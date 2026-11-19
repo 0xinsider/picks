@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3ec61673aaadb46d3cba8c1f4991e9a6108e953d06e8df61f59fdb973951b227",
+      "commitment_nonce": "b14e7fa06959d35204de537bc597081d06568a6c23914b05e889c2198f72bd32",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T14:10:32.763390Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2312",
       "first_observation": {
         "observed_at": "2026-11-19T14:10:49.570524Z",
         "parent_commit": "e61647098b68f393904ba624609e5c912751ea27",
         "run": "https://github.com/0xinsider/picks/actions/runs/44540905237"
-      }
+      },
+      "kickoff": "2026-11-19T16:00:00Z",
+      "resolved_at": "2026-11-19T20:09:58.232194Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x78d32d3e20968425365dad78f0589a61be4e67360a168e516d2c1c01e8c05120",
+        "kickoff": "2026-11-19T16:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2312",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Luminosity",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Sangal vs Luminosity (BO3) - Stake Ranked Episode 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2312",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T20:09:58.232194Z",
+          "parent_commit": "a3e463292a8abdb6cce8a507313da7dc4a216d2f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44605830133"
+        }
+      ]
     },
     {
       "pick_rank": 4,
