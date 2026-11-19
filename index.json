@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1153,
-    "sealed": 9,
+    "opened": 1155,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 879,
+    "proven": 881,
     "proven_record": {
-      "wins": 465,
-      "losses": 405,
-      "decided": 870,
+      "wins": 466,
+      "losses": 406,
+      "decided": 872,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-20365.02",
-      "staked": "870000",
+      "profit_usd": "-20092.29",
+      "staked": "872000",
       "roi": "-2.3"
     },
-    "wins": 648,
-    "losses": 494,
+    "wins": 649,
+    "losses": 495,
     "voids": 7,
-    "decided": 1142,
+    "decided": 1144,
     "withdrawn": 4,
     "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "1380.92",
-    "staked": "1142000",
+    "profit_usd": "1653.64",
+    "staked": "1144000",
     "roi": "0.1",
     "through": "2026-11-18"
   },
@@ -45419,16 +45419,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fdff00cbbfb6aa67ef78dd6bcdc9ab97026336eea086502494ab76b0713fdbb5",
+      "commitment_nonce": "7d50e805caff45fdf9becb831b9dcf2757925487b7504b9630118450250550ce",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T23:10:19.318838Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2302",
       "first_observation": {
         "observed_at": "2026-11-18T23:10:30.913449Z",
         "parent_commit": "d78c74d9745b97625cd9aad26ca40ce52c50d44b",
         "run": "https://github.com/0xinsider/picks/actions/runs/44418377043"
-      }
+      },
+      "kickoff": "2026-11-19T01:00:00Z",
+      "resolved_at": "2026-11-19T03:41:20.996675Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x9b16c5903cb33a1369075dcf2cb461116f0bef65ad5cbf7090221048ac9c1dfd",
+        "kickoff": "2026-11-19T01:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2302",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Warriors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Mavericks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2302",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T03:41:20.996675Z",
+          "parent_commit": "8fcc1b14aa158bf0531d501d7c4725504e54663e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44453177794"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
@@ -45480,16 +45505,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3e17e3ac9de171876c11187eb21c4ea661ea1964e3001acf62fa38c3d8ea9479",
+      "commitment_nonce": "3eb7a14b67661d67dcc917c209195e5cdeee889e83e204afb4d3c8a9f8615ece",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T23:54:23.753408Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2304",
       "first_observation": {
         "observed_at": "2026-11-18T23:54:34.528595Z",
         "parent_commit": "68949768f642246703db5ee2da7ff0b48f1ee873",
         "run": "https://github.com/0xinsider/picks/actions/runs/44424656148"
-      }
+      },
+      "kickoff": "2026-11-19T01:00:00Z",
+      "resolved_at": "2026-11-19T03:41:24.086602Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.440000",
+        "condition_id": "0xa5af62dc11be6fecabdc37f58beed34cceebf836856e213c45d4e4383e88aeed",
+        "kickoff": "2026-11-19T01:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2304",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Mavericks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2304",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-19T03:41:24.086602Z",
+          "parent_commit": "8fcc1b14aa158bf0531d501d7c4725504e54663e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44453177794"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
