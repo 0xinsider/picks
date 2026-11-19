@@ -553,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2345e9bc1084b37954cceb57b5e1560f7f9f65c7383ff060089791ff3e5d41a2",
+      "commitment_nonce": "cd6b5c86c175bd56e901d22220ab643081a3a5528511eaf07aff509e2909f016",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T00:38:33.666496Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2306",
       "first_observation": {
         "observed_at": "2026-11-19T00:38:43.953049Z",
         "parent_commit": "14bddd99a7401e2ae79387f276656da8c734f96f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44430638337"
-      }
+      },
+      "kickoff": "2026-11-19T02:00:00Z",
+      "resolved_at": "2026-11-19T06:17:31.677763Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x3d7dbc94a54253fc5dd4aad1868cbbfc3abe3bb21dc75fc2a8a666afb3dbb60e",
+        "kickoff": "2026-11-19T02:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2306",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Avalanche",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Avalanche vs. Utah",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2306",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T06:17:31.677763Z",
+          "parent_commit": "9a54c2956feb088602825d97ad540873933e9736",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44471090809"
+        }
+      ]
     },
     {
       "pick_rank": 15,
