@@ -276,16 +276,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "afb01e0ce561e074a0101ccd37ccfb047e8679757fc278ee76341edfddb18489",
+      "commitment_nonce": "373d687d2515465158e9361650515c5214a8577de3cdd94025cb2f99375930c8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T23:01:47.488051Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2300",
       "first_observation": {
         "observed_at": "2026-11-18T23:02:01.751016Z",
         "parent_commit": "b965ae6b5e433e618d81abe2796cdee17353c3d5",
         "run": "https://github.com/0xinsider/picks/actions/runs/44417067039"
-      }
+      },
+      "kickoff": "2026-11-19T01:00:00Z",
+      "resolved_at": "2026-11-19T03:48:20.982602Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0x22bd72030a3b39b69009b60a1e276842d8a6669528c65ca6f07eb97d046bb896",
+        "kickoff": "2026-11-19T01:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2300",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Pistons",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pistons vs. Pelicans",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2300",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-19T03:48:20.982602Z",
+          "parent_commit": "f166e798c980a59f34930ebef1246848592d9767",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44453976374"
+        }
+      ]
     },
     {
       "pick_rank": 9,
