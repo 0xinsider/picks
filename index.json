@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1165,
-    "sealed": 3,
+    "opened": 1166,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 891,
+    "proven": 892,
     "proven_record": {
-      "wins": 468,
+      "wins": 469,
       "losses": 414,
-      "decided": 882,
+      "decided": 883,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-26270.30",
-      "staked": "882000",
-      "roi": "-3.0"
+      "profit_usd": "-25890.99",
+      "staked": "883000",
+      "roi": "-2.9"
     },
-    "wins": 651,
+    "wins": 652,
     "losses": 503,
     "voids": 7,
-    "decided": 1154,
+    "decided": 1155,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-4524.36",
-    "staked": "1154000",
+    "profit_usd": "-4145.05",
+    "staked": "1155000",
     "roi": "-0.4",
     "through": "2026-11-19"
   },
@@ -45942,16 +45942,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "674d71eb4a4d55f890a8fa8d35e6a3fc3cc1cb3f5ffb467f32f33142fb43b0aa",
+      "commitment_nonce": "cad4d1be2983e6343afad82016b0626770142e5212052fe5cd37ece31faf26c3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T17:40:07.962278Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2313",
       "first_observation": {
         "observed_at": "2026-11-19T17:40:17.794231Z",
         "parent_commit": "eacd49ed258f45d04d472472b9311205d7a8a2ea",
         "run": "https://github.com/0xinsider/picks/actions/runs/44579647509"
-      }
+      },
+      "kickoff": "2026-11-19T19:30:00Z",
+      "resolved_at": "2026-11-19T21:52:31.635414Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0x3da741c90a327217e96e05465d1de86350f7b20a014ac9f3a0c9eab521f4dff6",
+        "kickoff": "2026-11-19T19:30:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2313",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Alexander Zverev",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "ATP World Tour Finals, John McEnroe Group: Alexander Zverev vs Arthur Fils",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2313",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-19T21:52:31.635414Z",
+          "parent_commit": "4b8ceadeaed39baf6372690d8487f4f50342cbc3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44623110904"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-19",
