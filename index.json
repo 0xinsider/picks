@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1156,
-    "sealed": 6,
+    "opened": 1157,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 882,
+    "proven": 883,
     "proven_record": {
       "wins": 467,
-      "losses": 406,
-      "decided": 873,
+      "losses": 407,
+      "decided": 874,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-19517.49",
-      "staked": "873000",
-      "roi": "-2.2"
+      "hit_rate": "53.4",
+      "profit_usd": "-20517.49",
+      "staked": "874000",
+      "roi": "-2.3"
     },
     "wins": 650,
-    "losses": 495,
+    "losses": 496,
     "voids": 7,
-    "decided": 1145,
+    "decided": 1146,
     "withdrawn": 4,
-    "hit_rate": "56.8",
+    "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "2228.45",
-    "staked": "1145000",
-    "roi": "0.2",
+    "profit_usd": "1228.45",
+    "staked": "1146000",
+    "roi": "0.1",
     "through": "2026-11-18"
   },
   "picks": [
@@ -45340,16 +45340,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a24616999c77fd6e7b378a1026bf465d548eb922102a71f2164a2534685de7aa",
+      "commitment_nonce": "0b735fe448962030c6b8bdf2735a0af4edde52c56ecba86f64983697218ba6e6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T22:40:12.437863Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2299",
       "first_observation": {
         "observed_at": "2026-11-18T22:40:24.636928Z",
         "parent_commit": "f48b7f39471623e23d73cf39314c7b579232eef1",
         "run": "https://github.com/0xinsider/picks/actions/runs/44413771969"
-      }
+      },
+      "kickoff": "2026-11-19T00:30:00Z",
+      "resolved_at": "2026-11-19T03:50:23.301798Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x79546aabbefe010e3b5677902e317021d87ae7303a60d20d5e885d5d8214f11c",
+        "kickoff": "2026-11-19T00:30:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2299",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Central Michigan",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Central Michigan vs. Buffalo",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2299",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T03:50:23.301798Z",
+          "parent_commit": "ed4f261ed1795e3a134d6ee70c3f6d6e4d476cde",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44454207560"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-18",
