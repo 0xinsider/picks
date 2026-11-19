@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "81f40069a2db05e56131dbbb23bccf46181f5d11956a76119f39c439d0cbe3bb",
+      "commitment_nonce": "b5f5e0407238982aad930d340785468150e0e31a156725a916a5a2db54fb7091",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T22:01:07.576271Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2297",
       "first_observation": {
         "observed_at": "2026-11-18T22:01:20.115858Z",
         "parent_commit": "7aa34ca04bc4868bc97b6a2f9f2023f47f85479f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44407389469"
-      }
+      },
+      "kickoff": "2026-11-19T00:00:00Z",
+      "resolved_at": "2026-11-19T02:51:22.558144Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x559ca9498eba90b68476a9788fa29cb000e691ef6ab02f1e3bfdf07f11da4572",
+        "kickoff": "2026-11-19T00:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2297",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Magic",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "76ers vs. Magic",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2297",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T02:51:22.558144Z",
+          "parent_commit": "b95ab8ee3ed3537d567ffb200f4c8da7f97196ab",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44447310473"
+        }
+      ]
     },
     {
       "pick_rank": 6,
