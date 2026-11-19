@@ -277,16 +277,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "78f0a24ead3f98b45c9446118c2d71e2666050ff259842f9ead6c1939bfcd889",
+      "commitment_nonce": "d2e3c63481394ca3a5ff4e22eec0222d8345fbac99d30fac013a2a4e5cce3adc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-18T23:12:58.767289Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2303",
       "first_observation": {
         "observed_at": "2026-11-18T23:13:08.679527Z",
         "parent_commit": "e29db8d6661a42b34adcd4aed8da87441132096d",
         "run": "https://github.com/0xinsider/picks/actions/runs/44418774639"
-      }
+      },
+      "kickoff": "2026-11-19T00:00:00Z",
+      "resolved_at": "2026-11-19T02:08:37.655891Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x908a98011573d6eb01c9838613b7d6d38b532f671df45ab2e36090a8a6283f6d",
+        "kickoff": "2026-11-19T00:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2303",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Akron vs. UMass",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2303",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T02:08:37.655891Z",
+          "parent_commit": "cba321ecfd1267c0d40a7a7014ab5ebb9198b458",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44442127606"
+        }
+      ]
     },
     {
       "pick_rank": 12,
