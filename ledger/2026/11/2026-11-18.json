@@ -587,16 +587,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "81e9190f3981008ba5b5b3490b4c4044a5e15414181cbe22a5677b9096d527d0",
+      "commitment_nonce": "46adfdf4f7dbeee1a474b439cf90ccc2b9e86d1317af67b28a7e0ed97de03af7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T01:10:32.079115Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2308",
       "first_observation": {
         "observed_at": "2026-11-19T01:10:42.720619Z",
         "parent_commit": "f1bc7920624c965384195ab7ade0e75881dfc900",
         "run": "https://github.com/0xinsider/picks/actions/runs/44434867549"
-      }
+      },
+      "kickoff": "2026-11-19T03:00:00Z",
+      "resolved_at": "2026-11-19T05:34:21.472167Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x6d6b93abeb164b94a9dd33062045b5504a8aa176b77582ad95e4a7a201d72ea0",
+        "kickoff": "2026-11-19T03:00:00Z",
+        "pick_date": "2026-11-18",
+        "pick_id": "2308",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kings",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Suns vs. Kings",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2308",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-19T05:34:21.472167Z",
+          "parent_commit": "7597c1b5c900d25db4789b38eb5ef57035a640a8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44466086723"
+        }
+      ]
     },
     {
       "pick_rank": 17,
