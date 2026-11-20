@@ -612,16 +612,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "326ea25cdd6c5120ef09bae389dfaa35934f9572770f8484761dd8a72e70db6c",
+      "commitment_nonce": "527f82e695eb71fcf55e60f8c9cdc29bb5dee3f40474e52b04efcffeb6277ec0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T02:16:30.876924Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2325",
       "first_observation": {
         "observed_at": "2026-11-20T02:16:42.614995Z",
         "parent_commit": "eb8759a74d3dcff5a8bd4849cdcec0c1eb5aace6",
         "run": "https://github.com/0xinsider/picks/actions/runs/44659601681"
-      }
+      },
+      "kickoff": "2026-11-20T03:00:00Z",
+      "resolved_at": "2026-11-20T05:43:15.878119Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x6166738dbd6632f4ff1b006387914bf892ee3ff91a75d48ada3968a02c7e9007",
+        "kickoff": "2026-11-20T03:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2325",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Seattle Sounders FC vs. Real Salt Lake",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2325",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T05:43:15.878119Z",
+          "parent_commit": "9d2ee37ab25cd96ef31c1a7c7e6c30cd3fff2885",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44682894674"
+        }
+      ]
     }
   ]
 }
