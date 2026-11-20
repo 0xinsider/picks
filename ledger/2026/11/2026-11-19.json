@@ -385,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a0b56c2fbbeb5abdc23831d361a4427623b3483d326c01631c4b2627b68c89a1",
+      "commitment_nonce": "75913551311f4787e2a209312f571d947e70b7fe3211e44608f2778fa38e6029",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T23:10:15.356815Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2319",
       "first_observation": {
         "observed_at": "2026-11-19T23:10:26.073458Z",
         "parent_commit": "5deb286bdc8770ecd3e80de5ca319a1d75161993",
         "run": "https://github.com/0xinsider/picks/actions/runs/44635303092"
-      }
+      },
+      "kickoff": "2026-11-20T01:00:00Z",
+      "resolved_at": "2026-11-20T03:58:14.528564Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x67c73c9716780f290adc3ec9bc214c82f246cddec7dbef8015285227653d8a88",
+        "kickoff": "2026-11-20T01:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2319",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wild",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wild vs. Flames",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2319",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T03:58:14.528564Z",
+          "parent_commit": "99e57bdcfdb6f9b744edf8e163c34099e09d5bce",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44671242469"
+        }
+      ]
     },
     {
       "pick_rank": 11,
