@@ -209,16 +209,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "50da2826044d338776604dfb0371a2627187fec3ce1438d5b98b92e71bc943e8",
+      "commitment_nonce": "cc3fe6864157c073b11774cc5dbafc40f395d72808cb1c6769471a90fa9684ca",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T17:24:59.585240Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2333",
       "first_observation": {
         "observed_at": "2026-11-20T17:25:14.388085Z",
         "parent_commit": "c4d0b1c95476392309f226a481dc81a9555822b8",
         "run": "https://github.com/0xinsider/picks/actions/runs/44783084835"
-      }
+      },
+      "kickoff": "2026-11-20T18:00:00Z",
+      "resolved_at": "2026-11-20T22:05:06.902837Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xe7c5892cdd402bedfcb5d562d79dd3ab8b64694defc7eee4a2fd5665aa8d1153",
+        "kickoff": "2026-11-20T18:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2333",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Molde FK vs. FK Bodø/Glimt",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2333",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T22:05:06.902837Z",
+          "parent_commit": "67864f03f18db709ec2d0645833585c827dca58b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44825922313"
+        }
+      ]
     },
     {
       "pick_rank": 9,
