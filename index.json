@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1177,
-    "sealed": 1,
+    "opened": 1178,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 903,
+    "proven": 904,
     "proven_record": {
       "wins": 474,
-      "losses": 420,
-      "decided": 894,
+      "losses": 421,
+      "decided": 895,
       "withdrawn": 2,
       "hit_rate": "53.0",
-      "profit_usd": "-28097.50",
-      "staked": "894000",
-      "roi": "-3.1"
+      "profit_usd": "-29097.50",
+      "staked": "895000",
+      "roi": "-3.3"
     },
     "wins": 657,
-    "losses": 509,
+    "losses": 510,
     "voids": 7,
-    "decided": 1166,
+    "decided": 1167,
     "withdrawn": 4,
     "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-6351.57",
-    "staked": "1166000",
-    "roi": "-0.5",
+    "profit_usd": "-7351.57",
+    "staked": "1167000",
+    "roi": "-0.6",
     "through": "2026-11-19"
   },
   "picks": [
@@ -46415,16 +46415,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "968a2bbd8f9d6e78362b43170e20fef9b0ffdce13f8eef418d53d8058f38d211",
+      "commitment_nonce": "f3c0b88265b623125ee9552196c7256b1d6bf205588b4e079db6242ceb76f9de",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T00:40:09.217369Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2324",
       "first_observation": {
         "observed_at": "2026-11-20T00:40:21.755614Z",
         "parent_commit": "a3e4e9b95cc1f5dc8ebe0840eed38a1ca5926510",
         "run": "https://github.com/0xinsider/picks/actions/runs/44647685844"
-      }
+      },
+      "kickoff": "2026-11-20T02:40:00Z",
+      "resolved_at": "2026-11-20T05:46:14.178557Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x7cb6935a9f1cfbad57cac6803e758cd04fb9fcc7817f14cb6759beb459188dfc",
+        "kickoff": "2026-11-20T02:40:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2324",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Canucks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Canucks vs. Kraken",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2324",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T05:46:14.178557Z",
+          "parent_commit": "962de94a8397f74f0a14256b388deaa23151187c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44683226146"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-19",
