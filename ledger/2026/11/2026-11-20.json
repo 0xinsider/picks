@@ -150,16 +150,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "19db5c417b1a9531bcea460690e8ed4da112e650a12bf1dc6464cc923277dd3a",
+      "commitment_nonce": "7935c6c4809905f2b9d9d5847f55141c6676df0a24fac83e1561d18ea2000de3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T16:06:03.431630Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2331",
       "first_observation": {
         "observed_at": "2026-11-20T16:06:16.255830Z",
         "parent_commit": "7f23617f08934884e1c96f360443539ed853475d",
         "run": "https://github.com/0xinsider/picks/actions/runs/44769932698"
-      }
+      },
+      "kickoff": "2026-11-20T17:30:00Z",
+      "resolved_at": "2026-11-20T21:31:20.069885Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x736e23101afe5bc56614167f1b22fbcdf8b080f663fe10ef49b15072a9497445",
+        "kickoff": "2026-11-20T17:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2331",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Al Ahli Saudi Club vs. Al Nassr Saudi Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2331",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T21:31:20.069885Z",
+          "parent_commit": "5ed1067d454cfff1ac4b8f4ad5e1eb46b926db0d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44821045297"
+        }
+      ]
     },
     {
       "pick_rank": 7,
