@@ -419,16 +419,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a0d1d3a367689d4be31eafca8552147a91e8cabd2eb4822ca2f6d052974513c2",
+      "commitment_nonce": "d376bdde96835df36a45d89d49efbfb0fc4158d185194e9c9b8b096012dc6933",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T23:10:15.378996Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2321",
       "first_observation": {
         "observed_at": "2026-11-19T23:10:26.073458Z",
         "parent_commit": "5deb286bdc8770ecd3e80de5ca319a1d75161993",
         "run": "https://github.com/0xinsider/picks/actions/runs/44635303092"
-      }
+      },
+      "kickoff": "2026-11-20T01:00:00Z",
+      "resolved_at": "2026-11-20T03:38:28.875530Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x4d8680d3fa8db9230de0a8a82dd367506167d5a4512fd2972594bdd3ed816000",
+        "kickoff": "2026-11-20T01:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2321",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2321",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T03:38:28.875530Z",
+          "parent_commit": "42d3fb4b725b536452a4dd92f07738ceee55d5d8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44669101883"
+        }
+      ]
     },
     {
       "pick_rank": 13,
@@ -453,16 +478,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9465478df326a7d6e689c6c048b72303c0b0abea3c3c159045ec61a7f0a0b3e0",
+      "commitment_nonce": "4c518ad442d10dc142024d623f062fdb7523c97ad170a149b053d7f4c3ee5dc0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T00:17:01.964768Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2323",
       "first_observation": {
         "observed_at": "2026-11-20T00:17:12.833310Z",
         "parent_commit": "e15dad8a5bf3f1b5f9878aeb5eb8a814e1e029a0",
         "run": "https://github.com/0xinsider/picks/actions/runs/44644603799"
-      }
+      },
+      "kickoff": "2026-11-20T01:00:00Z",
+      "resolved_at": "2026-11-20T03:38:28.857232Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xab71fc17e854ac9631a689e3b1ec778af44ba6a2af0529dcd9969e0205449be5",
+        "kickoff": "2026-11-20T01:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2323",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Timberwolves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Knicks vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2323",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T03:38:28.857232Z",
+          "parent_commit": "42d3fb4b725b536452a4dd92f07738ceee55d5d8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44669101883"
+        }
+      ]
     },
     {
       "pick_rank": 15,
