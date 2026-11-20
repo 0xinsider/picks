@@ -402,16 +402,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a43acd91d2e13d10f7142cfa14609712592e86a96798c11135c5414951ea9c47",
+      "commitment_nonce": "18e4ef223ed9b91fde945323ca49f87999d23d52d2d2467425aa9d5f1a607c9b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T23:10:15.368747Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2320",
       "first_observation": {
         "observed_at": "2026-11-19T23:10:26.073458Z",
         "parent_commit": "5deb286bdc8770ecd3e80de5ca319a1d75161993",
         "run": "https://github.com/0xinsider/picks/actions/runs/44635303092"
-      }
+      },
+      "kickoff": "2026-11-20T01:00:00Z",
+      "resolved_at": "2026-11-20T03:43:59.041200Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x52f06d400923ec314fde09beb559305213da02641a18a3e9bd01d52837178919",
+        "kickoff": "2026-11-20T01:00:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2320",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Warriors vs. Grizzlies",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2320",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T03:43:59.041200Z",
+          "parent_commit": "728a9a2f72bebf9f366242bc562f60e108d73bc2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44669697618"
+        }
+      ]
     },
     {
       "pick_rank": 12,
