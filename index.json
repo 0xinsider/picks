@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1180,
-    "sealed": 12,
+    "opened": 1181,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 906,
+    "proven": 907,
     "proven_record": {
-      "wins": 474,
+      "wins": 475,
       "losses": 423,
-      "decided": 897,
+      "decided": 898,
       "withdrawn": 2,
-      "hit_rate": "52.8",
-      "profit_usd": "-31097.50",
-      "staked": "897000",
-      "roi": "-3.5"
+      "hit_rate": "52.9",
+      "profit_usd": "-30192.74",
+      "staked": "898000",
+      "roi": "-3.4"
     },
-    "wins": 657,
+    "wins": 658,
     "losses": 512,
     "voids": 7,
-    "decided": 1169,
+    "decided": 1170,
     "withdrawn": 4,
     "hit_rate": "56.2",
     "stake_usd": "1000",
-    "profit_usd": "-9351.57",
-    "staked": "1169000",
-    "roi": "-0.8",
+    "profit_usd": "-8446.81",
+    "staked": "1170000",
+    "roi": "-0.7",
     "through": "2026-11-20"
   },
   "picks": [
@@ -46587,16 +46587,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dc53d2c4240debf2a121a0f51cac98ca57e475e042bb6fd226fe10f2e61f7ccd",
+      "commitment_nonce": "94e2df21bead0eefb7a70520d45ce122f25ff0581e091919a1042de18fad5497",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T15:38:46.623913Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2329",
       "first_observation": {
         "observed_at": "2026-11-20T15:38:58.940024Z",
         "parent_commit": "0bfcc188492abf0421140a2011e3448ca4f81758",
         "run": "https://github.com/0xinsider/picks/actions/runs/44765353518"
-      }
+      },
+      "kickoff": "2026-11-20T17:30:00Z",
+      "resolved_at": "2026-11-20T21:28:27.984045Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xa529bff1c6846278d7af7db6b15528ad082861b4eb4b6b434df3c66b37cd9399",
+        "kickoff": "2026-11-20T17:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2329",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "DSC Arminia Bielefeld vs. 1. FC Magdeburg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2329",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T21:28:27.984045Z",
+          "parent_commit": "3349c909c746552b877146efd3162fdc432b27c7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44820614802"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
