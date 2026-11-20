@@ -335,16 +335,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1c74029f572f2f95e1af629ac4625a854508f6b68f6343b3e776f0e17abaed73",
+      "commitment_nonce": "dfa70e17f4528e39de7e69953806e6472e2037efb19bfc74bf2115959c9195dd",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T18:00:08.538192Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2336",
       "first_observation": {
         "observed_at": "2026-11-20T18:00:19.851357Z",
         "parent_commit": "aa142af990e4180517f150727863c0570e575ab7",
         "run": "https://github.com/0xinsider/picks/actions/runs/44788605924"
-      }
+      },
+      "kickoff": "2026-11-20T20:00:00Z",
+      "resolved_at": "2026-11-20T22:19:14.002943Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x3c50a7e97838b0f6b44f096cb67dee2c775967facb5433c27394212ac861e2ca",
+        "kickoff": "2026-11-20T20:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2336",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Athletic Club vs. RCD Espanyol de Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2336",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T22:19:14.002943Z",
+          "parent_commit": "742d7e5514c4f6c8180bea7f9560fc5182ca0873",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44827960527"
+        }
+      ]
     },
     {
       "pick_rank": 12,
