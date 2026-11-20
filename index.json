@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1189,
-    "sealed": 11,
+    "opened": 1190,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 915,
+    "proven": 916,
     "proven_record": {
-      "wins": 480,
+      "wins": 481,
       "losses": 426,
-      "decided": 906,
+      "decided": 907,
       "withdrawn": 2,
       "hit_rate": "53.0",
-      "profit_usd": "-28962.25",
-      "staked": "906000",
-      "roi": "-3.2"
+      "profit_usd": "-28458.49",
+      "staked": "907000",
+      "roi": "-3.1"
     },
-    "wins": 663,
+    "wins": 664,
     "losses": 515,
     "voids": 7,
-    "decided": 1178,
+    "decided": 1179,
     "withdrawn": 4,
     "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-7216.32",
-    "staked": "1178000",
+    "profit_usd": "-6712.56",
+    "staked": "1179000",
     "roi": "-0.6",
     "through": "2026-11-20"
   },
@@ -46630,16 +46630,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4bb4be10b8678cc4c3c5ff063435c1d147d73d6c23b16d3c2d3bd1073ae96f26",
+      "commitment_nonce": "36869bcc44cf96608ab3c043c99536eb8fa466158e0d7f853f4ba7a09d0a9da0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T16:01:02.037713Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2330",
       "first_observation": {
         "observed_at": "2026-11-20T16:01:15.001401Z",
         "parent_commit": "d76e6b87070222a1ba6e42a4db52bcfe19e4a30b",
         "run": "https://github.com/0xinsider/picks/actions/runs/44769062002"
-      }
+      },
+      "kickoff": "2026-11-20T18:00:00Z",
+      "resolved_at": "2026-11-20T23:09:53.658352Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xbc2b2ff5dc0baf79202cca462ac730f4276e6ee790c7898708bef43ac2ff0c4c",
+        "kickoff": "2026-11-20T18:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2330",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Sinners",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Sinners vs Metizport (BO3) - RUSH Brno Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2330",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T23:09:53.658352Z",
+          "parent_commit": "6d54f09a07db6265a723dc14be46850cb9f8bda5",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44834727833"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
