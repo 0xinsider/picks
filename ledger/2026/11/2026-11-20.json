@@ -7,16 +7,41 @@
       "publication_order": 2,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d42373e11f1d883a1cb91701acd16e8f73bd5adde1808762154c6adf4472450d",
+      "commitment_nonce": "9dd4a435b2df07b4f625a10749e50572d3815c1896bc11d398d853db1cd61236",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T11:00:16.618205Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2327",
       "first_observation": {
         "observed_at": "2026-11-20T11:00:27.097620Z",
         "parent_commit": "9a0535de9523b18c6dfce37699451edcdd04e48c",
         "run": "https://github.com/0xinsider/picks/actions/runs/44723937887"
-      }
+      },
+      "kickoff": "2026-11-20T13:00:00Z",
+      "resolved_at": "2026-11-20T15:56:24.153969Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x49b90b8be5991e67cede0543edcbf496cb79847a19f6c0807fd5da03ba24d739",
+        "kickoff": "2026-11-20T13:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2327",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "BIG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Luminosity vs BIG (BO3) - Stake Ranked Episode 6 Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2327",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T15:56:24.153969Z",
+          "parent_commit": "bfec4a43aa8c99ba168b61f9846e56c7584c8342",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44768287664"
+        }
+      ]
     },
     {
       "pick_rank": 3,
