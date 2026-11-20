@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1182,
-    "sealed": 10,
+    "opened": 1183,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 908,
+    "proven": 909,
     "proven_record": {
-      "wins": 475,
+      "wins": 476,
       "losses": 424,
-      "decided": 899,
+      "decided": 900,
       "withdrawn": 2,
-      "hit_rate": "52.8",
-      "profit_usd": "-31192.74",
-      "staked": "899000",
-      "roi": "-3.5"
+      "hit_rate": "52.9",
+      "profit_usd": "-30753.89",
+      "staked": "900000",
+      "roi": "-3.4"
     },
-    "wins": 658,
+    "wins": 659,
     "losses": 513,
     "voids": 7,
-    "decided": 1171,
+    "decided": 1172,
     "withdrawn": 4,
     "hit_rate": "56.2",
     "stake_usd": "1000",
-    "profit_usd": "-9446.81",
-    "staked": "1171000",
+    "profit_usd": "-9007.96",
+    "staked": "1172000",
     "roi": "-0.8",
     "through": "2026-11-20"
   },
@@ -46745,16 +46745,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1e3f0842d30a91bc07bca0d2f9912867c18f6115fb8d93eb0bd6af68297645a1",
+      "commitment_nonce": "ba1e3bb2629d68c1ecf724e8d5cb99317c9e73db320eb3269aa7bf4e2f2d4acb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T17:30:12.025587Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2335",
       "first_observation": {
         "observed_at": "2026-11-20T17:30:22.452173Z",
         "parent_commit": "8a943e379250e5267a73eb7aabbdd5a634e20a4b",
         "run": "https://github.com/0xinsider/picks/actions/runs/44783898908"
-      }
+      },
+      "kickoff": "2026-11-20T19:30:00Z",
+      "resolved_at": "2026-11-20T21:36:09.257838Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x9d9afba83521d61c5a77afc3c5edf7ccf2a2c5a676367922722ebccb34240c31",
+        "kickoff": "2026-11-20T19:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2335",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Daniil Medvedev",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "ATP World Tour Finals, Ivan Lendl Group: Daniil Medvedev vs Frances Tiafoe",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2335",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T21:36:09.257838Z",
+          "parent_commit": "6179fc5dd51bb3a0413442af413b2d39ede7b13e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44821782452"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
