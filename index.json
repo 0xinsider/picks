@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1167,
-    "sealed": 11,
+    "opened": 1168,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 893,
+    "proven": 894,
     "proven_record": {
-      "wins": 469,
+      "wins": 470,
       "losses": 415,
-      "decided": 884,
+      "decided": 885,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-26890.99",
-      "staked": "884000",
+      "profit_usd": "-26316.18",
+      "staked": "885000",
       "roi": "-3.0"
     },
-    "wins": 652,
+    "wins": 653,
     "losses": 504,
     "voids": 7,
-    "decided": 1156,
+    "decided": 1157,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-5145.05",
-    "staked": "1156000",
+    "profit_usd": "-4570.25",
+    "staked": "1157000",
     "roi": "-0.4",
     "through": "2026-11-19"
   },
@@ -45985,16 +45985,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "53526644bda4580d5aa800d7a00b379d0032a9e41e1384224e5e7f522d05eb4d",
+      "commitment_nonce": "54d0132d92fefd50dfa24fc1928a4492fa5b07161b3a8bdb6849725c9d4b99e5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T20:30:14.561026Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2314",
       "first_observation": {
         "observed_at": "2026-11-19T20:30:25.325029Z",
         "parent_commit": "29c9233e46db0705554ae9b1ed82c659b2e350c2",
         "run": "https://github.com/0xinsider/picks/actions/runs/44609328564"
-      }
+      },
+      "kickoff": "2026-11-19T22:30:00Z",
+      "resolved_at": "2026-11-20T02:42:22.531237Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xf34e50265ce648ddb9a62a4d3acec067323f0d9b0fa28cf80e430379c0bd94d8",
+        "kickoff": "2026-11-19T22:30:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2314",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "CR Vasco da Gama vs. SC Internacional",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2314",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T02:42:22.531237Z",
+          "parent_commit": "a1268c19db149a73cdcf91bec8b12c6f5b1a6c6a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44662691593"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-19",
