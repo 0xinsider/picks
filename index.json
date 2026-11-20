@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1166,
-    "sealed": 12,
+    "opened": 1167,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 892,
+    "proven": 893,
     "proven_record": {
       "wins": 469,
-      "losses": 414,
-      "decided": 883,
+      "losses": 415,
+      "decided": 884,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-25890.99",
-      "staked": "883000",
-      "roi": "-2.9"
+      "profit_usd": "-26890.99",
+      "staked": "884000",
+      "roi": "-3.0"
     },
     "wins": 652,
-    "losses": 503,
+    "losses": 504,
     "voids": 7,
-    "decided": 1155,
+    "decided": 1156,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-4145.05",
-    "staked": "1155000",
+    "profit_usd": "-5145.05",
+    "staked": "1156000",
     "roi": "-0.4",
     "through": "2026-11-19"
   },
@@ -46003,16 +46003,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ab40f007fe2e2e2be581f0e91ff5431037169e31dab9d608509d641b4f867892",
+      "commitment_nonce": "b29a95379717748c11b80bdc664471a911b3be2a7093dd5094eea345ecdddb6b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T21:50:30.941442Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2315",
       "first_observation": {
         "observed_at": "2026-11-19T21:50:42.238304Z",
         "parent_commit": "9d9bf7d0ce410e8ceede7c45136368cd906341f6",
         "run": "https://github.com/0xinsider/picks/actions/runs/44622790097"
-      }
+      },
+      "kickoff": "2026-11-19T22:30:00Z",
+      "resolved_at": "2026-11-20T02:41:18.938132Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xa554ab078377a566765836e109c522425870f9ca3f2d73df50cd1f31cc65a530",
+        "kickoff": "2026-11-19T22:30:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2315",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "EC Vitória vs. Red Bull Bragantino",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2315",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T02:41:18.938132Z",
+          "parent_commit": "3897dcc56d6f32d7462d6ffc22adf32d92a840b0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44662571357"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-19",
