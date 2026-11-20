@@ -192,16 +192,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "def33d7cf52719500cee8478fe3ddcee42f44ceb61acc2ed384104f780679c10",
+      "commitment_nonce": "b8fdf809e554025fda11df644f7dcef933724e737f059f68e42d2c5cb2b36845",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T16:30:08.971587Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2332",
       "first_observation": {
         "observed_at": "2026-11-20T16:30:21.303327Z",
         "parent_commit": "9e1262a8e1d6959f03ad5d357062f19da1460515",
         "run": "https://github.com/0xinsider/picks/actions/runs/44774014373"
-      }
+      },
+      "kickoff": "2026-11-20T18:00:00Z",
+      "resolved_at": "2026-11-20T22:44:07.366437Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x3410d8f604412fee009bbbbb1092a37823b53a4d4665751f65d1a0a6008d4a4f",
+        "kickoff": "2026-11-20T18:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2332",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Phantom",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: WBT vs Phantom (BO3) - NODWIN Clutch Series Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2332",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T22:44:07.366437Z",
+          "parent_commit": "a8bd98b1cd9dcab7353f263501a6f6e9b414fea3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44831354558"
+        }
+      ]
     },
     {
       "pick_rank": 8,
