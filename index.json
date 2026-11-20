@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1188,
-    "sealed": 10,
+    "opened": 1189,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 914,
+    "proven": 915,
     "proven_record": {
-      "wins": 479,
+      "wins": 480,
       "losses": 426,
-      "decided": 905,
+      "decided": 906,
       "withdrawn": 2,
-      "hit_rate": "52.9",
-      "profit_usd": "-29764.06",
-      "staked": "905000",
-      "roi": "-3.3"
+      "hit_rate": "53.0",
+      "profit_usd": "-28962.25",
+      "staked": "906000",
+      "roi": "-3.2"
     },
-    "wins": 662,
+    "wins": 663,
     "losses": 515,
     "voids": 7,
-    "decided": 1177,
+    "decided": 1178,
     "withdrawn": 4,
-    "hit_rate": "56.2",
+    "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-8018.12",
-    "staked": "1177000",
-    "roi": "-0.7",
+    "profit_usd": "-7216.32",
+    "staked": "1178000",
+    "roi": "-0.6",
     "through": "2026-11-20"
   },
   "picks": [
@@ -46906,16 +46906,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ccaefcb94e8505fee4f0cd431183b29e9f1a78e056e349d77503352cc78f9519",
+      "commitment_nonce": "361abfc18a9b3f4b104f15729af7eefb7ac4cc289023dcae798a334d765c05c8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T18:18:43.940419Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2337",
       "first_observation": {
         "observed_at": "2026-11-20T18:18:56.063846Z",
         "parent_commit": "71ef7b4726cd347a29fb4c12d5eaf27443487473",
         "run": "https://github.com/0xinsider/picks/actions/runs/44791561547"
-      }
+      },
+      "kickoff": "2026-11-20T19:00:00Z",
+      "resolved_at": "2026-11-20T22:58:30.247494Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x8f487b399bdb16fd280e19b858b947929bff8a1498ee6661128a1dce7f3f484e",
+        "kickoff": "2026-11-20T19:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2337",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AS Nancy-Lorraine vs. Dijon Football Côte d'Or",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2337",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T22:58:30.247494Z",
+          "parent_commit": "36d1d3cd93a1f394f8d889c5c6892c81721b726f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44833232372"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
