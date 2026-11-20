@@ -52,7 +52,7 @@ Record through 2026-11-20.
 | Profit at $1,000 per pick, before fees | -6,618.12 USD on 1,174,000 staked |
 | ROI before fees | -0.6% |
 | Withdrawn by the site, left out of the record | 4 |
-| Sealed, not yet settled | 8 |
+| Sealed, not yet settled | 9 |
 | Git-dated before kickoff | 911 |
 | No pre-game proof (pre-commitment) | 250 |
 | No pre-game proof (mirror outage) | 15 |
