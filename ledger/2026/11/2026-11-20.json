@@ -469,16 +469,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3699fe650832c09cd85621a476f182cf8c974ae05aa62d906522d7c9c81195d9",
+      "commitment_nonce": "1c8fd3f76810d4a77868ba3e786cddfc52514396a9e930b08155e9019dc96404",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T18:30:06.995145Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2338",
       "first_observation": {
         "observed_at": "2026-11-20T18:30:17.451270Z",
         "parent_commit": "0ca353072ed78b855a7504d1893a58b9edd14b83",
         "run": "https://github.com/0xinsider/picks/actions/runs/44793347617"
-      }
+      },
+      "kickoff": "2026-11-20T20:30:00Z",
+      "resolved_at": "2026-11-20T23:52:30.191500Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x7f3b33d37e7333f61f540bfe784ae70d317d165bc43f4370980787eadf0ea1bf",
+        "kickoff": "2026-11-20T20:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2338",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Guiomar Maristany",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Colina: Guiomar Maristany vs Andrea Lazaro Garcia",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2338",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T23:52:30.191500Z",
+          "parent_commit": "67dde46709eb005ffb15a84020d6248a78d2ce3b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44839936615"
+        }
+      ]
     },
     {
       "pick_rank": 14,
