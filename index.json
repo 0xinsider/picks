@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1183,
-    "sealed": 9,
+    "opened": 1184,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 909,
+    "proven": 910,
     "proven_record": {
-      "wins": 476,
+      "wins": 477,
       "losses": 424,
-      "decided": 900,
+      "decided": 901,
       "withdrawn": 2,
       "hit_rate": "52.9",
-      "profit_usd": "-30753.89",
-      "staked": "900000",
-      "roi": "-3.4"
+      "profit_usd": "-29773.69",
+      "staked": "901000",
+      "roi": "-3.3"
     },
-    "wins": 659,
+    "wins": 660,
     "losses": 513,
     "voids": 7,
-    "decided": 1172,
+    "decided": 1173,
     "withdrawn": 4,
-    "hit_rate": "56.2",
+    "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-9007.96",
-    "staked": "1172000",
-    "roi": "-0.8",
+    "profit_usd": "-8027.76",
+    "staked": "1173000",
+    "roi": "-0.7",
     "through": "2026-11-20"
   },
   "picks": [
@@ -46842,16 +46842,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "15615858a013fcea0c844363835b90dd2887be0fe0b6b0f70fa457bf46dd03fb",
+      "commitment_nonce": "233b5788bf4f7824a864d914e64e9ce2f9b78dc4bd546399301d0a7aba7d5556",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T18:45:07.118233Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2339",
       "first_observation": {
         "observed_at": "2026-11-20T18:45:17.452302Z",
         "parent_commit": "6f7097656b288a347e2b583b581df37b191b500b",
         "run": "https://github.com/0xinsider/picks/actions/runs/44795715141"
-      }
+      },
+      "kickoff": "2026-11-20T19:30:00Z",
+      "resolved_at": "2026-11-20T21:40:01.962389Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x5ce8d5f7681cbd10628a39f5f9fcd4711d72770330ab19469aad4edd1eebd234",
+        "kickoff": "2026-11-20T19:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2339",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Bayern München vs. 1. FC Köln",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2339",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T21:40:01.962389Z",
+          "parent_commit": "f932d6596dd0b40cee7c0adeaee62151f4119149",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44822336922"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
