@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1179,
-    "sealed": 5,
+    "opened": 1180,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 905,
+    "proven": 906,
     "proven_record": {
       "wins": 474,
-      "losses": 422,
-      "decided": 896,
+      "losses": 423,
+      "decided": 897,
       "withdrawn": 2,
-      "hit_rate": "52.9",
-      "profit_usd": "-30097.50",
-      "staked": "896000",
-      "roi": "-3.4"
+      "hit_rate": "52.8",
+      "profit_usd": "-31097.50",
+      "staked": "897000",
+      "roi": "-3.5"
     },
     "wins": 657,
-    "losses": 511,
+    "losses": 512,
     "voids": 7,
-    "decided": 1168,
+    "decided": 1169,
     "withdrawn": 4,
     "hit_rate": "56.2",
     "stake_usd": "1000",
-    "profit_usd": "-8351.57",
-    "staked": "1168000",
-    "roi": "-0.7",
+    "profit_usd": "-9351.57",
+    "staked": "1169000",
+    "roi": "-0.8",
     "through": "2026-11-20"
   },
   "picks": [
@@ -46544,16 +46544,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d9aa9ee0b8e4a7d16ffd468b1a96167fa56545fb9d428fc7643236f4e128b76d",
+      "commitment_nonce": "a1bd68885b7a12165049a173beecc70c8115e4c95c2d9941024138677795389b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T13:15:05.667705Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2328",
       "first_observation": {
         "observed_at": "2026-11-20T13:15:17.800184Z",
         "parent_commit": "b21fa798ad75ff8854d8200b0eeca898abb8c6f6",
         "run": "https://github.com/0xinsider/picks/actions/runs/44742661127"
-      }
+      },
+      "kickoff": "2026-11-20T14:00:00Z",
+      "resolved_at": "2026-11-20T17:09:22.351143Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.275000",
+        "condition_id": "0xd60ab1fe3baecce1f96bed0a969b9af3a0381ede76b327cd09bc5c087d4a1029",
+        "kickoff": "2026-11-20T14:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2328",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "OG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: Natus Vincere vs OG (BO3) - BLAST Slam Group A",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2328",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-20T17:09:22.351143Z",
+          "parent_commit": "ff81294487d6cb543a64e78ad102adb71e1d7d7f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44780521851"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
