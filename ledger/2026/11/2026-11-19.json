@@ -343,16 +343,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9ce89a44e4796ea48d7eb7f7517e62fe28a498186a432d13bcee62ae4dd4edfd",
+      "commitment_nonce": "fcb84bc760082f3374fc50614fc49bde4fb6ee85f49c96e4c1296583620d6723",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-19T22:30:31.986838Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2318",
       "first_observation": {
         "observed_at": "2026-11-19T22:30:42.584670Z",
         "parent_commit": "ad9e4d02a506bd33d8531384b589459da31dece3",
         "run": "https://github.com/0xinsider/picks/actions/runs/44629269760"
-      }
+      },
+      "kickoff": "2026-11-20T00:30:00Z",
+      "resolved_at": "2026-11-20T03:20:04.213413Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x62acd5d0e0670cd37660f14845bc874ad0eef8005998b8dd3060a951a2da1b12",
+        "kickoff": "2026-11-20T00:30:00Z",
+        "pick_date": "2026-11-19",
+        "pick_id": "2318",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Lightning",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Oilers vs. Lightning",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2318",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-20T03:20:04.213413Z",
+          "parent_commit": "ea878258eeed54fd413777702a9b700661c89210",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44667006436"
+        }
+      ]
     },
     {
       "pick_rank": 10,
