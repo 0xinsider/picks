@@ -563,16 +563,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d2335b732267ffddefe7e12c3fc3ad52da02ae56834947f89f708a8a0f866c41",
+      "commitment_nonce": "7306b6b95b45f4af71d4a4d509438a40645fa1bedc62b39d7b4e08ded58744ae",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.957409Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2370",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T17:00:31.302644Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0xefbca1f3a5dba8601ceebde1679c6f8a9494e5364d5c4571e7d5ae8ab59698ca",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2370",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Jake Matthews",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Jake Matthews vs. Tahir Abdullayev (Welterweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2370",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T17:00:31.302644Z",
+          "parent_commit": "451b796a66aebe490d478db2efa129f0ba0d6daf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44927648242"
+        }
+      ]
     },
     {
       "pick_rank": 20,
