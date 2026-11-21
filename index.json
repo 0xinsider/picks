@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1209,
-    "sealed": 19,
+    "opened": 1210,
+    "sealed": 18,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 935,
+    "proven": 936,
     "proven_record": {
-      "wins": 493,
+      "wins": 494,
       "losses": 433,
-      "decided": 926,
+      "decided": 927,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25478.25",
-      "staked": "926000",
-      "roi": "-2.8"
+      "hit_rate": "53.3",
+      "profit_usd": "-24852.24",
+      "staked": "927000",
+      "roi": "-2.7"
     },
-    "wins": 676,
+    "wins": 677,
     "losses": 522,
     "voids": 7,
-    "decided": 1198,
+    "decided": 1199,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-3732.32",
-    "staked": "1198000",
+    "profit_usd": "-3106.30",
+    "staked": "1199000",
     "roi": "-0.3",
     "through": "2026-11-21"
   },
@@ -47888,16 +47888,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d4b5da708ea78cb6b2a019dad43294d69194f81a432aea48cb3130dbc391d822",
+      "commitment_nonce": "5c09f3ebda28f59c0e42411c9ae2b498750b71a72b25bf5f559980cc6183515c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T12:30:16.581786Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2361",
       "first_observation": {
         "observed_at": "2026-11-21T12:30:27.276549Z",
         "parent_commit": "e696810e2de3b2d3db3eb0db77fbc8bc96a72383",
         "run": "https://github.com/0xinsider/picks/actions/runs/44904229460"
-      }
+      },
+      "kickoff": "2026-11-21T14:30:00Z",
+      "resolved_at": "2026-11-21T16:39:36.464278Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x1696e9e294f221eee493f37c5c045d592e40320e481e951d1bd837f697082393",
+        "kickoff": "2026-11-21T14:30:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2361",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Borussia Mönchengladbach vs. BV Borussia 09 Dortmund",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2361",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T16:39:36.464278Z",
+          "parent_commit": "11a26ec75c2f6990fbb66b841bcf239f15a31828",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44925776806"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
