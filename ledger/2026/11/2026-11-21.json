@@ -486,16 +486,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "972e9bd636444b9d225e7fc151b73b55fcf011dc3cc0e8e6af19e1544b65f2ce",
+      "commitment_nonce": "ac724b806b1304214e7bccfc0b4a6843fb7465930eace40095c6a77341eb5896",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.896784Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2364",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T20:35:38.554481Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x7506db8e855c5d7425ebe44e93d416ddf08358a44636f55377f38234294e8add",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2364",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Kevin Vallejos",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Aljamain Sterling vs. Kevin Vallejos (Featherweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2364",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T20:35:38.554481Z",
+          "parent_commit": "c1b6338dacba9dffa5b71206ae39f858946dc72e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44947103594"
+        }
+      ]
     },
     {
       "pick_rank": 14,
