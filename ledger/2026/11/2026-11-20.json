@@ -822,16 +822,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9680ffb65f9487eccfe2cfebddd0114da0df62cb351024494a2af2b2364b7a72",
+      "commitment_nonce": "3405858cf676fe258f0248dc4befbffcc622df5a2409ad64879466c6cd5fa1d8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T23:00:09.762896Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2347",
       "first_observation": {
         "observed_at": "2026-11-20T23:00:21.774731Z",
         "parent_commit": "0e2d6516b62860dd336f385931904f15d820691e",
         "run": "https://github.com/0xinsider/picks/actions/runs/44833439278"
-      }
+      },
+      "kickoff": "2026-11-21T01:00:00Z",
+      "resolved_at": "2026-11-21T03:42:34.550839Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xa79a100781ef911fdb98a31872e523fb6948eb64808a4839b018467be9979cc1",
+        "kickoff": "2026-11-21T01:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2347",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Wizards",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wizards vs. Bulls",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2347",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T03:42:34.550839Z",
+          "parent_commit": "104ab19e2bbbd5272d7c122617283559b69d1d2b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44862495485"
+        }
+      ]
     },
     {
       "pick_rank": 23,
@@ -873,16 +898,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0c61c07baa50d9b20ca7c8597c467b4153f485c06521f26446c36ac83adc6929",
+      "commitment_nonce": "44e66e553648d52e857a92638835898e10c2af518f5e7a24f155143b9516e978",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T23:34:19.503426Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2350",
       "first_observation": {
         "observed_at": "2026-11-20T23:34:36.111340Z",
         "parent_commit": "aae3808cb408cc39eb7230455afb2df8575e7994",
         "run": "https://github.com/0xinsider/picks/actions/runs/44837771873"
-      }
+      },
+      "kickoff": "2026-11-21T01:00:00Z",
+      "resolved_at": "2026-11-21T03:42:28.288125Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xa63037e2f94ae9b6940edda2346246297de7632c96d589df1819d6dce2be8328",
+        "kickoff": "2026-11-21T01:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2350",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Pelicans",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pelicans vs. Thunder",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2350",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T03:42:28.288125Z",
+          "parent_commit": "104ab19e2bbbd5272d7c122617283559b69d1d2b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44862495485"
+        }
+      ]
     },
     {
       "pick_rank": 26,
