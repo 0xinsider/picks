@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1200,
-    "sealed": 3,
+    "opened": 1201,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 926,
+    "proven": 927,
     "proven_record": {
-      "wins": 488,
+      "wins": 489,
       "losses": 429,
-      "decided": 917,
+      "decided": 918,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25609.18",
-      "staked": "917000",
-      "roi": "-2.8"
+      "hit_rate": "53.3",
+      "profit_usd": "-24588.98",
+      "staked": "918000",
+      "roi": "-2.7"
     },
-    "wins": 671,
+    "wins": 672,
     "losses": 518,
     "voids": 7,
-    "decided": 1189,
+    "decided": 1190,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-3863.25",
-    "staked": "1189000",
-    "roi": "-0.3",
+    "profit_usd": "-2843.04",
+    "staked": "1190000",
+    "roi": "-0.2",
     "through": "2026-11-20"
   },
   "picks": [
@@ -47422,16 +47422,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3c3f798a8485eb46b2ba845177e6460ea01a94df350f678db9e988a3adcd75d5",
+      "commitment_nonce": "4f53b2594b219849f10fabc5f5c2dbd1d651d042767e5549115dcfa9affb0084",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T23:32:19.712596Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2349",
       "first_observation": {
         "observed_at": "2026-11-20T23:32:29.843659Z",
         "parent_commit": "7e4c1ce36f28dca6e142f266291089f7c438f22e",
         "run": "https://github.com/0xinsider/picks/actions/runs/44837522793"
-      }
+      },
+      "kickoff": "2026-11-21T01:00:00Z",
+      "resolved_at": "2026-11-21T04:25:28.397368Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xa5e4cf9af0e473291df0c66a895636001d0d68b38644cd73c0303fd9331a4e56",
+        "kickoff": "2026-11-21T01:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2349",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Air Force",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UTEP vs. Air Force",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2349",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T04:25:28.397368Z",
+          "parent_commit": "f55d05dd9006d45c3758bbe0581aaa2bedd667b0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44866041376"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
