@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1210,
-    "sealed": 18,
+    "opened": 1211,
+    "sealed": 17,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 936,
+    "proven": 937,
     "proven_record": {
-      "wins": 494,
+      "wins": 495,
       "losses": 433,
-      "decided": 927,
+      "decided": 928,
       "withdrawn": 2,
       "hit_rate": "53.3",
-      "profit_usd": "-24852.24",
-      "staked": "927000",
-      "roi": "-2.7"
+      "profit_usd": "-24050.43",
+      "staked": "928000",
+      "roi": "-2.6"
     },
-    "wins": 677,
+    "wins": 678,
     "losses": 522,
     "voids": 7,
-    "decided": 1199,
+    "decided": 1200,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-3106.30",
-    "staked": "1199000",
-    "roi": "-0.3",
+    "profit_usd": "-2304.50",
+    "staked": "1200000",
+    "roi": "-0.2",
     "through": "2026-11-21"
   },
   "picks": [
@@ -47931,16 +47931,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a752d0cae58d9c1dcf17c39462a16a9d2c77cb35e0602dba3804431ca0f657a0",
+      "commitment_nonce": "d9601f136a6a8ea56412f8571c41a8f817dfe1c6e76b661b1955790bb825594f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T12:30:16.589920Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2362",
       "first_observation": {
         "observed_at": "2026-11-21T12:30:27.276549Z",
         "parent_commit": "e696810e2de3b2d3db3eb0db77fbc8bc96a72383",
         "run": "https://github.com/0xinsider/picks/actions/runs/44904229460"
-      }
+      },
+      "kickoff": "2026-11-21T14:30:00Z",
+      "resolved_at": "2026-11-21T16:41:05.289879Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x00591ffa281b5ed5f2c6a88b9e4f8b3217aca5bf6176bf4ecbcb5ce5f4a11451",
+        "kickoff": "2026-11-21T14:30:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2362",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bayer 04 Leverkusen vs. SC Paderborn 07",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2362",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T16:41:05.289879Z",
+          "parent_commit": "0697557c16ad035115c5b823ca4a42d5bf41f260",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44925910532"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
