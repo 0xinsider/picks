@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1199,
-    "sealed": 4,
+    "opened": 1200,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 925,
+    "proven": 926,
     "proven_record": {
       "wins": 488,
-      "losses": 428,
-      "decided": 916,
+      "losses": 429,
+      "decided": 917,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-24609.18",
-      "staked": "916000",
-      "roi": "-2.7"
+      "hit_rate": "53.2",
+      "profit_usd": "-25609.18",
+      "staked": "917000",
+      "roi": "-2.8"
     },
     "wins": 671,
-    "losses": 517,
+    "losses": 518,
     "voids": 7,
-    "decided": 1188,
+    "decided": 1189,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-2863.25",
-    "staked": "1188000",
-    "roi": "-0.2",
+    "profit_usd": "-3863.25",
+    "staked": "1189000",
+    "roi": "-0.3",
     "through": "2026-11-20"
   },
   "picks": [
@@ -47318,16 +47318,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8c8a186bbe13d960c98b243fe43162d11b9499098610f0029d184f4ace4f26d6",
+      "commitment_nonce": "a85fe95bf014e3f5f120d3e174a0504d5c76bb163844bd65a1431173691acb6c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T22:30:11.470400Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2346",
       "first_observation": {
         "observed_at": "2026-11-20T22:30:22.845764Z",
         "parent_commit": "f2f6a7aa1f3927644194be22549e5f2310876046",
         "run": "https://github.com/0xinsider/picks/actions/runs/44829469309"
-      }
+      },
+      "kickoff": "2026-11-21T00:30:00Z",
+      "resolved_at": "2026-11-21T04:23:28.754326Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xb1f5722ca75faa63f4e72b6bb2d62dcc9af0fa2d8cc4950e815c11c6a04cf43f",
+        "kickoff": "2026-11-21T00:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2346",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Clemson vs. Duke",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2346",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T04:23:28.754326Z",
+          "parent_commit": "6529b6dd56bc9122a442be10f88b34db19a4c431",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44865877835"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
