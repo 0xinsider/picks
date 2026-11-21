@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1217,
-    "sealed": 11,
+    "opened": 1218,
+    "sealed": 10,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 943,
+    "proven": 944,
     "proven_record": {
-      "wins": 497,
+      "wins": 498,
       "losses": 437,
-      "decided": 934,
+      "decided": 935,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25832.43",
-      "staked": "934000",
-      "roi": "-2.8"
+      "hit_rate": "53.3",
+      "profit_usd": "-24890.68",
+      "staked": "935000",
+      "roi": "-2.7"
     },
-    "wins": 680,
+    "wins": 681,
     "losses": 526,
     "voids": 7,
-    "decided": 1206,
+    "decided": 1207,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-4086.50",
-    "staked": "1206000",
+    "profit_usd": "-3144.75",
+    "staked": "1207000",
     "roi": "-0.3",
     "through": "2026-11-21"
   },
@@ -47791,16 +47791,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b63b011bb214c3b7b1459c7696e5bb40fce92a4921211814ec47c72e131b45d8",
+      "commitment_nonce": "4c7c13730c7efb19ff8ea1dfccbbdca5d6f44d5ae38a9bd7c4119bbba662843c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T11:00:44.916297Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2357",
       "first_observation": {
         "observed_at": "2026-11-21T11:00:55.127463Z",
         "parent_commit": "0006ccb97bbf69db144273c30001f497babaa1fc",
         "run": "https://github.com/0xinsider/picks/actions/runs/44897018284"
-      }
+      },
+      "kickoff": "2026-11-21T13:00:00Z",
+      "resolved_at": "2026-11-21T18:35:30.521015Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x73fb145c44d53bb1afe8655be8a6718158e7bb11296d84b9a0dc4b1113e4b4e0",
+        "kickoff": "2026-11-21T13:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2357",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Envy",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Alliance vs Envy (BO3) - RUSH Brno Playoffs",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2357",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T18:35:30.521015Z",
+          "parent_commit": "390c3963680e526915fd613979869fcbe47d65ed",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44936369580"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
