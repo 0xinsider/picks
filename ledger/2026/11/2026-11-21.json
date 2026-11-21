@@ -91,16 +91,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "25ec9f492706e19eee71b98aa290917bc4849b9ba60cf40fd14a766c0b75e9fb",
+      "commitment_nonce": "4074cc6d2cd5240485731c7806732297e04f1165289194d6e5d7db60b13ddf3f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T10:30:15.329615Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2354",
       "first_observation": {
         "observed_at": "2026-11-21T10:30:28.841443Z",
         "parent_commit": "69c6b11cf24046cd58c9d5f403bc9b8bd0588670",
         "run": "https://github.com/0xinsider/picks/actions/runs/44894644941"
-      }
+      },
+      "kickoff": "2026-11-21T12:30:00Z",
+      "resolved_at": "2026-11-21T14:38:41.520298Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0x3b1e53795b8062287b55aae4dc863a2c25973d106f8962b21ab0f7ec8205d525",
+        "kickoff": "2026-11-21T12:30:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2354",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manchester City FC vs. Fulham FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2354",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T14:38:41.520298Z",
+          "parent_commit": "659e4e43c69ad7cd5af3085f2271c33cd95701b3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44914993554"
+        }
+      ]
     },
     {
       "pick_rank": 4,
