@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1208,
-    "sealed": 20,
+    "opened": 1209,
+    "sealed": 19,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 934,
+    "proven": 935,
     "proven_record": {
       "wins": 493,
-      "losses": 432,
-      "decided": 925,
+      "losses": 433,
+      "decided": 926,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-24478.25",
-      "staked": "925000",
-      "roi": "-2.6"
+      "hit_rate": "53.2",
+      "profit_usd": "-25478.25",
+      "staked": "926000",
+      "roi": "-2.8"
     },
     "wins": 676,
-    "losses": 521,
+    "losses": 522,
     "voids": 7,
-    "decided": 1197,
+    "decided": 1198,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-2732.32",
-    "staked": "1197000",
-    "roi": "-0.2",
+    "profit_usd": "-3732.32",
+    "staked": "1198000",
+    "roi": "-0.3",
     "through": "2026-11-21"
   },
   "picks": [
@@ -47784,16 +47784,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8f37f4ac88c45da1b5e449626571eacb6718b4f2e1eeccfbe0d4059bd91d202e",
+      "commitment_nonce": "3cc7b358640d241a54fb73817bba14aa6a5d84e79dc6d4bde8e916d2a76b14bb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T11:30:15.400330Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2358",
       "first_observation": {
         "observed_at": "2026-11-21T11:30:26.831088Z",
         "parent_commit": "5eaa9b3a877e14314f82074e19fa63bf450bbf11",
         "run": "https://github.com/0xinsider/picks/actions/runs/44899406365"
-      }
+      },
+      "kickoff": "2026-11-21T12:30:00Z",
+      "resolved_at": "2026-11-21T16:26:50.350436Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x75101e2363cd30fd007986e95094295f4d0a8c4f868468a96ddc3a7e9d3d5609",
+        "kickoff": "2026-11-21T12:30:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2358",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Norwich City FC vs. Cardiff City FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2358",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T16:26:50.350436Z",
+          "parent_commit": "141ee5115a0f7cb13ab8c6ac6b705fec653423af",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44924622374"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
