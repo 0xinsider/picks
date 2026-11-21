@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1226,
-    "sealed": 2,
+    "opened": 1227,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 952,
+    "proven": 953,
     "proven_record": {
       "wins": 504,
-      "losses": 439,
-      "decided": 943,
+      "losses": 440,
+      "decided": 944,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-21623.16",
-      "staked": "943000",
-      "roi": "-2.3"
+      "profit_usd": "-22623.16",
+      "staked": "944000",
+      "roi": "-2.4"
     },
     "wins": 687,
-    "losses": 528,
+    "losses": 529,
     "voids": 7,
-    "decided": 1215,
+    "decided": 1216,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "122.78",
-    "staked": "1215000",
-    "roi": "0.0",
+    "profit_usd": "-877.22",
+    "staked": "1216000",
+    "roi": "-0.1",
     "through": "2026-11-21"
   },
   "picks": [
@@ -48049,16 +48049,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f9f9b7e6fab6dbd1029e78a26ba5e14b9bc990b2162cf8bb9388f868b76908db",
+      "commitment_nonce": "f41f5e13ef43e99944ccfc99f4deaf6e4d895f17b8aecbe10b4a1a62135f6c69",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.885144Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2363",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T21:08:17.373649Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xdc8303985c6259152c8ff6b70e365b2a4ebfcc23110a7d70af81548d4e91dd57",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2363",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Jirí Procházka",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Jirí Procházka vs. Navajo Stirling (Light Heavyweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2363",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T21:08:17.373649Z",
+          "parent_commit": "da3baae9126a408be47caad20c97249f34dd509f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44949951116"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
