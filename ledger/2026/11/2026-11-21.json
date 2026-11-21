@@ -503,16 +503,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "779c3c62f20c299bbceb3b3c274d9345ffdfcd91a89c29c1b3fb67bd8d350b60",
+      "commitment_nonce": "ecf208b2fddbb5e40968e49df0a2c66b992578dac2aecf08df3217d1a14075e7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.905756Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2365",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T19:58:09.853839Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xdcbd98165c99ad00444d42e05075c30ebfcdbdd95b6504a4ee44791e829eecc5",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2365",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Dan Hooker",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Brian Ortega vs. Dan Hooker (Lightweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2365",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T19:58:09.853839Z",
+          "parent_commit": "c3029511bbe174bfe11d0a86f84bf1360f52da7c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44943738259"
+        }
+      ]
     },
     {
       "pick_rank": 15,
