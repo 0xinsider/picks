@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1191,
-    "sealed": 12,
+    "opened": 1192,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 917,
+    "proven": 918,
     "proven_record": {
-      "wins": 482,
+      "wins": 483,
       "losses": 426,
-      "decided": 908,
+      "decided": 909,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-27931.78",
-      "staked": "908000",
-      "roi": "-3.1"
+      "profit_usd": "-27192.65",
+      "staked": "909000",
+      "roi": "-3.0"
     },
-    "wins": 665,
+    "wins": 666,
     "losses": 515,
     "voids": 7,
-    "decided": 1180,
+    "decided": 1181,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "-6185.84",
-    "staked": "1180000",
+    "profit_usd": "-5446.71",
+    "staked": "1181000",
     "roi": "-0.5",
     "through": "2026-11-20"
   },
@@ -47078,16 +47078,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "ede8b20f03d42d051b7e957fa3e1f181c480250bd2806516bdcf3849a18c68a3",
+      "commitment_nonce": "b4f89ed09428f222f20305514f381e7109ad5e859cba86aa3a760cdb705bcd2b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T21:58:33.391424Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2341",
       "first_observation": {
         "observed_at": "2026-11-20T21:58:46.259546Z",
         "parent_commit": "063652a6e9c6cf32f585851acbaf9ca794a3c5cc",
         "run": "https://github.com/0xinsider/picks/actions/runs/44824977903"
-      }
+      },
+      "kickoff": "2026-11-20T23:00:00Z",
+      "resolved_at": "2026-11-21T01:59:06.715439Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0xb88c01f98f8009b7bd1d44da3752753e45ec1e518850fe54d4917fc2367bf1e9",
+        "kickoff": "2026-11-20T23:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2341",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Guido Justo",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Montevideo: Guido Justo vs Franco Roncadelli",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2341",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T01:59:06.715439Z",
+          "parent_commit": "2b8035c057dbf5e0c126448bb95ec34063c127a8",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44853300258"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
