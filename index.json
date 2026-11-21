@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1227,
-    "sealed": 1,
+    "opened": 1228,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 953,
+    "proven": 954,
     "proven_record": {
-      "wins": 504,
+      "wins": 505,
       "losses": 440,
-      "decided": 944,
+      "decided": 945,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-22623.16",
-      "staked": "944000",
-      "roi": "-2.4"
+      "profit_usd": "-21602.96",
+      "staked": "945000",
+      "roi": "-2.3"
     },
-    "wins": 687,
+    "wins": 688,
     "losses": 529,
     "voids": 7,
-    "decided": 1216,
+    "decided": 1217,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-877.22",
-    "staked": "1216000",
-    "roi": "-0.1",
+    "profit_usd": "142.98",
+    "staked": "1217000",
+    "roi": "0.0",
     "through": "2026-11-21"
   },
   "picks": [
@@ -48608,16 +48608,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "098d2dabf8a5d3f35f3f1daf2b8ee478105e0c1c8d818065a4e4b8b80298ad2c",
+      "commitment_nonce": "3cd18c7693f628f088d3c750d1cebd24c621abce20470d5972140d03e94e45ec",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T15:30:15.004659Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2376",
       "first_observation": {
         "observed_at": "2026-11-21T15:30:25.453048Z",
         "parent_commit": "dcbb416077e4c2ec3836d43a7ad92eec28765869",
         "run": "https://github.com/0xinsider/picks/actions/runs/44919515610"
-      }
+      },
+      "kickoff": "2026-11-21T17:30:00Z",
+      "resolved_at": "2026-11-21T21:13:16.133294Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xecff8a3d92bdbcd4dac8a8909bd69b50a8a570bad9c266a25511b5b950ced4c8",
+        "kickoff": "2026-11-21T17:30:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2376",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Virginia",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "North Carolina vs. Virginia",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2376",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T21:13:16.133294Z",
+          "parent_commit": "f256aa32d0d4e61792555bbab777de6c8842c07f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44950400763"
+        }
+      ]
     }
   ]
 }
