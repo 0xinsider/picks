@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6715dc574dbd5c727b53fae7a840bfc9cd2d2bca1b97009f6e92d356a3485946",
+      "commitment_nonce": "aa52e5f32bb796dd26e1f9cd64aed798c9bf63a4ae0096cee0558ed55c9aa950",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T09:30:11.852535Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2352",
       "first_observation": {
         "observed_at": "2026-11-21T09:30:22.197234Z",
         "parent_commit": "0a0f42b85f901e5a9fe3f6dffc4421e4b266fa09",
         "run": "https://github.com/0xinsider/picks/actions/runs/44889874022"
-      }
+      },
+      "kickoff": "2026-11-21T11:00:00Z",
+      "resolved_at": "2026-11-21T14:04:21.901224Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xdc5fa5216cf5cc1fe41cac5292182fc14773d3a99e7126100f7e25c0d65bd952",
+        "kickoff": "2026-11-21T11:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2352",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "1win",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: LGD Gaming vs 1win (BO3) - BLAST Slam Group D",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2352",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T14:04:21.901224Z",
+          "parent_commit": "6ec826e77cda61eeee32a1df640aa04eb630fcc2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44912019965"
+        }
+      ]
     },
     {
       "pick_rank": 2,
