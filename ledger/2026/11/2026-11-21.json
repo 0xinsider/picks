@@ -520,16 +520,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d2e08b992e9bdf95e516724a05b7991ff4c02f96dd56cf98e408338f2452568d",
+      "commitment_nonce": "d8480cb87a3b2f4d615a822926d9171379b4d5e128e7cce4121f1e11f4e7a8aa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.915069Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2366",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T19:26:11.159868Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x7ae9725048dd25f013549d02532b1a7c1f5f37a48b35bd7962299b4d2114426b",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2366",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Asu Almabayev",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Kyoji Horiguchi vs. Asu Almabayev (Flyweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2366",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T19:26:11.159868Z",
+          "parent_commit": "66e7c160bce3cb471c8c1a749bf21a48d4d351bc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44940921526"
+        }
+      ]
     },
     {
       "pick_rank": 16,
