@@ -823,16 +823,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "88d91a8e639f9ed5c7e4138bad1ee563e7297b255bd24cc91de9ee4f559c4968",
+      "commitment_nonce": "e26149c0c34d1b7274b588e94d8fb04e44527b32f2cae3ab8c742d6482d687ee",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T15:00:26.555286Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2375",
       "first_observation": {
         "observed_at": "2026-11-21T15:00:36.381478Z",
         "parent_commit": "e5d2f374a0d90a910274ac39f8bb305046298acb",
         "run": "https://github.com/0xinsider/picks/actions/runs/44916844142"
-      }
+      },
+      "kickoff": "2026-11-21T17:00:00Z",
+      "resolved_at": "2026-11-21T19:40:22.398341Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x70cf877684a34993f84ea905102d33ae559b3909bf69631ae8eed18361f09b00",
+        "kickoff": "2026-11-21T17:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2375",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Vanderbilt vs. Florida",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2375",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T19:40:22.398341Z",
+          "parent_commit": "fa99748d5be1ebd1251bb72a0fdd98e0f5d35840",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44942176526"
+        }
+      ]
     },
     {
       "pick_rank": 25,
