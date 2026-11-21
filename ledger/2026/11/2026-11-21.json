@@ -218,16 +218,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d35efa7e82a963bb03aba0412766003d8fe616928ab2beeb5394afd31c7c7f96",
+      "commitment_nonce": "fa4abb629f00f8e7d2ca92d60f4f400b6d727b2e71bbae32e399e1a15e8e67b3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T12:15:19.721358Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2360",
       "first_observation": {
         "observed_at": "2026-11-21T12:15:30.857987Z",
         "parent_commit": "a8cc9c9e1b06c5a2af20389020b15449c7210204",
         "run": "https://github.com/0xinsider/picks/actions/runs/44902976935"
-      }
+      },
+      "kickoff": "2026-11-21T13:00:00Z",
+      "resolved_at": "2026-11-21T15:11:31.092951Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xadb27903d9e7246665614bd4bbb069fc186a1df3d4b8425d420c6b1a06702ab4",
+        "kickoff": "2026-11-21T13:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2360",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Deportivo Alavés vs. RC Deportivo A Coruña",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2360",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T15:11:31.092951Z",
+          "parent_commit": "b0ed7ddc9a5d687901476a8fb23e01dfb9a3e2fd",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44917859717"
+        }
+      ]
     },
     {
       "pick_rank": 10,
