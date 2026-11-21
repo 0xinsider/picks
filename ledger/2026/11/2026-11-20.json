@@ -738,16 +738,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1ade24a83679f51a1329917abe7b448440a80313c9c994872e43eb3dee052a21",
+      "commitment_nonce": "69e1e417bf173fe8c1b856d1aff10c08870e299c0d257edf100268fe43ae6e9d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T22:30:11.461736Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2345",
       "first_observation": {
         "observed_at": "2026-11-20T22:30:22.845764Z",
         "parent_commit": "f2f6a7aa1f3927644194be22549e5f2310876046",
         "run": "https://github.com/0xinsider/picks/actions/runs/44829469309"
-      }
+      },
+      "kickoff": "2026-11-21T00:30:00Z",
+      "resolved_at": "2026-11-21T03:13:15.926623Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0xc0f5fcffa5ce365db2c1b64683e2e38206fe2bde04cd1416f6933f958e8e57bf",
+        "kickoff": "2026-11-21T00:30:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2345",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Pacers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Pacers vs. Cavaliers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2345",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T03:13:15.926623Z",
+          "parent_commit": "9a9cb27c7994afc5932b5f4a0b491ae476831f82",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44859973993"
+        }
+      ]
     },
     {
       "pick_rank": 21,
