@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1224,
-    "sealed": 4,
+    "opened": 1225,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 950,
+    "proven": 951,
     "proven_record": {
       "wins": 503,
-      "losses": 438,
-      "decided": 941,
+      "losses": 439,
+      "decided": 942,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-22289.82",
-      "staked": "941000",
-      "roi": "-2.4"
+      "hit_rate": "53.4",
+      "profit_usd": "-23289.82",
+      "staked": "942000",
+      "roi": "-2.5"
     },
     "wins": 686,
-    "losses": 527,
+    "losses": 528,
     "voids": 7,
-    "decided": 1213,
+    "decided": 1214,
     "withdrawn": 4,
-    "hit_rate": "56.6",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-543.89",
-    "staked": "1213000",
-    "roi": "-0.0",
+    "profit_usd": "-1543.89",
+    "staked": "1214000",
+    "roi": "-0.1",
     "through": "2026-11-21"
   },
   "picks": [
@@ -48411,16 +48411,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "403eba552166303ee43189765ac4c902d20bf7bc933a7dcb60c0a9e4bab8c3b5",
+      "commitment_nonce": "d163cdd81ee4923c6925118626bf6d3d76586a21e143fb40d889547f801d2320",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T15:00:26.527902Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2372",
       "first_observation": {
         "observed_at": "2026-11-21T15:00:36.381478Z",
         "parent_commit": "e5d2f374a0d90a910274ac39f8bb305046298acb",
         "run": "https://github.com/0xinsider/picks/actions/runs/44916844142"
-      }
+      },
+      "kickoff": "2026-11-21T17:00:00Z",
+      "resolved_at": "2026-11-21T20:36:27.249879Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xd3162d2382669938e807b2fbb996a521f2e760b1e2d2a464d8651fe038d56128",
+        "kickoff": "2026-11-21T17:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2372",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Purdue",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Wisconsin vs. Purdue",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2372",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T20:36:27.249879Z",
+          "parent_commit": "be0c26cb4ab10e4807b4a5c074b4446ddece0a1e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44947175042"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
