@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1193,
-    "sealed": 10,
+    "opened": 1194,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 919,
+    "proven": 920,
     "proven_record": {
-      "wins": 484,
+      "wins": 485,
       "losses": 426,
-      "decided": 910,
+      "decided": 911,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-26753.80",
-      "staked": "910000",
-      "roi": "-2.9"
+      "profit_usd": "-25691.94",
+      "staked": "911000",
+      "roi": "-2.8"
     },
-    "wins": 667,
+    "wins": 668,
     "losses": 515,
     "voids": 7,
-    "decided": 1182,
+    "decided": 1183,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-5007.86",
-    "staked": "1182000",
-    "roi": "-0.4",
+    "profit_usd": "-3946.01",
+    "staked": "1183000",
+    "roi": "-0.3",
     "through": "2026-11-20"
   },
   "picks": [
@@ -47060,16 +47060,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4462b9badd907fbb25dd6232b6dd34eda71a77723d9653e3a522c6fba77505ba",
+      "commitment_nonce": "2230641496ed7651a124d34cdc8230d6f2cda241f0037a741611b66e39c93f91",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T21:00:08.117235Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2340",
       "first_observation": {
         "observed_at": "2026-11-20T21:00:21.533892Z",
         "parent_commit": "e8a671d4c572b3bb56185052f30255a1ef6dc5e0",
         "run": "https://github.com/0xinsider/picks/actions/runs/44816370131"
-      }
+      },
+      "kickoff": "2026-11-20T23:00:00Z",
+      "resolved_at": "2026-11-21T02:46:15.364231Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x19fa273e9d90d951d75778d943b76d0134e503d261d41164b67676bc3905bf80",
+        "kickoff": "2026-11-20T23:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2340",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "UCF",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Iowa State vs. UCF",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2340",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T02:46:15.364231Z",
+          "parent_commit": "a5a34a9e4d2e715b2d71022b5fba4b7bf5a3bd06",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44857673593"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-20",
