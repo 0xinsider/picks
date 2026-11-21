@@ -605,16 +605,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c99522efdd65a798caafbfdbf778d32be7299949e5f48a05891b33ec7b5f226b",
+      "commitment_nonce": "c96e06338556cc214d1dba6f0a68d47f077e3bff1705136670a54e61f1a9eab9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.966449Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2371",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T17:07:33.757623Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0xf4f7d45903f0b536bd74a2fe97b32d3ee72160961e7d8394367a2e4207b8b077",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2371",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Aston Villa FC vs. Sunderland AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2371",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T17:07:33.757623Z",
+          "parent_commit": "19663e2f06aaa61bf1562c78f603c388cf0e7098",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44928313047"
+        }
+      ]
     },
     {
       "pick_rank": 21,
