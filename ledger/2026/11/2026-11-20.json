@@ -612,16 +612,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4f261436b958cfb04ba15a65b9f1b0e644fed0622cff20d4b41e235534681984",
+      "commitment_nonce": "c2cfeb15671016c8ff6a54d82b3a403847430f421c5111e3666ecc90f1a02455",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-20T22:00:11.718931Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2342",
       "first_observation": {
         "observed_at": "2026-11-20T22:00:22.079246Z",
         "parent_commit": "5927c7e3199f5b82082c66f1c7b49c8ea5642f4d",
         "run": "https://github.com/0xinsider/picks/actions/runs/44825205711"
-      }
+      },
+      "kickoff": "2026-11-21T00:00:00Z",
+      "resolved_at": "2026-11-21T02:34:31.888481Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x8045cbc5e564fb705352aaf4421544f346851009cfae0b0d94e44005d095d499",
+        "kickoff": "2026-11-21T00:00:00Z",
+        "pick_date": "2026-11-20",
+        "pick_id": "2342",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hawks",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hornets vs. Hawks",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2342",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T02:34:31.888481Z",
+          "parent_commit": "4849aa2d2dc8e884e9aa413b93bb74c577313a5e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44856642221"
+        }
+      ]
     },
     {
       "pick_rank": 18,
