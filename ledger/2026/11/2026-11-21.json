@@ -529,16 +529,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "72d533499c4063f1df3f0ae68cabed9cad5697610cf9e2cd83f610f5a2c2f200",
+      "commitment_nonce": "332a3ae4da39e7ab9e33c27fa0dc34dac810ecce0f83ce0dd9f4982589f2ebfe",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.934799Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2368",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T18:22:37.782184Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.715000",
+        "condition_id": "0xbeff47eb631f0e11539d034aa583a17c66448beebbcfbf0f13d37d14dcff1561",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2368",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Aleksandre Topuria",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Aleksandre Topuria vs. Santiago Luna (Bantamweight, Main Card)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2368",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T18:22:37.782184Z",
+          "parent_commit": "a53fc901f5c937d77a42bd73211c52ce843de352",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44935185231"
+        }
+      ]
     },
     {
       "pick_rank": 18,
