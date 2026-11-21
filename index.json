@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1207,
-    "sealed": 21,
+    "opened": 1208,
+    "sealed": 20,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 933,
+    "proven": 934,
     "proven_record": {
-      "wins": 492,
+      "wins": 493,
       "losses": 432,
-      "decided": 924,
+      "decided": 925,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25078.25",
-      "staked": "924000",
-      "roi": "-2.7"
+      "hit_rate": "53.3",
+      "profit_usd": "-24478.25",
+      "staked": "925000",
+      "roi": "-2.6"
     },
-    "wins": 675,
+    "wins": 676,
     "losses": 521,
     "voids": 7,
-    "decided": 1196,
+    "decided": 1197,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-3332.32",
-    "staked": "1196000",
-    "roi": "-0.3",
+    "profit_usd": "-2732.32",
+    "staked": "1197000",
+    "roi": "-0.2",
     "through": "2026-11-21"
   },
   "picks": [
@@ -47705,16 +47705,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d826d9442f94d4edfad9f59a012b5523014f377c26abccef13813e08de848166",
+      "commitment_nonce": "71fa06a98cfa6c90e9b0b5ea821ade11479540b2f91c41d66f64a6de1faa1c85",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T11:00:44.882096Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2355",
       "first_observation": {
         "observed_at": "2026-11-21T11:00:55.127463Z",
         "parent_commit": "0006ccb97bbf69db144273c30001f497babaa1fc",
         "run": "https://github.com/0xinsider/picks/actions/runs/44897018284"
-      }
+      },
+      "kickoff": "2026-11-21T12:00:00Z",
+      "resolved_at": "2026-11-21T15:56:26.577140Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0x970766d19e261864e394ab790edb8d1e646cd8c9409504a78108f81f04a234b4",
+        "kickoff": "2026-11-21T12:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2355",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hannover 96 vs. SpVgg Greuther Fürth",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2355",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T15:56:26.577140Z",
+          "parent_commit": "685ecccd3f5d76b1c467890ba87cca54545eae7f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44921824334"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-21",
