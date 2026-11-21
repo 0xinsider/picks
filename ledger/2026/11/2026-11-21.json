@@ -831,16 +831,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8a3628ab9d0e4eadbf9b624db6b5e2b311a1a5386d1cc92e4ef57f9ff54285e9",
+      "commitment_nonce": "dbaddb0622334dd15119269243e9aa13b060c4bfb2d3746c0df7e373465283d0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T15:00:26.546473Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2374",
       "first_observation": {
         "observed_at": "2026-11-21T15:00:36.381478Z",
         "parent_commit": "e5d2f374a0d90a910274ac39f8bb305046298acb",
         "run": "https://github.com/0xinsider/picks/actions/runs/44916844142"
-      }
+      },
+      "kickoff": "2026-11-21T17:00:00Z",
+      "resolved_at": "2026-11-21T20:33:27.963377Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x592b632cc62c86d07d10057d040057817aa056ed0515d0005bf1f00f32f634fd",
+        "kickoff": "2026-11-21T17:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2374",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "North Texas vs. Tulane",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2374",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T20:33:27.963377Z",
+          "parent_commit": "924fb8ea610cddadeb30e00ba227123dc5c8866b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44946904536"
+        }
+      ]
     },
     {
       "pick_rank": 24,
