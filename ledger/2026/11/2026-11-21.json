@@ -546,16 +546,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a4b2697e8e520997007a3295a44b62f034970a057679b9a2577f955448314bf2",
+      "commitment_nonce": "3be9a093b99371751c8c2608235d8e483497055b6d667e78178dd5c81666d35b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T13:00:24.947844Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2369",
       "first_observation": {
         "observed_at": "2026-11-21T13:00:35.298007Z",
         "parent_commit": "4cd8fe875ea77b23c8574bb56a48bb3219fcb33f",
         "run": "https://github.com/0xinsider/picks/actions/runs/44906665974"
-      }
+      },
+      "kickoff": "2026-11-21T15:00:00Z",
+      "resolved_at": "2026-11-21T17:54:29.080Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x31404d5ca18a175b8bdccfc7109f9dbef807b82d2b5bd790922762cf96066e28",
+        "kickoff": "2026-11-21T15:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2369",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Amir Albazi",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "UFC Fight Night: Amir Albazi vs. Alessandro Costa (Flyweight, Prelims)",
+      "category": "MMA",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2369",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T17:54:29.080Z",
+          "parent_commit": "22f6dcbe56917321a7f87880e3500f376dec9176",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44932584693"
+        }
+      ]
     },
     {
       "pick_rank": 19,
