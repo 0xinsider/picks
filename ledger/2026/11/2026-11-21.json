@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6dba3bd955a419f6a0323d5ea2b985c663572c99203db8ba7dc1ac647c805d04",
+      "commitment_nonce": "6164b74c2bcd00f0d4da55a8b31e8900d9647e5982ea403ded2e8c640237dd4a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T11:00:44.901092Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2356",
       "first_observation": {
         "observed_at": "2026-11-21T11:00:55.127463Z",
         "parent_commit": "0006ccb97bbf69db144273c30001f497babaa1fc",
         "run": "https://github.com/0xinsider/picks/actions/runs/44897018284"
-      }
+      },
+      "kickoff": "2026-11-21T13:00:00Z",
+      "resolved_at": "2026-11-21T16:56:57.963788Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xb220899d9f664ff5d6615ddd2157e3b5bf848c89be653989b2489adb548c39c6",
+        "kickoff": "2026-11-21T13:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2356",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Amed Sportif vs. Çaykur Rizespor",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2356",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-21T16:56:57.963788Z",
+          "parent_commit": "d6f3f307c35b8b83d1e507ae30499deaccdada12",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44927324611"
+        }
+      ]
     },
     {
       "pick_rank": 6,
@@ -251,16 +276,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "290d9c6d92588d1d4538aa424119495fe7ae546562eb974c3fac5187620ec8d3",
+      "commitment_nonce": "c8cb064a58d9af904a4f6222f284fca49df082e2c4081112ae97277e312adb7e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-21T12:15:19.711812Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2359",
       "first_observation": {
         "observed_at": "2026-11-21T12:15:30.857987Z",
         "parent_commit": "a8cc9c9e1b06c5a2af20389020b15449c7210204",
         "run": "https://github.com/0xinsider/picks/actions/runs/44902976935"
-      }
+      },
+      "kickoff": "2026-11-21T13:00:00Z",
+      "resolved_at": "2026-11-21T16:56:51.379384Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0xb3c6d4a65d8aaf24dc55a8c1e6066b74619ef8aafc6c6d95b6e6641dae329324",
+        "kickoff": "2026-11-21T13:00:00Z",
+        "pick_date": "2026-11-21",
+        "pick_id": "2359",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Samsunspor",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Galatasaray SK vs. Samsunspor",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2359",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-21T16:56:51.379384Z",
+          "parent_commit": "d6f3f307c35b8b83d1e507ae30499deaccdada12",
+          "run": "https://github.com/0xinsider/picks/actions/runs/44927324611"
+        }
+      ]
     },
     {
       "pick_rank": 9,
