@@ -780,16 +780,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8826f745c5345ef2ce76868cef340164784960e911f26fae1e8a2d949a6caf50",
+      "commitment_nonce": "04c30639a930468b4b8b2f3b3c1c6271a4f97d10b5a42e415390a4b11736628f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:02:48.769935Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2396",
       "first_observation": {
         "observed_at": "2026-11-22T16:02:59.630564Z",
         "parent_commit": "203d8f86a9adf08a0eb622cbdcdd68f12a5cfc87",
         "run": "https://github.com/0xinsider/picks/actions/runs/45041617619"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T20:29:28.153778Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x7c6421d749bf4de35d4e6e64f8eb0a2dea74825e942f15e89c0e8a86149d9b68",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2396",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cardinals vs. Chiefs",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2396",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T20:29:28.153778Z",
+          "parent_commit": "7e3cbc42fce566d6ee3ad45109f0156de6b25e7d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45066710634"
+        }
+      ]
     },
     {
       "pick_rank": 21,
