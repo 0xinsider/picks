@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0ba33b67ec3339c3c70bdcb295ea6ae748eb1216671c29b7610230d7fd58bbcf",
+      "commitment_nonce": "2d6bb34a8f16e071e9c9b01a6b4379d3b23f40889a810fcd3d4632ccc28be2b0",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T09:30:12.578374Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2377",
       "first_observation": {
         "observed_at": "2026-11-22T09:30:25.292218Z",
         "parent_commit": "f01bb2661b5509133c35cd5c91d3571f79caee4f",
         "run": "https://github.com/0xinsider/picks/actions/runs/45007848006"
-      }
+      },
+      "kickoff": "2026-11-22T11:30:00Z",
+      "resolved_at": "2026-11-22T13:37:43.182004Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x6474a3a2ad45e5d9607020cc1b07e4fb6b3d20466507d276ab79b28f9bb530fc",
+        "kickoff": "2026-11-22T11:30:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2377",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Juventus FC vs. Venezia FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2377",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T13:37:43.182004Z",
+          "parent_commit": "06a1538af94f815f589818a6bd6397d3ca074adf",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45028478140"
+        }
+      ]
     },
     {
       "pick_rank": 2,
