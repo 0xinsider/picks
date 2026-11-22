@@ -361,16 +361,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "75625fafe8339b744f36d549987a293b66af5f81f712ac111bb703ea9f0df148",
+      "commitment_nonce": "9cceb3595d31b8cfe6d7556902cff24444593588cf9aed08326344b71c6e48b6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T13:25:08.001180Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2389",
       "first_observation": {
         "observed_at": "2026-11-22T13:25:18.624488Z",
         "parent_commit": "c3fbbcfc1997f6113da3e37a03b2ea986025effc",
         "run": "https://github.com/0xinsider/picks/actions/runs/45027379663"
-      }
+      },
+      "kickoff": "2026-11-22T14:00:00Z",
+      "resolved_at": "2026-11-22T16:11:20.267047Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0xd52903a2f661671903aff161c3aab1f8670bfb4d7fa2938dabbbf65aade02b15",
+        "kickoff": "2026-11-22T14:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2389",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "US Sassuolo Calcio vs. Genoa CFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2389",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T16:11:20.267047Z",
+          "parent_commit": "4853af7572f513c3c7e71376e3a025939da7b374",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45042410984"
+        }
+      ]
     },
     {
       "pick_rank": 14,
