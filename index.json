@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1237,
-    "sealed": 16,
+    "opened": 1238,
+    "sealed": 15,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 963,
+    "proven": 964,
     "proven_record": {
       "wins": 512,
-      "losses": 442,
-      "decided": 954,
+      "losses": 443,
+      "decided": 955,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-18334.47",
-      "staked": "954000",
-      "roi": "-1.9"
+      "hit_rate": "53.6",
+      "profit_usd": "-19334.47",
+      "staked": "955000",
+      "roi": "-2.0"
     },
     "wins": 695,
-    "losses": 531,
+    "losses": 532,
     "voids": 7,
-    "decided": 1226,
+    "decided": 1227,
     "withdrawn": 4,
-    "hit_rate": "56.7",
+    "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "3411.46",
-    "staked": "1226000",
-    "roi": "0.3",
+    "profit_usd": "2411.46",
+    "staked": "1227000",
+    "roi": "0.2",
     "through": "2026-11-22"
   },
   "picks": [
@@ -48995,16 +48995,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "92ea8af9436d2fa9049712a5e81ca6e161bd1544916abf4ff8e81bbb1233f8d7",
+      "commitment_nonce": "a47d4f214049660738c97b8f17fb5633df52bc8ba4a128a457747688802f033b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T12:40:09.891366Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2385",
       "first_observation": {
         "observed_at": "2026-11-22T12:40:24.493046Z",
         "parent_commit": "87f7c939c68bb1258c3a0e381b8b1be7f9e3885c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45023476165"
-      }
+      },
+      "kickoff": "2026-11-22T14:30:00Z",
+      "resolved_at": "2026-11-22T16:42:24.926940Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xb790bd8ba36a3bf8c94e3f881668874eaf60b0fffd56a25f4879bad3d1a4af58",
+        "kickoff": "2026-11-22T14:30:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2385",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Augsburg vs. 1. FSV Mainz 05",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2385",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T16:42:24.926940Z",
+          "parent_commit": "2dc6bd9940bbcfdb657ddb193fb5518b173f6725",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45045327297"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
