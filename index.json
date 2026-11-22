@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1247,
-    "sealed": 6,
+    "opened": 1248,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 973,
+    "proven": 974,
     "proven_record": {
-      "wins": 517,
+      "wins": 518,
       "losses": 447,
-      "decided": 964,
+      "decided": 965,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-19664.74",
-      "staked": "964000",
-      "roi": "-2.0"
+      "hit_rate": "53.7",
+      "profit_usd": "-18514.20",
+      "staked": "965000",
+      "roi": "-1.9"
     },
-    "wins": 700,
+    "wins": 701,
     "losses": 536,
     "voids": 7,
-    "decided": 1236,
+    "decided": 1237,
     "withdrawn": 4,
-    "hit_rate": "56.6",
+    "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "2081.20",
-    "staked": "1236000",
-    "roi": "0.2",
+    "profit_usd": "3231.74",
+    "staked": "1237000",
+    "roi": "0.3",
     "through": "2026-11-22"
   },
   "picks": [
@@ -49522,16 +49522,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7e26e3ccb208ab5d41b16cbe7718e38d3d5492c0d0a382dd1ebc34567352982e",
+      "commitment_nonce": "e4517cbca882f8cd9589808ed0fa22a5c2bbe879a708c94534325bbd860352b5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:10:12.335890Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2399",
       "first_observation": {
         "observed_at": "2026-11-22T16:10:22.546932Z",
         "parent_commit": "142e3e9799052e224be0f04e1abe3b7e7f99ca2c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45042305919"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T21:03:40.883330Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x8bbe651d971d8795e9779279ddb5420e54f3a5adbd4a00de64cfd41c24985a75",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2399",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Chiefs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Cardinals vs. Chiefs",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2399",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T21:03:40.883330Z",
+          "parent_commit": "58f8839958725ab6fcbbdfcc763036173a6663d7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45069920431"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
