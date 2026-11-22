@@ -108,16 +108,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8cd0c34186f6bb4647d42a2dc5ee657a733cb1f105720de1ad8bfd1a0398b5b0",
+      "commitment_nonce": "41195f64fa11ad87060910880497589e2a85bcb70620f950c54cbe3f6d06b9cc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T11:01:19.430325Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2380",
       "first_observation": {
         "observed_at": "2026-11-22T11:01:29.056056Z",
         "parent_commit": "7f3735274433e502eb23fff784b3954539787333",
         "run": "https://github.com/0xinsider/picks/actions/runs/45015240106"
-      }
+      },
+      "kickoff": "2026-11-22T13:00:00Z",
+      "resolved_at": "2026-11-22T15:21:20.141530Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x89c6781a77f646a81b1676f2a0804ca7cae75f1f5fa5d59ec4537b980ee5204e",
+        "kickoff": "2026-11-22T13:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2380",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Villarreal CF",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Barcelona vs. Villarreal CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2380",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T15:21:20.141530Z",
+          "parent_commit": "34833d0cdd90d1619161577f1e5207503bad8332",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45037838930"
+        }
+      ]
     },
     {
       "pick_rank": 5,
