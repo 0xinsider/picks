@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1239,
-    "sealed": 14,
+    "opened": 1240,
+    "sealed": 13,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 965,
+    "proven": 966,
     "proven_record": {
-      "wins": 512,
+      "wins": 513,
       "losses": 444,
-      "decided": 956,
+      "decided": 957,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-20334.47",
-      "staked": "956000",
-      "roi": "-2.1"
+      "profit_usd": "-19429.71",
+      "staked": "957000",
+      "roi": "-2.0"
     },
-    "wins": 695,
+    "wins": 696,
     "losses": 533,
     "voids": 7,
-    "decided": 1228,
+    "decided": 1229,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "1411.46",
-    "staked": "1228000",
-    "roi": "0.1",
+    "profit_usd": "2316.22",
+    "staked": "1229000",
+    "roi": "0.2",
     "through": "2026-11-22"
   },
   "picks": [
@@ -49099,16 +49099,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9aa53eb5bbd4ec7407630520ee604d654bdeab1b5b2298a138fb15a4bcd4909e",
+      "commitment_nonce": "200aee9c21dacb6a7aca1174b63cfb8dc44d962e6720aacd060f75cee6fd1df2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T13:13:18.803565Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2388",
       "first_observation": {
         "observed_at": "2026-11-22T13:13:29.008867Z",
         "parent_commit": "d851aab634c516a993a9dddb521cc444c6225cc5",
         "run": "https://github.com/0xinsider/picks/actions/runs/45026336459"
-      }
+      },
+      "kickoff": "2026-11-22T14:00:00Z",
+      "resolved_at": "2026-11-22T18:17:20.185598Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x6ed45f7e96ad649bba3214f10ebc856a7a8816f98c4b7fc0f72186d9beceeb70",
+        "kickoff": "2026-11-22T14:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2388",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "DO KONCA",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: LEGION vs DO KONCA (BO3) - BLAST Slam Group C",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2388",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T18:17:20.185598Z",
+          "parent_commit": "b9570d0e2cc755f5bafa25c8247bd529c12d438f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45054215917"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
