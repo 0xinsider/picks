@@ -721,16 +721,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a2090d63a1d78755b9bafc047b4f361f9e82e2f88bf48bced7c4fa1c24587c33",
+      "commitment_nonce": "0745836eb730da43084760c7986a11f794777c8175d095a9af5a5a97830831f5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T15:55:13.407821Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2394",
       "first_observation": {
         "observed_at": "2026-11-22T15:55:28.168049Z",
         "parent_commit": "28d332816ba6cd0449cf2ccc28b1b505911e5ace",
         "run": "https://github.com/0xinsider/picks/actions/runs/45040928542"
-      }
+      },
+      "kickoff": "2026-11-22T17:00:00Z",
+      "resolved_at": "2026-11-22T20:27:33.967527Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x14e40da0ac8fcd22117a9b0df0ced97ad606dd1420efa2ab48d9978c51273a7c",
+        "kickoff": "2026-11-22T17:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2394",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Aurora",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: 1win vs Aurora (BO3) - BLAST Slam Group D",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2394",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T20:27:33.967527Z",
+          "parent_commit": "ec6572ebaf52039041fc51f926cf6a23fa99dc04",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45066539190"
+        }
+      ]
     },
     {
       "pick_rank": 19,
