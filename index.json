@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1244,
-    "sealed": 9,
+    "opened": 1245,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 970,
+    "proven": 971,
     "proven_record": {
-      "wins": 515,
+      "wins": 516,
       "losses": 446,
-      "decided": 961,
+      "decided": 962,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-20253.31",
-      "staked": "961000",
+      "profit_usd": "-19726.59",
+      "staked": "962000",
       "roi": "-2.1"
     },
-    "wins": 698,
+    "wins": 699,
     "losses": 535,
     "voids": 7,
-    "decided": 1233,
+    "decided": 1234,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "1492.63",
-    "staked": "1233000",
-    "roi": "0.1",
+    "profit_usd": "2019.34",
+    "staked": "1234000",
+    "roi": "0.2",
     "through": "2026-11-22"
   },
   "picks": [
@@ -49253,16 +49253,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a5140c648082ae8dd6e50167026ced8e71d40c21bfe2632c86553db146ae0d54",
+      "commitment_nonce": "0d9e292bb12e0384230eb55668f3a3a7d32feddf52c4ff8d4979e78c06f84b07",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T15:00:20.034692Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2391",
       "first_observation": {
         "observed_at": "2026-11-22T15:00:30.763033Z",
         "parent_commit": "039b815b92b6d73f62bbcb1226143776e02a4fdb",
         "run": "https://github.com/0xinsider/picks/actions/runs/45035859170"
-      }
+      },
+      "kickoff": "2026-11-22T17:00:00Z",
+      "resolved_at": "2026-11-22T19:49:26.191759Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0xbb9fa03364a605f9f0529fe37ebfb6ee41578d9950bce61f5fae1f4a6bd5903d",
+        "kickoff": "2026-11-22T17:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2391",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Carlos Alcaraz",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "ATP World Tour Finals, Final Stage: Alexander Zverev vs Carlos Alcaraz",
+      "category": "Tennis",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2391",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T19:49:26.191759Z",
+          "parent_commit": "8cb72a267fefbd4be2df06394c18e1f21110eb6b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45062923649"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
