@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1233,
-    "sealed": 19,
+    "opened": 1234,
+    "sealed": 18,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 959,
+    "proven": 960,
     "proven_record": {
       "wins": 510,
-      "losses": 440,
-      "decided": 950,
+      "losses": 441,
+      "decided": 951,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-17642.48",
-      "staked": "950000",
-      "roi": "-1.9"
+      "hit_rate": "53.6",
+      "profit_usd": "-18642.48",
+      "staked": "951000",
+      "roi": "-2.0"
     },
     "wins": 693,
-    "losses": 529,
+    "losses": 530,
     "voids": 7,
-    "decided": 1222,
+    "decided": 1223,
     "withdrawn": 4,
     "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "4103.45",
-    "staked": "1222000",
+    "profit_usd": "3103.45",
+    "staked": "1223000",
     "roi": "0.3",
     "through": "2026-11-22"
   },
@@ -48884,16 +48884,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "23a65aca24ca535e962810b058a7e64ddeb354f13f43bd66403ffd713c510548",
+      "commitment_nonce": "2e3f947b7085e59965d88388b2d26eb775b91a91779a24b3b4065ea19931e9f9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T12:10:07.693669Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2383",
       "first_observation": {
         "observed_at": "2026-11-22T12:10:19.046312Z",
         "parent_commit": "0bf2370f219952006ca7d811bd4790a3e9b5d80e",
         "run": "https://github.com/0xinsider/picks/actions/runs/45020883423"
-      }
+      },
+      "kickoff": "2026-11-22T14:00:00Z",
+      "resolved_at": "2026-11-22T16:10:33.880339Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x4fc0991d11623cadc158e5db4f06f9fe37abd75a3a457a10ad3bceb166f82728",
+        "kickoff": "2026-11-22T14:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2383",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bologna FC 1909 vs. Udinese Calcio",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2383",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T16:10:33.880339Z",
+          "parent_commit": "bbd53335f8e15369aad866bd91e68cbd5acb0c24",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45042337634"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
