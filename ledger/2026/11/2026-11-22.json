@@ -385,16 +385,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "500bb1467463bc5e6c3ab52c61b928d43c2849e0b8e0bad5dbb54caa4bb149fa",
+      "commitment_nonce": "9c8cf459d6425d0bd01aee9696ddecdf28482cb1f9d56ac2e58e448e6d57250a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T12:55:09.141289Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2386",
       "first_observation": {
         "observed_at": "2026-11-22T12:55:19.757066Z",
         "parent_commit": "2af9fff70fa62f64593f060b33c57abbc06f621e",
         "run": "https://github.com/0xinsider/picks/actions/runs/45024748109"
-      }
+      },
+      "kickoff": "2026-11-22T13:30:00Z",
+      "resolved_at": "2026-11-22T17:24:41.435852Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0x79a6bdd5403cffd9dea50e707a665f8a367666fa7bf1e20850f3e3bcfa6fb9c7",
+        "kickoff": "2026-11-22T13:30:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2386",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sparta Rotterdam vs. AZ",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2386",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T17:24:41.435852Z",
+          "parent_commit": "cd6255e63aae7472e376b15c66b044df860e96ce",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45049292844"
+        }
+      ]
     },
     {
       "pick_rank": 11,
