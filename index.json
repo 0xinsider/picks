@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1241,
-    "sealed": 12,
+    "opened": 1242,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 967,
+    "proven": 968,
     "proven_record": {
-      "wins": 513,
+      "wins": 514,
       "losses": 445,
-      "decided": 958,
+      "decided": 959,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-20429.71",
-      "staked": "958000",
+      "hit_rate": "53.6",
+      "profit_usd": "-19879.32",
+      "staked": "959000",
       "roi": "-2.1"
     },
-    "wins": 696,
+    "wins": 697,
     "losses": 534,
     "voids": 7,
-    "decided": 1230,
+    "decided": 1231,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "1316.22",
-    "staked": "1230000",
-    "roi": "0.1",
+    "profit_usd": "1866.61",
+    "staked": "1231000",
+    "roi": "0.2",
     "through": "2026-11-22"
   },
   "picks": [
@@ -49264,16 +49264,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "39eb37d12a4a2359821f7013719ec0ce8b0024c1ceaf0cf042fcda93c6ba3250",
+      "commitment_nonce": "0872b6fa1cbdac7b7f1dfb2fe09e2c53b06bb91b8fe29e9877b9b31c7c9ac101",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T15:55:13.396191Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2393",
       "first_observation": {
         "observed_at": "2026-11-22T15:55:28.168049Z",
         "parent_commit": "28d332816ba6cd0449cf2ccc28b1b505911e5ace",
         "run": "https://github.com/0xinsider/picks/actions/runs/45040928542"
-      }
+      },
+      "kickoff": "2026-11-22T16:30:00Z",
+      "resolved_at": "2026-11-22T18:40:27.859240Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xfa534d64329373d7612451446ebcec914530992b28424da1eafdc980a26a1037",
+        "kickoff": "2026-11-22T16:30:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2393",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Liverpool FC vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2393",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T18:40:27.859240Z",
+          "parent_commit": "2ba7f7ea73e7f606854d2c998d6343a260d2f52b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45056418029"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
