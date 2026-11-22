@@ -763,16 +763,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b65f0703517134d594ddc49e89db4fc777ecd1e749ca1339108a9c10c33839ce",
+      "commitment_nonce": "1ba96770619f3d50e4e740004ce4470071f924e9cb5a5ae965cb7435b6eb162a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:00:52.990591Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2395",
       "first_observation": {
         "observed_at": "2026-11-22T16:01:06.596646Z",
         "parent_commit": "5efa8241a54e792d7e9bce3bce250cd7bc4b085c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45041433180"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T21:25:38.153171Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x8c9d3ab12a472949eb6852326bfe6004883b2670884035c6c5d2b8a05c0dd99b",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2395",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Lions",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Buccaneers vs. Lions",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2395",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T21:25:38.153171Z",
+          "parent_commit": "5025ba0fb68e03ecc8f906a865e7ff954b6176b7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45072036449"
+        }
+      ]
     },
     {
       "pick_rank": 20,
