@@ -528,16 +528,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "58b3104faf59c60af1e7dbe4d550cd358a9794aac787dc0e23303b8e4e6f3888",
+      "commitment_nonce": "e2950fc6ad00bc8c58f9a519a3accd028ce6d96918cb5a8d19365ae37e04f3e2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T14:40:09.135487Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2390",
       "first_observation": {
         "observed_at": "2026-11-22T14:40:19.644785Z",
         "parent_commit": "dea71cd7ce8e66193fe3253add6ce18112087f48",
         "run": "https://github.com/0xinsider/picks/actions/runs/45034061790"
-      }
+      },
+      "kickoff": "2026-11-22T16:30:00Z",
+      "resolved_at": "2026-11-22T18:47:29.117896Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x7716b66406667009cd1a05828479dbd22f59eddd0c10088d8ce7d16950329b2e",
+        "kickoff": "2026-11-22T16:30:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2390",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SV Werder Bremen vs. Hamburger SV",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2390",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T18:47:29.117896Z",
+          "parent_commit": "3d247ebe032bb81f30f6deb6fbfac3f88089dc1d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45057069966"
+        }
+      ]
     },
     {
       "pick_rank": 15,
