@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1235,
-    "sealed": 17,
+    "opened": 1236,
+    "sealed": 16,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 961,
+    "proven": 962,
     "proven_record": {
-      "wins": 511,
+      "wins": 512,
       "losses": 441,
-      "decided": 952,
+      "decided": 953,
       "withdrawn": 2,
       "hit_rate": "53.7",
-      "profit_usd": "-18203.63",
-      "staked": "952000",
-      "roi": "-1.9"
+      "profit_usd": "-17334.47",
+      "staked": "953000",
+      "roi": "-1.8"
     },
-    "wins": 694,
+    "wins": 695,
     "losses": 530,
     "voids": 7,
-    "decided": 1224,
+    "decided": 1225,
     "withdrawn": 4,
     "hit_rate": "56.7",
     "stake_usd": "1000",
-    "profit_usd": "3542.30",
-    "staked": "1224000",
-    "roi": "0.3",
+    "profit_usd": "4411.46",
+    "staked": "1225000",
+    "roi": "0.4",
     "through": "2026-11-22"
   },
   "picks": [
@@ -48927,16 +48927,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8cd70964e4153bc1bd3e7ef676b63a60b919679f7e3aed3887c4c74d15066a4d",
+      "commitment_nonce": "d46ad81edda7cfe8103b1f4ef48a80fa89cbb5ec6fa50553b422ee32d0cbd74e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T12:40:09.882595Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2384",
       "first_observation": {
         "observed_at": "2026-11-22T12:40:24.493046Z",
         "parent_commit": "87f7c939c68bb1258c3a0e381b8b1be7f9e3885c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45023476165"
-      }
+      },
+      "kickoff": "2026-11-22T14:00:00Z",
+      "resolved_at": "2026-11-22T16:12:39.753411Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x525d062ce18889aa803e65868945f71874eb57bff557d657f64708d15566c976",
+        "kickoff": "2026-11-22T14:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2384",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Paris FC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Paris FC vs. Angers SCO",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2384",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T16:12:39.753411Z",
+          "parent_commit": "508f4f6ad893481364cddf85cacd69dc4470fbc1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45042533523"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
