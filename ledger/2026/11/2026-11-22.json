@@ -217,16 +217,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "899e7b70a627354b45adbcfc43c15be956ef3603c4091359d4572d24a0000070",
+      "commitment_nonce": "ddd50a6ab9c2a889328e9ba4b693363c984e2d8cbe00eb42645537257e6d4a5d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T12:00:19.519418Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2382",
       "first_observation": {
         "observed_at": "2026-11-22T12:00:30.831748Z",
         "parent_commit": "c9c097995530e64ff858079794e52587b590d985",
         "run": "https://github.com/0xinsider/picks/actions/runs/45020048102"
-      }
+      },
+      "kickoff": "2026-11-22T14:00:00Z",
+      "resolved_at": "2026-11-22T16:15:30.435018Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x22e5cf046f9cff5c1ef0e834c66f58e7c76901b08bb801b04eae384b7b5963cf",
+        "kickoff": "2026-11-22T14:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2382",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hull City AFC vs. Brighton & Hove Albion FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2382",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T16:15:30.435018Z",
+          "parent_commit": "ea0a854422189853074a24c2d0796d7723ec96f9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45042808895"
+        }
+      ]
     },
     {
       "pick_rank": 7,
