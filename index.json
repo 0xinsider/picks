@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1252,
-    "sealed": 1,
+    "opened": 1253,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 978,
+    "proven": 979,
     "proven_record": {
       "wins": 520,
-      "losses": 449,
-      "decided": 969,
+      "losses": 450,
+      "decided": 970,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-19217.57",
-      "staked": "969000",
-      "roi": "-2.0"
+      "hit_rate": "53.6",
+      "profit_usd": "-20217.57",
+      "staked": "970000",
+      "roi": "-2.1"
     },
     "wins": 703,
-    "losses": 538,
+    "losses": 539,
     "voids": 7,
-    "decided": 1241,
+    "decided": 1242,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "2528.36",
-    "staked": "1241000",
-    "roi": "0.2",
+    "profit_usd": "1528.36",
+    "staked": "1242000",
+    "roi": "0.1",
     "through": "2026-11-22"
   },
   "picks": [
@@ -49683,16 +49683,41 @@
       "publication_order": 25,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "02a43b16431d57fb0d3e1d223971bdd6bba78123a4c548efb2c27733c06ea1b4",
+      "commitment_nonce": "4a4f88be99bbe95ae7a549e3ced92c2713471031e805524aec1b1d95f62c73fb",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:37:47.420353Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2401",
       "first_observation": {
         "observed_at": "2026-11-22T16:37:57.016847Z",
         "parent_commit": "7b2423f58413b8eb96737cb7e2876502c0b4b176",
         "run": "https://github.com/0xinsider/picks/actions/runs/45044908026"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T21:28:31.279969Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x6ab8f6b4d2c5992ce4fe0abd522953301ca3213433beefd5017d1cfbeb4fd69a",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2401",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Steelers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Steelers vs. Eagles",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2401",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T21:28:31.279969Z",
+          "parent_commit": "7901533d0ce6280fddb6a6a7ee9465c25e4dc2e6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45072292234"
+        }
+      ]
     }
   ]
 }
