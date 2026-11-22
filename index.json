@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1229,
-    "sealed": 15,
+    "opened": 1230,
+    "sealed": 14,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 955,
+    "proven": 956,
     "proven_record": {
-      "wins": 506,
+      "wins": 507,
       "losses": 440,
-      "decided": 946,
+      "decided": 947,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-21164.11",
-      "staked": "946000",
-      "roi": "-2.2"
+      "profit_usd": "-20259.34",
+      "staked": "947000",
+      "roi": "-2.1"
     },
-    "wins": 689,
+    "wins": 690,
     "losses": 529,
     "voids": 7,
-    "decided": 1218,
+    "decided": 1219,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "581.83",
-    "staked": "1218000",
-    "roi": "0.0",
+    "profit_usd": "1486.59",
+    "staked": "1219000",
+    "roi": "0.1",
     "through": "2026-11-22"
   },
   "picks": [
@@ -48712,16 +48712,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a6160f9517cc6d5c692cdf63a7f45f7226298b3654aaea7a3765113b2496d228",
+      "commitment_nonce": "d8aaf1981b2f0492b28a9a339a40ad361c96ec84267194b5f56f7a0de09105c5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T10:43:19.070785Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2379",
       "first_observation": {
         "observed_at": "2026-11-22T10:43:30.725201Z",
         "parent_commit": "730fa0eade3eb90ee84b42c44c1c55653a940b6a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45013805494"
-      }
+      },
+      "kickoff": "2026-11-22T11:15:00Z",
+      "resolved_at": "2026-11-22T15:11:40.584400Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xbf094d600b4732a22d8e99f84349ddb5a9ffa0fdb2b5ac262ed2b062e115393d",
+        "kickoff": "2026-11-22T11:15:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2379",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Twente vs. Willem II Tilburg",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2379",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T15:11:40.584400Z",
+          "parent_commit": "3827cb031a90e12a371fb88eb170134e8a531228",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45036939428"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-22",
