@@ -822,16 +822,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "019e6dc6f0a86de9e15ba331e3a25ce25ee17d14f488c677913f81efa8d5aa28",
+      "commitment_nonce": "198b2083c2d51dda1c65eebdd5e232bde97f3228c9c494161f560675058ef322",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:10:12.308112Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2397",
       "first_observation": {
         "observed_at": "2026-11-22T16:10:22.546932Z",
         "parent_commit": "142e3e9799052e224be0f04e1abe3b7e7f99ca2c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45042305919"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T21:22:40.249749Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0x9d314ac3a5eea08a960f9547bd3686e58c31d3342b143425d5af22bb29d822dc",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2397",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dolphins vs. Bills",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2397",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-22T21:22:40.249749Z",
+          "parent_commit": "76d874179dd7656340a6bec72cefb6bad8ba87df",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45071753050"
+        }
+      ]
     },
     {
       "pick_rank": 22,
@@ -839,16 +864,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "bd91f4b54fee1582e4ebc34a532c1d11263e5bc07a47db43124199267fad33fb",
+      "commitment_nonce": "cd11a0399c75b2dc8b0fe1d02332d707c27d179ef2ce4eb5b74cd8620b19322f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-22T16:10:12.321491Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2398",
       "first_observation": {
         "observed_at": "2026-11-22T16:10:22.546932Z",
         "parent_commit": "142e3e9799052e224be0f04e1abe3b7e7f99ca2c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45042305919"
-      }
+      },
+      "kickoff": "2026-11-22T18:00:00Z",
+      "resolved_at": "2026-11-22T21:22:31.584975Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x3ad2bc5007669e25fa01a5c6e49b05e3f33024e432c9eee577e89a2cf652220e",
+        "kickoff": "2026-11-22T18:00:00Z",
+        "pick_date": "2026-11-22",
+        "pick_id": "2398",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Bears",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Saints vs. Bears",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2398",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-22T21:22:31.584975Z",
+          "parent_commit": "76d874179dd7656340a6bec72cefb6bad8ba87df",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45071753050"
+        }
+      ]
     },
     {
       "pick_rank": 23,
