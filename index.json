@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1260,
-    "sealed": 7,
+    "opened": 1261,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 986,
+    "proven": 987,
     "proven_record": {
       "wins": 524,
-      "losses": 453,
-      "decided": 977,
+      "losses": 454,
+      "decided": 978,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-17597.64",
-      "staked": "977000",
-      "roi": "-1.8"
+      "profit_usd": "-18597.64",
+      "staked": "978000",
+      "roi": "-1.9"
     },
     "wins": 707,
-    "losses": 542,
+    "losses": 543,
     "voids": 7,
-    "decided": 1249,
+    "decided": 1250,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "4148.30",
-    "staked": "1249000",
+    "profit_usd": "3148.30",
+    "staked": "1250000",
     "roi": "0.3",
     "through": "2026-11-23"
   },
@@ -49941,16 +49941,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2bda8077788da694abed2eb0fe94b33ff9f44ea542ff740c3b4aefc875d4a52c",
+      "commitment_nonce": "6fa62be755399aadddcb5b45ffbb774ceb82719575192f42f641556d51159026",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T17:10:09.532503Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2407",
       "first_observation": {
         "observed_at": "2026-11-23T17:10:21.167142Z",
         "parent_commit": "cc65f3db75950e1ff786b10ee517f8f21d92acb0",
         "run": "https://github.com/0xinsider/picks/actions/runs/45224657518"
-      }
+      },
+      "kickoff": "2026-11-23T18:00:00Z",
+      "resolved_at": "2026-11-23T21:57:12.593803Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.625000",
+        "condition_id": "0xcaee8a5af5f3494bcfe6d8a95cabf16569be01ec6c66ad6fcbdc1fc241a245f5",
+        "kickoff": "2026-11-23T18:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2407",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brøndby IF vs. FC Midtjylland",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2407",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-23T21:57:12.593803Z",
+          "parent_commit": "2efca2a1e5a4bd477f853e1c265f46801b9951e0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45274831200"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
