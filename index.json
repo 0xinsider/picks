@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1261,
-    "sealed": 9,
+    "opened": 1262,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 987,
+    "proven": 988,
     "proven_record": {
-      "wins": 524,
+      "wins": 525,
       "losses": 454,
-      "decided": 978,
+      "decided": 979,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-18597.64",
-      "staked": "978000",
-      "roi": "-1.9"
+      "profit_usd": "-17795.84",
+      "staked": "979000",
+      "roi": "-1.8"
     },
-    "wins": 707,
+    "wins": 708,
     "losses": 543,
     "voids": 7,
-    "decided": 1250,
+    "decided": 1251,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "3148.30",
-    "staked": "1250000",
+    "profit_usd": "3950.10",
+    "staked": "1251000",
     "roi": "0.3",
     "through": "2026-11-23"
   },
@@ -50070,16 +50070,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "71dacad52596ed6221d42837ea80f98019bb85edf518885083d9ae18865ebe2d",
+      "commitment_nonce": "60198faf71b85123b5c12e216bbf7b342eb6d25962f607fd2a32e7c906bba0c4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T18:02:38.797670Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2410",
       "first_observation": {
         "observed_at": "2026-11-23T18:02:49.662599Z",
         "parent_commit": "558d3f4ae62f2fb079de00b0c2b8e26afe5b5c7a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45234116986"
-      }
+      },
+      "kickoff": "2026-11-23T20:00:00Z",
+      "resolved_at": "2026-11-23T22:11:11.555226Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x5f726ea51f019e5a42ac8dc3215923f9c1866479a4ae1a890a5cd8278b89b68e",
+        "kickoff": "2026-11-23T20:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2410",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Levante UD vs. Elche CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2410",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T22:11:11.555226Z",
+          "parent_commit": "851be25f7ab5efa4b177cc21ddf7a5cfb97c5a09",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45277198948"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
