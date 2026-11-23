@@ -150,16 +150,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cddcc99619daef78fdeef246529f085bdaf19518fec6a89bf78ac13ec32a9c70",
+      "commitment_nonce": "514b9b4d058328f88cb56e2e75a3774cab87c385faddb4af712e29d55197f72e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T15:10:09.753467Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2406",
       "first_observation": {
         "observed_at": "2026-11-23T15:10:23.483438Z",
         "parent_commit": "07068696bb37d8eb59bafdbb8dbc9241bbed83de",
         "run": "https://github.com/0xinsider/picks/actions/runs/45202167213"
-      }
+      },
+      "kickoff": "2026-11-23T17:00:00Z",
+      "resolved_at": "2026-11-23T19:57:46.489535Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xe82b6aa823092620dde717619ecb1a8c9dd51114285a05cc7fd756761146d197",
+        "kickoff": "2026-11-23T17:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2406",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Team Liquid",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: Team Liquid vs DO KONCA (BO3) - BLAST Slam Group C",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2406",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T19:57:46.489535Z",
+          "parent_commit": "6bfbc108624edc6a1ed75114a937791aec6a4b53",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45254350390"
+        }
+      ]
     },
     {
       "pick_rank": 6,
