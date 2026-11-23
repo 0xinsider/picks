@@ -427,16 +427,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3ab62d9abc394f20a0de1b61d74f55c6dd615caed6bc3f47b0457ce2b7a12c1d",
+      "commitment_nonce": "520e728923ebfb0c23fa0114e81fec4b77115ee5cc28fb7018ac57310801a08a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T18:10:08.757911Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2412",
       "first_observation": {
         "observed_at": "2026-11-23T18:10:20.456481Z",
         "parent_commit": "190cdd803d2e87dedc37361a52e756befed7aba5",
         "run": "https://github.com/0xinsider/picks/actions/runs/45235473780"
-      }
+      },
+      "kickoff": "2026-11-23T20:00:00Z",
+      "resolved_at": "2026-11-23T22:19:11.743489Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.315000",
+        "condition_id": "0x1e27ee2ab2865d6abc31d28246d3c13637f572b4153390d55e94f592bafd647e",
+        "kickoff": "2026-11-23T20:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2412",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brentford FC vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2412",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-23T22:19:11.743489Z",
+          "parent_commit": "0347fca20953a3a182b37bae7f8bd867711ed701",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45278520763"
+        }
+      ]
     },
     {
       "pick_rank": 12,
