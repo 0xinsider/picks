@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1258,
-    "sealed": 9,
+    "opened": 1260,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 984,
+    "proven": 986,
     "proven_record": {
-      "wins": 523,
-      "losses": 452,
-      "decided": 975,
+      "wins": 524,
+      "losses": 453,
+      "decided": 977,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-19519.21",
-      "staked": "975000",
-      "roi": "-2.0"
+      "profit_usd": "-17597.64",
+      "staked": "977000",
+      "roi": "-1.8"
     },
-    "wins": 706,
-    "losses": 541,
+    "wins": 707,
+    "losses": 542,
     "voids": 7,
-    "decided": 1247,
+    "decided": 1249,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "2226.73",
-    "staked": "1247000",
-    "roi": "0.2",
+    "profit_usd": "4148.30",
+    "staked": "1249000",
+    "roi": "0.3",
     "through": "2026-11-23"
   },
   "picks": [
@@ -49959,16 +49959,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b20d76aa15d88f817823ac73634b8eef07a3d8d69f0abd82d2a8dc119723093d",
+      "commitment_nonce": "77e05907259312ed9cdbeef913a209a63dc298ae937592aaa194586731b1e287",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T17:10:09.544960Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2408",
       "first_observation": {
         "observed_at": "2026-11-23T17:10:21.167142Z",
         "parent_commit": "cc65f3db75950e1ff786b10ee517f8f21d92acb0",
         "run": "https://github.com/0xinsider/picks/actions/runs/45224657518"
-      }
+      },
+      "kickoff": "2026-11-23T18:00:00Z",
+      "resolved_at": "2026-11-23T21:53:54.456479Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xa0acff214ee63cd238a1e8616c24d17e6936dc821d3c893ba0dd07247537f70f",
+        "kickoff": "2026-11-23T18:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2408",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Orgryte IS vs. Kalmar FF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2408",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-23T21:53:54.456479Z",
+          "parent_commit": "d04ede1ba817db9254f5424784d701817d625818",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45274286309"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
@@ -49977,16 +50002,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a37921c3604ed5490db93f69d82d3f0a89fcf902c72ad8764800fe92fa4115b9",
+      "commitment_nonce": "09544643a0d45ae5f42bbed21ad4d74d0f37af0b3c8bcbe5f58e8c2a4cc6c89a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T17:45:39.229850Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2409",
       "first_observation": {
         "observed_at": "2026-11-23T17:45:53.526800Z",
         "parent_commit": "10d5500afba06d9ea6f41de34613967fe6ea9847",
         "run": "https://github.com/0xinsider/picks/actions/runs/45231109722"
-      }
+      },
+      "kickoff": "2026-11-23T19:45:00Z",
+      "resolved_at": "2026-11-23T21:53:55.898004Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.255000",
+        "condition_id": "0x4a81c44c316e5de3c25a14acb7649c7cb0bcdb4bbd9d07be74531c7026564829",
+        "kickoff": "2026-11-23T19:45:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2409",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "AC Monza vs. ACF Fiorentina",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2409",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T21:53:55.898004Z",
+          "parent_commit": "d04ede1ba817db9254f5424784d701817d625818",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45274286309"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
