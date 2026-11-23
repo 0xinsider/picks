@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1262,
-    "sealed": 8,
+    "opened": 1263,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 988,
+    "proven": 989,
     "proven_record": {
-      "wins": 525,
+      "wins": 526,
       "losses": 454,
-      "decided": 979,
+      "decided": 980,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-17795.84",
-      "staked": "979000",
-      "roi": "-1.8"
+      "hit_rate": "53.7",
+      "profit_usd": "-16854.09",
+      "staked": "980000",
+      "roi": "-1.7"
     },
-    "wins": 708,
+    "wins": 709,
     "losses": 543,
     "voids": 7,
-    "decided": 1251,
+    "decided": 1252,
     "withdrawn": 4,
     "hit_rate": "56.6",
     "stake_usd": "1000",
-    "profit_usd": "3950.10",
-    "staked": "1251000",
-    "roi": "0.3",
+    "profit_usd": "4891.85",
+    "staked": "1252000",
+    "roi": "0.4",
     "through": "2026-11-23"
   },
   "picks": [
@@ -50113,16 +50113,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "928fd631abbe8be8555eb801339724751a492e5578e805d586e6eeeaf1e149b4",
+      "commitment_nonce": "12eb8a17113f364b3c140d8cf621c9cf2439de5f2cb5a29b7e776543cfc1a3ec",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T18:08:08.543236Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2411",
       "first_observation": {
         "observed_at": "2026-11-23T18:08:21.933735Z",
         "parent_commit": "b7db16b8f0ca806cceb7d0df5ea7ad4d5dbdc1e8",
         "run": "https://github.com/0xinsider/picks/actions/runs/45235113624"
-      }
+      },
+      "kickoff": "2026-11-23T20:00:00Z",
+      "resolved_at": "2026-11-23T22:18:40.142712Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x22f3d67b987ba450379b432cf81335bd22fcd54336db85157cb9a7a502f8a325",
+        "kickoff": "2026-11-23T20:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2411",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Brentford FC vs. Everton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2411",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T22:18:40.142712Z",
+          "parent_commit": "6d1891f5732cd4d831be591adf9b1a53e26585fd",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45278439094"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
