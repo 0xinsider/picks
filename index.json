@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1255,
-    "sealed": 10,
+    "opened": 1256,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 981,
+    "proven": 982,
     "proven_record": {
-      "wins": 520,
+      "wins": 521,
       "losses": 452,
-      "decided": 972,
+      "decided": 973,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-22217.57",
-      "staked": "972000",
-      "roi": "-2.3"
+      "profit_usd": "-20918.72",
+      "staked": "973000",
+      "roi": "-2.1"
     },
-    "wins": 703,
+    "wins": 704,
     "losses": 541,
     "voids": 7,
-    "decided": 1244,
+    "decided": 1245,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "-471.64",
-    "staked": "1244000",
-    "roi": "-0.0",
+    "profit_usd": "827.22",
+    "staked": "1245000",
+    "roi": "0.1",
     "through": "2026-11-23"
   },
   "picks": [
@@ -49812,16 +49812,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f9da37dfa3c06722f5113a1e2b260d2e6060b00596894915ae90550b89fbc1c2",
+      "commitment_nonce": "a1d30582b06c92041aaa2250978ac3978ac8db0ac8d5e82059a56f8bc95597d1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T13:25:09.860331Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2404",
       "first_observation": {
         "observed_at": "2026-11-23T13:25:25.078274Z",
         "parent_commit": "a67944986eb91605f00d35f6a148be9a4eeaf1b8",
         "run": "https://github.com/0xinsider/picks/actions/runs/45183725717"
-      }
+      },
+      "kickoff": "2026-11-23T15:00:00Z",
+      "resolved_at": "2026-11-23T18:58:17.543710Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x9468abe0b48e09bd3b0ca46fab8e969e5320835bdfb76e033ca21d9dc581fcd3",
+        "kickoff": "2026-11-23T15:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2404",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Asteras Tripolis vs. Aris Thessaloniki",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2404",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T18:58:17.543710Z",
+          "parent_commit": "ceade540e901e4da8b444c51600ddf7ab12cae6b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45243966051"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
