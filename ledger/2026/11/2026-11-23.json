@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fc88629f44da63b7542b5d2d70f3da4c2801ec2b6ed18a1268693cfcba5bb61f",
+      "commitment_nonce": "4f85f3e2971e893e132429412b1d519d08ad353577b1578e50aab8c833c43aa3",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T15:10:09.744272Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2405",
       "first_observation": {
         "observed_at": "2026-11-23T15:10:23.483438Z",
         "parent_commit": "07068696bb37d8eb59bafdbb8dbc9241bbed83de",
         "run": "https://github.com/0xinsider/picks/actions/runs/45202167213"
-      }
+      },
+      "kickoff": "2026-11-23T17:00:00Z",
+      "resolved_at": "2026-11-23T20:58:22.307959Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x3e042c4ff08af906dd9610fb8711f19ee01ca096cf2b02fda86f012f5b69b318",
+        "kickoff": "2026-11-23T17:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2405",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rams Başakşehir FK vs. Çorum FK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2405",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-23T20:58:22.307959Z",
+          "parent_commit": "86f24538a72137cdfe3c34d112370424693cf26b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45264824581"
+        }
+      ]
     },
     {
       "pick_rank": 5,
