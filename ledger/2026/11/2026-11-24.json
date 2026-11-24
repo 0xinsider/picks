@@ -469,16 +469,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b3d8ab0fae6fb9ab6ddcded5a18cf411f206dc9d8e0dec04bac9ab451dcbc55a",
+      "commitment_nonce": "8279c737991ced97aff7111118fcc7e4413b49a55d7a1061e5971dbae98eafe1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T16:59:40.848718Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2438",
       "first_observation": {
         "observed_at": "2026-11-24T16:59:53.995631Z",
         "parent_commit": "56d41293b6d71f2577cd1260e5b49b4b1743b6da",
         "run": "https://github.com/0xinsider/picks/actions/runs/45443512356"
-      }
+      },
+      "kickoff": "2026-11-24T17:30:00Z",
+      "resolved_at": "2026-11-24T21:16:29.318191Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.375000",
+        "condition_id": "0xf3b8ae5ebda204ac8c85fdf0f846d21ce06a1d403cefae60f9c527d91ce12d3e",
+        "kickoff": "2026-11-24T17:30:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2438",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "OG",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: OG vs Aurora (BO3) - BLAST Slam Last Chance Qualifier",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2438",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T21:16:29.318191Z",
+          "parent_commit": "882b7296d338ea95d67d081464b2c2b3ef3cdb79",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45489419335"
+        }
+      ]
     },
     {
       "pick_rank": 13,
