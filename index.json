@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1283,
-    "sealed": 6,
+    "opened": 1284,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1009,
+    "proven": 1010,
     "proven_record": {
-      "wins": 535,
+      "wins": 536,
       "losses": 465,
-      "decided": 1000,
+      "decided": 1001,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-17790.44",
-      "staked": "1000000",
-      "roi": "-1.8"
+      "profit_usd": "-17051.31",
+      "staked": "1001000",
+      "roi": "-1.7"
     },
-    "wins": 718,
+    "wins": 719,
     "losses": 554,
     "voids": 7,
-    "decided": 1272,
+    "decided": 1273,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "3955.49",
-    "staked": "1272000",
-    "roi": "0.3",
+    "profit_usd": "4694.62",
+    "staked": "1273000",
+    "roi": "0.4",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51034,16 +51034,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "9384f36fe296be353b96d0cc756be1a473da1950bf45d1b83b5751107061ad17",
+      "commitment_nonce": "7cc0e0603bcfd49e981c94811b69064a63543dba42cb1297baf28f16b1aaf327",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T12:41:39.791222Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2433",
       "first_observation": {
         "observed_at": "2026-11-24T12:41:51.176437Z",
         "parent_commit": "351dfec83c3df7216d38f051a5a6421abba9a814",
         "run": "https://github.com/0xinsider/picks/actions/runs/45395987224"
-      }
+      },
+      "kickoff": "2026-11-24T14:00:00Z",
+      "resolved_at": "2026-11-24T16:34:26.274264Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x2f582fea41e8af343cac5c3a0d6f3d69b04e2079250aaab734b99d9c76995957",
+        "kickoff": "2026-11-24T14:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2433",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "PARIVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: GamerLegion vs PARIVISION (BO3) - BLAST Slam Seeding Matches",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2433",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T16:34:26.274264Z",
+          "parent_commit": "ffe5ddf52b017ea5f9b8b3a6384f2e0d835a9b0b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45438710051"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
