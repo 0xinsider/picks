@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1288,
-    "sealed": 10,
+    "opened": 1289,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1014,
+    "proven": 1015,
     "proven_record": {
-      "wins": 538,
+      "wins": 539,
       "losses": 467,
-      "decided": 1005,
+      "decided": 1006,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-17981.36",
-      "staked": "1005000",
-      "roi": "-1.8"
+      "hit_rate": "53.6",
+      "profit_usd": "-17542.51",
+      "staked": "1006000",
+      "roi": "-1.7"
     },
-    "wins": 721,
+    "wins": 722,
     "losses": 556,
     "voids": 7,
-    "decided": 1277,
+    "decided": 1278,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "3764.57",
-    "staked": "1277000",
+    "profit_usd": "4203.42",
+    "staked": "1278000",
     "roi": "0.3",
     "through": "2026-11-24"
   },
@@ -51102,16 +51102,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0dd1c01af8a3d6c49557817be286101aad6f40496982d7b94e35f7be29acc436",
+      "commitment_nonce": "b35bee2bb0c5635d4b16274d08d4f4a49eeaf324b4f70c32ddd355c3fb7921f4",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T15:32:39.430473Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2434",
       "first_observation": {
         "observed_at": "2026-11-24T15:32:54.407391Z",
         "parent_commit": "edcbd791e20c8bfad700fe041667e2b10e0a3fcc",
         "run": "https://github.com/0xinsider/picks/actions/runs/45426733604"
-      }
+      },
+      "kickoff": "2026-11-24T17:00:00Z",
+      "resolved_at": "2026-11-24T20:30:26.892004Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.695000",
+        "condition_id": "0x74920c622746eeaeca312713a31d7e5c30a2d6ead5e1cf7ba1c5e90536ca87ea",
+        "kickoff": "2026-11-24T17:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2434",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Team Liquid",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: Xtreme Gaming vs Team Liquid (BO3) - BLAST Slam Last Chance Qualifier",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2434",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T20:30:26.892004Z",
+          "parent_commit": "81bc94a8f143c80249a24734db1a2cdb4dc51439",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45481507154"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
