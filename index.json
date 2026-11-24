@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1282,
-    "sealed": 3,
+    "opened": 1283,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1008,
+    "proven": 1009,
     "proven_record": {
-      "wins": 534,
+      "wins": 535,
       "losses": 465,
-      "decided": 999,
+      "decided": 1000,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-18560.35",
-      "staked": "999000",
-      "roi": "-1.9"
+      "profit_usd": "-17790.44",
+      "staked": "1000000",
+      "roi": "-1.8"
     },
-    "wins": 717,
+    "wins": 718,
     "losses": 554,
     "voids": 7,
-    "decided": 1271,
+    "decided": 1272,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "3185.58",
-    "staked": "1271000",
+    "profit_usd": "3955.49",
+    "staked": "1272000",
     "roi": "0.3",
     "through": "2026-11-24"
   },
@@ -50973,16 +50973,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "17ec61beae9c851ee30094e0e8551ac1aa564784b265bb163b5eea0f76116ac3",
+      "commitment_nonce": "b037182ff0d3523f68fa1e628f2156b53f873434677d9e3c35cbb00338bcd748",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T11:15:06.372485Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2431",
       "first_observation": {
         "observed_at": "2026-11-24T11:15:16.791604Z",
         "parent_commit": "0c4c4bebb8201dd419629381b3d347352644e699",
         "run": "https://github.com/0xinsider/picks/actions/runs/45382449229"
-      }
+      },
+      "kickoff": "2026-11-24T12:00:00Z",
+      "resolved_at": "2026-11-24T13:02:24.608372Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.565000",
+        "condition_id": "0xcb8986e5d17cdd33297b4b66da1d5457ec34578af105ee5048cc36080d979e1c",
+        "kickoff": "2026-11-24T12:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2431",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FaZe",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: FaZe vs GOSH (BO1) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2431",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T13:02:24.608372Z",
+          "parent_commit": "a19ae6ef00530987ac158fc8390468e3ec9cab99",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45399343749"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
