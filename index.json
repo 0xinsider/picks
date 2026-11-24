@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1290,
-    "sealed": 8,
+    "opened": 1291,
+    "sealed": 7,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1016,
+    "proven": 1017,
     "proven_record": {
       "wins": 539,
-      "losses": 468,
-      "decided": 1007,
+      "losses": 469,
+      "decided": 1008,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-18542.51",
-      "staked": "1007000",
-      "roi": "-1.8"
+      "profit_usd": "-19542.51",
+      "staked": "1008000",
+      "roi": "-1.9"
     },
     "wins": 722,
-    "losses": 557,
+    "losses": 558,
     "voids": 7,
-    "decided": 1279,
+    "decided": 1280,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "3203.42",
-    "staked": "1279000",
-    "roi": "0.3",
+    "profit_usd": "2203.42",
+    "staked": "1280000",
+    "roi": "0.2",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51317,16 +51317,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c5479f670d32557ae7533b24794b7e1ba6cce8826ed040b8e842b807decfd4aa",
+      "commitment_nonce": "f2d4e6821cdb5e0c450e410b947dcaedec40113ba9da593998a2b3792076106b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:00:11.477359Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2439",
       "first_observation": {
         "observed_at": "2026-11-24T18:00:26.521584Z",
         "parent_commit": "b5757fe510721061273578a41657e0d3a1f93f93",
         "run": "https://github.com/0xinsider/picks/actions/runs/45454712739"
-      }
+      },
+      "kickoff": "2026-11-24T20:00:00Z",
+      "resolved_at": "2026-11-24T22:07:28.345396Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x77484b169e34d40254f00064d5c57a615214a242fd9590d4706e1dc2855339ef",
+        "kickoff": "2026-11-24T20:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2439",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Manchester City FC vs. SSC Napoli",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2439",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T22:07:28.345396Z",
+          "parent_commit": "c19c4a9ab7a63ee07c77b079f498f4c22716af06",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45497877920"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
