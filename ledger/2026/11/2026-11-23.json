@@ -797,16 +797,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f04d9113aaee073de550364b40e071736bdf3cbc3caee50f5980a8e8945d3e1e",
+      "commitment_nonce": "837749c43c9d2c4f07988de49d10996a80ac02095bc23902ab7f90c4fec3287e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:32:15.696947Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2422",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:30.683925Z",
         "parent_commit": "059b5918d012dba489368a49af63973a5fa0ecce",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280620368"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:26:51.713495Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x624eadfdc89078862aa447bcf4d36d1c303535de4b7ec016d2d385c4543aac51",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2422",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Utah",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Utah vs. Jets",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2422",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T03:26:51.713495Z",
+          "parent_commit": "73343be8dc02afc185b503d0640bcdbb87e6b28d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45319569667"
+        }
+      ]
     },
     {
       "pick_rank": 22,
