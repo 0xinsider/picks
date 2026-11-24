@@ -755,16 +755,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1ecdd8db2890d4c51ade87665887cdb612e1f4250105fc3bccffc1d6d3706c14",
+      "commitment_nonce": "e6dd295a56a1b30c5348b42ecb49f790331105373962759d784b0d4b2d452d8b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:31:57.760986Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2421",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:09.507344Z",
         "parent_commit": "2864d80eac0245a2aa9c5aa4aee8920f35ef463a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280574951"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:11:31.249519Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.665000",
+        "condition_id": "0xc42460b4eca4c9f8871e21184ce28a6b7c1ae422bebad855962db1d6af550347",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2421",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Thunder vs. Pacers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2421",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T03:11:31.249519Z",
+          "parent_commit": "044d08324cb4de340f770bec4eabcb48518fb0cc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45317746563"
+        }
+      ]
     },
     {
       "pick_rank": 21,
@@ -806,16 +831,41 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "918815c33800b9916d44affcfc8e9c257dc2a3ab28aab8a2dd7347413e403e98",
+      "commitment_nonce": "e750a32c1d0665e37917a7b664cb4f262b67bf2f892079602daf098f19040101",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:32:15.726201Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2424",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:30.683925Z",
         "parent_commit": "059b5918d012dba489368a49af63973a5fa0ecce",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280620368"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:11:27.799819Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x0d73aa16921860ab607736bc3e852c3f41df7a899c5d44b6989014af88eba507",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2424",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Thunder",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Thunder vs. Pacers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2424",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T03:11:27.799819Z",
+          "parent_commit": "044d08324cb4de340f770bec4eabcb48518fb0cc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45317746563"
+        }
+      ]
     },
     {
       "pick_rank": 24,
