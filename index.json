@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1292,
-    "sealed": 6,
+    "opened": 1293,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1018,
+    "proven": 1019,
     "proven_record": {
-      "wins": 540,
+      "wins": 541,
       "losses": 469,
-      "decided": 1009,
+      "decided": 1010,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-18562.32",
-      "staked": "1009000",
+      "hit_rate": "53.6",
+      "profit_usd": "-17675.52",
+      "staked": "1010000",
       "roi": "-1.8"
     },
-    "wins": 723,
+    "wins": 724,
     "losses": 558,
     "voids": 7,
-    "decided": 1281,
+    "decided": 1282,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "3183.62",
-    "staked": "1281000",
-    "roi": "0.2",
+    "profit_usd": "4070.41",
+    "staked": "1282000",
+    "roi": "0.3",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51421,16 +51421,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a9ae84ab7abacbbd7e956265cff249bb1d44f1598f1f3fb97eeda1a87cd6242c",
+      "commitment_nonce": "2cdf0699e023ee46e6662d7eca875f0648878d79c9bcf812df05eb9fbf57c392",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:13:38.725739Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2442",
       "first_observation": {
         "observed_at": "2026-11-24T18:13:50.756290Z",
         "parent_commit": "0df62c6fcb399ce5ec984460d5c23a5655acd09f",
         "run": "https://github.com/0xinsider/picks/actions/runs/45457193351"
-      }
+      },
+      "kickoff": "2026-11-24T20:00:00Z",
+      "resolved_at": "2026-11-24T22:13:33.735548Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.530000",
+        "condition_id": "0x4db31b31ce7819b7507e9da5afbf5a4f315e176fc16ccdd842231e5f17c003ea",
+        "kickoff": "2026-11-24T20:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2442",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Real Madrid CF",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Real Madrid CF vs. PSV",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2442",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T22:13:33.735548Z",
+          "parent_commit": "b9771764e8e777f8ab44d0cfdeff7204a6d1ce9d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45498893962"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
