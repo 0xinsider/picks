@@ -570,16 +570,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "54d1f86f582fad4f5f6d190fd7ee991813b61826c40c12faca3a65183e041143",
+      "commitment_nonce": "193b3a5d86fb2fdfcd8cc07351201003336ca9ca8e238c4c1f9f7b319066c69e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:00:11.496517Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2441",
       "first_observation": {
         "observed_at": "2026-11-24T18:00:26.521584Z",
         "parent_commit": "b5757fe510721061273578a41657e0d3a1f93f93",
         "run": "https://github.com/0xinsider/picks/actions/runs/45454712739"
-      }
+      },
+      "kickoff": "2026-11-24T20:00:00Z",
+      "resolved_at": "2026-11-24T22:10:15.160414Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x290d36383a33f7c705fad6bafeb4bb07e0899ca01d41d72cf3c048129e925039",
+        "kickoff": "2026-11-24T20:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2441",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Arsenal FC vs. BV Borussia 09 Dortmund",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2441",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T22:10:15.160414Z",
+          "parent_commit": "a03cd6d1f6108cecd22fab6c32d1e3829f77133c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45498340854"
+        }
+      ]
     },
     {
       "pick_rank": 16,
