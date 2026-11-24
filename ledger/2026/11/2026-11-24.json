@@ -49,16 +49,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "70bb6fd5199a68fd1d17895ecc0d14243916bc2cf9e557470c06358d709b5950",
+      "commitment_nonce": "b0abf8d5f1d5d3a810534b6a31340594e1f8de5d07c4a9bf276c05f4ea0e03d6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T09:00:03.909169Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2428",
       "first_observation": {
         "observed_at": "2026-11-24T09:00:21.228400Z",
         "parent_commit": "b7a7256accf65c571245b5c1f05846ed1a6ba96c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45361026614"
-      }
+      },
+      "kickoff": "2026-11-24T11:00:00Z",
+      "resolved_at": "2026-11-24T12:14:25.337575Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.335000",
+        "condition_id": "0x084c248fa3e4f3d42440380672afd2c21d3ea5b0aac9957966756286296f1d2a",
+        "kickoff": "2026-11-24T11:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2428",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "FlyQuest",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: PVISION vs FlyQuest (BO1) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2428",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T12:14:25.337575Z",
+          "parent_commit": "ac2df545cccbba2145cec5a9bd49d9137c180b50",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45391585994"
+        }
+      ]
     },
     {
       "pick_rank": 3,
