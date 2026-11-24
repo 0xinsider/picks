@@ -335,16 +335,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d22ed8536a573be0fac73f58b4ead17b13a9a1fb77d77ca412f7c8095d4454b7",
+      "commitment_nonce": "44a17378e121bd014a966fb337868c5053093295c627a271ec628280c8ef85f2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T15:45:08.520113Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2436",
       "first_observation": {
         "observed_at": "2026-11-24T15:45:19.729294Z",
         "parent_commit": "1c14e9b42659f87976bae38aa1fe534d3232296a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45429126993"
-      }
+      },
+      "kickoff": "2026-11-24T17:45:00Z",
+      "resolved_at": "2026-11-24T19:56:19.412895Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x7ce053c2c6b9eec2fa7202f3d19f2ea1f47f6cd6717e31ebee64e645c89c2bae",
+        "kickoff": "2026-11-24T17:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2436",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Galatasaray SK vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2436",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T19:56:19.412895Z",
+          "parent_commit": "d7640be83bdd311120c79c2f4ff77a5567b7a0d1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45475472780"
+        }
+      ]
     },
     {
       "pick_rank": 11,

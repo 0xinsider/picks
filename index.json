@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1286,
-    "sealed": 12,
+    "opened": 1287,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1012,
+    "proven": 1013,
     "proven_record": {
-      "wins": 537,
+      "wins": 538,
       "losses": 466,
-      "decided": 1003,
+      "decided": 1004,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-17690.77",
-      "staked": "1003000",
-      "roi": "-1.8"
+      "hit_rate": "53.6",
+      "profit_usd": "-16981.36",
+      "staked": "1004000",
+      "roi": "-1.7"
     },
-    "wins": 720,
+    "wins": 721,
     "losses": 555,
     "voids": 7,
-    "decided": 1275,
+    "decided": 1276,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "4055.17",
-    "staked": "1275000",
-    "roi": "0.3",
+    "profit_usd": "4764.57",
+    "staked": "1276000",
+    "roi": "0.4",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51138,16 +51138,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d22ed8536a573be0fac73f58b4ead17b13a9a1fb77d77ca412f7c8095d4454b7",
+      "commitment_nonce": "44a17378e121bd014a966fb337868c5053093295c627a271ec628280c8ef85f2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T15:45:08.520113Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2436",
       "first_observation": {
         "observed_at": "2026-11-24T15:45:19.729294Z",
         "parent_commit": "1c14e9b42659f87976bae38aa1fe534d3232296a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45429126993"
-      }
+      },
+      "kickoff": "2026-11-24T17:45:00Z",
+      "resolved_at": "2026-11-24T19:56:19.412895Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x7ce053c2c6b9eec2fa7202f3d19f2ea1f47f6cd6717e31ebee64e645c89c2bae",
+        "kickoff": "2026-11-24T17:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2436",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Galatasaray SK vs. Aston Villa FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2436",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T19:56:19.412895Z",
+          "parent_commit": "d7640be83bdd311120c79c2f4ff77a5567b7a0d1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45475472780"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
