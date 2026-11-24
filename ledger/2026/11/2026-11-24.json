@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "790f9ad41f0c635d7b44a2f194b3105a7ba6583ac86a6531a63f1ef5de451df8",
+      "commitment_nonce": "cffd78e232674dc63529d6ea9055fabcda0d3d08623394ac33ff196cc34cae76",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T08:56:56.926287Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2427",
       "first_observation": {
         "observed_at": "2026-11-24T08:57:09.378853Z",
         "parent_commit": "871e83632630c7159e143b9c7c78fd911f21fed4",
         "run": "https://github.com/0xinsider/picks/actions/runs/45360574270"
-      }
+      },
+      "kickoff": "2026-11-24T10:00:00Z",
+      "resolved_at": "2026-11-24T11:04:52.845466Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.385000",
+        "condition_id": "0x86c92477d79b2733d34d9427a4e5d45be7d5fe5c77dd3a348a8ea5ba19c308c5",
+        "kickoff": "2026-11-24T10:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2427",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Imperial",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: 100 Thieves vs Imperial (BO1) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2427",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T11:04:52.845466Z",
+          "parent_commit": "d2437a45ff59d5e9d421eca0216a415b5d5826a4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45380832496"
+        }
+      ]
     },
     {
       "pick_rank": 2,
