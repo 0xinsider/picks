@@ -823,16 +823,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "38f93868036b2f012f731d46b95b951fede7d0c309552dcd59cd7756701d1074",
+      "commitment_nonce": "a42721a22462a4f6c4d2806fc83b6b51e4b4c621b947998ae2ede24e7b5bdb44",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:32:15.741068Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2425",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:30.683925Z",
         "parent_commit": "059b5918d012dba489368a49af63973a5fa0ecce",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280620368"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T02:55:06.231323Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0xbfdbbfce25f73ad13c92460321a00518f7ac82b59b3ad06ef3430bc30b045fcf",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2425",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nets vs. Timberwolves",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2425",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T02:55:06.231323Z",
+          "parent_commit": "2f43af00c0e2557a400987f04060529a9820d8f7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45315817977"
+        }
+      ]
     },
     {
       "pick_rank": 25,
