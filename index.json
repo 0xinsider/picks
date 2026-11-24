@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1277,
-    "sealed": 1,
+    "opened": 1278,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1003,
+    "proven": 1004,
     "proven_record": {
       "wins": 532,
-      "losses": 462,
-      "decided": 994,
+      "losses": 463,
+      "decided": 995,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-19142.83",
-      "staked": "994000",
-      "roi": "-1.9"
+      "profit_usd": "-20142.83",
+      "staked": "995000",
+      "roi": "-2.0"
     },
     "wins": 715,
-    "losses": 551,
+    "losses": 552,
     "voids": 7,
-    "decided": 1266,
+    "decided": 1267,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "2603.11",
-    "staked": "1266000",
-    "roi": "0.2",
+    "profit_usd": "1603.11",
+    "staked": "1267000",
+    "roi": "0.1",
     "through": "2026-11-23"
   },
   "picks": [
@@ -50500,16 +50500,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "608bdf92f79ff74cbfa904430e1e1e5a68d817dfdb64f02971e2ffcc4eba1edf",
+      "commitment_nonce": "81c7aedd7acb3a8c88a5136e709b39fab54693c57942fd9d671ea581a3c60057",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:31:57.676290Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2420",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:09.507344Z",
         "parent_commit": "2864d80eac0245a2aa9c5aa4aee8920f35ef463a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280574951"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:43:38.419317Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.585000",
+        "condition_id": "0x19d47919d82325de44e8d787dbfae5a067ec6de812fe7e2ffe707c2d011dc1ec",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2420",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Canadiens",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Kings vs. Canadiens",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2420",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T03:43:38.419317Z",
+          "parent_commit": "a464acbad4c96d1fdb4279b999dd61910b975f58",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45321484726"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
