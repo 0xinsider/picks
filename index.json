@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1280,
-    "sealed": 3,
+    "opened": 1281,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1006,
+    "proven": 1007,
     "proven_record": {
       "wins": 533,
-      "losses": 464,
-      "decided": 997,
+      "losses": 465,
+      "decided": 998,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-19545.43",
-      "staked": "997000",
-      "roi": "-2.0"
+      "hit_rate": "53.4",
+      "profit_usd": "-20545.43",
+      "staked": "998000",
+      "roi": "-2.1"
     },
     "wins": 716,
-    "losses": 553,
+    "losses": 554,
     "voids": 7,
-    "decided": 1269,
+    "decided": 1270,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "2200.51",
-    "staked": "1269000",
-    "roi": "0.2",
+    "profit_usd": "1200.51",
+    "staked": "1270000",
+    "roi": "0.1",
     "through": "2026-11-24"
   },
   "picks": [
@@ -50905,16 +50905,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0316d3f24c3ee5363f0b11b3ddbbfda50993df8bd0ae1db7d2e3adae9ae362cd",
+      "commitment_nonce": "60c9142b43b9849903c958ce527b8b0eef8dc2d973ee5cb1cf086dbe021c6e9c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T09:30:04.853393Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2430",
       "first_observation": {
         "observed_at": "2026-11-24T09:30:15.411367Z",
         "parent_commit": "250ec5d0750a3039ede0750cdffe5d4966d77372",
         "run": "https://github.com/0xinsider/picks/actions/runs/45365779279"
-      }
+      },
+      "kickoff": "2026-11-24T11:00:00Z",
+      "resolved_at": "2026-11-24T11:53:07.080457Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0xfef4eda76bb57262425400d966fbafd752ca41175c599de74d72cb1851486c3e",
+        "kickoff": "2026-11-24T11:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2430",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "DENDELE CS",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Eternal Fire vs DENDELE CS (BO1) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2430",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T11:53:07.080457Z",
+          "parent_commit": "3d917b87b2a28eb30ecafbdeecdd55f45551511b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45388266768"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
