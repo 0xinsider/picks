@@ -679,16 +679,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "da6e21895e04c5508084c630561c0c3fd3080ca6e41b3c75847c9270418a6dce",
+      "commitment_nonce": "969ffdb7ac6e84aa61cfdab107b044ac59ddf8bf556118dee37eda64701f1dff",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:10:15.548421Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2418",
       "first_observation": {
         "observed_at": "2026-11-23T22:10:29.061159Z",
         "parent_commit": "0a9232ce1325e9e64d5da558c4833b7125f9c055",
         "run": "https://github.com/0xinsider/picks/actions/runs/45277041168"
-      }
+      },
+      "kickoff": "2026-11-24T00:00:00Z",
+      "resolved_at": "2026-11-24T02:45:23.931443Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0x17973499ad132dd1cda382ad05e91e9980022a925ca7b0be43abee6d20f8d8e9",
+        "kickoff": "2026-11-24T00:00:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2418",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Devils",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Blue Jackets vs. Devils",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2418",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T02:45:23.931443Z",
+          "parent_commit": "20e439954001b27dcb4780c60576998782202c0f",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45314690528"
+        }
+      ]
     },
     {
       "pick_rank": 18,
