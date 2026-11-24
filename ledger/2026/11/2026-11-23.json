@@ -721,16 +721,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a4ae1531a7cf77bb5214de8db3f3720d9f1354d0054871111455f1f4b4d91599",
+      "commitment_nonce": "b861bdb2f00a61a778c11ad8ce4e178c4d39ff48e6cc6cece970c1d27f914240",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:31:57.659026Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2419",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:09.507344Z",
         "parent_commit": "2864d80eac0245a2aa9c5aa4aee8920f35ef463a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280574951"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:41:23.750915Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.705000",
+        "condition_id": "0xc518c24e640355315b6dfca3c12f7fba9a01114cd8f653a07281550458429260",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2419",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Senators",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Senators",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2419",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T03:41:23.750915Z",
+          "parent_commit": "61efab668d3ae9aa18ef22c95f34d59ef07ee5c4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45321241377"
+        }
+      ]
     },
     {
       "pick_rank": 19,
