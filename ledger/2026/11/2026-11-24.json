@@ -805,16 +805,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "edfc70fbb78a51c3b11e82155816f00bdbb43abe132d19f02bd2dab809e6c695",
+      "commitment_nonce": "259bb21f7f1af87b95d7bc8499d056cccad69a5ff4766c420557b96a7fff56a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T19:00:10.281210Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2446",
       "first_observation": {
         "observed_at": "2026-11-24T19:00:26.252231Z",
         "parent_commit": "6f62ea1055a67fa9b809253f54bcf651dab961b9",
         "run": "https://github.com/0xinsider/picks/actions/runs/45465527035"
-      }
+      },
+      "kickoff": "2026-11-24T19:45:00Z",
+      "resolved_at": "2026-11-24T23:42:18.776511Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x4da87ef56f53ea94365870d627c54322f866aef1118140323d616790b4480a85",
+        "kickoff": "2026-11-24T19:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2446",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sheffield United FC vs. Southampton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2446",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T23:42:18.776511Z",
+          "parent_commit": "fada77dafd0dbd25c25b52891b64be13e03c7bd3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45512193039"
+        }
+      ]
     },
     {
       "pick_rank": 21,

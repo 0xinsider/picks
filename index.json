@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1297,
-    "sealed": 3,
+    "opened": 1298,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1023,
+    "proven": 1024,
     "proven_record": {
-      "wins": 542,
+      "wins": 543,
       "losses": 472,
-      "decided": 1014,
+      "decided": 1015,
       "withdrawn": 2,
       "hit_rate": "53.5",
-      "profit_usd": "-20296.21",
-      "staked": "1014000",
-      "roi": "-2.0"
+      "profit_usd": "-19276.01",
+      "staked": "1015000",
+      "roi": "-1.9"
     },
-    "wins": 725,
+    "wins": 726,
     "losses": 561,
     "voids": 7,
-    "decided": 1286,
+    "decided": 1287,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "1449.72",
-    "staked": "1286000",
-    "roi": "0.1",
+    "profit_usd": "2469.92",
+    "staked": "1287000",
+    "roi": "0.2",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51618,16 +51618,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "edfc70fbb78a51c3b11e82155816f00bdbb43abe132d19f02bd2dab809e6c695",
+      "commitment_nonce": "259bb21f7f1af87b95d7bc8499d056cccad69a5ff4766c420557b96a7fff56a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T19:00:10.281210Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2446",
       "first_observation": {
         "observed_at": "2026-11-24T19:00:26.252231Z",
         "parent_commit": "6f62ea1055a67fa9b809253f54bcf651dab961b9",
         "run": "https://github.com/0xinsider/picks/actions/runs/45465527035"
-      }
+      },
+      "kickoff": "2026-11-24T19:45:00Z",
+      "resolved_at": "2026-11-24T23:42:18.776511Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x4da87ef56f53ea94365870d627c54322f866aef1118140323d616790b4480a85",
+        "kickoff": "2026-11-24T19:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2446",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sheffield United FC vs. Southampton FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2446",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T23:42:18.776511Z",
+          "parent_commit": "fada77dafd0dbd25c25b52891b64be13e03c7bd3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45512193039"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
