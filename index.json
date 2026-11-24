@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1278,
-    "sealed": 4,
+    "opened": 1279,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1004,
+    "proven": 1005,
     "proven_record": {
       "wins": 532,
-      "losses": 463,
-      "decided": 995,
+      "losses": 464,
+      "decided": 996,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-20142.83",
-      "staked": "995000",
-      "roi": "-2.0"
+      "hit_rate": "53.4",
+      "profit_usd": "-21142.83",
+      "staked": "996000",
+      "roi": "-2.1"
     },
     "wins": 715,
-    "losses": 552,
+    "losses": 553,
     "voids": 7,
-    "decided": 1267,
+    "decided": 1268,
     "withdrawn": 4,
     "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "1603.11",
-    "staked": "1267000",
-    "roi": "0.1",
-    "through": "2026-11-23"
+    "profit_usd": "603.11",
+    "staked": "1268000",
+    "roi": "0.0",
+    "through": "2026-11-24"
   },
   "picks": [
     {
@@ -50837,16 +50837,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "716cdb2d0377e352627bd35977235735c25e47aeb541744f724d84e45f895201",
+      "commitment_nonce": "d061d246e7a583db80e38741ec6dba64d7a028ece05962d8633788faaa8c2130",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T09:10:08.628019Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2429",
       "first_observation": {
         "observed_at": "2026-11-24T09:10:19.397705Z",
         "parent_commit": "f9a483094f2ac477998715fa32d2610d14e948e8",
         "run": "https://github.com/0xinsider/picks/actions/runs/45362612320"
-      }
+      },
+      "kickoff": "2026-11-24T10:00:00Z",
+      "resolved_at": "2026-11-24T10:47:07.039458Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x6943b7a909ca741f93732faf4735274ffd02acdb8e2d638e6f1dfee0f1dbb5ab",
+        "kickoff": "2026-11-24T10:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2429",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "9z",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: 9z vs M80 (BO1) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2429",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T10:47:07.039458Z",
+          "parent_commit": "51699eb9887060cc99da1a3a06dcb7a549beed82",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45378052101"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
