@@ -814,16 +814,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "92e512644272de9468b682a44ea2006f5f14d1a248959c2c5b19fcb1a3876c72",
+      "commitment_nonce": "254b280910825abb9b8d9de89c78ccf61826337777006a363f1f9933428a03aa",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T22:32:15.706769Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2423",
       "first_observation": {
         "observed_at": "2026-11-23T22:32:30.683925Z",
         "parent_commit": "059b5918d012dba489368a49af63973a5fa0ecce",
         "run": "https://github.com/0xinsider/picks/actions/runs/45280620368"
-      }
+      },
+      "kickoff": "2026-11-24T00:30:00Z",
+      "resolved_at": "2026-11-24T03:22:26.652906Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x89998db23beacc2e945a7f752e64972f744bd539937665d058a58e5fb055c046",
+        "kickoff": "2026-11-24T00:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2423",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Maple Leafs",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Maple Leafs vs. Islanders",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2423",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T03:22:26.652906Z",
+          "parent_commit": "a5f9bfc4a5e74663e72be2b358aba24cbe867543",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45319057474"
+        }
+      ]
     },
     {
       "pick_rank": 23,
