@@ -553,16 +553,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6e88c626cbf419ad6ca0ac118a6fcecd3f91db58db9b98dfb7bda97bb58e9c4e",
+      "commitment_nonce": "ad40249d91514cc3d7225ba7f19212dea9ff8821de1cf25d58d7613c84d40f2d",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:00:11.487606Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2440",
       "first_observation": {
         "observed_at": "2026-11-24T18:00:26.521584Z",
         "parent_commit": "b5757fe510721061273578a41657e0d3a1f93f93",
         "run": "https://github.com/0xinsider/picks/actions/runs/45454712739"
-      }
+      },
+      "kickoff": "2026-11-24T20:00:00Z",
+      "resolved_at": "2026-11-24T22:13:52.472871Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.725000",
+        "condition_id": "0xb6fc0e7a26b716080294cddd199e5d54c5c511050b427ac936881a0ba5dca6ce",
+        "kickoff": "2026-11-24T20:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2440",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "RB Leipzig vs. Racing Club de Lens",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2440",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T22:13:52.472871Z",
+          "parent_commit": "75ae3f63c26c985d2afba5b992607454cea4cb38",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45498945124"
+        }
+      ]
     },
     {
       "pick_rank": 15,
