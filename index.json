@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1265,
-    "sealed": 13,
+    "opened": 1267,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 991,
+    "proven": 993,
     "proven_record": {
       "wins": 527,
-      "losses": 455,
-      "decided": 982,
+      "losses": 457,
+      "decided": 984,
       "withdrawn": 2,
-      "hit_rate": "53.7",
-      "profit_usd": "-17052.29",
-      "staked": "982000",
-      "roi": "-1.7"
+      "hit_rate": "53.6",
+      "profit_usd": "-19052.29",
+      "staked": "984000",
+      "roi": "-1.9"
     },
     "wins": 710,
-    "losses": 544,
+    "losses": 546,
     "voids": 7,
-    "decided": 1254,
+    "decided": 1256,
     "withdrawn": 4,
-    "hit_rate": "56.6",
+    "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "4693.65",
-    "staked": "1254000",
-    "roi": "0.4",
+    "profit_usd": "2693.65",
+    "staked": "1256000",
+    "roi": "0.2",
     "through": "2026-11-23"
   },
   "picks": [
@@ -50242,16 +50242,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "89ea13449f20da54c719126c9b63ef988447ec2c2ec05ad3887ff47cbde157bc",
+      "commitment_nonce": "b4e2fa4b725c8eb388759e5b5360f2b7fc3ce8999941c1df5c2e0183f3a14ece",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T20:30:42.714779Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2414",
       "first_observation": {
         "observed_at": "2026-11-23T20:30:53.235081Z",
         "parent_commit": "9bd87b8a149c5af49d08c12ca0edc94989b77189",
         "run": "https://github.com/0xinsider/picks/actions/runs/45260115481"
-      }
+      },
+      "kickoff": "2026-11-23T22:30:00Z",
+      "resolved_at": "2026-11-24T02:36:28.518360Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x790627cac50717c5fa4dcd3bc5576b328eb7f203739b037803bba09e09e55d6e",
+        "kickoff": "2026-11-23T22:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2414",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC Internacional vs. EC Vitória",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2414",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T02:36:28.518360Z",
+          "parent_commit": "147627048b0b0d33055d17e6568bf81d0c6792b6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45313632682"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
@@ -50260,16 +50285,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "dcc13663eaf95518255a41da3c9a9a434e8bde985a6790321a12dacdc1d65d63",
+      "commitment_nonce": "9f4bd9619d9c5f1968a320c215bbd2ebd9fec70e0a1f9d5921a21d6bc10f9d31",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-23T21:49:45.595976Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2415",
       "first_observation": {
         "observed_at": "2026-11-23T21:49:58.756261Z",
         "parent_commit": "2a21d62e37367f82fb49d355125efc43dcb7df31",
         "run": "https://github.com/0xinsider/picks/actions/runs/45273608482"
-      }
+      },
+      "kickoff": "2026-11-23T22:30:00Z",
+      "resolved_at": "2026-11-24T02:36:30.274254Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0xd65e2e83658a8eaa8c545cae50f2fe09546ba49e8f8c6cdc4e2e199e3e218065",
+        "kickoff": "2026-11-23T22:30:00Z",
+        "pick_date": "2026-11-23",
+        "pick_id": "2415",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC Internacional vs. EC Vitória",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2415",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T02:36:30.274254Z",
+          "parent_commit": "147627048b0b0d33055d17e6568bf81d0c6792b6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45313632682"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-23",
