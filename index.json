@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1295,
-    "sealed": 5,
+    "opened": 1297,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1021,
+    "proven": 1023,
     "proven_record": {
       "wins": 542,
-      "losses": 470,
-      "decided": 1012,
+      "losses": 472,
+      "decided": 1014,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-18296.21",
-      "staked": "1012000",
-      "roi": "-1.8"
+      "hit_rate": "53.5",
+      "profit_usd": "-20296.21",
+      "staked": "1014000",
+      "roi": "-2.0"
     },
     "wins": 725,
-    "losses": 559,
+    "losses": 561,
     "voids": 7,
-    "decided": 1284,
+    "decided": 1286,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "3449.72",
-    "staked": "1284000",
-    "roi": "0.3",
+    "profit_usd": "1449.72",
+    "staked": "1286000",
+    "roi": "0.1",
     "through": "2026-11-24"
   },
   "picks": [
@@ -51532,16 +51532,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "90ac83ffb5e0cb29cf104e854a93050e6412c817645889070a055f8cdac5f304",
+      "commitment_nonce": "71dc1549f2b15373549d398bb8334fb1812f6798622c2e7612c2e314361e397c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:45:07.998334Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2444",
       "first_observation": {
         "observed_at": "2026-11-24T18:45:19.517355Z",
         "parent_commit": "cff74e36f19248ab4a0746345f046bdd9ee971f3",
         "run": "https://github.com/0xinsider/picks/actions/runs/45462884274"
-      }
+      },
+      "kickoff": "2026-11-24T19:45:00Z",
+      "resolved_at": "2026-11-24T23:40:31.713431Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x8ab6526bd084e8d5b70b89a28a2ebe3e38bba6bcdb14a9565cc12414e4d58c7f",
+        "kickoff": "2026-11-24T19:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2444",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Norwich City FC vs. Queens Park Rangers FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2444",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T23:40:31.713431Z",
+          "parent_commit": "6cc5bdaaeafe6328f7f2c9348264d423bb185a14",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45511950129"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
@@ -51550,16 +51575,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "15e55be11abf11efc8f30b2a1939d99e89ed8c06bd313fc8684e0bed2f34238e",
+      "commitment_nonce": "6c74d1b2de7977bbd48592b12d824f54815676490b5e8eeef4c665805abe6e52",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:57:09.522871Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2445",
       "first_observation": {
         "observed_at": "2026-11-24T18:57:21.978244Z",
         "parent_commit": "7ca7c78550335d317b0900b62be9e7fd22984bbb",
         "run": "https://github.com/0xinsider/picks/actions/runs/45465007900"
-      }
+      },
+      "kickoff": "2026-11-24T19:45:00Z",
+      "resolved_at": "2026-11-24T23:40:33.423805Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xd6f786af4e3c5955403bb2e8a54846ddf39fb5209598ca9ca09d3aa933bdce5f",
+        "kickoff": "2026-11-24T19:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2445",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bristol City FC vs. Wrexham AFC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2445",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T23:40:33.423805Z",
+          "parent_commit": "6cc5bdaaeafe6328f7f2c9348264d423bb185a14",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45511950129"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
