@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1284,
-    "sealed": 6,
+    "opened": 1285,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1010,
+    "proven": 1011,
     "proven_record": {
-      "wins": 536,
+      "wins": 537,
       "losses": 465,
-      "decided": 1001,
+      "decided": 1002,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-17051.31",
-      "staked": "1001000",
+      "hit_rate": "53.6",
+      "profit_usd": "-16690.77",
+      "staked": "1002000",
       "roi": "-1.7"
     },
-    "wins": 719,
+    "wins": 720,
     "losses": 554,
     "voids": 7,
-    "decided": 1273,
+    "decided": 1274,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "4694.62",
-    "staked": "1273000",
+    "profit_usd": "5055.17",
+    "staked": "1274000",
     "roi": "0.4",
     "through": "2026-11-24"
   },
@@ -51016,16 +51016,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6936d8a49d5c008fd6a50c68669302d32a4b1e3feb709405ca41cc1834789d33",
+      "commitment_nonce": "2b97eeea3c6bb258b01ffca0d66507d96f098778da61bce6456d9edc27e89699",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T12:00:05.809918Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2432",
       "first_observation": {
         "observed_at": "2026-11-24T12:00:19.338131Z",
         "parent_commit": "12266883fa1b931dc85b9d30c6751cd535c8cc0d",
         "run": "https://github.com/0xinsider/picks/actions/runs/45389322493"
-      }
+      },
+      "kickoff": "2026-11-24T14:00:00Z",
+      "resolved_at": "2026-11-24T17:48:32.750630Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x294fb3fd41ecfe86055c0a82128306af3c24546b65e550cb75f5f7fc17d8a0be",
+        "kickoff": "2026-11-24T14:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2432",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Team Yandex",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Dota 2: Team Yandex vs 1win (BO3) - BLAST Slam Seeding Matches",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2432",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-24T17:48:32.750630Z",
+          "parent_commit": "1174fb1c3d951773107db3f6a7954c8e94d3b28c",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45452628197"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
