@@ -352,16 +352,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d73ef6a6b381dedb689446df5149bf9d84c6bba0314f3e4b40f29c2de92c1417",
+      "commitment_nonce": "42ac9c242b404a6ab5dc72a1aaa7866b6e4f67a196474211012060e9860e63fc",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T15:45:08.529314Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2437",
       "first_observation": {
         "observed_at": "2026-11-24T15:45:19.729294Z",
         "parent_commit": "1c14e9b42659f87976bae38aa1fe534d3232296a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45429126993"
-      }
+      },
+      "kickoff": "2026-11-24T17:45:00Z",
+      "resolved_at": "2026-11-24T19:53:05.631735Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x90ebdcf4181f2e2795788ea5b50aea2bf35e12d9a287eb1278b31079bff2cfdb",
+        "kickoff": "2026-11-24T17:45:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2437",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FK Bodø/Glimt",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FK Bodø/Glimt vs. LASK Linz",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2437",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T19:53:05.631735Z",
+          "parent_commit": "4a5228ef82e534906171e91b63f18a7dbf18caf3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45474910772"
+        }
+      ]
     },
     {
       "pick_rank": 12,
