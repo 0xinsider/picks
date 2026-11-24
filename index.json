@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1294,
-    "sealed": 5,
+    "opened": 1295,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 9,
-    "proven": 1020,
+    "proven": 1021,
     "proven_record": {
       "wins": 542,
-      "losses": 469,
-      "decided": 1011,
+      "losses": 470,
+      "decided": 1012,
       "withdrawn": 2,
       "hit_rate": "53.6",
-      "profit_usd": "-17296.21",
-      "staked": "1011000",
-      "roi": "-1.7"
+      "profit_usd": "-18296.21",
+      "staked": "1012000",
+      "roi": "-1.8"
     },
     "wins": 725,
-    "losses": 558,
+    "losses": 559,
     "voids": 7,
-    "decided": 1283,
+    "decided": 1284,
     "withdrawn": 4,
     "hit_rate": "56.5",
     "stake_usd": "1000",
-    "profit_usd": "4449.72",
-    "staked": "1283000",
+    "profit_usd": "3449.72",
+    "staked": "1284000",
     "roi": "0.3",
     "through": "2026-11-24"
   },
@@ -51489,16 +51489,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "289656490e19c7f2f0f9f35b0cef2e5b399b66f290cfba8cb1b67a463572d264",
+      "commitment_nonce": "d4ad675b2d0906c9a7050fd6b5859c64b2fabc98eaf63e440b0ce77e32448304",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T18:25:10.057511Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2443",
       "first_observation": {
         "observed_at": "2026-11-24T18:25:22.510342Z",
         "parent_commit": "281c180855414b6ac11243b6114884c51e625f06",
         "run": "https://github.com/0xinsider/picks/actions/runs/45459329628"
-      }
+      },
+      "kickoff": "2026-11-24T19:00:00Z",
+      "resolved_at": "2026-11-24T23:06:57.078492Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x2a3a45199ad9bf62067c7af208f8d736b69ad94bf7cac691e2f268820951e932",
+        "kickoff": "2026-11-24T19:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2443",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Empoli FC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Benevento Calcio vs. Empoli FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2443",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-24T23:06:57.078492Z",
+          "parent_commit": "9a91ceec10544145aa2487f1247cc7f5d00990d0",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45507120622"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-24",
