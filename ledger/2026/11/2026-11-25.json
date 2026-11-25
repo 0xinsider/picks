@@ -175,16 +175,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d32d9c7998cfb05a669f19c801528720822aa33cbd97f857c66814472ca0ba2c",
+      "commitment_nonce": "cfcc6810777cec6a0c688105798d02dc835556d5dac4c2535dc2c8152b1220ae",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T18:00:41.276349Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2455",
       "first_observation": {
         "observed_at": "2026-11-25T18:00:56.216176Z",
         "parent_commit": "d9d57a3bbb2e58f5cc06cff2cfdd48a859259d57",
         "run": "https://github.com/0xinsider/picks/actions/runs/45670700317"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:10:15.468782Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x196eac8fd4ebf4f30ca62ca96b9a62f910e5f5b725f0c070713bceabbe738aee",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2455",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Lille OSC vs. FC Bayern München",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2455",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T22:10:15.468782Z",
+          "parent_commit": "b7cd2ccb7b8742b3f0b6bb1c57949125c33ea942",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45710894364"
+        }
+      ]
     },
     {
       "pick_rank": 6,
