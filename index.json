@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1315,
-    "sealed": 12,
+    "opened": 1316,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1039,
+    "proven": 1040,
     "proven_record": {
-      "wins": 550,
+      "wins": 551,
       "losses": 480,
-      "decided": 1030,
+      "decided": 1031,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-21899.77",
-      "staked": "1030000",
-      "roi": "-2.1"
+      "profit_usd": "-20701.97",
+      "staked": "1031000",
+      "roi": "-2.0"
     },
-    "wins": 734,
+    "wins": 735,
     "losses": 570,
     "voids": 7,
-    "decided": 1304,
+    "decided": 1305,
     "withdrawn": 4,
     "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-212.09",
-    "staked": "1304000",
-    "roi": "-0.0",
+    "profit_usd": "985.71",
+    "staked": "1305000",
+    "roi": "0.1",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52050,16 +52050,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "2c5b105dfbf786318e3c7d38cd448420473d80e369b4085b8ee8240724fbbe0d",
+      "commitment_nonce": "bee2f7b9dbc0bea7cd7986a4fec98437031361647fac418239f5ecbea65d675e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T18:00:41.297041Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2456",
       "first_observation": {
         "observed_at": "2026-11-25T18:00:56.216176Z",
         "parent_commit": "d9d57a3bbb2e58f5cc06cff2cfdd48a859259d57",
         "run": "https://github.com/0xinsider/picks/actions/runs/45670700317"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T23:54:01.350027Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x18cf868d35c8895164f27fed44483cfd1fd64b9346c61ba18396fdef0c47a4de",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2456",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Stoke City FC vs. Millwall FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2456",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T23:54:01.350027Z",
+          "parent_commit": "07598c381cf58ac66bc8da5e67ce3aaebddef6c2",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45724803705"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
