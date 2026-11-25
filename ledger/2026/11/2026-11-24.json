@@ -847,16 +847,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7cc80eedd943eafeba58d14d6d25eb2c7224c684a72737da3b64d8159130c300",
+      "commitment_nonce": "46b983e64575757517858ccc7dec294bd58334f129a4dc8d27d48bed041a1295",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T23:00:09.402404Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2447",
       "first_observation": {
         "observed_at": "2026-11-24T23:00:22.380253Z",
         "parent_commit": "80bda4539b90b64f390d18976acd0347c6ec037a",
         "run": "https://github.com/0xinsider/picks/actions/runs/45506075475"
-      }
+      },
+      "kickoff": "2026-11-25T01:00:00Z",
+      "resolved_at": "2026-11-25T04:00:56.564432Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.485000",
+        "condition_id": "0x254bbc3ed773b412532280d12a7dde77421585b7c6ad006786ce28d325d4b33d",
+        "kickoff": "2026-11-25T01:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2447",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Golden Knights vs. Oilers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2447",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T04:00:56.564432Z",
+          "parent_commit": "d96970e2b83846018e042665c3c4e58745b0da76",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45555380320"
+        }
+      ]
     },
     {
       "pick_rank": 22,
@@ -864,16 +889,41 @@
       "publication_order": 22,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6a5fce3657343b76a806822419c6188f5c0879ae0c3725e886dd10bb83bbfbaf",
+      "commitment_nonce": "395e5b3e57c4fd8c3ffea564f0b41f4378d66c16ff55c25020c8403158c2b692",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-24T23:27:46.719273Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2448",
       "first_observation": {
         "observed_at": "2026-11-24T23:27:56.390777Z",
         "parent_commit": "cee22487d42c503cdc60cbd64744ba464d497176",
         "run": "https://github.com/0xinsider/picks/actions/runs/45510169890"
-      }
+      },
+      "kickoff": "2026-11-25T00:00:00Z",
+      "resolved_at": "2026-11-25T03:46:03.884381Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x95388527b9480472291f0ef9d496a4369d346bc972f131c93a1aa2ff90c8858b",
+        "kickoff": "2026-11-25T00:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2448",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Western Michigan",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Miami (OH) vs. Western Michigan",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2448",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T03:46:03.884381Z",
+          "parent_commit": "d96970e2b83846018e042665c3c4e58745b0da76",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45555380320"
+        }
+      ]
     },
     {
       "pick_rank": 23,
@@ -898,16 +948,42 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "148dd5fc76e4ccb10c3209e6aaaa7b1332d75da9f80dc7f06d7f670def2283c1",
+      "commitment_nonce": "6f59afa30077205644bcee99505f19cf0592cc88ffb9ab24c3cd0f9fc7070736",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T01:00:10.539883Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2450",
       "first_observation": {
         "observed_at": "2026-11-25T04:08:18.607834Z",
         "parent_commit": "d51b90d10189a3bfe051d0e47c519cc0b59c33ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/45544671427"
-      }
+      },
+      "kickoff": "2026-11-25T03:00:00Z",
+      "resolved_at": "2026-11-25T05:42:00.189925Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x9a41648970cdec30f0b01b8b1ad2ef1143621ca8ba7d46ef859293000a61116f",
+        "kickoff": "2026-11-25T03:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2450",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "San Jose Earthquakes vs. Houston Dynamo",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2450",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T05:42:00.189925Z",
+          "parent_commit": "d96970e2b83846018e042665c3c4e58745b0da76",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45555380320"
+        }
+      ]
     }
   ]
 }
