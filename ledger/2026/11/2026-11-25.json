@@ -133,16 +133,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "6c616c90cd9b55acfd49630a1d4c5c86defb0e8d732e5d6996421a0eaa14698c",
+      "commitment_nonce": "e29e759473374273ea69a5cd3f62949c3ce82729bbc0025d692df11f9a3abbf8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T15:46:35.745418Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2454",
       "first_observation": {
         "observed_at": "2026-11-25T15:49:15.352233Z",
         "parent_commit": "702b554e3cf187e6f1970a6ba4c427a692a59ff9",
         "run": "https://github.com/0xinsider/picks/actions/runs/45648930748"
-      }
+      },
+      "kickoff": "2026-11-25T17:45:00Z",
+      "resolved_at": "2026-11-25T19:55:44.355067Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x41055531c63f90eb4de19da789504733f1f662ac61400fe09fb1847ccf0e072d",
+        "kickoff": "2026-11-25T17:45:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2454",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SK Slavia Praha vs. Villarreal CF",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2454",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T19:55:44.355067Z",
+          "parent_commit": "7d80114341525997897c9bb7122ab4ba84184448",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45689975474"
+        }
+      ]
     },
     {
       "pick_rank": 5,
