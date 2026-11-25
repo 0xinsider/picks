@@ -7,16 +7,41 @@
       "publication_order": 1,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "380ef55b4b97d777213827a5d13d57809b8dbc19da7267db58f01ed3af6e261c",
+      "commitment_nonce": "37744d556b12bc6b96b951d8c31f556671ba385d2c93f691d8bad6e1e251cc91",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T08:30:11.486378Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2451",
       "first_observation": {
         "observed_at": "2026-11-25T08:30:23.556607Z",
         "parent_commit": "4ad2e026c1e30b51b5adfd40a72e3f0f7586ad32",
         "run": "https://github.com/0xinsider/picks/actions/runs/45576830444"
-      }
+      },
+      "kickoff": "2026-11-25T10:30:00Z",
+      "resolved_at": "2026-11-25T13:27:02.317233Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0x71e0ff2677f379825033ddd12cdb27e8b2209574d7d4664fcee4fc45701ce331",
+        "kickoff": "2026-11-25T10:30:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2451",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chinggis Warriors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: GOSH vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2451",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T13:27:02.317233Z",
+          "parent_commit": "ea7c98e2acda346838617d4ef307c19c0dde936d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45623703396"
+        }
+      ]
     },
     {
       "pick_rank": 2,
