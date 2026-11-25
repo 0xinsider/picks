@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1304,
-    "sealed": 13,
+    "opened": 1305,
+    "sealed": 12,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1028,
+    "proven": 1029,
     "proven_record": {
       "wins": 546,
-      "losses": 473,
-      "decided": 1019,
+      "losses": 474,
+      "decided": 1020,
       "withdrawn": 2,
-      "hit_rate": "53.6",
-      "profit_usd": "-17554.76",
-      "staked": "1019000",
-      "roi": "-1.7"
+      "hit_rate": "53.5",
+      "profit_usd": "-18554.76",
+      "staked": "1020000",
+      "roi": "-1.8"
     },
     "wins": 730,
-    "losses": 563,
+    "losses": 564,
     "voids": 7,
-    "decided": 1293,
+    "decided": 1294,
     "withdrawn": 4,
-    "hit_rate": "56.5",
+    "hit_rate": "56.4",
     "stake_usd": "1000",
-    "profit_usd": "4132.92",
-    "staked": "1293000",
-    "roi": "0.3",
+    "profit_usd": "3132.92",
+    "staked": "1294000",
+    "roi": "0.2",
     "through": "2026-11-25"
   },
   "picks": [
@@ -51921,16 +51921,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c9bd8e10c579f2aea95c3b9b655aa70403e979edb690b4fd5e950c53d7c0930e",
+      "commitment_nonce": "e81ecd5ea7748cefcdf51b596db9ba664d0468d843cc4cfdfe6a4527356622b9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T15:45:36.262535Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2453",
       "first_observation": {
         "observed_at": "2026-11-25T15:49:15.352233Z",
         "parent_commit": "702b554e3cf187e6f1970a6ba4c427a692a59ff9",
         "run": "https://github.com/0xinsider/picks/actions/runs/45648930748"
-      }
+      },
+      "kickoff": "2026-11-25T17:45:00Z",
+      "resolved_at": "2026-11-25T19:52:29.427262Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.475000",
+        "condition_id": "0x6ba732db31d82a76a76dbd657d18a2c6bc21ca9c247f8fffb9394b1945038213",
+        "kickoff": "2026-11-25T17:45:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2453",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sabah FK vs. FC Barcelona",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2453",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T19:52:29.427262Z",
+          "parent_commit": "5dea2d3065a4c18ed5c9e3ea9342b63e8892942a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45689453463"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
