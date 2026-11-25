@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1310,
-    "sealed": 14,
+    "opened": 1313,
+    "sealed": 11,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1034,
+    "proven": 1037,
     "proven_record": {
-      "wins": 547,
-      "losses": 478,
-      "decided": 1025,
+      "wins": 548,
+      "losses": 480,
+      "decided": 1028,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-21534.56",
-      "staked": "1025000",
-      "roi": "-2.1"
+      "hit_rate": "53.3",
+      "profit_usd": "-22853.89",
+      "staked": "1028000",
+      "roi": "-2.2"
     },
-    "wins": 731,
-    "losses": 568,
+    "wins": 732,
+    "losses": 570,
     "voids": 7,
-    "decided": 1299,
+    "decided": 1302,
     "withdrawn": 4,
-    "hit_rate": "56.3",
+    "hit_rate": "56.2",
     "stake_usd": "1000",
-    "profit_usd": "153.12",
-    "staked": "1299000",
-    "roi": "0.0",
+    "profit_usd": "-1166.21",
+    "staked": "1302000",
+    "roi": "-0.1",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52068,16 +52068,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7bd9199d7f0514eb260176ccd75472f15b6f074aed79e0b4806ff3f8d72db247",
+      "commitment_nonce": "446d763675ad7bb6b9018c6797a7236923574df7ae94bf94936daefe3c2df737",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T18:01:07.414459Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2457",
       "first_observation": {
         "observed_at": "2026-11-25T18:01:20.961089Z",
         "parent_commit": "ab86d28c859f45cbafb490293d59288d47319df4",
         "run": "https://github.com/0xinsider/picks/actions/runs/45670781651"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:12:32.398469Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.595000",
+        "condition_id": "0x184743de2502673ea8f801bab1c3143cc9e2e4f05545ff373ff8793c05848ccb",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2457",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Club Brugge KV vs. Liverpool FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2457",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T22:12:32.398469Z",
+          "parent_commit": "4db7bc9d3fbd2372dbf5f36292995b10e1ef48c6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45711216378"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
@@ -52226,16 +52251,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b2e0240c392e3050e5f882a5101d6c480beec21b38a3478231d81fb9f117ad39",
+      "commitment_nonce": "4d36452f53f5cb355073ef13a9164bf5757e7b246a7855a98890c628b87f1bb7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T19:10:11.235229Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2463",
       "first_observation": {
         "observed_at": "2026-11-25T19:10:24.076069Z",
         "parent_commit": "b594408ad8e0fbd6df64b452584c8dd0d806c601",
         "run": "https://github.com/0xinsider/picks/actions/runs/45682496360"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:12:27.868389Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0x42adff349a12929ea72cb5b73504963bc2334f7e174d0079dfe5510a5c87a972",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2463",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Paris Saint-Germain FC",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Paris Saint-Germain FC vs. AS Roma",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2463",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T22:12:27.868389Z",
+          "parent_commit": "4db7bc9d3fbd2372dbf5f36292995b10e1ef48c6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45711216378"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
@@ -52244,16 +52294,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "89eb48f9b65212fd11883606b7d0ce1d1a7793ae264f073f4d8cf25ad820de9e",
+      "commitment_nonce": "20cd6440ce72fc210120ef3898aa8cf415aa24d701c5da7ed72735a9465a737e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T19:10:11.243576Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2464",
       "first_observation": {
         "observed_at": "2026-11-25T19:10:24.076069Z",
         "parent_commit": "b594408ad8e0fbd6df64b452584c8dd0d806c601",
         "run": "https://github.com/0xinsider/picks/actions/runs/45682496360"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:12:34.796085Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x88abaacde086687e39d344dd09da973050e385e3f59500ebcf07334ba32360fa",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2464",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Club Brugge KV vs. Liverpool FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2464",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T22:12:34.796085Z",
+          "parent_commit": "4db7bc9d3fbd2372dbf5f36292995b10e1ef48c6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45711216378"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
