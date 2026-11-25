@@ -285,16 +285,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "4c05f7a8eeccd5742d6bee5276d0667f8bec02bbbe9117c60b2ef26e174eac95",
+      "commitment_nonce": "3e50bab357e39d43777571377c3dff22eb1045aa019a6c6438afdc495fe68612",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T18:55:09.448688Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2460",
       "first_observation": {
         "observed_at": "2026-11-25T18:55:22.035141Z",
         "parent_commit": "8aa92599b0bad61d0a3a537a3ca9cfc2c61d858c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45679990243"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:11:05.259106Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0x419b16927857d2a99bc79b4f3819fc0983381a4cc3ff70ee4a9ca8538eae45f7",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2460",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "FC Internazionale Milano",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Internazionale Milano vs. VfB Stuttgart",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2460",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T22:11:05.259106Z",
+          "parent_commit": "3be1dd45863a13ad4a449a50c82c41e47c388a1b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45711017233"
+        }
+      ]
     },
     {
       "pick_rank": 11,
