@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1314,
-    "sealed": 10,
+    "opened": 1315,
+    "sealed": 9,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1038,
+    "proven": 1039,
     "proven_record": {
-      "wins": 549,
+      "wins": 550,
       "losses": 480,
-      "decided": 1029,
+      "decided": 1030,
       "withdrawn": 2,
       "hit_rate": "53.4",
-      "profit_usd": "-22474.58",
-      "staked": "1029000",
-      "roi": "-2.2"
+      "profit_usd": "-21899.77",
+      "staked": "1030000",
+      "roi": "-2.1"
     },
-    "wins": 733,
+    "wins": 734,
     "losses": 570,
     "voids": 7,
-    "decided": 1303,
+    "decided": 1304,
     "withdrawn": 4,
     "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "-786.90",
-    "staked": "1303000",
-    "roi": "-0.1",
+    "profit_usd": "-212.09",
+    "staked": "1304000",
+    "roi": "-0.0",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52111,16 +52111,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "66ab3beaed4f8be266a3142bb5e6161db72d1422775ee56276b6f54c9adcd80f",
+      "commitment_nonce": "4745550d38164a2f05e2e7d13e867967da74fa81f6a2c69091258777563304b1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T18:01:37.694351Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2458",
       "first_observation": {
         "observed_at": "2026-11-25T18:01:48.940205Z",
         "parent_commit": "3dcda91478a2277053c39b9ca51dfd47f4b95b0b",
         "run": "https://github.com/0xinsider/picks/actions/runs/45670872265"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:16:15.132358Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.635000",
+        "condition_id": "0xed860a1204033492d8b9798b024c42cf1a684a3bdfb430268860be878a12aeb3",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2458",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Sporting CP vs. Manchester United FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2458",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T22:16:15.132358Z",
+          "parent_commit": "3013cc2ed403e4cacd1ed5df1c4e4f6c94092d56",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45711777204"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
