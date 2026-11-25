@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1306,
-    "sealed": 17,
+    "opened": 1308,
+    "sealed": 15,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1030,
+    "proven": 1032,
     "proven_record": {
       "wins": 546,
-      "losses": 475,
-      "decided": 1021,
+      "losses": 477,
+      "decided": 1023,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-19554.76",
-      "staked": "1021000",
-      "roi": "-1.9"
+      "hit_rate": "53.4",
+      "profit_usd": "-21554.76",
+      "staked": "1023000",
+      "roi": "-2.1"
     },
     "wins": 730,
-    "losses": 565,
+    "losses": 567,
     "voids": 7,
-    "decided": 1295,
+    "decided": 1297,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "2132.92",
-    "staked": "1295000",
-    "roi": "0.2",
+    "profit_usd": "132.92",
+    "staked": "1297000",
+    "roi": "0.0",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52133,16 +52133,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b2c172d3827f140978889a5e801f8ea655fcd53627f5a218dc512665b445364c",
+      "commitment_nonce": "532177a4150663feb91e61aed97fe5508a44ab7d2b9dc433b67383e9334d172c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T19:10:11.225320Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2462",
       "first_observation": {
         "observed_at": "2026-11-25T19:10:24.076069Z",
         "parent_commit": "b594408ad8e0fbd6df64b452584c8dd0d806c601",
         "run": "https://github.com/0xinsider/picks/actions/runs/45682496360"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:08:35.163727Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.535000",
+        "condition_id": "0x4fce034c8184a5d06a810a33c73ef64e84a12aef133f2c2ffbb38e4cb2bef17b",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2462",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Club Atlético de Madrid",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Club Atlético de Madrid vs. Viking FK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2462",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T22:08:35.163727Z",
+          "parent_commit": "2858462ca2872de8c9b24ec5beecf70e64852ab1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45710652095"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
@@ -52187,16 +52212,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7a176a77a241f05cbe30706eef05638c4d583275502f35c5244f23c62aaf7003",
+      "commitment_nonce": "20a1572f2236a8d0f3f89d525508d8cad3038a7f5c7230f83c34d17762061408",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T19:10:14.247814Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2465",
       "first_observation": {
         "observed_at": "2026-11-25T19:10:24.076069Z",
         "parent_commit": "b594408ad8e0fbd6df64b452584c8dd0d806c601",
         "run": "https://github.com/0xinsider/picks/actions/runs/45682496360"
-      }
+      },
+      "kickoff": "2026-11-25T20:00:00Z",
+      "resolved_at": "2026-11-25T22:08:38.646627Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x9e0e4d991873f35eb04276536d887478e24ac83f0b48a64bc54cddaca745c819",
+        "kickoff": "2026-11-25T20:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2465",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Club Atlético de Madrid vs. Viking FK",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2465",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-25T22:08:38.646627Z",
+          "parent_commit": "2858462ca2872de8c9b24ec5beecf70e64852ab1",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45710652095"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
