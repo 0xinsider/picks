@@ -931,16 +931,42 @@
       "publication_order": 23,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
+      "late_unproven": true,
       "commitment_hash": "1b52e4703c930d68f81299ac2b6f85ba2ad0f02cc557cb82084a90d580e6c81d",
+      "commitment_nonce": "c33ae1d83fd6209b52b5804d125b3d5dc467fce37c1d960f7a980a5483003eca",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T01:00:10.528714Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2449",
       "first_observation": {
         "observed_at": "2026-11-25T04:08:18.607834Z",
         "parent_commit": "d51b90d10189a3bfe051d0e47c519cc0b59c33ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/45544671427"
-      }
+      },
+      "kickoff": "2026-11-25T03:00:00Z",
+      "resolved_at": "2026-11-25T05:52:29.280560Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0x87bb28509f0f7136cec8cbfaeb708b195749e21ceb2c19079221f127cdc03a36",
+        "kickoff": "2026-11-25T03:00:00Z",
+        "pick_date": "2026-11-24",
+        "pick_id": "2449",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Mavericks vs. Nuggets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2449",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-25T05:52:29.280560Z",
+          "parent_commit": "55c74d0f111e1d2cbcc4a6231ddb9e9172e572f7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45556570565"
+        }
+      ]
     },
     {
       "pick_rank": 24,
