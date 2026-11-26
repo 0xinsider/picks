@@ -108,16 +108,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fc463f0d98eac22ed92eb0a391078d84c5b0f831ab2450ffc792fd8c7a9c80f4",
+      "commitment_nonce": "98aaf22ea793870978b0388960eeae06f2a01e0ab1e907fdc06bf2ff0d484caf",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T15:55:08.882110Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2481",
       "first_observation": {
         "observed_at": "2026-11-26T15:55:22.013639Z",
         "parent_commit": "e90a6fa6237a35b96158f724e399dff5291980ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/45853792791"
-      }
+      },
+      "kickoff": "2026-11-26T17:45:00Z",
+      "resolved_at": "2026-11-26T21:41:07.216020Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.515000",
+        "condition_id": "0xb447ee1aeb6c897cd603a5c9048b632ff304df83e2a500659cb99f7a7c6a83c4",
+        "kickoff": "2026-11-26T17:45:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2481",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "RC Celta de Vigo vs. AFC Bournemouth",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2481",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T21:41:07.216020Z",
+          "parent_commit": "2f5f1cebd4056f18c1fbe760f74c2f2a8cdfa587",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45899821370"
+        }
+      ]
     },
     {
       "pick_rank": 7,
