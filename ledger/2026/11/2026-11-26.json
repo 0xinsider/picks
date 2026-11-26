@@ -7,16 +7,41 @@
       "publication_order": 3,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "fb9381fffb887dcd3556aafc9ac9d1a278c9d9d1b11a6f4c0deed95af329c1d2",
+      "commitment_nonce": "da4021f3d2e0979cea324631d72b6e79e9748bd7c36bd942aca6930c467c29c6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T09:01:01.500138Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2478",
       "first_observation": {
         "observed_at": "2026-11-26T09:01:19.670360Z",
         "parent_commit": "efa8d5682bfc34f6f94f288cb8971d007324b604",
         "run": "https://github.com/0xinsider/picks/actions/runs/45788093528"
-      }
+      },
+      "kickoff": "2026-11-26T11:00:00Z",
+      "resolved_at": "2026-11-26T13:55:29.628293Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x7bbebb476e6202c227e23d1d97da1b400f42c2a8a1a26fc8296e8d2073e77fde",
+        "kickoff": "2026-11-26T11:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2478",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Liquid",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Imperial vs Liquid (BO3) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2478",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T13:55:29.628293Z",
+          "parent_commit": "4d9e0efb42140df4e96a4cbf775dcbd6c566ed14",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45833868591"
+        }
+      ]
     },
     {
       "pick_rank": 4,
