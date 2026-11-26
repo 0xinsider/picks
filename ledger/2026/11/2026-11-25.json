@@ -823,16 +823,41 @@
       "publication_order": 24,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "13c7a89a69a2af1e6d0bc0d074314f1d51c5e01f72ea5754cca62b2cfa6e3ebf",
+      "commitment_nonce": "b706950fc00470765e906bd181040ee1a7be9d2f4524a833ee408455650dae09",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T22:40:13.781598Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2474",
       "first_observation": {
         "observed_at": "2026-11-25T22:40:23.852467Z",
         "parent_commit": "f8cd68898adb0f03d18e294e6e15f5dc9e7b8f67",
         "run": "https://github.com/0xinsider/picks/actions/runs/45715194815"
-      }
+      },
+      "kickoff": "2026-11-26T00:00:00Z",
+      "resolved_at": "2026-11-26T02:42:11.725054Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0x9c9d24b66f4a2d75f7b98d6c7e52774d2fade9bb28d077e35557c30b736c75af",
+        "kickoff": "2026-11-26T00:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2474",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Senators vs. Panthers",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2474",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T02:42:11.725054Z",
+          "parent_commit": "868d23b3e4559496357845a29a92215ecfe7d2cc",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45744172953"
+        }
+      ]
     },
     {
       "pick_rank": 25,
