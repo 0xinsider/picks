@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1333,
-    "sealed": 5,
+    "opened": 1334,
+    "sealed": 4,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1057,
+    "proven": 1058,
     "proven_record": {
       "wins": 558,
-      "losses": 490,
-      "decided": 1048,
+      "losses": 491,
+      "decided": 1049,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-24541.23",
-      "staked": "1048000",
-      "roi": "-2.3"
+      "profit_usd": "-25541.23",
+      "staked": "1049000",
+      "roi": "-2.4"
     },
     "wins": 742,
-    "losses": 580,
+    "losses": 581,
     "voids": 7,
-    "decided": 1322,
+    "decided": 1323,
     "withdrawn": 4,
     "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-2853.55",
-    "staked": "1322000",
-    "roi": "-0.2",
+    "profit_usd": "-3853.55",
+    "staked": "1323000",
+    "roi": "-0.3",
     "through": "2026-11-26"
   },
   "picks": [
@@ -53161,16 +53161,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c20b2199ba4a1ff954510586fe39046188fef162722c8159eba3c01550b90ef4",
+      "commitment_nonce": "1d0bfd0dd862497d22f93b94299cb89d96fa19d1ee4ace5694c0bb1903df631e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T19:10:09.043226Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2485",
       "first_observation": {
         "observed_at": "2026-11-26T19:10:24.918036Z",
         "parent_commit": "3047a7b727d461c8a97ea7999a12e49f106ce7dc",
         "run": "https://github.com/0xinsider/picks/actions/runs/45881589567"
-      }
+      },
+      "kickoff": "2026-11-26T20:00:00Z",
+      "resolved_at": "2026-11-26T23:58:05.351750Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.575000",
+        "condition_id": "0x184142508b09f4dd020e1ddfe1a61b76d8e0025bb39ff2854ca5a1a2871f25aa",
+        "kickoff": "2026-11-26T20:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2485",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "NEC vs. Stade Rennais FC 1901",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2485",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T23:58:05.351750Z",
+          "parent_commit": "8af0ff172564abe05460c4ff5adf37f3322e30ea",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45913970770"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
