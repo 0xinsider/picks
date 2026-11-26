@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1317,
-    "sealed": 10,
+    "opened": 1319,
+    "sealed": 8,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1041,
+    "proven": 1043,
     "proven_record": {
       "wins": 552,
-      "losses": 480,
-      "decided": 1032,
+      "losses": 482,
+      "decided": 1034,
       "withdrawn": 2,
-      "hit_rate": "53.5",
-      "profit_usd": "-19681.77",
-      "staked": "1032000",
-      "roi": "-1.9"
+      "hit_rate": "53.4",
+      "profit_usd": "-21681.77",
+      "staked": "1034000",
+      "roi": "-2.1"
     },
     "wins": 736,
-    "losses": 570,
+    "losses": 572,
     "voids": 7,
-    "decided": 1306,
+    "decided": 1308,
     "withdrawn": 4,
-    "hit_rate": "56.4",
+    "hit_rate": "56.3",
     "stake_usd": "1000",
-    "profit_usd": "2005.91",
-    "staked": "1306000",
-    "roi": "0.2",
+    "profit_usd": "5.91",
+    "staked": "1308000",
+    "roi": "0.0",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52480,16 +52480,41 @@
       "publication_order": 16,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1a0368fba13c68778dd46ce52dac77118dafb4b6aade2a9e5cdcaeb00b34e4e6",
+      "commitment_nonce": "64115d7c30b8c5bf6c91a8f36201710b1a5d2d70c2d6dc712249c84122687be6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T20:17:03.345399Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2466",
       "first_observation": {
         "observed_at": "2026-11-25T20:17:23.609301Z",
         "parent_commit": "05c19f1bece3caf320408b2d245aa19682b111c1",
         "run": "https://github.com/0xinsider/picks/actions/runs/45693465479"
-      }
+      },
+      "kickoff": "2026-11-25T22:00:00Z",
+      "resolved_at": "2026-11-26T00:50:11.351590Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xa6e19be478ccdf8163422cada2772f1ea98b9f5f1b824e75a96f6aab59fe4c63",
+        "kickoff": "2026-11-25T22:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2466",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Heat",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Heat vs. 76ers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2466",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T00:50:11.351590Z",
+          "parent_commit": "2426e9b820cbf021125051b6303ad687b07a3df7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45731549896"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
@@ -52498,16 +52523,41 @@
       "publication_order": 17,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "57b247490f744cc8ea6d1eb334ed3182cf058b5fdef6a6ed21f94f68ed4853da",
+      "commitment_nonce": "fcb7aedb2ab007c26bc1bfdddb579b8a418e0acecd8e78afc48115d4fc25048e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T21:25:10.484395Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2467",
       "first_observation": {
         "observed_at": "2026-11-25T21:25:22.157098Z",
         "parent_commit": "2c29a447736da9e0be6514e017162ed6379566bd",
         "run": "https://github.com/0xinsider/picks/actions/runs/45704171627"
-      }
+      },
+      "kickoff": "2026-11-25T22:00:00Z",
+      "resolved_at": "2026-11-26T00:50:06.907617Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x068bef139daa227a7601abcfd6ea985dc46f1ecfa7104392588cfe14bc777a25",
+        "kickoff": "2026-11-25T22:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2467",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Heat vs. 76ers",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2467",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T00:50:06.907617Z",
+          "parent_commit": "2426e9b820cbf021125051b6303ad687b07a3df7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45731549896"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
