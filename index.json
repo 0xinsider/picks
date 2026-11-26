@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1323,
-    "sealed": 4,
+    "opened": 1324,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1047,
+    "proven": 1048,
     "proven_record": {
       "wins": 553,
-      "losses": 485,
-      "decided": 1038,
+      "losses": 486,
+      "decided": 1039,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-23777.01",
-      "staked": "1038000",
-      "roi": "-2.3"
+      "hit_rate": "53.2",
+      "profit_usd": "-24777.01",
+      "staked": "1039000",
+      "roi": "-2.4"
     },
     "wins": 737,
-    "losses": 575,
+    "losses": 576,
     "voids": 7,
-    "decided": 1312,
+    "decided": 1313,
     "withdrawn": 4,
-    "hit_rate": "56.2",
+    "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-2089.33",
-    "staked": "1312000",
+    "profit_usd": "-3089.33",
+    "staked": "1313000",
     "roi": "-0.2",
     "through": "2026-11-25"
   },
@@ -52670,16 +52670,41 @@
       "publication_order": 21,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "cd503b5d84d96bf311d4bb1625f97295e30bc82c6bf4fcd3d0ae3923c1a8c9fd",
+      "commitment_nonce": "84c93e566ed9946a8df61fc7674203f3f9da90b45b612ab6fa54093387efa38b",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T22:02:14.695681Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2471",
       "first_observation": {
         "observed_at": "2026-11-25T22:02:26.282088Z",
         "parent_commit": "6d6d41e431f429a882514943cf275e5783b32a58",
         "run": "https://github.com/0xinsider/picks/actions/runs/45709718831"
-      }
+      },
+      "kickoff": "2026-11-26T00:00:00Z",
+      "resolved_at": "2026-11-26T02:53:32.315879Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.445000",
+        "condition_id": "0x3ecbd54eca716da2236b76a0dedfcfe9f2e3316abf7820fc5e02359791d35911",
+        "kickoff": "2026-11-26T00:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2471",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rangers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rangers vs. Sabres",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2471",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T02:53:32.315879Z",
+          "parent_commit": "86bab38859fa963df76e4bce5f2eb84ee04c38d6",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45745393442"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
