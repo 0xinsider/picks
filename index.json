@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1320,
-    "sealed": 7,
+    "opened": 1322,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1044,
+    "proven": 1046,
     "proven_record": {
       "wins": 553,
-      "losses": 482,
-      "decided": 1035,
+      "losses": 484,
+      "decided": 1037,
       "withdrawn": 2,
-      "hit_rate": "53.4",
-      "profit_usd": "-20777.01",
-      "staked": "1035000",
-      "roi": "-2.0"
+      "hit_rate": "53.3",
+      "profit_usd": "-22777.01",
+      "staked": "1037000",
+      "roi": "-2.2"
     },
     "wins": 737,
-    "losses": 572,
+    "losses": 574,
     "voids": 7,
-    "decided": 1309,
+    "decided": 1311,
     "withdrawn": 4,
-    "hit_rate": "56.3",
+    "hit_rate": "56.2",
     "stake_usd": "1000",
-    "profit_usd": "910.67",
-    "staked": "1309000",
-    "roi": "0.1",
+    "profit_usd": "-1089.33",
+    "staked": "1311000",
+    "roi": "-0.1",
     "through": "2026-11-25"
   },
   "picks": [
@@ -52566,16 +52566,41 @@
       "publication_order": 18,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "117795d23c36abd94af54c2b9d4f665df9dee9645fbecdeb69ec59f66bb0c73d",
+      "commitment_nonce": "f01e4ff23c9b14a020f4fba41b6409de6f5790811d30f8e3612096a6cb8a74f9",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T22:01:18.860933Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2468",
       "first_observation": {
         "observed_at": "2026-11-25T22:01:33.333663Z",
         "parent_commit": "8e921a3595b81f66bab7a0428638f80ef2bdb04f",
         "run": "https://github.com/0xinsider/picks/actions/runs/45709583463"
-      }
+      },
+      "kickoff": "2026-11-26T00:00:00Z",
+      "resolved_at": "2026-11-26T02:43:02.601981Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x3778d5d50711e43e6342b87098421e81e139d71447c90c302ec0f90ef4a36adc",
+        "kickoff": "2026-11-26T00:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2468",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bulls vs. Hornets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2468",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T02:43:02.601981Z",
+          "parent_commit": "a577c139a135f618d5851a4e5562c28dd168cdac",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45744262789"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
@@ -52584,16 +52609,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "db6dbbbe3f06516a965a4b7b2810f850956c96c2c122625ec5dbb50eb7af5ff3",
+      "commitment_nonce": "655857e292bbeb06e3a88844f26f0829afb7ad54081a6408daeee8f0c1de1099",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-25T22:01:33.024322Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2469",
       "first_observation": {
         "observed_at": "2026-11-25T22:01:33.333663Z",
         "parent_commit": "8e921a3595b81f66bab7a0428638f80ef2bdb04f",
         "run": "https://github.com/0xinsider/picks/actions/runs/45709583463"
-      }
+      },
+      "kickoff": "2026-11-26T00:00:00Z",
+      "resolved_at": "2026-11-26T02:43:05.984738Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x62aac7b20e638ea6ebdfb78f2d12ff884594d4ce863d387d3561996c87ad2e06",
+        "kickoff": "2026-11-26T00:00:00Z",
+        "pick_date": "2026-11-25",
+        "pick_id": "2469",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Hornets",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Bulls vs. Hornets",
+      "category": "Basketball",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2469",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T02:43:05.984738Z",
+          "parent_commit": "a577c139a135f618d5851a4e5562c28dd168cdac",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45744262789"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-25",
