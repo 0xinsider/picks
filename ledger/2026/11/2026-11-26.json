@@ -91,16 +91,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f356941680715a371652f7ea8ad8354fc65e7f9854399aabfe579fe0361e6b5f",
+      "commitment_nonce": "5975327bee52c217dcc14ab5557fc198c3540c371b65aece6f1c28fba1109f82",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T15:47:43.091494Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2480",
       "first_observation": {
         "observed_at": "2026-11-26T15:47:58.876308Z",
         "parent_commit": "56d55b7fa1aad7b8119cce3ba3e45e9bfbb00b18",
         "run": "https://github.com/0xinsider/picks/actions/runs/45852604940"
-      }
+      },
+      "kickoff": "2026-11-26T17:45:00Z",
+      "resolved_at": "2026-11-26T21:43:41.356645Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x7684f45150b5db2b93a39c26481f305551d13611a7baf0164548cf4ea32e4056",
+        "kickoff": "2026-11-26T17:45:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2480",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Olympiakós SFP vs. AC Milan",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2480",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T21:43:41.356645Z",
+          "parent_commit": "fd59206082ba0922c2e5fbadc07957493bbe583a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45900102552"
+        }
+      ]
     },
     {
       "pick_rank": 6,

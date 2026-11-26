@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1330,
-    "sealed": 7,
+    "opened": 1331,
+    "sealed": 6,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1054,
+    "proven": 1055,
     "proven_record": {
-      "wins": 556,
+      "wins": 557,
       "losses": 489,
-      "decided": 1045,
+      "decided": 1046,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25366.79",
-      "staked": "1045000",
+      "hit_rate": "53.3",
+      "profit_usd": "-24840.08",
+      "staked": "1046000",
       "roi": "-2.4"
     },
-    "wins": 740,
+    "wins": 741,
     "losses": 579,
     "voids": 7,
-    "decided": 1319,
+    "decided": 1320,
     "withdrawn": 4,
     "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-3679.11",
-    "staked": "1319000",
-    "roi": "-0.3",
+    "profit_usd": "-3152.40",
+    "staked": "1320000",
+    "roi": "-0.2",
     "through": "2026-11-26"
   },
   "picks": [
@@ -52996,16 +52996,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f356941680715a371652f7ea8ad8354fc65e7f9854399aabfe579fe0361e6b5f",
+      "commitment_nonce": "5975327bee52c217dcc14ab5557fc198c3540c371b65aece6f1c28fba1109f82",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T15:47:43.091494Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2480",
       "first_observation": {
         "observed_at": "2026-11-26T15:47:58.876308Z",
         "parent_commit": "56d55b7fa1aad7b8119cce3ba3e45e9bfbb00b18",
         "run": "https://github.com/0xinsider/picks/actions/runs/45852604940"
-      }
+      },
+      "kickoff": "2026-11-26T17:45:00Z",
+      "resolved_at": "2026-11-26T21:43:41.356645Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x7684f45150b5db2b93a39c26481f305551d13611a7baf0164548cf4ea32e4056",
+        "kickoff": "2026-11-26T17:45:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2480",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Olympiakós SFP vs. AC Milan",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2480",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T21:43:41.356645Z",
+          "parent_commit": "fd59206082ba0922c2e5fbadc07957493bbe583a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45900102552"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
