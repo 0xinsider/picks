@@ -268,16 +268,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "e6fc9345a0f2b3e65fc4a1d5c5fcea22b369ff61bbe0cbf00f37933b8b75b2c7",
+      "commitment_nonce": "d11ebbf18c93a2d05667cd55356c2e76b12141a8ab0e42f1fb9fe716e4a67203",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T19:22:43.171075Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2486",
       "first_observation": {
         "observed_at": "2026-11-26T19:22:52.984212Z",
         "parent_commit": "4b4d7b49e3e0dc6a8b8354ad70702ac8beac99ad",
         "run": "https://github.com/0xinsider/picks/actions/runs/45883202848"
-      }
+      },
+      "kickoff": "2026-11-26T20:00:00Z",
+      "resolved_at": "2026-11-26T23:53:20.558388Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.435000",
+        "condition_id": "0xb2b6853c68ba77c48259395ecb154406be4b47bb25c7edf9fae0f1b7c1bbbd4e",
+        "kickoff": "2026-11-26T20:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2486",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "FC Nordsjælland vs. Panathinaikós AO",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2486",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T23:53:20.558388Z",
+          "parent_commit": "78d59c2ba38d658b46fde008ee20cfe939a3d173",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45913544794"
+        }
+      ]
     },
     {
       "pick_rank": 12,
