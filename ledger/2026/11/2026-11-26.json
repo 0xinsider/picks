@@ -49,16 +49,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "07e5f4c0771fb6a144285a9456ae428e55a886e4ab1e3835cf974f13d61289bd",
+      "commitment_nonce": "441058ab35e4d4407a8f0d7c66b5bb55660583f34c51c5ab7f4555cc02790382",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T09:01:01.514068Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2479",
       "first_observation": {
         "observed_at": "2026-11-26T09:01:19.670360Z",
         "parent_commit": "efa8d5682bfc34f6f94f288cb8971d007324b604",
         "run": "https://github.com/0xinsider/picks/actions/runs/45788093528"
-      }
+      },
+      "kickoff": "2026-11-26T11:00:00Z",
+      "resolved_at": "2026-11-26T15:54:32.755775Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.315000",
+        "condition_id": "0xdb78fbd5e56d76e4597011c1928dbd647e19ce5a48dccf5428a4be99b8d40c95",
+        "kickoff": "2026-11-26T11:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2479",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Chinggis Warriors",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Wildcard vs Chinggis Warriors (BO3) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2479",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T15:54:32.755775Z",
+          "parent_commit": "8f49e2c61acf26a04f3bc58c0c7965c4716fe1e7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45853695637"
+        }
+      ]
     },
     {
       "pick_rank": 5,
