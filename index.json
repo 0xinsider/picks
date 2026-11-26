@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1331,
-    "sealed": 6,
+    "opened": 1332,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1055,
+    "proven": 1056,
     "proven_record": {
       "wins": 557,
-      "losses": 489,
-      "decided": 1046,
+      "losses": 490,
+      "decided": 1047,
       "withdrawn": 2,
-      "hit_rate": "53.3",
-      "profit_usd": "-24840.08",
-      "staked": "1046000",
-      "roi": "-2.4"
+      "hit_rate": "53.2",
+      "profit_usd": "-25840.08",
+      "staked": "1047000",
+      "roi": "-2.5"
     },
     "wins": 741,
-    "losses": 579,
+    "losses": 580,
     "voids": 7,
-    "decided": 1320,
+    "decided": 1321,
     "withdrawn": 4,
     "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-3152.40",
-    "staked": "1320000",
-    "roi": "-0.2",
+    "profit_usd": "-4152.40",
+    "staked": "1321000",
+    "roi": "-0.3",
     "through": "2026-11-26"
   },
   "picks": [
@@ -53082,16 +53082,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5b8c54a1407ca2741bb3507d041898e1f71e65865e0246f4e74f9ac517c75c53",
+      "commitment_nonce": "db0dd2b2d87b30710e08f0c30f986a6f70137a5541310153b25050c0b3630f6a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T16:59:14.063883Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2482",
       "first_observation": {
         "observed_at": "2026-11-26T16:59:25.065628Z",
         "parent_commit": "234e5cc89181a2051d6f8558a33cc2d4d86f76a0",
         "run": "https://github.com/0xinsider/picks/actions/runs/45863726844"
-      }
+      },
+      "kickoff": "2026-11-26T17:45:00Z",
+      "resolved_at": "2026-11-26T22:18:15.723249Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.285000",
+        "condition_id": "0x46db63f0b66801f1e12ed9b450de343e9f69bee88265c66e6c126b8f2efd13a4",
+        "kickoff": "2026-11-26T17:45:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2482",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Beşiktaş JK vs. MH Hapoel Be'er Sheva",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2482",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-26T22:18:15.723249Z",
+          "parent_commit": "ef3c0771677ab6606d6d41133aa058a8590b0514",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45903911211"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
