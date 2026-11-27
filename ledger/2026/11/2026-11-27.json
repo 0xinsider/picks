@@ -217,16 +217,41 @@
       "publication_order": 7,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "86cbc1c77f3901e88456613a34fe1d8ea0d4917f4798cd6048de017edc229262",
+      "commitment_nonce": "55dafaa2ac8a90e5763502d1ba5bcc395c68bbabeb5894903c3bd648a1b0cbe5",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T17:04:39.021735Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2495",
       "first_observation": {
         "observed_at": "2026-11-27T17:04:51.257454Z",
         "parent_commit": "d8594936e16bc6aced3028cf447c347c90e23272",
         "run": "https://github.com/0xinsider/picks/actions/runs/46038897047"
-      }
+      },
+      "kickoff": "2026-11-27T20:00:00Z",
+      "resolved_at": "2026-11-27T22:13:05.752227Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.505000",
+        "condition_id": "0x5804a5ecc8de7b57e8ee5402d985770f53e8f067d0cb02b9e20b7dab699a784c",
+        "kickoff": "2026-11-27T20:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2495",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Levante UD vs. Real Racing Club",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2495",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-27T22:13:05.752227Z",
+          "parent_commit": "1df392d264fbb9b8257e0c00bab1d57248d745b3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46075256423"
+        }
+      ]
     },
     {
       "pick_rank": 8,
