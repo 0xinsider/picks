@@ -301,16 +301,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b4de155ab3776993dcd102b1237930756893e9d5b81173859d5a28cb6f7683a2",
+      "commitment_nonce": "c801e8b7115a6ff515a97958ed3b8116ba494612e0b17a2edc9e7b8c238480ef",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T17:10:09.119634Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2497",
       "first_observation": {
         "observed_at": "2026-11-27T17:10:18.590914Z",
         "parent_commit": "51212c00e46cc1bbf655819aae24ecf90b7e346e",
         "run": "https://github.com/0xinsider/picks/actions/runs/46039654658"
-      }
+      },
+      "kickoff": "2026-11-27T20:00:00Z",
+      "resolved_at": "2026-11-27T23:55:05.873850Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0xa11481b786be5699c38c8b30f7c4d6790f85be287db789a43f3bb346daaa7aa6",
+        "kickoff": "2026-11-27T20:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2497",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Southampton FC vs. Middlesbrough FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2497",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-27T23:55:05.873850Z",
+          "parent_commit": "9848c06ea8fdca7558d7e80dccd52759d0c33e4a",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46085092544"
+        }
+      ]
     },
     {
       "pick_rank": 10,
