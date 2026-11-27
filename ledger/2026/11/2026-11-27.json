@@ -175,16 +175,41 @@
       "publication_order": 6,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b8afec91e3bfa9e81183a69b30ed7d75db0b98eedd4f1a579ec37df1d4f3bb03",
+      "commitment_nonce": "164d8d14ee3f83811b9fb2599c5c22e21760917b3ebe0af1d349e56caf700123",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T16:53:31.304597Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2494",
       "first_observation": {
         "observed_at": "2026-11-27T16:53:48.105793Z",
         "parent_commit": "46902c1c2f39b803faf1626225cea2be7354e60b",
         "run": "https://github.com/0xinsider/picks/actions/runs/46037383011"
-      }
+      },
+      "kickoff": "2026-11-27T19:45:00Z",
+      "resolved_at": "2026-11-27T21:55:09.133702Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.395000",
+        "condition_id": "0x593c5873d5ad59611c5ab284bd1aedb29fe54676718f0d3b9e96674bec96a771",
+        "kickoff": "2026-11-27T19:45:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2494",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Venezia FC vs. Bologna FC 1909",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2494",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T21:55:09.133702Z",
+          "parent_commit": "49edc3310a66963e743ebaffee60dbaeda1b3dba",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46073350120"
+        }
+      ]
     },
     {
       "pick_rank": 7,
@@ -243,16 +268,41 @@
       "publication_order": 10,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b89f1dfd987b0ec40e91b6f84492d95ffc2aa95d2ef2360edefd8dfc05029f82",
+      "commitment_nonce": "cd7c743fb01fe5a5080d2cc29cc6b949d6fcf6303d554f52ff78c48357f2001e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T17:44:02.761524Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2498",
       "first_observation": {
         "observed_at": "2026-11-27T17:44:15.968760Z",
         "parent_commit": "d045072253b90b7564fd63d81c69446eb1066b01",
         "run": "https://github.com/0xinsider/picks/actions/runs/46044133400"
-      }
+      },
+      "kickoff": "2026-11-27T19:45:00Z",
+      "resolved_at": "2026-11-27T21:55:05.842185Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.265000",
+        "condition_id": "0x929ad3b673c7fd995047b0a426871892cf02c0590b375e46e2c0aff8c94161b2",
+        "kickoff": "2026-11-27T19:45:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2498",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Stade Brestois 29 vs. Paris FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2498",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-27T21:55:05.842185Z",
+          "parent_commit": "49edc3310a66963e743ebaffee60dbaeda1b3dba",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46073350120"
+        }
+      ]
     },
     {
       "pick_rank": 11,
