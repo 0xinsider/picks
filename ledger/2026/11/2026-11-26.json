@@ -427,16 +427,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "8bb93b7c31a5af8f53473662975d4f72aa54f9128ee4d74f778b4ad6e63b2c64",
+      "commitment_nonce": "caa2ecf676d8ab80956533da1c16ad1d3dca680426945cede22b665ad27b86b6",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T23:25:08.526236Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2488",
       "first_observation": {
         "observed_at": "2026-11-26T23:25:23.435943Z",
         "parent_commit": "60ca37d2ee422aa45fa48951e5e994c853e4476c",
         "run": "https://github.com/0xinsider/picks/actions/runs/45910829377"
-      }
+      },
+      "kickoff": "2026-11-27T01:20:00Z",
+      "resolved_at": "2026-11-27T04:44:17.828238Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.415000",
+        "condition_id": "0x8dc2c4d90c60e5dac5508b00c1bf5fe4ec146f6f73b6a90bec89958fe936b156",
+        "kickoff": "2026-11-27T01:20:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2488",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Chiefs vs. Bills",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2488",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T04:44:17.828238Z",
+          "parent_commit": "a42e52993ce84c680de3dfffb4f3e1569eb8421d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45941673350"
+        }
+      ]
     }
   ]
 }
