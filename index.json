@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1336,
-    "sealed": 2,
+    "opened": 1337,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1060,
+    "proven": 1061,
     "proven_record": {
       "wins": 559,
-      "losses": 492,
-      "decided": 1051,
+      "losses": 493,
+      "decided": 1052,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-25739.42",
-      "staked": "1051000",
-      "roi": "-2.4"
+      "hit_rate": "53.1",
+      "profit_usd": "-26739.42",
+      "staked": "1052000",
+      "roi": "-2.5"
     },
     "wins": 743,
-    "losses": 582,
+    "losses": 583,
     "voids": 7,
-    "decided": 1325,
+    "decided": 1326,
     "withdrawn": 4,
-    "hit_rate": "56.1",
+    "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-4051.74",
-    "staked": "1325000",
-    "roi": "-0.3",
+    "profit_usd": "-5051.74",
+    "staked": "1326000",
+    "roi": "-0.4",
     "through": "2026-11-26"
   },
   "picks": [
@@ -53168,16 +53168,41 @@
       "publication_order": 9,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "7e79de3666b436c1a945fdccf944fb658ad15dc8dd7b78616c4cf6638979e149",
+      "commitment_nonce": "edafd9c510940e9a2a902645c13661035214d7ab1ee0154c2a01a7caf2578484",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T18:02:12.889729Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2484",
       "first_observation": {
         "observed_at": "2026-11-26T18:02:25.459651Z",
         "parent_commit": "2c97222a2eb55ae82a7d97e12e8bb563d112ec9b",
         "run": "https://github.com/0xinsider/picks/actions/runs/45872667989"
-      }
+      },
+      "kickoff": "2026-11-26T20:00:00Z",
+      "resolved_at": "2026-11-27T00:02:48.132659Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.455000",
+        "condition_id": "0x8a4a8416ee2c2a6f0e386133286c9e60350d865b67026473eb5e28ed42a892c2",
+        "kickoff": "2026-11-26T20:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2484",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC Freiburg vs. FC Twente",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2484",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T00:02:48.132659Z",
+          "parent_commit": "f913fd9d8f0091a3afcdf9498070a7047d0a4c38",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45914420731"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
