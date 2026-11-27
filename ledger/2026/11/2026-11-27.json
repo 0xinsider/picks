@@ -66,16 +66,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "f125b30690dde82df39f031a20de417ee963ed30ba7b102bceae4d6c04a69d40",
+      "commitment_nonce": "4cf925962794813b3429aacd7e04c19554ed4624e738979e8e60db58e4e116df",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T15:32:14.646814Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2492",
       "first_observation": {
         "observed_at": "2026-11-27T15:32:28.188348Z",
         "parent_commit": "3679ab2a73ae85195173456c1eb5bdf19a366c1c",
         "run": "https://github.com/0xinsider/picks/actions/runs/46025783323"
-      }
+      },
+      "kickoff": "2026-11-27T17:08:00Z",
+      "resolved_at": "2026-11-27T20:33:32.205895Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.365000",
+        "condition_id": "0x79096ac1c2379d0b404ee975df2849bdced963659416258b08ec2256ad296e9d",
+        "kickoff": "2026-11-27T17:08:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2492",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Nebraska",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nebraska vs. Iowa",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2492",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T20:33:32.205895Z",
+          "parent_commit": "7372e4c4f6a69497e9f78ec355d703797ff6e4ed",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46064448246"
+        }
+      ]
     },
     {
       "pick_rank": 5,
