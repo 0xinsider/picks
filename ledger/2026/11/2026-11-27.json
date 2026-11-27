@@ -133,16 +133,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "144ebe7bed16dc8253eff9afe509ac3ad6be75662688493607c2faf9b1522a66",
+      "commitment_nonce": "cd6bdd8cef582af06f5e5b5fd354ae523af146eeff8e6069ff262a8a2bc1e0a2",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T15:55:08.282386Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2493",
       "first_observation": {
         "observed_at": "2026-11-27T15:55:20.227188Z",
         "parent_commit": "6b6ba41db95a80f2863485005630af4939e9897e",
         "run": "https://github.com/0xinsider/picks/actions/runs/46029107429"
-      }
+      },
+      "kickoff": "2026-11-27T18:00:00Z",
+      "resolved_at": "2026-11-27T20:51:59.383600Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.685000",
+        "condition_id": "0x8791e4914dc247140513feb300bf9d27f766fc4944229ac1a68abca76717f550",
+        "kickoff": "2026-11-27T18:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2493",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Devils",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Flames vs. Devils",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2493",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-27T20:51:59.383600Z",
+          "parent_commit": "30db08c6ab89e5f019e4cc1e59520c857d4440ea",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46066503604"
+        }
+      ]
     },
     {
       "pick_rank": 6,
