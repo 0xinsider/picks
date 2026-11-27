@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1335,
-    "sealed": 3,
+    "opened": 1336,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1059,
+    "proven": 1060,
     "proven_record": {
       "wins": 559,
-      "losses": 491,
-      "decided": 1050,
+      "losses": 492,
+      "decided": 1051,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-24739.42",
-      "staked": "1050000",
+      "profit_usd": "-25739.42",
+      "staked": "1051000",
       "roi": "-2.4"
     },
     "wins": 743,
-    "losses": 581,
+    "losses": 582,
     "voids": 7,
-    "decided": 1324,
+    "decided": 1325,
     "withdrawn": 4,
     "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-3051.74",
-    "staked": "1324000",
-    "roi": "-0.2",
+    "profit_usd": "-4051.74",
+    "staked": "1325000",
+    "roi": "-0.3",
     "through": "2026-11-26"
   },
   "picks": [
@@ -53125,16 +53125,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0b0232b89d1208cac220c59d123d1a0eb898740338b5698aeef22ddb34c15ef2",
+      "commitment_nonce": "68e69a52c8adcb9ea7db408cb89be0cbef8b45822b8638a2673eed5e52451d7f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T18:01:12.955250Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2483",
       "first_observation": {
         "observed_at": "2026-11-26T18:01:24.009601Z",
         "parent_commit": "1452d04817659be0497e3c4cb8e27c42276224ef",
         "run": "https://github.com/0xinsider/picks/actions/runs/45872530876"
-      }
+      },
+      "kickoff": "2026-11-26T20:00:00Z",
+      "resolved_at": "2026-11-27T00:00:20.118256Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.405000",
+        "condition_id": "0x0a2283acd17455093f0668b82eb41392070ae7112343fbf1188b8eb439e13bb0",
+        "kickoff": "2026-11-26T20:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2483",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "SC União Torreense vs. Celtic FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2483",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T00:00:20.118256Z",
+          "parent_commit": "13f0e5394f740729e20461854e8eb3d0bfcccf60",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45914174755"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
