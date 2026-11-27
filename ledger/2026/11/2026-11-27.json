@@ -234,16 +234,41 @@
       "publication_order": 8,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c220bcc6162a687705c081572606223646e3f66817d1ffd5048bbc0b827b7be6",
+      "commitment_nonce": "7e2c0a6a0a6bbdd6dcf437baa3ee82cd22828da8a296b13cf4f49ee929520fec",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T17:10:09.109556Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2496",
       "first_observation": {
         "observed_at": "2026-11-27T17:10:18.590914Z",
         "parent_commit": "51212c00e46cc1bbf655819aae24ecf90b7e346e",
         "run": "https://github.com/0xinsider/picks/actions/runs/46039654658"
-      }
+      },
+      "kickoff": "2026-11-27T20:00:00Z",
+      "resolved_at": "2026-11-27T22:11:09.478006Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0xe5c7522b2b3276c581932298e8e81e3b81aee4013ec8a2f127dbb909dac224ff",
+        "kickoff": "2026-11-27T20:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2496",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Nottingham Forest FC vs. Chelsea FC",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2496",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T22:11:09.478006Z",
+          "parent_commit": "d33a55abcbc7b66bcaa3e3713d28c18605aae20b",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46075052745"
+        }
+      ]
     },
     {
       "pick_rank": 9,
