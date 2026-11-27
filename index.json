@@ -2,33 +2,33 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1338,
-    "sealed": 2,
+    "opened": 1339,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1062,
+    "proven": 1063,
     "proven_record": {
-      "wins": 559,
+      "wins": 560,
       "losses": 494,
-      "decided": 1053,
+      "decided": 1054,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-27739.42",
-      "staked": "1053000",
+      "profit_usd": "-27189.04",
+      "staked": "1054000",
       "roi": "-2.6"
     },
-    "wins": 743,
+    "wins": 744,
     "losses": 584,
     "voids": 7,
-    "decided": 1327,
+    "decided": 1328,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-6051.74",
-    "staked": "1327000",
-    "roi": "-0.5",
-    "through": "2026-11-26"
+    "profit_usd": "-5501.36",
+    "staked": "1328000",
+    "roi": "-0.4",
+    "through": "2026-11-27"
   },
   "picks": [
     {
@@ -53383,16 +53383,41 @@
       "publication_order": 2,
       "is_free_selection": true,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "c484f80c9502a59637a202fc7a94c7365e64ca2ac835a48696bcb1cc8ee34718",
+      "commitment_nonce": "dd4f6b7e107311d1be35266c48216880c6315742972c541ccce969fca8297fe1",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T08:00:53.283055Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2490",
       "first_observation": {
         "observed_at": "2026-11-27T08:01:10.607130Z",
         "parent_commit": "770b608e5cba6ae26cc85efb4c3404a67694cce5",
         "run": "https://github.com/0xinsider/picks/actions/runs/45962442592"
-      }
+      },
+      "kickoff": "2026-11-27T11:00:00Z",
+      "resolved_at": "2026-11-27T15:16:58.238297Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.645000",
+        "condition_id": "0xae96c6f3a068cfc5a99a6312ea8fa2fa3cd4e44bc3b8764145b39f1cee6f7ea0",
+        "kickoff": "2026-11-27T11:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2490",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "100 Thieves",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: M80 vs 100 Thieves (BO3) - PGL Major Singapore Stage 1",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2490",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-27T15:16:58.238297Z",
+          "parent_commit": "21b7d2cd06fa6b70511ff01d06bdffa44e1f5819",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46023501719"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-27",
