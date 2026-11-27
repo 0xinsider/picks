@@ -49,16 +49,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "853c291365da1f5ae7b4c9ce24f4ff8d636da2b837f75319d3b202d54b96989b",
+      "commitment_nonce": "0777ce1a6e3e6dab9e8e7cdc870e55a90687760171285186a48eda5d9d27a350",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T14:10:07.623713Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2491",
       "first_observation": {
         "observed_at": "2026-11-27T14:10:18.220395Z",
         "parent_commit": "dda724eee85d96ef66ab0842e79d172541db49eb",
         "run": "https://github.com/0xinsider/picks/actions/runs/46013463716"
-      }
+      },
+      "kickoff": "2026-11-27T17:00:00Z",
+      "resolved_at": "2026-11-27T20:50:02.450191Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.495000",
+        "condition_id": "0xc0fa4d250736615aa7f351ef0d079fec9730a315fce61d4fbb2fe715f418e82d",
+        "kickoff": "2026-11-27T17:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2491",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Over",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Tulsa vs. UTSA",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2491",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-27T20:50:02.450191Z",
+          "parent_commit": "4b0032ca4c954254bd5f0ea5530edb4b5591939d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46066290151"
+        }
+      ]
     },
     {
       "pick_rank": 4,
