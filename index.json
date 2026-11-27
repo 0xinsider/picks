@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1334,
-    "sealed": 4,
+    "opened": 1335,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1058,
+    "proven": 1059,
     "proven_record": {
-      "wins": 558,
+      "wins": 559,
       "losses": 491,
-      "decided": 1049,
+      "decided": 1050,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-25541.23",
-      "staked": "1049000",
+      "profit_usd": "-24739.42",
+      "staked": "1050000",
       "roi": "-2.4"
     },
-    "wins": 742,
+    "wins": 743,
     "losses": 581,
     "voids": 7,
-    "decided": 1323,
+    "decided": 1324,
     "withdrawn": 4,
     "hit_rate": "56.1",
     "stake_usd": "1000",
-    "profit_usd": "-3853.55",
-    "staked": "1323000",
-    "roi": "-0.3",
+    "profit_usd": "-3051.74",
+    "staked": "1324000",
+    "roi": "-0.2",
     "through": "2026-11-26"
   },
   "picks": [
@@ -53247,16 +53247,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "caeed6b10c57ae80def1c8715a5e0c189a54a041ca568df54c83c023266f0d71",
+      "commitment_nonce": "518bc85052b43a252fd9aa9b587df47012107411beab2bb66f25cd09d314a9b8",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-26T19:25:42.554624Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2487",
       "first_observation": {
         "observed_at": "2026-11-26T19:25:58.311968Z",
         "parent_commit": "243bed2387394dd5e61e46dee551b7a37ac16ccf",
         "run": "https://github.com/0xinsider/picks/actions/runs/45883574011"
-      }
+      },
+      "kickoff": "2026-11-26T20:00:00Z",
+      "resolved_at": "2026-11-26T23:59:57.757131Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.555000",
+        "condition_id": "0x652bab1321dbdc94ddc4c7076aa3673daaa568150cad7a7712e1a025b651676d",
+        "kickoff": "2026-11-26T20:00:00Z",
+        "pick_date": "2026-11-26",
+        "pick_id": "2487",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "OFI vs. RSC Anderlecht",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2487",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-26T23:59:57.757131Z",
+          "parent_commit": "fbb4e51a1b5b65aed9f80579e101a55cb422b64e",
+          "run": "https://github.com/0xinsider/picks/actions/runs/45914133059"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-26",
