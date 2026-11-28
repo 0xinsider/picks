@@ -402,16 +402,41 @@
       "publication_order": 12,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "d6ceb88ffd9e9d0a74d06952e6d9890741c143a36c5f57a34c2c6228eeb360ea",
+      "commitment_nonce": "a827b35eacedb8fb318863b42506e3079962a9b6381f8cda77db0a1bd1b7dcd7",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T20:25:07.321108Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2500",
       "first_observation": {
         "observed_at": "2026-11-27T20:25:21.248456Z",
         "parent_commit": "465f10cf8e2ee1e1336376b2c7c853d3d99c76de",
         "run": "https://github.com/0xinsider/picks/actions/runs/46063497480"
-      }
+      },
+      "kickoff": "2026-11-27T21:30:00Z",
+      "resolved_at": "2026-11-28T01:11:04.839281Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0xa985418fcda8b676d4766472ac3e128a025fe62f7d1180440130dae53fd60b70",
+        "kickoff": "2026-11-27T21:30:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2500",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "New Mexico",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Air Force vs. New Mexico",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2500",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T01:11:04.839281Z",
+          "parent_commit": "33715ce41355e3228b9142a10383f5d371158c48",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46091802793"
+        }
+      ]
     },
     {
       "pick_rank": 13,
