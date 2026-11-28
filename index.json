@@ -2,31 +2,31 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1350,
-    "sealed": 7,
+    "opened": 1352,
+    "sealed": 5,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1074,
+    "proven": 1076,
     "proven_record": {
-      "wins": 565,
-      "losses": 500,
-      "decided": 1065,
+      "wins": 566,
+      "losses": 501,
+      "decided": 1067,
       "withdrawn": 2,
-      "hit_rate": "53.1",
-      "profit_usd": "-27813.05",
-      "staked": "1065000",
-      "roi": "-2.6"
+      "hit_rate": "53.0",
+      "profit_usd": "-28470.77",
+      "staked": "1067000",
+      "roi": "-2.7"
     },
-    "wins": 749,
-    "losses": 590,
+    "wins": 750,
+    "losses": 591,
     "voids": 7,
-    "decided": 1339,
+    "decided": 1341,
     "withdrawn": 4,
     "hit_rate": "55.9",
     "stake_usd": "1000",
-    "profit_usd": "-6125.37",
-    "staked": "1339000",
+    "profit_usd": "-6783.09",
+    "staked": "1341000",
     "roi": "-0.5",
     "through": "2026-11-27"
   },
@@ -53856,16 +53856,41 @@
       "publication_order": 13,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "5030298d98a8af38d30a7835154adf4964c42e291966d3253ed0d7bc5217bb1c",
+      "commitment_nonce": "2ddc862bcc78d2b8f33cbf3451c96076b38d82dc7f9c635c6c0a74f154e0b096",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T21:30:38.883161Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2501",
       "first_observation": {
         "observed_at": "2026-11-27T21:30:51.585178Z",
         "parent_commit": "7fd16a0ac217ac9ed013b6fea089b21e695e8b94",
         "run": "https://github.com/0xinsider/picks/actions/runs/46070763238"
-      }
+      },
+      "kickoff": "2026-11-28T00:30:00Z",
+      "resolved_at": "2026-11-28T04:12:18.042183Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.745000",
+        "condition_id": "0x260c9f69f529213fdffdc4ba6ba7b906b05561ee71b4354b09c1a0ae885687c9",
+        "kickoff": "2026-11-28T00:30:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2501",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Wisconsin",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Minnesota vs. Wisconsin",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2501",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T04:12:18.042183Z",
+          "parent_commit": "6beb6cd21a9d38640b62185b433117e4a5b749a3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46106435416"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-27",
@@ -53892,16 +53917,41 @@
       "publication_order": 15,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "3d035e85a0361b0edd676bd5b5342dc3a14e541d53d1b5ab94cf8ecbb1c7bbb7",
+      "commitment_nonce": "bd18593ab39b4bbb9e3a79c81520a289fd8df19e51df0c355fb4ffd255c9fe1a",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T22:04:38.410234Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2503",
       "first_observation": {
         "observed_at": "2026-11-27T22:04:48.858350Z",
         "parent_commit": "7f13f9d90a14af0517fd617cee0518f79b9c629b",
         "run": "https://github.com/0xinsider/picks/actions/runs/46074352478"
-      }
+      },
+      "kickoff": "2026-11-28T01:00:00Z",
+      "resolved_at": "2026-11-28T04:12:19.507288Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.545000",
+        "condition_id": "0x4032393acfef98fe2799d099b1acf9a09314e7367288260d3f6709382b7c787c",
+        "kickoff": "2026-11-28T01:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2503",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Sabres",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Penguins vs. Sabres",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2503",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-28T04:12:19.507288Z",
+          "parent_commit": "6beb6cd21a9d38640b62185b433117e4a5b749a3",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46106435416"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-27",
