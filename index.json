@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1361,
-    "sealed": 4,
+    "opened": 1362,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1085,
+    "proven": 1086,
     "proven_record": {
       "wins": 572,
-      "losses": 504,
-      "decided": 1076,
+      "losses": 505,
+      "decided": 1077,
       "withdrawn": 2,
-      "hit_rate": "53.2",
-      "profit_usd": "-24585.46",
-      "staked": "1076000",
-      "roi": "-2.3"
+      "hit_rate": "53.1",
+      "profit_usd": "-25585.46",
+      "staked": "1077000",
+      "roi": "-2.4"
     },
     "wins": 756,
-    "losses": 594,
+    "losses": 595,
     "voids": 7,
-    "decided": 1350,
+    "decided": 1351,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-2897.78",
-    "staked": "1350000",
-    "roi": "-0.2",
+    "profit_usd": "-3897.78",
+    "staked": "1351000",
+    "roi": "-0.3",
     "through": "2026-11-28"
   },
   "picks": [
@@ -54372,16 +54372,41 @@
       "publication_order": 5,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "94dae1b6fe7195d27b0b4062fe93b220effe1220a1ed31a94a8a8aad49602d70",
+      "commitment_nonce": "e236b227765a6c023f7d60abc6c539fb2a80bb6536bc35395f32d599042c0d3e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T11:30:12.506861Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2513",
       "first_observation": {
         "observed_at": "2026-11-28T11:30:27.100291Z",
         "parent_commit": "13076d56eda7e3998178447a0810db1dc39263bf",
         "run": "https://github.com/0xinsider/picks/actions/runs/46140177121"
-      }
+      },
+      "kickoff": "2026-11-28T14:30:00Z",
+      "resolved_at": "2026-11-28T16:39:56.955259Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.735000",
+        "condition_id": "0x5c14502882f6ae5b8cf89f8837c6558b9a90b46d87ec1adbf4d92a32120f8c14",
+        "kickoff": "2026-11-28T14:30:00Z",
+        "pick_date": "2026-11-28",
+        "pick_id": "2513",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Yes",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Hamburger SV vs. FC Bayern München",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2513",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-28T16:39:56.955259Z",
+          "parent_commit": "12ab699c4fc3dc63035d2e34d01d4e3c7784d932",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46166356769"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-28",
