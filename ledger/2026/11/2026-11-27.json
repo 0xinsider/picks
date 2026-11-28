@@ -511,16 +511,41 @@
       "publication_order": 14,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "0078815f2eb06294b3a265643dd9b0f7f25b08d7cbc549cb10db554e3ec469cc",
+      "commitment_nonce": "fe51efcf4a4cba472fa3066dcfa5e329a22e44b390ccc668b4c0f9ab03e44e3e",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T21:58:08.477991Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2502",
       "first_observation": {
         "observed_at": "2026-11-27T21:58:20.467277Z",
         "parent_commit": "9d541dd7da300639d0cf5b753f281a2e356cf5be",
         "run": "https://github.com/0xinsider/picks/actions/runs/46073657314"
-      }
+      },
+      "kickoff": "2026-11-28T00:30:00Z",
+      "resolved_at": "2026-11-28T04:18:32.803114Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.425000",
+        "condition_id": "0xaec6cefca371f10e6a5543fbdfd22bd5091abf4064c0751cc29d49465a40b3e0",
+        "kickoff": "2026-11-28T00:30:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2502",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Under",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Texas vs. Texas A&M",
+      "category": "Football",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2502",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T04:18:32.803114Z",
+          "parent_commit": "26eb2fb96a8c276ce679cf6a9a98b3e0338766c4",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46106925054"
+        }
+      ]
     },
     {
       "pick_rank": 15,
