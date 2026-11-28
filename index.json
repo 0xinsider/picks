@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1359,
-    "sealed": 3,
+    "opened": 1360,
+    "sealed": 2,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1083,
+    "proven": 1084,
     "proven_record": {
-      "wins": 571,
+      "wins": 572,
       "losses": 503,
-      "decided": 1074,
+      "decided": 1075,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-26094.23",
-      "staked": "1074000",
-      "roi": "-2.4"
+      "profit_usd": "-23585.46",
+      "staked": "1075000",
+      "roi": "-2.2"
     },
-    "wins": 755,
+    "wins": 756,
     "losses": 593,
     "voids": 7,
-    "decided": 1348,
+    "decided": 1349,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-4406.55",
-    "staked": "1348000",
-    "roi": "-0.3",
+    "profit_usd": "-1897.78",
+    "staked": "1349000",
+    "roi": "-0.1",
     "through": "2026-11-28"
   },
   "picks": [
@@ -54243,16 +54243,41 @@
       "publication_order": 2,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "49d22a2a29c9b4db2eaf04a081a2dab85cea494f35f5e716a6ea509cc37b568a",
+      "commitment_nonce": "9c2c82feea0e4abdc6d3e02da7ae2a1eb30c9f9070900ffa606331cc9cae8a7f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T10:16:21.320201Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2510",
       "first_observation": {
         "observed_at": "2026-11-28T10:16:32.840279Z",
         "parent_commit": "5b41888fb840f6127127de1f77dd8be0069c059f",
         "run": "https://github.com/0xinsider/picks/actions/runs/46134382040"
-      }
+      },
+      "kickoff": "2026-11-28T12:30:00Z",
+      "resolved_at": "2026-11-28T13:58:35.702357Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.285000",
+        "condition_id": "0x0488b8c088796c47fde4d75d971e85e80455fb7555eeff7166a1a90b9a42896c",
+        "kickoff": "2026-11-28T12:30:00Z",
+        "pick_date": "2026-11-28",
+        "pick_id": "2510",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "Astralis",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Natus Vincere vs Astralis (BO1) - PGL Major Singapore Stage 2",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2510",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T13:58:35.702357Z",
+          "parent_commit": "931e1979de3d9608a453ad238bfc6b24b7175511",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46152260917"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-28",
