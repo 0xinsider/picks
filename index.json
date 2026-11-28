@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1358,
-    "sealed": 4,
+    "opened": 1359,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1082,
+    "proven": 1083,
     "proven_record": {
-      "wins": 570,
+      "wins": 571,
       "losses": 503,
-      "decided": 1073,
+      "decided": 1074,
       "withdrawn": 2,
-      "hit_rate": "53.1",
-      "profit_usd": "-26720.25",
-      "staked": "1073000",
-      "roi": "-2.5"
+      "hit_rate": "53.2",
+      "profit_usd": "-26094.23",
+      "staked": "1074000",
+      "roi": "-2.4"
     },
-    "wins": 754,
+    "wins": 755,
     "losses": 593,
     "voids": 7,
-    "decided": 1347,
+    "decided": 1348,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-5032.57",
-    "staked": "1347000",
-    "roi": "-0.4",
+    "profit_usd": "-4406.55",
+    "staked": "1348000",
+    "roi": "-0.3",
     "through": "2026-11-28"
   },
   "picks": [
@@ -54261,16 +54261,41 @@
       "publication_order": 3,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "a0dace1419133eb30b6466731014a4e6ca5cd19fc86311c36892b754377a46ea",
+      "commitment_nonce": "9b2a6ef3f0eee00875f9f06ba47058df3a308280b2ff1b1da1ebb0a0904ba296",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T10:27:59.800262Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2511",
       "first_observation": {
         "observed_at": "2026-11-28T10:28:11.397152Z",
         "parent_commit": "83d7eb1318b299e350bb5e3186652b390ea4c09b",
         "run": "https://github.com/0xinsider/picks/actions/runs/46135305743"
-      }
+      },
+      "kickoff": "2026-11-28T11:30:00Z",
+      "resolved_at": "2026-11-28T13:30:59.617026Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.615000",
+        "condition_id": "0x6666d0595bc85fc640469f8d160b356f32b2a5543b0b0efe82c1c186262c8794",
+        "kickoff": "2026-11-28T11:30:00Z",
+        "pick_date": "2026-11-28",
+        "pick_id": "2511",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "MIBR",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: MIBR vs Imperial (BO1) - PGL Major Singapore Stage 2",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2511",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T13:30:59.617026Z",
+          "parent_commit": "6880fd2229d9557ebccf085da0c3fdedde4c2506",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46149993231"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-28",
