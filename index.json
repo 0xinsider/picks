@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1356,
-    "sealed": 1,
+    "opened": 1357,
+    "sealed": 0,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1080,
+    "proven": 1081,
     "proven_record": {
-      "wins": 569,
+      "wins": 570,
       "losses": 502,
-      "decided": 1071,
+      "decided": 1072,
       "withdrawn": 2,
-      "hit_rate": "53.1",
-      "profit_usd": "-26625.01",
-      "staked": "1071000",
-      "roi": "-2.5"
+      "hit_rate": "53.2",
+      "profit_usd": "-25720.25",
+      "staked": "1072000",
+      "roi": "-2.4"
     },
-    "wins": 753,
+    "wins": 754,
     "losses": 592,
     "voids": 7,
-    "decided": 1345,
+    "decided": 1346,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-4937.33",
-    "staked": "1345000",
-    "roi": "-0.4",
+    "profit_usd": "-4032.57",
+    "staked": "1346000",
+    "roi": "-0.3",
     "through": "2026-11-27"
   },
   "picks": [
@@ -54157,16 +54157,41 @@
       "publication_order": 20,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "281337012efd37399702e9950d159ab7849d7b173d52cb451ebbedff3d787330",
+      "commitment_nonce": "5b188ce8f10be3441a84689ed021775f15724f372a1903ed2e008aa027d0481c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T03:55:08.419035Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2508",
       "first_observation": {
         "observed_at": "2026-11-28T03:55:19.386325Z",
         "parent_commit": "66e866fc260ae40841c5975df1ceee0148ea6b29",
         "run": "https://github.com/0xinsider/picks/actions/runs/46105100702"
-      }
+      },
+      "kickoff": "2026-11-28T05:00:00Z",
+      "resolved_at": "2026-11-28T07:13:07.769937Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.525000",
+        "condition_id": "0xd8dcc883ccd3df7b41001a236014e019f7cdaaa756b9c882ee4854cc8af2deeb",
+        "kickoff": "2026-11-28T05:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2508",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "No",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Shimizu S-Pulse vs. Urawa Red Diamonds",
+      "category": "Soccer",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2508",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T07:13:07.769937Z",
+          "parent_commit": "9505369367447c8eacf952e0afc108aa3bfc469d",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46120174411"
+        }
+      ]
     }
   ]
 }
