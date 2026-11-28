@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1360,
-    "sealed": 4,
+    "opened": 1361,
+    "sealed": 3,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1084,
+    "proven": 1085,
     "proven_record": {
       "wins": 572,
-      "losses": 503,
-      "decided": 1075,
+      "losses": 504,
+      "decided": 1076,
       "withdrawn": 2,
       "hit_rate": "53.2",
-      "profit_usd": "-23585.46",
-      "staked": "1075000",
-      "roi": "-2.2"
+      "profit_usd": "-24585.46",
+      "staked": "1076000",
+      "roi": "-2.3"
     },
     "wins": 756,
-    "losses": 593,
+    "losses": 594,
     "voids": 7,
-    "decided": 1349,
+    "decided": 1350,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-1897.78",
-    "staked": "1349000",
-    "roi": "-0.1",
+    "profit_usd": "-2897.78",
+    "staked": "1350000",
+    "roi": "-0.2",
     "through": "2026-11-28"
   },
   "picks": [
@@ -54329,16 +54329,41 @@
       "publication_order": 4,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "1335448e2a1132b73e00d960407710f4eeffba4746aabaeaddac0d6bd26dab92",
+      "commitment_nonce": "cb6de148ef755c586f7d543450d345710153e8a5a0f1ccc3bc0b94e3207d23db",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T10:30:09.848941Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2512",
       "first_observation": {
         "observed_at": "2026-11-28T10:30:18.929789Z",
         "parent_commit": "b129dbda16458b644ee9f747dbf64868f35a00a4",
         "run": "https://github.com/0xinsider/picks/actions/runs/46135467656"
-      }
+      },
+      "kickoff": "2026-11-28T12:30:00Z",
+      "resolved_at": "2026-11-28T15:07:32.628431Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.655000",
+        "condition_id": "0x417c58cb9c219e9f964ca5b5f4b5f6ba48ea1fbd146d25835bed960763ed1eba",
+        "kickoff": "2026-11-28T12:30:00Z",
+        "pick_date": "2026-11-28",
+        "pick_id": "2512",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "PVISION",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: FlyQuest vs PVISION (BO1) - PGL Major Singapore Stage 2",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2512",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-28T15:07:32.628431Z",
+          "parent_commit": "aa363c2c8285f18edde2a847a0687ea35e21f861",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46158196501"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-28",
