@@ -385,16 +385,41 @@
       "publication_order": 11,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "b1bfedd2de5bc59186c6d5fcc555f9d26f16c5e7485e3bbc56580b9c68122c10",
+      "commitment_nonce": "a076175f9534552ed6a1e959d1b66237e89f4b3f68ee588e7371d12a1be27b4c",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-27T19:30:08.424219Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2499",
       "first_observation": {
         "observed_at": "2026-11-27T19:30:22.344251Z",
         "parent_commit": "47b8d0dc49684076c70f3045021bb71a4157f43b",
         "run": "https://github.com/0xinsider/picks/actions/runs/46057128644"
-      }
+      },
+      "kickoff": "2026-11-27T22:30:00Z",
+      "resolved_at": "2026-11-28T01:23:32.267188Z",
+      "outcome": "loss",
+      "payload": {
+        "backed_price": "0.605000",
+        "condition_id": "0x64bbe01eacd8f7532804818a4dad284fc1dc68a27e2acc7c36b69a7a61a57c66",
+        "kickoff": "2026-11-27T22:30:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2499",
+        "pick_outcome_index": 0,
+        "pick_outcome_label": "Rangers",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Rangers vs. Blackhawks",
+      "category": "Hockey",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2499",
+      "revisions": [
+        {
+          "outcome": "loss",
+          "resolved_at": "2026-11-28T01:23:32.267188Z",
+          "parent_commit": "1aee328616dee17224f5dabca2959b242a357cd7",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46092871310"
+        }
+      ]
     },
     {
       "pick_rank": 12,
