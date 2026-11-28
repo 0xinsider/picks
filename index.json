@@ -2,32 +2,32 @@
   "commitment_algo": "sha256(canonical_json(payload)||nonce)",
   "verify": "https://github.com/0xinsider/picks/blob/main/VERIFY.md",
   "record": {
-    "opened": 1355,
-    "sealed": 2,
+    "opened": 1356,
+    "sealed": 1,
     "pre_commitment": 250,
     "outage": 15,
     "late_unproven": 11,
-    "proven": 1079,
+    "proven": 1080,
     "proven_record": {
-      "wins": 568,
+      "wins": 569,
       "losses": 502,
-      "decided": 1070,
+      "decided": 1071,
       "withdrawn": 2,
       "hit_rate": "53.1",
-      "profit_usd": "-27775.55",
-      "staked": "1070000",
-      "roi": "-2.6"
+      "profit_usd": "-26625.01",
+      "staked": "1071000",
+      "roi": "-2.5"
     },
-    "wins": 752,
+    "wins": 753,
     "losses": 592,
     "voids": 7,
-    "decided": 1344,
+    "decided": 1345,
     "withdrawn": 4,
     "hit_rate": "56.0",
     "stake_usd": "1000",
-    "profit_usd": "-6087.87",
-    "staked": "1344000",
-    "roi": "-0.5",
+    "profit_usd": "-4937.33",
+    "staked": "1345000",
+    "roi": "-0.4",
     "through": "2026-11-27"
   },
   "picks": [
@@ -54114,16 +54114,41 @@
       "publication_order": 19,
       "is_free_selection": false,
       "commitment_version": 2,
-      "state": "sealed",
+      "state": "opened",
       "commitment_hash": "511b56742d3ee172730bb5a9b6da2c27de4a0b6e0829dd9f00b85ab0487028b5",
+      "commitment_nonce": "4cb0f28b088f5f6d59a8cfca1b231ba3d7ea0ba7645d8448ed1bb116707d9f6f",
       "commitment_algo": "sha256(canonical_json(payload)||nonce)",
       "sealed_at": "2026-11-28T02:00:09.723115Z",
-      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2507",
       "first_observation": {
         "observed_at": "2026-11-28T02:00:19.415521Z",
         "parent_commit": "0fdd5f82b57c9c9f7c16c96333604f67bf31f69c",
         "run": "https://github.com/0xinsider/picks/actions/runs/46095870636"
-      }
+      },
+      "kickoff": "2026-11-28T05:00:00Z",
+      "resolved_at": "2026-11-28T06:13:36.762878Z",
+      "outcome": "win",
+      "payload": {
+        "backed_price": "0.465000",
+        "condition_id": "0xb6b8f1964aa2c4f2b412de3d4aa2e9ca6d0163408c6da9892b8c3c249540acd2",
+        "kickoff": "2026-11-28T05:00:00Z",
+        "pick_date": "2026-11-27",
+        "pick_id": "2507",
+        "pick_outcome_index": 1,
+        "pick_outcome_label": "NIP",
+        "platform": "polymarket",
+        "version": 2
+      },
+      "matchup": "Counter-Strike: Nemiga vs NIP (BO1) - PGL Major Singapore Stage 2",
+      "category": "Esports",
+      "permalink": "https://0xinsider.com/pick-of-the-day/picks/2507",
+      "revisions": [
+        {
+          "outcome": "win",
+          "resolved_at": "2026-11-28T06:13:36.762878Z",
+          "parent_commit": "85da38c6cbbd8a3fe71f319605e5546fcf8b32f9",
+          "run": "https://github.com/0xinsider/picks/actions/runs/46115618226"
+        }
+      ]
     },
     {
       "pick_date": "2026-11-27",
